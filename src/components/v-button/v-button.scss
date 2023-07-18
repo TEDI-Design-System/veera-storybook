@@ -1,4 +1,6 @@
 .v-button {
-  color: var(--v-colors-primary);
+  background-color: var(--colors-brand-primary);
+  color: var(--colors-brand-tertiary);
+  border-radius: 20px;
   padding: 7px 14px;
 }

@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/html";
 
 import "../src/utilities/colors/colors.scss";
+import "../dist/veera-variables.css";
 
 const preview: Preview = {
   parameters: {
