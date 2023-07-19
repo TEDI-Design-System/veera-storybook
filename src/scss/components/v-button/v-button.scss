@@ -1,0 +1,106 @@
+@use '../../mixins/text-styles' as text-styles;
+
+.v-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-width: 2px;
+  border-style: solid;
+
+  &--primary {
+    background-color: var(--buttons-theme-primary-background-default);
+    border-color: var(--buttons-theme-primary-border-default);
+    color: var(--buttons-theme-primary-text-default);
+    &:hover {
+      background-color: var(--buttons-theme-primary-background-hover);
+      border-color: var(--buttons-theme-primary-border-hover);
+      color: var(--buttons-theme-primary-text-hover);
+    }
+    &:active {
+      background-color: var(--buttons-theme-primary-background-active);
+      border-color: var(--buttons-theme-primary-border-active);
+      color: var(--buttons-theme-primary-text-active);
+    }
+    &:focus {
+      background-color: var(--buttons-theme-primary-background-focus);
+      border-color: var(--buttons-theme-primary-border-focus);
+      color: var(--buttons-theme-primary-text-focus);
+    }
+    &:disabled {
+      background-color: var(--buttons-theme-primary-background-disabled);
+      border-color: var(--buttons-theme-primary-border-disabled);
+      color: var(--buttons-theme-primary-text-disabled);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--buttons-theme-secondary-background-default);
+    border-color: var(--buttons-theme-secondary-border-default);
+    color: var(--buttons-theme-secondary-text-default);
+    &:hover {
+      background-color: var(--buttons-theme-secondary-background-hover);
+      border-color: var(--buttons-theme-secondary-border-hover);
+      color: var(--buttons-theme-secondary-text-hover);
+    }
+    &:active {
+      background-color: var(--buttons-theme-secondary-background-active);
+      border-color: var(--buttons-theme-secondary-border-active);
+      color: var(--buttons-theme-secondary-text-active);
+    }
+    &:focus {
+      background-color: var(--buttons-theme-secondary-background-focus);
+      border-color: var(--buttons-theme-secondary-border-focus);
+      color: var(--buttons-theme-secondary-text-focus);
+    }
+    &:disabled {
+      background-color: var(--buttons-theme-secondary-background-disabled);
+      border-color: var(--buttons-theme-secondary-border-disabled);
+      color: var(--buttons-theme-secondary-text-disabled);
+    }
+  }
+
+  &--tertiary {
+    background-color: var(--buttons-theme-tertiary-background-default);
+    border-color: var(--buttons-theme-tertiary-border-default);
+    color: var(--buttons-theme-tertiary-text-default);
+    &:hover {
+      background-color: var(--buttons-theme-tertiary-background-hover);
+      border-color: var(--buttons-theme-tertiary-border-hover);
+      color: var(--buttons-theme-tertiary-text-hover);
+    }
+    &:active {
+      background-color: var(--buttons-theme-tertiary-background-active);
+      border-color: var(--buttons-theme-tertiary-border-active);
+      color: var(--buttons-theme-tertiary-text-active);
+    }
+    &:focus {
+      background-color: var(--buttons-theme-tertiary-background-focus);
+      border-color: var(--buttons-theme-tertiary-border-focus);
+      color: var(--buttons-theme-tertiary-text-focus);
+    }
+    &:disabled {
+      background-color: var(--buttons-theme-tertiary-background-disabled);
+      border-color: var(--buttons-theme-tertiary-border-disabled);
+      color: var(--buttons-theme-tertiary-text-disabled);
+    }
+  }
+
+  &--sm {
+    @include text-styles.buttons-small;
+    padding: var(--buttons-sizing-sm-padding-y) var(--buttons-sizing-sm-padding-x);
+    border-radius: var(--buttons-sizing-sm-corner-radius);
+  }
+
+  &--md {
+    @include text-styles.buttons-medium;
+    padding: var(--buttons-sizing-md-padding-y) var(--buttons-sizing-md-padding-x);
+    border-radius: var(--buttons-sizing-md-corner-radius);
+  }
+
+  &--lg {
+    @include text-styles.buttons-large;
+    padding: var(--buttons-sizing-lg-padding-y) var(--buttons-sizing-lg-padding-x);
+    border-radius: var(--buttons-sizing-lg-corner-radius);
+  }
+}

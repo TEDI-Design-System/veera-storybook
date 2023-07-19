@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npx sass ./src:./dist",
+    "build": "tsc && vite build && npx sass ./src/scss:./dist/css",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "generate-scss": "node scripts/generateScssFiles.js"
+    "generate-scss": "node scripts/generateScssFiles.js",
+    "build-scss": "npm run generate-scss && npm run build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.25",

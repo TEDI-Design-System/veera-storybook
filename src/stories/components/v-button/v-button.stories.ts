@@ -9,13 +9,15 @@ const meta = {
     return createButton(args);
   },
   argTypes: {
-    backgroundColor: { control: "color" },
     label: { control: "text" },
     onClick: { action: "onClick" },
-    primary: { control: "boolean" },
+    variant: {
+      control: { type: "select" },
+      options: ["primary", "secondary", "tertiary"],
+    },
     size: {
       control: { type: "select" },
-      options: ["small", "medium", "large"],
+      options: ["sm", "md", "lg"],
     },
   },
 } satisfies Meta<ButtonProps>;
@@ -26,7 +28,7 @@ type Story = StoryObj<ButtonProps>;
 
 export const Primary: Story = {
   args: {
-    primary: true,
+    variant: 'primary',
     label: "v-button",
   },
 };

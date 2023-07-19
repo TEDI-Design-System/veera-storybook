@@ -6,13 +6,31 @@ const getVarRow = (variable) => {
   return `--${variable.name}: ${value};`;
 };
 
-const generateScssFiles = () => {
-  console.log('Generating scss files...');
+const generateVariables = () => {
   const variables = designTokensJson.variables;
   const scss = `:root {
   ${variables.map(getVarRow).join('\n  ')}
 }`;
-  fs.writeFileSync('src/veera-variables.scss', scss);
+  fs.writeFileSync('src/scss/veera-variables.scss', scss);
+}
+
+const getTextStyleMixin = (textStyle) => {
+  const { name, ...styles } = textStyle;
+  return `@mixin ${name} {
+  ${Object.entries(styles).map(([key, val]) => `${key}: ${val};`).join('\n  ')}
+}`
+}
+
+const generateTextStyles = () => {
+  const textStyles = designTokensJson.typography;
+  const scss = `${textStyles.map(getTextStyleMixin).join('\n\n')}`;
+  fs.writeFileSync('src/scss/mixins/_text-styles.scss', scss);
+}
+
+const generateScssFiles = () => {
+  console.log('Generating scss files...');
+  generateVariables();
+  generateTextStyles();
   console.log('Done!');
 };
 

@@ -2,7 +2,7 @@
   "variables": [
     {
       "alias": false,
-      "value": 0,
+      "value": "0px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-00",
@@ -10,7 +10,7 @@
     },
     {
       "alias": false,
-      "value": 2,
+      "value": "2px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-01",
@@ -98,7 +98,7 @@
     },
     {
       "alias": false,
-      "value": 4,
+      "value": "4px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-02",
@@ -106,7 +106,7 @@
     },
     {
       "alias": false,
-      "value": 8,
+      "value": "8px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-03",
@@ -114,7 +114,7 @@
     },
     {
       "alias": false,
-      "value": 12,
+      "value": "12px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-04",
@@ -122,7 +122,7 @@
     },
     {
       "alias": false,
-      "value": 16,
+      "value": "16px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-05",
@@ -130,7 +130,7 @@
     },
     {
       "alias": false,
-      "value": 24,
+      "value": "24px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-06",
@@ -138,7 +138,7 @@
     },
     {
       "alias": false,
-      "value": 32,
+      "value": "32px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-07",
@@ -146,7 +146,7 @@
     },
     {
       "alias": false,
-      "value": 40,
+      "value": "40px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-08",
@@ -554,7 +554,7 @@
     },
     {
       "alias": false,
-      "value": 48,
+      "value": "48px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-09",
@@ -562,7 +562,7 @@
     },
     {
       "alias": false,
-      "value": 64,
+      "value": "64px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-10",
@@ -570,7 +570,7 @@
     },
     {
       "alias": false,
-      "value": 80,
+      "value": "80px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-11",
@@ -578,7 +578,7 @@
     },
     {
       "alias": false,
-      "value": 96,
+      "value": "96px",
       "group": "spacing",
       "collection": "primitive-tokens",
       "name": "spacing-12",
@@ -739,41 +739,41 @@
     {
       "alias": true,
       "value": "colors-brand-primary",
-      "group": "buttons/theme/primary",
+      "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-primary-default",
+      "name": "buttons-theme-primary-background-default",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-900",
-      "group": "buttons/theme/primary",
+      "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-primary-hover",
+      "name": "buttons-theme-primary-background-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-1000",
-      "group": "buttons/theme/primary",
+      "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-primary-active",
+      "name": "buttons-theme-primary-background-active",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-900",
-      "group": "buttons/theme/primary",
+      "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-primary-focus",
+      "name": "buttons-theme-primary-background-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-grays-gray-200",
-      "group": "buttons/theme/primary",
+      "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-primary-disabled",
+      "name": "buttons-theme-primary-background-disabled",
       "type": "COLOR"
     },
     {
@@ -786,42 +786,42 @@
     },
     {
       "alias": true,
-      "value": "colors-brand-secondary",
-      "group": "buttons/theme/secondary",
+      "value": "colors-neutrals-white",
+      "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-secondary-default",
+      "name": "buttons-theme-secondary-background-default",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
-      "group": "buttons/theme/secondary",
+      "value": "colors-blue-blue-100",
+      "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-secondary-hover",
+      "name": "buttons-theme-secondary-background-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
-      "group": "buttons/theme/secondary",
+      "value": "colors-blue-blue-200",
+      "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-secondary-active",
+      "name": "buttons-theme-secondary-background-active",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
-      "group": "buttons/theme/secondary",
+      "value": "colors-neutrals-white",
+      "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-secondary-focus",
+      "name": "buttons-theme-secondary-background-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-grays-gray-200",
-      "group": "buttons/theme/secondary",
+      "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-secondary-disabled",
+      "name": "buttons-theme-secondary-background-disabled",
       "type": "COLOR"
     },
     {
@@ -954,7 +954,7 @@
     },
     {
       "alias": false,
-      "value": 4,
+      "value": "4px",
       "group": "radius",
       "collection": "primitive-tokens",
       "name": "radius-01",
@@ -962,7 +962,7 @@
     },
     {
       "alias": false,
-      "value": 20,
+      "value": "20px",
       "group": "radius",
       "collection": "primitive-tokens",
       "name": "radius-02",
@@ -970,7 +970,7 @@
     },
     {
       "alias": false,
-      "value": 360,
+      "value": "360px",
       "group": "radius",
       "collection": "primitive-tokens",
       "name": "radius-03",
@@ -979,276 +979,394 @@
     {
       "alias": true,
       "value": "spacing-03",
-      "group": "buttons/buttons/sizing/sm",
+      "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-sm-padding-x",
+      "name": "buttons-sizing-sm-padding-x",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-04",
-      "group": "buttons/buttons/sizing/sm",
+      "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-sm-padding-y",
+      "name": "buttons-sizing-sm-padding-y",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "radius-01",
-      "group": "buttons/buttons/sizing/sm",
+      "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-sm-corner-radius",
+      "name": "buttons-sizing-sm-corner-radius",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-04",
-      "group": "buttons/buttons/sizing/md",
+      "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-md-padding-x",
+      "name": "buttons-sizing-md-padding-x",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-03",
-      "group": "buttons/buttons/sizing/md",
+      "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-md-padding-y",
+      "name": "buttons-sizing-md-padding-y",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "radius-02",
-      "group": "buttons/buttons/sizing/md",
+      "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-md-corner-radius",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "spacing-05",
-      "group": "buttons/buttons/sizing/lg",
-      "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-lg-padding-x",
+      "name": "buttons-sizing-md-corner-radius",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-08",
-      "group": "buttons/buttons/sizing/lg",
+      "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-lg-padding-y",
+      "name": "buttons-sizing-lg-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "group": "buttons/sizing/lg",
+      "collection": "semantic-tokens",
+      "name": "buttons-sizing-lg-padding-y",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "radius-03",
-      "group": "buttons/buttons/sizing/lg",
+      "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
-      "name": "buttons-buttons-sizing-lg-corner-radius",
+      "name": "buttons-sizing-lg-corner-radius",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-400",
+      "group": "colors",
+      "collection": "semantic-tokens",
+      "name": "colors-button-borders-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-brand-primary",
+      "group": "buttons/theme/primary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-900",
+      "group": "buttons/theme/primary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-1000",
+      "group": "buttons/theme/primary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-900",
+      "group": "buttons/theme/primary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-grays-gray-200",
+      "group": "buttons/theme/primary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutrals-white",
+      "group": "buttons/theme/primary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/primary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/primary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/primary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-grays-gray-200",
+      "group": "buttons/theme/primary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-primary-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-grays-gray-400",
+      "group": "buttons/theme/secondary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-900",
+      "group": "buttons/theme/secondary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-1000",
+      "group": "buttons/theme/secondary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-button-borders-focus",
+      "group": "buttons/theme/secondary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-grays-gray-200",
+      "group": "buttons/theme/secondary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "group": "buttons/theme/secondary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "group": "buttons/theme/secondary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "group": "buttons/theme/secondary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-brand-primary",
+      "group": "buttons/theme/secondary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-tertiary",
+      "group": "buttons/theme/secondary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-secondary-text-disabled",
+      "type": "COLOR"
     }
   ],
   "typography": [
     {
-      "name": "Headings/Large/H1",
-      "fontFamily": "Roboto",
-      "fontStyle": "Light",
-      "fontSize": "32px",
-      "letterSpacing": "0px",
-      "lineHeight": "48px"
+      "name": "headings-large-h1",
+      "font-family": "Roboto",
+      "font-size": "32px",
+      "line-height": "48px"
     },
     {
-      "name": "Headings/Large/H2",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "28px",
-      "letterSpacing": "0px",
-      "lineHeight": "42px"
+      "name": "headings-large-h2",
+      "font-family": "Roboto",
+      "font-size": "28px",
+      "line-height": "42px"
     },
     {
-      "name": "Headings/Large/H3",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "24px",
-      "letterSpacing": "0px",
-      "lineHeight": "36px"
+      "name": "headings-large-h3",
+      "font-family": "Roboto",
+      "font-size": "24px",
+      "line-height": "36px"
     },
     {
-      "name": "Headings/Large/H4",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "20px",
-      "letterSpacing": "0px",
-      "lineHeight": "30px"
+      "name": "headings-large-h4",
+      "font-family": "Roboto",
+      "font-size": "20px",
+      "line-height": "30px"
     },
     {
-      "name": "Headings/Large/H5",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "18px",
-      "letterSpacing": "0px",
-      "lineHeight": "27px"
+      "name": "headings-large-h5",
+      "font-family": "Roboto",
+      "font-size": "18px",
+      "line-height": "27px"
     },
     {
-      "name": "Headings/Large/H6",
-      "fontFamily": "Roboto",
-      "fontStyle": "Bold",
-      "fontSize": "16px",
-      "letterSpacing": "0px",
-      "lineHeight": "24px"
+      "name": "headings-large-h6",
+      "font-family": "Roboto",
+      "font-size": "16px",
+      "line-height": "24px"
     },
     {
-      "name": "Headings/Small/H1 Mobile",
-      "fontFamily": "Roboto",
-      "fontStyle": "Light",
-      "fontSize": "24px",
-      "letterSpacing": "0px",
-      "lineHeight": "36px"
+      "name": "headings-small-h1mobile",
+      "font-family": "Roboto",
+      "font-size": "24px",
+      "line-height": "36px"
     },
     {
-      "name": "Headings/Small/H3 Mobile",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "19px",
-      "letterSpacing": "0px",
-      "lineHeight": "28.5px"
+      "name": "headings-small-h3mobile",
+      "font-family": "Roboto",
+      "font-size": "19px",
+      "line-height": "28.5px"
     },
     {
-      "name": "Body / Regular",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "16px",
-      "letterSpacing": "0px",
-      "lineHeight": "24px"
+      "name": "body-regular",
+      "font-family": "Roboto",
+      "font-size": "16px",
+      "line-height": "24px"
     },
     {
-      "name": "Body / Small",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "14px",
-      "letterSpacing": "0px",
-      "lineHeight": "21px"
+      "name": "body-small",
+      "font-family": "Roboto",
+      "font-size": "14px",
+      "line-height": "21px"
     },
     {
-      "name": "Body /  Regular Bold",
-      "fontFamily": "Roboto",
-      "fontStyle": "Bold",
-      "fontSize": "16px",
-      "letterSpacing": "0px",
-      "lineHeight": "24px"
+      "name": "body-regularbold",
+      "font-family": "Roboto",
+      "font-size": "16px",
+      "line-height": "24px"
     },
     {
-      "name": "Body /  Small Bold",
-      "fontFamily": "Roboto",
-      "fontStyle": "Bold",
-      "fontSize": "14px",
-      "letterSpacing": "0px",
-      "lineHeight": "21px"
+      "name": "body-smallbold",
+      "font-family": "Roboto",
+      "font-size": "14px",
+      "line-height": "21px"
     },
     {
-      "name": "Body/Extra Small",
-      "fontFamily": "Inter",
-      "fontStyle": "Regular",
-      "fontSize": "12px",
-      "letterSpacing": "0%",
-      "lineHeight": "auto"
+      "name": "body-extrasmall",
+      "font-family": "Inter",
+      "font-size": "12px",
+      "line-height": "auto"
     },
     {
-      "name": "Subtitles / Regular",
-      "fontFamily": "Roboto",
-      "fontStyle": "Bold",
-      "fontSize": "16px",
-      "letterSpacing": "0px",
-      "lineHeight": "24px"
+      "name": "subtitles-regular",
+      "font-family": "Roboto",
+      "font-size": "16px",
+      "line-height": "24px"
     },
     {
-      "name": "Subtitles / Small",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "14px",
-      "letterSpacing": "0px",
-      "lineHeight": "21px"
+      "name": "subtitles-small",
+      "font-family": "Roboto",
+      "font-size": "14px",
+      "line-height": "21px"
     },
     {
-      "name": "Links / Regular",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "16px",
-      "letterSpacing": "0px",
-      "lineHeight": "24px"
+      "name": "links-regular",
+      "font-family": "Roboto",
+      "font-size": "16px",
+      "line-height": "24px"
     },
     {
-      "name": "Links / Small",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "14px",
-      "letterSpacing": "0px",
-      "lineHeight": "21px"
+      "name": "links-small",
+      "font-family": "Roboto",
+      "font-size": "14px",
+      "line-height": "21px"
     },
     {
-      "name": "Links/Extra Small",
-      "fontFamily": "Inter",
-      "fontStyle": "Regular",
-      "fontSize": "12px",
-      "letterSpacing": "0%",
-      "lineHeight": "auto"
+      "name": "links-extrasmall",
+      "font-family": "Inter",
+      "font-size": "12px",
+      "line-height": "auto"
     },
     {
-      "name": "Logo/System name",
-      "fontFamily": "Roboto Condensed",
-      "fontStyle": "Regular",
-      "fontSize": "13px",
-      "letterSpacing": "0px",
-      "lineHeight": "14px"
+      "name": "logo-systemname",
+      "font-family": "Roboto Condensed",
+      "font-size": "13px",
+      "line-height": "14px"
     },
     {
-      "name": "Logo/Institution name",
-      "fontFamily": "Roboto Condensed",
-      "fontStyle": "Light",
-      "fontSize": "13px",
-      "letterSpacing": "0px",
-      "lineHeight": "14px"
+      "name": "logo-institutionname",
+      "font-family": "Roboto Condensed",
+      "font-size": "13px",
+      "line-height": "14px"
     },
     {
-      "name": "Navigation/Drawer Label Mobile",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "10px",
-      "letterSpacing": "0px",
-      "lineHeight": "15px"
+      "name": "navigation-drawerlabelmobile",
+      "font-family": "Roboto",
+      "font-size": "10px",
+      "line-height": "15px"
     },
     {
-      "name": "Navigation/Main menu item",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "18px",
-      "letterSpacing": "0px",
-      "lineHeight": "16px"
+      "name": "navigation-mainmenuitem",
+      "font-family": "Roboto",
+      "font-size": "18px",
+      "line-height": "16px"
     },
     {
-      "name": "Buttons/Small",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "14px",
-      "letterSpacing": "0%",
-      "lineHeight": "21px"
+      "name": "buttons-small",
+      "font-family": "Roboto",
+      "font-size": "14px",
+      "line-height": "21px"
     },
     {
-      "name": "Buttons/Medium",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "16px",
-      "letterSpacing": "0%",
-      "lineHeight": "24px"
+      "name": "buttons-medium",
+      "font-family": "Roboto",
+      "font-size": "16px",
+      "line-height": "24px"
     },
     {
-      "name": "Buttons/Large",
-      "fontFamily": "Roboto",
-      "fontStyle": "Regular",
-      "fontSize": "16px",
-      "letterSpacing": "0%",
-      "lineHeight": "24px"
+      "name": "buttons-large",
+      "font-family": "Roboto",
+      "font-size": "16px",
+      "line-height": "24px"
     }
   ]
 }
