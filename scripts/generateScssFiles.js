@@ -6,10 +6,16 @@ const getVarRow = (variable) => {
   return `--${variable.name}: ${value};`;
 };
 
+const getBoxShadowRow = (variable) => {
+  return `--box-shadow-${variable.name}: ${variable.value};`;
+};
+
 const generateVariables = () => {
   const variables = designTokensJson.variables;
+  const boxShadows = designTokensJson.boxShadows;
   const scss = `:root {
   ${variables.map(getVarRow).join('\n  ')}
+  ${boxShadows.map(getBoxShadowRow).join('\n  ')}
 }`;
   fs.writeFileSync('src/scss/veera-variables.scss', scss);
 }

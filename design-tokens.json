@@ -978,7 +978,7 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
+      "value": "spacing-05",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-padding-x",
@@ -986,7 +986,7 @@
     },
     {
       "alias": true,
-      "value": "spacing-04",
+      "value": "spacing-03",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-padding-y",
@@ -1002,7 +1002,7 @@
     },
     {
       "alias": true,
-      "value": "spacing-04",
+      "value": "spacing-06",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-padding-x",
@@ -1010,7 +1010,7 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
+      "value": "spacing-04",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-padding-y",
@@ -1215,6 +1215,30 @@
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-text-disabled",
       "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "group": "buttons/sizing/lg",
+      "collection": "semantic-tokens",
+      "name": "buttons-sizing-lg-padding-icon-only",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "group": "buttons/sizing/md",
+      "collection": "semantic-tokens",
+      "name": "buttons-sizing-md-padding-icon-only",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "group": "buttons/sizing/sm",
+      "collection": "semantic-tokens",
+      "name": "buttons-sizing-sm-padding-icon-only",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -1367,6 +1391,21 @@
       "font-family": "Roboto",
       "font-size": "16px",
       "line-height": "24px"
+    }
+  ],
+  "boxShadows": [
+    { "name": "drop-shadow", "value": "0px 4px 4px 0px rgba(0, 0, 0, 0.2500)" },
+    {
+      "name": "focus",
+      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8"
+    },
+    {
+      "name": "elevation-2px",
+      "value": "0px 1px 5px 0px rgba(0, 0, 0, 0.2000)"
+    },
+    {
+      "name": "elevation-4px",
+      "value": "0px 4px 10px 0px rgba(0, 0, 0, 0.1400)"
     }
   ]
 }

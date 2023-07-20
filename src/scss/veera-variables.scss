@@ -121,11 +121,11 @@
   --radius-01: 4px;
   --radius-02: 20px;
   --radius-03: 360px;
-  --buttons-sizing-sm-padding-x: var(--spacing-03);
-  --buttons-sizing-sm-padding-y: var(--spacing-04);
+  --buttons-sizing-sm-padding-x: var(--spacing-05);
+  --buttons-sizing-sm-padding-y: var(--spacing-03);
   --buttons-sizing-sm-corner-radius: var(--radius-01);
-  --buttons-sizing-md-padding-x: var(--spacing-04);
-  --buttons-sizing-md-padding-y: var(--spacing-03);
+  --buttons-sizing-md-padding-x: var(--spacing-06);
+  --buttons-sizing-md-padding-y: var(--spacing-04);
   --buttons-sizing-md-corner-radius: var(--radius-02);
   --buttons-sizing-lg-padding-x: var(--spacing-08);
   --buttons-sizing-lg-padding-y: var(--spacing-05);
@@ -151,4 +151,11 @@
   --buttons-theme-secondary-text-active: var(--colors-blue-blue-600);
   --buttons-theme-secondary-text-focus: var(--colors-brand-primary);
   --buttons-theme-secondary-text-disabled: var(--colors-text-tertiary);
+  --buttons-sizing-lg-padding-icon-only: var(--spacing-00);
+  --buttons-sizing-md-padding-icon-only: var(--spacing-00);
+  --buttons-sizing-sm-padding-icon-only: var(--spacing-00);
+  --box-shadow-drop-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2500);
+  --box-shadow-focus: 0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8;
+  --box-shadow-elevation-2px: 0px 1px 5px 0px rgba(0, 0, 0, 0.2000);
+  --box-shadow-elevation-4px: 0px 4px 10px 0px rgba(0, 0, 0, 0.1400);
 }

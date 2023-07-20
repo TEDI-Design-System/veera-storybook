@@ -7,6 +7,15 @@
   gap: 8px;
   border-width: 2px;
   border-style: solid;
+  cursor: pointer;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &:focus {
+    box-shadow: var(--box-shadow-focus);
+  }
 
   &--primary {
     background-color: var(--buttons-theme-primary-background-default);
@@ -83,6 +92,58 @@
       background-color: var(--buttons-theme-tertiary-background-disabled);
       border-color: var(--buttons-theme-tertiary-border-disabled);
       color: var(--buttons-theme-tertiary-text-disabled);
+    }
+  }
+
+  &--success {
+    background-color: var(--buttons-theme-success-background-default);
+    border-color: var(--buttons-theme-success-border-default);
+    color: var(--buttons-theme-success-text-default);
+    &:hover {
+      background-color: var(--buttons-theme-success-background-hover);
+      border-color: var(--buttons-theme-success-border-hover);
+      color: var(--buttons-theme-success-text-hover);
+    }
+    &:active {
+      background-color: var(--buttons-theme-success-background-active);
+      border-color: var(--buttons-theme-success-border-active);
+      color: var(--buttons-theme-success-text-active);
+    }
+    &:focus {
+      background-color: var(--buttons-theme-success-background-focus);
+      border-color: var(--buttons-theme-success-border-focus);
+      color: var(--buttons-theme-success-text-focus);
+    }
+    &:disabled {
+      background-color: var(--buttons-theme-success-background-disabled);
+      border-color: var(--buttons-theme-success-border-disabled);
+      color: var(--buttons-theme-success-text-disabled);
+    }
+  }
+
+  &--error {
+    background-color: var(--buttons-theme-error-background-default);
+    border-color: var(--buttons-theme-error-border-default);
+    color: var(--buttons-theme-error-text-default);
+    &:hover {
+      background-color: var(--buttons-theme-error-background-hover);
+      border-color: var(--buttons-theme-error-border-hover);
+      color: var(--buttons-theme-error-text-hover);
+    }
+    &:active {
+      background-color: var(--buttons-theme-error-background-active);
+      border-color: var(--buttons-theme-error-border-active);
+      color: var(--buttons-theme-error-text-active);
+    }
+    &:focus {
+      background-color: var(--buttons-theme-error-background-focus);
+      border-color: var(--buttons-theme-error-border-focus);
+      color: var(--buttons-theme-error-text-focus);
+    }
+    &:disabled {
+      background-color: var(--buttons-theme-error-background-disabled);
+      border-color: var(--buttons-theme-error-border-disabled);
+      color: var(--buttons-theme-error-text-disabled);
     }
   }
 
