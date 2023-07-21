@@ -18,130 +18,130 @@
   }
 
   &--primary {
-    background-color: var(--buttons-theme-primary-background-default);
+    background: var(--buttons-theme-primary-background-default);
     border-color: var(--buttons-theme-primary-border-default);
     color: var(--buttons-theme-primary-text-default);
     &:hover {
-      background-color: var(--buttons-theme-primary-background-hover);
+      background: var(--buttons-theme-primary-background-hover);
       border-color: var(--buttons-theme-primary-border-hover);
       color: var(--buttons-theme-primary-text-hover);
     }
     &:active {
-      background-color: var(--buttons-theme-primary-background-active);
+      background: var(--buttons-theme-primary-background-active);
       border-color: var(--buttons-theme-primary-border-active);
       color: var(--buttons-theme-primary-text-active);
     }
     &:focus {
-      background-color: var(--buttons-theme-primary-background-focus);
+      background: var(--buttons-theme-primary-background-focus);
       border-color: var(--buttons-theme-primary-border-focus);
       color: var(--buttons-theme-primary-text-focus);
     }
     &:disabled {
-      background-color: var(--buttons-theme-primary-background-disabled);
+      background: var(--buttons-theme-primary-background-disabled);
       border-color: var(--buttons-theme-primary-border-disabled);
       color: var(--buttons-theme-primary-text-disabled);
     }
   }
 
   &--secondary {
-    background-color: var(--buttons-theme-secondary-background-default);
+    background: var(--buttons-theme-secondary-background-default);
     border-color: var(--buttons-theme-secondary-border-default);
     color: var(--buttons-theme-secondary-text-default);
     &:hover {
-      background-color: var(--buttons-theme-secondary-background-hover);
+      background: var(--buttons-theme-secondary-background-hover);
       border-color: var(--buttons-theme-secondary-border-hover);
       color: var(--buttons-theme-secondary-text-hover);
     }
     &:active {
-      background-color: var(--buttons-theme-secondary-background-active);
+      background: var(--buttons-theme-secondary-background-active);
       border-color: var(--buttons-theme-secondary-border-active);
       color: var(--buttons-theme-secondary-text-active);
     }
     &:focus {
-      background-color: var(--buttons-theme-secondary-background-focus);
+      background: var(--buttons-theme-secondary-background-focus);
       border-color: var(--buttons-theme-secondary-border-focus);
       color: var(--buttons-theme-secondary-text-focus);
     }
     &:disabled {
-      background-color: var(--buttons-theme-secondary-background-disabled);
+      background: var(--buttons-theme-secondary-background-disabled);
       border-color: var(--buttons-theme-secondary-border-disabled);
       color: var(--buttons-theme-secondary-text-disabled);
     }
   }
 
   &--tertiary {
-    background-color: var(--buttons-theme-tertiary-background-default);
+    background: var(--buttons-theme-tertiary-background-default);
     border-color: var(--buttons-theme-tertiary-border-default);
     color: var(--buttons-theme-tertiary-text-default);
     &:hover {
-      background-color: var(--buttons-theme-tertiary-background-hover);
+      background: var(--buttons-theme-tertiary-background-hover);
       border-color: var(--buttons-theme-tertiary-border-hover);
       color: var(--buttons-theme-tertiary-text-hover);
     }
     &:active {
-      background-color: var(--buttons-theme-tertiary-background-active);
+      background: var(--buttons-theme-tertiary-background-active);
       border-color: var(--buttons-theme-tertiary-border-active);
       color: var(--buttons-theme-tertiary-text-active);
     }
     &:focus {
-      background-color: var(--buttons-theme-tertiary-background-focus);
+      background: var(--buttons-theme-tertiary-background-focus);
       border-color: var(--buttons-theme-tertiary-border-focus);
       color: var(--buttons-theme-tertiary-text-focus);
     }
     &:disabled {
-      background-color: var(--buttons-theme-tertiary-background-disabled);
+      background: var(--buttons-theme-tertiary-background-disabled);
       border-color: var(--buttons-theme-tertiary-border-disabled);
       color: var(--buttons-theme-tertiary-text-disabled);
     }
   }
 
   &--success {
-    background-color: var(--buttons-theme-success-background-default);
+    background: var(--buttons-theme-success-background-default);
     border-color: var(--buttons-theme-success-border-default);
     color: var(--buttons-theme-success-text-default);
     &:hover {
-      background-color: var(--buttons-theme-success-background-hover);
+      background: var(--buttons-theme-success-background-hover);
       border-color: var(--buttons-theme-success-border-hover);
       color: var(--buttons-theme-success-text-hover);
     }
     &:active {
-      background-color: var(--buttons-theme-success-background-active);
+      background: var(--buttons-theme-success-background-active);
       border-color: var(--buttons-theme-success-border-active);
       color: var(--buttons-theme-success-text-active);
     }
     &:focus {
-      background-color: var(--buttons-theme-success-background-focus);
+      background: var(--buttons-theme-success-background-focus);
       border-color: var(--buttons-theme-success-border-focus);
       color: var(--buttons-theme-success-text-focus);
     }
     &:disabled {
-      background-color: var(--buttons-theme-success-background-disabled);
+      background: var(--buttons-theme-success-background-disabled);
       border-color: var(--buttons-theme-success-border-disabled);
       color: var(--buttons-theme-success-text-disabled);
     }
   }
 
   &--error {
-    background-color: var(--buttons-theme-error-background-default);
+    background: var(--buttons-theme-error-background-default);
     border-color: var(--buttons-theme-error-border-default);
     color: var(--buttons-theme-error-text-default);
     &:hover {
-      background-color: var(--buttons-theme-error-background-hover);
+      background: var(--buttons-theme-error-background-hover);
       border-color: var(--buttons-theme-error-border-hover);
       color: var(--buttons-theme-error-text-hover);
     }
     &:active {
-      background-color: var(--buttons-theme-error-background-active);
+      background: var(--buttons-theme-error-background-active);
       border-color: var(--buttons-theme-error-border-active);
       color: var(--buttons-theme-error-text-active);
     }
     &:focus {
-      background-color: var(--buttons-theme-error-background-focus);
+      background: var(--buttons-theme-error-background-focus);
       border-color: var(--buttons-theme-error-border-focus);
       color: var(--buttons-theme-error-text-focus);
     }
     &:disabled {
-      background-color: var(--buttons-theme-error-background-disabled);
+      background: var(--buttons-theme-error-background-disabled);
       border-color: var(--buttons-theme-error-border-disabled);
       color: var(--buttons-theme-error-text-disabled);
     }
