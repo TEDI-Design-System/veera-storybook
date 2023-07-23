@@ -14,7 +14,9 @@ To compile scss into css run `npm run build` (or `npm run build-scss`, which als
 
 ## Developing components
 
-When developing new components, add components styles to new folder in [scss/components](/src/scss/components/) directory and create stories for the component to [stories](/src/stories/) folder. When creating component styles make sure to use css variables imported from Figma if possible. Storybook is used for viewing and developing the components.
+When developing new components, add components styles to new folder in [scss/components](/src/scss/components/) directory and create stories for the component to [stories](/src/stories/) folder. When creating component styles make sure to use css variables imported from Figma if possible. Storybook is used for viewing and developing the components. 
+
+**Also make sure you have Prettier, ESlint and Stylelint plugins installed if developing in VS Code**
 
 ## Running storybook
 
