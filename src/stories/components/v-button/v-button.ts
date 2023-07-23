@@ -8,7 +8,12 @@ export interface ButtonProps {
   disabled?: boolean;
   onClick?: () => void;
 }
-export const createButton = ({ label, variant = 'primary', size =  'md', disabled }: ButtonProps) => {
+export const createButton = ({
+  label,
+  variant = 'primary',
+  size = 'md',
+  disabled,
+}: ButtonProps) => {
   const btn = document.createElement('button');
   btn.type = 'button';
   btn.innerText = label;
