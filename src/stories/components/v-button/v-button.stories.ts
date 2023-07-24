@@ -29,6 +29,43 @@ type Story = StoryObj<ButtonProps>;
 export const Primary: Story = {
   args: {
     variant: 'primary',
-    label: 'v-button',
+    label: 'Primary',
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: 'secondary',
+    label: 'Secondary',
+  },
+};
+
+export const Tertiary: Story = {
+  args: {
+    variant: 'tertiary',
+    label: 'Tertiary',
+  },
+};
+
+export const Success: Story = {
+  args: {
+    variant: 'success',
+    label: 'Success',
+  },
+};
+
+export const Error: Story = {
+  args: {
+    variant: 'error',
+    label: 'Error',
+  },
+};
+
+export const IconOnly: Story = {
+  args: {
+    iconOnly: true,
+    variant: 'primary',
+    size: 'lg',
+    label: 'Primary',
   },
 };

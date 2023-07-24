@@ -395,161 +395,161 @@
     {
       "alias": false,
       "value": "#f9f9f9",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-100",
+      "name": "colors-gray-gray-100",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#f0f0f2",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-200",
+      "name": "colors-gray-gray-200",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#e1e2e5",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-300",
+      "name": "colors-gray-gray-300",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#d2d3d8",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-400",
+      "name": "colors-gray-gray-400",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#7d808d",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-500",
+      "name": "colors-gray-gray-500",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#5d6071",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-600",
+      "name": "colors-gray-gray-600",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#4a4d5a",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-700",
+      "name": "colors-gray-gray-700",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#383a44",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-800",
+      "name": "colors-gray-gray-800",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#25262d",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-900",
+      "name": "colors-gray-gray-900",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#131317",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-1000",
+      "name": "colors-gray-gray-1000",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#fff8e7",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-100",
+      "name": "colors-yellow-yellow-100",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#fff0cf",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-200",
+      "name": "colors-yellow-yellow-200",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#ffe1a0",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-300",
+      "name": "colors-yellow-yellow-300",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#ffd370",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-400",
+      "name": "colors-yellow-yellow-400",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#ffc441",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-500",
+      "name": "colors-yellow-yellow-500",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#ffb511",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-600",
+      "name": "colors-yellow-yellow-600",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#cc910e",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-700",
+      "name": "colors-yellow-yellow-700",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#996d0a",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-800",
+      "name": "colors-yellow-yellow-800",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#664807",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-900",
+      "name": "colors-yellow-yellow-900",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#332403",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-1000",
+      "name": "colors-yellow-yellow-1000",
       "type": "COLOR"
     },
     {
@@ -594,7 +594,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
+      "value": "colors-gray-gray-1000",
       "group": "colors/text",
       "collection": "semantic-tokens",
       "name": "colors-text-primary",
@@ -602,7 +602,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "colors",
       "collection": "semantic-tokens",
       "name": "colors-borders",
@@ -642,7 +642,7 @@
     },
     {
       "alias": true,
-      "value": "colors-yellows-yellow-100",
+      "value": "colors-yellow-yellow-100",
       "group": "colors/warning",
       "collection": "semantic-tokens",
       "name": "colors-warning-background",
@@ -650,7 +650,7 @@
     },
     {
       "alias": true,
-      "value": "colors-yellows-yellow-1000",
+      "value": "colors-yellow-yellow-1000",
       "group": "colors/warning",
       "collection": "semantic-tokens",
       "name": "colors-warning-border",
@@ -675,14 +675,14 @@
     {
       "alias": false,
       "value": "#ffffff",
-      "group": "colors/neutrals",
+      "group": "colors/neutral",
       "collection": "primitive-tokens",
-      "name": "colors-neutrals-white",
+      "name": "colors-neutral-white",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-primary",
@@ -690,7 +690,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-700",
+      "value": "colors-gray-gray-700",
       "group": "colors/text",
       "collection": "semantic-tokens",
       "name": "colors-text-secondary",
@@ -698,7 +698,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-500",
+      "value": "colors-gray-gray-500",
       "group": "colors/text",
       "collection": "semantic-tokens",
       "name": "colors-text-tertiary",
@@ -706,7 +706,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-100",
+      "value": "colors-gray-gray-100",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-secondary",
@@ -714,7 +714,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-tertiary",
@@ -722,7 +722,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-300",
+      "value": "colors-gray-gray-300",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-quadrary",
@@ -730,7 +730,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-400",
+      "value": "colors-gray-gray-400",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-quinary",
@@ -770,7 +770,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-background-disabled",
@@ -778,7 +778,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
+      "value": "colors-gray-gray-1000",
       "group": "colors/brand",
       "collection": "semantic-tokens",
       "name": "colors-brand-secondary",
@@ -786,7 +786,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-default",
@@ -810,7 +810,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-focus",
@@ -818,7 +818,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-disabled",
@@ -826,7 +826,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
       "group": "colors/brand",
       "collection": "semantic-tokens",
       "name": "colors-brand-tertiary",
@@ -842,7 +842,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
+      "value": "colors-gray-gray-800",
       "group": "buttons/theme/tertiary",
       "collection": "semantic-tokens",
       "name": "buttons-theme-tertiary-hover",
@@ -850,7 +850,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
+      "value": "colors-gray-gray-1000",
       "group": "buttons/theme/tertiary",
       "collection": "semantic-tokens",
       "name": "buttons-theme-tertiary-active",
@@ -858,7 +858,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
+      "value": "colors-gray-gray-800",
       "group": "buttons/theme/tertiary",
       "collection": "semantic-tokens",
       "name": "buttons-theme-tertiary-focus",
@@ -866,7 +866,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "buttons/theme/tertiary",
       "collection": "semantic-tokens",
       "name": "buttons-theme-tertiary-disabled",
@@ -882,7 +882,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
+      "value": "colors-gray-gray-800",
       "group": "buttons/theme/success",
       "collection": "semantic-tokens",
       "name": "buttons-theme-success-hover",
@@ -890,7 +890,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
+      "value": "colors-gray-gray-1000",
       "group": "buttons/theme/success",
       "collection": "semantic-tokens",
       "name": "buttons-theme-success-active",
@@ -898,7 +898,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
+      "value": "colors-gray-gray-800",
       "group": "buttons/theme/success",
       "collection": "semantic-tokens",
       "name": "buttons-theme-success-focus",
@@ -906,7 +906,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "buttons/theme/success",
       "collection": "semantic-tokens",
       "name": "buttons-theme-success-disabled",
@@ -922,7 +922,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
+      "value": "colors-gray-gray-800",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-hover",
@@ -930,7 +930,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
+      "value": "colors-gray-gray-1000",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-active",
@@ -938,7 +938,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
+      "value": "colors-gray-gray-800",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-focus",
@@ -946,7 +946,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-disabled",
@@ -1090,7 +1090,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "buttons/theme/primary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-border-disabled",
@@ -1098,7 +1098,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
       "group": "buttons/theme/primary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-text-default",
@@ -1130,7 +1130,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "buttons/theme/primary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-text-disabled",
@@ -1138,7 +1138,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-400",
+      "value": "colors-gray-gray-400",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-default",
@@ -1146,7 +1146,7 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-hover",
@@ -1154,7 +1154,7 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-1000",
+      "value": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-active",
@@ -1170,7 +1170,7 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-disabled",
@@ -1202,7 +1202,7 @@
     },
     {
       "alias": true,
-      "value": "colors-brand-primary",
+      "value": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-text-focus",
@@ -1239,6 +1239,126 @@
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-padding-icon-only",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-100",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-100",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-tertiary",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-disabled",
+      "type": "COLOR"
     }
   ],
   "typography": [
@@ -1290,18 +1410,8 @@
       "font-size": "19px",
       "line-height": "28.5px"
     },
-    {
-      "name": "body-regular",
-      "font-family": "Roboto",
-      "font-size": "16px",
-      "line-height": "24px"
-    },
-    {
-      "name": "body-small",
-      "font-family": "Roboto",
-      "font-size": "14px",
-      "line-height": "21px"
-    },
+    { "name": "body-regular", "font-family": "Roboto", "font-size": "16px", "line-height": "24px" },
+    { "name": "body-small", "font-family": "Roboto", "font-size": "14px", "line-height": "21px" },
     {
       "name": "body-regularbold",
       "font-family": "Roboto",
@@ -1338,12 +1448,7 @@
       "font-size": "16px",
       "line-height": "24px"
     },
-    {
-      "name": "links-small",
-      "font-family": "Roboto",
-      "font-size": "14px",
-      "line-height": "21px"
-    },
+    { "name": "links-small", "font-family": "Roboto", "font-size": "14px", "line-height": "21px" },
     {
       "name": "links-extrasmall",
       "font-family": "Inter",
@@ -1386,26 +1491,12 @@
       "font-size": "16px",
       "line-height": "24px"
     },
-    {
-      "name": "buttons-large",
-      "font-family": "Roboto",
-      "font-size": "16px",
-      "line-height": "24px"
-    }
+    { "name": "buttons-large", "font-family": "Roboto", "font-size": "16px", "line-height": "24px" }
   ],
   "boxShadows": [
     { "name": "drop-shadow", "value": "0px 4px 4px 0px rgba(0, 0, 0, 0.2500)" },
-    {
-      "name": "focus",
-      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8"
-    },
-    {
-      "name": "elevation-2px",
-      "value": "0px 1px 5px 0px rgba(0, 0, 0, 0.2000)"
-    },
-    {
-      "name": "elevation-4px",
-      "value": "0px 4px 10px 0px rgba(0, 0, 0, 0.1400)"
-    }
+    { "name": "focus", "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8" },
+    { "name": "elevation-2px", "value": "0px 1px 5px 0px rgba(0, 0, 0, 0.2000)" },
+    { "name": "elevation-4px", "value": "0px 4px 10px 0px rgba(0, 0, 0, 0.1400)" }
   ]
 }
