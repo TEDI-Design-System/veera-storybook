@@ -1,0 +1,149 @@
+@mixin headings-large-h1 {
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+@mixin headings-large-h2 {
+  font-family: Roboto;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+@mixin headings-large-h3 {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin headings-large-h4 {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@mixin headings-large-h5 {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@mixin headings-large-h6 {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin headings-small-h1mobile {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin headings-small-h3mobile {
+  font-family: Roboto;
+  font-size: 19px;
+  line-height: 28.5px;
+}
+
+@mixin body-regular {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin body-small {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin body-regularbold {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin body-smallbold {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin body-extrasmall {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: auto;
+}
+
+@mixin subtitles-regular {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin subtitles-small {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin links-regular {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin links-small {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin links-extrasmall {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: auto;
+}
+
+@mixin logo-systemname {
+  font-family: Roboto Condensed;
+  font-size: 13px;
+  line-height: 14px;
+}
+
+@mixin logo-institutionname {
+  font-family: Roboto Condensed;
+  font-size: 13px;
+  line-height: 14px;
+}
+
+@mixin navigation-drawerlabelmobile {
+  font-family: Roboto;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+@mixin navigation-mainmenuitem {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+@mixin buttons-small {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@mixin buttons-medium {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin buttons-large {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
