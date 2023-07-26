@@ -172,6 +172,10 @@
 
     padding: var(--buttons-sizing-sm-padding-y) var(--buttons-sizing-sm-padding-x);
     border-radius: var(--buttons-sizing-sm-corner-radius);
+
+    &.v-button--icon-only {
+      padding: var(--buttons-sizing-sm-padding-icon-only);
+    }
   }
 
   &--md {
@@ -179,6 +183,10 @@
 
     padding: var(--buttons-sizing-md-padding-y) var(--buttons-sizing-md-padding-x);
     border-radius: var(--buttons-sizing-md-corner-radius);
+
+    &.v-button--icon-only {
+      padding: var(--buttons-sizing-md-padding-icon-only);
+    }
   }
 
   &--lg {
@@ -186,5 +194,9 @@
 
     padding: var(--buttons-sizing-lg-padding-y) var(--buttons-sizing-lg-padding-x);
     border-radius: var(--buttons-sizing-lg-corner-radius);
+
+    &.v-button--icon-only {
+      padding: var(--buttons-sizing-lg-padding-icon-only);
+    }
   }
 }

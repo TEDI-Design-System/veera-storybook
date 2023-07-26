@@ -395,161 +395,161 @@
     {
       "alias": false,
       "value": "#f9f9f9",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-100",
+      "name": "colors-gray-gray-100",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#f0f0f2",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-200",
+      "name": "colors-gray-gray-200",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#e1e2e5",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-300",
+      "name": "colors-gray-gray-300",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#d2d3d8",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-400",
+      "name": "colors-gray-gray-400",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#7d808d",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-500",
+      "name": "colors-gray-gray-500",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#5d6071",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-600",
+      "name": "colors-gray-gray-600",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#4a4d5a",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-700",
+      "name": "colors-gray-gray-700",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#383a44",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-800",
+      "name": "colors-gray-gray-800",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#25262d",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-900",
+      "name": "colors-gray-gray-900",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#131317",
-      "group": "colors/grays",
+      "group": "colors/gray",
       "collection": "primitive-tokens",
-      "name": "colors-grays-gray-1000",
+      "name": "colors-gray-gray-1000",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#fff8e7",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-100",
+      "name": "colors-yellow-yellow-100",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#fff0cf",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-200",
+      "name": "colors-yellow-yellow-200",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#ffe1a0",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-300",
+      "name": "colors-yellow-yellow-300",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#ffd370",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-400",
+      "name": "colors-yellow-yellow-400",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#ffc441",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-500",
+      "name": "colors-yellow-yellow-500",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#ffb511",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-600",
+      "name": "colors-yellow-yellow-600",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#cc910e",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-700",
+      "name": "colors-yellow-yellow-700",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#996d0a",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-800",
+      "name": "colors-yellow-yellow-800",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#664807",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-900",
+      "name": "colors-yellow-yellow-900",
       "type": "COLOR"
     },
     {
       "alias": false,
       "value": "#332403",
-      "group": "colors/yellows",
+      "group": "colors/yellow",
       "collection": "primitive-tokens",
-      "name": "colors-yellows-yellow-1000",
+      "name": "colors-yellow-yellow-1000",
       "type": "COLOR"
     },
     {
@@ -587,6 +587,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
       "group": "colors/brand",
       "collection": "semantic-tokens",
       "name": "colors-brand-primary",
@@ -594,7 +595,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
+      "value": "colors-gray-gray-1000",
+      "darkModeValue": "colors-gray-gray-1000",
       "group": "colors/text",
       "collection": "semantic-tokens",
       "name": "colors-text-primary",
@@ -602,7 +604,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
       "group": "colors",
       "collection": "semantic-tokens",
       "name": "colors-borders",
@@ -611,6 +614,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-200",
+      "darkModeValue": "colors-blue-blue-200",
       "group": "colors/info",
       "collection": "semantic-tokens",
       "name": "colors-info-backround",
@@ -619,6 +623,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
       "group": "colors/info",
       "collection": "semantic-tokens",
       "name": "colors-info-border",
@@ -627,6 +632,7 @@
     {
       "alias": true,
       "value": "colors-green-green-100",
+      "darkModeValue": "colors-green-green-100",
       "group": "colors/success",
       "collection": "semantic-tokens",
       "name": "colors-success-backround",
@@ -635,6 +641,7 @@
     {
       "alias": true,
       "value": "colors-green-green-600",
+      "darkModeValue": "colors-green-green-600",
       "group": "colors/success",
       "collection": "semantic-tokens",
       "name": "colors-success-border",
@@ -642,7 +649,8 @@
     },
     {
       "alias": true,
-      "value": "colors-yellows-yellow-100",
+      "value": "colors-yellow-yellow-100",
+      "darkModeValue": "colors-yellow-yellow-100",
       "group": "colors/warning",
       "collection": "semantic-tokens",
       "name": "colors-warning-background",
@@ -650,7 +658,8 @@
     },
     {
       "alias": true,
-      "value": "colors-yellows-yellow-1000",
+      "value": "colors-yellow-yellow-1000",
+      "darkModeValue": "colors-yellow-yellow-1000",
       "group": "colors/warning",
       "collection": "semantic-tokens",
       "name": "colors-warning-border",
@@ -659,6 +668,7 @@
     {
       "alias": true,
       "value": "colors-red-red-100",
+      "darkModeValue": "colors-red-red-100",
       "group": "colors/error",
       "collection": "semantic-tokens",
       "name": "colors-error-background",
@@ -667,6 +677,7 @@
     {
       "alias": true,
       "value": "colors-red-red-1000",
+      "darkModeValue": "colors-red-red-1000",
       "group": "colors/error",
       "collection": "semantic-tokens",
       "name": "colors-error-border",
@@ -675,14 +686,15 @@
     {
       "alias": false,
       "value": "#ffffff",
-      "group": "colors/neutrals",
+      "group": "colors/neutral",
       "collection": "primitive-tokens",
-      "name": "colors-neutrals-white",
+      "name": "colors-neutral-white",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-primary",
@@ -690,7 +702,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-700",
+      "value": "colors-gray-gray-700",
+      "darkModeValue": "colors-gray-gray-700",
       "group": "colors/text",
       "collection": "semantic-tokens",
       "name": "colors-text-secondary",
@@ -698,7 +711,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-500",
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-500",
       "group": "colors/text",
       "collection": "semantic-tokens",
       "name": "colors-text-tertiary",
@@ -706,7 +720,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-100",
+      "value": "colors-gray-gray-100",
+      "darkModeValue": "colors-gray-gray-100",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-secondary",
@@ -714,7 +729,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-tertiary",
@@ -722,7 +738,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-300",
+      "value": "colors-gray-gray-300",
+      "darkModeValue": "colors-gray-gray-300",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-quadrary",
@@ -730,7 +747,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-400",
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-400",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-quinary",
@@ -739,6 +757,7 @@
     {
       "alias": true,
       "value": "colors-brand-primary",
+      "darkModeValue": "colors-brand-primary",
       "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-background-default",
@@ -747,6 +766,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-900",
+      "darkModeValue": "colors-blue-blue-900",
       "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-background-hover",
@@ -755,6 +775,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-1000",
+      "darkModeValue": "colors-blue-blue-1000",
       "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-background-active",
@@ -763,6 +784,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-900",
+      "darkModeValue": "colors-blue-blue-900",
       "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-background-focus",
@@ -770,7 +792,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
       "group": "buttons/theme/primary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-background-disabled",
@@ -778,7 +801,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
+      "value": "colors-gray-gray-1000",
+      "darkModeValue": "colors-gray-gray-1000",
       "group": "colors/brand",
       "collection": "semantic-tokens",
       "name": "colors-brand-secondary",
@@ -786,7 +810,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-default",
@@ -795,6 +820,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-100",
+      "darkModeValue": "colors-blue-blue-100",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-hover",
@@ -803,6 +829,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-200",
+      "darkModeValue": "colors-blue-blue-200",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-active",
@@ -810,7 +837,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-focus",
@@ -818,7 +846,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-disabled",
@@ -826,7 +855,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
       "group": "colors/brand",
       "collection": "semantic-tokens",
       "name": "colors-brand-tertiary",
@@ -834,87 +864,53 @@
     },
     {
       "alias": true,
-      "value": "colors-brand-secondary",
-      "group": "buttons/theme/tertiary",
+      "value": "colors-green-green-600",
+      "darkModeValue": "colors-green-green-600",
+      "group": "buttons/theme/success/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-tertiary-default",
+      "name": "buttons-theme-success-background-default",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
-      "group": "buttons/theme/tertiary",
+      "value": "colors-green-green-800",
+      "darkModeValue": "colors-green-green-800",
+      "group": "buttons/theme/success/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-tertiary-hover",
+      "name": "buttons-theme-success-background-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
-      "group": "buttons/theme/tertiary",
+      "value": "colors-green-green-900",
+      "darkModeValue": "colors-green-green-900",
+      "group": "buttons/theme/success/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-tertiary-active",
+      "name": "buttons-theme-success-background-active",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
-      "group": "buttons/theme/tertiary",
+      "value": "colors-green-green-600",
+      "darkModeValue": "colors-green-green-600",
+      "group": "buttons/theme/success/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-tertiary-focus",
+      "name": "buttons-theme-success-background-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
-      "group": "buttons/theme/tertiary",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "buttons/theme/success/background",
       "collection": "semantic-tokens",
-      "name": "buttons-theme-tertiary-disabled",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-brand-secondary",
-      "group": "buttons/theme/success",
-      "collection": "semantic-tokens",
-      "name": "buttons-theme-success-default",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-grays-gray-800",
-      "group": "buttons/theme/success",
-      "collection": "semantic-tokens",
-      "name": "buttons-theme-success-hover",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-grays-gray-1000",
-      "group": "buttons/theme/success",
-      "collection": "semantic-tokens",
-      "name": "buttons-theme-success-active",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-grays-gray-800",
-      "group": "buttons/theme/success",
-      "collection": "semantic-tokens",
-      "name": "buttons-theme-success-focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-grays-gray-200",
-      "group": "buttons/theme/success",
-      "collection": "semantic-tokens",
-      "name": "buttons-theme-success-disabled",
+      "name": "buttons-theme-success-background-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-brand-secondary",
+      "darkModeValue": "colors-brand-secondary",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-default",
@@ -922,7 +918,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
+      "value": "colors-gray-gray-800",
+      "darkModeValue": "colors-gray-gray-800",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-hover",
@@ -930,7 +927,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-1000",
+      "value": "colors-gray-gray-1000",
+      "darkModeValue": "colors-gray-gray-1000",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-active",
@@ -938,7 +936,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-800",
+      "value": "colors-gray-gray-800",
+      "darkModeValue": "colors-gray-gray-800",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-focus",
@@ -946,7 +945,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
       "group": "buttons/theme/error",
       "collection": "semantic-tokens",
       "name": "buttons-theme-error-disabled",
@@ -979,6 +979,7 @@
     {
       "alias": true,
       "value": "spacing-05",
+      "darkModeValue": "spacing-05",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-padding-x",
@@ -986,7 +987,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-padding-y",
@@ -995,6 +997,7 @@
     {
       "alias": true,
       "value": "radius-01",
+      "darkModeValue": "radius-01",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-corner-radius",
@@ -1003,6 +1006,7 @@
     {
       "alias": true,
       "value": "spacing-06",
+      "darkModeValue": "spacing-06",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-padding-x",
@@ -1011,6 +1015,7 @@
     {
       "alias": true,
       "value": "spacing-04",
+      "darkModeValue": "spacing-04",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-padding-y",
@@ -1019,6 +1024,7 @@
     {
       "alias": true,
       "value": "radius-02",
+      "darkModeValue": "radius-02",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-corner-radius",
@@ -1027,6 +1033,7 @@
     {
       "alias": true,
       "value": "spacing-08",
+      "darkModeValue": "spacing-08",
       "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-lg-padding-x",
@@ -1035,6 +1042,7 @@
     {
       "alias": true,
       "value": "spacing-05",
+      "darkModeValue": "spacing-05",
       "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-lg-padding-y",
@@ -1043,6 +1051,7 @@
     {
       "alias": true,
       "value": "radius-03",
+      "darkModeValue": "radius-03",
       "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-lg-corner-radius",
@@ -1051,6 +1060,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-400",
+      "darkModeValue": "colors-blue-blue-400",
       "group": "colors",
       "collection": "semantic-tokens",
       "name": "colors-button-borders-focus",
@@ -1059,6 +1069,7 @@
     {
       "alias": true,
       "value": "colors-brand-primary",
+      "darkModeValue": "colors-brand-primary",
       "group": "buttons/theme/primary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-border-default",
@@ -1067,6 +1078,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-900",
+      "darkModeValue": "colors-blue-blue-900",
       "group": "buttons/theme/primary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-border-hover",
@@ -1075,6 +1087,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-1000",
+      "darkModeValue": "colors-blue-blue-1000",
       "group": "buttons/theme/primary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-border-active",
@@ -1083,6 +1096,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-900",
+      "darkModeValue": "colors-blue-blue-900",
       "group": "buttons/theme/primary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-border-focus",
@@ -1090,7 +1104,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
       "group": "buttons/theme/primary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-border-disabled",
@@ -1098,7 +1113,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutrals-white",
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
       "group": "buttons/theme/primary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-text-default",
@@ -1107,6 +1123,7 @@
     {
       "alias": true,
       "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
       "group": "buttons/theme/primary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-text-hover",
@@ -1115,6 +1132,7 @@
     {
       "alias": true,
       "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
       "group": "buttons/theme/primary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-text-active",
@@ -1123,6 +1141,7 @@
     {
       "alias": true,
       "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
       "group": "buttons/theme/primary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-text-focus",
@@ -1130,7 +1149,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-500",
       "group": "buttons/theme/primary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-primary-text-disabled",
@@ -1138,7 +1158,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-400",
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-400",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-default",
@@ -1146,7 +1167,8 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-hover",
@@ -1154,7 +1176,8 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-1000",
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-active",
@@ -1163,6 +1186,7 @@
     {
       "alias": true,
       "value": "colors-button-borders-focus",
+      "darkModeValue": "colors-button-borders-focus",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-focus",
@@ -1170,7 +1194,8 @@
     },
     {
       "alias": true,
-      "value": "colors-grays-gray-200",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
       "group": "buttons/theme/secondary/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-border-disabled",
@@ -1179,6 +1204,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-text-default",
@@ -1187,6 +1213,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-text-hover",
@@ -1195,6 +1222,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-text-active",
@@ -1202,7 +1230,8 @@
     },
     {
       "alias": true,
-      "value": "colors-brand-primary",
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
       "group": "buttons/theme/secondary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-text-focus",
@@ -1210,7 +1239,8 @@
     },
     {
       "alias": true,
-      "value": "colors-text-tertiary",
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-500",
       "group": "buttons/theme/secondary/text",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-text-disabled",
@@ -1219,6 +1249,7 @@
     {
       "alias": true,
       "value": "spacing-00",
+      "darkModeValue": "spacing-00",
       "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-lg-padding-icon-only",
@@ -1227,6 +1258,7 @@
     {
       "alias": true,
       "value": "spacing-00",
+      "darkModeValue": "spacing-00",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-padding-icon-only",
@@ -1235,177 +1267,543 @@
     {
       "alias": true,
       "value": "spacing-00",
+      "darkModeValue": "spacing-00",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-padding-icon-only",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-100",
+      "darkModeValue": "colors-blue-blue-100",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkModeValue": "colors-blue-blue-200",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "buttons/theme/tertiary/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-100",
+      "darkModeValue": "colors-blue-blue-100",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkModeValue": "colors-blue-blue-200",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "buttons/theme/tertiary/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-500",
+      "group": "buttons/theme/tertiary/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-tertiary-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-green-green-600",
+      "darkModeValue": "colors-green-green-600",
+      "group": "buttons/theme/success/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-green-green-800",
+      "darkModeValue": "colors-green-green-800",
+      "group": "buttons/theme/success/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-green-green-900",
+      "darkModeValue": "colors-green-green-900",
+      "group": "buttons/theme/success/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-green-green-600",
+      "darkModeValue": "colors-green-green-600",
+      "group": "buttons/theme/success/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "buttons/theme/success/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "buttons/theme/success/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/success/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/success/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/success/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-500",
+      "group": "buttons/theme/success/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-success-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-600",
+      "darkModeValue": "colors-red-red-600",
+      "group": "buttons/theme/error/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-800",
+      "darkModeValue": "colors-red-red-800",
+      "group": "buttons/theme/error/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-900",
+      "darkModeValue": "colors-red-red-900",
+      "group": "buttons/theme/error/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-600",
+      "darkModeValue": "colors-red-red-600",
+      "group": "buttons/theme/error/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "buttons/theme/error/background",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "buttons/theme/error/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/error/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/error/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-primary-text-default",
+      "darkModeValue": "buttons-theme-primary-text-default",
+      "group": "buttons/theme/error/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-500",
+      "group": "buttons/theme/error/text",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-600",
+      "darkModeValue": "colors-red-red-600",
+      "group": "buttons/theme/error/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-800",
+      "darkModeValue": "colors-red-red-800",
+      "group": "buttons/theme/error/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-900",
+      "darkModeValue": "colors-red-red-900",
+      "group": "buttons/theme/error/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-600",
+      "darkModeValue": "colors-red-red-600",
+      "group": "buttons/theme/error/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "buttons/theme/error/border",
+      "collection": "semantic-tokens",
+      "name": "buttons-theme-error-border-disabled",
+      "type": "COLOR"
     }
   ],
   "typography": [
     {
       "name": "headings-large-h1",
       "font-family": "Roboto",
-      "font-size": "32px",
-      "line-height": "48px"
+      "font-size": "28px",
+      "line-height": "125%"
     },
     {
       "name": "headings-large-h2",
       "font-family": "Roboto",
-      "font-size": "28px",
-      "line-height": "42px"
+      "font-size": "25px",
+      "line-height": "127.99999713897705%"
     },
     {
       "name": "headings-large-h3",
       "font-family": "Roboto",
-      "font-size": "24px",
-      "line-height": "36px"
+      "font-size": "22px",
+      "line-height": "145.00000476837158%"
     },
     {
       "name": "headings-large-h4",
       "font-family": "Roboto",
       "font-size": "20px",
-      "line-height": "30px"
+      "line-height": "120.00000476837158%"
     },
     {
       "name": "headings-large-h5",
       "font-family": "Roboto",
       "font-size": "18px",
-      "line-height": "27px"
+      "line-height": "133.00000429153442%"
     },
     {
       "name": "headings-large-h6",
       "font-family": "Roboto",
       "font-size": "16px",
-      "line-height": "24px"
+      "line-height": "150%"
     },
     {
-      "name": "headings-small-h1mobile",
+      "name": "headings-large-display",
+      "font-family": "Roboto",
+      "font-size": "32px",
+      "line-height": "125%"
+    },
+    {
+      "name": "headings-small-h1",
+      "font-family": "Roboto",
+      "font-size": "27px",
+      "line-height": "117.99999475479126%"
+    },
+    {
+      "name": "headings-small-h2",
       "font-family": "Roboto",
       "font-size": "24px",
-      "line-height": "36px"
+      "line-height": "133.00000429153442%"
     },
     {
-      "name": "headings-small-h3mobile",
+      "name": "headings-small-h3",
+      "font-family": "Roboto",
+      "font-size": "22px",
+      "line-height": "145.00000476837158%"
+    },
+    {
+      "name": "headings-small-h4",
       "font-family": "Roboto",
       "font-size": "19px",
-      "line-height": "28.5px"
+      "line-height": "125.99999904632568%"
     },
     {
-      "name": "body-regular",
+      "name": "headings-small-h5",
+      "font-family": "Roboto",
+      "font-size": "17px",
+      "line-height": "140.9999966621399%"
+    },
+    {
+      "name": "headings-small-h6",
       "font-family": "Roboto",
       "font-size": "16px",
-      "line-height": "24px"
+      "line-height": "150%"
     },
+    {
+      "name": "headings-small-display",
+      "font-family": "Roboto",
+      "font-size": "30px",
+      "line-height": "133.00000429153442%"
+    },
+    { "name": "body-regular", "font-family": "Roboto", "font-size": "16px", "line-height": "150%" },
     {
       "name": "body-small",
       "font-family": "Roboto",
       "font-size": "14px",
-      "line-height": "21px"
+      "line-height": "171.00000381469727%"
     },
     {
       "name": "body-regularbold",
       "font-family": "Roboto",
       "font-size": "16px",
-      "line-height": "24px"
+      "line-height": "150%"
     },
     {
       "name": "body-smallbold",
       "font-family": "Roboto",
       "font-size": "14px",
-      "line-height": "21px"
+      "line-height": "171.00000381469727%"
     },
     {
       "name": "body-extrasmall",
-      "font-family": "Inter",
+      "font-family": "Roboto",
       "font-size": "12px",
-      "line-height": "auto"
+      "line-height": "133.00000429153442%"
     },
     {
       "name": "subtitles-regular",
       "font-family": "Roboto",
       "font-size": "16px",
-      "line-height": "24px"
+      "line-height": "150%"
     },
     {
       "name": "subtitles-small",
       "font-family": "Roboto",
       "font-size": "14px",
-      "line-height": "21px"
+      "line-height": "171.00000381469727%"
     },
     {
       "name": "links-regular",
       "font-family": "Roboto",
       "font-size": "16px",
-      "line-height": "24px"
+      "line-height": "150%"
     },
     {
       "name": "links-small",
       "font-family": "Roboto",
       "font-size": "14px",
-      "line-height": "21px"
+      "line-height": "171.00000381469727%"
     },
     {
       "name": "links-extrasmall",
-      "font-family": "Inter",
+      "font-family": "Roboto",
       "font-size": "12px",
-      "line-height": "auto"
-    },
-    {
-      "name": "logo-systemname",
-      "font-family": "Roboto Condensed",
-      "font-size": "13px",
-      "line-height": "14px"
-    },
-    {
-      "name": "logo-institutionname",
-      "font-family": "Roboto Condensed",
-      "font-size": "13px",
-      "line-height": "14px"
+      "line-height": "133.00000429153442%"
     },
     {
       "name": "navigation-drawerlabelmobile",
       "font-family": "Roboto",
       "font-size": "10px",
-      "line-height": "15px"
+      "line-height": "160.0000023841858%"
     },
     {
       "name": "navigation-mainmenuitem",
       "font-family": "Roboto",
       "font-size": "18px",
-      "line-height": "16px"
+      "line-height": "133.00000429153442%"
     },
     {
       "name": "buttons-small",
       "font-family": "Roboto",
       "font-size": "14px",
-      "line-height": "21px"
+      "line-height": "171.00000381469727%"
     },
     {
       "name": "buttons-medium",
       "font-family": "Roboto",
       "font-size": "16px",
-      "line-height": "24px"
+      "line-height": "150%"
     },
-    {
-      "name": "buttons-large",
-      "font-family": "Roboto",
-      "font-size": "16px",
-      "line-height": "24px"
-    }
+    { "name": "buttons-large", "font-family": "Roboto", "font-size": "16px", "line-height": "150%" }
   ],
   "boxShadows": [
     { "name": "drop-shadow", "value": "0px 4px 4px 0px rgba(0, 0, 0, 0.2500)" },
-    {
-      "name": "focus",
-      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8"
-    },
-    {
-      "name": "elevation-2px",
-      "value": "0px 1px 5px 0px rgba(0, 0, 0, 0.2000)"
-    },
-    {
-      "name": "elevation-4px",
-      "value": "0px 4px 10px 0px rgba(0, 0, 0, 0.1400)"
-    }
+    { "name": "focus", "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8" },
+    { "name": "elevation-2px", "value": "0px 1px 5px 0px rgba(0, 0, 0, 0.2000)" },
+    { "name": "elevation-4px", "value": "0px 4px 10px 0px rgba(0, 0, 0, 0.1400)" }
   ]
 }
