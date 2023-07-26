@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import './spacing.stories.css';
+import './spacing.stories.scss';
 import '@scss/utilities/spacing.scss';
 
 export interface SpacingProps {
