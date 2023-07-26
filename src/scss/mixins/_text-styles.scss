@@ -2,150 +2,174 @@
 
 @mixin headings-large-h1 {
   font-family: Roboto;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 28px;
+  line-height: 125%;
 }
 
 @mixin headings-large-h2 {
   font-family: Roboto;
-  font-size: 28px;
-  line-height: 42px;
+  font-size: 25px;
+  line-height: 127.99999713897705%;
 }
 
 @mixin headings-large-h3 {
   font-family: Roboto;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 145.00000476837158%;
 }
 
 @mixin headings-large-h4 {
   font-family: Roboto;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 120.00000476837158%;
 }
 
 @mixin headings-large-h5 {
   font-family: Roboto;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 133.00000429153442%;
 }
 
 @mixin headings-large-h6 {
   font-family: Roboto;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
 
-@mixin headings-small-h1mobile {
+@mixin headings-large-display {
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 125%;
+}
+
+@mixin headings-small-h1 {
+  font-family: Roboto;
+  font-size: 27px;
+  line-height: 117.99999475479126%;
+}
+
+@mixin headings-small-h2 {
   font-family: Roboto;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 133.00000429153442%;
 }
 
-@mixin headings-small-h3mobile {
+@mixin headings-small-h3 {
+  font-family: Roboto;
+  font-size: 22px;
+  line-height: 145.00000476837158%;
+}
+
+@mixin headings-small-h4 {
   font-family: Roboto;
   font-size: 19px;
-  line-height: 28.5px;
+  line-height: 125.99999904632568%;
+}
+
+@mixin headings-small-h5 {
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 140.9999966621399%;
+}
+
+@mixin headings-small-h6 {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+@mixin headings-small-display {
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 133.00000429153442%;
 }
 
 @mixin body-regular {
   font-family: Roboto;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
 
 @mixin body-small {
   font-family: Roboto;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 171.00000381469727%;
 }
 
 @mixin body-regularbold {
   font-family: Roboto;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
 
 @mixin body-smallbold {
   font-family: Roboto;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 171.00000381469727%;
 }
 
 @mixin body-extrasmall {
-  font-family: Inter;
+  font-family: Roboto;
   font-size: 12px;
-  line-height: auto;
+  line-height: 133.00000429153442%;
 }
 
 @mixin subtitles-regular {
   font-family: Roboto;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
 
 @mixin subtitles-small {
   font-family: Roboto;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 171.00000381469727%;
 }
 
 @mixin links-regular {
   font-family: Roboto;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
 
 @mixin links-small {
   font-family: Roboto;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 171.00000381469727%;
 }
 
 @mixin links-extrasmall {
-  font-family: Inter;
+  font-family: Roboto;
   font-size: 12px;
-  line-height: auto;
-}
-
-@mixin logo-systemname {
-  font-family: Roboto Condensed;
-  font-size: 13px;
-  line-height: 14px;
-}
-
-@mixin logo-institutionname {
-  font-family: Roboto Condensed;
-  font-size: 13px;
-  line-height: 14px;
+  line-height: 133.00000429153442%;
 }
 
 @mixin navigation-drawerlabelmobile {
   font-family: Roboto;
   font-size: 10px;
-  line-height: 15px;
+  line-height: 160.0000023841858%;
 }
 
 @mixin navigation-mainmenuitem {
   font-family: Roboto;
   font-size: 18px;
-  line-height: 16px;
+  line-height: 133.00000429153442%;
 }
 
 @mixin buttons-small {
   font-family: Roboto;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 171.00000381469727%;
 }
 
 @mixin buttons-medium {
   font-family: Roboto;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
 
 @mixin buttons-large {
   font-family: Roboto;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 }
