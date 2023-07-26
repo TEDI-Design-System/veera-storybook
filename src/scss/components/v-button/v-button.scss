@@ -1,6 +1,7 @@
 @use '../../mixins/text-styles' as text-styles;
+@use '../../constants' as constants;
 
-.v-button {
+.#{constants.$veera-prefix}-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -14,189 +15,192 @@
   }
 
   &:focus {
-    box-shadow: var(--box-shadow-focus);
+    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus);
   }
 
   &--primary {
-    background: var(--buttons-theme-primary-background-default);
-    border-color: var(--buttons-theme-primary-border-default);
-    color: var(--buttons-theme-primary-text-default);
+    background: var(--#{constants.$veera-prefix}-buttons-theme-primary-background-default);
+    border-color: var(--#{constants.$veera-prefix}-buttons-theme-primary-border-default);
+    color: var(--#{constants.$veera-prefix}-buttons-theme-primary-text-default);
 
     &:hover {
-      background: var(--buttons-theme-primary-background-hover);
-      border-color: var(--buttons-theme-primary-border-hover);
-      color: var(--buttons-theme-primary-text-hover);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-primary-background-hover);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-primary-border-hover);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-primary-text-hover);
     }
 
     &:active {
-      background: var(--buttons-theme-primary-background-active);
-      border-color: var(--buttons-theme-primary-border-active);
-      color: var(--buttons-theme-primary-text-active);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-primary-background-active);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-primary-border-active);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-primary-text-active);
     }
 
     &:focus {
-      background: var(--buttons-theme-primary-background-focus);
-      border-color: var(--buttons-theme-primary-border-focus);
-      color: var(--buttons-theme-primary-text-focus);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-primary-background-focus);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-primary-border-focus);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-primary-text-focus);
     }
 
     &:disabled {
-      background: var(--buttons-theme-primary-background-disabled);
-      border-color: var(--buttons-theme-primary-border-disabled);
-      color: var(--buttons-theme-primary-text-disabled);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-primary-background-disabled);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-primary-border-disabled);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-primary-text-disabled);
     }
   }
 
   &--secondary {
-    background: var(--buttons-theme-secondary-background-default);
-    border-color: var(--buttons-theme-secondary-border-default);
-    color: var(--buttons-theme-secondary-text-default);
+    background: var(--#{constants.$veera-prefix}-buttons-theme-secondary-background-default);
+    border-color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-border-default);
+    color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-text-default);
 
     &:hover {
-      background: var(--buttons-theme-secondary-background-hover);
-      border-color: var(--buttons-theme-secondary-border-hover);
-      color: var(--buttons-theme-secondary-text-hover);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-secondary-background-hover);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-border-hover);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-text-hover);
     }
 
     &:active {
-      background: var(--buttons-theme-secondary-background-active);
-      border-color: var(--buttons-theme-secondary-border-active);
-      color: var(--buttons-theme-secondary-text-active);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-secondary-background-active);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-border-active);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-text-active);
     }
 
     &:focus {
-      background: var(--buttons-theme-secondary-background-focus);
-      border-color: var(--buttons-theme-secondary-border-focus);
-      color: var(--buttons-theme-secondary-text-focus);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-secondary-background-focus);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-border-focus);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-text-focus);
     }
 
     &:disabled {
-      background: var(--buttons-theme-secondary-background-disabled);
-      border-color: var(--buttons-theme-secondary-border-disabled);
-      color: var(--buttons-theme-secondary-text-disabled);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-secondary-background-disabled);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-border-disabled);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-secondary-text-disabled);
     }
   }
 
   &--tertiary {
-    background: var(--buttons-theme-tertiary-background-default);
-    border-color: var(--buttons-theme-tertiary-border-default);
-    color: var(--buttons-theme-tertiary-text-default);
+    background: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-background-default);
+    border-color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-border-default);
+    color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-text-default);
 
     &:hover {
-      background: var(--buttons-theme-tertiary-background-hover);
-      border-color: var(--buttons-theme-tertiary-border-hover);
-      color: var(--buttons-theme-tertiary-text-hover);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-background-hover);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-border-hover);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-text-hover);
     }
 
     &:active {
-      background: var(--buttons-theme-tertiary-background-active);
-      border-color: var(--buttons-theme-tertiary-border-active);
-      color: var(--buttons-theme-tertiary-text-active);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-background-active);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-border-active);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-text-active);
     }
 
     &:focus {
-      background: var(--buttons-theme-tertiary-background-focus);
-      border-color: var(--buttons-theme-tertiary-border-focus);
-      color: var(--buttons-theme-tertiary-text-focus);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-background-focus);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-border-focus);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-text-focus);
     }
 
     &:disabled {
-      background: var(--buttons-theme-tertiary-background-disabled);
-      border-color: var(--buttons-theme-tertiary-border-disabled);
-      color: var(--buttons-theme-tertiary-text-disabled);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-background-disabled);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-border-disabled);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-tertiary-text-disabled);
     }
   }
 
   &--success {
-    background: var(--buttons-theme-success-background-default);
-    border-color: var(--buttons-theme-success-border-default);
-    color: var(--buttons-theme-success-text-default);
+    background: var(--#{constants.$veera-prefix}-buttons-theme-success-background-default);
+    border-color: var(--#{constants.$veera-prefix}-buttons-theme-success-border-default);
+    color: var(--#{constants.$veera-prefix}-buttons-theme-success-text-default);
 
     &:hover {
-      background: var(--buttons-theme-success-background-hover);
-      border-color: var(--buttons-theme-success-border-hover);
-      color: var(--buttons-theme-success-text-hover);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-success-background-hover);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-success-border-hover);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-success-text-hover);
     }
 
     &:active {
-      background: var(--buttons-theme-success-background-active);
-      border-color: var(--buttons-theme-success-border-active);
-      color: var(--buttons-theme-success-text-active);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-success-background-active);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-success-border-active);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-success-text-active);
     }
 
     &:focus {
-      background: var(--buttons-theme-success-background-focus);
-      border-color: var(--buttons-theme-success-border-focus);
-      color: var(--buttons-theme-success-text-focus);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-success-background-focus);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-success-border-focus);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-success-text-focus);
     }
 
     &:disabled {
-      background: var(--buttons-theme-success-background-disabled);
-      border-color: var(--buttons-theme-success-border-disabled);
-      color: var(--buttons-theme-success-text-disabled);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-success-background-disabled);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-success-border-disabled);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-success-text-disabled);
     }
   }
 
   &--error {
-    background: var(--buttons-theme-error-background-default);
-    border-color: var(--buttons-theme-error-border-default);
-    color: var(--buttons-theme-error-text-default);
+    background: var(--#{constants.$veera-prefix}-buttons-theme-error-background-default);
+    border-color: var(--#{constants.$veera-prefix}-buttons-theme-error-border-default);
+    color: var(--#{constants.$veera-prefix}-buttons-theme-error-text-default);
 
     &:hover {
-      background: var(--buttons-theme-error-background-hover);
-      border-color: var(--buttons-theme-error-border-hover);
-      color: var(--buttons-theme-error-text-hover);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-error-background-hover);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-error-border-hover);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-error-text-hover);
     }
 
     &:active {
-      background: var(--buttons-theme-error-background-active);
-      border-color: var(--buttons-theme-error-border-active);
-      color: var(--buttons-theme-error-text-active);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-error-background-active);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-error-border-active);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-error-text-active);
     }
 
     &:focus {
-      background: var(--buttons-theme-error-background-focus);
-      border-color: var(--buttons-theme-error-border-focus);
-      color: var(--buttons-theme-error-text-focus);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-error-background-focus);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-error-border-focus);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-error-text-focus);
     }
 
     &:disabled {
-      background: var(--buttons-theme-error-background-disabled);
-      border-color: var(--buttons-theme-error-border-disabled);
-      color: var(--buttons-theme-error-text-disabled);
+      background: var(--#{constants.$veera-prefix}-buttons-theme-error-background-disabled);
+      border-color: var(--#{constants.$veera-prefix}-buttons-theme-error-border-disabled);
+      color: var(--#{constants.$veera-prefix}-buttons-theme-error-text-disabled);
     }
   }
 
   &--sm {
     @include text-styles.buttons-small;
 
-    padding: var(--buttons-sizing-sm-padding-y) var(--buttons-sizing-sm-padding-x);
-    border-radius: var(--buttons-sizing-sm-corner-radius);
+    padding: var(--#{constants.$veera-prefix}-buttons-sizing-sm-padding-y)
+      var(--#{constants.$veera-prefix}-buttons-sizing-sm-padding-x);
+    border-radius: var(--#{constants.$veera-prefix}-buttons-sizing-sm-corner-radius);
 
-    &.v-button--icon-only {
-      padding: var(--buttons-sizing-sm-padding-icon-only);
+    &.#{constants.$veera-prefix}-button--icon-only {
+      padding: var(--#{constants.$veera-prefix}-buttons-sizing-sm-padding-icon-only);
     }
   }
 
   &--md {
     @include text-styles.buttons-medium;
 
-    padding: var(--buttons-sizing-md-padding-y) var(--buttons-sizing-md-padding-x);
-    border-radius: var(--buttons-sizing-md-corner-radius);
+    padding: var(--#{constants.$veera-prefix}-buttons-sizing-md-padding-y)
+      var(--#{constants.$veera-prefix}-buttons-sizing-md-padding-x);
+    border-radius: var(--#{constants.$veera-prefix}-buttons-sizing-md-corner-radius);
 
-    &.v-button--icon-only {
-      padding: var(--buttons-sizing-md-padding-icon-only);
+    &.#{constants.$veera-prefix}-button--icon-only {
+      padding: var(--#{constants.$veera-prefix}-buttons-sizing-md-padding-icon-only);
     }
   }
 
   &--lg {
     @include text-styles.buttons-large;
 
-    padding: var(--buttons-sizing-lg-padding-y) var(--buttons-sizing-lg-padding-x);
-    border-radius: var(--buttons-sizing-lg-corner-radius);
+    padding: var(--#{constants.$veera-prefix}-buttons-sizing-lg-padding-y)
+      var(--#{constants.$veera-prefix}-buttons-sizing-lg-padding-x);
+    border-radius: var(--#{constants.$veera-prefix}-buttons-sizing-lg-corner-radius);
 
-    &.v-button--icon-only {
-      padding: var(--buttons-sizing-lg-padding-icon-only);
+    &.#{constants.$veera-prefix}-button--icon-only {
+      padding: var(--#{constants.$veera-prefix}-buttons-sizing-lg-padding-icon-only);
     }
   }
 }

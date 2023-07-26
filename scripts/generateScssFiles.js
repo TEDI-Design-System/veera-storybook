@@ -6,7 +6,7 @@ const prefix = scssContants['veera-prefix'];
 const autoGenWarning = '// NB! This file is auto generated\n\n';
 
 const getVarRow = (variable) => {
-  const value = variable.alias ? `var(--${variable.value})` : variable.value;
+  const value = variable.alias ? `var(--${prefix}-${variable.value})` : variable.value;
   return `--${prefix}-${variable.name}: ${value};`;
 };
 
