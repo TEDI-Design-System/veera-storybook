@@ -12,7 +12,7 @@ const meta = {
     label: { control: 'text' },
     variant: {
       control: { type: 'select' },
-      options: ['primary', 'secondary', 'tertiary', 'success', 'error'],
+      options: ['primary', 'secondary', 'neutral', 'success', 'danger'],
     },
     size: {
       control: { type: 'select' },
@@ -42,8 +42,8 @@ export const Secondary: Story = {
 
 export const Tertiary: Story = {
   args: {
-    variant: 'tertiary',
-    label: 'Tertiary',
+    variant: 'neutral',
+    label: 'Neutral',
   },
 };
 
@@ -54,10 +54,10 @@ export const Success: Story = {
   },
 };
 
-export const Error: Story = {
+export const Danger: Story = {
   args: {
-    variant: 'error',
-    label: 'Error',
+    variant: 'danger',
+    label: 'Danger',
   },
 };
 
