@@ -2,7 +2,7 @@ import { clsx } from 'clsx';
 import '@scss/components/v-button/v-button.scss';
 
 export interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'tertiary' | 'success' | 'error';
+  variant?: 'primary' | 'secondary' | 'neutral' | 'success' | 'danger';
   size?: 'sm' | 'md' | 'lg';
   label: string;
   disabled?: boolean;
