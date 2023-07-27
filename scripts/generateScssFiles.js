@@ -1,19 +1,23 @@
 import designTokensJson from '../design-tokens.json' assert { type: 'json' };
 import fs from 'fs';
+import { scssContants } from '../constants.js';
+
+const prefix = scssContants['veera-prefix'];
+const autoGenWarning = '// NB! This file is auto generated\n\n';
 
 const getVarRow = (variable) => {
-  const value = variable.alias ? `var(--${variable.value})` : variable.value;
-  return `--${variable.name}: ${value};`;
+  const value = variable.alias ? `var(--${prefix}-${variable.value})` : variable.value;
+  return `--${prefix}-${variable.name}: ${value};`;
 };
 
 const getBoxShadowRow = (variable) => {
-  return `--box-shadow-${variable.name}: ${variable.value};`;
+  return `--${prefix}-box-shadow-${variable.name}: ${variable.value};`;
 };
 
 const generateVariables = () => {
   const variables = designTokensJson.variables;
   const boxShadows = designTokensJson.boxShadows;
-  const scss = `:root {
+  const scss = `${autoGenWarning}:root {
   ${variables.map(getVarRow).join('\n  ')}
   ${boxShadows.map(getBoxShadowRow).join('\n  ')}
 }`;
@@ -31,12 +35,20 @@ const getTextStyleMixin = (textStyle) => {
 
 const generateTextStyles = () => {
   const textStyles = designTokensJson.typography;
-  const scss = `${textStyles.map(getTextStyleMixin).join('\n\n')}`;
+  const scss = `${autoGenWarning}${textStyles.map(getTextStyleMixin).join('\n\n')}`;
   fs.writeFileSync('src/scss/mixins/_text-styles.scss', scss);
+};
+
+const generateConstants = () => {
+  const scss = `${autoGenWarning}${Object.entries(scssContants)
+    .map(([key, val]) => `$${key}: ${val};`)
+    .join('\n')}`;
+  fs.writeFileSync('src/scss/_constants.scss', scss);
 };
 
 const generateScssFiles = () => {
   console.log('Generating scss files...');
+  generateConstants();
   generateVariables();
   generateTextStyles();
   console.log('Done!');

@@ -676,8 +676,8 @@
     },
     {
       "alias": true,
-      "value": "colors-red-red-1000",
-      "darkModeValue": "colors-red-red-1000",
+      "value": "colors-red-red-600",
+      "darkModeValue": "colors-red-red-600",
       "group": "colors/error",
       "collection": "semantic-tokens",
       "name": "colors-error-border",
@@ -1797,8 +1797,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-06",
-      "darkModeValue": "spacing-06",
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
       "group": "inputs/sizing/md",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-md-padding-x",
@@ -1806,8 +1806,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-04",
-      "darkModeValue": "spacing-04",
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
       "group": "inputs/sizing/md",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-md-padding-y",
@@ -1815,8 +1815,8 @@
     },
     {
       "alias": true,
-      "value": "radius-02",
-      "darkModeValue": "radius-02",
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
       "group": "inputs/sizing/md",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-md-corner-radius",
@@ -1847,6 +1847,42 @@
       "group": "inputs/sizing/lg",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-lg-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-success-border",
+      "darkModeValue": "colors-success-border",
+      "group": "inputs/feedback",
+      "collection": "semantic-tokens",
+      "name": "inputs-feedback-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-error-border",
+      "darkModeValue": "colors-error-border",
+      "group": "inputs/feedback",
+      "collection": "semantic-tokens",
+      "name": "inputs-feedback-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkModeValue": "spacing-00",
+      "group": "formgroup/sizing",
+      "collection": "semantic-tokens",
+      "name": "formgroup-sizing-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "formgroup/sizing",
+      "collection": "semantic-tokens",
+      "name": "formgroup-sizing-spacing-x",
       "type": "FLOAT"
     }
   ],
