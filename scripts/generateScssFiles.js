@@ -1,4 +1,4 @@
-import designTokensJson from '../design-tokens.json' assert { type: 'json' };
+import tokensJson from '../tokens-for-scss.json' assert { type: 'json' };
 import fs from 'fs';
 import { scssContants } from '../constants.js';
 
@@ -15,8 +15,8 @@ const getBoxShadowRow = (variable) => {
 };
 
 const generateVariables = () => {
-  const variables = designTokensJson.variables;
-  const boxShadows = designTokensJson.boxShadows;
+  const variables = tokensJson.variables;
+  const boxShadows = tokensJson.boxShadows;
   const scss = `${autoGenWarning}:root {
   ${variables.map(getVarRow).join('\n  ')}
   ${boxShadows.map(getBoxShadowRow).join('\n  ')}
@@ -34,7 +34,7 @@ const getTextStyleMixin = (textStyle) => {
 };
 
 const generateTextStyles = () => {
-  const textStyles = designTokensJson.typography;
+  const textStyles = tokensJson.typography;
   const scss = `${autoGenWarning}${textStyles.map(getTextStyleMixin).join('\n\n')}`;
   fs.writeFileSync('src/scss/mixins/_text-styles.scss', scss);
 };
