@@ -1,0 +1,18 @@
+@use '../breakpoints';
+@use 'sass:map';
+
+@mixin breakpoint-up($bp) {
+  $min: map.get(breakpoints.$breakpoints, $bp);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+}
+
+@mixin tablet-and-up {
+  @include breakpoint-up('md') {
+    @content;
+  }
+}

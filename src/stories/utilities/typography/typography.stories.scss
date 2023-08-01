@@ -1,0 +1,11 @@
+.typography-container {
+  font-family: Roboto, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.typography-title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gainsboro;
+}
