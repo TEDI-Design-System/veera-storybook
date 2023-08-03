@@ -1,13 +1,16 @@
 @use '../breakpoints';
+@use '../scss-utils/helper-functions' as helpers;
 @use 'sass:map';
 
 @mixin breakpoint-up($bp) {
   $min: map.get(breakpoints.$breakpoints, $bp);
 
-  @if $min {
+  @if not helpers.is-zero($min) {
     @media (min-width: $min) {
       @content;
     }
+  } @else {
+    @content;
   }
 }
 

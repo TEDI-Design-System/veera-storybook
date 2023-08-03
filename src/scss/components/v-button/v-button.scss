@@ -15,7 +15,7 @@
   }
 
   &:focus {
-    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus);
+    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-button-focus-ring);
   }
 
   &--primary {
