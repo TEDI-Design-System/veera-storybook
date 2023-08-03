@@ -5,3 +5,7 @@
     @return $number;
   }
 }
+
+@function is-zero($value) {
+  @return $value == 0;
+}

@@ -40,7 +40,7 @@ export const Secondary: Story = {
   },
 };
 
-export const Tertiary: Story = {
+export const Neutral: Story = {
   args: {
     variant: 'neutral',
     label: 'Neutral',

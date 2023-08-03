@@ -50,7 +50,7 @@ $margin-classes: 'm', 'my', 'mx', 'ml', 'mr', 'mt', 'mb';
 }
 
 @each $class-prefix, $properties in $class-properties {
-  @for $spacing from 0 through 12 {
+  @for $spacing from 0 through constants.$max-spacing {
     .#{constants.$veera-prefix}-#{$class-prefix}-#{$spacing} {
       @if type-of($properties) == 'list' {
         @each $property in $properties {
