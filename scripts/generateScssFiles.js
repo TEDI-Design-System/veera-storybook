@@ -1,9 +1,8 @@
 import tokensJson from '../tokens-for-scss.json' assert { type: 'json' };
 import fs from 'fs';
 import { scssContants } from '../constants.js';
-
-const prefix = scssContants['veera-prefix'];
-const autoGenWarning = '// NB! This file is auto generated\n\n';
+import { getColorUtilsScss } from './colorUtils.js';
+import { autoGenWarning, prefix } from './constants.js';
 
 const getVarRow = (variable) => {
   const value = variable.alias ? `var(--${prefix}-${variable.value})` : variable.value;
@@ -46,11 +45,17 @@ const generateConstants = () => {
   fs.writeFileSync('src/scss/_constants.scss', scss);
 };
 
+const generateColorUtils = () => {
+  const scss = getColorUtilsScss();
+  fs.writeFileSync('src/scss/utilities/colors.scss', scss);
+};
+
 const generateScssFiles = () => {
   console.log('Generating scss files...');
   generateConstants();
   generateVariables();
   generateTextStyles();
+  generateColorUtils();
   console.log('Done!');
 };
 
