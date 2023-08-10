@@ -1,0 +1,93 @@
+@use '../constants';
+
+$prefix: constants.$veera-prefix;
+
+@mixin switch-knob {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 2px;
+  top: 2px;
+  background: var(--#{$prefix}-inputs-border-default);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+input[type='checkbox'].#{$prefix}-switch {
+  outline: none;
+  margin: 0;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  height: 32px;
+  width: 56px;
+  border-radius: 16px;
+  background: var(--#{$prefix}-colors-neutral-white);
+  border: 2px solid var(--#{$prefix}-inputs-border-default);
+
+  &::before {
+    @include switch-knob;
+  }
+
+  &:checked {
+    background: var(--#{$prefix}-colors-blue-blue-600);
+    border-color: var(--#{$prefix}-colors-blue-blue-600);
+
+    &::before {
+      transform: translateX(24px);
+      background: var(--#{$prefix}-colors-neutral-white);
+    }
+
+    &:hover {
+      background: var(--#{$prefix}-colors-blue-blue-500);
+      border-color: var(--#{$prefix}-colors-blue-blue-500);
+
+      &::before {
+        background: var(--#{$prefix}-colors-neutral-white);
+      }
+    }
+
+    &:active {
+      background: var(--#{$prefix}-colors-blue-blue-700);
+      border-color: var(--#{$prefix}-colors-blue-blue-700);
+
+      &::before {
+        background: var(--#{$prefix}-colors-neutral-white);
+      }
+    }
+  }
+
+  &:hover {
+    background: var(--#{$prefix}-colors-neutral-white);
+    border-color: var(--#{$prefix}-colors-blue-blue-500);
+
+    &::before {
+      background: var(--#{$prefix}-colors-blue-blue-500);
+    }
+  }
+
+  &:focus {
+    box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
+  }
+
+  &:active {
+    background: var(--#{$prefix}-colors-neutral-white);
+    border-color: var(--#{$prefix}-colors-blue-blue-600);
+
+    &::before {
+      background: var(--#{$prefix}-colors-blue-blue-600);
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background: var(--#{$prefix}-inputs-background-disabled);
+    border-color: var(--#{$prefix}-inputs-border-disabled);
+
+    &::before {
+      background: var(--#{$prefix}-inputs-border-disabled);
+    }
+  }
+}

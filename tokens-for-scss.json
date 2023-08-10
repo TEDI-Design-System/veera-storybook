@@ -1671,7 +1671,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
+      "value": "colors-gray-gray-100",
       "darkModeValue": "colors-neutral-white",
       "group": "inputs/background",
       "collection": "semantic-tokens",
@@ -1698,7 +1698,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-800",
+      "value": "colors-blue-blue-600",
       "darkModeValue": "colors-gray-gray-800",
       "group": "inputs/border",
       "collection": "semantic-tokens",
@@ -1707,7 +1707,7 @@
     },
     {
       "alias": true,
-      "value": "colors-focus-ring",
+      "value": "colors-gray-gray-500",
       "darkModeValue": "colors-focus-ring",
       "group": "inputs/border",
       "collection": "semantic-tokens",
@@ -1716,7 +1716,7 @@
     },
     {
       "alias": true,
-      "value": "colors-borders",
+      "value": "colors-gray-gray-400",
       "darkModeValue": "colors-borders",
       "group": "inputs/border",
       "collection": "semantic-tokens",
@@ -1725,7 +1725,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
+      "value": "colors-gray-gray-500",
       "darkModeValue": "colors-blue-blue-600",
       "group": "inputs/text",
       "collection": "semantic-tokens",
@@ -1734,7 +1734,7 @@
     },
     {
       "alias": true,
-      "value": "buttons-theme-primary-text-default",
+      "value": "colors-gray-gray-500",
       "darkModeValue": "buttons-theme-primary-text-default",
       "group": "inputs/text",
       "collection": "semantic-tokens",
@@ -1743,7 +1743,7 @@
     },
     {
       "alias": true,
-      "value": "buttons-theme-primary-text-default",
+      "value": "colors-text-primary",
       "darkModeValue": "buttons-theme-primary-text-default",
       "group": "inputs/text",
       "collection": "semantic-tokens",
@@ -1752,7 +1752,7 @@
     },
     {
       "alias": true,
-      "value": "buttons-theme-primary-text-default",
+      "value": "colors-gray-gray-500",
       "darkModeValue": "buttons-theme-primary-text-default",
       "group": "inputs/text",
       "collection": "semantic-tokens",
@@ -1887,7 +1887,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-900",
+      "value": "colors-gray-gray-700",
       "darkModeValue": "colors-gray-gray-900",
       "group": "tooltip",
       "collection": "semantic-tokens",
@@ -2007,6 +2007,510 @@
       "group": "inputs/border",
       "collection": "semantic-tokens",
       "name": "inputs-border-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-borders",
+      "group": "checkboxes",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-600",
+      "group": "checkboxes",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "checkboxes",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-focus-ring",
+      "group": "checkboxes",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-borders",
+      "group": "checkboxes",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-error-border",
+      "group": "checkboxes",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-active+focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-success-border",
+      "group": "checkboxes",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-borders",
+      "group": "checkboxes/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-600",
+      "group": "checkboxes/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "checkboxes/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-border-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-focus-ring",
+      "group": "checkboxes/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-borders",
+      "group": "checkboxes/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-error-border",
+      "group": "checkboxes/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-border-active+focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-success-border",
+      "group": "checkboxes/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-borders",
+      "group": "checkboxes/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-600",
+      "group": "checkboxes/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "checkboxes/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-background-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-focus-ring",
+      "group": "checkboxes/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-borders",
+      "group": "checkboxes/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-error-border",
+      "group": "checkboxes/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-background-active+focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-100",
+      "darkModeValue": "colors-success-border",
+      "group": "checkboxes/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "checkboxes/text",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "checkboxes/text",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "checkboxes/text",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-text-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "checkboxes/text",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "checkboxes/text",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "checkboxes/text",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-text-active+focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-tertiary",
+      "darkModeValue": "colors-gray-gray-400",
+      "group": "checkboxes/text",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-borders",
+      "group": "radiobuttons",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-600",
+      "group": "radiobuttons",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "radiobuttons",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-focus-ring",
+      "group": "radiobuttons",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-borders",
+      "group": "radiobuttons",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-error-border",
+      "group": "radiobuttons",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-active+focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-success-border",
+      "group": "radiobuttons",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-borders",
+      "group": "radiobuttons/background",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-600",
+      "group": "radiobuttons/background",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "radiobuttons/background",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-background-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-focus-ring",
+      "group": "radiobuttons/background",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-borders",
+      "group": "radiobuttons/background",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-error-border",
+      "group": "radiobuttons/background",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-background-active+focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-100",
+      "darkModeValue": "colors-success-border",
+      "group": "radiobuttons/background",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-borders",
+      "group": "radiobuttons/border",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-600",
+      "group": "radiobuttons/border",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "radiobuttons/border",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-border-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-focus-ring",
+      "group": "radiobuttons/border",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-borders",
+      "group": "radiobuttons/border",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-800",
+      "darkModeValue": "colors-error-border",
+      "group": "radiobuttons/border",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-border-active+focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-success-border",
+      "group": "radiobuttons/border",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "radiobuttons/text",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "radiobuttons/text",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "radiobuttons/text",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-text-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "radiobuttons/text",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "radiobuttons/text",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "radiobuttons/text",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-text-active+focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-tertiary",
+      "darkModeValue": "colors-gray-gray-400",
+      "group": "radiobuttons/text",
+      "collection": "semantic-tokens",
+      "name": "radiobuttons-text-disabled",
       "type": "COLOR"
     }
   ],

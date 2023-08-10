@@ -1,0 +1,112 @@
+@use '../constants';
+@use '../mixins/text-styles';
+
+$prefix: constants.$veera-prefix;
+
+@mixin dot {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.#{$prefix}-radio {
+  display: inline-flex;
+  gap: 16px;
+  padding: 0 12px;
+
+  input {
+    appearance: none;
+    outline: none;
+    margin: 0;
+    position: relative;
+    width: 24px;
+    height: 24px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 1px solid var(--#{$prefix}-radiobuttons-border-default);
+      background: var(--#{$prefix}-radiobuttons-background-default);
+    }
+
+    & + label {
+      @include text-styles.body-regular;
+
+      color: var(--#{$prefix}-radiobuttons-text-default);
+    }
+
+    &:hover {
+      &::before {
+        border-color: var(--#{$prefix}-radiobuttons-border-hover);
+      }
+
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-hover);
+      }
+    }
+
+    &:checked {
+      &::before {
+        border-color: var(--#{$prefix}-radiobuttons-border-selected);
+      }
+
+      &::after {
+        @include dot;
+
+        background: var(--#{$prefix}-radiobuttons-background-selected);
+      }
+
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-selected);
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: var(--#{$prefix}-radiobuttons-border-active);
+      }
+
+      &::after {
+        @include dot;
+
+        background: var(--#{$prefix}-radiobuttons-background-active);
+      }
+
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-active);
+      }
+    }
+
+    &:focus {
+      &::before {
+        box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
+      }
+
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-focus);
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+
+      &::before {
+        border-color: var(--#{$prefix}-radiobuttons-border-disabled);
+        background: var(--#{$prefix}-radiobuttons-background-disabled);
+      }
+
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-disabled);
+      }
+    }
+  }
+}
