@@ -7,7 +7,7 @@ export interface CheckboxProps {
 export const createCheckbox = ({ disabled }: CheckboxProps) => {
   return `<input type="checkbox" ${
     disabled ? 'disabled' : ''
-  } id="v-checkbox-demo" class="v-checkbox"/>`;
+  } id="v-checkbox-demo" class="v-checkbox" aria-label="standalone checkbox"/>`;
 };
 
 export interface CheckboxWithLabelProps extends CheckboxProps {

@@ -3,7 +3,7 @@
 
 $prefix: constants.$veera-prefix;
 
-@mixin dot {
+@mixin dot($bg) {
   content: '';
   position: absolute;
   height: 16px;
@@ -13,30 +13,58 @@ $prefix: constants.$veera-prefix;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: $bg;
 }
 
-.#{$prefix}-radio {
+@mixin input-styles {
+  appearance: none;
+  outline: none;
+  margin: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--#{$prefix}-radiobuttons-border-default);
+  background: var(--#{$prefix}-radiobuttons-background-default);
+
+  &:hover {
+    border-color: var(--#{$prefix}-radiobuttons-border-hover);
+  }
+
+  &:checked {
+    border-color: var(--#{$prefix}-radiobuttons-border-selected);
+
+    &::after {
+      @include dot(var(--#{$prefix}-radiobuttons-background-selected));
+    }
+  }
+
+  &:active {
+    border-color: var(--#{$prefix}-radiobuttons-border-active);
+
+    &::after {
+      @include dot(var(--#{$prefix}-radiobuttons-background-active));
+    }
+  }
+
+  &:focus {
+    box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    border-color: var(--#{$prefix}-radiobuttons-border-disabled);
+    background: var(--#{$prefix}-radiobuttons-background-disabled);
+  }
+}
+
+.#{$prefix}-radio:not(input[type='radio']) {
   display: inline-flex;
   gap: 16px;
   padding: 0 12px;
 
   input {
-    appearance: none;
-    outline: none;
-    margin: 0;
-    position: relative;
-    width: 24px;
-    height: 24px;
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      inset: 0;
-      border-radius: 50%;
-      border: 1px solid var(--#{$prefix}-radiobuttons-border-default);
-      background: var(--#{$prefix}-radiobuttons-background-default);
-    }
+    @include input-styles;
 
     & + label {
       @include text-styles.body-regular;
@@ -45,68 +73,37 @@ $prefix: constants.$veera-prefix;
     }
 
     &:hover {
-      &::before {
-        border-color: var(--#{$prefix}-radiobuttons-border-hover);
-      }
-
       & + label {
         color: var(--#{$prefix}-radiobuttons-text-hover);
       }
     }
 
     &:checked {
-      &::before {
-        border-color: var(--#{$prefix}-radiobuttons-border-selected);
-      }
-
-      &::after {
-        @include dot;
-
-        background: var(--#{$prefix}-radiobuttons-background-selected);
-      }
-
       & + label {
         color: var(--#{$prefix}-radiobuttons-text-selected);
       }
     }
 
     &:active {
-      &::before {
-        border-color: var(--#{$prefix}-radiobuttons-border-active);
-      }
-
-      &::after {
-        @include dot;
-
-        background: var(--#{$prefix}-radiobuttons-background-active);
-      }
-
       & + label {
         color: var(--#{$prefix}-radiobuttons-text-active);
       }
     }
 
     &:focus {
-      &::before {
-        box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
-      }
-
       & + label {
         color: var(--#{$prefix}-radiobuttons-text-focus);
       }
     }
 
     &:disabled {
-      pointer-events: none;
-
-      &::before {
-        border-color: var(--#{$prefix}-radiobuttons-border-disabled);
-        background: var(--#{$prefix}-radiobuttons-background-disabled);
-      }
-
       & + label {
         color: var(--#{$prefix}-radiobuttons-text-disabled);
       }
     }
   }
+}
+
+input[type='radio'].#{$prefix}-radio {
+  @include input-styles;
 }
