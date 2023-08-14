@@ -60,8 +60,9 @@ $prefix: constants.$veera-prefix;
 
 .#{$prefix}-radio:not(input[type='radio']) {
   display: inline-flex;
+  align-items: center;
   gap: 16px;
-  padding: 0 12px;
+  padding: 12px 0;
 
   input {
     @include input-styles;
