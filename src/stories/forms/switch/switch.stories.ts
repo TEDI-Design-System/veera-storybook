@@ -12,21 +12,19 @@ const meta = {
 
 export default meta;
 
-type Story<T> = StoryObj<T>;
-
-export const Default: Story<SwitchProps> = {
+export const Default: StoryObj<SwitchProps> = {
   render: createSwitch,
   args: {},
 };
 
-export const WithLock: Story<SwitchProps> = {
+export const WithLock: StoryObj<SwitchProps> = {
   render: createSwitch,
   args: {
     hasIcon: true,
   },
 };
 
-export const WithLabel: Story<SwitchWithLabelProps> = {
+export const WithLabel: StoryObj<SwitchWithLabelProps> = {
   render: createSwitchWithLabel,
   args: {
     hasIcon: true,
