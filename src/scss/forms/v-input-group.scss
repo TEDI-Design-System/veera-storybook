@@ -1,0 +1,30 @@
+@use '../constants';
+@use '../mixins/text-styles';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-input-group {
+  $self: &;
+
+  display: flex;
+  width: 100%;
+
+  .#{$prefix}-input-addon {
+    #{ $self }--sm & {
+      border-radius: var(--#{$prefix}-inputs-sizing-md-corner-radius);
+    }
+    #{ $self }--md & {
+      border-radius: var(--#{$prefix}-inputs-sizing-md-corner-radius);
+    }
+    #{ $self }--lg & {
+      border-radius: var(--#{$prefix}-inputs-sizing-lg-corner-radius);
+    }
+  }
+}
+
+.#{$prefix}-input-addon {
+  @include text-styles.body-regular;
+
+  color: var(--#{$prefix}-colors-text-tertiary);
+  border: 1px solid var(--#{$prefix}-inputs-border-default);
+}

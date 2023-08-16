@@ -1,0 +1,18 @@
+@use '../constants';
+@use '../mixins/text-styles';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-form-feedback {
+  @include text-styles.input-helper-text;
+
+  color: var(--#{$prefix}-colors-text-tertiary);
+
+  &--success {
+    color: var(--#{$prefix}-inputs-feedback-success);
+  }
+
+  &--error {
+    color: var(--#{$prefix}-inputs-feedback-error);
+  }
+}
