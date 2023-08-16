@@ -1,0 +1,110 @@
+@use '../constants';
+@use '../mixins/text-styles';
+
+$prefix: constants.$veera-prefix;
+
+@mixin dot($bg) {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $bg;
+}
+
+@mixin input-styles {
+  appearance: none;
+  outline: none;
+  margin: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--#{$prefix}-radiobuttons-border-default);
+  background: var(--#{$prefix}-radiobuttons-background-default);
+
+  &:hover {
+    border-color: var(--#{$prefix}-radiobuttons-border-hover);
+  }
+
+  &:checked {
+    border-color: var(--#{$prefix}-radiobuttons-border-selected);
+
+    &::after {
+      @include dot(var(--#{$prefix}-radiobuttons-background-selected));
+    }
+  }
+
+  &:active {
+    border-color: var(--#{$prefix}-radiobuttons-border-active);
+
+    &::after {
+      @include dot(var(--#{$prefix}-radiobuttons-background-active));
+    }
+  }
+
+  &:focus {
+    box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    border-color: var(--#{$prefix}-radiobuttons-border-disabled);
+    background: var(--#{$prefix}-radiobuttons-background-disabled);
+  }
+}
+
+.#{$prefix}-radio:not(input[type='radio']) {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+
+  input {
+    @include input-styles;
+
+    & + label {
+      @include text-styles.body-regular;
+
+      color: var(--#{$prefix}-radiobuttons-text-default);
+    }
+
+    &:hover {
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-hover);
+      }
+    }
+
+    &:checked {
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-selected);
+      }
+    }
+
+    &:active {
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-active);
+      }
+    }
+
+    &:focus {
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-focus);
+      }
+    }
+
+    &:disabled {
+      & + label {
+        color: var(--#{$prefix}-radiobuttons-text-disabled);
+      }
+    }
+  }
+}
+
+input[type='radio'].#{$prefix}-radio {
+  @include input-styles;
+}

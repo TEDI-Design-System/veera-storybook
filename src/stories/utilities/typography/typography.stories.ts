@@ -7,16 +7,13 @@ const meta = {
 
 export default meta;
 
-type Story<T = null> = StoryObj<T>;
-
-export const Collection: Story = {
+export const Collection: StoryObj = {
   render: () => {
     return createTextCollection();
   },
-  args: null,
 };
 
-export const Playground: Story<TextProps> = {
+export const Playground: StoryObj<TextProps> = {
   render: createText,
   argTypes: {
     variant: {

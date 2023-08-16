@@ -1,0 +1,111 @@
+@use '../constants';
+@use '../mixins/text-styles';
+
+$prefix: constants.$veera-prefix;
+
+@mixin checkmark {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.32923 13.2293L3.85423 9.75426L2.6709 10.9293L7.32923 15.5876L17.3292 5.5876L16.1542 4.4126L7.32923 13.2293Z" fill="white"/></svg>');
+  position: absolute;
+  height: 20px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin input-styles {
+  appearance: none;
+  outline: none;
+  margin: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  border: 1px solid var(--#{$prefix}-checkboxes-border-default);
+  background: var(--#{$prefix}-checkboxes-background-default);
+
+  &:hover {
+    border-color: var(--#{$prefix}-checkboxes-border-hover);
+  }
+
+  &:checked {
+    border-color: var(--#{$prefix}-checkboxes-border-selected);
+    background: var(--#{$prefix}-checkboxes-background-selected);
+
+    &::after {
+      @include checkmark;
+    }
+  }
+
+  &:active {
+    border-color: var(--#{$prefix}-checkboxes-border-active);
+    background: var(--#{$prefix}-checkboxes-background-active);
+
+    &::after {
+      @include checkmark;
+    }
+  }
+
+  &:focus {
+    box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    border-color: var(--#{$prefix}-checkboxes-border-disabled);
+    background: var(--#{$prefix}-checkboxes-background-disabled);
+  }
+}
+
+// Checkbox with label
+.#{$prefix}-checkbox:not(input[type='checkbox']) {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+
+  input {
+    @include input-styles;
+
+    & + label {
+      @include text-styles.body-regular;
+
+      color: var(--#{$prefix}-checkboxes-text-default);
+    }
+
+    &:hover {
+      & + label {
+        color: var(--#{$prefix}-checkboxes-text-hover);
+      }
+    }
+
+    &:checked {
+      & + label {
+        color: var(--#{$prefix}-checkboxes-text-selected);
+      }
+    }
+
+    &:active {
+      & + label {
+        color: var(--#{$prefix}-checkboxes-text-active);
+      }
+    }
+
+    &:focus {
+      & + label {
+        color: var(--#{$prefix}-checkboxes-text-focus);
+      }
+    }
+
+    &:disabled {
+      & + label {
+        color: var(--#{$prefix}-checkboxes-text-disabled);
+      }
+    }
+  }
+}
+
+// Standalone checbox
+input[type='checkbox'].#{$prefix}-checkbox {
+  @include input-styles;
+}
