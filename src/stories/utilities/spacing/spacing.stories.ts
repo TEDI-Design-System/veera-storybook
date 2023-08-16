@@ -13,9 +13,7 @@ const meta = {
 
 export default meta;
 
-type Story<T> = StoryObj<T>;
-
-export const Spacing: Story<SpacingProps> = {
+export const Spacing: StoryObj<SpacingProps> = {
   render: (args) => {
     return createSpacingTemplate(args);
   },
@@ -39,7 +37,7 @@ export const Spacing: Story<SpacingProps> = {
   },
 };
 
-export const Grid: Story<GridSpacingProps> = {
+export const Grid: StoryObj<GridSpacingProps> = {
   render: (args) => {
     return createGridSpacingTemplate(args);
   },

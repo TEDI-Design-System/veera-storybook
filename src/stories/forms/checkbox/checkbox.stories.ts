@@ -17,9 +17,7 @@ const meta = {
 
 export default meta;
 
-type Story<T> = StoryObj<T>;
-
-export const WithLabel: Story<CheckboxWithLabelProps> = {
+export const WithLabel: StoryObj<CheckboxWithLabelProps> = {
   render: createCheckboxWithLabel,
   args: {
     label: 'Checkbox',
@@ -27,7 +25,7 @@ export const WithLabel: Story<CheckboxWithLabelProps> = {
   },
 };
 
-export const StandAlone: Story<CheckboxProps> = {
+export const StandAlone: StoryObj<CheckboxProps> = {
   render: createCheckbox,
   args: {
     disabled: false,

@@ -8,9 +8,6 @@ const meta = {
 
 export default meta;
 
-type Story<T = null> = StoryObj<T>;
-
-export const Grid: Story = {
+export const Grid: StoryObj = {
   render: createGridExample,
-  args: null,
 };
