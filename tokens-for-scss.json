@@ -3255,27 +3255,108 @@
       "alias": true,
       "value": "spacing-for-1px-border-02",
       "darkModeValue": "spacing-for-1px-border-02",
-      "group": "menuitem/sizing",
+      "group": "menuitem/sizing/multiselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-padding-y",
+      "name": "menuitem-sizing-multiselect-padding-bottom",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-03",
       "darkModeValue": "spacing-03",
-      "group": "menuitem/sizing",
+      "group": "menuitem/sizing/multiselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-padding-x",
+      "name": "menuitem-sizing-multiselect-padding-x",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-03",
       "darkModeValue": "spacing-03",
-      "group": "menuitem/sizing",
+      "group": "menuitem/sizing/multiselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-inner-spacing",
+      "name": "menuitem-sizing-multiselect-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-borders",
+      "darkModeValue": "colors-borders",
+      "group": "menuitem",
+      "collection": "semantic-tokens",
+      "name": "menuitem-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
+      "group": "menuitem/sizing/multiselect",
+      "collection": "semantic-tokens",
+      "name": "menuitem-sizing-multiselect-padding-top",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
+      "group": "menuitem/sizing/singleselect",
+      "collection": "semantic-tokens",
+      "name": "menuitem-sizing-singleselect-padding-top",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-02",
+      "darkModeValue": "spacing-for-1px-border-02",
+      "group": "menuitem/sizing/singleselect",
+      "collection": "semantic-tokens",
+      "name": "menuitem-sizing-singleselect-padding-bottom",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "menuitem/sizing/singleselect",
+      "collection": "semantic-tokens",
+      "name": "menuitem-sizing-singleselect-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "menuitem/sizing/singleselect",
+      "collection": "semantic-tokens",
+      "name": "menuitem-sizing-singleselect-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkModeValue": "spacing-07",
+      "group": "buttons/sizing/sm",
+      "collection": "semantic-tokens",
+      "name": "buttons-sizing-sm-icon-button-width-height",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-08",
+      "darkModeValue": "spacing-08",
+      "group": "buttons/sizing/md",
+      "collection": "semantic-tokens",
+      "name": "buttons-sizing-md-icon-button-width-height",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-09",
+      "darkModeValue": "spacing-09",
+      "group": "buttons/sizing/lg",
+      "collection": "semantic-tokens",
+      "name": "buttons-sizing-lg-icon-button-width-height",
       "type": "FLOAT"
     }
   ],

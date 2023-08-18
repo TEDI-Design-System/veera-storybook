@@ -2,6 +2,8 @@
 @use '../../constants' as constants;
 
 .#{constants.$veera-prefix}-button {
+  $self: &;
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -169,38 +171,50 @@
   }
 
   &--sm {
-    @include text-styles.buttons-small;
-
     padding: var(--#{constants.$veera-prefix}-buttons-sizing-sm-padding-y)
       var(--#{constants.$veera-prefix}-buttons-sizing-sm-padding-x);
     border-radius: var(--#{constants.$veera-prefix}-buttons-sizing-sm-corner-radius);
 
-    &.#{constants.$veera-prefix}-button--icon-only {
+    &#{ $self }--icon-only {
+      height: var(--#{constants.$veera-prefix}-buttons-sizing-sm-icon-button-width-height);
+      width: var(--#{constants.$veera-prefix}-buttons-sizing-sm-icon-button-width-height);
       padding: var(--#{constants.$veera-prefix}-buttons-sizing-sm-padding-icon-only);
+    }
+
+    &:not(#{ $self }--icon-only) {
+      @include text-styles.buttons-small;
     }
   }
 
   &--md {
-    @include text-styles.buttons-medium;
-
     padding: var(--#{constants.$veera-prefix}-buttons-sizing-md-padding-y)
       var(--#{constants.$veera-prefix}-buttons-sizing-md-padding-x);
     border-radius: var(--#{constants.$veera-prefix}-buttons-sizing-md-corner-radius);
 
-    &.#{constants.$veera-prefix}-button--icon-only {
+    &#{ $self }--icon-only {
+      height: var(--#{constants.$veera-prefix}-buttons-sizing-md-icon-button-width-height);
+      width: var(--#{constants.$veera-prefix}-buttons-sizing-md-icon-button-width-height);
       padding: var(--#{constants.$veera-prefix}-buttons-sizing-md-padding-icon-only);
+    }
+
+    &:not(#{ $self }--icon-only) {
+      @include text-styles.buttons-medium;
     }
   }
 
   &--lg {
-    @include text-styles.buttons-large;
-
     padding: var(--#{constants.$veera-prefix}-buttons-sizing-lg-padding-y)
       var(--#{constants.$veera-prefix}-buttons-sizing-lg-padding-x);
     border-radius: var(--#{constants.$veera-prefix}-buttons-sizing-lg-corner-radius);
 
-    &.#{constants.$veera-prefix}-button--icon-only {
+    &#{ $self }--icon-only {
+      height: var(--#{constants.$veera-prefix}-buttons-sizing-lg-icon-button-width-height);
+      width: var(--#{constants.$veera-prefix}-buttons-sizing-lg-icon-button-width-height);
       padding: var(--#{constants.$veera-prefix}-buttons-sizing-lg-padding-icon-only);
+    }
+
+    &:not(#{ $self }--icon-only) {
+      @include text-styles.buttons-large;
     }
   }
 }
