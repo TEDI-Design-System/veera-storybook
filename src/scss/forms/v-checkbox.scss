@@ -13,6 +13,16 @@ $prefix: constants.$veera-prefix;
   transform: translate(-50%, -50%);
 }
 
+@mixin minus {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15.8337 10.8332H4.16699V9.1665H15.8337V10.8332Z" fill="white"/></svg>');
+  position: absolute;
+  height: 20px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin input-styles {
   appearance: none;
   outline: none;
@@ -21,39 +31,51 @@ $prefix: constants.$veera-prefix;
   width: 24px;
   height: 24px;
   border-radius: 2px;
-  border: 1px solid var(--#{$prefix}-checkboxes-border-default);
-  background: var(--#{$prefix}-checkboxes-background-default);
+  border: 1px solid var(--#{$prefix}-checkboxes-radios-border-default);
+  background: var(--#{$prefix}-checkboxes-radios-background-default);
+
+  &:focus {
+    box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-focus);
+    background: var(--#{$prefix}-checkboxes-radios-background-focus);
+  }
 
   &:hover {
-    border-color: var(--#{$prefix}-checkboxes-border-hover);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-hover);
+    background: var(--#{$prefix}-checkboxes-radios-background-hover);
   }
 
   &:checked {
-    border-color: var(--#{$prefix}-checkboxes-border-selected);
-    background: var(--#{$prefix}-checkboxes-background-selected);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-selected);
+    background: var(--#{$prefix}-checkboxes-radios-background-selected);
 
     &::after {
       @include checkmark;
+    }
+  }
+
+  &:indeterminate {
+    border-color: var(--#{$prefix}-checkboxes-radios-border-indetermined);
+    background: var(--#{$prefix}-checkboxes-radios-background-indetermined);
+
+    &::after {
+      @include minus;
     }
   }
 
   &:active {
-    border-color: var(--#{$prefix}-checkboxes-border-active);
-    background: var(--#{$prefix}-checkboxes-background-active);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-active);
+    background: var(--#{$prefix}-checkboxes-radios-background-active);
 
     &::after {
       @include checkmark;
     }
   }
 
-  &:focus {
-    box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
-  }
-
   &:disabled {
     pointer-events: none;
-    border-color: var(--#{$prefix}-checkboxes-border-disabled);
-    background: var(--#{$prefix}-checkboxes-background-disabled);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-disabled);
+    background: var(--#{$prefix}-checkboxes-radios-background-disabled);
   }
 }
 
@@ -61,8 +83,9 @@ $prefix: constants.$veera-prefix;
 .#{$prefix}-checkbox:not(input[type='checkbox']) {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-  padding: 8px 0;
+  gap: var(--#{$prefix}-checkboxes-radios-sizing-inner-spacing);
+  padding: var(--#{$prefix}-checkboxes-radios-sizing-padding-y)
+    var(--#{$prefix}-checkboxes-radios-sizing-padding-x);
 
   input {
     @include input-styles;
@@ -70,36 +93,36 @@ $prefix: constants.$veera-prefix;
     & + label {
       @include text-styles.body-regular;
 
-      color: var(--#{$prefix}-checkboxes-text-default);
+      color: var(--#{$prefix}-checkboxes-radios-text-default);
     }
 
     &:hover {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-hover);
+        color: var(--#{$prefix}-checkboxes-radios-text-hover);
       }
     }
 
     &:checked {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-selected);
+        color: var(--#{$prefix}-checkboxes-radios-text-selected);
       }
     }
 
     &:active {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-active);
+        color: var(--#{$prefix}-checkboxes-radios-text-active);
       }
     }
 
     &:focus {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-focus);
+        color: var(--#{$prefix}-checkboxes-radios-text-focus);
       }
     }
 
     &:disabled {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-disabled);
+        color: var(--#{$prefix}-checkboxes-radios-text-disabled);
       }
     }
   }

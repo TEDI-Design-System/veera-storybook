@@ -965,7 +965,7 @@
       "value": "20px",
       "group": "radius",
       "collection": "primitive-tokens",
-      "name": "radius-02",
+      "name": "radius-03",
       "type": "FLOAT"
     },
     {
@@ -973,13 +973,13 @@
       "value": "360px",
       "group": "radius",
       "collection": "primitive-tokens",
-      "name": "radius-03",
+      "name": "radius-04",
       "type": "FLOAT"
     },
     {
       "alias": true,
-      "value": "spacing-05",
-      "darkModeValue": "spacing-05",
+      "value": "spacing-for-2px-border-05",
+      "darkModeValue": "spacing-for-2px-border-05",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-padding-x",
@@ -987,8 +987,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-02",
-      "darkModeValue": "spacing-02",
+      "value": "spacing-for-2px-border-02",
+      "darkModeValue": "spacing-for-2px-border-02",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-padding-y",
@@ -996,8 +996,8 @@
     },
     {
       "alias": true,
-      "value": "radius-03",
-      "darkModeValue": "radius-03",
+      "value": "radius-04",
+      "darkModeValue": "radius-04",
       "group": "buttons/sizing/sm",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-sm-corner-radius",
@@ -1005,8 +1005,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-06",
-      "darkModeValue": "spacing-06",
+      "value": "spacing-for-2px-border-06",
+      "darkModeValue": "spacing-for-2px-border-06",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-padding-x",
@@ -1014,8 +1014,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
-      "darkModeValue": "spacing-03",
+      "value": "spacing-for-2px-border-03",
+      "darkModeValue": "spacing-for-2px-border-03",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-padding-y",
@@ -1023,8 +1023,8 @@
     },
     {
       "alias": true,
-      "value": "radius-03",
-      "darkModeValue": "radius-03",
+      "value": "radius-04",
+      "darkModeValue": "radius-04",
       "group": "buttons/sizing/md",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-md-corner-radius",
@@ -1032,8 +1032,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-08",
-      "darkModeValue": "spacing-08",
+      "value": "spacing-for-2px-border-08",
+      "darkModeValue": "spacing-for-2px-border-08",
       "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-lg-padding-x",
@@ -1041,8 +1041,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-04",
-      "darkModeValue": "spacing-04",
+      "value": "spacing-for-2px-border-04",
+      "darkModeValue": "spacing-for-2px-border-04",
       "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-lg-padding-y",
@@ -1050,8 +1050,8 @@
     },
     {
       "alias": true,
-      "value": "radius-03",
-      "darkModeValue": "radius-03",
+      "value": "radius-04",
+      "darkModeValue": "radius-04",
       "group": "buttons/sizing/lg",
       "collection": "semantic-tokens",
       "name": "buttons-sizing-lg-corner-radius",
@@ -1770,8 +1770,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-02",
-      "darkModeValue": "spacing-05",
+      "value": "spacing-for-1px-border-02",
+      "darkModeValue": "spacing-for-1px-border-02",
       "group": "inputs/sizing/sm",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-sm-padding-x",
@@ -1779,8 +1779,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-02",
-      "darkModeValue": "spacing-02",
+      "value": "spacing-for-1px-border-02",
+      "darkModeValue": "spacing-for-1px-border-02",
       "group": "inputs/sizing/sm",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-sm-padding-y",
@@ -1797,8 +1797,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
-      "darkModeValue": "spacing-03",
+      "value": "spacing-for-1px-border-03",
+      "darkModeValue": "spacing-for-1px-border-03",
       "group": "inputs/sizing/md",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-md-padding-x",
@@ -1806,8 +1806,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
-      "darkModeValue": "spacing-03",
+      "value": "spacing-for-1px-border-03",
+      "darkModeValue": "spacing-for-1px-border-03",
       "group": "inputs/sizing/md",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-md-padding-y",
@@ -1824,8 +1824,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
-      "darkModeValue": "spacing-08",
+      "value": "spacing-for-1px-border-03",
+      "darkModeValue": "spacing-for-1px-border-03",
       "group": "inputs/sizing/lg",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-lg-padding-x",
@@ -1833,8 +1833,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-04",
-      "darkModeValue": "spacing-04",
+      "value": "spacing-for-1px-border-04",
+      "darkModeValue": "spacing-for-1px-border-04",
       "group": "inputs/sizing/lg",
       "collection": "semantic-tokens",
       "name": "inputs-sizing-lg-padding-y",
@@ -2013,505 +2013,1270 @@
       "alias": true,
       "value": "colors-gray-gray-500",
       "darkModeValue": "colors-borders",
-      "group": "checkboxes",
+      "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
-      "name": "checkboxes-default",
+      "name": "checkboxes-radios-border-default",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkModeValue": "colors-gray-gray-600",
-      "group": "checkboxes",
+      "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
-      "name": "checkboxes-hover",
+      "name": "checkboxes-radios-border-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkModeValue": "colors-gray-gray-800",
-      "group": "checkboxes",
+      "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
-      "name": "checkboxes-selected",
+      "name": "checkboxes-radios-border-selected",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkModeValue": "colors-focus-ring",
-      "group": "checkboxes",
+      "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
-      "name": "checkboxes-active",
+      "name": "checkboxes-radios-border-active",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-gray-gray-500",
       "darkModeValue": "colors-borders",
-      "group": "checkboxes",
+      "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
-      "name": "checkboxes-focus",
+      "name": "checkboxes-radios-border-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkModeValue": "colors-error-border",
-      "group": "checkboxes",
+      "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
-      "name": "checkboxes-active+focus",
+      "name": "checkboxes-radios-border-active-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-gray-gray-400",
       "darkModeValue": "colors-success-border",
-      "group": "checkboxes",
+      "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
-      "name": "checkboxes-disabled",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-borders",
-      "group": "checkboxes/border",
-      "collection": "semantic-tokens",
-      "name": "checkboxes-border-default",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-600",
-      "group": "checkboxes/border",
-      "collection": "semantic-tokens",
-      "name": "checkboxes-border-hover",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-800",
-      "group": "checkboxes/border",
-      "collection": "semantic-tokens",
-      "name": "checkboxes-border-selected",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-focus-ring",
-      "group": "checkboxes/border",
-      "collection": "semantic-tokens",
-      "name": "checkboxes-border-active",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-borders",
-      "group": "checkboxes/border",
-      "collection": "semantic-tokens",
-      "name": "checkboxes-border-focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-error-border",
-      "group": "checkboxes/border",
-      "collection": "semantic-tokens",
-      "name": "checkboxes-border-active+focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-400",
-      "darkModeValue": "colors-success-border",
-      "group": "checkboxes/border",
-      "collection": "semantic-tokens",
-      "name": "checkboxes-border-disabled",
+      "name": "checkboxes-radios-border-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-neutral-white",
       "darkModeValue": "colors-borders",
-      "group": "checkboxes/background",
+      "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
-      "name": "checkboxes-background-default",
+      "name": "checkboxes-radios-background-default",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-neutral-white",
       "darkModeValue": "colors-gray-gray-600",
-      "group": "checkboxes/background",
+      "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
-      "name": "checkboxes-background-hover",
+      "name": "checkboxes-radios-background-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkModeValue": "colors-gray-gray-800",
-      "group": "checkboxes/background",
+      "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
-      "name": "checkboxes-background-selected",
+      "name": "checkboxes-radios-background-selected",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkModeValue": "colors-focus-ring",
-      "group": "checkboxes/background",
+      "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
-      "name": "checkboxes-background-active",
+      "name": "checkboxes-radios-background-active",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-neutral-white",
       "darkModeValue": "colors-borders",
-      "group": "checkboxes/background",
+      "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
-      "name": "checkboxes-background-focus",
+      "name": "checkboxes-radios-background-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkModeValue": "colors-error-border",
-      "group": "checkboxes/background",
+      "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
-      "name": "checkboxes-background-active+focus",
+      "name": "checkboxes-radios-background-active-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-gray-gray-100",
       "darkModeValue": "colors-success-border",
-      "group": "checkboxes/background",
+      "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
-      "name": "checkboxes-background-disabled",
+      "name": "checkboxes-radios-background-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-text-primary",
       "darkModeValue": "colors-neutral-white",
-      "group": "checkboxes/text",
+      "group": "checkboxes radios/text",
       "collection": "semantic-tokens",
-      "name": "checkboxes-text-default",
+      "name": "checkboxes-radios-text-default",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-text-primary",
       "darkModeValue": "colors-neutral-white",
-      "group": "checkboxes/text",
+      "group": "checkboxes radios/text",
       "collection": "semantic-tokens",
-      "name": "checkboxes-text-hover",
+      "name": "checkboxes-radios-text-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-text-primary",
       "darkModeValue": "colors-neutral-white",
-      "group": "checkboxes/text",
+      "group": "checkboxes radios/text",
       "collection": "semantic-tokens",
-      "name": "checkboxes-text-selected",
+      "name": "checkboxes-radios-text-selected",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-text-primary",
       "darkModeValue": "colors-neutral-white",
-      "group": "checkboxes/text",
+      "group": "checkboxes radios/text",
       "collection": "semantic-tokens",
-      "name": "checkboxes-text-active",
+      "name": "checkboxes-radios-text-active",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-text-primary",
       "darkModeValue": "colors-neutral-white",
-      "group": "checkboxes/text",
+      "group": "checkboxes radios/text",
       "collection": "semantic-tokens",
-      "name": "checkboxes-text-focus",
+      "name": "checkboxes-radios-text-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-text-primary",
       "darkModeValue": "colors-neutral-white",
-      "group": "checkboxes/text",
+      "group": "checkboxes radios/text",
       "collection": "semantic-tokens",
-      "name": "checkboxes-text-active+focus",
+      "name": "checkboxes-radios-text-active-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-text-tertiary",
       "darkModeValue": "colors-gray-gray-400",
-      "group": "checkboxes/text",
+      "group": "checkboxes radios/text",
       "collection": "semantic-tokens",
-      "name": "checkboxes-text-disabled",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-borders",
-      "group": "radiobuttons",
-      "collection": "semantic-tokens",
-      "name": "radiobuttons-default",
+      "name": "checkboxes-radios-text-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-600",
-      "group": "radiobuttons",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-hover",
+      "name": "checkboxes-radios-background-indetermined",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-800",
-      "group": "radiobuttons",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-selected",
+      "name": "checkboxes-radios-border-indetermined",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "checkboxes radios/text",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-text-indetermined",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "slider/active track background",
+      "collection": "semantic-tokens",
+      "name": "slider-active-track-background-default",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-focus-ring",
-      "group": "radiobuttons",
+      "darkModeValue": "colors-blue-blue-800",
+      "group": "slider/active track background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-active",
+      "name": "slider-active-track-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-900",
+      "darkModeValue": "colors-blue-blue-900",
+      "group": "slider/active track background",
+      "collection": "semantic-tokens",
+      "name": "slider-active-track-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "slider/active track background",
+      "collection": "semantic-tokens",
+      "name": "slider-active-track-background-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-borders",
-      "group": "radiobuttons",
+      "darkModeValue": "colors-gray-gray-500",
+      "group": "slider/active track background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-focus",
+      "name": "slider-active-track-background-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-error-border",
-      "group": "radiobuttons",
+      "value": "slider-active-track-background-default",
+      "darkModeValue": "slider-active-track-background-default",
+      "group": "slider/thumb/border",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-active+focus",
+      "name": "slider-thumb-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "slider-active-track-background-hover",
+      "darkModeValue": "slider-active-track-background-hover",
+      "group": "slider/thumb/border",
+      "collection": "semantic-tokens",
+      "name": "slider-thumb-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "slider-active-track-background-active",
+      "darkModeValue": "slider-active-track-background-active",
+      "group": "slider/thumb/border",
+      "collection": "semantic-tokens",
+      "name": "slider-thumb-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "slider-active-track-background-focus",
+      "darkModeValue": "slider-active-track-background-focus",
+      "group": "slider/thumb/border",
+      "collection": "semantic-tokens",
+      "name": "slider-thumb-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "slider-active-track-background-disabled",
+      "darkModeValue": "slider-active-track-background-disabled",
+      "group": "slider/thumb/border",
+      "collection": "semantic-tokens",
+      "name": "slider-thumb-border-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-gray-gray-400",
-      "darkModeValue": "colors-success-border",
-      "group": "radiobuttons",
+      "darkModeValue": "colors-gray-gray-400",
+      "group": "slider/passive track background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-disabled",
+      "name": "slider-passive-track-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "slider/sizing",
+      "collection": "semantic-tokens",
+      "name": "slider-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "24px",
+      "darkModeValue": "24px",
+      "group": "slider/sizing",
+      "collection": "semantic-tokens",
+      "name": "slider-sizing-thumb-size",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "slider/thumb/background",
+      "collection": "semantic-tokens",
+      "name": "slider-thumb-background-default",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-neutral-white",
-      "darkModeValue": "colors-borders",
-      "group": "radiobuttons/background",
+      "darkModeValue": "colors-neutral-white",
+      "group": "slider/thumb/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-background-default",
+      "name": "slider-thumb-background-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-neutral-white",
-      "darkModeValue": "colors-gray-gray-600",
-      "group": "radiobuttons/background",
+      "darkModeValue": "colors-neutral-white",
+      "group": "slider/thumb/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-background-hover",
+      "name": "slider-thumb-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "slider/thumb/background",
+      "collection": "semantic-tokens",
+      "name": "slider-thumb-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "slider/thumb/background",
+      "collection": "semantic-tokens",
+      "name": "slider-thumb-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "checkboxes radios/sizing",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
+      "group": "checkboxes radios/sizing",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkModeValue": "spacing-00",
+      "group": "checkboxes radios/sizing",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-02",
+      "darkModeValue": "radius-02",
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "24px",
+      "darkModeValue": "24px",
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-thumb-size",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "slider-active-track-background-default",
+      "group": "switch button/track/off state/border",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-off-state-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-500",
+      "darkModeValue": "slider-active-track-background-hover",
+      "group": "switch button/track/off state/border",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-off-state-border-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-800",
-      "group": "radiobuttons/background",
+      "darkModeValue": "slider-active-track-background-active",
+      "group": "switch button/track/off state/border",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-background-selected",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-focus-ring",
-      "group": "radiobuttons/background",
-      "collection": "semantic-tokens",
-      "name": "radiobuttons-background-active",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-neutral-white",
-      "darkModeValue": "colors-borders",
-      "group": "radiobuttons/background",
-      "collection": "semantic-tokens",
-      "name": "radiobuttons-background-focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-error-border",
-      "group": "radiobuttons/background",
-      "collection": "semantic-tokens",
-      "name": "radiobuttons-background-active+focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-100",
-      "darkModeValue": "colors-success-border",
-      "group": "radiobuttons/background",
-      "collection": "semantic-tokens",
-      "name": "radiobuttons-background-disabled",
+      "name": "switch-button-track-off-state-border-active",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-borders",
-      "group": "radiobuttons/border",
+      "darkModeValue": "slider-active-track-background-focus",
+      "group": "switch button/track/off state/border",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-border-default",
+      "name": "switch-button-track-off-state-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "inputs-border-disabled",
+      "darkModeValue": "slider-active-track-background-disabled",
+      "group": "switch button/track/off state/border",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-off-state-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/track/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-off-state-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/track/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-off-state-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/track/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-off-state-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/track/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-off-state-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/track/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-off-state-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-off-state-border-default",
+      "darkModeValue": "switch-button-track-off-state-border-default",
+      "group": "switch button/thumb/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-thumb-off-state-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-off-state-border-hover",
+      "darkModeValue": "switch-button-track-off-state-border-hover",
+      "group": "switch button/thumb/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-thumb-off-state-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-off-state-border-active",
+      "darkModeValue": "switch-button-track-off-state-border-active",
+      "group": "switch button/thumb/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-thumb-off-state-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-off-state-border-focus",
+      "darkModeValue": "switch-button-track-off-state-border-focus",
+      "group": "switch button/thumb/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-thumb-off-state-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-off-state-border-disabled",
+      "darkModeValue": "switch-button-track-off-state-border-disabled",
+      "group": "switch button/thumb/off state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-thumb-off-state-background-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-600",
-      "group": "radiobuttons/border",
+      "darkModeValue": "slider-active-track-background-default",
+      "group": "switch button/track/on state/border",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-border-hover",
+      "name": "switch-button-track-on-state-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-500",
+      "darkModeValue": "slider-active-track-background-hover",
+      "group": "switch button/track/on state/border",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-on-state-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-700",
+      "darkModeValue": "slider-active-track-background-active",
+      "group": "switch button/track/on state/border",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-on-state-border-active",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-800",
-      "group": "radiobuttons/border",
+      "darkModeValue": "slider-active-track-background-focus",
+      "group": "switch button/track/on state/border",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-border-selected",
+      "name": "switch-button-track-on-state-border-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-focus-ring",
-      "group": "radiobuttons/border",
+      "value": "inputs-border-disabled",
+      "darkModeValue": "slider-active-track-background-disabled",
+      "group": "switch button/track/on state/border",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-border-active",
+      "name": "switch-button-track-on-state-border-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-borders",
-      "group": "radiobuttons/border",
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "switch button/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-border-focus",
+      "name": "switch-button-track-on-state-background-default",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-error-border",
-      "group": "radiobuttons/border",
+      "value": "colors-blue-blue-500",
+      "darkModeValue": "colors-blue-blue-500",
+      "group": "switch button/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-border-active+focus",
+      "name": "switch-button-track-on-state-background-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-400",
-      "darkModeValue": "colors-success-border",
-      "group": "radiobuttons/border",
+      "value": "colors-blue-blue-700",
+      "darkModeValue": "colors-blue-blue-700",
+      "group": "switch button/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-border-disabled",
+      "name": "switch-button-track-on-state-background-active",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-text-primary",
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "switch button/track/on state/background",
+      "collection": "semantic-tokens",
+      "name": "switch-button-track-on-state-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
       "darkModeValue": "colors-neutral-white",
-      "group": "radiobuttons/text",
+      "group": "switch button/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-text-default",
+      "name": "switch-button-track-on-state-background-disabled",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-text-primary",
+      "value": "colors-neutral-white",
       "darkModeValue": "colors-neutral-white",
-      "group": "radiobuttons/text",
+      "group": "switch button/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-text-hover",
+      "name": "switch-button-thumb-on-state-background-default",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-text-primary",
+      "value": "colors-neutral-white",
       "darkModeValue": "colors-neutral-white",
-      "group": "radiobuttons/text",
+      "group": "switch button/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-text-selected",
+      "name": "switch-button-thumb-on-state-background-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-text-primary",
+      "value": "colors-neutral-white",
       "darkModeValue": "colors-neutral-white",
-      "group": "radiobuttons/text",
+      "group": "switch button/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-text-active",
+      "name": "switch-button-thumb-on-state-background-active",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-text-primary",
+      "value": "colors-neutral-white",
       "darkModeValue": "colors-neutral-white",
-      "group": "radiobuttons/text",
+      "group": "switch button/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-text-focus",
+      "name": "switch-button-thumb-on-state-background-focus",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-text-primary",
-      "darkModeValue": "colors-neutral-white",
-      "group": "radiobuttons/text",
+      "value": "switch-button-track-off-state-border-disabled",
+      "darkModeValue": "switch-button-track-off-state-border-disabled",
+      "group": "switch button/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-text-active+focus",
+      "name": "switch-button-thumb-on-state-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "checkboxes-radios-text-default",
+      "darkModeValue": "checkboxes-radios-text-default",
+      "group": "switch button/text",
+      "collection": "semantic-tokens",
+      "name": "switch-button-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "checkboxes-radios-text-hover",
+      "darkModeValue": "checkboxes-radios-text-hover",
+      "group": "switch button/text",
+      "collection": "semantic-tokens",
+      "name": "switch-button-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "checkboxes-radios-text-active",
+      "darkModeValue": "checkboxes-radios-text-active",
+      "group": "switch button/text",
+      "collection": "semantic-tokens",
+      "name": "switch-button-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "checkboxes-radios-text-focus",
+      "darkModeValue": "checkboxes-radios-text-focus",
+      "group": "switch button/text",
+      "collection": "semantic-tokens",
+      "name": "switch-button-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "checkboxes-radios-text-disabled",
+      "darkModeValue": "checkboxes-radios-text-disabled",
+      "group": "switch button/text",
+      "collection": "semantic-tokens",
+      "name": "switch-button-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": false,
+      "value": "16px",
+      "group": "radius",
+      "collection": "primitive-tokens",
+      "name": "radius-02",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "datepicker widget/sizing",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "24px",
+      "darkModeValue": "24px",
+      "group": "datepicker widget/sizing",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-sizing-thumb-size",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
+      "group": "datepicker widget/sizing",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
+      "group": "datepicker widget/sizing",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "datepicker widget/days/background",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-100",
+      "darkModeValue": "colors-blue-blue-100",
+      "group": "datepicker widget/days/background",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-700",
+      "darkModeValue": "colors-blue-blue-700",
+      "group": "datepicker widget/days/background",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "datepicker widget/days/background",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "checkboxes-radios-background-disabled",
+      "darkModeValue": "checkboxes-radios-background-disabled",
+      "group": "datepicker widget/days/background",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "datepicker widget/days/text",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "datepicker widget/days/text",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "datepicker widget/days/text",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "datepicker widget/days/text",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "datepicker widget/days/text",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": false,
+      "value": "56px",
+      "darkModeValue": "56px",
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-width",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkModeValue": "spacing-07",
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-height",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/icon/off state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-off-state-fill-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/icon/off state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-off-state-fill-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/icon/off state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-off-state-fill-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/icon/off state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-off-state-fill-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/icon/off state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-off-state-fill-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-on-state-background-default",
+      "darkModeValue": "switch-button-track-on-state-background-default",
+      "group": "switch button/icon/on state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-on-state-fill-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-on-state-background-hover",
+      "darkModeValue": "switch-button-track-on-state-background-hover",
+      "group": "switch button/icon/on state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-on-state-fill-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-on-state-background-active",
+      "darkModeValue": "switch-button-track-on-state-background-active",
+      "group": "switch button/icon/on state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-on-state-fill-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "switch-button-track-on-state-background-focus",
+      "darkModeValue": "switch-button-track-on-state-background-focus",
+      "group": "switch button/icon/on state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-on-state-fill-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "switch button/icon/on state/fill",
+      "collection": "semantic-tokens",
+      "name": "switch-button-icon-on-state-fill-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "checkboxes-radios-background-selected",
+      "darkModeValue": "checkboxes-radios-background-selected",
+      "group": "datepicker widget/days/background",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-background-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-orange-orange-600",
+      "darkModeValue": "colors-orange-orange-300",
+      "group": "datepicker widget/days/border",
+      "collection": "semantic-tokens",
+      "name": "datepicker-widget-days-border-today-indicator",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-text-tertiary",
-      "darkModeValue": "colors-gray-gray-400",
-      "group": "radiobuttons/text",
+      "darkModeValue": "colors-text-tertiary",
+      "group": "inputs/icon",
       "collection": "semantic-tokens",
-      "name": "radiobuttons-text-disabled",
+      "name": "inputs-icon-fill",
       "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-06",
+      "darkModeValue": "spacing-06",
+      "group": "inputs/icon",
+      "collection": "semantic-tokens",
+      "name": "inputs-icon-width-height",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "0px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-00",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "1px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-01",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "3px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-02",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "7px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-03",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "11px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-04",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "15px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-05",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "23px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-06",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "31px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-07",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "39px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-08",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "47px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-09",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "63px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-10",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "79px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-11",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "95px",
+      "group": "spacing-for-1px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-1px-border-12",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "0px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-00",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "0px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-01",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "2px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-02",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "6px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-03",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "10px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-04",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "14px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-05",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "22px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-06",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "30px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-07",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "38px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-08",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "46px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-09",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "62px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-10",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "78px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-11",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "94px",
+      "group": "spacing-for-2px-border",
+      "collection": "primitive-tokens",
+      "name": "spacing-for-2px-border-12",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-02",
+      "darkModeValue": "spacing-for-1px-border-02",
+      "group": "menuitem/sizing",
+      "collection": "semantic-tokens",
+      "name": "menuitem-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "menuitem/sizing",
+      "collection": "semantic-tokens",
+      "name": "menuitem-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "menuitem/sizing",
+      "collection": "semantic-tokens",
+      "name": "menuitem-sizing-inner-spacing",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -2762,11 +3527,11 @@
       "value": "0px 4px 4px 0px rgba(0, 0, 0, 0.2500)"
     },
     {
-      "name": "button-focus-ring",
+      "name": "focus-ring",
       "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8"
     },
     {
-      "name": "button-focus-ring---dark-mode",
+      "name": "focus-ring---dark-mode",
       "value": "0px 0px 0px 1px #383a44, 0px 0px 0px 3px #ffffff"
     },
     {

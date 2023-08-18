@@ -2,12 +2,18 @@ import '@scss/forms/forms.scss';
 
 export interface CheckboxProps {
   disabled?: boolean;
+  indeterminate?: boolean;
 }
 
-export const createCheckbox = ({ disabled }: CheckboxProps) => {
-  return `<input type="checkbox" ${
-    disabled ? 'disabled' : ''
-  } id="v-checkbox-demo" class="v-checkbox" aria-label="standalone checkbox"/>`;
+export const createCheckbox = ({ disabled, indeterminate }: CheckboxProps) => {
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.disabled = !!disabled;
+  checkbox.className = 'v-checkbox';
+  checkbox.ariaLabel = 'standalone checkbox';
+  checkbox.indeterminate = !!indeterminate;
+
+  return checkbox;
 };
 
 export interface CheckboxWithLabelProps extends CheckboxProps {

@@ -1,9 +1,10 @@
 import type { StoryObj } from '@storybook/html';
 import {
   FormControlStoryProps,
-  InputGroupProps,
+  IconInputProps,
+  createIconInput,
   createInputControl,
-  createInputGroup,
+  createSelectControl,
   createTextAreaControl,
 } from './form-control';
 
@@ -30,16 +31,27 @@ const meta = {
 
 export default meta;
 
-type Story<T> = StoryObj<T>;
+type Story = StoryObj<FormControlStoryProps>;
 
-export const Input: Story<FormControlStoryProps> = {
+export const Input: Story = {
   render: createInputControl,
 };
 
-export const TextArea: Story<FormControlStoryProps> = {
+export const TextArea: Story = {
   render: createTextAreaControl,
 };
 
-export const InputGroup: Story<InputGroupProps> = {
-  render: createInputGroup,
+export const Select: Story = {
+  render: createSelectControl,
+};
+
+export const IconInput: StoryObj<IconInputProps> = {
+  args: {
+    placeholder: 'Placeholder',
+    size: 'md',
+    disabled: false,
+    leftIcon: 'search',
+    rightIcon: '',
+  },
+  render: createIconInput,
 };

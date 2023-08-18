@@ -1,0 +1,15 @@
+.v-label {
+  &--required {
+    position: relative;
+    &::after {
+
+    }
+  }
+}
+
+.selection-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}

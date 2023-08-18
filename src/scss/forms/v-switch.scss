@@ -2,13 +2,15 @@
 @use '../mixins/text-styles';
 
 $prefix: constants.$veera-prefix;
+$thumb-movement-length: calc(
+  var(--#{$prefix}-switch-button-sizing-width) - 2 *
+    var(--#{$prefix}-switch-button-sizing-padding-x) -
+    var(--#{$prefix}-switch-button-sizing-thumb-size)
+);
+$thumb-x-spacing: calc(var(--#{$prefix}-switch-button-sizing-padding-x));
 
-@function get-knob-content($checked: false) {
-  @if $checked {
-    @return url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M12.0003 5.66667H11.3337V4.33333C11.3337 2.49333 9.84032 1 8.00033 1C6.16033 1 4.66699 2.49333 4.66699 4.33333H6.00033C6.00033 3.22667 6.89366 2.33333 8.00033 2.33333C9.10699 2.33333 10.0003 3.22667 10.0003 4.33333V5.66667H4.00033C3.26699 5.66667 2.66699 6.26667 2.66699 7V13.6667C2.66699 14.4 3.26699 15 4.00033 15H12.0003C12.7337 15 13.3337 14.4 13.3337 13.6667V7C13.3337 6.26667 12.7337 5.66667 12.0003 5.66667ZM12.0003 13.6667H4.00033V7H12.0003V13.6667ZM8.00033 11.6667C8.73366 11.6667 9.33366 11.0667 9.33366 10.3333C9.33366 9.6 8.73366 9 8.00033 9C7.26699 9 6.66699 9.6 6.66699 10.3333C6.66699 11.0667 7.26699 11.6667 8.00033 11.6667Z" fill="white"/></svg>');
-  } @else {
-    @return url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M12.0003 5.66667H11.3337V4.33333C11.3337 2.49333 9.84032 1 8.00033 1C6.16033 1 4.66699 2.49333 4.66699 4.33333V5.66667H4.00033C3.26699 5.66667 2.66699 6.26667 2.66699 7V13.6667C2.66699 14.4 3.26699 15 4.00033 15H12.0003C12.7337 15 13.3337 14.4 13.3337 13.6667V7C13.3337 6.26667 12.7337 5.66667 12.0003 5.66667ZM6.00033 4.33333C6.00033 3.22667 6.89366 2.33333 8.00033 2.33333C9.10699 2.33333 10.0003 3.22667 10.0003 4.33333V5.66667H6.00033V4.33333ZM12.0003 13.6667H4.00033V7H12.0003V13.6667ZM8.00033 11.6667C8.73366 11.6667 9.33366 11.0667 9.33366 10.3333C9.33366 9.6 8.73366 9 8.00033 9C7.26699 9 6.66699 9.6 6.66699 10.3333C6.66699 11.0667 7.26699 11.6667 8.00033 11.6667Z" fill="white"/></svg>');
-  }
+@function get-checkmark() {
+  @return url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5.86339 10.5831L3.08339 7.80312L2.13672 8.74312L5.86339 12.4698L13.8634 4.46979L12.9234 3.52979L5.86339 10.5831Z" fill="white"/></svg>');
 }
 
 @mixin switch-knob {
@@ -17,11 +19,11 @@ $prefix: constants.$veera-prefix;
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 2px;
-  top: 2px;
-  background: var(--#{$prefix}-inputs-border-default);
-  height: 24px;
-  width: 24px;
+  left: $thumb-x-spacing;
+  top: calc(var(--#{$prefix}-switch-button-sizing-padding-y));
+  background: var(--#{$prefix}-switch-button-thumb-off-state-background-default);
+  height: var(--#{$prefix}-switch-button-sizing-thumb-size);
+  width: var(--#{$prefix}-switch-button-sizing-thumb-size);
   border-radius: 50%;
   transition: transform 0.3s;
 }
@@ -32,105 +34,143 @@ $prefix: constants.$veera-prefix;
   cursor: pointer;
   appearance: none;
   position: relative;
-  height: 32px;
-  width: 56px;
-  border-radius: 16px;
-  background: var(--#{$prefix}-colors-neutral-white);
-  border: 2px solid var(--#{$prefix}-inputs-border-default);
+  height: var(--#{$prefix}-switch-button-sizing-height);
+  width: var(--#{$prefix}-switch-button-sizing-width);
+  border-radius: var(--#{$prefix}-switch-button-sizing-corner-radius);
+  background: var(--#{$prefix}-switch-button-track-off-state-background-default);
+  border: 2px solid var(--#{$prefix}-switch-button-track-off-state-border-default);
 
   &::before {
     @include switch-knob;
   }
 
-  &:hover {
-    background: var(--#{$prefix}-colors-neutral-white);
-    border-color: var(--#{$prefix}-colors-blue-blue-500);
+  &:disabled {
+    pointer-events: none;
+    background: var(--#{$prefix}-switch-button-track-off-state-background-disabled);
+    border-color: var(--#{$prefix}-switch-button-track-off-state-border-disabled);
 
     &::before {
-      background: var(--#{$prefix}-colors-blue-blue-500);
+      background: var(--#{$prefix}-switch-button-thumb-off-state-background-disabled);
     }
   }
 
   &:focus {
-    box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
+    box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+    background: var(--#{$prefix}-switch-button-track-off-state-background-focus);
+    border-color: var(--#{$prefix}-switch-button-track-off-state-border-focus);
+
+    &::before {
+      background: var(--#{$prefix}-switch-button-thumb-off-state-background-focus);
+    }
+  }
+
+  &:hover {
+    background: var(--#{$prefix}-switch-button-track-off-state-background-hover);
+    border-color: var(--#{$prefix}-switch-button-track-off-state-border-hover);
+
+    &::before {
+      background: var(--#{$prefix}-switch-button-thumb-off-state-background-hover);
+    }
   }
 
   &:active {
-    background: var(--#{$prefix}-colors-neutral-white);
-    border-color: var(--#{$prefix}-colors-blue-blue-600);
+    background: var(--#{$prefix}-switch-button-track-off-state-background-active);
+    border-color: var(--#{$prefix}-switch-button-track-off-state-border-active);
 
     &::before {
-      background: var(--#{$prefix}-colors-blue-blue-600);
+      background: var(--#{$prefix}-switch-button-thumb-off-state-background-active);
     }
   }
 
   &:checked {
-    background: var(--#{$prefix}-colors-blue-blue-600);
-    border-color: var(--#{$prefix}-colors-blue-blue-600);
+    background: var(--#{$prefix}-switch-button-track-on-state-background-default);
+    border-color: var(--#{$prefix}-switch-button-track-on-state-border-default);
 
     &::before {
-      transform: translateX(24px);
-      background: var(--#{$prefix}-colors-neutral-white);
+      transform: translateX($thumb-movement-length);
+      background: var(--#{$prefix}-switch-button-thumb-on-state-background-default);
+    }
+
+    &:disabled {
+      pointer-events: none;
+      background: var(--#{$prefix}-switch-button-track-on-state-background-disabled);
+      border-color: var(--#{$prefix}-switch-button-track-on-state-border-disabled);
+
+      &::before {
+        background: var(--#{$prefix}-switch-button-thumb-on-state-background-disabled);
+      }
+    }
+
+    &:focus {
+      background: var(--#{$prefix}-switch-button-track-on-state-background-focus);
+      border-color: var(--#{$prefix}-switch-button-track-on-state-border-focus);
+
+      &::before {
+        background: var(--#{$prefix}-switch-button-thumb-on-state-background-focus);
+      }
     }
 
     &:hover {
-      background: var(--#{$prefix}-colors-blue-blue-500);
-      border-color: var(--#{$prefix}-colors-blue-blue-500);
+      background: var(--#{$prefix}-switch-button-track-on-state-background-hover);
+      border-color: var(--#{$prefix}-switch-button-track-on-state-border-hover);
 
       &::before {
-        background: var(--#{$prefix}-colors-neutral-white);
+        background: var(--#{$prefix}-switch-button-thumb-on-state-background-hover);
       }
     }
 
     &:active {
-      background: var(--#{$prefix}-colors-blue-blue-700);
-      border-color: var(--#{$prefix}-colors-blue-blue-700);
+      background: var(--#{$prefix}-switch-button-track-on-state-background-active);
+      border-color: var(--#{$prefix}-switch-button-track-on-state-border-active);
 
       &::before {
-        background: var(--#{$prefix}-colors-neutral-white);
+        background: var(--#{$prefix}-switch-button-thumb-on-state-background-active);
       }
-    }
-  }
-
-  &:disabled {
-    pointer-events: none;
-    background: var(--#{$prefix}-inputs-background-disabled);
-    border-color: var(--#{$prefix}-inputs-border-disabled);
-
-    &::before {
-      background: var(--#{$prefix}-inputs-border-disabled);
     }
   }
 }
 
-@mixin lock-input-styles {
+@mixin with-check-input-styles {
   &::after {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 50%;
+    right: calc(
+      $thumb-x-spacing + var(--#{$prefix}-switch-button-sizing-thumb-size) / 2 +
+        $thumb-movement-length
+    );
     width: 16px;
     height: 16px;
     content: '';
-    mask-image: get-knob-content();
-    -webkit-mask-image: get-knob-content();
-    background: var(--#{$prefix}-colors-neutral-white);
-    transition: transform 0.3s;
+    mask-image: get-checkmark();
+    -webkit-mask-image: get-checkmark();
+    background: var(--#{$prefix}-switch-button-icon-on-state-fill-default);
+    transform: translate(50%, -50%);
+    opacity: 0;
+    transition:
+      right 0.3s,
+      opacity 0.3s;
   }
 
   &:checked {
     &::after {
-      transform: translateX(25px);
-      mask-image: get-knob-content(true);
-      -webkit-mask-image: get-knob-content(true);
-      background: var(--#{$prefix}-colors-blue-blue-600);
+      right: calc($thumb-x-spacing + var(--#{$prefix}-switch-button-sizing-thumb-size) / 2);
+      opacity: 1;
+    }
+
+    &:focus::after {
+      background: var(--#{$prefix}-switch-button-icon-on-state-fill-focus);
     }
 
     &:hover::after {
-      background: var(--#{$prefix}-colors-blue-blue-500);
+      background: var(--#{$prefix}-switch-button-icon-on-state-fill-hover);
     }
 
     &:active::after {
-      background: var(--#{$prefix}-colors-blue-blue-700);
+      background: var(--#{$prefix}-switch-button-icon-on-state-fill-active);
+    }
+
+    &:disabled::after {
+      background: var(--#{$prefix}-switch-button-icon-on-state-fill-disabled);
     }
   }
 }
@@ -147,49 +187,49 @@ $prefix: constants.$veera-prefix;
     & + label {
       @include text-styles.body-regular;
 
-      color: var(--#{$prefix}-checkboxes-text-default);
+      color: var(--#{$prefix}-switch-button-text-default);
     }
 
     &:hover {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-hover);
+        color: var(--#{$prefix}-switch-button-text-hover);
       }
     }
 
     &:checked {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-selected);
+        color: var(--#{$prefix}-switch-button-text-checked);
       }
     }
 
     &:active {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-active);
+        color: var(--#{$prefix}-switch-button-text-active);
       }
     }
 
     &:focus {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-focus);
+        color: var(--#{$prefix}-switch-button-text-focus);
       }
     }
 
     &:disabled {
       & + label {
-        color: var(--#{$prefix}-checkboxes-text-disabled);
+        color: var(--#{$prefix}-switch-button-text-disabled);
       }
     }
   }
 
   &--with-lock input {
-    @include lock-input-styles;
+    @include with-check-input-styles;
   }
 }
 
 input[type='checkbox'].#{$prefix}-switch {
   @include input-styles;
 
-  &--with-lock {
-    @include lock-input-styles;
+  &--check-icon {
+    @include with-check-input-styles;
   }
 }

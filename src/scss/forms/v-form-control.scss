@@ -1,5 +1,6 @@
 @use '../constants';
 @use '../mixins/text-styles';
+@use '../mixins/form-styles';
 
 $prefix: constants.$veera-prefix;
 
@@ -18,15 +19,15 @@ $prefix: constants.$veera-prefix;
     color: var(--#{$prefix}-colors-text-tertiary);
   }
 
-  &:hover {
-    border-color: var(--#{$prefix}-inputs-border-hover);
-    background: var(--#{$prefix}-inputs-background-hover);
-  }
-
   &:focus {
     border-color: var(--#{$prefix}-inputs-border-focus);
     background: var(--#{$prefix}-inputs-background-focus);
-    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-button-focus-ring);
+    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring);
+  }
+
+  &:hover {
+    border-color: var(--#{$prefix}-inputs-border-hover);
+    background: var(--#{$prefix}-inputs-background-hover);
   }
 
   &:active {
@@ -35,9 +36,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &:disabled {
-    border-color: var(--#{$prefix}-inputs-border-disabled);
-    background: var(--#{$prefix}-inputs-background-disabled);
-    color: var(--#{$prefix}-inputs-text-disabled);
+    @include form-styles.form-input-disabled;
   }
 
   &--error {
@@ -51,20 +50,42 @@ $prefix: constants.$veera-prefix;
   }
 
   &--sm {
-    padding: var(--#{constants.$veera-prefix}-inputs-sizing-sm-padding-y)
-      var(--#{constants.$veera-prefix}-inputs-sizing-sm-padding-x);
-    border-radius: var(--#{constants.$veera-prefix}-inputs-sizing-sm-corner-radius);
+    @include form-styles.form-input-small;
   }
 
   &--md {
-    padding: var(--#{constants.$veera-prefix}-inputs-sizing-md-padding-y)
-      var(--#{constants.$veera-prefix}-inputs-sizing-md-padding-x);
-    border-radius: var(--#{constants.$veera-prefix}-inputs-sizing-md-corner-radius);
+    @include form-styles.form-input-medium;
   }
 
   &--lg {
-    padding: var(--#{constants.$veera-prefix}-inputs-sizing-lg-padding-y)
-      var(--#{constants.$veera-prefix}-inputs-sizing-lg-padding-x);
-    border-radius: var(--#{constants.$veera-prefix}-inputs-sizing-lg-corner-radius);
+    @include form-styles.form-input-large;
+  }
+}
+
+.#{$prefix}-icon-input {
+  --v-form-control-icon-size: 24px;
+
+  $self: &;
+
+  position: relative;
+
+  .#{$prefix}-form-control-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--#{constants.$veera-prefix}-inputs-icon-width-height);
+    color: var(--#{constants.$veera-prefix}-inputs-icon-fill);
+  }
+
+  &--sm {
+    @include form-styles.icon-input-small($self);
+  }
+
+  &--md {
+    @include form-styles.icon-input-medium($self);
+  }
+
+  &--lg {
+    @include form-styles.icon-input-large($self);
   }
 }

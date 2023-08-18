@@ -1,30 +1,85 @@
 @use '../constants';
 @use '../mixins/text-styles';
+@use '../mixins/form-styles';
+@use '../mixins/borders';
 
 $prefix: constants.$veera-prefix;
 
 .#{$prefix}-input-group {
-  $self: &;
-
   display: flex;
   width: 100%;
 
-  .#{$prefix}-input-addon {
-    #{ $self }--sm & {
-      border-radius: var(--#{$prefix}-inputs-sizing-md-corner-radius);
+  &--sm {
+    .#{$prefix}-input-addon,
+    .#{$prefix}-form-control {
+      @include form-styles.form-input-small;
     }
-    #{ $self }--md & {
-      border-radius: var(--#{$prefix}-inputs-sizing-md-corner-radius);
+
+    .#{$prefix}-icon-input {
+      @include form-styles.icon-input-small;
     }
-    #{ $self }--lg & {
-      border-radius: var(--#{$prefix}-inputs-sizing-lg-corner-radius);
+  }
+
+  &--md {
+    .#{$prefix}-input-addon,
+    .#{$prefix}-form-control {
+      @include form-styles.form-input-medium;
     }
+
+    .#{$prefix}-icon-input {
+      @include form-styles.icon-input-medium;
+    }
+  }
+
+  &--lg {
+    .#{$prefix}-input-addon,
+    .#{$prefix}-form-control {
+      @include form-styles.form-input-large;
+    }
+
+    .#{$prefix}-icon-input {
+      @include form-styles.icon-input-large;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    .#{$prefix}-form-control {
+      @include form-styles.form-input-disabled;
+    }
+    .#{$prefix}-input-addon {
+      border-color: var(--#{$prefix}-inputs-border-disabled);
+    }
+  }
+
+  > *:not(:first-child) {
+    margin-left: -1px;
+
+    @include borders.set-border-left-radius(0);
+
+    &.#{$prefix}-icon-input .#{$prefix}-form-control {
+      @include borders.set-border-left-radius(0);
+    }
+  }
+
+  > *:not(:last-child) {
+    @include borders.set-border-right-radius(0);
+
+    &.#{$prefix}-icon-input .#{$prefix}-form-control {
+      @include borders.set-border-right-radius(0);
+    }
+  }
+
+  .#{$prefix}-form-control {
+    z-index: 1;
   }
 }
 
 .#{$prefix}-input-addon {
   @include text-styles.body-regular;
 
+  display: flex;
+  align-items: center;
   color: var(--#{$prefix}-colors-text-tertiary);
   border: 1px solid var(--#{$prefix}-inputs-border-default);
 }
