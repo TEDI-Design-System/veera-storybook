@@ -1,15 +1,80 @@
-.v-label {
-  &--required {
-    position: relative;
-    &::after {
+@use '../constants';
+@use '../mixins/text-styles';
 
+$prefix: constants.$veera-prefix;
+
+@mixin vertical-row {
+  gap: 0;
+  flex-direction: column;
+  align-items: start;
+  .#{$prefix}-form-row-label {
+    width: auto;
+  }
+}
+
+.#{$prefix}-form-group {
+  --#{$prefix}-form-width: 877px;
+  --#{$prefix}-form-gap: var(--#{$prefix}-spacing-06, 24px);
+  --#{$prefix}-form-label-width: 362px;
+
+  display: flex;
+  flex-direction: column;
+  max-width: var(--#{$prefix}-form-width);
+  gap: var(--#{$prefix}-form-gap);
+
+  &--vertical {
+    .#{$prefix}-form-row {
+      @include vertical-row;
     }
   }
 }
 
-.selection-group {
+.#{$prefix}-form-row {
+  --#{$prefix}-form-row-label-width: var(--#{$prefix}-form-label-width, 362px);
+
+  display: flex;
+  gap: 16px;
+
+  &--vertical {
+    @include vertical-row;
+  }
+}
+
+.#{$prefix}-form-row-label {
+  @include text-styles.body-regular;
+
+  box-sizing: border-box;
+  text-align: right;
+  flex-shrink: 0;
+  width: var(--#{$prefix}-form-row-label-width);
+
+  &--required {
+    position: relative;
+    padding-right: 10px;
+
+    &::after {
+      content: '*';
+      position: absolute;
+      right: 0;
+      color: var(--#{$prefix}-colors-error-border);
+    }
+  }
+}
+
+.#{$prefix}-form-row-input {
+  flex-grow: 1;
+  width: 100%;
+  max-width: var(--#{$prefix}-form-row-input-width, 100%);
+}
+
+.#{$prefix}-selection-controls-group {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+
+  &--vertical {
+    flex-direction: column;
+    gap: 0;
+  }
 }
