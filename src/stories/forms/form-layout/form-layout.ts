@@ -5,6 +5,7 @@ import {
   createSelectControl,
   createTextAreaControl,
 } from '../form-control/form-control';
+import { createFileUpload } from '../file-upload/file-upload';
 
 interface FormRowProps {
   inputId: string;
@@ -75,13 +76,24 @@ export const createFormLayout = ({ direction, width, labelWidth, gap }: FormLayo
   formGroup.appendChild(textInputRow);
 
   const selectInput = createSelectControl({ size: 'md', placeholder: 'Placeholder' });
-  selectInput.id = 'text-input';
+  selectInput.id = 'select-input';
   const selectInputRow = createFormRow({
     label: 'Select input',
     inputId: selectInput.id,
     input: selectInput,
   });
   formGroup.appendChild(selectInputRow);
+
+  const fileUpload = createFileUpload({
+    label: 'Lohistage failid siia või valige kettalt',
+    id: 'file-upload-id',
+  });
+  const fileUploadRow = createFormRow({
+    label: 'File upload',
+    inputId: 'file-upload-id',
+    input: fileUpload,
+  });
+  formGroup.appendChild(fileUploadRow);
 
   return formGroup;
 };

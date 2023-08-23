@@ -32,8 +32,9 @@ const createAttachment = (file: UploadFile, onRemove: (id: string) => void) => {
 
 export interface FileUploadStoryProps {
   label: string;
-  disabled: boolean;
-  error: boolean;
+  disabled?: boolean;
+  error?: boolean;
+  id?: string;
 }
 
 interface UploadFile {
@@ -41,7 +42,7 @@ interface UploadFile {
   name: string;
 }
 
-export const createFileUpload = ({ label, disabled, error }: FileUploadStoryProps) => {
+export const createFileUpload = ({ label, disabled, error, id }: FileUploadStoryProps) => {
   let files: UploadFile[] = [{ id: 'test', name: 'Fail.txt' }];
 
   const fileUpload = document.createElement('div');
@@ -52,7 +53,10 @@ export const createFileUpload = ({ label, disabled, error }: FileUploadStoryProp
     'v-file-upload__drop-area--error': error,
   });
   dropArea.innerHTML = `<span class="material-icons v-file-upload__drop-area__attach-icon">attach_file</span>${label}`;
-  dropArea.disabled = disabled;
+  dropArea.disabled = !!disabled;
+  if (id) {
+    dropArea.id = id;
+  }
   fileUpload.appendChild(dropArea);
 
   const input = document.createElement('input');
