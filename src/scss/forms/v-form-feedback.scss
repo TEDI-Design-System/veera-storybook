@@ -7,7 +7,7 @@ $prefix: constants.$veera-prefix;
   @include text-styles.input-helper-text;
 
   display: block;
-  padding-top: 4px;
+  margin-top: 4px;
   color: var(--#{$prefix}-colors-text-tertiary);
 
   &--success {
