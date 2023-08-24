@@ -4,7 +4,7 @@ import clsx from 'clsx';
 export interface FormControlStoryProps {
   size?: 'sm' | 'md' | 'lg';
   disabled?: boolean;
-  placeholder: string;
+  placeholder?: string;
   status?: 'success' | 'error';
 }
 
@@ -12,7 +12,7 @@ export const createInputControl = ({
   size,
   disabled,
   status,
-  placeholder,
+  placeholder = '',
 }: FormControlStoryProps) => {
   const input = document.createElement('input');
   input.type = 'text';
@@ -29,7 +29,7 @@ export const createTextAreaControl = ({
   size,
   disabled,
   status,
-  placeholder,
+  placeholder = '',
 }: FormControlStoryProps) => {
   const textarea = document.createElement('textarea');
   textarea.placeholder = placeholder;
@@ -41,8 +41,17 @@ export const createTextAreaControl = ({
   return textarea;
 };
 
-export const createSelectControl = ({ size, disabled, status }: FormControlStoryProps) => {
-  const optionList = [
+interface SelectControlStoryProps extends FormControlStoryProps {
+  options?: { text: string; value: string }[];
+}
+
+export const createSelectControl = ({
+  size,
+  disabled,
+  status,
+  options,
+}: SelectControlStoryProps) => {
+  const optionList = options ?? [
     { text: 'Option 1', value: 'option-1' },
     { text: 'Option 2', value: 'option-2' },
     { text: 'Option 3', value: 'option-3' },
@@ -63,8 +72,8 @@ export const createSelectControl = ({ size, disabled, status }: FormControlStory
 };
 
 export interface IconInputProps extends FormControlStoryProps {
-  leftIcon: string;
-  rightIcon: string;
+  leftIcon?: string;
+  rightIcon?: string;
 }
 
 export const createIconInput = ({ size, leftIcon, rightIcon, ...inputProps }: IconInputProps) => {

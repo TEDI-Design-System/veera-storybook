@@ -2407,8 +2407,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-00",
-      "darkModeValue": "spacing-00",
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
       "group": "checkboxes radios/sizing",
       "collection": "semantic-tokens",
       "name": "checkboxes-radios-sizing-padding-x",
@@ -3219,81 +3219,81 @@
       "alias": true,
       "value": "spacing-for-1px-border-02",
       "darkModeValue": "spacing-for-1px-border-02",
-      "group": "menuitem/sizing/multiselect",
+      "group": "dropdown menu/menuitem/sizing/multiselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-multiselect-padding-bottom",
+      "name": "dropdown-menu-menuitem-sizing-multiselect-padding-bottom",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-03",
       "darkModeValue": "spacing-03",
-      "group": "menuitem/sizing/multiselect",
+      "group": "dropdown menu/menuitem/sizing/multiselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-multiselect-padding-x",
+      "name": "dropdown-menu-menuitem-sizing-multiselect-padding-x",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-03",
       "darkModeValue": "spacing-03",
-      "group": "menuitem/sizing/multiselect",
+      "group": "dropdown menu/menuitem/sizing/multiselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-multiselect-inner-spacing",
+      "name": "dropdown-menu-menuitem-sizing-multiselect-inner-spacing",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "colors-borders",
       "darkModeValue": "colors-borders",
-      "group": "menuitem",
+      "group": "dropdown menu/menuitem",
       "collection": "semantic-tokens",
-      "name": "menuitem-border",
+      "name": "dropdown-menu-menuitem-border",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "spacing-02",
       "darkModeValue": "spacing-02",
-      "group": "menuitem/sizing/multiselect",
+      "group": "dropdown menu/menuitem/sizing/multiselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-multiselect-padding-top",
+      "name": "dropdown-menu-menuitem-sizing-multiselect-padding-top",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-02",
       "darkModeValue": "spacing-02",
-      "group": "menuitem/sizing/singleselect",
+      "group": "dropdown menu/menuitem/sizing/singleselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-singleselect-padding-top",
+      "name": "dropdown-menu-menuitem-sizing-singleselect-padding-top",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-for-1px-border-02",
       "darkModeValue": "spacing-for-1px-border-02",
-      "group": "menuitem/sizing/singleselect",
+      "group": "dropdown menu/menuitem/sizing/singleselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-singleselect-padding-bottom",
+      "name": "dropdown-menu-menuitem-sizing-singleselect-padding-bottom",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-05",
       "darkModeValue": "spacing-05",
-      "group": "menuitem/sizing/singleselect",
+      "group": "dropdown menu/menuitem/sizing/singleselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-singleselect-padding-x",
+      "name": "dropdown-menu-menuitem-sizing-singleselect-padding-x",
       "type": "FLOAT"
     },
     {
       "alias": true,
       "value": "spacing-03",
       "darkModeValue": "spacing-03",
-      "group": "menuitem/sizing/singleselect",
+      "group": "dropdown menu/menuitem/sizing/singleselect",
       "collection": "semantic-tokens",
-      "name": "menuitem-sizing-singleselect-inner-spacing",
+      "name": "dropdown-menu-menuitem-sizing-singleselect-inner-spacing",
       "type": "FLOAT"
     },
     {
@@ -4086,6 +4086,240 @@
       "group": "file input/text",
       "collection": "semantic-tokens",
       "name": "file-input-text-drop-over",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-04",
+      "darkModeValue": "spacing-04",
+      "group": "slider/sizing",
+      "collection": "semantic-tokens",
+      "name": "slider-sizing-group-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-tertiary",
+      "darkModeValue": "colors-text-tertiary",
+      "group": "slider/range label",
+      "collection": "semantic-tokens",
+      "name": "slider-range-label-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "tabs/sizing",
+      "collection": "semantic-tokens",
+      "name": "tabs-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "tabs/sizing",
+      "collection": "semantic-tokens",
+      "name": "tabs-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "tabs/sizing",
+      "collection": "semantic-tokens",
+      "name": "tabs-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "tabs/sizing",
+      "collection": "semantic-tokens",
+      "name": "tabs-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "tabs/background",
+      "collection": "semantic-tokens",
+      "name": "tabs-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "tabs/background",
+      "collection": "semantic-tokens",
+      "name": "tabs-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "tabs/background",
+      "collection": "semantic-tokens",
+      "name": "tabs-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "tabs/background",
+      "collection": "semantic-tokens",
+      "name": "tabs-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "inputs-background-disabled",
+      "darkModeValue": "inputs-background-disabled",
+      "group": "tabs/background",
+      "collection": "semantic-tokens",
+      "name": "tabs-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "inputs-border-default",
+      "darkModeValue": "inputs-border-default",
+      "group": "tabs/border",
+      "collection": "semantic-tokens",
+      "name": "tabs-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "inputs-border-hover",
+      "darkModeValue": "inputs-border-hover",
+      "group": "tabs/border",
+      "collection": "semantic-tokens",
+      "name": "tabs-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "inputs-border-active",
+      "darkModeValue": "inputs-border-active",
+      "group": "tabs/border",
+      "collection": "semantic-tokens",
+      "name": "tabs-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "inputs-border-focus",
+      "darkModeValue": "inputs-border-focus",
+      "group": "tabs/border",
+      "collection": "semantic-tokens",
+      "name": "tabs-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "inputs-border-disabled",
+      "group": "tabs/border",
+      "collection": "semantic-tokens",
+      "name": "tabs-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-700",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "tabs/text",
+      "collection": "semantic-tokens",
+      "name": "tabs-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-700",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "tabs/text",
+      "collection": "semantic-tokens",
+      "name": "tabs-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "tabs/text",
+      "collection": "semantic-tokens",
+      "name": "tabs-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-focus-ring",
+      "darkModeValue": "colors-focus-ring",
+      "group": "tabs/text",
+      "collection": "semantic-tokens",
+      "name": "tabs-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "buttons-theme-neutral-text-disabled",
+      "darkModeValue": "buttons-theme-neutral-text-disabled",
+      "group": "tabs/text",
+      "collection": "semantic-tokens",
+      "name": "tabs-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "checkboxes radios/sizing",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-corner-raidus",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-06",
+      "darkModeValue": "spacing-06",
+      "group": "checkboxes radios/sizing",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-input-width-height",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
+      "group": "dropdown menu/menu",
+      "collection": "semantic-tokens",
+      "name": "dropdown-menu-menu-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "dropdown menu/menu",
+      "collection": "semantic-tokens",
+      "name": "dropdown-menu-menu-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-400",
+      "group": "dropdown menu/menu",
+      "collection": "semantic-tokens",
+      "name": "dropdown-menu-menu-background",
       "type": "COLOR"
     }
   ],
