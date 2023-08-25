@@ -11,15 +11,17 @@ $prefix: constants.$veera-prefix;
   display: block;
   width: 100%;
   outline: none;
-  color: var(--#{$prefix}-colors-text-primary);
+  color: var(--#{$prefix}-inputs-text-active);
   border: 1px solid var(--#{$prefix}-inputs-border-default);
   background: var(--#{$prefix}-inputs-background-default);
 
-  &::placeholder {
-    color: var(--#{$prefix}-colors-text-tertiary);
+  &::placeholder,
+  &__placeholder {
+    color: var(--#{$prefix}-inputs-text-default);
   }
 
-  &:focus {
+  &:focus,
+  &--focus {
     border-color: var(--#{$prefix}-inputs-border-focus);
     background: var(--#{$prefix}-inputs-background-focus);
     box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring);
@@ -30,12 +32,14 @@ $prefix: constants.$veera-prefix;
     background: var(--#{$prefix}-inputs-background-hover);
   }
 
-  &:active {
+  &:active,
+  &--active {
     border-color: var(--#{$prefix}-inputs-border-active);
     background: var(--#{$prefix}-inputs-background-active);
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     @include form-styles.form-input-disabled;
   }
 

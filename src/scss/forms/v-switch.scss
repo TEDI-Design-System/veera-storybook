@@ -7,7 +7,7 @@ $thumb-movement-length: calc(
     var(--#{$prefix}-switch-button-sizing-padding-x) -
     var(--#{$prefix}-switch-button-sizing-thumb-size)
 );
-$thumb-x-spacing: calc(var(--#{$prefix}-switch-button-sizing-padding-x));
+$thumb-x-spacing: var(--#{$prefix}-switch-button-sizing-padding-x);
 
 @function get-checkmark() {
   @return url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5.86339 10.5831L3.08339 7.80312L2.13672 8.74312L5.86339 12.4698L13.8634 4.46979L12.9234 3.52979L5.86339 10.5831Z" fill="white"/></svg>');
