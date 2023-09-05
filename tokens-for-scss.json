@@ -693,7 +693,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
+      "value": "colors-gray-gray-200",
       "darkModeValue": "colors-gray-gray-1000",
       "group": "colors/surface",
       "collection": "semantic-tokens",
@@ -711,7 +711,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
+      "value": "colors-gray-gray-600",
       "darkModeValue": "colors-gray-gray-300",
       "group": "colors/text",
       "collection": "semantic-tokens",
@@ -720,38 +720,11 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-100",
-      "darkModeValue": "colors-gray-gray-900",
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-1000",
       "group": "colors/surface",
       "collection": "semantic-tokens",
       "name": "colors-surface-secondary",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-200",
-      "darkModeValue": "colors-gray-gray-800",
-      "group": "colors/surface",
-      "collection": "semantic-tokens",
-      "name": "colors-surface-tertiary",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-300",
-      "darkModeValue": "colors-gray-gray-700",
-      "group": "colors/surface",
-      "collection": "semantic-tokens",
-      "name": "colors-surface-quadrary",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-400",
-      "darkModeValue": "colors-gray-gray-600",
-      "group": "colors/surface",
-      "collection": "semantic-tokens",
-      "name": "colors-surface-quinary",
       "type": "COLOR"
     },
     {
@@ -810,8 +783,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-transparent",
-      "darkModeValue": "colors-gray-gray-800",
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-secondary-background-default",
@@ -837,7 +810,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-transparent",
+      "value": "colors-neutral-alpha-10",
       "darkModeValue": "colors-gray-gray-800",
       "group": "buttons/theme/secondary/background",
       "collection": "semantic-tokens",
@@ -1275,8 +1248,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-transparent",
-      "darkModeValue": "colors-gray-gray-800",
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "buttons/theme/neutral/background",
       "collection": "semantic-tokens",
       "name": "buttons-theme-neutral-background-default",
@@ -1302,7 +1275,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-transparent",
+      "value": "colors-neutral-alpha-10",
       "darkModeValue": "colors-gray-gray-800",
       "group": "buttons/theme/neutral/background",
       "collection": "semantic-tokens",
@@ -1320,8 +1293,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-transparent",
-      "darkModeValue": "colors-gray-gray-800",
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "buttons/theme/neutral/border",
       "collection": "semantic-tokens",
       "name": "buttons-theme-neutral-border-default",
@@ -1347,7 +1320,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-transparent",
+      "value": "colors-neutral-alpha-10",
       "darkModeValue": "colors-gray-gray-800",
       "group": "buttons/theme/neutral/border",
       "collection": "semantic-tokens",
@@ -1935,7 +1908,7 @@
       "value": "rgba(0, 0, 0, 0.0010)",
       "group": "colors/neutral",
       "collection": "primitive-tokens",
-      "name": "colors-neutral-transparent",
+      "name": "colors-neutral-alpha-10",
       "type": "COLOR"
     },
     {
@@ -2398,8 +2371,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-02",
-      "darkModeValue": "spacing-02",
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
       "group": "checkboxes radios/sizing",
       "collection": "semantic-tokens",
       "name": "checkboxes-radios-sizing-inner-spacing",
@@ -2407,8 +2380,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
-      "darkModeValue": "spacing-03",
+      "value": "spacing-00",
+      "darkModeValue": "spacing-00",
       "group": "checkboxes radios/sizing",
       "collection": "semantic-tokens",
       "name": "checkboxes-radios-sizing-padding-x",
@@ -2757,8 +2730,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-02",
-      "darkModeValue": "spacing-02",
+      "value": "spacing-01",
+      "darkModeValue": "spacing-01",
       "group": "switch button/sizing",
       "collection": "semantic-tokens",
       "name": "switch-button-sizing-padding-x",
@@ -2766,8 +2739,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-02",
-      "darkModeValue": "spacing-02",
+      "value": "spacing-01",
+      "darkModeValue": "spacing-01",
       "group": "switch button/sizing",
       "collection": "semantic-tokens",
       "name": "switch-button-sizing-padding-y",
@@ -4108,8 +4081,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
-      "darkModeValue": "spacing-03",
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
       "group": "tabs/sizing",
       "collection": "semantic-tokens",
       "name": "tabs-sizing-padding-x",
@@ -4117,8 +4090,8 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
-      "darkModeValue": "spacing-05",
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
       "group": "tabs/sizing",
       "collection": "semantic-tokens",
       "name": "tabs-sizing-padding-y",
@@ -4144,8 +4117,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "tabs/background",
       "collection": "semantic-tokens",
       "name": "tabs-background-default",
@@ -4153,8 +4126,8 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-200",
-      "darkModeValue": "colors-gray-gray-200",
+      "value": "colors-gray-gray-100",
+      "darkModeValue": "colors-gray-gray-900",
       "group": "tabs/background",
       "collection": "semantic-tokens",
       "name": "tabs-background-hover",
@@ -4162,8 +4135,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "value": "colors-gray-gray-300",
+      "darkModeValue": "colors-gray-gray-700",
       "group": "tabs/background",
       "collection": "semantic-tokens",
       "name": "tabs-background-active",
@@ -4171,8 +4144,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "tabs/background",
       "collection": "semantic-tokens",
       "name": "tabs-background-focus",
@@ -4180,8 +4153,8 @@
     },
     {
       "alias": true,
-      "value": "inputs-background-disabled",
-      "darkModeValue": "inputs-background-disabled",
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-900",
       "group": "tabs/background",
       "collection": "semantic-tokens",
       "name": "tabs-background-disabled",
@@ -4189,26 +4162,8 @@
     },
     {
       "alias": true,
-      "value": "inputs-border-default",
-      "darkModeValue": "inputs-border-default",
-      "group": "tabs/border",
-      "collection": "semantic-tokens",
-      "name": "tabs-border-default",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "inputs-border-hover",
-      "darkModeValue": "inputs-border-hover",
-      "group": "tabs/border",
-      "collection": "semantic-tokens",
-      "name": "tabs-border-hover",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "inputs-border-active",
-      "darkModeValue": "inputs-border-active",
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-700",
       "group": "tabs/border",
       "collection": "semantic-tokens",
       "name": "tabs-border-active",
@@ -4216,26 +4171,8 @@
     },
     {
       "alias": true,
-      "value": "inputs-border-focus",
-      "darkModeValue": "inputs-border-focus",
-      "group": "tabs/border",
-      "collection": "semantic-tokens",
-      "name": "tabs-border-focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-400",
-      "darkModeValue": "inputs-border-disabled",
-      "group": "tabs/border",
-      "collection": "semantic-tokens",
-      "name": "tabs-border-disabled",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-700",
-      "darkModeValue": "colors-gray-gray-200",
+      "value": "colors-text-secondary",
+      "darkModeValue": "colors-gray-gray-400",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-default",
@@ -4243,8 +4180,8 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-700",
-      "darkModeValue": "colors-gray-gray-200",
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-gray-gray-100",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-hover",
@@ -4252,8 +4189,8 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-blue-blue-600",
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-gray-gray-100",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-active",
@@ -4261,8 +4198,8 @@
     },
     {
       "alias": true,
-      "value": "colors-focus-ring",
-      "darkModeValue": "colors-focus-ring",
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-gray-gray-100",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-focus",
@@ -4270,8 +4207,8 @@
     },
     {
       "alias": true,
-      "value": "buttons-theme-neutral-text-disabled",
-      "darkModeValue": "buttons-theme-neutral-text-disabled",
+      "value": "colors-gray-gray-800",
+      "darkModeValue": "colors-gray-gray-600",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-disabled",
@@ -4321,6 +4258,420 @@
       "collection": "semantic-tokens",
       "name": "dropdown-menu-menu-background",
       "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "stepper/sizing",
+      "collection": "semantic-tokens",
+      "name": "stepper-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "stepper/sizing",
+      "collection": "semantic-tokens",
+      "name": "stepper-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkModeValue": "spacing-03",
+      "group": "stepper/sizing",
+      "collection": "semantic-tokens",
+      "name": "stepper-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "stepper/sizing",
+      "collection": "semantic-tokens",
+      "name": "stepper-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "stepper/background",
+      "collection": "semantic-tokens",
+      "name": "stepper-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-brand-primary",
+      "darkModeValue": "colors-blue-blue-200",
+      "group": "stepper/background",
+      "collection": "semantic-tokens",
+      "name": "stepper-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-secondary",
+      "darkModeValue": "colors-gray-gray-400",
+      "group": "stepper/text",
+      "collection": "semantic-tokens",
+      "name": "stepper-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-03",
+      "darkModeValue": "spacing-for-1px-border-03",
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-100",
+      "darkModeValue": "colors-gray-gray-900",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-300",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-900",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "accordion/border",
+      "collection": "semantic-tokens",
+      "name": "accordion-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-400",
+      "darkModeValue": "colors-blue-blue-400",
+      "group": "accordion/border",
+      "collection": "semantic-tokens",
+      "name": "accordion-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-secondary",
+      "darkModeValue": "colors-gray-gray-400",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-gray-gray-100",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-100",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-gray-gray-100",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-800",
+      "darkModeValue": "colors-gray-gray-600",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "tabs/content",
+      "collection": "semantic-tokens",
+      "name": "tabs-content-background",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "stepper/background",
+      "collection": "semantic-tokens",
+      "name": "stepper-background-number-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-secondary",
+      "darkModeValue": "colors-gray-gray-400",
+      "group": "stepper/text",
+      "collection": "semantic-tokens",
+      "name": "stepper-text-number-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-brand-primary",
+      "group": "stepper/background",
+      "collection": "semantic-tokens",
+      "name": "stepper-background-number-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "stepper/text",
+      "collection": "semantic-tokens",
+      "name": "stepper-text-number-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "tabs/background",
+      "collection": "semantic-tokens",
+      "name": "tabs-background-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-brand-primary",
+      "darkModeValue": "colors-gray-gray-100",
+      "group": "tabs/text",
+      "collection": "semantic-tokens",
+      "name": "tabs-text-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-focus-ring",
+      "darkModeValue": "colors-focus-ring",
+      "group": "tabs/border",
+      "collection": "semantic-tokens",
+      "name": "tabs-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-green-green-700",
+      "darkModeValue": "colors-green-green-700",
+      "group": "stepper/text",
+      "collection": "semantic-tokens",
+      "name": "stepper-text-completed",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-success-backround",
+      "darkModeValue": "colors-success-backround",
+      "group": "stepper/background",
+      "collection": "semantic-tokens",
+      "name": "stepper-background-completed",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-green-green-700",
+      "darkModeValue": "colors-green-green-700",
+      "group": "stepper/background",
+      "collection": "semantic-tokens",
+      "name": "stepper-background-number-completed",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "stepper/text",
+      "collection": "semantic-tokens",
+      "name": "stepper-text-number-completed",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "stepper/border",
+      "collection": "semantic-tokens",
+      "name": "stepper-border-content",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "modals/background",
+      "collection": "semantic-tokens",
+      "name": "modals-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "modals/border",
+      "collection": "semantic-tokens",
+      "name": "modals-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-gray-gray-100",
+      "group": "modals/text",
+      "collection": "semantic-tokens",
+      "name": "modals-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-04",
+      "darkModeValue": "spacing-04",
+      "group": "tabs/sizing",
+      "collection": "semantic-tokens",
+      "name": "tabs-sizing-padding-top",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkModeValue": "spacing-02",
+      "group": "tabs/sizing",
+      "collection": "semantic-tokens",
+      "name": "tabs-sizing-padding-bottom",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -4551,10 +4902,10 @@
     {
       "name": "buttons-large",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1rem",
+      "font-size": "1.125rem",
       "font-weight": 700,
       "text-decoration": "none",
-      "line-height": "150%"
+      "line-height": "133%"
     },
     {
       "name": "input-helper-text",
@@ -4571,20 +4922,20 @@
       "value": "0px 4px 4px 0px rgba(0, 0, 0, 0.2500)"
     },
     {
-      "name": "focus-ring",
-      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8"
-    },
-    {
-      "name": "focus-ring---dark-mode",
-      "value": "0px 0px 0px 1px #383a44, 0px 0px 0px 3px #ffffff"
-    },
-    {
       "name": "elevation-2px",
       "value": "0px 1px 5px 0px rgba(0, 0, 0, 0.2000)"
     },
     {
       "name": "elevation-4px",
       "value": "0px 4px 10px 0px rgba(0, 0, 0, 0.1400)"
+    },
+    {
+      "name": "focus-ring",
+      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8"
+    },
+    {
+      "name": "focus-ring-dark-mode",
+      "value": "0px 0px 0px 1px #131317, 0px 0px 0px 3px #ffffff"
     }
   ]
 }
