@@ -22,12 +22,21 @@ export const WithLabel: StoryObj<CheckboxWithLabelProps> = {
   args: {
     label: 'Checkbox',
     disabled: false,
+    indeterminate: false,
   },
 };
 
-export const StandAlone: StoryObj<CheckboxProps> = {
+export const Standalone: StoryObj<CheckboxProps> = {
   render: createCheckbox,
   args: {
     disabled: false,
+  },
+};
+
+export const Indeterminate: StoryObj<CheckboxProps> = {
+  render: createCheckbox,
+  args: {
+    disabled: false,
+    indeterminate: true,
   },
 };

@@ -24,45 +24,47 @@ $prefix: constants.$veera-prefix;
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: 1px solid var(--#{$prefix}-radiobuttons-border-default);
-  background: var(--#{$prefix}-radiobuttons-background-default);
+  border: 1px solid var(--#{$prefix}-checkboxes-radios-border-default);
+  background: var(--#{$prefix}-checkboxes-radios-background-default);
+
+  &:focus {
+    box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-focus);
+  }
 
   &:hover {
-    border-color: var(--#{$prefix}-radiobuttons-border-hover);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-hover);
   }
 
   &:checked {
-    border-color: var(--#{$prefix}-radiobuttons-border-selected);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-selected);
 
     &::after {
-      @include dot(var(--#{$prefix}-radiobuttons-background-selected));
+      @include dot(var(--#{$prefix}-checkboxes-radios-background-selected));
     }
   }
 
   &:active {
-    border-color: var(--#{$prefix}-radiobuttons-border-active);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-active);
 
     &::after {
-      @include dot(var(--#{$prefix}-radiobuttons-background-active));
+      @include dot(var(--#{$prefix}-checkboxes-radios-background-active));
     }
-  }
-
-  &:focus {
-    box-shadow: var(--#{$prefix}-box-shadow-button-focus-ring);
   }
 
   &:disabled {
     pointer-events: none;
-    border-color: var(--#{$prefix}-radiobuttons-border-disabled);
-    background: var(--#{$prefix}-radiobuttons-background-disabled);
+    border-color: var(--#{$prefix}-checkboxes-radios-border-disabled);
+    background: var(--#{$prefix}-checkboxes-radios-background-disabled);
   }
 }
 
 .#{$prefix}-radio:not(input[type='radio']) {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-  padding: 12px 0;
+  gap: var(--#{$prefix}-checkboxes-radios-sizing-inner-spacing);
+  padding: var(--#{$prefix}-checkboxes-radios-sizing-padding-y)
+    var(--#{$prefix}-checkboxes-radios-sizing-padding-x);
 
   input {
     @include input-styles;
@@ -70,36 +72,36 @@ $prefix: constants.$veera-prefix;
     & + label {
       @include text-styles.body-regular;
 
-      color: var(--#{$prefix}-radiobuttons-text-default);
+      color: var(--#{$prefix}-checkboxes-radios-text-default);
     }
 
     &:hover {
       & + label {
-        color: var(--#{$prefix}-radiobuttons-text-hover);
+        color: var(--#{$prefix}-checkboxes-radios-text-hover);
       }
     }
 
     &:checked {
       & + label {
-        color: var(--#{$prefix}-radiobuttons-text-selected);
+        color: var(--#{$prefix}-checkboxes-radios-text-selected);
       }
     }
 
     &:active {
       & + label {
-        color: var(--#{$prefix}-radiobuttons-text-active);
+        color: var(--#{$prefix}-checkboxes-radios-text-active);
       }
     }
 
     &:focus {
       & + label {
-        color: var(--#{$prefix}-radiobuttons-text-focus);
+        color: var(--#{$prefix}-checkboxes-radios-text-focus);
       }
     }
 
     &:disabled {
       & + label {
-        color: var(--#{$prefix}-radiobuttons-text-disabled);
+        color: var(--#{$prefix}-checkboxes-radios-text-disabled);
       }
     }
   }

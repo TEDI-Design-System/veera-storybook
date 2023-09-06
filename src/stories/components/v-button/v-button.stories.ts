@@ -66,6 +66,6 @@ export const IconOnly: Story = {
     iconOnly: true,
     variant: 'primary',
     size: 'lg',
-    label: 'Primary',
+    label: 'forest',
   },
 };

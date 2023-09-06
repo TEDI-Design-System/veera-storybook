@@ -1,4 +1,18 @@
+// Form items
 @use './v-checkbox.scss';
 @use './v-radio.scss';
 @use './v-range.scss';
 @use './v-switch.scss';
+@use './v-form-control.scss';
+@use './v-form-feedback.scss';
+@use './v-input-group.scss';
+@use './v-form-layout.scss';
+@use './v-file-upload.scss';
+@use './v-datepicker.scss';
+@use './v-timepicker.scss';
+@use './v-select.scss';
+@use './v-phone-input.scss';
+
+// Dependencies
+@use '../components/v-dropdown/v-dropdown.scss';
+@use '../components/v-tag/v-tag.scss';

@@ -1,0 +1,85 @@
+@use '../../constants';
+@use '../../mixins/text-styles';
+@use '../../mixins/borders';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-width: var(--#{$prefix}-dropdown-menu-max-width);
+  border-radius: var(--#{$prefix}-dropdown-menu-menu-corner-radius);
+  border: 1px solid var(--#{$prefix}-dropdown-menu-menu-border);
+  background: var(--#{$prefix}-time-picker-widget-options-list-border);
+  box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
+
+  &--top {
+    bottom: 100%;
+    top: unset;
+  }
+
+  // TODO: update when correct vars are added to Figma;
+  &__option {
+    @include text-styles.body-regular;
+
+    $option: &;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    background: var(--#{$prefix}-colors-neutral-white);
+    padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-top)
+      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x)
+      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-bottom)
+      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x);
+
+    &:nth-child(1 of #{ $option }) {
+      @include borders.set-border-top-radius(var(--#{$prefix}-dropdown-menu-menu-corner-radius));
+    }
+
+    &:nth-last-child(1 of #{ $option }) {
+      @include borders.set-border-bottom-radius(var(--#{$prefix}-dropdown-menu-menu-corner-radius));
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--#{$prefix}-dropdown-menu-menuitem-border);
+    }
+
+    &--multiselect {
+      padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-top)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-bottom)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x);
+    }
+
+    &:focus {
+      color: var(--#{$prefix}-checkboxes-radios-text-default);
+      background: var(--#{$prefix}-colors-neutral-white);
+      box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+      position: relative;
+      z-index: 1;
+    }
+
+    &:hover {
+      color: var(--#{$prefix}-checkboxes-radios-text-default);
+      background: var(--#{$prefix}-colors-surface-secondary);
+    }
+
+    &--selected {
+      color: var(--#{$prefix}-checkboxes-radios-text-default);
+      background: var(--#{$prefix}-colors-blue-blue-100);
+    }
+
+    &:disabled {
+      pointer-events: none;
+      color: var(--#{$prefix}-checkboxes-radios-text-disabled);
+      background: var(--#{$prefix}-colors-surface-secondary);
+    }
+  }
+}
