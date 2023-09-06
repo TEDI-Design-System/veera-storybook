@@ -26,5 +26,7 @@ export const createRangeSlider = ({ disabled, min = 0, max = 100 }: RangeProps) 
     slider.style.setProperty('--v-range-progress', `${progress}%`);
   });
 
+  rangeSlider.ariaLabel = 'liugurväli näide';
+
   return rangeSlider;
 };

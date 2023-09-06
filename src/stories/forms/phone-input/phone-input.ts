@@ -30,9 +30,11 @@ export const createPhoneInput = ({
   input.placeholder = placeholder;
   input.className = 'v-phone-input__input';
   input.inputMode = 'tel';
+  input.ariaLabel = 'telefoni number';
   phoneInput.appendChild(input);
 
   const dropdown = document.createElement('div');
+  dropdown.ariaLabel = 'suunakood';
   dropdown.role = 'listbox';
   dropdown.className = 'v-dropdown';
   for (const opt of countryOptions) {
