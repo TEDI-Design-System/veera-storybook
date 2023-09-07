@@ -1,5 +1,6 @@
-@use '../mixins/text-styles' as text-styles;
-@use '../constants' as constants;
+@use '../mixins/text-styles';
+@use '../constants';
+@use '../mixins/focus';
 
 $prefix: constants.$veera-prefix;
 
@@ -19,9 +20,7 @@ $prefix: constants.$veera-prefix;
     pointer-events: none;
   }
 
-  &:focus {
-    box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
-  }
+  @include focus.focus-ring;
 
   &--primary {
     background: var(--#{$prefix}-buttons-theme-primary-background-default);

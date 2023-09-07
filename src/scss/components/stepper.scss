@@ -27,7 +27,6 @@ $prefix: constants.$veera-prefix;
     color: var(--#{$prefix}-stepper-text-default);
     background: var(--#{$prefix}-stepper-background-default);
     border: none;
-    outline: none;
     white-space: nowrap;
 
     &:nth-child(1 of #{ $step }) {
