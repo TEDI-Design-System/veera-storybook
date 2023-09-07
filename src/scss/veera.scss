@@ -8,7 +8,9 @@
 @use './utilities/colors.scss';
 
 // COMPONENTS
-@use './components/v-button/v-button.scss';
+@use './components/button.scss';
+@use './components/tag.scss';
+@use './components/dropdown.scss';
 
 // FORMS
 @use './forms/forms.scss';

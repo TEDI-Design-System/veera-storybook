@@ -1,6 +1,6 @@
-@use '../../constants';
-@use '../../mixins/text-styles';
-@use '../../mixins/borders';
+@use '../constants';
+@use '../mixins/text-styles';
+@use '../mixins/borders';
 
 $prefix: constants.$veera-prefix;
 

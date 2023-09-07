@@ -1,5 +1,5 @@
 import '@scss/forms/forms.scss';
-import '@scss/components/v-button/v-button.scss';
+import '@scss/components/button.scss';
 import clsx from 'clsx';
 import { createDaysGrid, createDaysList, createPanelHeader } from './datepicker.helpers';
 import { createIconInput } from '../form-control/form-control';

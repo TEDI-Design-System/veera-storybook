@@ -1,4 +1,4 @@
-import { createButton } from '../../components/v-button/v-button';
+import { createButton } from '../../components/button/button';
 import { createSelectControl } from '../form-control/form-control';
 import { createDatepickerDay } from './datepicker';
 
