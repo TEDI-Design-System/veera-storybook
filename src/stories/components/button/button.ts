@@ -1,5 +1,5 @@
 import { clsx } from 'clsx';
-import '@scss/components/v-button/v-button.scss';
+import '@scss/components/button.scss';
 
 export interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'neutral' | 'success' | 'danger';
