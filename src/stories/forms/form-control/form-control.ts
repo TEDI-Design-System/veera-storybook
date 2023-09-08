@@ -68,6 +68,8 @@ export const createSelectControl = ({
     select.appendChild(option);
   }
 
+  select.ariaLabel = 'valikukasti näide';
+
   return select;
 };
 

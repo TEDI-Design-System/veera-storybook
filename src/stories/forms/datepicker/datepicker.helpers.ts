@@ -1,4 +1,4 @@
-import { createButton } from '../../components/v-button/v-button';
+import { createButton } from '../../components/button/button';
 import { createSelectControl } from '../form-control/form-control';
 import { createDatepickerDay } from './datepicker';
 
@@ -61,6 +61,7 @@ export const createPanelHeader = () => {
     'detsember',
   ].map((month) => ({ text: month, value: month }));
   const monthSelect = createSelectControl({ size: 'sm', options: monthOptions });
+  monthSelect.ariaLabel = 'kuu';
   panelHeader.appendChild(monthSelect);
 
   const yearOptions = Array.from({ length: 64 }, (_, i) => `${i + 1960}`).map((year) => ({
@@ -68,6 +69,7 @@ export const createPanelHeader = () => {
     value: year,
   }));
   const yearSelect = createSelectControl({ size: 'sm', options: yearOptions });
+  yearSelect.ariaLabel = 'aasta';
   panelHeader.appendChild(yearSelect);
 
   const nextButton = createButton({

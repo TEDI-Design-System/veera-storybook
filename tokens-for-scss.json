@@ -640,8 +640,8 @@
     },
     {
       "alias": true,
-      "value": "colors-green-green-600",
-      "darkModeValue": "colors-green-green-600",
+      "value": "colors-green-green-700",
+      "darkModeValue": "colors-green-green-700",
       "group": "colors/success",
       "collection": "semantic-tokens",
       "name": "colors-success-border",
@@ -658,8 +658,8 @@
     },
     {
       "alias": true,
-      "value": "colors-yellow-yellow-700",
-      "darkModeValue": "colors-yellow-yellow-700",
+      "value": "colors-yellow-yellow-800",
+      "darkModeValue": "colors-yellow-yellow-800",
       "group": "colors/warning",
       "collection": "semantic-tokens",
       "name": "colors-warning-border",
@@ -676,8 +676,8 @@
     },
     {
       "alias": true,
-      "value": "colors-red-red-600",
-      "darkModeValue": "colors-red-red-600",
+      "value": "colors-red-red-700",
+      "darkModeValue": "colors-red-red-700",
       "group": "colors/error",
       "collection": "semantic-tokens",
       "name": "colors-error-border",
@@ -1698,7 +1698,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
+      "value": "colors-gray-gray-600",
       "darkModeValue": "colors-blue-blue-600",
       "group": "inputs/text",
       "collection": "semantic-tokens",
@@ -1707,7 +1707,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
+      "value": "colors-gray-gray-600",
       "darkModeValue": "buttons-theme-primary-text-default",
       "group": "inputs/text",
       "collection": "semantic-tokens",
@@ -1725,7 +1725,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
+      "value": "colors-gray-gray-600",
       "darkModeValue": "buttons-theme-primary-text-default",
       "group": "inputs/text",
       "collection": "semantic-tokens",
@@ -3433,8 +3433,8 @@
     },
     {
       "alias": true,
-      "value": "colors-surface-tertiary",
-      "darkModeValue": "colors-surface-tertiary",
+      "value": "colors-gray-gray-200",
+      "darkModeValue": "colors-gray-gray-200",
       "group": "table cells/data cell/background",
       "collection": "semantic-tokens",
       "name": "table-cells-data-cell-background-expandable",
@@ -3451,8 +3451,8 @@
     },
     {
       "alias": true,
-      "value": "colors-surface-quadrary",
-      "darkModeValue": "colors-surface-quadrary",
+      "value": "colors-blue-blue-200",
+      "darkModeValue": "colors-blue-blue-200",
       "group": "table cells/data cell/background",
       "collection": "semantic-tokens",
       "name": "table-cells-data-cell-background-expanded",
@@ -3460,8 +3460,8 @@
     },
     {
       "alias": true,
-      "value": "colors-surface-quadrary",
-      "darkModeValue": "colors-surface-quadrary",
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
       "group": "table cells/data cell/background",
       "collection": "semantic-tokens",
       "name": "table-cells-data-cell-background-expanded-content",
@@ -3523,8 +3523,8 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-100",
-      "darkModeValue": "colors-gray-gray-200",
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
       "group": "datepicker widget/days/background",
       "collection": "semantic-tokens",
       "name": "datepicker-widget-days-background-muted",
@@ -3532,7 +3532,7 @@
     },
     {
       "alias": true,
-      "value": "colors-text-tertiary",
+      "value": "colors-gray-gray-400",
       "darkModeValue": "colors-text-tertiary",
       "group": "datepicker widget/days/text",
       "collection": "semantic-tokens",
@@ -3838,7 +3838,7 @@
     },
     {
       "alias": true,
-      "value": "colors-surface-tertiary",
+      "value": "colors-gray-gray-100",
       "darkModeValue": "colors-neutral-white",
       "group": "table cells/mobile table cells/header/background",
       "collection": "semantic-tokens",
@@ -3847,7 +3847,7 @@
     },
     {
       "alias": true,
-      "value": "colors-surface-tertiary",
+      "value": "colors-gray-gray-200",
       "darkModeValue": "colors-neutral-white",
       "group": "table cells/mobile table cells/header/background",
       "collection": "semantic-tokens",
@@ -3910,7 +3910,7 @@
     },
     {
       "alias": true,
-      "value": "colors-surface-tertiary",
+      "value": "colors-gray-gray-100",
       "darkModeValue": "colors-neutral-white",
       "group": "table cells/mobile table cells/data cell/background",
       "collection": "semantic-tokens",
@@ -3919,7 +3919,7 @@
     },
     {
       "alias": true,
-      "value": "colors-surface-tertiary",
+      "value": "colors-gray-gray-100",
       "darkModeValue": "colors-neutral-white",
       "group": "table cells/mobile table cells/data cell/background",
       "collection": "semantic-tokens",
@@ -3982,8 +3982,8 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "value": "colors-borders",
+      "darkModeValue": "colors-borders",
       "group": "table cells/mobile table cells/data cell/border",
       "collection": "semantic-tokens",
       "name": "table-cells-mobile-table-cells-data-cell-border-expanded",
@@ -4672,6 +4672,15 @@
       "collection": "semantic-tokens",
       "name": "tabs-sizing-padding-bottom",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "stepper/text",
+      "collection": "semantic-tokens",
+      "name": "stepper-text-active",
+      "type": "COLOR"
     }
   ],
   "typography": [

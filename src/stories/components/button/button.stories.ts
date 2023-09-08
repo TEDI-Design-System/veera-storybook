@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/html';
-import type { ButtonProps } from './v-button';
-import { createButton } from './v-button';
+import type { ButtonProps } from './button';
+import { createButton } from './button';
 
 const meta = {
-  title: 'components/v-button',
+  title: 'components/button',
   tags: ['autodocs'],
   render: (args) => {
     return createButton(args);
