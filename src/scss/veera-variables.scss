@@ -221,7 +221,7 @@
   --v-tooltip-padding-x: var(--v-spacing-03);
   --v-tooltip-padding-y: var(--v-spacing-03);
   --v-tooltip-border-radius: var(--v-radius-01);
-  --v-colors-neutral-alpha-10: rgba(0, 0, 0, 0.0010);
+  --v-colors-neutral-alpha-10: rgba(0, 0, 0, 0.001);
   --v-inputs-sizing-sm-inner-spacing: var(--v-spacing-03);
   --v-inputs-sizing-md-inner-spacing: var(--v-spacing-03);
   --v-inputs-sizing-lg-inner-spacing: var(--v-spacing-03);
@@ -287,11 +287,21 @@
   --v-switch-button-track-off-state-background-active: var(--v-colors-neutral-white);
   --v-switch-button-track-off-state-background-focus: var(--v-colors-neutral-white);
   --v-switch-button-track-off-state-background-disabled: var(--v-colors-neutral-white);
-  --v-switch-button-thumb-off-state-background-default: var(--v-switch-button-track-off-state-border-default);
-  --v-switch-button-thumb-off-state-background-hover: var(--v-switch-button-track-off-state-border-hover);
-  --v-switch-button-thumb-off-state-background-active: var(--v-switch-button-track-off-state-border-active);
-  --v-switch-button-thumb-off-state-background-focus: var(--v-switch-button-track-off-state-border-focus);
-  --v-switch-button-thumb-off-state-background-disabled: var(--v-switch-button-track-off-state-border-disabled);
+  --v-switch-button-thumb-off-state-background-default: var(
+    --v-switch-button-track-off-state-border-default
+  );
+  --v-switch-button-thumb-off-state-background-hover: var(
+    --v-switch-button-track-off-state-border-hover
+  );
+  --v-switch-button-thumb-off-state-background-active: var(
+    --v-switch-button-track-off-state-border-active
+  );
+  --v-switch-button-thumb-off-state-background-focus: var(
+    --v-switch-button-track-off-state-border-focus
+  );
+  --v-switch-button-thumb-off-state-background-disabled: var(
+    --v-switch-button-track-off-state-border-disabled
+  );
   --v-switch-button-track-on-state-border-default: var(--v-colors-blue-blue-600);
   --v-switch-button-track-on-state-border-hover: var(--v-colors-blue-blue-500);
   --v-switch-button-track-on-state-border-active: var(--v-colors-blue-blue-700);
@@ -306,7 +316,9 @@
   --v-switch-button-thumb-on-state-background-hover: var(--v-colors-neutral-white);
   --v-switch-button-thumb-on-state-background-active: var(--v-colors-neutral-white);
   --v-switch-button-thumb-on-state-background-focus: var(--v-colors-neutral-white);
-  --v-switch-button-thumb-on-state-background-disabled: var(--v-switch-button-track-off-state-border-disabled);
+  --v-switch-button-thumb-on-state-background-disabled: var(
+    --v-switch-button-track-off-state-border-disabled
+  );
   --v-switch-button-text-default: var(--v-checkboxes-radios-text-default);
   --v-switch-button-text-hover: var(--v-checkboxes-radios-text-hover);
   --v-switch-button-text-active: var(--v-checkboxes-radios-text-active);
@@ -332,10 +344,18 @@
   --v-switch-button-icon-off-state-fill-active: var(--v-colors-neutral-white);
   --v-switch-button-icon-off-state-fill-focus: var(--v-colors-neutral-white);
   --v-switch-button-icon-off-state-fill-disabled: var(--v-colors-neutral-white);
-  --v-switch-button-icon-on-state-fill-default: var(--v-switch-button-track-on-state-background-default);
-  --v-switch-button-icon-on-state-fill-hover: var(--v-switch-button-track-on-state-background-hover);
-  --v-switch-button-icon-on-state-fill-active: var(--v-switch-button-track-on-state-background-active);
-  --v-switch-button-icon-on-state-fill-focus: var(--v-switch-button-track-on-state-background-focus);
+  --v-switch-button-icon-on-state-fill-default: var(
+    --v-switch-button-track-on-state-background-default
+  );
+  --v-switch-button-icon-on-state-fill-hover: var(
+    --v-switch-button-track-on-state-background-hover
+  );
+  --v-switch-button-icon-on-state-fill-active: var(
+    --v-switch-button-track-on-state-background-active
+  );
+  --v-switch-button-icon-on-state-fill-focus: var(
+    --v-switch-button-track-on-state-background-focus
+  );
   --v-switch-button-icon-on-state-fill-disabled: var(--v-colors-neutral-white);
   --v-datepicker-widget-days-background-selected: var(--v-checkboxes-radios-background-selected);
   --v-datepicker-widget-days-border-today-indicator: var(--v-colors-orange-orange-600);
@@ -533,9 +553,9 @@
   --v-tabs-sizing-padding-top: var(--v-spacing-04);
   --v-tabs-sizing-padding-bottom: var(--v-spacing-02);
   --v-stepper-text-active: var(--v-colors-neutral-white);
-  --v-box-shadow-drop-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2500);
-  --v-box-shadow-elevation-2px: 0px 1px 5px 0px rgba(0, 0, 0, 0.2000);
-  --v-box-shadow-elevation-4px: 0px 4px 10px 0px rgba(0, 0, 0, 0.1400);
+  --v-box-shadow-drop-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --v-box-shadow-elevation-2px: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  --v-box-shadow-elevation-4px: 0px 4px 10px 0px rgba(0, 0, 0, 0.14);
   --v-box-shadow-focus-ring: 0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8;
   --v-box-shadow-focus-ring-dark-mode: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #ffffff;
 }

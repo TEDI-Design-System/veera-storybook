@@ -1,5 +1,5 @@
-import { clsx } from 'clsx';
 import '@scss/components/button.scss';
+import { clsx } from 'clsx';
 
 export interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'neutral' | 'success' | 'danger';
@@ -7,14 +7,14 @@ export interface ButtonProps {
   label: string;
   disabled?: boolean;
   onClick?: () => void;
-  iconOnly: boolean;
+  iconOnly?: boolean;
 }
 export const createButton = ({
   label,
   variant = 'primary',
   size = 'md',
-  disabled,
-  iconOnly,
+  disabled = false,
+  iconOnly = false,
 }: ButtonProps) => {
   const btn = document.createElement('button');
   btn.type = 'button';
@@ -26,4 +26,11 @@ export const createButton = ({
   btn.disabled = !!disabled;
 
   return btn;
+};
+
+export const createCloseButton = () => {
+  const close = document.createElement('button');
+  close.className = 'v-close-button';
+  close.setAttribute('aria-label', 'Sulge Aken');
+  return close;
 };

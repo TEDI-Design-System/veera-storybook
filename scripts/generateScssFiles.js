@@ -1,6 +1,6 @@
-import tokensJson from '../tokens-for-scss.json' assert { type: 'json' };
 import fs from 'fs';
 import { scssContants } from '../constants.js';
+import tokensJson from '../tokens-for-scss.json' assert { type: 'json' };
 import { getColorUtilsScss } from './colorUtils.js';
 import { autoGenWarning, prefix } from './constants.js';
 
