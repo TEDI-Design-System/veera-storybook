@@ -530,7 +530,7 @@
     },
     {
       "alias": false,
-      "value": "#996d0a",
+      "value": "#94690d",
       "group": "colors/yellow",
       "collection": "primitive-tokens",
       "name": "colors-yellow-yellow-800",
@@ -614,73 +614,73 @@
     {
       "alias": true,
       "value": "colors-blue-blue-200",
-      "darkModeValue": "colors-blue-blue-200",
-      "group": "colors/info",
+      "darkModeValue": "colors-blue-blue-300",
+      "group": "colors/status/info",
       "collection": "semantic-tokens",
-      "name": "colors-info-backround",
+      "name": "colors-status-info-backround",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkModeValue": "colors-blue-blue-600",
-      "group": "colors/info",
+      "group": "colors/status/info",
       "collection": "semantic-tokens",
-      "name": "colors-info-border",
+      "name": "colors-status-info-border",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-green-green-100",
-      "darkModeValue": "colors-green-green-100",
-      "group": "colors/success",
+      "darkModeValue": "colors-green-green-300",
+      "group": "colors/status/success",
       "collection": "semantic-tokens",
-      "name": "colors-success-backround",
+      "name": "colors-status-success-backround",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-green-green-700",
       "darkModeValue": "colors-green-green-700",
-      "group": "colors/success",
+      "group": "colors/status/success",
       "collection": "semantic-tokens",
-      "name": "colors-success-border",
+      "name": "colors-status-success-border",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-yellow-yellow-100",
-      "darkModeValue": "colors-yellow-yellow-100",
-      "group": "colors/warning",
+      "darkModeValue": "colors-yellow-yellow-300",
+      "group": "colors/status/warning",
       "collection": "semantic-tokens",
-      "name": "colors-warning-background",
+      "name": "colors-status-warning-background",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-yellow-yellow-800",
       "darkModeValue": "colors-yellow-yellow-800",
-      "group": "colors/warning",
+      "group": "colors/status/warning",
       "collection": "semantic-tokens",
-      "name": "colors-warning-border",
+      "name": "colors-status-warning-border",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-red-red-100",
-      "darkModeValue": "colors-red-red-100",
-      "group": "colors/error",
+      "darkModeValue": "colors-red-red-300",
+      "group": "colors/status/error",
       "collection": "semantic-tokens",
-      "name": "colors-error-background",
+      "name": "colors-status-error-background",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-red-red-700",
       "darkModeValue": "colors-red-red-700",
-      "group": "colors/error",
+      "group": "colors/status/error",
       "collection": "semantic-tokens",
-      "name": "colors-error-border",
+      "name": "colors-status-error-border",
       "type": "COLOR"
     },
     {
@@ -1609,7 +1609,7 @@
     {
       "alias": true,
       "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "inputs/background",
       "collection": "semantic-tokens",
       "name": "inputs-background-default",
@@ -1618,7 +1618,7 @@
     {
       "alias": true,
       "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "inputs/background",
       "collection": "semantic-tokens",
       "name": "inputs-background-hover",
@@ -1627,7 +1627,7 @@
     {
       "alias": true,
       "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "inputs/background",
       "collection": "semantic-tokens",
       "name": "inputs-background-active",
@@ -1636,7 +1636,7 @@
     {
       "alias": true,
       "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "inputs/background",
       "collection": "semantic-tokens",
       "name": "inputs-background-focus",
@@ -1645,7 +1645,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-100",
-      "darkModeValue": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-900",
       "group": "inputs/background",
       "collection": "semantic-tokens",
       "name": "inputs-background-disabled",
@@ -1654,7 +1654,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-borders",
+      "darkModeValue": "colors-gray-gray-700",
       "group": "inputs/border",
       "collection": "semantic-tokens",
       "name": "inputs-border-default",
@@ -1672,7 +1672,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-800",
+      "darkModeValue": "colors-gray-gray-700",
       "group": "inputs/border",
       "collection": "semantic-tokens",
       "name": "inputs-border-active",
@@ -1690,7 +1690,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-400",
-      "darkModeValue": "colors-borders",
+      "darkModeValue": "colors-gray-gray-700",
       "group": "inputs/border",
       "collection": "semantic-tokens",
       "name": "inputs-border-disabled",
@@ -1699,7 +1699,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-600",
-      "darkModeValue": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-400",
       "group": "inputs/text",
       "collection": "semantic-tokens",
       "name": "inputs-text-default",
@@ -1708,7 +1708,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-600",
-      "darkModeValue": "buttons-theme-primary-text-default",
+      "darkModeValue": "colors-text-primary",
       "group": "inputs/text",
       "collection": "semantic-tokens",
       "name": "inputs-text-hover",
@@ -1717,7 +1717,7 @@
     {
       "alias": true,
       "value": "colors-text-primary",
-      "darkModeValue": "buttons-theme-primary-text-default",
+      "darkModeValue": "colors-text-primary",
       "group": "inputs/text",
       "collection": "semantic-tokens",
       "name": "inputs-text-active",
@@ -1726,7 +1726,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-600",
-      "darkModeValue": "buttons-theme-primary-text-default",
+      "darkModeValue": "colors-text-primary",
       "group": "inputs/text",
       "collection": "semantic-tokens",
       "name": "inputs-text-focus",
@@ -1735,7 +1735,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-600",
       "group": "inputs/text",
       "collection": "semantic-tokens",
       "name": "inputs-text-disabled",
@@ -1824,8 +1824,8 @@
     },
     {
       "alias": true,
-      "value": "colors-success-border",
-      "darkModeValue": "colors-success-border",
+      "value": "colors-status-success-border",
+      "darkModeValue": "colors-green-green-500",
       "group": "inputs/feedback",
       "collection": "semantic-tokens",
       "name": "inputs-feedback-success",
@@ -1833,8 +1833,8 @@
     },
     {
       "alias": true,
-      "value": "colors-error-border",
-      "darkModeValue": "colors-error-border",
+      "value": "colors-status-error-border",
+      "darkModeValue": "colors-red-red-500",
       "group": "inputs/feedback",
       "collection": "semantic-tokens",
       "name": "inputs-feedback-error",
@@ -1949,7 +1949,7 @@
     {
       "alias": true,
       "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "inputs/background",
       "collection": "semantic-tokens",
       "name": "inputs-background-error",
@@ -1958,7 +1958,7 @@
     {
       "alias": true,
       "value": "colors-neutral-white",
-      "darkModeValue": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-alpha-10",
       "group": "inputs/background",
       "collection": "semantic-tokens",
       "name": "inputs-background-success",
@@ -1966,8 +1966,8 @@
     },
     {
       "alias": true,
-      "value": "colors-error-border",
-      "darkModeValue": "colors-error-border",
+      "value": "colors-status-error-border",
+      "darkModeValue": "colors-red-red-500",
       "group": "inputs/border",
       "collection": "semantic-tokens",
       "name": "inputs-border-error",
@@ -1975,8 +1975,8 @@
     },
     {
       "alias": true,
-      "value": "colors-success-border",
-      "darkModeValue": "colors-success-border",
+      "value": "colors-status-success-border",
+      "darkModeValue": "colors-green-green-500",
       "group": "inputs/border",
       "collection": "semantic-tokens",
       "name": "inputs-border-success",
@@ -2030,7 +2030,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-error-border",
+      "darkModeValue": "colors-status-error-border",
       "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
       "name": "checkboxes-radios-border-active-focus",
@@ -2039,7 +2039,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-400",
-      "darkModeValue": "colors-success-border",
+      "darkModeValue": "colors-status-success-border",
       "group": "checkboxes radios/border",
       "collection": "semantic-tokens",
       "name": "checkboxes-radios-border-disabled",
@@ -2093,7 +2093,7 @@
     {
       "alias": true,
       "value": "colors-blue-blue-800",
-      "darkModeValue": "colors-error-border",
+      "darkModeValue": "colors-status-error-border",
       "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
       "name": "checkboxes-radios-background-active-focus",
@@ -2102,7 +2102,7 @@
     {
       "alias": true,
       "value": "colors-gray-gray-100",
-      "darkModeValue": "colors-success-border",
+      "darkModeValue": "colors-status-success-border",
       "group": "checkboxes radios/background",
       "collection": "semantic-tokens",
       "name": "checkboxes-radios-background-disabled",
@@ -2164,7 +2164,7 @@
     },
     {
       "alias": true,
-      "value": "colors-text-tertiary",
+      "value": "colors-gray-gray-400",
       "darkModeValue": "colors-gray-gray-400",
       "group": "checkboxes radios/text",
       "collection": "semantic-tokens",
@@ -4181,7 +4181,7 @@
     {
       "alias": true,
       "value": "colors-text-primary",
-      "darkModeValue": "colors-gray-gray-100",
+      "darkModeValue": "colors-text-primary",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-hover",
@@ -4190,7 +4190,7 @@
     {
       "alias": true,
       "value": "colors-text-primary",
-      "darkModeValue": "colors-gray-gray-100",
+      "darkModeValue": "colors-text-primary",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-active",
@@ -4199,7 +4199,7 @@
     {
       "alias": true,
       "value": "colors-text-primary",
-      "darkModeValue": "colors-gray-gray-100",
+      "darkModeValue": "colors-text-primary",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-focus",
@@ -4324,150 +4324,6 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
-      "darkModeValue": "spacing-05",
-      "group": "accordion/sizing",
-      "collection": "semantic-tokens",
-      "name": "accordion-sizing-padding-x",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "spacing-for-1px-border-03",
-      "darkModeValue": "spacing-for-1px-border-03",
-      "group": "accordion/sizing",
-      "collection": "semantic-tokens",
-      "name": "accordion-sizing-padding-y",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "spacing-05",
-      "darkModeValue": "spacing-05",
-      "group": "accordion/sizing",
-      "collection": "semantic-tokens",
-      "name": "accordion-sizing-inner-spacing",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "radius-01",
-      "darkModeValue": "radius-01",
-      "group": "accordion/sizing",
-      "collection": "semantic-tokens",
-      "name": "accordion-sizing-corner-radius",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "colors-neutral-alpha-10",
-      "darkModeValue": "colors-neutral-alpha-10",
-      "group": "accordion/background",
-      "collection": "semantic-tokens",
-      "name": "accordion-background-default",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-100",
-      "darkModeValue": "colors-gray-gray-900",
-      "group": "accordion/background",
-      "collection": "semantic-tokens",
-      "name": "accordion-background-hover",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-300",
-      "darkModeValue": "colors-gray-gray-700",
-      "group": "accordion/background",
-      "collection": "semantic-tokens",
-      "name": "accordion-background-active",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-neutral-alpha-10",
-      "darkModeValue": "colors-neutral-alpha-10",
-      "group": "accordion/background",
-      "collection": "semantic-tokens",
-      "name": "accordion-background-focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-500",
-      "darkModeValue": "colors-gray-gray-900",
-      "group": "accordion/background",
-      "collection": "semantic-tokens",
-      "name": "accordion-background-disabled",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-400",
-      "darkModeValue": "colors-gray-gray-700",
-      "group": "accordion/border",
-      "collection": "semantic-tokens",
-      "name": "accordion-border-default",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-400",
-      "darkModeValue": "colors-blue-blue-400",
-      "group": "accordion/border",
-      "collection": "semantic-tokens",
-      "name": "accordion-border-focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-text-secondary",
-      "darkModeValue": "colors-gray-gray-400",
-      "group": "accordion/text",
-      "collection": "semantic-tokens",
-      "name": "accordion-text-default",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-text-primary",
-      "darkModeValue": "colors-gray-gray-100",
-      "group": "accordion/text",
-      "collection": "semantic-tokens",
-      "name": "accordion-text-hover",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-600",
-      "darkModeValue": "colors-gray-gray-100",
-      "group": "accordion/text",
-      "collection": "semantic-tokens",
-      "name": "accordion-text-active",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-text-primary",
-      "darkModeValue": "colors-gray-gray-100",
-      "group": "accordion/text",
-      "collection": "semantic-tokens",
-      "name": "accordion-text-focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-gray-gray-800",
-      "darkModeValue": "colors-gray-gray-600",
-      "group": "accordion/text",
-      "collection": "semantic-tokens",
-      "name": "accordion-text-disabled",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
       "value": "colors-neutral-white",
       "darkModeValue": "colors-gray-gray-800",
       "group": "tabs/content",
@@ -4523,7 +4379,7 @@
     {
       "alias": true,
       "value": "colors-brand-primary",
-      "darkModeValue": "colors-gray-gray-100",
+      "darkModeValue": "colors-text-primary",
       "group": "tabs/text",
       "collection": "semantic-tokens",
       "name": "tabs-text-selected",
@@ -4549,8 +4405,8 @@
     },
     {
       "alias": true,
-      "value": "colors-success-backround",
-      "darkModeValue": "colors-success-backround",
+      "value": "colors-status-success-backround",
+      "darkModeValue": "colors-status-success-backround",
       "group": "stepper/background",
       "collection": "semantic-tokens",
       "name": "stepper-background-completed",
@@ -4581,15 +4437,6 @@
       "group": "stepper/border",
       "collection": "semantic-tokens",
       "name": "stepper-border-content",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-neutral-white",
-      "darkModeValue": "colors-gray-gray-800",
-      "group": "accordion/background",
-      "collection": "semantic-tokens",
-      "name": "accordion-background-selected",
       "type": "COLOR"
     },
     {
@@ -4649,7 +4496,7 @@
     {
       "alias": true,
       "value": "colors-text-primary",
-      "darkModeValue": "colors-gray-gray-100",
+      "darkModeValue": "colors-text-primary",
       "group": "modals/text",
       "collection": "semantic-tokens",
       "name": "modals-text-default",
@@ -4680,6 +4527,807 @@
       "group": "stepper/text",
       "collection": "semantic-tokens",
       "name": "stepper-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "alerts/sizing",
+      "collection": "semantic-tokens",
+      "name": "alerts-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "alerts/sizing",
+      "collection": "semantic-tokens",
+      "name": "alerts-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "alerts/sizing",
+      "collection": "semantic-tokens",
+      "name": "alerts-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "alerts/sizing",
+      "collection": "semantic-tokens",
+      "name": "alerts-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-info-backround",
+      "darkModeValue": "colors-status-info-backround",
+      "group": "alerts/background",
+      "collection": "semantic-tokens",
+      "name": "alerts-background-info",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-info-border",
+      "darkModeValue": "colors-status-info-border",
+      "group": "alerts/border",
+      "collection": "semantic-tokens",
+      "name": "alerts-border-info",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-success-backround",
+      "darkModeValue": "colors-status-success-backround",
+      "group": "alerts/background",
+      "collection": "semantic-tokens",
+      "name": "alerts-background-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-warning-background",
+      "darkModeValue": "colors-status-warning-background",
+      "group": "alerts/background",
+      "collection": "semantic-tokens",
+      "name": "alerts-background-warning",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-error-background",
+      "darkModeValue": "colors-status-error-background",
+      "group": "alerts/background",
+      "collection": "semantic-tokens",
+      "name": "alerts-background-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-success-border",
+      "darkModeValue": "colors-status-success-border",
+      "group": "alerts/border",
+      "collection": "semantic-tokens",
+      "name": "alerts-border-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-warning-border",
+      "darkModeValue": "colors-status-warning-border",
+      "group": "alerts/border",
+      "collection": "semantic-tokens",
+      "name": "alerts-border-warning",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-error-border",
+      "darkModeValue": "colors-status-error-border",
+      "group": "alerts/border",
+      "collection": "semantic-tokens",
+      "name": "alerts-border-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "cookies/sizing",
+      "collection": "semantic-tokens",
+      "name": "cookies-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "cookies/sizing",
+      "collection": "semantic-tokens",
+      "name": "cookies-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "cookies/sizing",
+      "collection": "semantic-tokens",
+      "name": "cookies-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "cookies/sizing",
+      "collection": "semantic-tokens",
+      "name": "cookies-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "cookies/background",
+      "collection": "semantic-tokens",
+      "name": "cookies-background-background",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "cookies/border",
+      "collection": "semantic-tokens",
+      "name": "cookies-border-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-text-primary",
+      "group": "cookies/text",
+      "collection": "semantic-tokens",
+      "name": "cookies-text-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-brand-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "loader/background",
+      "collection": "semantic-tokens",
+      "name": "loader-background-circular",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-brand-primary",
+      "darkModeValue": "colors-neutral-white",
+      "group": "loader/background",
+      "collection": "semantic-tokens",
+      "name": "loader-background-determinate",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "loader/background",
+      "collection": "semantic-tokens",
+      "name": "loader-background-determinate-background",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-700",
+      "darkModeValue": "colors-blue-blue-600",
+      "group": "colors/status/info",
+      "collection": "semantic-tokens",
+      "name": "colors-status-info-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-green-green-700",
+      "darkModeValue": "colors-green-green-800",
+      "group": "colors/status/success",
+      "collection": "semantic-tokens",
+      "name": "colors-status-success-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-yellow-yellow-800",
+      "darkModeValue": "colors-yellow-yellow-800",
+      "group": "colors/status/warning",
+      "collection": "semantic-tokens",
+      "name": "colors-status-warning-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-700",
+      "darkModeValue": "colors-red-red-700",
+      "group": "colors/status/error",
+      "collection": "semantic-tokens",
+      "name": "colors-status-error-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-info-text",
+      "darkModeValue": "colors-status-info-text",
+      "group": "alerts/text",
+      "collection": "semantic-tokens",
+      "name": "alerts-text-info",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-warning-text",
+      "darkModeValue": "colors-status-warning-text",
+      "group": "alerts/text",
+      "collection": "semantic-tokens",
+      "name": "alerts-text-warning",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-success-text",
+      "darkModeValue": "colors-status-success-text",
+      "group": "alerts/text",
+      "collection": "semantic-tokens",
+      "name": "alerts-text-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-warning-text",
+      "darkModeValue": "colors-status-error-text",
+      "group": "alerts/text",
+      "collection": "semantic-tokens",
+      "name": "alerts-text-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "colors/status/neutral",
+      "collection": "semantic-tokens",
+      "name": "colors-status-neutral-background",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "colors/status/neutral",
+      "collection": "semantic-tokens",
+      "name": "colors-status-neutral-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-text-primary",
+      "group": "colors/status/neutral",
+      "collection": "semantic-tokens",
+      "name": "colors-status-neutral-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-03",
+      "darkModeValue": "spacing-for-1px-border-03",
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "accordion/border",
+      "collection": "semantic-tokens",
+      "name": "accordion-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-secondary",
+      "darkModeValue": "colors-gray-gray-400",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-100",
+      "darkModeValue": "colors-gray-gray-900",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-300",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-900",
+      "group": "accordion/background",
+      "collection": "semantic-tokens",
+      "name": "accordion-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-400",
+      "darkModeValue": "colors-blue-blue-400",
+      "group": "accordion/border",
+      "collection": "semantic-tokens",
+      "name": "accordion-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-gray-gray-100",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkModeValue": "colors-gray-gray-100",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-gray-gray-100",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-800",
+      "darkModeValue": "colors-gray-gray-600",
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "badges/sizing",
+      "collection": "semantic-tokens",
+      "name": "badges-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "badges/sizing",
+      "collection": "semantic-tokens",
+      "name": "badges-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkModeValue": "spacing-05",
+      "group": "badges/sizing",
+      "collection": "semantic-tokens",
+      "name": "badges-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkModeValue": "radius-01",
+      "group": "badges/sizing",
+      "collection": "semantic-tokens",
+      "name": "badges-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "badges/background",
+      "collection": "semantic-tokens",
+      "name": "badges-background-info",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "badges/background",
+      "collection": "semantic-tokens",
+      "name": "badges-background-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "badges/background",
+      "collection": "semantic-tokens",
+      "name": "badges-background-warning",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "badges/background",
+      "collection": "semantic-tokens",
+      "name": "badges-background-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-info-border",
+      "darkModeValue": "colors-status-info-border",
+      "group": "badges/border",
+      "collection": "semantic-tokens",
+      "name": "badges-border-info",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-success-border",
+      "darkModeValue": "colors-status-success-border",
+      "group": "badges/border",
+      "collection": "semantic-tokens",
+      "name": "badges-border-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-warning-border",
+      "darkModeValue": "colors-status-warning-border",
+      "group": "badges/border",
+      "collection": "semantic-tokens",
+      "name": "badges-border-warning",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-error-border",
+      "darkModeValue": "colors-status-error-border",
+      "group": "badges/border",
+      "collection": "semantic-tokens",
+      "name": "badges-border-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-info-text",
+      "darkModeValue": "colors-status-info-text",
+      "group": "badges/text",
+      "collection": "semantic-tokens",
+      "name": "badges-text-info",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-warning-text",
+      "darkModeValue": "colors-status-warning-text",
+      "group": "badges/text",
+      "collection": "semantic-tokens",
+      "name": "badges-text-warning",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-success-text",
+      "darkModeValue": "colors-status-success-text",
+      "group": "badges/text",
+      "collection": "semantic-tokens",
+      "name": "badges-text-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-error-text",
+      "darkModeValue": "colors-status-error-text",
+      "group": "badges/text",
+      "collection": "semantic-tokens",
+      "name": "badges-text-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkModeValue": "colors-neutral-white",
+      "group": "badges/background",
+      "collection": "semantic-tokens",
+      "name": "badges-background-neutral",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-neutral-border",
+      "darkModeValue": "colors-status-neutral-border",
+      "group": "badges/border",
+      "collection": "semantic-tokens",
+      "name": "badges-border-neutral",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-neutral-text",
+      "darkModeValue": "colors-status-neutral-text",
+      "group": "badges/text",
+      "collection": "semantic-tokens",
+      "name": "badges-text-neutral",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-neutral-background",
+      "darkModeValue": "colors-status-neutral-background",
+      "group": "alerts/background",
+      "collection": "semantic-tokens",
+      "name": "alerts-background-neutral",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-neutral-border",
+      "darkModeValue": "colors-status-neutral-border",
+      "group": "alerts/border",
+      "collection": "semantic-tokens",
+      "name": "alerts-border-neutral",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-status-neutral-text",
+      "darkModeValue": "colors-status-neutral-text",
+      "group": "alerts/text",
+      "collection": "semantic-tokens",
+      "name": "alerts-text-neutral",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-text-primary",
+      "group": "close button/text",
+      "collection": "semantic-tokens",
+      "name": "close-button-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-text-primary",
+      "group": "close button/text",
+      "collection": "semantic-tokens",
+      "name": "close-button-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-text-primary",
+      "group": "close button/text",
+      "collection": "semantic-tokens",
+      "name": "close-button-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkModeValue": "colors-text-primary",
+      "group": "close button/text",
+      "collection": "semantic-tokens",
+      "name": "close-button-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-500",
+      "darkModeValue": "colors-gray-gray-700",
+      "group": "close button/text",
+      "collection": "semantic-tokens",
+      "name": "close-button-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
+      "group": "close button/background",
+      "collection": "semantic-tokens",
+      "name": "close-button-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-100",
+      "darkModeValue": "colors-gray-gray-800",
+      "group": "close button/background",
+      "collection": "semantic-tokens",
+      "name": "close-button-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-300",
+      "darkModeValue": "colors-gray-gray-900",
+      "group": "close button/background",
+      "collection": "semantic-tokens",
+      "name": "close-button-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
+      "group": "close button/background",
+      "collection": "semantic-tokens",
+      "name": "close-button-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
+      "group": "close button/background",
+      "collection": "semantic-tokens",
+      "name": "close-button-background-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-focus-ring",
+      "darkModeValue": "colors-focus-ring",
+      "group": "close button/border",
+      "collection": "semantic-tokens",
+      "name": "close-button-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-alpha-10",
+      "darkModeValue": "colors-neutral-alpha-10",
+      "group": "close button/background",
+      "collection": "semantic-tokens",
+      "name": "close-button-background-dark-mode",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "close-button-text-default",
+      "darkModeValue": "colors-gray-gray-1000",
+      "group": "alerts/close button color",
+      "collection": "semantic-tokens",
+      "name": "alerts-close-button-color-info",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "close-button-text-default",
+      "darkModeValue": "colors-gray-gray-1000",
+      "group": "alerts/close button color",
+      "collection": "semantic-tokens",
+      "name": "alerts-close-button-color-warning",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "close-button-text-default",
+      "darkModeValue": "colors-gray-gray-1000",
+      "group": "alerts/close button color",
+      "collection": "semantic-tokens",
+      "name": "alerts-close-button-color-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "close-button-text-default",
+      "darkModeValue": "colors-gray-gray-1000",
+      "group": "alerts/close button color",
+      "collection": "semantic-tokens",
+      "name": "alerts-close-button-color-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "close-button-text-default",
+      "darkModeValue": "close-button-text-default",
+      "group": "alerts/close button color",
+      "collection": "semantic-tokens",
+      "name": "alerts-close-button-color-neutral",
       "type": "COLOR"
     }
   ],
@@ -4940,7 +5588,7 @@
     },
     {
       "name": "focus-ring",
-      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #669cc8"
+      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px rgba(102, 156, 200, 0.4000)"
     },
     {
       "name": "focus-ring-dark-mode",
