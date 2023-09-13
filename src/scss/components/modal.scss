@@ -1,6 +1,6 @@
-@use '../constants';
-@use '../mixins/text-styles';
-@use '../mixins/focus';
+@use "../constants";
+@use "../mixins/text-styles";
+@use "../mixins/focus";
 
 $prefix: constants.$veera-prefix;
 
@@ -36,7 +36,6 @@ $prefix: constants.$veera-prefix;
   }
 
   &__body {
-    // empty for posterity
     overflow: auto;
   }
 
