@@ -61,7 +61,7 @@ export const createPanelHeader = () => {
     'detsember',
   ].map((month) => ({ text: month, value: month }));
   const monthSelect = createSelectControl({ size: 'sm', options: monthOptions });
-  monthSelect.ariaLabel = 'kuu';
+  monthSelect.setAttribute('aria-label', 'kuu');
   panelHeader.appendChild(monthSelect);
 
   const yearOptions = Array.from({ length: 64 }, (_, i) => `${i + 1960}`).map((year) => ({
@@ -69,7 +69,7 @@ export const createPanelHeader = () => {
     value: year,
   }));
   const yearSelect = createSelectControl({ size: 'sm', options: yearOptions });
-  yearSelect.ariaLabel = 'aasta';
+  yearSelect.setAttribute('aria-label', 'aasta');
   panelHeader.appendChild(yearSelect);
 
   const nextButton = createButton({

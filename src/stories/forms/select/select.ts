@@ -15,7 +15,7 @@ export const createSelect = ({ size, status, placeholder = 'Select' }: SelectSto
     [`v-form-control--${status}`]: !!status,
   });
   trigger.ariaHasPopup = 'listbox';
-  trigger.ariaExpanded = expanded.toString();
+  trigger.setAttribute('aria-expanded', expanded.toString());
   const placeholderEl = document.createElement('span');
   placeholderEl.innerText = placeholder;
   placeholderEl.className = 'v-form-control__placeholder';
@@ -39,7 +39,7 @@ export const createSelect = ({ size, status, placeholder = 'Select' }: SelectSto
   trigger.onclick = () => {
     expanded = !expanded;
     dropdown.hidden = !expanded;
-    trigger.ariaExpanded = expanded.toString();
+    trigger.setAttribute('aria-expanded', expanded.toString());
   };
 
   return select;
