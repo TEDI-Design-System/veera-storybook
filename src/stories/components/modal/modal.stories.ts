@@ -1,10 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/html';
-import { ModalStoryProps, createModal } from './modal';
+import { createModal, ModalStoryProps } from './modal';
 
 const meta = {
   title: 'components/modal',
   tags: ['autodocs'],
   render: createModal,
+  parameters: {
+    docs: {
+      story: {
+        iframeHeight: 500,
+        inline: false,
+      },
+    },
+  },
 } satisfies Meta<ModalStoryProps>;
 
 export default meta;
