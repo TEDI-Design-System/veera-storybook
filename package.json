@@ -9,12 +9,12 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "generate-scss": "node --experimental-json-modules scripts/generateScssFiles.js",
+    "generate-scss": "node --experimental-json-modules scripts/generateScssFiles.js && npx prettier src/scss/*.scss --write",
     "build-scss": "npm run generate-scss && npm run build"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^7.2.2",
-    "@storybook/addon-essentials": "^7.2.2",
+    "@storybook/addon-essentials": "^7.4.1",
     "@storybook/addon-interactions": "^7.2.2",
     "@storybook/addon-links": "^7.2.2",
     "@storybook/blocks": "^7.2.2",

@@ -13,12 +13,32 @@ const getBoxShadowRow = (variable) => {
   return `--${prefix}-box-shadow-${variable.name}: ${variable.value};`;
 };
 
+const generateDarkModeVariables = () => {
+  const variables = tokensJson.variables
+    .filter((v) => !!v.darkMode)
+    .map((v) => ({ name: v.name, ...v.darkMode }));
+  const boxShadows = tokensJson.boxShadows
+    .filter((s) => !!s.name.includes('dark-mode'))
+    .map((s) => ({ name: s.name.replace('-dark-mode', ''), ...s }));
+  const scss = `${autoGenWarning}@media (prefers-color-scheme: dark) {
+    :root {
+      ${variables.map(getVarRow).join('\n')}
+      ${boxShadows.map(getBoxShadowRow).join('\n')}
+    }
+  }
+  [data-${prefix}-color-scheme="dark"] {
+    ${variables.map(getVarRow).join('\n')}
+    ${boxShadows.map(getBoxShadowRow).join('\n')}
+  }`;
+  fs.writeFileSync('src/scss/veera-variables-dark.scss', scss);
+};
+
 const generateVariables = () => {
   const variables = tokensJson.variables;
   const boxShadows = tokensJson.boxShadows;
-  const scss = `${autoGenWarning}:root {
-  ${variables.map(getVarRow).join('\n  ')}
-  ${boxShadows.map(getBoxShadowRow).join('\n  ')}
+  const scss = `${autoGenWarning}:root, :root[data-${prefix}-color-scheme="light"] {
+  ${variables.map(getVarRow).join('\n')}
+  ${boxShadows.map(getBoxShadowRow).join('\n')}
 }`;
   fs.writeFileSync('src/scss/veera-variables.scss', scss);
 };
@@ -54,6 +74,7 @@ const generateScssFiles = () => {
   console.log('Generating scss files...');
   generateConstants();
   generateVariables();
+  generateDarkModeVariables();
   generateTextStyles();
   generateColorUtils();
   console.log('Done!');
