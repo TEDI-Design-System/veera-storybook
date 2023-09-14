@@ -9,7 +9,7 @@ $prefix: constants.$veera-prefix;
   &__tab-list {
     position: relative;
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: visible;
     padding: 3px; // To prevent overflow cutting off tabs focus ring TODO: needs improvement
     margin: -3px;
@@ -28,7 +28,7 @@ $prefix: constants.$veera-prefix;
       var(--#{$prefix}-tabs-sizing-padding-bottom) var(--#{$prefix}-tabs-sizing-padding-x);
     justify-content: center;
     align-items: center;
-    gap: var(--#{$prefix}-tabs-sizing-inner-spacing, 8px);
+    gap: var(--#{$prefix}-tabs-sizing-inner-spacing);
     background: var(--#{$prefix}-tabs-background-default);
     color: var(--#{$prefix}-tabs-text-default);
     white-space: nowrap;

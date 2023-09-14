@@ -5194,9 +5194,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
+      "value": "colors-neutral-alpha-10",
       "darkMode": {
-        "value": "colors-gray-gray-900",
+        "value": "colors-neutral-alpha-10",
         "alias": true
       },
       "group": "tabs/background",
@@ -5266,9 +5266,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-800",
+      "value": "colors-gray-gray-400",
       "darkMode": {
-        "value": "colors-gray-gray-600",
+        "value": "colors-gray-gray-700",
         "alias": true
       },
       "group": "tabs/text",
@@ -6802,7 +6802,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-300",
+      "value": "colors-gray-gray-400",
       "darkMode": {
         "value": "#ffffff",
         "alias": false

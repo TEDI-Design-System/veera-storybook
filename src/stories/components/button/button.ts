@@ -8,6 +8,7 @@ export interface ButtonProps {
   disabled?: boolean;
   onClick?: () => void;
   iconOnly?: boolean;
+  floating?: boolean;
 }
 export const createButton = ({
   label,
@@ -15,12 +16,14 @@ export const createButton = ({
   size = 'md',
   disabled = false,
   iconOnly = false,
+  floating,
 }: ButtonProps) => {
   const btn = document.createElement('button');
   btn.type = 'button';
   btn.innerText = label;
   btn.className = clsx('v-button', `v-button--${variant}`, `v-button--${size}`, {
     'v-button--icon-only': iconOnly,
+    'v-button--floating': floating,
     'material-icons': iconOnly,
   });
   btn.disabled = !!disabled;

@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import '@scss/components/tabs.scss';
+import { createContentFill, createHorizontalScrollButtons } from '../../utils';
 
 export interface TabItemProps {
   selected?: boolean;
@@ -11,10 +12,11 @@ export interface TabItemProps {
 export const createTabItem = ({ selected, disabled, number, onSelect }: TabItemProps) => {
   const tabItem = document.createElement('button');
   tabItem.className = clsx('v-tabs__tab', { 'v-tabs__tab--selected': selected });
+  tabItem.id = `tab-${number}`;
   tabItem.disabled = !!disabled;
   tabItem.innerText = `Tab ${number}`;
   tabItem.role = 'tab';
-  tabItem.ariaSelected = (!!selected).toString();
+  tabItem.setAttribute('aria-selected', (!!selected).toString());
 
   if (onSelect) {
     tabItem.onclick = () => {
@@ -40,6 +42,7 @@ export const createTabs = () => {
   const onSelect = (stepNr: number) => {
     activeTabNr = stepNr;
     renderTabs();
+    tabContent.setAttribute('aria-labelledby', `tab-${stepNr}`);
   };
 
   const renderTabs = () => {
@@ -61,14 +64,17 @@ export const createTabs = () => {
 
   const tabContent = document.createElement('div');
   tabContent.className = 'v-tabs__content';
+  tabContent.role = 'tabpanel';
+  tabContent.setAttribute('aria-labelledby', `tab-0`);
 
-  const content = document.createElement('div');
-  content.style.height = '200px';
-  content.style.border = '1px dashed lightgray';
-  content.style.borderRadius = '4px';
+  const content = createContentFill();
   tabContent.appendChild(content);
 
   tabs.appendChild(tabContent);
+
+  setTimeout(() => {
+    createHorizontalScrollButtons(tabsList);
+  }, 100);
 
   return tabs;
 };
