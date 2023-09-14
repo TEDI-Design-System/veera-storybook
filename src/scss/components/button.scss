@@ -4,6 +4,22 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin base-sizing($self) {
+  padding: var(--#{$prefix}-buttons-sizing-md-padding-y)
+    var(--#{$prefix}-buttons-sizing-md-padding-x);
+  border-radius: var(--#{$prefix}-buttons-sizing-md-corner-radius);
+
+  &#{ $self }--icon-only {
+    height: var(--#{$prefix}-buttons-sizing-md-icon-button-width-height);
+    width: var(--#{$prefix}-buttons-sizing-md-icon-button-width-height);
+    padding: var(--#{$prefix}-buttons-sizing-md-padding-icon-only);
+  }
+
+  &:not(#{ $self }--icon-only) {
+    @include text-styles.buttons-medium;
+  }
+}
+
 .#{$prefix}-button {
   $self: &;
 
@@ -189,19 +205,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &--md {
-    padding: var(--#{$prefix}-buttons-sizing-md-padding-y)
-      var(--#{$prefix}-buttons-sizing-md-padding-x);
-    border-radius: var(--#{$prefix}-buttons-sizing-md-corner-radius);
-
-    &#{ $self }--icon-only {
-      height: var(--#{$prefix}-buttons-sizing-md-icon-button-width-height);
-      width: var(--#{$prefix}-buttons-sizing-md-icon-button-width-height);
-      padding: var(--#{$prefix}-buttons-sizing-md-padding-icon-only);
-    }
-
-    &:not(#{ $self }--icon-only) {
-      @include text-styles.buttons-medium;
-    }
+    @include base-sizing($self);
   }
 
   &--lg {
@@ -219,4 +223,17 @@ $prefix: constants.$veera-prefix;
       @include text-styles.buttons-large;
     }
   }
+}
+
+.#{$prefix}-close-button {
+  all: unset;
+  cursor: pointer;
+  border-radius: 100%;
+  flex-shrink: 0;
+  height: 24px;
+  width: 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' fill='black' fill-opacity='0.01'/%3E%3Cpath d='M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z' fill='%23131317'/%3E%3C/svg%3E ");
+  @include focus.focus-ring;
 }

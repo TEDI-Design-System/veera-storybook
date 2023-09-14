@@ -13,8 +13,8 @@ export const createPhoneInput = ({
 
   const trigger = document.createElement('button');
   trigger.className = 'v-phone-input__country-select';
-  trigger.ariaHasPopup = 'listbox';
-  trigger.ariaExpanded = 'true';
+  trigger.setAttribute('aria-haspopup', 'listbox');
+  trigger.setAttribute('aria-expanded', 'true');
   trigger.innerHTML = EstonianFlag;
   const dialCode = document.createTextNode('+372');
   trigger.appendChild(dialCode);
@@ -30,11 +30,11 @@ export const createPhoneInput = ({
   input.placeholder = placeholder;
   input.className = 'v-phone-input__input';
   input.inputMode = 'tel';
-  input.ariaLabel = 'telefoni number';
+  input.setAttribute('aria-label', 'telefoni number');
   phoneInput.appendChild(input);
 
   const dropdown = document.createElement('div');
-  dropdown.ariaLabel = 'suunakood';
+  dropdown.setAttribute('aria-label', 'suunakood');
   dropdown.role = 'listbox';
   dropdown.className = 'v-dropdown';
   for (const opt of countryOptions) {

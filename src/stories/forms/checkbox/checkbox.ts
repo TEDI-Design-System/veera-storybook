@@ -10,7 +10,7 @@ export const createCheckbox = ({ disabled, indeterminate }: CheckboxProps) => {
   checkbox.type = 'checkbox';
   checkbox.disabled = !!disabled;
   checkbox.className = 'v-checkbox';
-  checkbox.ariaLabel = 'standalone checkbox';
+  checkbox.setAttribute('aria-label', 'standalone checkbox');
   checkbox.indeterminate = !!indeterminate;
 
   return checkbox;

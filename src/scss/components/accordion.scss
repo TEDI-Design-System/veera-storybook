@@ -1,0 +1,84 @@
+@use '../constants';
+@use '../mixins/text-styles';
+@use '../mixins/focus';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-accordion {
+  $self: &;
+
+  display: grid;
+  grid-template-rows: max-content 0fr;
+  transition: grid-template-rows 0.3s;
+  border: 1px solid var(--#{$prefix}-accordion-border-default);
+  border-radius: var(--#{$prefix}-accordion-sizing-corner-radius);
+  background: var(--#{$prefix}-accordion-background-default);
+
+  &--expanded {
+    grid-template-rows: max-content 1fr;
+    background: var(--#{$prefix}-accordion-background-selected);
+
+    #{ $self }__expand-icon {
+      transform: rotateX(180deg);
+    }
+
+    #{ $self }__header {
+      color: var(--#{$prefix}-accordion-text-active);
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    background: var(--#{$prefix}-accordion-background-disabled);
+
+    #{ $self }__header {
+      color: var(--#{$prefix}-accordion-text-disabled);
+    }
+  }
+
+  &__header {
+    @include focus.focus-ring;
+
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: var(--#{$prefix}-accordion-sizing-padding-y)
+      var(--#{$prefix}-accordion-sizing-padding-x);
+    border-radius: var(--#{$prefix}-accordion-sizing-corner-radius);
+    color: var(--#{$prefix}-accordion-text-default);
+
+    &:hover {
+      color: var(--#{$prefix}-accordion-text-hover);
+      background: var(--#{$prefix}-accordion-background-hover);
+    }
+
+    &:active {
+      color: var(--#{$prefix}-accordion-text-active);
+    }
+  }
+
+  &__expand-icon {
+    margin-left: auto;
+    transition: transform 0.3s;
+  }
+
+  &__title {
+    @include text-styles.headings-large-h4;
+
+    margin: 0;
+  }
+
+  &__collapse {
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: var(--#{$prefix}-accordion-sizing-padding-y)
+      var(--#{$prefix}-accordion-sizing-padding-x);
+    margin-top: var(--#{$prefix}-accordion-sizing-inner-spacing);
+  }
+}
