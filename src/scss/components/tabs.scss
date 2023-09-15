@@ -22,7 +22,7 @@ $prefix: constants.$veera-prefix;
     display: inline-flex;
     cursor: pointer;
     position: relative;
-    border: none;
+    border: 1px solid var(--#{$prefix}-tabs-border-default);
     outline: none;
     padding: var(--#{$prefix}-tabs-sizing-padding-top) var(--#{$prefix}-tabs-sizing-padding-x)
       var(--#{$prefix}-tabs-sizing-padding-bottom) var(--#{$prefix}-tabs-sizing-padding-x);
@@ -33,27 +33,32 @@ $prefix: constants.$veera-prefix;
     color: var(--#{$prefix}-tabs-text-default);
     white-space: nowrap;
 
+    @include focus.focus-ring;
+
+    &:focus {
+      z-index: 1;
+      background: var(--#{$prefix}-tabs-background-focus);
+      color: var(--#{$prefix}-tabs-text-focus);
+      border-color: var(--#{$prefix}-tabs-border-focus);
+    }
+
     &:hover {
       background: var(--#{$prefix}-tabs-background-hover);
       color: var(--#{$prefix}-tabs-text-hover);
+      border-color: var(--#{$prefix}-tabs-border-hover);
     }
 
     &:active {
       background: var(--#{$prefix}-tabs-background-active);
       color: var(--#{$prefix}-tabs-text-active);
-    }
-
-    @include focus.focus-ring;
-
-    &:focus {
-      z-index: 1;
+      border-color: var(--#{$prefix}-tabs-border-active);
     }
 
     &--selected {
       background: var(--#{$prefix}-tabs-background-selected);
       color: var(--#{$prefix}-tabs-text-selected);
+      border-color: var(--#{$prefix}-tabs-border-selected);
       font-weight: 700;
-      border: 1px solid var(--#{$prefix}-tabs-border-active);
       border-bottom: none;
 
       &::after {
@@ -72,6 +77,7 @@ $prefix: constants.$veera-prefix;
       pointer-events: none;
       background: var(--#{$prefix}-tabs-background-disabled);
       color: var(--#{$prefix}-tabs-text-disabled);
+      border-color: var(--#{$prefix}-tabs-border-disabled);
     }
   }
 
