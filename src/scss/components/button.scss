@@ -23,6 +23,8 @@ $prefix: constants.$veera-prefix;
 .#{$prefix}-button {
   $self: &;
 
+  @include base-sizing($self);
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
