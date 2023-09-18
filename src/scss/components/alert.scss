@@ -38,8 +38,6 @@ $prefix: constants.$veera-prefix;
 
   &__body {
     @include text-styles.body-small;
-
-    margin: 0;
   }
 
   &--info {
