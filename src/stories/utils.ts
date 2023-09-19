@@ -73,3 +73,10 @@ export const createHorizontalScrollButtons = (overflowElement: HTMLElement) => {
     }
   }
 };
+
+export const createIcon = ({ name, outlined }: { name: string; outlined?: boolean }) => {
+  const icon = document.createElement('span');
+  icon.className = outlined ? 'material-icons-outlined' : 'material-icons';
+  icon.innerText = name;
+  return icon;
+};
