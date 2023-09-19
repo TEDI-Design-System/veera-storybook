@@ -61,6 +61,11 @@ $prefix: constants.$veera-prefix;
       font-weight: 700;
       border-bottom: none;
 
+      &:hover {
+        background: var(--#{$prefix}-tabs-background-selected);
+        border-color: var(--#{$prefix}-tabs-border-selected);
+      }
+
       &::after {
         display: block;
         content: '';

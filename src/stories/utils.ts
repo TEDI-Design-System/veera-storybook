@@ -18,15 +18,15 @@ export const createContentFill = () => {
 };
 
 export const createHorizontalScrollButtons = (overflowElement: HTMLElement) => {
-  const leftBtnToRemove = document.getElementById('left-scroll-btn');
-  try {
-    overflowElement.removeChild(leftBtnToRemove!);
-  } catch {}
+  const leftBtnToRemove = overflowElement.querySelector('#left-scroll-btn');
+  if (leftBtnToRemove) {
+    overflowElement.removeChild(leftBtnToRemove);
+  }
 
-  const rightBtnToRemove = document.getElementById('right-scroll-btn');
-  try {
-    overflowElement.removeChild(rightBtnToRemove!);
-  } catch {}
+  const rightBtnToRemove = overflowElement.querySelector('#right-scroll-btn');
+  if (rightBtnToRemove) {
+    overflowElement.removeChild(rightBtnToRemove);
+  }
 
   // const onScroll = () => {
   //   setTimeout(() => {
