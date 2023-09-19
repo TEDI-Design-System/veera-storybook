@@ -2,8 +2,10 @@
 @use './mixins/text-styles';
 @use './mixins/media';
 
+$prefix: constants.$veera-prefix;
+
 h1,
-.#{constants.$veera-prefix}-text-h1 {
+.#{$prefix}-text-h1 {
   @include text-styles.headings-small-h1;
 
   @include media.tablet-and-up {
@@ -12,7 +14,7 @@ h1,
 }
 
 h2,
-.#{constants.$veera-prefix}-text-h2 {
+.#{$prefix}-text-h2 {
   @include text-styles.headings-small-h2;
 
   @include media.tablet-and-up {
@@ -21,7 +23,7 @@ h2,
 }
 
 h3,
-.#{constants.$veera-prefix}-text-h3 {
+.#{$prefix}-text-h3 {
   @include text-styles.headings-small-h3;
 
   @include media.tablet-and-up {
@@ -30,7 +32,7 @@ h3,
 }
 
 h4,
-.#{constants.$veera-prefix}-text-h4 {
+.#{$prefix}-text-h4 {
   @include text-styles.headings-small-h4;
 
   @include media.tablet-and-up {
@@ -39,7 +41,7 @@ h4,
 }
 
 h5,
-.#{constants.$veera-prefix}-text-h5 {
+.#{$prefix}-text-h5 {
   @include text-styles.headings-small-h5;
 
   @include media.tablet-and-up {
@@ -48,7 +50,7 @@ h5,
 }
 
 h6,
-.#{constants.$veera-prefix}-text-h6 {
+.#{$prefix}-text-h6 {
   @include text-styles.headings-small-h6;
 
   @include media.tablet-and-up {
@@ -57,7 +59,7 @@ h6,
 }
 
 h6,
-.#{constants.$veera-prefix}-text-display {
+.#{$prefix}-text-display {
   @include text-styles.headings-small-display;
 
   @include media.tablet-and-up {
@@ -66,30 +68,49 @@ h6,
 }
 
 p,
-.#{constants.$veera-prefix}-text-body {
+.#{$prefix}-text-body {
   @include text-styles.body-regular;
 }
 
-.#{constants.$veera-prefix}-text-body-bold {
+.#{$prefix}-text-body-bold {
   @include text-styles.body-regular-bold;
 }
 
-.#{constants.$veera-prefix}-text-body-sm {
+.#{$prefix}-text-body-sm {
   @include text-styles.body-small;
 }
 
-.#{constants.$veera-prefix}-text-body-sm-bold {
+.#{$prefix}-text-body-sm-bold {
   @include text-styles.body-small-bold;
 }
 
-.#{constants.$veera-prefix}-text-body-xs {
+.#{$prefix}-text-body-xs {
   @include text-styles.body-extra-small;
 }
 
-.#{constants.$veera-prefix}-text-subtitle {
+.#{$prefix}-text-subtitle {
   @include text-styles.subtitles-regular;
 }
 
-.#{constants.$veera-prefix}-text-subtitle-sm {
+.#{$prefix}-text-subtitle-sm {
   @include text-styles.subtitles-small;
+}
+
+a,
+.#{$prefix}-link {
+  @include text-styles.links-regular;
+
+  color: var(--#{$prefix}-colors-link);
+}
+
+.#{$prefix}-link-sm {
+  @include text-styles.links-small;
+
+  color: var(--#{$prefix}-colors-link);
+}
+
+.#{$prefix}-link-xs {
+  @include text-styles.links-extra-small;
+
+  color: var(--#{$prefix}-colors-link);
 }

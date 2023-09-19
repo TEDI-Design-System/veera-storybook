@@ -14,3 +14,10 @@ export const createContentFill = () => {
   content.style.borderRadius = '4px';
   return content;
 };
+
+export const createIcon = ({ name, outlined }: { name: string; outlined?: boolean }) => {
+  const icon = document.createElement('span');
+  icon.className = outlined ? 'material-icons-outlined' : 'material-icons';
+  icon.innerText = name;
+  return icon;
+};
