@@ -434,7 +434,7 @@
     },
     {
       "alias": false,
-      "value": "#4a4d5a",
+      "value": "#454854",
       "group": "colors/gray",
       "collection": "primitive-tokens",
       "name": "colors-gray-gray-700",
@@ -604,7 +604,7 @@
       "alias": true,
       "value": "colors-gray-gray-200",
       "darkMode": {
-        "value": "colors-gray-gray-200",
+        "value": "colors-gray-gray-900",
         "alias": true
       },
       "group": "colors",
@@ -614,7 +614,7 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-200",
+      "value": "colors-blue-blue-100",
       "darkMode": {
         "value": "colors-blue-blue-600",
         "alias": true
@@ -698,7 +698,7 @@
     },
     {
       "alias": true,
-      "value": "colors-red-red-400",
+      "value": "colors-red-red-500",
       "darkMode": {
         "value": "colors-red-red-500",
         "alias": true
@@ -725,7 +725,7 @@
       },
       "group": "colors/surface",
       "collection": "semantic-tokens",
-      "name": "colors-surface-secondary",
+      "name": "colors-surface-page-content",
       "type": "COLOR"
     },
     {
@@ -761,7 +761,7 @@
       },
       "group": "colors/surface",
       "collection": "semantic-tokens",
-      "name": "colors-surface-primary",
+      "name": "colors-surface-page-background",
       "type": "COLOR"
     },
     {
@@ -2426,9 +2426,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
+      "value": "colors-gray-gray-400",
       "darkMode": {
-        "value": "colors-borders",
+        "value": "colors-gray-gray-700",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2440,7 +2440,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-gray-gray-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2452,7 +2452,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-gray-gray-800",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2464,7 +2464,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-focus-ring",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2474,9 +2474,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
+      "value": "colors-gray-gray-400",
       "darkMode": {
-        "value": "colors-borders",
+        "value": "colors-gray-gray-700",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2488,7 +2488,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-status-error-border",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2498,9 +2498,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-400",
+      "value": "colors-text-disabled",
       "darkMode": {
-        "value": "colors-status-success-border",
+        "value": "colors-text-disabled",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2510,9 +2510,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
+      "value": "colors-neutral-alpha-10",
       "darkMode": {
-        "value": "colors-borders",
+        "value": "colors-neutral-alpha-10",
         "alias": true
       },
       "group": "checkboxes radios/background",
@@ -2522,9 +2522,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
+      "value": "colors-gray-gray-200",
       "darkMode": {
-        "value": "colors-gray-gray-600",
+        "value": "colors-gray-gray-900",
         "alias": true
       },
       "group": "checkboxes radios/background",
@@ -2536,7 +2536,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-gray-gray-800",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "checkboxes radios/background",
@@ -2548,7 +2548,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-focus-ring",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "checkboxes radios/background",
@@ -2558,9 +2558,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
+      "value": "colors-neutral-alpha-10",
       "darkMode": {
-        "value": "colors-borders",
+        "value": "colors-neutral-alpha-10",
         "alias": true
       },
       "group": "checkboxes radios/background",
@@ -2572,7 +2572,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-status-error-border",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "checkboxes radios/background",
@@ -2582,9 +2582,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-100",
+      "value": "colors-neutral-alpha-10",
       "darkMode": {
-        "value": "colors-status-success-border",
+        "value": "colors-neutral-alpha-10",
         "alias": true
       },
       "group": "checkboxes radios/background",
@@ -2594,9 +2594,9 @@
     },
     {
       "alias": true,
-      "value": "colors-text-primary",
+      "value": "colors-text-secondary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-text-secondary",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2608,7 +2608,7 @@
       "alias": true,
       "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2620,7 +2620,7 @@
       "alias": true,
       "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2632,7 +2632,7 @@
       "alias": true,
       "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2644,7 +2644,7 @@
       "alias": true,
       "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2656,7 +2656,7 @@
       "alias": true,
       "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2666,9 +2666,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-400",
+      "value": "colors-text-disabled",
       "darkMode": {
-        "value": "colors-gray-gray-400",
+        "value": "colors-text-disabled",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2680,7 +2680,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "checkboxes radios/background",
@@ -2692,7 +2692,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2704,7 +2704,7 @@
       "alias": true,
       "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2977,15 +2977,15 @@
       "type": "FLOAT"
     },
     {
-      "alias": false,
-      "value": "24px",
+      "alias": true,
+      "value": "spacing-05",
       "darkMode": {
-        "value": "24px",
-        "alias": false
+        "value": "spacing-05",
+        "alias": true
       },
       "group": "switch button/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-thumb-size",
+      "name": "switch-button-sizing-switch-small-medium",
       "type": "FLOAT"
     },
     {
@@ -3561,27 +3561,15 @@
       "type": "COLOR"
     },
     {
-      "alias": false,
-      "value": "56px",
-      "darkMode": {
-        "value": "56px",
-        "alias": false
-      },
-      "group": "switch button/sizing",
-      "collection": "semantic-tokens",
-      "name": "switch-button-sizing-width",
-      "type": "FLOAT"
-    },
-    {
       "alias": true,
-      "value": "spacing-07",
+      "value": "spacing-08",
       "darkMode": {
-        "value": "spacing-07",
+        "value": "spacing-08",
         "alias": true
       },
       "group": "switch button/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-height",
+      "name": "switch-button-sizing-width-small-medium",
       "type": "FLOAT"
     },
     {
@@ -5102,9 +5090,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-03",
+      "value": "spacing-for-1px-border-04",
       "darkMode": {
-        "value": "spacing-03",
+        "value": "spacing-04",
         "alias": true
       },
       "group": "tabs/sizing",
@@ -5174,9 +5162,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
+      "value": "colors-neutral-alpha-10",
       "darkMode": {
-        "value": "colors-gray-gray-1000",
+        "value": "colors-neutral-alpha-10",
         "alias": true
       },
       "group": "tabs/background",
@@ -5186,9 +5174,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-white",
+      "value": "colors-neutral-alpha-10",
       "darkMode": {
-        "value": "colors-gray-gray-1000",
+        "value": "colors-neutral-alpha-10",
         "alias": true
       },
       "group": "tabs/background",
@@ -5289,7 +5277,7 @@
       },
       "group": "checkboxes radios/sizing",
       "collection": "semantic-tokens",
-      "name": "checkboxes-radios-sizing-input-width-height",
+      "name": "checkboxes-radios-sizing-input-width-height-default",
       "type": "FLOAT"
     },
     {
@@ -5380,7 +5368,7 @@
       "alias": true,
       "value": "colors-neutral-white",
       "darkMode": {
-        "value": "colors-gray-gray-800",
+        "value": "colors-gray-gray-1000",
         "alias": true
       },
       "group": "stepper/background",
@@ -5404,7 +5392,7 @@
       "alias": true,
       "value": "colors-text-secondary",
       "darkMode": {
-        "value": "colors-gray-gray-400",
+        "value": "colors-text-secondary",
         "alias": true
       },
       "group": "stepper/text",
@@ -5428,7 +5416,7 @@
       "alias": true,
       "value": "colors-gray-gray-200",
       "darkMode": {
-        "value": "colors-gray-gray-700",
+        "value": "colors-gray-gray-900",
         "alias": true
       },
       "group": "stepper/background",
@@ -5440,7 +5428,7 @@
       "alias": true,
       "value": "colors-text-secondary",
       "darkMode": {
-        "value": "colors-gray-gray-400",
+        "value": "colors-text-secondary",
         "alias": true
       },
       "group": "stepper/text",
@@ -5462,7 +5450,7 @@
     },
     {
       "alias": true,
-      "value": "colors-text-primary",
+      "value": "colors-brand-primary",
       "darkMode": {
         "value": "colors-neutral-white",
         "alias": true
@@ -5488,7 +5476,7 @@
       "alias": true,
       "value": "colors-brand-primary",
       "darkMode": {
-        "value": "colors-blue-blue-100",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "tabs/text",
@@ -5512,7 +5500,7 @@
       "alias": true,
       "value": "colors-green-green-700",
       "darkMode": {
-        "value": "colors-green-green-700",
+        "value": "colors-green-green-100",
         "alias": true
       },
       "group": "stepper/text",
@@ -5536,7 +5524,7 @@
       "alias": true,
       "value": "colors-green-green-700",
       "darkMode": {
-        "value": "colors-green-green-700",
+        "value": "colors-green-green-200",
         "alias": true
       },
       "group": "stepper/background",
@@ -5548,7 +5536,7 @@
       "alias": true,
       "value": "colors-neutral-white",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-green-green-700",
         "alias": true
       },
       "group": "stepper/text",
@@ -5620,7 +5608,7 @@
       "alias": true,
       "value": "colors-neutral-white",
       "darkMode": {
-        "value": "colors-gray-gray-800",
+        "value": "colors-gray-gray-1000",
         "alias": true
       },
       "group": "modals/background",
@@ -5654,33 +5642,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-04",
-      "darkMode": {
-        "value": "spacing-04",
-        "alias": true
-      },
-      "group": "tabs/sizing",
-      "collection": "semantic-tokens",
-      "name": "tabs-sizing-padding-top",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "spacing-02",
-      "darkMode": {
-        "value": "spacing-02",
-        "alias": true
-      },
-      "group": "tabs/sizing",
-      "collection": "semantic-tokens",
-      "name": "tabs-sizing-padding-bottom",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
       "value": "colors-neutral-white",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-brand-primary",
         "alias": true
       },
       "group": "stepper/text",
@@ -5714,9 +5678,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-03",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-03",
         "alias": true
       },
       "group": "alerts/sizing",
@@ -5884,7 +5848,7 @@
       "alias": true,
       "value": "colors-neutral-white",
       "darkMode": {
-        "value": "colors-gray-gray-800",
+        "value": "colors-gray-gray-1000",
         "alias": true
       },
       "group": "cookies/background",
@@ -5920,7 +5884,7 @@
       "alias": true,
       "value": "colors-brand-primary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "loader/background",
@@ -5932,7 +5896,7 @@
       "alias": true,
       "value": "colors-brand-primary",
       "darkMode": {
-        "value": "colors-neutral-white",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "loader/background",
@@ -5942,9 +5906,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-200",
+      "value": "colors-gray-gray-200",
       "darkMode": {
-        "value": "colors-gray-gray-800",
+        "value": "colors-gray-gray-900",
         "alias": true
       },
       "group": "loader/background",
@@ -5956,7 +5920,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-200",
+        "value": "colors-blue-blue-100",
         "alias": true
       },
       "group": "colors/status/info",
@@ -6038,7 +6002,7 @@
     },
     {
       "alias": true,
-      "value": "colors-status-warning-text",
+      "value": "colors-status-error-text",
       "darkMode": {
         "value": "colors-status-error-text",
         "alias": true
@@ -6110,9 +6074,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-03",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-03",
         "alias": true
       },
       "group": "accordion/sizing",
@@ -6160,7 +6124,7 @@
       "alias": true,
       "value": "colors-text-secondary",
       "darkMode": {
-        "value": "colors-gray-gray-400",
+        "value": "colors-text-secondary",
         "alias": true
       },
       "group": "accordion/text",
@@ -6170,7 +6134,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-100",
+      "value": "colors-gray-gray-200",
       "darkMode": {
         "value": "colors-gray-gray-900",
         "alias": true
@@ -6184,7 +6148,7 @@
       "alias": true,
       "value": "colors-gray-gray-300",
       "darkMode": {
-        "value": "colors-gray-gray-700",
+        "value": "colors-gray-gray-800",
         "alias": true
       },
       "group": "accordion/background",
@@ -6196,7 +6160,7 @@
       "alias": true,
       "value": "colors-neutral-white",
       "darkMode": {
-        "value": "colors-gray-gray-800",
+        "value": "colors-gray-gray-1000",
         "alias": true
       },
       "group": "accordion/background",
@@ -6218,7 +6182,7 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-500",
+      "value": "colors-neutral-alpha-10",
       "darkMode": {
         "value": "colors-gray-gray-900",
         "alias": true
@@ -6230,9 +6194,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-400",
+      "value": "colors-neutral-alpha-10",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-alpha-10",
         "alias": true
       },
       "group": "accordion/border",
@@ -6244,7 +6208,7 @@
       "alias": true,
       "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-gray-gray-100",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "accordion/text",
@@ -6254,9 +6218,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-600",
+      "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-gray-gray-100",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "accordion/text",
@@ -6268,7 +6232,7 @@
       "alias": true,
       "value": "colors-text-primary",
       "darkMode": {
-        "value": "colors-gray-gray-100",
+        "value": "colors-text-primary",
         "alias": true
       },
       "group": "accordion/text",
@@ -6278,9 +6242,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-800",
+      "value": "colors-text-disabled",
       "darkMode": {
-        "value": "colors-gray-gray-600",
+        "value": "colors-text-disabled",
         "alias": true
       },
       "group": "accordion/text",
@@ -6758,9 +6722,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-alpha-10",
+      "value": "colors-gray-gray-200",
       "darkMode": {
-        "value": "colors-neutral-alpha-10",
+        "value": "colors-gray-gray-900",
         "alias": true
       },
       "group": "tabs/border",
@@ -6782,9 +6746,9 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-300",
+      "value": "colors-gray-gray-400",
       "darkMode": {
-        "value": "colors-gray-gray-800",
+        "value": "colors-gray-gray-700",
         "alias": true
       },
       "group": "tabs/border",
@@ -6806,14 +6770,290 @@
     },
     {
       "alias": true,
-      "value": "colors-gray-gray-400",
+      "value": "colors-gray-gray-300",
       "darkMode": {
-        "value": "colors-gray-gray-700",
+        "value": "colors-gray-gray-800",
         "alias": true
       },
       "group": "colors/text",
       "collection": "semantic-tokens",
       "name": "colors-text-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "tabs/content",
+      "collection": "semantic-tokens",
+      "name": "tabs-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "tabs/content",
+      "collection": "semantic-tokens",
+      "name": "tabs-content-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-disabled",
+      "darkMode": {
+        "value": "colors-text-disabled",
+        "alias": true
+      },
+      "group": "accordion/border",
+      "collection": "semantic-tokens",
+      "name": "accordion-border-disabled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-brand-primary",
+      "darkMode": {
+        "value": "colors-blue-blue-300",
+        "alias": true
+      },
+      "group": "accordion/text",
+      "collection": "semantic-tokens",
+      "name": "accordion-text-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-02",
+      "darkMode": {
+        "value": "0px",
+        "alias": false
+      },
+      "group": "tabs/sizing",
+      "collection": "semantic-tokens",
+      "name": "tabs-sizing-padding-y-bottom",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-04",
+      "darkMode": {
+        "value": "spacing-for-1px-border-04",
+        "alias": true
+      },
+      "group": "accordion/sizing",
+      "collection": "semantic-tokens",
+      "name": "accordion-sizing-padding-y-large",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkMode": {
+        "value": "spacing-07",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-input-width-height-large",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-06",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-height-small-medium",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-06",
+      "darkMode": {
+        "value": "spacing-06",
+        "alias": true
+      },
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-switch-large",
+      "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "56px",
+      "darkMode": {
+        "value": "56px",
+        "alias": false
+      },
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-width-large",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "switch button/sizing",
+      "collection": "semantic-tokens",
+      "name": "switch-button-sizing-height-large",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "cards/sizing",
+      "collection": "semantic-tokens",
+      "name": "cards-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "cards/sizing",
+      "collection": "semantic-tokens",
+      "name": "cards-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "cards/sizing",
+      "collection": "semantic-tokens",
+      "name": "cards-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkMode": {
+        "value": "radius-01",
+        "alias": true
+      },
+      "group": "cards/sizing",
+      "collection": "semantic-tokens",
+      "name": "cards-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkMode": {
+        "value": "colors-gray-gray-1000",
+        "alias": true
+      },
+      "group": "cards/background",
+      "collection": "semantic-tokens",
+      "name": "cards-background-white",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-400",
+      "darkMode": {
+        "value": "colors-gray-gray-700",
+        "alias": true
+      },
+      "group": "cards/border",
+      "collection": "semantic-tokens",
+      "name": "cards-border-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkMode": {
+        "value": "colors-text-primary",
+        "alias": true
+      },
+      "group": "cards/text",
+      "collection": "semantic-tokens",
+      "name": "cards-text-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkMode": {
+        "value": "colors-gray-gray-900",
+        "alias": true
+      },
+      "group": "cards/background",
+      "collection": "semantic-tokens",
+      "name": "cards-background-light-gray",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-300",
+      "darkMode": {
+        "value": "colors-gray-gray-800",
+        "alias": true
+      },
+      "group": "cards/background",
+      "collection": "semantic-tokens",
+      "name": "cards-background-gray",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-white",
+      "darkMode": {
+        "value": "colors-gray-gray-1000",
+        "alias": true
+      },
+      "group": "cards/background",
+      "collection": "semantic-tokens",
+      "name": "cards-background-white-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-200",
+      "darkMode": {
+        "value": "colors-gray-gray-900",
+        "alias": true
+      },
+      "group": "cards/background",
+      "collection": "semantic-tokens",
+      "name": "cards-background-light-gray-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-gray-gray-300",
+      "darkMode": {
+        "value": "colors-gray-gray-800",
+        "alias": true
+      },
+      "group": "cards/background",
+      "collection": "semantic-tokens",
+      "name": "cards-background-gray-border",
       "type": "COLOR"
     }
   ],
@@ -6931,46 +7171,6 @@
       "line-height": "133%"
     },
     {
-      "name": "body-regular",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1rem",
-      "font-weight": 400,
-      "text-decoration": "none",
-      "line-height": "150%"
-    },
-    {
-      "name": "body-small",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.875rem",
-      "font-weight": 400,
-      "text-decoration": "none",
-      "line-height": "171%"
-    },
-    {
-      "name": "body-regular-bold",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1rem",
-      "font-weight": 700,
-      "text-decoration": "none",
-      "line-height": "150%"
-    },
-    {
-      "name": "body-small-bold",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.875rem",
-      "font-weight": 700,
-      "text-decoration": "none",
-      "line-height": "171%"
-    },
-    {
-      "name": "body-extra-small",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.75rem",
-      "font-weight": 400,
-      "text-decoration": "none",
-      "line-height": "133%"
-    },
-    {
       "name": "subtitles-regular",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
@@ -7057,6 +7257,62 @@
       "font-weight": 400,
       "text-decoration": "none",
       "line-height": "142%"
+    },
+    {
+      "name": "body-large",
+      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "font-size": "1.125rem",
+      "font-weight": 400,
+      "text-decoration": "none",
+      "line-height": "133%"
+    },
+    {
+      "name": "body-large-bold",
+      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "font-size": "1.125rem",
+      "font-weight": 700,
+      "text-decoration": "none",
+      "line-height": "133%"
+    },
+    {
+      "name": "body-regular",
+      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "font-size": "1rem",
+      "font-weight": 400,
+      "text-decoration": "none",
+      "line-height": "150%"
+    },
+    {
+      "name": "body-regular-bold",
+      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "font-size": "1rem",
+      "font-weight": 700,
+      "text-decoration": "none",
+      "line-height": "150%"
+    },
+    {
+      "name": "body-small",
+      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "font-size": "0.875rem",
+      "font-weight": 400,
+      "text-decoration": "none",
+      "line-height": "171%"
+    },
+    {
+      "name": "body-small-bold",
+      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "font-size": "0.875rem",
+      "font-weight": 700,
+      "text-decoration": "none",
+      "line-height": "171%"
+    },
+    {
+      "name": "body-extra-small",
+      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "font-size": "0.75rem",
+      "font-weight": 400,
+      "text-decoration": "none",
+      "line-height": "133%"
     }
   ],
   "boxShadows": [

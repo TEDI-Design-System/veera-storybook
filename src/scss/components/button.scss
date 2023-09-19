@@ -190,6 +190,10 @@ $prefix: constants.$veera-prefix;
     }
   }
 
+  &--floating {
+    box-shadow: var(--#{$prefix}-box-shadow-elevation-4px);
+  }
+
   &--sm {
     padding: var(--#{$prefix}-buttons-sizing-sm-padding-y)
       var(--#{$prefix}-buttons-sizing-sm-padding-x);
