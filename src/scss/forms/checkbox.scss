@@ -28,8 +28,8 @@ $prefix: constants.$veera-prefix;
   outline: none;
   margin: 0;
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-medium);
+  height: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-medium);
   border-radius: 2px;
   border: 1px solid var(--#{$prefix}-checkboxes-radios-border-default);
   background: var(--#{$prefix}-checkboxes-radios-background-default);
@@ -79,13 +79,29 @@ $prefix: constants.$veera-prefix;
   }
 }
 
+@mixin small-input-overrides {
+  width: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-small);
+  height: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-small);
+
+  &:is(:checked, :active, :indeterminate)::after {
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+}
+
+@mixin large-input-overrides {
+  width: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-large);
+  height: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-large);
+
+  &:is(:checked, :active, :indeterminate)::after {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+
 // Checkbox with label
-.#{$prefix}-checkbox:not(input[type='checkbox']) {
+:not(input[type='checkbox']).#{$prefix}-checkbox {
   display: inline-flex;
   align-items: center;
   gap: var(--#{$prefix}-checkboxes-radios-sizing-inner-spacing);
-  padding: var(--#{$prefix}-checkboxes-radios-sizing-padding-y)
-    var(--#{$prefix}-checkboxes-radios-sizing-padding-x);
 
   input {
     @include input-styles;
@@ -126,9 +142,37 @@ $prefix: constants.$veera-prefix;
       }
     }
   }
+
+  &--sm {
+    input {
+      @include small-input-overrides;
+
+      & + label {
+        @include text-styles.body-small;
+      }
+    }
+  }
+
+  &--lg {
+    input {
+      @include large-input-overrides;
+
+      & + label {
+        @include text-styles.body-large;
+      }
+    }
+  }
 }
 
 // Standalone checbox
 input[type='checkbox'].#{$prefix}-checkbox {
   @include input-styles;
+
+  &--sm {
+    @include small-input-overrides;
+  }
+
+  &--lg {
+    @include large-input-overrides;
+  }
 }

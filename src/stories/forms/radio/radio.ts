@@ -3,13 +3,14 @@ import '@scss/typography.scss';
 import './radio.stories.scss';
 
 export interface RadioProps {
+  size?: 'sm' | 'md' | 'lg';
   items: { value: string; label?: string; disabled?: boolean }[];
 }
-export const createRadios = ({ items }: RadioProps) => {
+export const createRadios = ({ items, size = 'md' }: RadioProps) => {
   return `<div style="display: flex; flex-direction: column; gap: 8px;">${items
     .map(
       (item) =>
-        `<div class="v-radio">
+        `<div class="v-radio v-radio--${size}">
         <input type="radio" name="v-radio-demo" ${item.disabled ? 'disabled' : ''} id="${
           item.value
         }"/>

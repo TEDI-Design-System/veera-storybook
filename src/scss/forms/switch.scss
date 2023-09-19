@@ -2,12 +2,20 @@
 @use '../mixins/text-styles';
 
 $prefix: constants.$veera-prefix;
-$thumb-movement-length: calc(
-  var(--#{$prefix}-switch-button-sizing-width) - 2 *
-    var(--#{$prefix}-switch-button-sizing-padding-x) -
-    var(--#{$prefix}-switch-button-sizing-thumb-size)
-);
-$thumb-x-spacing: var(--#{$prefix}-switch-button-sizing-padding-x);
+
+@function get-thumb-track-length($size) {
+  $padding: if(
+    $size == 'small',
+    var(--#{$prefix}-switch-button-sizing-switch-padding-small),
+    var(--#{$prefix}-switch-button-sizing-switch-padding)
+  );
+
+  @return calc(
+    var(--#{$prefix}-switch-button-sizing-width-#{$size}) - 2 * $padding - var(
+        --#{$prefix}-switch-button-sizing-switch-#{$size}
+      ) - 4px
+  );
+}
 
 @function get-checkmark() {
   @return url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5.86339 10.5831L3.08339 7.80312L2.13672 8.74312L5.86339 12.4698L13.8634 4.46979L12.9234 3.52979L5.86339 10.5831Z" fill="white"/></svg>');
@@ -19,11 +27,11 @@ $thumb-x-spacing: var(--#{$prefix}-switch-button-sizing-padding-x);
   display: flex;
   justify-content: center;
   align-items: center;
-  left: $thumb-x-spacing;
-  top: calc(var(--#{$prefix}-switch-button-sizing-padding-y));
+  left: var(--#{$prefix}-switch-button-sizing-switch-padding);
+  top: var(--#{$prefix}-switch-button-sizing-switch-padding);
   background: var(--#{$prefix}-switch-button-thumb-off-state-background-default);
-  height: var(--#{$prefix}-switch-button-sizing-thumb-size);
-  width: var(--#{$prefix}-switch-button-sizing-thumb-size);
+  height: var(--#{$prefix}-switch-button-sizing-switch-medium);
+  width: var(--#{$prefix}-switch-button-sizing-switch-medium);
   border-radius: 50%;
   transition: transform 0.3s;
 }
@@ -34,8 +42,8 @@ $thumb-x-spacing: var(--#{$prefix}-switch-button-sizing-padding-x);
   cursor: pointer;
   appearance: none;
   position: relative;
-  height: var(--#{$prefix}-switch-button-sizing-height);
-  width: var(--#{$prefix}-switch-button-sizing-width);
+  height: var(--#{$prefix}-switch-button-sizing-height-medium);
+  width: var(--#{$prefix}-switch-button-sizing-width-medium);
   border-radius: var(--#{$prefix}-switch-button-sizing-corner-radius);
   background: var(--#{$prefix}-switch-button-track-off-state-background-default);
   border: 2px solid var(--#{$prefix}-switch-button-track-off-state-border-default);
@@ -87,7 +95,7 @@ $thumb-x-spacing: var(--#{$prefix}-switch-button-sizing-padding-x);
     border-color: var(--#{$prefix}-switch-button-track-on-state-border-default);
 
     &::before {
-      transform: translateX($thumb-movement-length);
+      transform: translateX(get-thumb-track-length('medium'));
       background: var(--#{$prefix}-switch-button-thumb-on-state-background-default);
     }
 
@@ -130,30 +138,88 @@ $thumb-x-spacing: var(--#{$prefix}-switch-button-sizing-padding-x);
   }
 }
 
+@mixin small-input-overrides {
+  @include icon-position('small');
+
+  height: var(--#{$prefix}-switch-button-sizing-height-small);
+  width: var(--#{$prefix}-switch-button-sizing-width-small);
+
+  &::before {
+    height: var(--#{$prefix}-switch-button-sizing-switch-small);
+    width: var(--#{$prefix}-switch-button-sizing-switch-small);
+    left: var(--#{$prefix}-switch-button-sizing-switch-padding-small);
+    top: var(--#{$prefix}-switch-button-sizing-switch-padding-small);
+  }
+
+  &:checked::before {
+    transform: translateX(get-thumb-track-length('small'));
+  }
+}
+
+@mixin large-input-overrides {
+  @include icon-position('large');
+
+  height: var(--#{$prefix}-switch-button-sizing-height-large);
+  width: var(--#{$prefix}-switch-button-sizing-width-large);
+
+  &::before {
+    height: var(--#{$prefix}-switch-button-sizing-switch-large);
+    width: var(--#{$prefix}-switch-button-sizing-switch-large);
+  }
+
+  &:checked::before {
+    transform: translateX(get-thumb-track-length('large'));
+  }
+}
+
+@mixin icon-position($size) {
+  $padding: if(
+    $size == 'small',
+    var(--#{$prefix}-switch-button-sizing-switch-padding-small),
+    var(--#{$prefix}-switch-button-sizing-switch-padding)
+  );
+  $initial-left-pos: calc($padding + var(--#{$prefix}-switch-button-sizing-switch-#{$size}) / 2);
+
+  &::after {
+    left: $initial-left-pos;
+    transform: translate(-50%, -50%);
+
+    @if $size == 'small' {
+      transform: translate(-50%, -50%) scale(0.6);
+    }
+
+    @if $size == 'large' {
+      transform: translate(-50%, -50%) scale(1.4);
+    }
+  }
+
+  &:checked {
+    &::after {
+      left: calc($initial-left-pos + get-thumb-track-length($size));
+    }
+  }
+}
+
 @mixin with-check-input-styles {
+  @include icon-position('medium');
+
   &::after {
     position: absolute;
     top: 50%;
-    right: calc(
-      $thumb-x-spacing + var(--#{$prefix}-switch-button-sizing-thumb-size) / 2 +
-        $thumb-movement-length
-    );
     width: 16px;
     height: 16px;
     content: '';
     mask-image: get-checkmark();
     -webkit-mask-image: get-checkmark();
     background: var(--#{$prefix}-switch-button-icon-on-state-fill-default);
-    transform: translate(50%, -50%);
     opacity: 0;
     transition:
-      right 0.3s,
+      left 0.3s,
       opacity 0.3s;
   }
 
   &:checked {
     &::after {
-      right: calc($thumb-x-spacing + var(--#{$prefix}-switch-button-sizing-thumb-size) / 2);
       opacity: 1;
     }
 
@@ -178,8 +244,7 @@ $thumb-x-spacing: var(--#{$prefix}-switch-button-sizing-padding-x);
 :not(input[type='checkbox']).#{$prefix}-switch {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-  padding: 8px 0;
+  gap: var(--#{$prefix}-switch-button-sizing-inner-spacing);
 
   input {
     @include input-styles;
@@ -221,8 +286,28 @@ $thumb-x-spacing: var(--#{$prefix}-switch-button-sizing-padding-x);
     }
   }
 
-  &--with-lock input {
+  &--check-icon input {
     @include with-check-input-styles;
+  }
+
+  &--sm {
+    input {
+      @include small-input-overrides;
+    }
+
+    & + label {
+      @include text-styles.body-small;
+    }
+  }
+
+  &--lg {
+    input {
+      @include large-input-overrides;
+    }
+
+    & + label {
+      @include text-styles.body-large;
+    }
   }
 }
 
@@ -231,5 +316,13 @@ input[type='checkbox'].#{$prefix}-switch {
 
   &--check-icon {
     @include with-check-input-styles;
+  }
+
+  &--sm {
+    @include small-input-overrides;
+  }
+
+  &--lg {
+    @include large-input-overrides;
   }
 }

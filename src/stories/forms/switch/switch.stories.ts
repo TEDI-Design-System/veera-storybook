@@ -5,6 +5,10 @@ const meta = {
   title: 'forms/switch',
   tags: ['autodocs'],
   argTypes: {
+    size: {
+      control: { type: 'select' },
+      options: ['sm', 'md', 'lg'],
+    },
     disabled: { type: 'boolean' },
     hasIcon: { type: 'boolean' },
   },
@@ -17,7 +21,7 @@ export const Default: StoryObj<SwitchProps> = {
   args: {},
 };
 
-export const WithLock: StoryObj<SwitchProps> = {
+export const WithCheck: StoryObj<SwitchProps> = {
   render: createSwitch,
   args: {
     hasIcon: true,
