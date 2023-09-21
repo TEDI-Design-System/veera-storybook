@@ -1,6 +1,6 @@
 const scssContants = {
   'veera-prefix': 'v',
-  'max-spacing': 12,
+  'max-spacing': 13,
 };
 
 export { scssContants };
