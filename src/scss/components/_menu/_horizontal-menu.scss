@@ -1,0 +1,17 @@
+@use '../../constants';
+@use '../../mixins/text-styles';
+@use '../../mixins/focus';
+@use '../../mixins/media';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-side-menu {
+  $self: &;
+
+  position: relative;
+
+  &__panel {}
+
+  @include media.tablet-and-up {
+  }
+}
