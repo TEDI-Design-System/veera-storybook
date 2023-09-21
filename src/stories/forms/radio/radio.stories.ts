@@ -13,7 +13,14 @@ type Story = StoryObj<RadioProps>;
 
 export const Default: Story = {
   render: createRadios,
+  argTypes: {
+    size: {
+      control: { type: 'select' },
+      options: ['sm', 'md', 'lg'],
+    },
+  },
   args: {
+    size: 'md',
     items: [
       { value: 'radio1', label: 'Radio 1' },
       { value: 'radio2', label: 'Radio 2' },

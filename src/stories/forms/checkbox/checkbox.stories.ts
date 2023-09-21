@@ -12,6 +12,10 @@ const meta = {
   argTypes: {
     label: { control: 'text' },
     disabled: { type: 'boolean' },
+    size: {
+      control: { type: 'select' },
+      options: ['sm', 'md', 'lg'],
+    },
   },
 } satisfies Meta<CheckboxWithLabelProps>;
 
