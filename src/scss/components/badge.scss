@@ -1,0 +1,45 @@
+@use "../mixins/text-styles";
+@use "../constants";
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-badge {
+    @include text-styles.body-regular;
+    display: inline-flex;
+    border: 2px solid var(--v-badges-border-neutral);
+    border-radius: var(--v-badges-sizing-corner-radius);
+    padding: var(--v-badges-sizing-padding-x) var(--v-badges-sizing-padding-y);
+    color: var(--v-badges-text-neutral);
+    background-color: var(--v-badges-background-neutral);
+    gap: var(--v-badges-sizing-inner-spacing);
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    &--warning {
+        background-color: var(--v-badges-background-warning);
+        border-color: var(--v-badges-border-warning);
+        color: var(--v-badges-text-warning);
+    }
+    &--error {
+        background-color: var(--v-badges-background-error);
+        border-color: var(--v-badges-border-error);
+        color: var(--v-badges-text-error);
+    }
+    &--info {
+        background-color: var(--v-badges-background-info);
+        border-color: var(--v-badges-border-info);
+        color: var(--v-badges-text-info);
+    }
+    &--success {
+        background-color: var(--v-badges-background-success);
+        border-color: var(--v-badges-border-success);
+        color: var(--v-badges-text-success);
+    }
+}
