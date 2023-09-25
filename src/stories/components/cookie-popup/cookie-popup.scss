@@ -1,0 +1,7 @@
+.v-button .material-icons {
+  transition: transform 0.3;
+}
+
+.v-button.expanded .material-icons {
+  transform: rotateX(180deg);
+}
