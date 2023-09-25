@@ -12,7 +12,7 @@ $prefix: constants.$veera-prefix;
   overflow-x: auto;
 
   &__step {
-    @include text-styles.body-regular;
+    @include text-styles.body-medium;
 
     $step: &;
     $arrow-height: calc((2 * var(--#{$prefix}-stepper-sizing-padding-y) + 24px) / 2);
