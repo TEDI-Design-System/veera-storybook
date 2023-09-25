@@ -838,9 +838,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "buttons/theme/secondary/background",
@@ -852,7 +852,7 @@
       "alias": true,
       "value": "colors-blue-blue-100",
       "darkMode": {
-        "value": "colors-blue-blue-700",
+        "value": "colors-blue-blue-800",
         "alias": true
       },
       "group": "buttons/theme/secondary/background",
@@ -864,7 +864,7 @@
       "alias": true,
       "value": "colors-blue-blue-200",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-700",
         "alias": true
       },
       "group": "buttons/theme/secondary/background",
@@ -981,7 +981,7 @@
       "value": "20px",
       "group": "radius",
       "collection": "primitive-tokens",
-      "name": "radius-03",
+      "name": "radius-04",
       "type": "FLOAT"
     },
     {
@@ -989,7 +989,7 @@
       "value": "360px",
       "group": "radius",
       "collection": "primitive-tokens",
-      "name": "radius-04",
+      "name": "radius-05",
       "type": "FLOAT"
     },
     {
@@ -1018,9 +1018,9 @@
     },
     {
       "alias": true,
-      "value": "radius-04",
+      "value": "radius-05",
       "darkMode": {
-        "value": "radius-04",
+        "value": "radius-05",
         "alias": true
       },
       "group": "buttons/sizing/sm",
@@ -1054,9 +1054,9 @@
     },
     {
       "alias": true,
-      "value": "radius-04",
+      "value": "radius-05",
       "darkMode": {
-        "value": "radius-04",
+        "value": "radius-05",
         "alias": true
       },
       "group": "buttons/sizing/md",
@@ -1090,9 +1090,9 @@
     },
     {
       "alias": true,
-      "value": "radius-04",
+      "value": "radius-05",
       "darkMode": {
-        "value": "radius-04",
+        "value": "radius-05",
         "alias": true
       },
       "group": "buttons/sizing/lg",
@@ -1102,7 +1102,7 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-400",
+      "value": "colors-blue-blue-500",
       "darkMode": {
         "value": "colors-blue-blue-400",
         "alias": true
@@ -1390,9 +1390,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "buttons/theme/neutral/background",
@@ -1404,7 +1404,7 @@
       "alias": true,
       "value": "colors-blue-blue-100",
       "darkMode": {
-        "value": "colors-blue-blue-700",
+        "value": "colors-blue-blue-800",
         "alias": true
       },
       "group": "buttons/theme/neutral/background",
@@ -1416,7 +1416,7 @@
       "alias": true,
       "value": "colors-blue-blue-200",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-700",
         "alias": true
       },
       "group": "buttons/theme/neutral/background",
@@ -1450,9 +1450,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "buttons/theme/neutral/border",
@@ -1464,7 +1464,7 @@
       "alias": true,
       "value": "colors-blue-blue-100",
       "darkMode": {
-        "value": "colors-blue-blue-700",
+        "value": "colors-blue-blue-800",
         "alias": true
       },
       "group": "buttons/theme/neutral/border",
@@ -1476,7 +1476,7 @@
       "alias": true,
       "value": "colors-blue-blue-200",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-700",
         "alias": true
       },
       "group": "buttons/theme/neutral/border",
@@ -2208,7 +2208,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-700",
       "darkMode": {
-        "value": "colors-neutral-neutral-900",
+        "value": "colors-neutral-neutral-400",
         "alias": true
       },
       "group": "tooltip",
@@ -2220,7 +2220,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "tooltip",
@@ -2366,9 +2366,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2414,9 +2414,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2582,9 +2582,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2632,7 +2632,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "slider/active track background",
@@ -2642,9 +2642,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-800",
+      "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "slider/active track background",
@@ -2654,9 +2654,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
       "group": "slider/active track background",
@@ -2668,7 +2668,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "slider/active track background",
@@ -2678,9 +2678,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-500",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-neutral-neutral-500",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "slider/active track background",
@@ -2690,9 +2690,9 @@
     },
     {
       "alias": true,
-      "value": "slider-active-track-background-default",
+      "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "slider-active-track-background-default",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "slider/thumb/border",
@@ -2702,9 +2702,9 @@
     },
     {
       "alias": true,
-      "value": "slider-active-track-background-hover",
+      "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "slider-active-track-background-hover",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "slider/thumb/border",
@@ -2714,9 +2714,9 @@
     },
     {
       "alias": true,
-      "value": "slider-active-track-background-active",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "slider-active-track-background-active",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
       "group": "slider/thumb/border",
@@ -2726,9 +2726,9 @@
     },
     {
       "alias": true,
-      "value": "slider-active-track-background-focus",
+      "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "slider-active-track-background-focus",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "slider/thumb/border",
@@ -2738,9 +2738,9 @@
     },
     {
       "alias": true,
-      "value": "slider-active-track-background-disabled",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "slider-active-track-background-disabled",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "slider/thumb/border",
@@ -2750,9 +2750,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-200",
       "darkMode": {
-        "value": "colors-neutral-neutral-400",
+        "value": "colors-neutral-neutral-900",
         "alias": true
       },
       "group": "slider/passive track background",
@@ -2882,9 +2882,9 @@
     },
     {
       "alias": true,
-      "value": "radius-02",
+      "value": "radius-03",
       "darkMode": {
-        "value": "radius-02",
+        "value": "radius-03",
         "alias": true
       },
       "group": "switch button/sizing",
@@ -2906,9 +2906,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-600",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-500",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "switch button/track/off state/border",
@@ -2942,9 +2942,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-600",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-500",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "switch button/track/off state/border",
@@ -2954,9 +2954,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "switch button/track/off state/border",
@@ -3074,7 +3074,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
         "value": "colors-disabled-text",
         "alias": true
@@ -3134,9 +3134,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "switch button/track/on state/border",
@@ -3194,9 +3194,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "switch button/track/on state/background",
@@ -3256,7 +3256,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "switch button/thumb/on state/background",
@@ -3314,9 +3314,9 @@
     },
     {
       "alias": true,
-      "value": "colors-disabled-text",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "switch button/text",
@@ -3329,7 +3329,7 @@
       "value": "16px",
       "group": "radius",
       "collection": "primitive-tokens",
-      "name": "radius-02",
+      "name": "radius-03",
       "type": "FLOAT"
     },
     {
@@ -3622,7 +3622,7 @@
     },
     {
       "alias": true,
-      "value": "colors-orange-orange-500",
+      "value": "colors-orange-orange-700",
       "darkMode": {
         "value": "colors-orange-orange-500",
         "alias": true
@@ -4034,9 +4034,9 @@
     },
     {
       "alias": true,
-      "value": "colors-brand-secondary",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-borders",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "table cells/header/border",
@@ -4072,7 +4072,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "table cells/header/background",
@@ -4084,7 +4084,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "table cells/header/background",
@@ -4096,7 +4096,7 @@
       "alias": true,
       "value": "colors-text-secondary",
       "darkMode": {
-        "value": "colors-text-primary",
+        "value": "colors-text-secondary",
         "alias": true
       },
       "group": "table cells/header/text",
@@ -4106,7 +4106,7 @@
     },
     {
       "alias": true,
-      "value": "colors-text-secondary",
+      "value": "colors-text-primary",
       "darkMode": {
         "value": "colors-text-primary",
         "alias": true
@@ -4156,7 +4156,7 @@
       "alias": true,
       "value": "colors-blue-blue-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-600",
+        "value": "colors-blue-blue-800",
         "alias": true
       },
       "group": "table cells/data cell/background",
@@ -4586,9 +4586,9 @@
     },
     {
       "alias": true,
-      "value": "colors-focus-ring",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-focus-ring",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "table cells/data cell/border",
@@ -4598,9 +4598,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-borders",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "table cells/data cell/border",
@@ -4610,9 +4610,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-borders",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "table cells/data cell/border",
@@ -4742,9 +4742,9 @@
     },
     {
       "alias": true,
-      "value": "colors-alpha-alpha-10",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-alpha-alpha-10",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "tabs/background",
@@ -4754,9 +4754,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-200",
+      "value": "colors-blue-blue-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-900",
+        "value": "colors-blue-blue-800",
         "alias": true
       },
       "group": "tabs/background",
@@ -4766,9 +4766,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-blue-blue-200",
       "darkMode": {
-        "value": "colors-neutral-neutral-800",
+        "value": "colors-blue-blue-900",
         "alias": true
       },
       "group": "tabs/background",
@@ -4778,9 +4778,9 @@
     },
     {
       "alias": true,
-      "value": "colors-alpha-alpha-10",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-alpha-alpha-10",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "tabs/background",
@@ -4790,9 +4790,9 @@
     },
     {
       "alias": true,
-      "value": "colors-alpha-alpha-10",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-alpha-alpha-10",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "tabs/background",
@@ -4802,9 +4802,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-blue-blue-200",
       "darkMode": {
-        "value": "colors-neutral-neutral-800",
+        "value": "colors-blue-blue-900",
         "alias": true
       },
       "group": "tabs/border",
@@ -4862,9 +4862,9 @@
     },
     {
       "alias": true,
-      "value": "colors-disabled-text",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "tabs/text",
@@ -5006,9 +5006,9 @@
     },
     {
       "alias": true,
-      "value": "colors-alpha-alpha-10",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-alpha-alpha-10",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "tabs/content",
@@ -5090,9 +5090,9 @@
     },
     {
       "alias": true,
-      "value": "colors-alpha-alpha-10",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-alpha-alpha-10",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "tabs/border",
@@ -5738,9 +5738,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-200",
+      "value": "colors-blue-blue-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-900",
+        "value": "colors-blue-blue-800",
         "alias": true
       },
       "group": "accordion/background",
@@ -5750,9 +5750,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-blue-blue-200",
       "darkMode": {
-        "value": "colors-neutral-neutral-800",
+        "value": "colors-blue-blue-900",
         "alias": true
       },
       "group": "accordion/background",
@@ -5846,9 +5846,9 @@
     },
     {
       "alias": true,
-      "value": "colors-disabled-text",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "accordion/text",
@@ -5908,7 +5908,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "alerts-background-info",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "badges/background",
@@ -5920,7 +5920,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "alerts-background-success",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "badges/background",
@@ -5932,7 +5932,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "alerts-background-warning",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "badges/background",
@@ -5944,7 +5944,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "alerts-background-error",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "badges/background",
@@ -6052,7 +6052,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "alerts-background-neutral",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "badges/background",
@@ -6170,9 +6170,9 @@
     },
     {
       "alias": true,
-      "value": "colors-disabled-text",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "close button/text",
@@ -6182,9 +6182,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "close button/background",
@@ -6218,9 +6218,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "close button/background",
@@ -6230,9 +6230,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "close button/background",
@@ -6244,8 +6244,8 @@
       "alias": true,
       "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "#ffffff",
-        "alias": false
+        "value": "colors-neutral-neutral-700",
+        "alias": true
       },
       "group": "table cells/data cell/border",
       "collection": "semantic-tokens",
@@ -6256,8 +6256,8 @@
       "alias": true,
       "value": "inputs-icon-fill",
       "darkMode": {
-        "value": "#ffffff",
-        "alias": false
+        "value": "inputs-icon-fill",
+        "alias": true
       },
       "group": "table cells/header/icon",
       "collection": "semantic-tokens",
@@ -6266,10 +6266,10 @@
     },
     {
       "alias": true,
-      "value": "switch-button-icon-on-state-fill-default",
+      "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "#ffffff",
-        "alias": false
+        "value": "colors-blue-blue-300",
+        "alias": true
       },
       "group": "table cells/header/icon",
       "collection": "semantic-tokens",
@@ -6278,21 +6278,21 @@
     },
     {
       "alias": true,
-      "value": "colors-brand-primary",
+      "value": "colors-blue-blue-600",
       "darkMode": {
         "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "colors",
       "collection": "semantic-tokens",
-      "name": "colors-link",
+      "name": "colors-link-default",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-200",
+      "value": "colors-blue-blue-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-900",
+        "value": "colors-blue-blue-800",
         "alias": true
       },
       "group": "tabs/border",
@@ -6302,9 +6302,9 @@
     },
     {
       "alias": true,
-      "value": "colors-alpha-alpha-10",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-alpha-alpha-10",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "tabs/border",
@@ -6326,9 +6326,9 @@
     },
     {
       "alias": true,
-      "value": "colors-alpha-alpha-10",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-alpha-alpha-10",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "tabs/border",
@@ -6362,9 +6362,9 @@
     },
     {
       "alias": true,
-      "value": "colors-disabled-text",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "accordion/border",
@@ -6388,8 +6388,8 @@
       "alias": true,
       "value": "spacing-for-1px-border-02",
       "darkMode": {
-        "value": "0px",
-        "alias": false
+        "value": "spacing-for-1px-border-02",
+        "alias": true
       },
       "group": "tabs/sizing",
       "collection": "semantic-tokens",
@@ -6470,9 +6470,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "cards/sizing",
@@ -6482,9 +6482,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "cards/sizing",
@@ -6494,9 +6494,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "cards/sizing",
@@ -6506,9 +6506,9 @@
     },
     {
       "alias": true,
-      "value": "radius-01",
+      "value": "radius-02",
       "darkMode": {
-        "value": "radius-01",
+        "value": "radius-02",
         "alias": true
       },
       "group": "cards/sizing",
@@ -6736,7 +6736,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -6746,9 +6746,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-800",
+      "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -6758,9 +6758,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -6772,7 +6772,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -6782,9 +6782,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-800",
+      "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -6794,9 +6794,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-800",
+      "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -6806,9 +6806,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -6820,7 +6820,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -6832,7 +6832,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -6844,7 +6844,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -6856,7 +6856,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -6868,7 +6868,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -6952,7 +6952,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-700",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -6964,7 +6964,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -6976,7 +6976,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -6988,7 +6988,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-700",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -7000,7 +7000,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7012,7 +7012,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7024,7 +7024,7 @@
       "alias": true,
       "value": "colors-blue-blue-1000",
       "darkMode": {
-        "value": "colors-blue-blue-1000",
+        "value": "colors-blue-blue-600",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7036,7 +7036,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7046,9 +7046,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7058,9 +7058,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7072,7 +7072,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7082,9 +7082,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-600",
+      "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7094,9 +7094,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7108,7 +7108,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7120,7 +7120,7 @@
       "alias": true,
       "value": "colors-blue-blue-1000",
       "darkMode": {
-        "value": "colors-blue-blue-1000",
+        "value": "colors-blue-blue-600",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7132,7 +7132,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7582,9 +7582,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -7596,7 +7596,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7608,7 +7608,7 @@
       "alias": true,
       "value": "colors-blue-blue-1000",
       "darkMode": {
-        "value": "colors-blue-blue-1000",
+        "value": "colors-blue-blue-600",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7618,9 +7618,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -7632,7 +7632,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -7644,7 +7644,7 @@
       "alias": true,
       "value": "colors-blue-blue-1000",
       "darkMode": {
-        "value": "colors-blue-blue-1000",
+        "value": "colors-blue-blue-600",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7656,7 +7656,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -7714,7 +7714,7 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-100",
+      "value": "colors-blue-blue-200",
       "darkMode": {
         "value": "colors-blue-blue-800",
         "alias": true
@@ -7752,7 +7752,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7762,9 +7762,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-800",
+      "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7774,9 +7774,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7786,9 +7786,9 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-blue-blue-400",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7800,7 +7800,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7812,61 +7812,453 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-200",
         "alias": true
       },
-      "group": "navigation/horizontal/border",
+      "group": "navigation/horizontal/background",
       "collection": "semantic-tokens",
-      "name": "navigation-horizontal-border-default",
+      "name": "navigation-horizontal-background-bar",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-tertiary",
+      "darkMode": {
+        "value": "colors-text-tertiary",
+        "alias": true
+      },
+      "group": "progress bar/range label",
+      "collection": "semantic-tokens",
+      "name": "progress-bar-range-label-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-200",
+      "darkMode": {
+        "value": "colors-neutral-neutral-900",
+        "alias": true
+      },
+      "group": "progress bar/passive track background",
+      "collection": "semantic-tokens",
+      "name": "progress-bar-passive-track-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkMode": {
+        "value": "radius-01",
+        "alias": true
+      },
+      "group": "progress bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "progress-bar-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "progress bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "progress-bar-sizing-group-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkMode": {
+        "value": "colors-blue-blue-400",
+        "alias": true
+      },
+      "group": "progress bar/active track background",
+      "collection": "semantic-tokens",
+      "name": "progress-bar-active-track-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-surface-primary",
+      "darkMode": {
+        "value": "colors-surface-primary",
+        "alias": true
+      },
+      "group": "navigation/vertical/background/level 1",
+      "collection": "semantic-tokens",
+      "name": "navigation-vertical-background-level-1-open-menu-background",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-700",
+      "darkMode": {
+        "value": "colors-blue-blue-400",
+        "alias": true
+      },
+      "group": "colors",
+      "collection": "semantic-tokens",
+      "name": "colors-link-hover",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-800",
+        "value": "colors-blue-blue-500",
         "alias": true
       },
-      "group": "navigation/horizontal/border",
+      "group": "colors",
       "collection": "semantic-tokens",
-      "name": "navigation-horizontal-border-hover",
+      "name": "colors-link-active",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "navigation/horizontal/border",
+      "group": "footer/colors",
       "collection": "semantic-tokens",
-      "name": "navigation-horizontal-border-active",
+      "name": "footer-colors-background",
       "type": "COLOR"
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-900",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-blue-blue-900",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
-      "group": "navigation/horizontal/border",
+      "group": "footer/border",
       "collection": "semantic-tokens",
-      "name": "navigation-horizontal-border-selected",
+      "name": "footer-border-default",
       "type": "COLOR"
     },
     {
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "navigation/horizontal/border",
+      "group": "footer/text",
       "collection": "semantic-tokens",
-      "name": "navigation-horizontal-border-focus",
+      "name": "footer-text-topics",
       "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkMode": {
+        "value": "colors-text-primary",
+        "alias": true
+      },
+      "group": "footer/text",
+      "collection": "semantic-tokens",
+      "name": "footer-text-titles",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "footer/colors",
+      "collection": "semantic-tokens",
+      "name": "footer-colors-logo",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-300",
+      "darkMode": {
+        "value": "colors-neutral-neutral-800",
+        "alias": true
+      },
+      "group": "footer/colors",
+      "collection": "semantic-tokens",
+      "name": "footer-colors-socials",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-800",
+      "darkMode": {
+        "value": "colors-neutral-neutral-300",
+        "alias": true
+      },
+      "group": "footer/colors",
+      "collection": "semantic-tokens",
+      "name": "footer-colors-icons",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/sizing",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/sizing",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/sizing",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-00",
+      "darkMode": {
+        "value": "radius-00",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/sizing",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkMode": {
+        "value": "colors-blue-blue-200",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkMode": {
+        "value": "colors-blue-blue-200",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-900",
+      "darkMode": {
+        "value": "colors-blue-blue-900",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-panel-level2",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-sub-menu-title",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkMode": {
+        "value": "colors-blue-blue-200",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": false,
+      "value": "8px",
+      "group": "radius",
+      "collection": "primitive-tokens",
+      "name": "radius-02",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -7983,22 +8375,6 @@
       "line-height": "133%"
     },
     {
-      "name": "subtitles-regular",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1rem",
-      "font-weight": 700,
-      "text-decoration": "none",
-      "line-height": "150%"
-    },
-    {
-      "name": "subtitles-small",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.875rem",
-      "font-weight": 400,
-      "text-decoration": "none",
-      "line-height": "171%"
-    },
-    {
       "name": "links-regular",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
@@ -8020,22 +8396,6 @@
       "font-size": "0.75rem",
       "font-weight": 400,
       "text-decoration": "underline",
-      "line-height": "133%"
-    },
-    {
-      "name": "navigation-drawer-label-mobile",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.75rem",
-      "font-weight": 400,
-      "text-decoration": "none",
-      "line-height": "160%"
-    },
-    {
-      "name": "navigation-main-menu-item",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1.125rem",
-      "font-weight": 400,
-      "text-decoration": "none",
       "line-height": "133%"
     },
     {
@@ -8087,7 +8447,7 @@
       "line-height": "133%"
     },
     {
-      "name": "body-regular",
+      "name": "body-medium",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
       "font-weight": 400,
@@ -8095,7 +8455,7 @@
       "line-height": "150%"
     },
     {
-      "name": "body-regular-bold",
+      "name": "body-medium-bold",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
       "font-weight": 700,

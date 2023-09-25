@@ -69,11 +69,11 @@ h6,
 
 p,
 .#{$prefix}-text-body {
-  @include text-styles.body-regular;
+  @include text-styles.body-medium;
 }
 
 .#{$prefix}-text-body-bold {
-  @include text-styles.body-regular-bold;
+  @include text-styles.body-medium-bold;
 }
 
 .#{$prefix}-text-body-sm {
@@ -86,14 +86,6 @@ p,
 
 .#{$prefix}-text-body-xs {
   @include text-styles.body-extra-small;
-}
-
-.#{$prefix}-text-subtitle {
-  @include text-styles.subtitles-regular;
-}
-
-.#{$prefix}-text-subtitle-sm {
-  @include text-styles.subtitles-small;
 }
 
 a,
