@@ -22,16 +22,4 @@ $prefix: constants.$veera-prefix;
   &__body {
     @include text-styles.body-small;
   }
-
-  &__footer {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--#{$prefix}-spacing-05);
-  }
-
-  &__collapse-tigger {
-    margin-right: auto;
-  }
 }
