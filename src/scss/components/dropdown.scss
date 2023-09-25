@@ -22,7 +22,7 @@ $prefix: constants.$veera-prefix;
 
   // TODO: update when correct vars are added to Figma;
   &__option {
-    @include text-styles.body-regular;
+    @include text-styles.body-medium;
 
     $option: &;
 

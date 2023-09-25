@@ -107,7 +107,7 @@ $prefix: constants.$veera-prefix;
     @include input-styles;
 
     & + label {
-      @include text-styles.body-regular;
+      @include text-styles.body-medium;
 
       color: var(--#{$prefix}-checkboxes-radios-text-default);
     }

@@ -5,7 +5,7 @@ $prefix: constants.$veera-prefix;
 
 .#{$prefix}-file-upload {
   &__drop-area {
-    @include text-styles.body-regular;
+    @include text-styles.body-medium;
 
     outline: none;
     width: 100%;
@@ -93,7 +93,7 @@ $prefix: constants.$veera-prefix;
     }
 
     &__name {
-      @include text-styles.body-regular;
+      @include text-styles.body-medium;
 
       flex-grow: 1;
     }

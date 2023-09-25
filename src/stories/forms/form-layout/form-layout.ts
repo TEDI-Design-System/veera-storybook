@@ -15,7 +15,7 @@ interface FormRowProps {
   required?: boolean;
 }
 
-const createFormRow = ({ inputId, label, input, helperText, required }: FormRowProps) => {
+export const createFormRow = ({ inputId, label, input, helperText, required }: FormRowProps) => {
   const formRow = document.createElement('div');
   formRow.className = 'v-form-row';
 
