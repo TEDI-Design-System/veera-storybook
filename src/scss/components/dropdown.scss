@@ -61,7 +61,7 @@ $prefix: constants.$veera-prefix;
     &:focus {
       color: var(--#{$prefix}-checkboxes-radios-text-default);
       background: var(--#{$prefix}-colors-neutral-white);
-      box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+      box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
       position: relative;
       z-index: 1;
     }

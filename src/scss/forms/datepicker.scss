@@ -71,7 +71,7 @@ $prefix: constants.$veera-prefix;
 
     &:focus {
       z-index: 1;
-      box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+      box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
       background: var(--#{$prefix}-datepicker-widget-days-background-focus);
       color: var(--#{$prefix}-datepicker-widget-days-text-focus);
     }

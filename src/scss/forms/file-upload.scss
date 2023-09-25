@@ -21,7 +21,7 @@ $prefix: constants.$veera-prefix;
     border: 2px dashed var(--#{$prefix}-file-input-border-default);
 
     &:focus {
-      box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+      box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
       background: var(--#{$prefix}-file-input-background-focus);
       border-color: var(--#{$prefix}-file-input-border-focus);
       color: var(--#{$prefix}-file-input-text-focus);

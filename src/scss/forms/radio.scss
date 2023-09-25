@@ -28,7 +28,7 @@ $prefix: constants.$veera-prefix;
   background: var(--#{$prefix}-checkboxes-radios-background-default);
 
   &:focus {
-    box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+    box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
     border-color: var(--#{$prefix}-checkboxes-radios-border-focus);
   }
 
