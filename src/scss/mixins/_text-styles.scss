@@ -112,22 +112,6 @@
   line-height: 133%;
 }
 
-@mixin subtitles-regular {
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  line-height: 150%;
-}
-
-@mixin subtitles-small {
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 0.875rem;
-  font-weight: 400;
-  text-decoration: none;
-  line-height: 171%;
-}
-
 @mixin links-regular {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
@@ -149,22 +133,6 @@
   font-size: 0.75rem;
   font-weight: 400;
   text-decoration: underline;
-  line-height: 133%;
-}
-
-@mixin navigation-drawer-label-mobile {
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 0.75rem;
-  font-weight: 400;
-  text-decoration: none;
-  line-height: 160%;
-}
-
-@mixin navigation-main-menu-item {
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1.125rem;
-  font-weight: 400;
-  text-decoration: none;
   line-height: 133%;
 }
 
@@ -216,7 +184,7 @@
   line-height: 133%;
 }
 
-@mixin body-regular {
+@mixin body-medium {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
@@ -224,7 +192,7 @@
   line-height: 150%;
 }
 
-@mixin body-regular-bold {
+@mixin body-medium-bold {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 700;

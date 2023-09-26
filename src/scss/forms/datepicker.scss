@@ -31,7 +31,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &__days-list {
-    @include text-styles.body-regular;
+    @include text-styles.body-medium;
 
     display: grid;
     grid-template-columns: repeat(
@@ -57,7 +57,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &__day {
-    @include text-styles.body-regular;
+    @include text-styles.body-medium;
 
     cursor: pointer;
     box-sizing: border-box;
@@ -71,7 +71,7 @@ $prefix: constants.$veera-prefix;
 
     &:focus {
       z-index: 1;
-      box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+      box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
       background: var(--#{$prefix}-datepicker-widget-days-background-focus);
       color: var(--#{$prefix}-datepicker-widget-days-text-focus);
     }

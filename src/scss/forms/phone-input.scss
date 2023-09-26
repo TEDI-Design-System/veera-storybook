@@ -7,7 +7,7 @@ $prefix: constants.$veera-prefix;
 .#{$prefix}-phone-input {
   $self: &;
 
-  @include text-styles.body-regular;
+  @include text-styles.body-medium;
 
   --#{$prefix}-dropdown-menu-max-width: 304px;
 
@@ -24,7 +24,7 @@ $prefix: constants.$veera-prefix;
     background-color: transparent;
 
     &:focus {
-      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring);
+      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
     }
   }
 
@@ -42,7 +42,7 @@ $prefix: constants.$veera-prefix;
     }
 
     &:focus {
-      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring);
+      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
     }
   }
 

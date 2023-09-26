@@ -41,7 +41,7 @@ $prefix: constants.$veera-prefix;
 }
 
 .#{$prefix}-form-row-label {
-  @include text-styles.body-regular;
+  @include text-styles.body-medium;
 
   box-sizing: border-box;
   text-align: right;

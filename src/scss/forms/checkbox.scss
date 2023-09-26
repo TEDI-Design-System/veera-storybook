@@ -35,7 +35,7 @@ $prefix: constants.$veera-prefix;
   background: var(--#{$prefix}-checkboxes-radios-background-default);
 
   &:focus {
-    box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+    box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
     border-color: var(--#{$prefix}-checkboxes-radios-border-focus);
     background: var(--#{$prefix}-checkboxes-radios-background-focus);
   }
@@ -107,7 +107,7 @@ $prefix: constants.$veera-prefix;
     @include input-styles;
 
     & + label {
-      @include text-styles.body-regular;
+      @include text-styles.body-medium;
 
       color: var(--#{$prefix}-checkboxes-radios-text-default);
     }
