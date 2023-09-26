@@ -1,24 +1,24 @@
 // VARIABLES
-@use "./veera-variables.scss";
+@use './veera-variables.scss';
 
 // UTILITIES
-@use "./utilities/spacing.scss";
-@use "./utilities/flex.scss";
-@use "./utilities/grid.scss";
-@use "./utilities/colors.scss";
+@use './utilities/spacing.scss';
+@use './utilities/flex.scss';
+@use './utilities/grid.scss';
+@use './utilities/colors.scss';
 
 // COMPONENTS
-@use "./components/button.scss";
-@use "./components/tag.scss";
-@use "./components/dropdown.scss";
-@use "./components/stepper.scss";
-@use "./components/tabs.scss";
-@use "./components/accordion.scss";
-@use "./components/modal.scss";
-@use "./components/overlay.scss";
-@use "./components/alert.scss";
-@use "./components/badge.scss";
-@use "./components/progress.scss";
+@use './components/button.scss';
+@use './components/tag.scss';
+@use './components/dropdown.scss';
+@use './components/stepper.scss';
+@use './components/tabs.scss';
+@use './components/accordion.scss';
+@use './components/modal.scss';
+@use './components/overlay.scss';
+@use './components/alert.scss';
+@use './components/badge.scss';
+@use './components/progress.scss';
 
 // FORMS
-@use "./forms/forms.scss";
+@use './forms/forms.scss';
