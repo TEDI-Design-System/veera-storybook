@@ -16,7 +16,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &__tab {
-    @include text-styles.body-regular;
+    @include text-styles.body-medium;
     @include borders.set-border-top-radius(var(--#{$prefix}-tabs-sizing-corner-radius));
 
     display: inline-flex;

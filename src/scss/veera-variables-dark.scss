@@ -23,7 +23,7 @@
     --v-buttons-theme-primary-background-focus: var(--v-colors-neutral-neutral-100);
     --v-buttons-theme-primary-background-disabled: var(--v-colors-neutral-neutral-900);
     --v-colors-brand-secondary: var(--v-colors-neutral-neutral-1000);
-    --v-buttons-theme-secondary-background-default: var(--v-colors-neutral-neutral-1000);
+    --v-buttons-theme-secondary-background-default: var(--v-colors-alpha-alpha-10);
     --v-buttons-theme-secondary-background-hover: var(--v-colors-blue-blue-800);
     --v-buttons-theme-secondary-background-active: var(--v-colors-blue-blue-700);
     --v-buttons-theme-secondary-background-focus: var(--v-colors-neutral-neutral-1000);
@@ -36,20 +36,20 @@
     --v-buttons-theme-success-background-disabled: var(--v-colors-neutral-neutral-900);
     --v-buttons-sizing-sm-padding-x: var(--v-spacing-for-2px-border-05);
     --v-buttons-sizing-sm-padding-y: var(--v-spacing-for-2px-border-02);
-    --v-buttons-sizing-sm-corner-radius: var(--v-radius-04);
+    --v-buttons-sizing-sm-corner-radius: var(--v-radius-05);
     --v-buttons-sizing-md-padding-x: var(--v-spacing-for-2px-border-06);
     --v-buttons-sizing-md-padding-y: var(--v-spacing-for-2px-border-03);
-    --v-buttons-sizing-md-corner-radius: var(--v-radius-04);
+    --v-buttons-sizing-md-corner-radius: var(--v-radius-05);
     --v-buttons-sizing-lg-padding-x: var(--v-spacing-for-2px-border-08);
     --v-buttons-sizing-lg-padding-y: var(--v-spacing-for-2px-border-04);
-    --v-buttons-sizing-lg-corner-radius: var(--v-radius-04);
+    --v-buttons-sizing-lg-corner-radius: var(--v-radius-05);
     --v-colors-focus-ring: var(--v-colors-blue-blue-400);
     --v-buttons-theme-primary-border-default: var(--v-colors-neutral-neutral-100);
-    --v-buttons-theme-primary-border-hover: var(--v-colors-blue-blue-100);
+    --v-buttons-theme-primary-border-hover: var(--v-colors-blue-blue-300);
     --v-buttons-theme-primary-border-active: var(--v-colors-blue-blue-200);
     --v-buttons-theme-primary-border-focus: var(--v-colors-neutral-neutral-100);
     --v-buttons-theme-primary-border-disabled: var(--v-colors-neutral-neutral-900);
-    --v-buttons-theme-primary-text-default: var(--v-colors-blue-blue-600);
+    --v-buttons-theme-primary-text-default: var(--v-colors-neutral-neutral-1000);
     --v-buttons-theme-primary-text-hover: var(--v-colors-blue-blue-600);
     --v-buttons-theme-primary-text-active: var(--v-colors-blue-blue-600);
     --v-buttons-theme-primary-text-focus: var(--v-colors-blue-blue-600);
@@ -67,12 +67,12 @@
     --v-buttons-sizing-lg-padding-icon-only: var(--v-spacing-00);
     --v-buttons-sizing-md-padding-icon-only: var(--v-spacing-00);
     --v-buttons-sizing-sm-padding-icon-only: var(--v-spacing-00);
-    --v-buttons-theme-neutral-background-default: var(--v-colors-neutral-neutral-1000);
+    --v-buttons-theme-neutral-background-default: var(--v-colors-alpha-alpha-10);
     --v-buttons-theme-neutral-background-hover: var(--v-colors-blue-blue-800);
     --v-buttons-theme-neutral-background-active: var(--v-colors-blue-blue-700);
     --v-buttons-theme-neutral-background-focus: var(--v-colors-neutral-neutral-1000);
     --v-buttons-theme-neutral-background-disabled: var(--v-colors-neutral-neutral-1000);
-    --v-buttons-theme-neutral-border-default: var(--v-colors-neutral-neutral-1000);
+    --v-buttons-theme-neutral-border-default: var(--v-colors-alpha-alpha-10);
     --v-buttons-theme-neutral-border-hover: var(--v-colors-blue-blue-800);
     --v-buttons-theme-neutral-border-active: var(--v-colors-blue-blue-700);
     --v-buttons-theme-neutral-border-focus: var(--v-colors-neutral-neutral-1000);
@@ -147,11 +147,11 @@
     --v-inputs-background-success: var(--v-colors-neutral-neutral-1000);
     --v-inputs-border-error: var(--v-colors-red-red-400);
     --v-inputs-border-success: var(--v-colors-green-green-400);
-    --v-checkboxes-radios-border-default: var(--v-colors-neutral-neutral-700);
+    --v-checkboxes-radios-border-default: var(--v-colors-neutral-neutral-600);
     --v-checkboxes-radios-border-hover: var(--v-colors-blue-blue-300);
     --v-checkboxes-radios-border-selected: var(--v-colors-blue-blue-300);
     --v-checkboxes-radios-border-active: var(--v-colors-blue-blue-400);
-    --v-checkboxes-radios-border-focus: var(--v-colors-neutral-neutral-700);
+    --v-checkboxes-radios-border-focus: var(--v-colors-neutral-neutral-600);
     --v-checkboxes-radios-border-disabled: var(--v-colors-neutral-neutral-700);
     --v-checkboxes-radios-background-default: var(--v-colors-neutral-neutral-1000);
     --v-checkboxes-radios-background-hover: var(--v-colors-neutral-neutral-1000);
@@ -165,7 +165,7 @@
     --v-checkboxes-radios-text-active: var(--v-colors-text-primary);
     --v-checkboxes-radios-text-focus: var(--v-colors-text-primary);
     --v-checkboxes-radios-text-active-focus: var(--v-colors-text-primary);
-    --v-checkboxes-radios-text-disabled: var(--v-colors-neutral-neutral-700);
+    --v-checkboxes-radios-text-disabled: var(--v-colors-neutral-neutral-600);
     --v-checkboxes-radios-background-indetermined: var(--v-colors-blue-blue-300);
     --v-checkboxes-radios-border-indetermined: var(--v-colors-blue-blue-300);
     --v-checkboxes-radios-text-indetermined: var(--v-colors-text-primary);
@@ -190,13 +190,13 @@
     --v-checkboxes-radios-sizing-padding-y: var(--v-spacing-00);
     --v-checkboxes-radios-sizing-inner-spacing: var(--v-spacing-03);
     --v-checkboxes-radios-sizing-padding-x: var(--v-spacing-00);
-    --v-switch-button-sizing-corner-radius: var(--v-radius-02);
+    --v-switch-button-sizing-corner-radius: var(--v-radius-03);
     --v-switch-button-sizing-switch-small: 10px;
-    --v-switch-button-track-off-state-border-default: var(--v-colors-neutral-neutral-500);
+    --v-switch-button-track-off-state-border-default: var(--v-colors-neutral-neutral-600);
     --v-switch-button-track-off-state-border-hover: var(--v-colors-blue-blue-200);
     --v-switch-button-track-off-state-border-active: var(--v-colors-blue-blue-300);
-    --v-switch-button-track-off-state-border-focus: var(--v-colors-neutral-neutral-500);
-    --v-switch-button-track-off-state-border-disabled: var(--v-colors-disabled-text);
+    --v-switch-button-track-off-state-border-focus: var(--v-colors-neutral-neutral-600);
+    --v-switch-button-track-off-state-border-disabled: var(--v-colors-neutral-neutral-700);
     --v-switch-button-track-off-state-background-default: var(--v-colors-neutral-neutral-1000);
     --v-switch-button-track-off-state-background-hover: var(--v-colors-neutral-neutral-1000);
     --v-switch-button-track-off-state-background-active: var(--v-colors-neutral-neutral-1000);
@@ -211,22 +211,22 @@
     --v-switch-button-track-on-state-border-hover: var(--v-colors-blue-blue-200);
     --v-switch-button-track-on-state-border-active: var(--v-colors-blue-blue-400);
     --v-switch-button-track-on-state-border-focus: var(--v-colors-blue-blue-300);
-    --v-switch-button-track-on-state-border-disabled: var(--v-colors-disabled-text);
+    --v-switch-button-track-on-state-border-disabled: var(--v-colors-neutral-neutral-700);
     --v-switch-button-track-on-state-background-default: var(--v-colors-blue-blue-300);
     --v-switch-button-track-on-state-background-hover: var(--v-colors-blue-blue-200);
     --v-switch-button-track-on-state-background-active: var(--v-colors-blue-blue-400);
     --v-switch-button-track-on-state-background-focus: var(--v-colors-blue-blue-300);
-    --v-switch-button-track-on-state-background-disabled: var(--v-colors-neutral-neutral-100);
+    --v-switch-button-track-on-state-background-disabled: var(--v-colors-neutral-neutral-700);
     --v-switch-button-thumb-on-state-background-default: var(--v-colors-neutral-neutral-1000);
     --v-switch-button-thumb-on-state-background-hover: var(--v-colors-neutral-neutral-1000);
     --v-switch-button-thumb-on-state-background-active: var(--v-colors-neutral-neutral-1000);
     --v-switch-button-thumb-on-state-background-focus: var(--v-colors-neutral-neutral-1000);
-    --v-switch-button-thumb-on-state-background-disabled: var(--v-colors-disabled-text);
+    --v-switch-button-thumb-on-state-background-disabled: var(--v-colors-neutral-neutral-1000);
     --v-switch-button-text-default: var(--v-colors-text-secondary);
     --v-switch-button-text-hover: var(--v-colors-text-primary);
     --v-switch-button-text-active: var(--v-colors-text-primary);
     --v-switch-button-text-focus: var(--v-colors-text-primary);
-    --v-switch-button-text-disabled: var(--v-colors-disabled-text);
+    --v-switch-button-text-disabled: var(--v-colors-neutral-neutral-600);
     --v-switch-button-sizing-padding-x: var(--v-spacing-00);
     --v-switch-button-sizing-padding-y: var(--v-spacing-00);
     --v-datepicker-widget-days-background-default: var(--v-colors-neutral-neutral-1000);
@@ -309,7 +309,7 @@
     --v-file-input-border-hover: var(--v-inputs-border-hover);
     --v-file-input-border-active: var(--v-inputs-border-active);
     --v-file-input-border-focus: var(--v-inputs-border-focus);
-    --v-file-input-border-disabled: var(--v-inputs-border-disabled);
+    --v-file-input-border-disabled: var(--v-colors-disabled-text);
     --v-file-input-text-default: var(--v-colors-blue-blue-300);
     --v-file-input-text-hover: var(--v-colors-blue-blue-300);
     --v-file-input-text-active: var(--v-colors-blue-blue-300);
@@ -475,10 +475,10 @@
     --v-switch-button-sizing-switch-large: var(--v-spacing-06);
     --v-switch-button-sizing-width-large: 56px;
     --v-switch-button-sizing-height-large: var(--v-spacing-07);
-    --v-cards-sizing-padding-x: var(--v-spacing-05);
-    --v-cards-sizing-padding-y: var(--v-spacing-05);
-    --v-cards-sizing-inner-spacing: var(--v-spacing-05);
-    --v-cards-sizing-corner-radius: var(--v-radius-01);
+    --v-cards-sizing-padding-x: var(--v-spacing-06);
+    --v-cards-sizing-padding-y: var(--v-spacing-06);
+    --v-cards-sizing-inner-spacing: var(--v-spacing-06);
+    --v-cards-sizing-corner-radius: var(--v-radius-02);
     --v-cards-background-primary: var(--v-colors-neutral-neutral-1000);
     --v-cards-border-border: var(--v-colors-neutral-neutral-700);
     --v-cards-text-text: var(--v-colors-text-primary);
@@ -587,7 +587,6 @@
     --v-navigation-horizontal-background-selected: var(--v-colors-blue-blue-400);
     --v-navigation-horizontal-background-focus: var(--v-colors-blue-blue-200);
     --v-navigation-horizontal-background-bar: var(--v-colors-blue-blue-200);
-    --v-navigation-horizontal-background-panel-level2: var(--v-colors-blue-blue-900);
     --v-progress-bar-range-label-text: var(--v-colors-text-tertiary);
     --v-progress-bar-passive-track-background-default: var(--v-colors-neutral-neutral-900);
     --v-progress-bar-sizing-corner-radius: var(--v-radius-01);
@@ -605,6 +604,37 @@
     --v-footer-colors-logo: var(--v-colors-neutral-neutral-100);
     --v-footer-colors-socials: var(--v-colors-neutral-neutral-800);
     --v-footer-colors-icons: var(--v-colors-neutral-neutral-300);
+    --v-navigation-horizontal-horizontal-sub-menu-sizing-padding-x: var(--v-spacing-03);
+    --v-navigation-horizontal-horizontal-sub-menu-sizing-padding-y: var(--v-spacing-02);
+    --v-navigation-horizontal-horizontal-sub-menu-sizing-inner-spacing: var(--v-spacing-03);
+    --v-navigation-horizontal-horizontal-sub-menu-sizing-corner-radius: var(--v-radius-00);
+    --v-navigation-horizontal-horizontal-sub-menu-text-default: var(--v-colors-blue-blue-200);
+    --v-navigation-horizontal-horizontal-sub-menu-text-hover: var(--v-colors-neutral-neutral-100);
+    --v-navigation-horizontal-horizontal-sub-menu-text-active: var(--v-colors-neutral-neutral-100);
+    --v-navigation-horizontal-horizontal-sub-menu-text-selected: var(
+      --v-colors-neutral-neutral-100
+    );
+    --v-navigation-horizontal-horizontal-sub-menu-text-focus: var(--v-colors-blue-blue-200);
+    --v-navigation-horizontal-horizontal-sub-menu-background-default: var(
+      --v-colors-alpha-alpha-10
+    );
+    --v-navigation-horizontal-horizontal-sub-menu-background-hover: var(--v-colors-alpha-alpha-10);
+    --v-navigation-horizontal-horizontal-sub-menu-background-active: var(--v-colors-alpha-alpha-10);
+    --v-navigation-horizontal-horizontal-sub-menu-background-selected: var(
+      --v-colors-alpha-alpha-10
+    );
+    --v-navigation-horizontal-horizontal-sub-menu-background-focus: var(--v-colors-alpha-alpha-10);
+    --v-navigation-horizontal-horizontal-sub-menu-background-panel-level2: var(
+      --v-colors-blue-blue-900
+    );
+    --v-navigation-horizontal-horizontal-sub-menu-background-sub-menu-title: var(
+      --v-colors-neutral-neutral-100
+    );
+    --v-navigation-horizontal-horizontal-sub-menu-border-default: var(--v-colors-blue-blue-200);
+    --v-navigation-horizontal-horizontal-sub-menu-border-hover: var(--v-colors-neutral-neutral-100);
+    --v-navigation-horizontal-horizontal-sub-menu-border-active: var(--v-colors-alpha-alpha-10);
+    --v-navigation-horizontal-horizontal-sub-menu-border-selected: var(--v-colors-alpha-alpha-10);
+    --v-navigation-horizontal-horizontal-sub-menu-border-focus: var(--v-colors-alpha-alpha-10);
     --v-box-shadow-focus-ring-outset-dark-mode: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #ffffff;
     --v-box-shadow-focus-ring-inset-dark-mode: 0px 0px 0px 2px #131317 inset,
       0px 0px 0px 4px #ffffff inset;
@@ -632,7 +662,7 @@
   --v-buttons-theme-primary-background-focus: var(--v-colors-neutral-neutral-100);
   --v-buttons-theme-primary-background-disabled: var(--v-colors-neutral-neutral-900);
   --v-colors-brand-secondary: var(--v-colors-neutral-neutral-1000);
-  --v-buttons-theme-secondary-background-default: var(--v-colors-neutral-neutral-1000);
+  --v-buttons-theme-secondary-background-default: var(--v-colors-alpha-alpha-10);
   --v-buttons-theme-secondary-background-hover: var(--v-colors-blue-blue-800);
   --v-buttons-theme-secondary-background-active: var(--v-colors-blue-blue-700);
   --v-buttons-theme-secondary-background-focus: var(--v-colors-neutral-neutral-1000);
@@ -645,20 +675,20 @@
   --v-buttons-theme-success-background-disabled: var(--v-colors-neutral-neutral-900);
   --v-buttons-sizing-sm-padding-x: var(--v-spacing-for-2px-border-05);
   --v-buttons-sizing-sm-padding-y: var(--v-spacing-for-2px-border-02);
-  --v-buttons-sizing-sm-corner-radius: var(--v-radius-04);
+  --v-buttons-sizing-sm-corner-radius: var(--v-radius-05);
   --v-buttons-sizing-md-padding-x: var(--v-spacing-for-2px-border-06);
   --v-buttons-sizing-md-padding-y: var(--v-spacing-for-2px-border-03);
-  --v-buttons-sizing-md-corner-radius: var(--v-radius-04);
+  --v-buttons-sizing-md-corner-radius: var(--v-radius-05);
   --v-buttons-sizing-lg-padding-x: var(--v-spacing-for-2px-border-08);
   --v-buttons-sizing-lg-padding-y: var(--v-spacing-for-2px-border-04);
-  --v-buttons-sizing-lg-corner-radius: var(--v-radius-04);
+  --v-buttons-sizing-lg-corner-radius: var(--v-radius-05);
   --v-colors-focus-ring: var(--v-colors-blue-blue-400);
   --v-buttons-theme-primary-border-default: var(--v-colors-neutral-neutral-100);
-  --v-buttons-theme-primary-border-hover: var(--v-colors-blue-blue-100);
+  --v-buttons-theme-primary-border-hover: var(--v-colors-blue-blue-300);
   --v-buttons-theme-primary-border-active: var(--v-colors-blue-blue-200);
   --v-buttons-theme-primary-border-focus: var(--v-colors-neutral-neutral-100);
   --v-buttons-theme-primary-border-disabled: var(--v-colors-neutral-neutral-900);
-  --v-buttons-theme-primary-text-default: var(--v-colors-blue-blue-600);
+  --v-buttons-theme-primary-text-default: var(--v-colors-neutral-neutral-1000);
   --v-buttons-theme-primary-text-hover: var(--v-colors-blue-blue-600);
   --v-buttons-theme-primary-text-active: var(--v-colors-blue-blue-600);
   --v-buttons-theme-primary-text-focus: var(--v-colors-blue-blue-600);
@@ -676,12 +706,12 @@
   --v-buttons-sizing-lg-padding-icon-only: var(--v-spacing-00);
   --v-buttons-sizing-md-padding-icon-only: var(--v-spacing-00);
   --v-buttons-sizing-sm-padding-icon-only: var(--v-spacing-00);
-  --v-buttons-theme-neutral-background-default: var(--v-colors-neutral-neutral-1000);
+  --v-buttons-theme-neutral-background-default: var(--v-colors-alpha-alpha-10);
   --v-buttons-theme-neutral-background-hover: var(--v-colors-blue-blue-800);
   --v-buttons-theme-neutral-background-active: var(--v-colors-blue-blue-700);
   --v-buttons-theme-neutral-background-focus: var(--v-colors-neutral-neutral-1000);
   --v-buttons-theme-neutral-background-disabled: var(--v-colors-neutral-neutral-1000);
-  --v-buttons-theme-neutral-border-default: var(--v-colors-neutral-neutral-1000);
+  --v-buttons-theme-neutral-border-default: var(--v-colors-alpha-alpha-10);
   --v-buttons-theme-neutral-border-hover: var(--v-colors-blue-blue-800);
   --v-buttons-theme-neutral-border-active: var(--v-colors-blue-blue-700);
   --v-buttons-theme-neutral-border-focus: var(--v-colors-neutral-neutral-1000);
@@ -756,11 +786,11 @@
   --v-inputs-background-success: var(--v-colors-neutral-neutral-1000);
   --v-inputs-border-error: var(--v-colors-red-red-400);
   --v-inputs-border-success: var(--v-colors-green-green-400);
-  --v-checkboxes-radios-border-default: var(--v-colors-neutral-neutral-700);
+  --v-checkboxes-radios-border-default: var(--v-colors-neutral-neutral-600);
   --v-checkboxes-radios-border-hover: var(--v-colors-blue-blue-300);
   --v-checkboxes-radios-border-selected: var(--v-colors-blue-blue-300);
   --v-checkboxes-radios-border-active: var(--v-colors-blue-blue-400);
-  --v-checkboxes-radios-border-focus: var(--v-colors-neutral-neutral-700);
+  --v-checkboxes-radios-border-focus: var(--v-colors-neutral-neutral-600);
   --v-checkboxes-radios-border-disabled: var(--v-colors-neutral-neutral-700);
   --v-checkboxes-radios-background-default: var(--v-colors-neutral-neutral-1000);
   --v-checkboxes-radios-background-hover: var(--v-colors-neutral-neutral-1000);
@@ -774,7 +804,7 @@
   --v-checkboxes-radios-text-active: var(--v-colors-text-primary);
   --v-checkboxes-radios-text-focus: var(--v-colors-text-primary);
   --v-checkboxes-radios-text-active-focus: var(--v-colors-text-primary);
-  --v-checkboxes-radios-text-disabled: var(--v-colors-neutral-neutral-700);
+  --v-checkboxes-radios-text-disabled: var(--v-colors-neutral-neutral-600);
   --v-checkboxes-radios-background-indetermined: var(--v-colors-blue-blue-300);
   --v-checkboxes-radios-border-indetermined: var(--v-colors-blue-blue-300);
   --v-checkboxes-radios-text-indetermined: var(--v-colors-text-primary);
@@ -799,13 +829,13 @@
   --v-checkboxes-radios-sizing-padding-y: var(--v-spacing-00);
   --v-checkboxes-radios-sizing-inner-spacing: var(--v-spacing-03);
   --v-checkboxes-radios-sizing-padding-x: var(--v-spacing-00);
-  --v-switch-button-sizing-corner-radius: var(--v-radius-02);
+  --v-switch-button-sizing-corner-radius: var(--v-radius-03);
   --v-switch-button-sizing-switch-small: 10px;
-  --v-switch-button-track-off-state-border-default: var(--v-colors-neutral-neutral-500);
+  --v-switch-button-track-off-state-border-default: var(--v-colors-neutral-neutral-600);
   --v-switch-button-track-off-state-border-hover: var(--v-colors-blue-blue-200);
   --v-switch-button-track-off-state-border-active: var(--v-colors-blue-blue-300);
-  --v-switch-button-track-off-state-border-focus: var(--v-colors-neutral-neutral-500);
-  --v-switch-button-track-off-state-border-disabled: var(--v-colors-disabled-text);
+  --v-switch-button-track-off-state-border-focus: var(--v-colors-neutral-neutral-600);
+  --v-switch-button-track-off-state-border-disabled: var(--v-colors-neutral-neutral-700);
   --v-switch-button-track-off-state-background-default: var(--v-colors-neutral-neutral-1000);
   --v-switch-button-track-off-state-background-hover: var(--v-colors-neutral-neutral-1000);
   --v-switch-button-track-off-state-background-active: var(--v-colors-neutral-neutral-1000);
@@ -820,22 +850,22 @@
   --v-switch-button-track-on-state-border-hover: var(--v-colors-blue-blue-200);
   --v-switch-button-track-on-state-border-active: var(--v-colors-blue-blue-400);
   --v-switch-button-track-on-state-border-focus: var(--v-colors-blue-blue-300);
-  --v-switch-button-track-on-state-border-disabled: var(--v-colors-disabled-text);
+  --v-switch-button-track-on-state-border-disabled: var(--v-colors-neutral-neutral-700);
   --v-switch-button-track-on-state-background-default: var(--v-colors-blue-blue-300);
   --v-switch-button-track-on-state-background-hover: var(--v-colors-blue-blue-200);
   --v-switch-button-track-on-state-background-active: var(--v-colors-blue-blue-400);
   --v-switch-button-track-on-state-background-focus: var(--v-colors-blue-blue-300);
-  --v-switch-button-track-on-state-background-disabled: var(--v-colors-neutral-neutral-100);
+  --v-switch-button-track-on-state-background-disabled: var(--v-colors-neutral-neutral-700);
   --v-switch-button-thumb-on-state-background-default: var(--v-colors-neutral-neutral-1000);
   --v-switch-button-thumb-on-state-background-hover: var(--v-colors-neutral-neutral-1000);
   --v-switch-button-thumb-on-state-background-active: var(--v-colors-neutral-neutral-1000);
   --v-switch-button-thumb-on-state-background-focus: var(--v-colors-neutral-neutral-1000);
-  --v-switch-button-thumb-on-state-background-disabled: var(--v-colors-disabled-text);
+  --v-switch-button-thumb-on-state-background-disabled: var(--v-colors-neutral-neutral-1000);
   --v-switch-button-text-default: var(--v-colors-text-secondary);
   --v-switch-button-text-hover: var(--v-colors-text-primary);
   --v-switch-button-text-active: var(--v-colors-text-primary);
   --v-switch-button-text-focus: var(--v-colors-text-primary);
-  --v-switch-button-text-disabled: var(--v-colors-disabled-text);
+  --v-switch-button-text-disabled: var(--v-colors-neutral-neutral-600);
   --v-switch-button-sizing-padding-x: var(--v-spacing-00);
   --v-switch-button-sizing-padding-y: var(--v-spacing-00);
   --v-datepicker-widget-days-background-default: var(--v-colors-neutral-neutral-1000);
@@ -914,7 +944,7 @@
   --v-file-input-border-hover: var(--v-inputs-border-hover);
   --v-file-input-border-active: var(--v-inputs-border-active);
   --v-file-input-border-focus: var(--v-inputs-border-focus);
-  --v-file-input-border-disabled: var(--v-inputs-border-disabled);
+  --v-file-input-border-disabled: var(--v-colors-disabled-text);
   --v-file-input-text-default: var(--v-colors-blue-blue-300);
   --v-file-input-text-hover: var(--v-colors-blue-blue-300);
   --v-file-input-text-active: var(--v-colors-blue-blue-300);
@@ -1080,10 +1110,10 @@
   --v-switch-button-sizing-switch-large: var(--v-spacing-06);
   --v-switch-button-sizing-width-large: 56px;
   --v-switch-button-sizing-height-large: var(--v-spacing-07);
-  --v-cards-sizing-padding-x: var(--v-spacing-05);
-  --v-cards-sizing-padding-y: var(--v-spacing-05);
-  --v-cards-sizing-inner-spacing: var(--v-spacing-05);
-  --v-cards-sizing-corner-radius: var(--v-radius-01);
+  --v-cards-sizing-padding-x: var(--v-spacing-06);
+  --v-cards-sizing-padding-y: var(--v-spacing-06);
+  --v-cards-sizing-inner-spacing: var(--v-spacing-06);
+  --v-cards-sizing-corner-radius: var(--v-radius-02);
   --v-cards-background-primary: var(--v-colors-neutral-neutral-1000);
   --v-cards-border-border: var(--v-colors-neutral-neutral-700);
   --v-cards-text-text: var(--v-colors-text-primary);
@@ -1192,7 +1222,6 @@
   --v-navigation-horizontal-background-selected: var(--v-colors-blue-blue-400);
   --v-navigation-horizontal-background-focus: var(--v-colors-blue-blue-200);
   --v-navigation-horizontal-background-bar: var(--v-colors-blue-blue-200);
-  --v-navigation-horizontal-background-panel-level2: var(--v-colors-blue-blue-900);
   --v-progress-bar-range-label-text: var(--v-colors-text-tertiary);
   --v-progress-bar-passive-track-background-default: var(--v-colors-neutral-neutral-900);
   --v-progress-bar-sizing-corner-radius: var(--v-radius-01);
@@ -1208,6 +1237,31 @@
   --v-footer-colors-logo: var(--v-colors-neutral-neutral-100);
   --v-footer-colors-socials: var(--v-colors-neutral-neutral-800);
   --v-footer-colors-icons: var(--v-colors-neutral-neutral-300);
+  --v-navigation-horizontal-horizontal-sub-menu-sizing-padding-x: var(--v-spacing-03);
+  --v-navigation-horizontal-horizontal-sub-menu-sizing-padding-y: var(--v-spacing-02);
+  --v-navigation-horizontal-horizontal-sub-menu-sizing-inner-spacing: var(--v-spacing-03);
+  --v-navigation-horizontal-horizontal-sub-menu-sizing-corner-radius: var(--v-radius-00);
+  --v-navigation-horizontal-horizontal-sub-menu-text-default: var(--v-colors-blue-blue-200);
+  --v-navigation-horizontal-horizontal-sub-menu-text-hover: var(--v-colors-neutral-neutral-100);
+  --v-navigation-horizontal-horizontal-sub-menu-text-active: var(--v-colors-neutral-neutral-100);
+  --v-navigation-horizontal-horizontal-sub-menu-text-selected: var(--v-colors-neutral-neutral-100);
+  --v-navigation-horizontal-horizontal-sub-menu-text-focus: var(--v-colors-blue-blue-200);
+  --v-navigation-horizontal-horizontal-sub-menu-background-default: var(--v-colors-alpha-alpha-10);
+  --v-navigation-horizontal-horizontal-sub-menu-background-hover: var(--v-colors-alpha-alpha-10);
+  --v-navigation-horizontal-horizontal-sub-menu-background-active: var(--v-colors-alpha-alpha-10);
+  --v-navigation-horizontal-horizontal-sub-menu-background-selected: var(--v-colors-alpha-alpha-10);
+  --v-navigation-horizontal-horizontal-sub-menu-background-focus: var(--v-colors-alpha-alpha-10);
+  --v-navigation-horizontal-horizontal-sub-menu-background-panel-level2: var(
+    --v-colors-blue-blue-900
+  );
+  --v-navigation-horizontal-horizontal-sub-menu-background-sub-menu-title: var(
+    --v-colors-neutral-neutral-100
+  );
+  --v-navigation-horizontal-horizontal-sub-menu-border-default: var(--v-colors-blue-blue-200);
+  --v-navigation-horizontal-horizontal-sub-menu-border-hover: var(--v-colors-neutral-neutral-100);
+  --v-navigation-horizontal-horizontal-sub-menu-border-active: var(--v-colors-alpha-alpha-10);
+  --v-navigation-horizontal-horizontal-sub-menu-border-selected: var(--v-colors-alpha-alpha-10);
+  --v-navigation-horizontal-horizontal-sub-menu-border-focus: var(--v-colors-alpha-alpha-10);
   --v-box-shadow-focus-ring-outset-dark-mode: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #ffffff;
   --v-box-shadow-focus-ring-inset-dark-mode: 0px 0px 0px 2px #131317 inset,
     0px 0px 0px 4px #ffffff inset;

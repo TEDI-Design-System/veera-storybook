@@ -40,13 +40,13 @@ input[type='range'].#{$prefix}-range {
 
   &:focus {
     &::-webkit-slider-thumb {
-      box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+      box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
       border-color: var(--#{$prefix}-slider-thumb-border-focus);
       background: var(--#{$prefix}-slider-thumb-background-focus);
     }
 
     &::-moz-range-thumb {
-      box-shadow: var(--#{$prefix}-box-shadow-focus-ring);
+      box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
       border-color: var(--#{$prefix}-slider-thumb-border-focus);
       background: var(--#{$prefix}-slider-thumb-background-focus);
     }

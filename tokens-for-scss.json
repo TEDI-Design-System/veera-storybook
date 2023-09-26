@@ -838,9 +838,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "buttons/theme/secondary/background",
@@ -981,7 +981,7 @@
       "value": "20px",
       "group": "radius",
       "collection": "primitive-tokens",
-      "name": "radius-03",
+      "name": "radius-04",
       "type": "FLOAT"
     },
     {
@@ -989,7 +989,7 @@
       "value": "360px",
       "group": "radius",
       "collection": "primitive-tokens",
-      "name": "radius-04",
+      "name": "radius-05",
       "type": "FLOAT"
     },
     {
@@ -1018,9 +1018,9 @@
     },
     {
       "alias": true,
-      "value": "radius-04",
+      "value": "radius-05",
       "darkMode": {
-        "value": "radius-04",
+        "value": "radius-05",
         "alias": true
       },
       "group": "buttons/sizing/sm",
@@ -1054,9 +1054,9 @@
     },
     {
       "alias": true,
-      "value": "radius-04",
+      "value": "radius-05",
       "darkMode": {
-        "value": "radius-04",
+        "value": "radius-05",
         "alias": true
       },
       "group": "buttons/sizing/md",
@@ -1090,9 +1090,9 @@
     },
     {
       "alias": true,
-      "value": "radius-04",
+      "value": "radius-05",
       "darkMode": {
-        "value": "radius-04",
+        "value": "radius-05",
         "alias": true
       },
       "group": "buttons/sizing/lg",
@@ -1102,7 +1102,7 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-400",
+      "value": "colors-blue-blue-500",
       "darkMode": {
         "value": "colors-blue-blue-400",
         "alias": true
@@ -1128,7 +1128,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-100",
+        "value": "colors-blue-blue-300",
         "alias": true
       },
       "group": "buttons/theme/primary/border",
@@ -1176,7 +1176,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "buttons/theme/primary/text",
@@ -1390,9 +1390,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "buttons/theme/neutral/background",
@@ -1450,9 +1450,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "buttons/theme/neutral/border",
@@ -2366,9 +2366,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2414,9 +2414,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "checkboxes radios/border",
@@ -2582,9 +2582,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "checkboxes radios/text",
@@ -2882,9 +2882,9 @@
     },
     {
       "alias": true,
-      "value": "radius-02",
+      "value": "radius-03",
       "darkMode": {
-        "value": "radius-02",
+        "value": "radius-03",
         "alias": true
       },
       "group": "switch button/sizing",
@@ -2906,9 +2906,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-600",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-500",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "switch button/track/off state/border",
@@ -2942,9 +2942,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-600",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-500",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "switch button/track/off state/border",
@@ -2954,9 +2954,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "switch button/track/off state/border",
@@ -3074,7 +3074,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
         "value": "colors-disabled-text",
         "alias": true
@@ -3134,9 +3134,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "switch button/track/on state/border",
@@ -3194,9 +3194,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-300",
+      "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-neutral-neutral-100",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "switch button/track/on state/background",
@@ -3256,7 +3256,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "switch button/thumb/on state/background",
@@ -3314,9 +3314,9 @@
     },
     {
       "alias": true,
-      "value": "colors-disabled-text",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "switch button/text",
@@ -3329,7 +3329,7 @@
       "value": "16px",
       "group": "radius",
       "collection": "primitive-tokens",
-      "name": "radius-02",
+      "name": "radius-03",
       "type": "FLOAT"
     },
     {
@@ -3370,7 +3370,7 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-100",
+      "value": "colors-neutral-neutral-200",
       "darkMode": {
         "value": "colors-blue-blue-800",
         "alias": true
@@ -3622,7 +3622,7 @@
     },
     {
       "alias": true,
-      "value": "colors-orange-orange-500",
+      "value": "colors-orange-orange-700",
       "darkMode": {
         "value": "colors-orange-orange-500",
         "alias": true
@@ -4480,7 +4480,7 @@
       "alias": true,
       "value": "inputs-border-disabled",
       "darkMode": {
-        "value": "inputs-border-disabled",
+        "value": "colors-disabled-text",
         "alias": true
       },
       "group": "file input/border",
@@ -6470,9 +6470,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "cards/sizing",
@@ -6482,9 +6482,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "cards/sizing",
@@ -6494,9 +6494,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "cards/sizing",
@@ -6506,9 +6506,9 @@
     },
     {
       "alias": true,
-      "value": "radius-01",
+      "value": "radius-02",
       "darkMode": {
-        "value": "radius-01",
+        "value": "radius-02",
         "alias": true
       },
       "group": "cards/sizing",
@@ -7714,7 +7714,7 @@
     },
     {
       "alias": true,
-      "value": "colors-blue-blue-100",
+      "value": "colors-blue-blue-200",
       "darkMode": {
         "value": "colors-blue-blue-800",
         "alias": true
@@ -7818,18 +7818,6 @@
       "group": "navigation/horizontal/background",
       "collection": "semantic-tokens",
       "name": "navigation-horizontal-background-bar",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-blue-blue-900",
-      "darkMode": {
-        "value": "colors-blue-blue-900",
-        "alias": true
-      },
-      "group": "navigation/horizontal/background",
-      "collection": "semantic-tokens",
-      "name": "navigation-horizontal-background-panel-level2",
       "type": "COLOR"
     },
     {
@@ -8011,6 +7999,266 @@
       "collection": "semantic-tokens",
       "name": "footer-colors-icons",
       "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/sizing",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/sizing",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/sizing",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-00",
+      "darkMode": {
+        "value": "radius-00",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/sizing",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkMode": {
+        "value": "colors-blue-blue-200",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkMode": {
+        "value": "colors-blue-blue-200",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/text",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-text-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-900",
+      "darkMode": {
+        "value": "colors-blue-blue-900",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-panel-level2",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/background",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-background-sub-menu-title",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-200",
+      "darkMode": {
+        "value": "colors-blue-blue-200",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-100",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-hover",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-active",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-selected",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-alpha-10",
+      "darkMode": {
+        "value": "colors-alpha-alpha-10",
+        "alias": true
+      },
+      "group": "navigation/horizontal/horizontal sub menu/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-horizontal-sub-menu-border-focus",
+      "type": "COLOR"
+    },
+    {
+      "alias": false,
+      "value": "8px",
+      "group": "radius",
+      "collection": "primitive-tokens",
+      "name": "radius-02",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -8127,22 +8375,6 @@
       "line-height": "133%"
     },
     {
-      "name": "subtitles-regular",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1rem",
-      "font-weight": 700,
-      "text-decoration": "none",
-      "line-height": "150%"
-    },
-    {
-      "name": "subtitles-small",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.875rem",
-      "font-weight": 400,
-      "text-decoration": "none",
-      "line-height": "171%"
-    },
-    {
       "name": "links-regular",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
@@ -8164,22 +8396,6 @@
       "font-size": "0.75rem",
       "font-weight": 400,
       "text-decoration": "underline",
-      "line-height": "133%"
-    },
-    {
-      "name": "navigation-drawer-label-mobile",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.75rem",
-      "font-weight": 400,
-      "text-decoration": "none",
-      "line-height": "160%"
-    },
-    {
-      "name": "navigation-main-menu-item",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1.125rem",
-      "font-weight": 400,
-      "text-decoration": "none",
       "line-height": "133%"
     },
     {
@@ -8231,7 +8447,7 @@
       "line-height": "133%"
     },
     {
-      "name": "body-regular",
+      "name": "body-medium",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
       "font-weight": 400,
@@ -8239,7 +8455,7 @@
       "line-height": "150%"
     },
     {
-      "name": "body-regular-bold",
+      "name": "body-medium-bold",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
       "font-weight": 700,

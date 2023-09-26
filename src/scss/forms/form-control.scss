@@ -5,7 +5,7 @@
 $prefix: constants.$veera-prefix;
 
 .#{$prefix}-form-control {
-  @include text-styles.body-regular;
+  @include text-styles.body-medium;
 
   text-align: initial;
   box-sizing: border-box;
