@@ -1,5 +1,6 @@
 import '@scss/components/button.scss';
 import { clsx } from 'clsx';
+import { createIcon } from '../../utils';
 
 export interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'neutral' | 'success' | 'danger';
@@ -9,6 +10,8 @@ export interface ButtonProps {
   onClick?: () => void;
   iconOnly?: boolean;
   floating?: boolean;
+  leftIcon?: string;
+  rightIcon?: string;
 }
 export const createButton = ({
   label,
@@ -17,10 +20,19 @@ export const createButton = ({
   disabled = false,
   iconOnly = false,
   floating,
+  leftIcon,
+  rightIcon,
 }: ButtonProps) => {
   const btn = document.createElement('button');
   btn.type = 'button';
-  btn.innerText = label;
+  if (leftIcon) {
+    btn.appendChild(createIcon({ name: leftIcon }));
+  }
+  const labelText = document.createTextNode(label);
+  btn.appendChild(labelText);
+  if (rightIcon) {
+    btn.appendChild(createIcon({ name: rightIcon }));
+  }
   btn.className = clsx('v-button', `v-button--${variant}`, `v-button--${size}`, {
     'v-button--icon-only': iconOnly,
     'v-button--floating': floating,

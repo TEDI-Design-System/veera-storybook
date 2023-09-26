@@ -20,14 +20,19 @@ export const createCheckbox = ({ disabled, indeterminate, size = 'md' }: Checkbo
 export interface CheckboxWithLabelProps extends CheckboxProps {
   label: string;
 }
-export const createCheckboxWithLabel = ({
-  label,
-  disabled,
-  size = 'md',
-}: CheckboxWithLabelProps) => {
-  return `<div class="v-checkbox v-checkbox--${size}">
-  <input type="checkbox" ${disabled ? 'disabled' : ''} id="v-checkbox-label-demo"/>${
-    label && `<label for="v-checkbox-label-demo">${label}</label>`
-  }
-  </div>`;
+export const createCheckboxWithLabel = ({ label, size, ...inputProps }: CheckboxWithLabelProps) => {
+  const container = document.createElement('div');
+  const id = `v-checkbox-label-${Math.random()}`;
+
+  container.className = `v-checkbox v-checkbox--${size}`;
+  const checkbox = createCheckbox({ ...inputProps });
+  checkbox.id = id;
+  container.appendChild(checkbox);
+
+  const labelEl = document.createElement('label');
+  labelEl.innerText = label;
+  labelEl.htmlFor = id;
+  container.appendChild(labelEl);
+
+  return container;
 };

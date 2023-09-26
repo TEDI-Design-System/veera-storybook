@@ -1,6 +1,12 @@
 import tokensJson from '../tokens-for-scss.json' assert { type: 'json' };
 import { autoGenWarning, prefix } from './constants.js';
 
+const getTextColorClass = (colorInfix, name) => {
+  return `.${prefix}-color-${colorInfix} {
+  color: var(--${prefix}-${name});
+}`;
+};
+
 const getBgClass = (colorInfix, name) => {
   return `.${prefix}-bg-${colorInfix} {
   background: var(--${prefix}-${name});
@@ -9,7 +15,7 @@ const getBgClass = (colorInfix, name) => {
 
 const getColorClasses = (token) => {
   const colorInfix = token.name.split('-').slice(-2).join('-');
-  const classes = [getBgClass(colorInfix, token.name)];
+  const classes = [getBgClass(colorInfix, token.name), getTextColorClass(colorInfix, token.name)];
   return classes.join('\n\n');
 };
 

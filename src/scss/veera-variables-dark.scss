@@ -45,11 +45,11 @@
     --v-buttons-sizing-lg-corner-radius: var(--v-radius-05);
     --v-colors-focus-ring: var(--v-colors-blue-blue-400);
     --v-buttons-theme-primary-border-default: var(--v-colors-neutral-neutral-100);
-    --v-buttons-theme-primary-border-hover: var(--v-colors-blue-blue-100);
+    --v-buttons-theme-primary-border-hover: var(--v-colors-blue-blue-300);
     --v-buttons-theme-primary-border-active: var(--v-colors-blue-blue-200);
     --v-buttons-theme-primary-border-focus: var(--v-colors-neutral-neutral-100);
     --v-buttons-theme-primary-border-disabled: var(--v-colors-neutral-neutral-900);
-    --v-buttons-theme-primary-text-default: var(--v-colors-blue-blue-600);
+    --v-buttons-theme-primary-text-default: var(--v-colors-neutral-neutral-1000);
     --v-buttons-theme-primary-text-hover: var(--v-colors-blue-blue-600);
     --v-buttons-theme-primary-text-active: var(--v-colors-blue-blue-600);
     --v-buttons-theme-primary-text-focus: var(--v-colors-blue-blue-600);
@@ -309,7 +309,7 @@
     --v-file-input-border-hover: var(--v-inputs-border-hover);
     --v-file-input-border-active: var(--v-inputs-border-active);
     --v-file-input-border-focus: var(--v-inputs-border-focus);
-    --v-file-input-border-disabled: var(--v-inputs-border-disabled);
+    --v-file-input-border-disabled: var(--v-colors-disabled-text);
     --v-file-input-text-default: var(--v-colors-blue-blue-300);
     --v-file-input-text-hover: var(--v-colors-blue-blue-300);
     --v-file-input-text-active: var(--v-colors-blue-blue-300);
@@ -684,11 +684,11 @@
   --v-buttons-sizing-lg-corner-radius: var(--v-radius-05);
   --v-colors-focus-ring: var(--v-colors-blue-blue-400);
   --v-buttons-theme-primary-border-default: var(--v-colors-neutral-neutral-100);
-  --v-buttons-theme-primary-border-hover: var(--v-colors-blue-blue-100);
+  --v-buttons-theme-primary-border-hover: var(--v-colors-blue-blue-300);
   --v-buttons-theme-primary-border-active: var(--v-colors-blue-blue-200);
   --v-buttons-theme-primary-border-focus: var(--v-colors-neutral-neutral-100);
   --v-buttons-theme-primary-border-disabled: var(--v-colors-neutral-neutral-900);
-  --v-buttons-theme-primary-text-default: var(--v-colors-blue-blue-600);
+  --v-buttons-theme-primary-text-default: var(--v-colors-neutral-neutral-1000);
   --v-buttons-theme-primary-text-hover: var(--v-colors-blue-blue-600);
   --v-buttons-theme-primary-text-active: var(--v-colors-blue-blue-600);
   --v-buttons-theme-primary-text-focus: var(--v-colors-blue-blue-600);
@@ -944,7 +944,7 @@
   --v-file-input-border-hover: var(--v-inputs-border-hover);
   --v-file-input-border-active: var(--v-inputs-border-active);
   --v-file-input-border-focus: var(--v-inputs-border-focus);
-  --v-file-input-border-disabled: var(--v-inputs-border-disabled);
+  --v-file-input-border-disabled: var(--v-colors-disabled-text);
   --v-file-input-text-default: var(--v-colors-blue-blue-300);
   --v-file-input-text-hover: var(--v-colors-blue-blue-300);
   --v-file-input-text-active: var(--v-colors-blue-blue-300);
