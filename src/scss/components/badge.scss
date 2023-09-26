@@ -4,11 +4,11 @@
 $prefix: constants.$veera-prefix;
 
 .#{$prefix}-badge {
-    @include text-styles.body-regular;
+    @include text-styles.body-small;
     display: inline-flex;
     border: 2px solid var(--v-badges-border-neutral);
     border-radius: var(--v-badges-sizing-corner-radius);
-    padding: var(--v-badges-sizing-padding-x) var(--v-badges-sizing-padding-y);
+    padding: var(--v-badges-sizing-padding-y) var(--v-badges-sizing-padding-x);
     color: var(--v-badges-text-neutral);
     background-color: var(--v-badges-background-neutral);
     gap: var(--v-badges-sizing-inner-spacing);
