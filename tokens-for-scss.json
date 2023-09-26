@@ -1128,7 +1128,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-blue-blue-100",
         "alias": true
       },
       "group": "buttons/theme/primary/border",
@@ -1176,7 +1176,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-blue-blue-600",
         "alias": true
       },
       "group": "buttons/theme/primary/text",
@@ -3370,7 +3370,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-200",
+      "value": "colors-blue-blue-100",
       "darkMode": {
         "value": "colors-blue-blue-800",
         "alias": true
@@ -4480,7 +4480,7 @@
       "alias": true,
       "value": "inputs-border-disabled",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "inputs-border-disabled",
         "alias": true
       },
       "group": "file input/border",
