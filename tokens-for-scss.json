@@ -8259,6 +8259,222 @@
       "collection": "primitive-tokens",
       "name": "radius-02",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkMode": {
+        "value": "colors-blue-blue-200",
+        "alias": true
+      },
+      "group": "navigation/vertical/background/level 1",
+      "collection": "semantic-tokens",
+      "name": "navigation-vertical-background-level-1-bar",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-06",
+      "darkMode": {
+        "value": "spacing-06",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-padding-x-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkMode": {
+        "value": "spacing-00",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-padding-y-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-00",
+      "darkMode": {
+        "value": "radius-00",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-1000",
+        "alias": true
+      },
+      "group": "header/background",
+      "collection": "semantic-tokens",
+      "name": "header-background-background",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-400",
+      "darkMode": {
+        "value": "colors-neutral-neutral-700",
+        "alias": true
+      },
+      "group": "header/border",
+      "collection": "semantic-tokens",
+      "name": "header-border-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkMode": {
+        "value": "colors-text-primary",
+        "alias": true
+      },
+      "group": "header/text",
+      "collection": "semantic-tokens",
+      "name": "header-text-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-06",
+      "darkMode": {
+        "value": "spacing-06",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-x-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkMode": {
+        "value": "spacing-00",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-y-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-00",
+      "darkMode": {
+        "value": "radius-00",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkMode": {
+        "value": "spacing-00",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-inner-spacing-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-x-search",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-y-search",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-inner-spacing-search",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -8362,7 +8578,7 @@
       "name": "headings-small-h6",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
-      "font-weight": 400,
+      "font-weight": 700,
       "text-decoration": "none",
       "line-height": "150%"
     },

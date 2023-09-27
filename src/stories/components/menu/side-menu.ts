@@ -1,66 +1,15 @@
 import '@scss/components/menu.scss';
 import { createIcon } from '../../utils';
 import clsx from 'clsx';
+import { sideNavItems } from './menu-items';
 
-interface MenuItem {
+export interface SideMenuItem {
   label: string;
   icon?: string;
-  children?: MenuItem[];
+  children?: SideMenuItem[];
 }
 
-const sideNavItems: MenuItem[] = [
-  {
-    label: 'Avaleht',
-    icon: 'dashboard',
-  },
-  {
-    label: 'Ärisaladused',
-    icon: 'key',
-    children: [
-      {
-        label: 'Ärisaladus 1',
-        icon: 'paid',
-        children: [
-          {
-            label: 'Top secret',
-          },
-        ],
-      },
-      {
-        label: 'Ärisaladus 2',
-        icon: 'account_balance',
-      },
-      {
-        label: 'Ärisaladus 3',
-        icon: 'money',
-      },
-    ],
-  },
-  {
-    label: 'Süvamenüü',
-    icon: 'public',
-    children: [
-      {
-        label: 'Mina',
-        icon: 'person',
-      },
-      {
-        label: 'Meie',
-        icon: 'group',
-      },
-      {
-        label: 'Nemad',
-        icon: 'groups',
-      },
-    ],
-  },
-  {
-    label: 'Seaded',
-    icon: 'settings',
-  },
-];
-
-const createMenuItem = (item: MenuItem, level: number) => {
+const createMenuItem = (item: SideMenuItem, level: number) => {
   const expandable = !!item.children?.length;
   const menuItem = document.createElement(expandable ? 'button' : 'a');
   menuItem.className = clsx('v-side-menu__item', {
@@ -85,7 +34,7 @@ const populateMenu = ({
   level,
 }: {
   parent: HTMLElement;
-  item: MenuItem;
+  item: SideMenuItem;
   level: number;
 }) => {
   const listItem = document.createElement('li');

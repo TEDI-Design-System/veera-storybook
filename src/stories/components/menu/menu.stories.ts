@@ -1,5 +1,6 @@
 import { StoryObj } from '@storybook/html';
 import { createSideNavigation } from './side-menu';
+import { createHorizontalNavigation } from './horizontal-menu';
 
 const meta = {
   title: 'components/menu',
@@ -13,5 +14,5 @@ export const SideMenu: StoryObj = {
 };
 
 export const HorizontalMenu: StoryObj = {
-  render: createSideNavigation,
+  render: createHorizontalNavigation,
 };
