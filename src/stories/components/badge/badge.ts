@@ -29,6 +29,7 @@ export const createBadge = ({ variant = 'info', hasIcon = true }: BadgeStoryProp
   if (hasIcon) {
     const icon = document.createElement('div');
     icon.className = 'v-badge__icon';
+    icon.setAttribute('aria-hidden', 'true');
     icon.appendChild(createBadgeIcon(variant));
     badge.appendChild(icon);
   }
