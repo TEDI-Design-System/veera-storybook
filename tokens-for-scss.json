@@ -1128,7 +1128,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-blue-blue-100",
         "alias": true
       },
       "group": "buttons/theme/primary/border",
@@ -1176,7 +1176,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-blue-blue-600",
         "alias": true
       },
       "group": "buttons/theme/primary/text",
@@ -1930,9 +1930,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "inputs/border",
@@ -2740,7 +2740,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-400",
       "darkMode": {
-        "value": "colors-neutral-neutral-800",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "slider/thumb/border",
@@ -3370,7 +3370,7 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-200",
+      "value": "colors-blue-blue-100",
       "darkMode": {
         "value": "colors-blue-blue-800",
         "alias": true
@@ -4034,9 +4034,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "table cells/header/border",
@@ -4480,7 +4480,7 @@
       "alias": true,
       "value": "inputs-border-disabled",
       "darkMode": {
-        "value": "colors-disabled-text",
+        "value": "inputs-border-disabled",
         "alias": true
       },
       "group": "file input/border",
@@ -5150,9 +5150,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "stepper/border",
@@ -5222,9 +5222,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "modals/border",
@@ -5462,9 +5462,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "cookies/border",
@@ -5714,9 +5714,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "accordion/border",
@@ -5798,9 +5798,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "accordion/border",
@@ -5858,9 +5858,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-03",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-03",
         "alias": true
       },
       "group": "badges/sizing",
@@ -5870,9 +5870,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-01",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-01",
         "alias": true
       },
       "group": "badges/sizing",
@@ -5882,9 +5882,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-02",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-02",
         "alias": true
       },
       "group": "badges/sizing",
@@ -6314,9 +6314,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "tabs/border",
@@ -6362,9 +6362,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "accordion/border",
@@ -6530,9 +6530,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-400",
+      "value": "colors-neutral-neutral-500",
       "darkMode": {
-        "value": "colors-neutral-neutral-700",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "cards/border",
@@ -6628,7 +6628,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/horizontal/text",
@@ -6640,7 +6640,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/horizontal/text",
@@ -6652,7 +6652,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/horizontal/text",
@@ -6664,7 +6664,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/horizontal/text",
@@ -6676,7 +6676,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/horizontal/text",
@@ -6736,7 +6736,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-200",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -6748,7 +6748,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-neutral-neutral-900",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -6760,7 +6760,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -6772,7 +6772,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-200",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -6784,7 +6784,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-200",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -6796,7 +6796,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-neutral-neutral-900",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -6808,7 +6808,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -6820,7 +6820,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-200",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -6832,7 +6832,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -6844,7 +6844,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -6856,7 +6856,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -6868,7 +6868,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -6952,7 +6952,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-neutral-neutral-900",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -6964,7 +6964,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -6976,7 +6976,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-500",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -6988,7 +6988,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-neutral-neutral-900",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -7000,7 +7000,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7012,7 +7012,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-500",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7024,7 +7024,7 @@
       "alias": true,
       "value": "colors-blue-blue-1000",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7036,7 +7036,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7048,7 +7048,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-neutral-neutral-900",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7060,7 +7060,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7072,7 +7072,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-500",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7084,7 +7084,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-neutral-neutral-900",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7096,7 +7096,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7108,7 +7108,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-500",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7120,7 +7120,7 @@
       "alias": true,
       "value": "colors-blue-blue-1000",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7132,7 +7132,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7584,7 +7584,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/border/level 1",
@@ -7596,7 +7596,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-500",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "navigation/vertical/border/level 2",
@@ -7608,7 +7608,7 @@
       "alias": true,
       "value": "colors-blue-blue-1000",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "navigation/vertical/border/level 3",
@@ -7620,7 +7620,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/vertical/background/level 1",
@@ -7632,7 +7632,7 @@
       "alias": true,
       "value": "colors-blue-blue-900",
       "darkMode": {
-        "value": "colors-blue-blue-500",
+        "value": "colors-neutral-neutral-700",
         "alias": true
       },
       "group": "navigation/vertical/background/level 2",
@@ -7644,7 +7644,7 @@
       "alias": true,
       "value": "colors-blue-blue-1000",
       "darkMode": {
-        "value": "colors-blue-blue-600",
+        "value": "colors-neutral-neutral-600",
         "alias": true
       },
       "group": "navigation/vertical/background/level 3",
@@ -7656,7 +7656,7 @@
       "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "navigation/vertical/text",
@@ -7752,7 +7752,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-200",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7764,7 +7764,7 @@
       "alias": true,
       "value": "colors-blue-blue-700",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-neutral-neutral-900",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7776,7 +7776,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7788,7 +7788,7 @@
       "alias": true,
       "value": "colors-blue-blue-800",
       "darkMode": {
-        "value": "colors-blue-blue-400",
+        "value": "colors-neutral-neutral-800",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7800,7 +7800,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-200",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7812,7 +7812,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-200",
+        "value": "colors-neutral-neutral-1000",
         "alias": true
       },
       "group": "navigation/horizontal/background",
@@ -7944,7 +7944,7 @@
       "alias": true,
       "value": "colors-blue-blue-600",
       "darkMode": {
-        "value": "colors-blue-blue-300",
+        "value": "colors-neutral-neutral-100",
         "alias": true
       },
       "group": "footer/text",
@@ -8259,6 +8259,318 @@
       "collection": "primitive-tokens",
       "name": "radius-02",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-600",
+      "darkMode": {
+        "value": "colors-neutral-neutral-1000",
+        "alias": true
+      },
+      "group": "navigation/vertical/background/level 1",
+      "collection": "semantic-tokens",
+      "name": "navigation-vertical-background-level-1-bar",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-06",
+      "darkMode": {
+        "value": "spacing-06",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-padding-x-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkMode": {
+        "value": "spacing-00",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-padding-y-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-00",
+      "darkMode": {
+        "value": "radius-00",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-1000",
+        "alias": true
+      },
+      "group": "header/background",
+      "collection": "semantic-tokens",
+      "name": "header-background-background",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-500",
+      "darkMode": {
+        "value": "colors-neutral-neutral-600",
+        "alias": true
+      },
+      "group": "header/border",
+      "collection": "semantic-tokens",
+      "name": "header-border-border",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkMode": {
+        "value": "colors-text-primary",
+        "alias": true
+      },
+      "group": "header/text",
+      "collection": "semantic-tokens",
+      "name": "header-text-text",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-06",
+      "darkMode": {
+        "value": "spacing-06",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-x-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkMode": {
+        "value": "spacing-00",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-y-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-00",
+      "darkMode": {
+        "value": "radius-00",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkMode": {
+        "value": "spacing-00",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-inner-spacing-top-bar",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-x-search",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-padding-y-search",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "header/sizing mobile",
+      "collection": "semantic-tokens",
+      "name": "header-sizing-mobile-inner-spacing-search",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "inputs/feedback",
+      "collection": "semantic-tokens",
+      "name": "inputs-feedback-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkMode": {
+        "value": "radius-01",
+        "alias": true
+      },
+      "group": "text editor/action bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "text-editor-action-bar-sizing-corner-radius-top-left",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkMode": {
+        "value": "radius-01",
+        "alias": true
+      },
+      "group": "text editor/action bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "text-editor-action-bar-sizing-corner-radius-top-right",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-00",
+      "darkMode": {
+        "value": "radius-00",
+        "alias": true
+      },
+      "group": "text editor/action bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "text-editor-action-bar-sizing-corner-radius-bottom-left",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-00",
+      "darkMode": {
+        "value": "radius-00",
+        "alias": true
+      },
+      "group": "text editor/action bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "text-editor-action-bar-sizing-corner-radius-bottom-right",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "text editor/action bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "text-editor-action-bar-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-03",
+      "darkMode": {
+        "value": "spacing-for-1px-border-03",
+        "alias": true
+      },
+      "group": "text editor/action bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "text-editor-action-bar-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-03",
+      "darkMode": {
+        "value": "spacing-for-1px-border-03",
+        "alias": true
+      },
+      "group": "text editor/action bar/sizing",
+      "collection": "semantic-tokens",
+      "name": "text-editor-action-bar-sizing-padding-y",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -8362,7 +8674,7 @@
       "name": "headings-small-h6",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
-      "font-weight": 400,
+      "font-weight": 700,
       "text-decoration": "none",
       "line-height": "150%"
     },
@@ -8375,7 +8687,7 @@
       "line-height": "133%"
     },
     {
-      "name": "links-regular",
+      "name": "links-medium",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1rem",
       "font-weight": 400,
@@ -8397,38 +8709,6 @@
       "font-weight": 400,
       "text-decoration": "underline",
       "line-height": "133%"
-    },
-    {
-      "name": "buttons-small",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.875rem",
-      "font-weight": 700,
-      "text-decoration": "none",
-      "line-height": "171%"
-    },
-    {
-      "name": "buttons-medium",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1rem",
-      "font-weight": 700,
-      "text-decoration": "none",
-      "line-height": "150%"
-    },
-    {
-      "name": "buttons-large",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "1.125rem",
-      "font-weight": 700,
-      "text-decoration": "none",
-      "line-height": "133%"
-    },
-    {
-      "name": "input-helper-text",
-      "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
-      "font-size": "0.875rem",
-      "font-weight": 400,
-      "text-decoration": "none",
-      "line-height": "142%"
     },
     {
       "name": "body-large",
@@ -8502,19 +8782,19 @@
     },
     {
       "name": "focus-ring-outset",
-      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px rgba(102, 156, 200, 0.4000)"
+      "value": "0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #337bb5"
     },
     {
       "name": "focus-ring-outset-dark-mode",
-      "value": "0px 0px 0px 1px #131317, 0px 0px 0px 3px #ffffff"
+      "value": "0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8"
     },
     {
       "name": "focus-ring-inset",
-      "value": "0px 0px 0px 2px #005aa3 inset, 0px 0px 0px 4px #ffffff inset"
+      "value": "0px 0px 0px 2px #337bb5 inset, 0px 0px 0px 4px #ffffff inset"
     },
     {
       "name": "focus-ring-inset-dark-mode",
-      "value": "0px 0px 0px 2px #131317 inset, 0px 0px 0px 4px #ffffff inset"
+      "value": "0px 0px 0px 2px #131317 inset, 0px 0px 0px 4px #669cc8 inset"
     }
   ]
 }

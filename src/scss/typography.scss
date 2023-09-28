@@ -90,7 +90,7 @@ p,
 
 a,
 .#{$prefix}-link {
-  @include text-styles.links-regular;
+  @include text-styles.links-medium;
 
   color: var(--#{$prefix}-colors-link);
 }

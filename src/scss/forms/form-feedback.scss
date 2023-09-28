@@ -4,10 +4,10 @@
 $prefix: constants.$veera-prefix;
 
 .#{$prefix}-form-feedback {
-  @include text-styles.input-helper-text;
+  @include text-styles.body-small;
 
   display: block;
-  margin-top: 4px;
+  margin-top: var(--#{$prefix}-inputs-feedback-spacing-y);
   color: var(--#{$prefix}-colors-text-tertiary);
 
   &--success {
