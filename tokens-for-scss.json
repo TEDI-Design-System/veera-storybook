@@ -5169,19 +5169,19 @@
       },
       "group": "modals/sizing",
       "collection": "semantic-tokens",
-      "name": "modals-sizing-padding-x",
+      "name": "modals-sizing-padding-small",
       "type": "FLOAT"
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "modals/sizing",
       "collection": "semantic-tokens",
-      "name": "modals-sizing-padding-y",
+      "name": "modals-sizing-padding-medium",
       "type": "FLOAT"
     },
     {
@@ -5205,7 +5205,7 @@
       },
       "group": "modals/sizing",
       "collection": "semantic-tokens",
-      "name": "modals-sizing-corner-radius",
+      "name": "modals-sizing-radius-small",
       "type": "FLOAT"
     },
     {
@@ -8571,6 +8571,162 @@
       "collection": "semantic-tokens",
       "name": "text-editor-action-bar-sizing-padding-y",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "lists/sizing",
+      "collection": "semantic-tokens",
+      "name": "lists-sizing-ul-bullet-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkMode": {
+        "value": "radius-01",
+        "alias": true
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-1000",
+        "alias": true
+      },
+      "group": "popover/background",
+      "collection": "semantic-tokens",
+      "name": "popover-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-600",
+        "alias": true
+      },
+      "group": "popover/border",
+      "collection": "semantic-tokens",
+      "name": "popover-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkMode": {
+        "value": "colors-text-primary",
+        "alias": true
+      },
+      "group": "popover/text",
+      "collection": "semantic-tokens",
+      "name": "popover-text-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkMode": {
+        "value": "spacing-07",
+        "alias": true
+      },
+      "group": "close button/sizing",
+      "collection": "semantic-tokens",
+      "name": "close-button-sizing-width-height-medium",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-04",
+      "darkMode": {
+        "value": "spacing-04",
+        "alias": true
+      },
+      "group": "close button/sizing",
+      "collection": "semantic-tokens",
+      "name": "close-button-sizing-width-height-small",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkMode": {
+        "value": "spacing-07",
+        "alias": true
+      },
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-padding-large",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-02",
+      "darkMode": {
+        "value": "radius-02",
+        "alias": true
+      },
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-radius-medium",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-03",
+      "darkMode": {
+        "value": "radius-03",
+        "alias": true
+      },
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-radius-large",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -8578,7 +8734,7 @@
       "name": "headings-large-h1",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1.75rem",
-      "font-weight": 300,
+      "font-weight": 400,
       "text-decoration": "none",
       "line-height": "114%"
     },

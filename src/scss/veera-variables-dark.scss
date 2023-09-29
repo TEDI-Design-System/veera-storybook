@@ -366,10 +366,10 @@
     --v-stepper-background-number-completed: var(--v-colors-green-green-200);
     --v-stepper-text-number-completed: var(--v-colors-green-green-700);
     --v-stepper-border-content: var(--v-colors-neutral-neutral-600);
-    --v-modals-sizing-padding-x: var(--v-spacing-05);
-    --v-modals-sizing-padding-y: var(--v-spacing-05);
+    --v-modals-sizing-padding-small: var(--v-spacing-05);
+    --v-modals-sizing-padding-medium: var(--v-spacing-06);
     --v-modals-sizing-inner-spacing: var(--v-spacing-05);
-    --v-modals-sizing-corner-radius: var(--v-radius-01);
+    --v-modals-sizing-radius-small: var(--v-radius-01);
     --v-modals-background-default: var(--v-colors-neutral-neutral-1000);
     --v-modals-border-default: var(--v-colors-neutral-neutral-600);
     --v-modals-text-default: var(--v-colors-text-primary);
@@ -661,6 +661,19 @@
     --v-text-editor-action-bar-sizing-inner-spacing: var(--v-spacing-03);
     --v-text-editor-action-bar-sizing-padding-x: var(--v-spacing-for-1px-border-03);
     --v-text-editor-action-bar-sizing-padding-y: var(--v-spacing-for-1px-border-03);
+    --v-lists-sizing-ul-bullet-padding-y: var(--v-spacing-02);
+    --v-popover-sizing-padding-x: var(--v-spacing-05);
+    --v-popover-sizing-padding-y: var(--v-spacing-05);
+    --v-popover-sizing-inner-spacing: var(--v-spacing-05);
+    --v-popover-sizing-corner-radius: var(--v-radius-01);
+    --v-popover-background-default: var(--v-colors-neutral-neutral-1000);
+    --v-popover-border-default: var(--v-colors-neutral-neutral-600);
+    --v-popover-text-default: var(--v-colors-text-primary);
+    --v-close-button-sizing-width-height-medium: var(--v-spacing-07);
+    --v-close-button-sizing-width-height-small: var(--v-spacing-04);
+    --v-modals-sizing-padding-large: var(--v-spacing-07);
+    --v-modals-sizing-radius-medium: var(--v-radius-02);
+    --v-modals-sizing-radius-large: var(--v-radius-03);
     --v-box-shadow-focus-ring-outset-dark-mode: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8;
     --v-box-shadow-focus-ring-inset-dark-mode: 0px 0px 0px 2px #131317 inset,
       0px 0px 0px 4px #669cc8 inset;
@@ -1027,10 +1040,10 @@
   --v-stepper-background-number-completed: var(--v-colors-green-green-200);
   --v-stepper-text-number-completed: var(--v-colors-green-green-700);
   --v-stepper-border-content: var(--v-colors-neutral-neutral-600);
-  --v-modals-sizing-padding-x: var(--v-spacing-05);
-  --v-modals-sizing-padding-y: var(--v-spacing-05);
+  --v-modals-sizing-padding-small: var(--v-spacing-05);
+  --v-modals-sizing-padding-medium: var(--v-spacing-06);
   --v-modals-sizing-inner-spacing: var(--v-spacing-05);
-  --v-modals-sizing-corner-radius: var(--v-radius-01);
+  --v-modals-sizing-radius-small: var(--v-radius-01);
   --v-modals-background-default: var(--v-colors-neutral-neutral-1000);
   --v-modals-border-default: var(--v-colors-neutral-neutral-600);
   --v-modals-text-default: var(--v-colors-text-primary);
@@ -1314,6 +1327,19 @@
   --v-text-editor-action-bar-sizing-inner-spacing: var(--v-spacing-03);
   --v-text-editor-action-bar-sizing-padding-x: var(--v-spacing-for-1px-border-03);
   --v-text-editor-action-bar-sizing-padding-y: var(--v-spacing-for-1px-border-03);
+  --v-lists-sizing-ul-bullet-padding-y: var(--v-spacing-02);
+  --v-popover-sizing-padding-x: var(--v-spacing-05);
+  --v-popover-sizing-padding-y: var(--v-spacing-05);
+  --v-popover-sizing-inner-spacing: var(--v-spacing-05);
+  --v-popover-sizing-corner-radius: var(--v-radius-01);
+  --v-popover-background-default: var(--v-colors-neutral-neutral-1000);
+  --v-popover-border-default: var(--v-colors-neutral-neutral-600);
+  --v-popover-text-default: var(--v-colors-text-primary);
+  --v-close-button-sizing-width-height-medium: var(--v-spacing-07);
+  --v-close-button-sizing-width-height-small: var(--v-spacing-04);
+  --v-modals-sizing-padding-large: var(--v-spacing-07);
+  --v-modals-sizing-radius-medium: var(--v-radius-02);
+  --v-modals-sizing-radius-large: var(--v-radius-03);
   --v-box-shadow-focus-ring-outset-dark-mode: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8;
   --v-box-shadow-focus-ring-inset-dark-mode: 0px 0px 0px 2px #131317 inset,
     0px 0px 0px 4px #669cc8 inset;
