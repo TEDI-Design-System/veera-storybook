@@ -92,17 +92,17 @@ a,
 .#{$prefix}-link {
   @include text-styles.links-medium;
 
-  color: var(--#{$prefix}-colors-link);
+  color: var(--#{$prefix}-colors-link-default);
 }
 
 .#{$prefix}-link-sm {
   @include text-styles.links-small;
 
-  color: var(--#{$prefix}-colors-link);
+  color: var(--#{$prefix}-colors-link-default);
 }
 
 .#{$prefix}-link-xs {
   @include text-styles.links-extra-small;
 
-  color: var(--#{$prefix}-colors-link);
+  color: var(--#{$prefix}-colors-link-default);
 }
