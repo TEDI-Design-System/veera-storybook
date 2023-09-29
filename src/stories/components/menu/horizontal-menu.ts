@@ -1,7 +1,5 @@
 import '@scss/components/menu.scss';
 import '@scss/components/icon.scss';
-// import { createIcon } from '../../utils';
-// import clsx from 'clsx';
 import { horizontalMenuItems } from './menu-items';
 import { createIcon } from '../../utils';
 

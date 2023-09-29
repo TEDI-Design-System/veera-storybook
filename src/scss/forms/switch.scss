@@ -293,20 +293,20 @@ $prefix: constants.$veera-prefix;
   &--sm {
     input {
       @include small-input-overrides;
-    }
 
-    & + label {
-      @include text-styles.body-small;
+      & + label {
+        @include text-styles.body-small;
+      }
     }
   }
 
   &--lg {
     input {
       @include large-input-overrides;
-    }
 
-    & + label {
-      @include text-styles.body-large;
+      & + label {
+        @include text-styles.body-large;
+      }
     }
   }
 }
