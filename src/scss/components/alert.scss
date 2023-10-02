@@ -10,6 +10,7 @@ $prefix: constants.$veera-prefix;
 }
 
 .#{$prefix}-alert {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--#{$prefix}-alerts-sizing-inner-spacing);
@@ -20,14 +21,17 @@ $prefix: constants.$veera-prefix;
 
   @include base-colors;
 
+  .#{$prefix}-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   &__header {
     display: flex;
     align-items: flex-start;
     gap: var(--#{$prefix}-spacing-03);
-
-    .#{$prefix}-close-button {
-      margin-left: auto;
-    }
+    padding-right: 24px;
   }
 
   &__title {

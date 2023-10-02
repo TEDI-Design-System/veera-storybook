@@ -8627,9 +8627,9 @@
         "value": "spacing-07",
         "alias": true
       },
-      "group": "close button/sizing",
+      "group": "close button/sizing/md",
       "collection": "semantic-tokens",
-      "name": "close-button-sizing-width-height-medium",
+      "name": "close-button-sizing-md-width-height",
       "type": "FLOAT"
     },
     {
@@ -8639,9 +8639,9 @@
         "value": "spacing-05",
         "alias": true
       },
-      "group": "close button/sizing",
+      "group": "close button/sizing/sm",
       "collection": "semantic-tokens",
-      "name": "close-button-sizing-width-height-small",
+      "name": "close-button-sizing-sm-width-height",
       "type": "FLOAT"
     },
     {
@@ -8974,7 +8974,7 @@
     },
     {
       "name": "elevation-2px-dark-mode",
-      "value": "0px 1px 5px 0px rgba(255, 255, 255, 0.3000)"
+      "value": "0px 1px 5px 0px #30323b"
     },
     {
       "name": "elevation-4px",
@@ -8982,7 +8982,7 @@
     },
     {
       "name": "elevation-4px-dark-mode",
-      "value": "0px 4px 10px 0px rgba(255, 255, 255, 0.2400)"
+      "value": "0px 4px 10px 0px #30323b"
     },
     {
       "name": "focus-ring-outset",
