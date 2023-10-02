@@ -32,10 +32,10 @@ const createPopupFooter = () => {
 
   const footer = document.createElement('div');
   const actions = document.createElement('div');
-  actions.className = 'v-flex v-gap-5 v-flex-wrap';
+  actions.className = 'v-flex v-gap-5 v-flex-wrap v-flex-row-reverse v-justify-content-end';
   const collapseTrigger = createButton({
     label: 'Valin küpsised',
-    variant: 'neutral',
+    variant: 'secondary',
     rightIcon: 'expand_more',
   });
   collapseTrigger.classList.add('v-mr-auto');
@@ -53,12 +53,12 @@ const createPopupFooter = () => {
       collapseTrigger.classList.remove('expanded');
     }
   };
-  actions.appendChild(collapseTrigger);
   const acceptOptions = document.createElement('div');
   acceptOptions.className = 'v-flex v-gap-5';
   acceptOptions.append(createButton({ label: 'Ei nõustu', variant: 'secondary' }));
   acceptOptions.append(createButton({ label: 'Nõustun' }));
   actions.appendChild(acceptOptions);
+  actions.appendChild(collapseTrigger);
   footer.appendChild(actions);
 
   const collapse = createConsentOptionsCollapse();
@@ -71,16 +71,16 @@ const createConsentOptionsCollapse = () => {
   const collapse = document.createElement('div');
   collapse.className = 'v-collapse';
   const collapseContent = document.createElement('div');
-  collapseContent.className = 'v-collapse__content v-flex v-flex-column v-gap-3';
+  collapseContent.className = 'v-collapse__content v-flex v-flex-column v-gap-5';
   collapse.appendChild(collapseContent);
   const optionsContainer = document.createElement('div');
-  optionsContainer.className = 'v-flex v-flex-column v-gap-4 v-pl-5 v-mt-3';
+  optionsContainer.className = 'v-flex v-flex-column v-pl-5 v-gap-3 v-mt-3';
   for (const opt of consentOptions) {
     optionsContainer.appendChild(createConsentOptionCheckbox(opt));
   }
   collapseContent.appendChild(optionsContainer);
   const saveBtn = createButton({ label: 'Salvestan' });
-  saveBtn.classList.add('v-ml-auto');
+  saveBtn.classList.add('v-mr-auto');
   collapseContent.appendChild(saveBtn);
   return collapse;
 };
