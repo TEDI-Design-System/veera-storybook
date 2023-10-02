@@ -2887,9 +2887,9 @@
         "value": "radius-03",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-corner-radius",
+      "name": "toggle-sizing-corner-radius",
       "type": "FLOAT"
     },
     {
@@ -2899,9 +2899,9 @@
         "value": "10px",
         "alias": false
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-switch-small",
+      "name": "toggle-sizing-toggle-small",
       "type": "FLOAT"
     },
     {
@@ -2911,9 +2911,9 @@
         "value": "colors-neutral-neutral-600",
         "alias": true
       },
-      "group": "switch button/track/off state/border",
+      "group": "toggle/track/off state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-border-default",
+      "name": "toggle-track-off-state-border-default",
       "type": "COLOR"
     },
     {
@@ -2923,9 +2923,9 @@
         "value": "colors-blue-blue-200",
         "alias": true
       },
-      "group": "switch button/track/off state/border",
+      "group": "toggle/track/off state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-border-hover",
+      "name": "toggle-track-off-state-border-hover",
       "type": "COLOR"
     },
     {
@@ -2935,9 +2935,9 @@
         "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "switch button/track/off state/border",
+      "group": "toggle/track/off state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-border-active",
+      "name": "toggle-track-off-state-border-active",
       "type": "COLOR"
     },
     {
@@ -2947,9 +2947,9 @@
         "value": "colors-neutral-neutral-600",
         "alias": true
       },
-      "group": "switch button/track/off state/border",
+      "group": "toggle/track/off state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-border-focus",
+      "name": "toggle-track-off-state-border-focus",
       "type": "COLOR"
     },
     {
@@ -2959,9 +2959,9 @@
         "value": "colors-neutral-neutral-700",
         "alias": true
       },
-      "group": "switch button/track/off state/border",
+      "group": "toggle/track/off state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-border-disabled",
+      "name": "toggle-track-off-state-border-disabled",
       "type": "COLOR"
     },
     {
@@ -2971,9 +2971,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/track/off state/background",
+      "group": "toggle/track/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-background-default",
+      "name": "toggle-track-off-state-background-default",
       "type": "COLOR"
     },
     {
@@ -2983,9 +2983,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/track/off state/background",
+      "group": "toggle/track/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-background-hover",
+      "name": "toggle-track-off-state-background-hover",
       "type": "COLOR"
     },
     {
@@ -2995,9 +2995,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/track/off state/background",
+      "group": "toggle/track/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-background-active",
+      "name": "toggle-track-off-state-background-active",
       "type": "COLOR"
     },
     {
@@ -3007,9 +3007,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/track/off state/background",
+      "group": "toggle/track/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-background-focus",
+      "name": "toggle-track-off-state-background-focus",
       "type": "COLOR"
     },
     {
@@ -3019,9 +3019,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/track/off state/background",
+      "group": "toggle/track/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-off-state-background-disabled",
+      "name": "toggle-track-off-state-background-disabled",
       "type": "COLOR"
     },
     {
@@ -3031,9 +3031,9 @@
         "value": "colors-neutral-neutral-500",
         "alias": true
       },
-      "group": "switch button/thumb/off state/background",
+      "group": "toggle/thumb/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-off-state-background-default",
+      "name": "toggle-thumb-off-state-background-default",
       "type": "COLOR"
     },
     {
@@ -3043,9 +3043,9 @@
         "value": "colors-blue-blue-200",
         "alias": true
       },
-      "group": "switch button/thumb/off state/background",
+      "group": "toggle/thumb/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-off-state-background-hover",
+      "name": "toggle-thumb-off-state-background-hover",
       "type": "COLOR"
     },
     {
@@ -3055,9 +3055,9 @@
         "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "switch button/thumb/off state/background",
+      "group": "toggle/thumb/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-off-state-background-active",
+      "name": "toggle-thumb-off-state-background-active",
       "type": "COLOR"
     },
     {
@@ -3067,9 +3067,9 @@
         "value": "colors-neutral-neutral-500",
         "alias": true
       },
-      "group": "switch button/thumb/off state/background",
+      "group": "toggle/thumb/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-off-state-background-focus",
+      "name": "toggle-thumb-off-state-background-focus",
       "type": "COLOR"
     },
     {
@@ -3079,9 +3079,9 @@
         "value": "colors-disabled-text",
         "alias": true
       },
-      "group": "switch button/thumb/off state/background",
+      "group": "toggle/thumb/off state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-off-state-background-disabled",
+      "name": "toggle-thumb-off-state-background-disabled",
       "type": "COLOR"
     },
     {
@@ -3091,9 +3091,9 @@
         "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "switch button/track/on state/border",
+      "group": "toggle/track/on state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-border-default",
+      "name": "toggle-track-on-state-border-default",
       "type": "COLOR"
     },
     {
@@ -3103,9 +3103,9 @@
         "value": "colors-blue-blue-200",
         "alias": true
       },
-      "group": "switch button/track/on state/border",
+      "group": "toggle/track/on state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-border-hover",
+      "name": "toggle-track-on-state-border-hover",
       "type": "COLOR"
     },
     {
@@ -3115,9 +3115,9 @@
         "value": "colors-blue-blue-400",
         "alias": true
       },
-      "group": "switch button/track/on state/border",
+      "group": "toggle/track/on state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-border-active",
+      "name": "toggle-track-on-state-border-active",
       "type": "COLOR"
     },
     {
@@ -3127,9 +3127,9 @@
         "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "switch button/track/on state/border",
+      "group": "toggle/track/on state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-border-focus",
+      "name": "toggle-track-on-state-border-focus",
       "type": "COLOR"
     },
     {
@@ -3139,9 +3139,9 @@
         "value": "colors-neutral-neutral-700",
         "alias": true
       },
-      "group": "switch button/track/on state/border",
+      "group": "toggle/track/on state/border",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-border-disabled",
+      "name": "toggle-track-on-state-border-disabled",
       "type": "COLOR"
     },
     {
@@ -3151,9 +3151,9 @@
         "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "switch button/track/on state/background",
+      "group": "toggle/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-background-default",
+      "name": "toggle-track-on-state-background-default",
       "type": "COLOR"
     },
     {
@@ -3163,9 +3163,9 @@
         "value": "colors-blue-blue-200",
         "alias": true
       },
-      "group": "switch button/track/on state/background",
+      "group": "toggle/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-background-hover",
+      "name": "toggle-track-on-state-background-hover",
       "type": "COLOR"
     },
     {
@@ -3175,9 +3175,9 @@
         "value": "colors-blue-blue-400",
         "alias": true
       },
-      "group": "switch button/track/on state/background",
+      "group": "toggle/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-background-active",
+      "name": "toggle-track-on-state-background-active",
       "type": "COLOR"
     },
     {
@@ -3187,9 +3187,9 @@
         "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "switch button/track/on state/background",
+      "group": "toggle/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-background-focus",
+      "name": "toggle-track-on-state-background-focus",
       "type": "COLOR"
     },
     {
@@ -3199,9 +3199,9 @@
         "value": "colors-neutral-neutral-700",
         "alias": true
       },
-      "group": "switch button/track/on state/background",
+      "group": "toggle/track/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-track-on-state-background-disabled",
+      "name": "toggle-track-on-state-background-disabled",
       "type": "COLOR"
     },
     {
@@ -3211,9 +3211,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/thumb/on state/background",
+      "group": "toggle/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-on-state-background-default",
+      "name": "toggle-thumb-on-state-background-default",
       "type": "COLOR"
     },
     {
@@ -3223,9 +3223,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/thumb/on state/background",
+      "group": "toggle/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-on-state-background-hover",
+      "name": "toggle-thumb-on-state-background-hover",
       "type": "COLOR"
     },
     {
@@ -3235,9 +3235,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/thumb/on state/background",
+      "group": "toggle/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-on-state-background-active",
+      "name": "toggle-thumb-on-state-background-active",
       "type": "COLOR"
     },
     {
@@ -3247,9 +3247,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/thumb/on state/background",
+      "group": "toggle/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-on-state-background-focus",
+      "name": "toggle-thumb-on-state-background-focus",
       "type": "COLOR"
     },
     {
@@ -3259,9 +3259,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/thumb/on state/background",
+      "group": "toggle/thumb/on state/background",
       "collection": "semantic-tokens",
-      "name": "switch-button-thumb-on-state-background-disabled",
+      "name": "toggle-thumb-on-state-background-disabled",
       "type": "COLOR"
     },
     {
@@ -3271,9 +3271,9 @@
         "value": "colors-text-secondary",
         "alias": true
       },
-      "group": "switch button/text",
+      "group": "toggle/text",
       "collection": "semantic-tokens",
-      "name": "switch-button-text-default",
+      "name": "toggle-text-default",
       "type": "COLOR"
     },
     {
@@ -3283,9 +3283,9 @@
         "value": "colors-text-primary",
         "alias": true
       },
-      "group": "switch button/text",
+      "group": "toggle/text",
       "collection": "semantic-tokens",
-      "name": "switch-button-text-hover",
+      "name": "toggle-text-hover",
       "type": "COLOR"
     },
     {
@@ -3295,9 +3295,9 @@
         "value": "colors-text-primary",
         "alias": true
       },
-      "group": "switch button/text",
+      "group": "toggle/text",
       "collection": "semantic-tokens",
-      "name": "switch-button-text-active",
+      "name": "toggle-text-active",
       "type": "COLOR"
     },
     {
@@ -3307,9 +3307,9 @@
         "value": "colors-text-primary",
         "alias": true
       },
-      "group": "switch button/text",
+      "group": "toggle/text",
       "collection": "semantic-tokens",
-      "name": "switch-button-text-focus",
+      "name": "toggle-text-focus",
       "type": "COLOR"
     },
     {
@@ -3319,9 +3319,9 @@
         "value": "colors-neutral-neutral-600",
         "alias": true
       },
-      "group": "switch button/text",
+      "group": "toggle/text",
       "collection": "semantic-tokens",
-      "name": "switch-button-text-disabled",
+      "name": "toggle-text-disabled",
       "type": "COLOR"
     },
     {
@@ -3339,9 +3339,9 @@
         "value": "spacing-00",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-padding-x",
+      "name": "toggle-sizing-padding-x",
       "type": "FLOAT"
     },
     {
@@ -3351,9 +3351,9 @@
         "value": "spacing-00",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-padding-y",
+      "name": "toggle-sizing-padding-y",
       "type": "FLOAT"
     },
     {
@@ -3483,9 +3483,9 @@
         "value": "spacing-06",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-width-small",
+      "name": "toggle-sizing-width-small",
       "type": "FLOAT"
     },
     {
@@ -3495,9 +3495,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/icon/off state/fill",
+      "group": "toggle/icon/off state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-off-state-fill-default",
+      "name": "toggle-icon-off-state-fill-default",
       "type": "COLOR"
     },
     {
@@ -3507,9 +3507,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/icon/off state/fill",
+      "group": "toggle/icon/off state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-off-state-fill-hover",
+      "name": "toggle-icon-off-state-fill-hover",
       "type": "COLOR"
     },
     {
@@ -3519,9 +3519,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/icon/off state/fill",
+      "group": "toggle/icon/off state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-off-state-fill-active",
+      "name": "toggle-icon-off-state-fill-active",
       "type": "COLOR"
     },
     {
@@ -3531,9 +3531,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/icon/off state/fill",
+      "group": "toggle/icon/off state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-off-state-fill-focus",
+      "name": "toggle-icon-off-state-fill-focus",
       "type": "COLOR"
     },
     {
@@ -3543,9 +3543,9 @@
         "value": "colors-neutral-neutral-1000",
         "alias": true
       },
-      "group": "switch button/icon/off state/fill",
+      "group": "toggle/icon/off state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-off-state-fill-disabled",
+      "name": "toggle-icon-off-state-fill-disabled",
       "type": "COLOR"
     },
     {
@@ -3555,9 +3555,9 @@
         "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "switch button/icon/on state/fill",
+      "group": "toggle/icon/on state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-on-state-fill-default",
+      "name": "toggle-icon-on-state-fill-default",
       "type": "COLOR"
     },
     {
@@ -3567,9 +3567,9 @@
         "value": "colors-blue-blue-200",
         "alias": true
       },
-      "group": "switch button/icon/on state/fill",
+      "group": "toggle/icon/on state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-on-state-fill-hover",
+      "name": "toggle-icon-on-state-fill-hover",
       "type": "COLOR"
     },
     {
@@ -3579,9 +3579,9 @@
         "value": "colors-blue-blue-400",
         "alias": true
       },
-      "group": "switch button/icon/on state/fill",
+      "group": "toggle/icon/on state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-on-state-fill-active",
+      "name": "toggle-icon-on-state-fill-active",
       "type": "COLOR"
     },
     {
@@ -3591,9 +3591,9 @@
         "value": "colors-blue-blue-300",
         "alias": true
       },
-      "group": "switch button/icon/on state/fill",
+      "group": "toggle/icon/on state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-on-state-fill-focus",
+      "name": "toggle-icon-on-state-fill-focus",
       "type": "COLOR"
     },
     {
@@ -3603,9 +3603,9 @@
         "value": "colors-disabled-text",
         "alias": true
       },
-      "group": "switch button/icon/on state/fill",
+      "group": "toggle/icon/on state/fill",
       "collection": "semantic-tokens",
-      "name": "switch-button-icon-on-state-fill-disabled",
+      "name": "toggle-icon-on-state-fill-disabled",
       "type": "COLOR"
     },
     {
@@ -6391,9 +6391,9 @@
         "value": "spacing-05",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-height-small",
+      "name": "toggle-sizing-height-small",
       "type": "FLOAT"
     },
     {
@@ -6403,9 +6403,9 @@
         "value": "spacing-06",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-switch-large",
+      "name": "toggle-sizing-switch-large",
       "type": "FLOAT"
     },
     {
@@ -6415,9 +6415,9 @@
         "value": "56px",
         "alias": false
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-width-large",
+      "name": "toggle-sizing-width-large",
       "type": "FLOAT"
     },
     {
@@ -6427,9 +6427,9 @@
         "value": "spacing-07",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-height-large",
+      "name": "toggle-sizing-height-large",
       "type": "FLOAT"
     },
     {
@@ -6871,9 +6871,9 @@
         "value": "spacing-05",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-switch-medium",
+      "name": "toggle-sizing-toggle-medium",
       "type": "FLOAT"
     },
     {
@@ -6883,9 +6883,9 @@
         "value": "spacing-08",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-width-medium",
+      "name": "toggle-sizing-width-medium",
       "type": "FLOAT"
     },
     {
@@ -6895,9 +6895,9 @@
         "value": "spacing-06",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-height-medium",
+      "name": "toggle-sizing-height-medium",
       "type": "FLOAT"
     },
     {
@@ -7099,9 +7099,9 @@
         "value": "spacing-03",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-inner-spacing",
+      "name": "toggle-sizing-inner-spacing",
       "type": "FLOAT"
     },
     {
@@ -7111,9 +7111,9 @@
         "value": "spacing-01",
         "alias": true
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-switch-padding",
+      "name": "toggle-sizing-toggle-padding",
       "type": "FLOAT"
     },
     {
@@ -7123,9 +7123,9 @@
         "value": "1px",
         "alias": false
       },
-      "group": "switch button/sizing",
+      "group": "toggle/sizing",
       "collection": "semantic-tokens",
-      "name": "switch-button-sizing-switch-padding-small",
+      "name": "toggle-sizing-toggle-padding-small",
       "type": "FLOAT"
     },
     {
