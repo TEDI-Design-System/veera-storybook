@@ -8571,6 +8571,102 @@
       "collection": "semantic-tokens",
       "name": "text-editor-action-bar-sizing-padding-y",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "lists/sizing",
+      "collection": "semantic-tokens",
+      "name": "lists-sizing-ul-bullet-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkMode": {
+        "value": "radius-01",
+        "alias": true
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-1000",
+        "alias": true
+      },
+      "group": "popover/background",
+      "collection": "semantic-tokens",
+      "name": "popover-background-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-600",
+        "alias": true
+      },
+      "group": "popover/border",
+      "collection": "semantic-tokens",
+      "name": "popover-border-default",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkMode": {
+        "value": "colors-text-primary",
+        "alias": true
+      },
+      "group": "popover/text",
+      "collection": "semantic-tokens",
+      "name": "popover-text-default",
+      "type": "COLOR"
     }
   ],
   "typography": [

@@ -1,4 +1,5 @@
 import { createButton } from './components/button/button';
+import logo from './assets/logo.svg';
 
 export type NumericRange<
   START extends number,
@@ -79,4 +80,18 @@ export const createIcon = ({ name, outlined }: { name: string; outlined?: boolea
   icon.className = outlined ? 'material-icons-outlined' : 'material-icons';
   icon.innerText = name;
   return icon;
+};
+
+export const createLink = (text: string) => {
+  const link = document.createElement('a');
+  link.href = '#';
+  link.innerText = text;
+  return link;
+};
+
+export const createLogo = () => {
+  const img = document.createElement('img');
+  img.src = logo;
+  img.alt = 'logo';
+  return img;
 };
