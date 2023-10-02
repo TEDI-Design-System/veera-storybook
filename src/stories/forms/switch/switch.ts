@@ -7,11 +7,13 @@ export interface SwitchProps {
   size?: 'sm' | 'md' | 'lg';
 }
 export const createSwitch = ({ disabled, hasIcon, size = 'md' }: SwitchProps) => {
-  return `<input aria-label="Standalone switch" type="checkbox" ${
-    disabled ? 'disabled' : ''
-  } class="${clsx('v-switch', `v-switch--${size}`, {
-    'v-switch--check-icon': hasIcon,
-  })}"/>`;
+  const toggle = document.createElement('input');
+  toggle.type = 'checkbox';
+  toggle.disabled = !!disabled;
+  toggle.className = clsx('v-switch', `v-switch--${size}`, { 'v-switch--check-icon': hasIcon });
+  toggle.setAttribute('aria-label', 'standalone switch');
+
+  return toggle;
 };
 
 export interface SwitchWithLabelProps extends SwitchProps {
@@ -19,15 +21,23 @@ export interface SwitchWithLabelProps extends SwitchProps {
 }
 
 export const createSwitchWithLabel = ({
-  disabled,
-  hasIcon,
   label,
   size = 'md',
+  hasIcon,
+  ...inputProps
 }: SwitchWithLabelProps) => {
-  return `<div class="${clsx('v-switch', `v-switch--${size}`, {
-    'v-switch--check-icon': hasIcon,
-  })}">
-    <input id="switch-demo" type="checkbox" ${disabled ? 'disabled' : ''} />
-    <label for="switch-demo">${label}</label>
-  </div>`;
+  const container = document.createElement('div');
+  const id = `v-switch-label-${Math.random()}`;
+
+  container.className = clsx('v-switch', `v-switch--${size}`, { 'v-switch--check-icon': hasIcon });
+  const toggle = createSwitch({ ...inputProps });
+  toggle.id = id;
+  container.appendChild(toggle);
+
+  const labelEl = document.createElement('label');
+  labelEl.innerText = label;
+  labelEl.htmlFor = id;
+  container.appendChild(labelEl);
+
+  return container;
 };
