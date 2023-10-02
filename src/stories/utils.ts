@@ -79,6 +79,7 @@ export const createIcon = ({ name, outlined }: { name: string; outlined?: boolea
   const icon = document.createElement('span');
   icon.className = outlined ? 'material-icons-outlined' : 'material-icons';
   icon.innerText = name;
+  icon.setAttribute('aria-hidden', 'true');
   return icon;
 };
 

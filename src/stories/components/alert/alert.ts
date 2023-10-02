@@ -36,7 +36,7 @@ const createAlertHeader = (variant: AlertVariant, hasIcon?: boolean) => {
   }
   header.className = 'v-alert__header';
   header.appendChild(createTitle());
-  header.appendChild(createCloseButton());
+  header.appendChild(createCloseButton('Sulge teade'));
   return header;
 };
 
@@ -44,7 +44,7 @@ const createAlertBody = () => {
   const body = document.createElement('div');
   body.className = 'v-alert__body';
   body.innerHTML =
-    'Suunatud e-postile test@testmeil.com. Soovi korral saab suunamist muuta lehel “<a class="v-link-sm">Minu andmed</a>”.';
+    'Suunatud e-postile test@testmeil.com. Soovi korral saab suunamist muuta lehel “<a class="v-link-sm" href="#">Minu andmed</a>”.';
   return body;
 };
 
