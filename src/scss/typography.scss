@@ -1,6 +1,7 @@
 @use './constants';
 @use './mixins/text-styles';
 @use './mixins/media';
+@use './mixins/focus';
 
 $prefix: constants.$veera-prefix;
 
@@ -91,18 +92,29 @@ p,
 a,
 .#{$prefix}-link {
   @include text-styles.links-medium;
+  @include focus.focus-ring;
 
+  font-size: inherit;
   color: var(--#{$prefix}-colors-link-default);
-}
 
-.#{$prefix}-link-sm {
-  @include text-styles.links-small;
+  &:hover {
+    color: var(--#{$prefix}-colors-link-hover);
+  }
 
-  color: var(--#{$prefix}-colors-link-default);
-}
+  &:active,
+  &:visited {
+    color: var(--#{$prefix}-colors-link-active);
+  }
 
-.#{$prefix}-link-xs {
-  @include text-styles.links-extra-small;
+  &.#{$prefix}-link--md {
+    @include text-styles.links-medium;
+  }
 
-  color: var(--#{$prefix}-colors-link-default);
+  &.#{$prefix}-link--sm {
+    @include text-styles.links-small;
+  }
+
+  &.#{$prefix}-link--xs {
+    @include text-styles.links-extra-small;
+  }
 }
