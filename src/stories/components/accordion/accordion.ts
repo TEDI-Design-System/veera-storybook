@@ -1,6 +1,6 @@
 import '@scss/components/accordion.scss';
 import clsx from 'clsx';
-import { createContentFill } from '../../utils';
+import { createContentFill, createIcon } from '../../utils';
 
 export interface AccordionStoryProps {
   disabled?: boolean;
@@ -17,9 +17,8 @@ const createAccordionHeader = () => {
   accordionTitle.innerText = 'Accordion title';
   accordionHeader.appendChild(accordionTitle);
 
-  const expandIcon = document.createElement('span');
-  expandIcon.className = 'material-icons v-accordion__expand-icon';
-  expandIcon.innerText = 'expand_more';
+  const expandIcon = createIcon({ name: 'expand_more' });
+  expandIcon.classList.add('v-accordion__expand-icon');
   accordionHeader.appendChild(expandIcon);
 
   return accordionHeader;

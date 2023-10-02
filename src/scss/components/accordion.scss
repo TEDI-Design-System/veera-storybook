@@ -4,6 +4,18 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin create-header-background($color) {
+  &::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    display: block;
+    inset: 1px;
+    background-color: $color;
+    border-radius: var(--#{$prefix}-accordion-sizing-corner-radius);
+  }
+}
+
 .#{$prefix}-accordion {
   $self: &;
 
@@ -40,6 +52,9 @@ $prefix: constants.$veera-prefix;
     @include focus.focus-ring;
 
     all: unset;
+    margin: -1px;
+    position: relative;
+    z-index: 1;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -53,11 +68,14 @@ $prefix: constants.$veera-prefix;
 
     &:hover {
       color: var(--#{$prefix}-accordion-text-hover);
-      background: var(--#{$prefix}-accordion-background-hover);
+
+      @include create-header-background(var(--#{$prefix}-accordion-background-hover));
     }
 
     &:active {
       color: var(--#{$prefix}-accordion-text-active);
+
+      @include create-header-background(var(--#{$prefix}-accordion-background-active));
     }
   }
 
@@ -67,7 +85,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &__title {
-    @include text-styles.headings-large-h4;
+    @include text-styles.headings-small-h6;
 
     margin: 0;
   }
