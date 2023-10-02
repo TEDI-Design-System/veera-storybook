@@ -1,36 +1,36 @@
 import '@scss/forms/forms.scss';
 import clsx from 'clsx';
 
-export interface SwitchProps {
+export interface ToggleProps {
   disabled?: boolean;
   hasIcon?: boolean;
   size?: 'sm' | 'md' | 'lg';
 }
-export const createSwitch = ({ disabled, hasIcon, size = 'md' }: SwitchProps) => {
+export const createToggle = ({ disabled, hasIcon, size = 'md' }: ToggleProps) => {
   const toggle = document.createElement('input');
   toggle.type = 'checkbox';
   toggle.disabled = !!disabled;
-  toggle.className = clsx('v-switch', `v-switch--${size}`, { 'v-switch--check-icon': hasIcon });
-  toggle.setAttribute('aria-label', 'standalone switch');
+  toggle.className = clsx('v-toggle', `v-toggle--${size}`, { 'v-toggle--check-icon': hasIcon });
+  toggle.setAttribute('aria-label', 'standalone toggle');
 
   return toggle;
 };
 
-export interface SwitchWithLabelProps extends SwitchProps {
+export interface ToggleWithLabelProps extends ToggleProps {
   label: string;
 }
 
-export const createSwitchWithLabel = ({
+export const createToggleWithLabel = ({
   label,
   size = 'md',
   hasIcon,
   ...inputProps
-}: SwitchWithLabelProps) => {
+}: ToggleWithLabelProps) => {
   const container = document.createElement('div');
-  const id = `v-switch-label-${Math.random()}`;
+  const id = `v-toggle-label-${Math.random()}`;
 
-  container.className = clsx('v-switch', `v-switch--${size}`, { 'v-switch--check-icon': hasIcon });
-  const toggle = createSwitch({ ...inputProps });
+  container.className = clsx('v-toggle', `v-toggle--${size}`, { 'v-toggle--check-icon': hasIcon });
+  const toggle = createToggle({ ...inputProps });
   toggle.id = id;
   container.appendChild(toggle);
 

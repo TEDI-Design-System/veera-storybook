@@ -241,7 +241,7 @@ $prefix: constants.$veera-prefix;
   }
 }
 
-:not(input[type='checkbox']).#{$prefix}-switch {
+:not(input[type='checkbox']).#{$prefix}-toggle {
   display: inline-flex;
   align-items: center;
   gap: var(--#{$prefix}-switch-button-sizing-inner-spacing);
@@ -311,7 +311,7 @@ $prefix: constants.$veera-prefix;
   }
 }
 
-input[type='checkbox'].#{$prefix}-switch {
+input[type='checkbox'].#{$prefix}-toggle {
   @include input-styles;
 
   &--check-icon {

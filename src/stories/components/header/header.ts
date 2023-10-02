@@ -2,7 +2,7 @@ import '@scss/components/header.scss';
 import '@scss/forms/forms.scss';
 import clsx from 'clsx';
 import { createLink, createLogo } from '../../utils';
-import { createSwitchWithLabel } from '../../forms/switch/switch';
+import { createToggleWithLabel } from '../../forms/toggle/toggle';
 import { createInputControl } from '../../forms/form-control/form-control';
 import { createButton } from '../button/button';
 
@@ -30,7 +30,7 @@ const createTopBar = () => {
 
   const rightColumn = document.createElement('div');
   rightColumn.className = 'v-header__column v-header__column--end';
-  rightColumn.appendChild(createSwitchWithLabel({ label: 'Dark mode', size: 'sm' }));
+  rightColumn.appendChild(createToggleWithLabel({ label: 'Dark mode', size: 'sm' }));
   topBar.appendChild(rightColumn);
 
   return topBar;
