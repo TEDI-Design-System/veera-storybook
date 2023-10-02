@@ -1066,9 +1066,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-2px-border-08",
+      "value": "spacing-for-2px-border-07",
       "darkMode": {
-        "value": "spacing-for-2px-border-08",
+        "value": "spacing-for-2px-border-07",
         "alias": true
       },
       "group": "buttons/sizing/lg",
@@ -4742,9 +4742,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "tabs/background",
@@ -4778,9 +4778,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "tabs/background",
@@ -4790,9 +4790,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "tabs/background",
@@ -5090,9 +5090,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "tabs/border",
@@ -5169,19 +5169,19 @@
       },
       "group": "modals/sizing",
       "collection": "semantic-tokens",
-      "name": "modals-sizing-padding-x",
+      "name": "modals-sizing-padding-small",
       "type": "FLOAT"
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "modals/sizing",
       "collection": "semantic-tokens",
-      "name": "modals-sizing-padding-y",
+      "name": "modals-sizing-padding-medium",
       "type": "FLOAT"
     },
     {
@@ -5198,18 +5198,6 @@
     },
     {
       "alias": true,
-      "value": "radius-01",
-      "darkMode": {
-        "value": "radius-01",
-        "alias": true
-      },
-      "group": "modals/sizing",
-      "collection": "semantic-tokens",
-      "name": "modals-sizing-corner-radius",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
         "value": "colors-neutral-neutral-1000",
@@ -5218,18 +5206,6 @@
       "group": "modals/background",
       "collection": "semantic-tokens",
       "name": "modals-background-default",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-neutral-neutral-500",
-      "darkMode": {
-        "value": "colors-neutral-neutral-600",
-        "alias": true
-      },
-      "group": "modals/border",
-      "collection": "semantic-tokens",
-      "name": "modals-border-default",
       "type": "COLOR"
     },
     {
@@ -5402,9 +5378,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "cookies/sizing",
@@ -5414,9 +5390,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-05",
+      "value": "spacing-06",
       "darkMode": {
-        "value": "spacing-05",
+        "value": "spacing-06",
         "alias": true
       },
       "group": "cookies/sizing",
@@ -5438,7 +5414,7 @@
     },
     {
       "alias": true,
-      "value": "radius-01",
+      "value": "radius-02",
       "darkMode": {
         "value": "radius-01",
         "alias": true
@@ -5458,18 +5434,6 @@
       "group": "cookies/background",
       "collection": "semantic-tokens",
       "name": "cookies-background-background",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-neutral-neutral-500",
-      "darkMode": {
-        "value": "colors-neutral-neutral-600",
-        "alias": true
-      },
-      "group": "cookies/border",
-      "collection": "semantic-tokens",
-      "name": "cookies-border-border",
       "type": "COLOR"
     },
     {
@@ -6302,9 +6266,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "tabs/border",
@@ -6326,9 +6290,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-10",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-10",
         "alias": true
       },
       "group": "tabs/border",
@@ -6470,14 +6434,14 @@
     },
     {
       "alias": true,
-      "value": "spacing-06",
+      "value": "spacing-05",
       "darkMode": {
-        "value": "spacing-06",
+        "value": "spacing-05",
         "alias": true
       },
       "group": "cards/sizing",
       "collection": "semantic-tokens",
-      "name": "cards-sizing-padding-x",
+      "name": "cards-sizing-padding-small",
       "type": "FLOAT"
     },
     {
@@ -6489,14 +6453,14 @@
       },
       "group": "cards/sizing",
       "collection": "semantic-tokens",
-      "name": "cards-sizing-padding-y",
+      "name": "cards-sizing-padding-medium",
       "type": "FLOAT"
     },
     {
       "alias": true,
-      "value": "spacing-06",
+      "value": "spacing-05",
       "darkMode": {
-        "value": "spacing-06",
+        "value": "spacing-05",
         "alias": true
       },
       "group": "cards/sizing",
@@ -6506,14 +6470,14 @@
     },
     {
       "alias": true,
-      "value": "radius-02",
+      "value": "radius-01",
       "darkMode": {
-        "value": "radius-02",
+        "value": "radius-01",
         "alias": true
       },
       "group": "cards/sizing",
       "collection": "semantic-tokens",
-      "name": "cards-sizing-corner-radius",
+      "name": "cards-sizing-radius-small",
       "type": "FLOAT"
     },
     {
@@ -6526,18 +6490,6 @@
       "group": "cards/background",
       "collection": "semantic-tokens",
       "name": "cards-background-primary",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-neutral-neutral-500",
-      "darkMode": {
-        "value": "colors-neutral-neutral-600",
-        "alias": true
-      },
-      "group": "cards/border",
-      "collection": "semantic-tokens",
-      "name": "cards-border-border",
       "type": "COLOR"
     },
     {
@@ -7719,9 +7671,9 @@
         "value": "colors-blue-blue-800",
         "alias": true
       },
-      "group": "dropdown menu/tags",
+      "group": "tags/colors",
       "collection": "semantic-tokens",
-      "name": "dropdown-menu-tags-background",
+      "name": "tags-colors-background",
       "type": "COLOR"
     },
     {
@@ -8667,6 +8619,158 @@
       "collection": "semantic-tokens",
       "name": "popover-text-default",
       "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkMode": {
+        "value": "spacing-07",
+        "alias": true
+      },
+      "group": "close button/sizing",
+      "collection": "semantic-tokens",
+      "name": "close-button-sizing-width-height-medium",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "close button/sizing",
+      "collection": "semantic-tokens",
+      "name": "close-button-sizing-width-height-small",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkMode": {
+        "value": "spacing-07",
+        "alias": true
+      },
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-padding-large",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-02",
+      "darkMode": {
+        "value": "radius-02",
+        "alias": true
+      },
+      "group": "modals/sizing",
+      "collection": "semantic-tokens",
+      "name": "modals-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-alpha-overlay",
+      "darkMode": {
+        "value": "colors-alpha-overlay",
+        "alias": true
+      },
+      "group": "colors/surface",
+      "collection": "semantic-tokens",
+      "name": "colors-surface-overlay",
+      "type": "COLOR"
+    },
+    {
+      "alias": false,
+      "value": "rgba(0, 18, 33, 0.4000)",
+      "group": "colors/alpha",
+      "collection": "primitive-tokens",
+      "name": "colors-alpha-overlay",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-00",
+      "darkMode": {
+        "value": "spacing-00",
+        "alias": true
+      },
+      "group": "tags/sizing",
+      "collection": "semantic-tokens",
+      "name": "tags-sizing-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "tags/sizing",
+      "collection": "semantic-tokens",
+      "name": "tags-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "tags/sizing",
+      "collection": "semantic-tokens",
+      "name": "tags-sizing-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-01",
+      "darkMode": {
+        "value": "radius-01",
+        "alias": true
+      },
+      "group": "tags/sizing",
+      "collection": "semantic-tokens",
+      "name": "tags-sizing-corner-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-07",
+      "darkMode": {
+        "value": "spacing-07",
+        "alias": true
+      },
+      "group": "cards/sizing",
+      "collection": "semantic-tokens",
+      "name": "cards-sizing-padding-large",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-02",
+      "darkMode": {
+        "value": "radius-02",
+        "alias": true
+      },
+      "group": "cards/sizing",
+      "collection": "semantic-tokens",
+      "name": "cards-sizing-radius-medium",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "radius-03",
+      "darkMode": {
+        "value": "radius-03",
+        "alias": true
+      },
+      "group": "cards/sizing",
+      "collection": "semantic-tokens",
+      "name": "cards-sizing-radius-large",
+      "type": "FLOAT"
     }
   ],
   "typography": [
@@ -8674,7 +8778,7 @@
       "name": "headings-large-h1",
       "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
       "font-size": "1.75rem",
-      "font-weight": 300,
+      "font-weight": 400,
       "text-decoration": "none",
       "line-height": "114%"
     },
@@ -8865,16 +8969,20 @@
   ],
   "boxShadows": [
     {
-      "name": "drop-shadow",
-      "value": "0px 4px 4px 0px rgba(0, 0, 0, 0.2500)"
-    },
-    {
       "name": "elevation-2px",
       "value": "0px 1px 5px 0px rgba(0, 0, 0, 0.2000)"
     },
     {
+      "name": "elevation-2px-dark-mode",
+      "value": "0px 1px 5px 0px rgba(255, 255, 255, 0.3000)"
+    },
+    {
       "name": "elevation-4px",
       "value": "0px 4px 10px 0px rgba(0, 0, 0, 0.1400)"
+    },
+    {
+      "name": "elevation-4px-dark-mode",
+      "value": "0px 4px 10px 0px rgba(255, 255, 255, 0.2400)"
     },
     {
       "name": "focus-ring-outset",

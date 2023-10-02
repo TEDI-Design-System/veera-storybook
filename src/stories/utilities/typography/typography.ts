@@ -33,3 +33,12 @@ export const createTextCollection = () => {
     ${TEXT_VARIANTS.map((variant) => `${createText({ variant })}<div>${variant}</div>`).join('')}
   </div>`;
 };
+
+export const createLink = ({ size }: { size: 'xs' | 'sm' | 'md' }) => {
+  const link = document.createElement('a');
+  link.className = `v-link--${size}`;
+  link.innerHTML = 'Regular';
+  link.href = '#';
+
+  return link;
+};
