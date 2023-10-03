@@ -41,5 +41,12 @@
     "stylelint-selector-bem-pattern": "^3.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://koodivaramu.eesti.ee/veebiraamistik/e-service-design-system.git"
+  },
+  "files": [
+    "/dist/*/**"
+  ]
 }
