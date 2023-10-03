@@ -3,7 +3,7 @@ import fs from 'fs';
 const release = () => {
     const sourceFolder = "dist";
     const parentFolder = "release";
-    const folderName = `veera@${process.env.npm_package_version}`;
+    const folderName = `${process.env.npm_package_version}`;
     try {
         if (!fs.existsSync(parentFolder)) {
             fs.mkdirSync(parentFolder);
