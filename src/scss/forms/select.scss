@@ -1,0 +1,7 @@
+@use '../constants';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-select {
+  position: relative;
+}

@@ -1,0 +1,11 @@
+@use '../constants';
+@use '../mixins/text-styles';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-tag {
+  display: flex;
+  gap: 4px;
+  padding: 0 8px;
+  align-items: center;
+}

@@ -1,0 +1,76 @@
+@use '../constants';
+@use '../mixins/text-styles';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-timepicker {
+  position: relative;
+
+  &__panel {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    border-radius: var(--#{$prefix}-dropdown-menu-menu-corner-radius);
+    border: 1px solid var(--#{$prefix}-dropdown-menu-menu-border);
+    background: var(--#{$prefix}-time-picker-widget-options-list-border);
+    box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
+    overflow: hidden;
+    height: 252px;
+    width: 171px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 1px;
+
+    &--top {
+      bottom: 100%;
+      top: unset;
+    }
+  }
+
+  &__panel-header {
+    @include text-styles.body-extra-small;
+
+    color: var(--#{$prefix}-colors-text-secondary);
+    background: var(--#{$prefix}-colors-gray-gray-100);
+    padding: 8px;
+  }
+
+  &__panel-options {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__option {
+    @include text-styles.body-medium;
+
+    cursor: pointer;
+    border: none;
+    background: var(--#{$prefix}-colors-neutral-white);
+    text-align: left;
+    padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-top)
+      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x)
+      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-bottom)
+      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x);
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--#{$prefix}-dropdown-menu-menuitem-border);
+    }
+  }
+
+  &__time-input {
+    outline: none;
+    background: transparent;
+    border: none;
+    box-sizing: content-box;
+    width: 1.75em;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
+}

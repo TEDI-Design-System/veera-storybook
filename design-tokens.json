@@ -1,0 +1,2068 @@
+{
+  "Primitive tokens": {
+    "Light mode": {
+      "colors": {
+        "neutral": {
+          "transparent": {
+            "$type": "color",
+            "$value": "rgba(0, 0, 0, 0.0010)"
+          },
+          "white": {
+            "$type": "color",
+            "$value": "#ffffff"
+          }
+        },
+        "yellow": {
+          "yellow-900": {
+            "$type": "color",
+            "$value": "#664807"
+          },
+          "yellow-800": {
+            "$type": "color",
+            "$value": "#996d0a"
+          },
+          "yellow-700": {
+            "$type": "color",
+            "$value": "#cc910e"
+          },
+          "yellow-600": {
+            "$type": "color",
+            "$value": "#ffb511"
+          },
+          "yellow-500": {
+            "$type": "color",
+            "$value": "#ffc441"
+          },
+          "yellow-400": {
+            "$type": "color",
+            "$value": "#ffd370"
+          },
+          "yellow-300": {
+            "$type": "color",
+            "$value": "#ffe1a0"
+          },
+          "yellow-200": {
+            "$type": "color",
+            "$value": "#fff0cf"
+          },
+          "yellow-100": {
+            "$type": "color",
+            "$value": "#fff8e7"
+          },
+          "yellow-1000": {
+            "$type": "color",
+            "$value": "#332403"
+          }
+        },
+        "gray": {
+          "gray-1000": {
+            "$type": "color",
+            "$value": "#131317"
+          },
+          "gray-900": {
+            "$type": "color",
+            "$value": "#25262d"
+          },
+          "gray-800": {
+            "$type": "color",
+            "$value": "#383a44"
+          },
+          "gray-700": {
+            "$type": "color",
+            "$value": "#4a4d5a"
+          },
+          "gray-600": {
+            "$type": "color",
+            "$value": "#5d6071"
+          },
+          "gray-500": {
+            "$type": "color",
+            "$value": "#7d808d"
+          },
+          "gray-400": {
+            "$type": "color",
+            "$value": "#d2d3d8"
+          },
+          "gray-300": {
+            "$type": "color",
+            "$value": "#e1e2e5"
+          },
+          "gray-200": {
+            "$type": "color",
+            "$value": "#f0f0f2"
+          },
+          "gray-100": {
+            "$type": "color",
+            "$value": "#f9f9f9"
+          }
+        },
+        "green": {
+          "green-1000": {
+            "$type": "color",
+            "$value": "#0a1b11"
+          },
+          "green-900": {
+            "$type": "color",
+            "$value": "#133621"
+          },
+          "green-800": {
+            "$type": "color",
+            "$value": "#1d5032"
+          },
+          "green-700": {
+            "$type": "color",
+            "$value": "#266b42"
+          },
+          "green-600": {
+            "$type": "color",
+            "$value": "#308653"
+          },
+          "green-500": {
+            "$type": "color",
+            "$value": "#599e75"
+          },
+          "green-400": {
+            "$type": "color",
+            "$value": "#83b698"
+          },
+          "green-300": {
+            "$type": "color",
+            "$value": "#accfba"
+          },
+          "green-200": {
+            "$type": "color",
+            "$value": "#d6e7dd"
+          },
+          "green-100": {
+            "$type": "color",
+            "$value": "#eaf3ee"
+          }
+        },
+        "orange": {
+          "orange-1000": {
+            "$type": "color",
+            "$value": "#331a00"
+          },
+          "orange-900": {
+            "$type": "color",
+            "$value": "#663300"
+          },
+          "orange-800": {
+            "$type": "color",
+            "$value": "#994d00"
+          },
+          "orange-700": {
+            "$type": "color",
+            "$value": "#cc6600"
+          },
+          "orange-600": {
+            "$type": "color",
+            "$value": "#ff8000"
+          },
+          "orange-500": {
+            "$type": "color",
+            "$value": "#ff9933"
+          },
+          "orange-400": {
+            "$type": "color",
+            "$value": "#ffb366"
+          },
+          "orange-300": {
+            "$type": "color",
+            "$value": "#ffcc99"
+          },
+          "orange-200": {
+            "$type": "color",
+            "$value": "#ffe6cc"
+          },
+          "orange-100": {
+            "$type": "color",
+            "$value": "#fff2e6"
+          }
+        },
+        "red": {
+          "red-300": {
+            "$type": "color",
+            "$value": "#efb2b2"
+          },
+          "red-1000": {
+            "$type": "color",
+            "$value": "#2b0c0c"
+          },
+          "red-900": {
+            "$type": "color",
+            "$value": "#561919"
+          },
+          "red-800": {
+            "$type": "color",
+            "$value": "#812525"
+          },
+          "red-700": {
+            "$type": "color",
+            "$value": "#ac3232"
+          },
+          "red-600": {
+            "$type": "color",
+            "$value": "#d73e3e"
+          },
+          "red-500": {
+            "$type": "color",
+            "$value": "#df6565"
+          },
+          "red-400": {
+            "$type": "color",
+            "$value": "#e78b8b"
+          },
+          "red-200": {
+            "$type": "color",
+            "$value": "#f7d8d8"
+          },
+          "red-100": {
+            "$type": "color",
+            "$value": "#fbecec"
+          }
+        },
+        "blue": {
+          "blue-100": {
+            "$type": "color",
+            "$value": "#eaf6ff"
+          },
+          "blue-900": {
+            "$type": "color",
+            "$value": "#002441"
+          },
+          "blue-800": {
+            "$type": "color",
+            "$value": "#003662"
+          },
+          "blue-500": {
+            "$type": "color",
+            "$value": "#337bb5"
+          },
+          "blue-300": {
+            "$type": "color",
+            "$value": "#99bdda"
+          },
+          "blue-200": {
+            "$type": "color",
+            "$value": "#ccdeed"
+          },
+          "blue-600": {
+            "$type": "color",
+            "$value": "#005aa3"
+          },
+          "blue-700": {
+            "$type": "color",
+            "$value": "#004882"
+          },
+          "blue-400": {
+            "$type": "color",
+            "$value": "#669cc8"
+          },
+          "blue-1000": {
+            "$type": "color",
+            "$value": "#001221"
+          }
+        }
+      },
+      "radius": {
+        "01": {
+          "$type": "dimension",
+          "$value": "4px"
+        },
+        "03": {
+          "$type": "dimension",
+          "$value": "360px"
+        },
+        "02": {
+          "$type": "dimension",
+          "$value": "20px"
+        }
+      },
+      "spacing": {
+        "10": {
+          "$type": "dimension",
+          "$value": "64px"
+        },
+        "11": {
+          "$type": "dimension",
+          "$value": "80px"
+        },
+        "12": {
+          "$type": "dimension",
+          "$value": "96px"
+        },
+        "09": {
+          "$type": "dimension",
+          "$value": "48px"
+        },
+        "06": {
+          "$type": "dimension",
+          "$value": "24px"
+        },
+        "04": {
+          "$type": "dimension",
+          "$value": "12px"
+        },
+        "02": {
+          "$type": "dimension",
+          "$value": "4px"
+        },
+        "07": {
+          "$type": "dimension",
+          "$value": "32px"
+        },
+        "01": {
+          "$type": "dimension",
+          "$value": "2px"
+        },
+        "08": {
+          "$type": "dimension",
+          "$value": "40px"
+        },
+        "03": {
+          "$type": "dimension",
+          "$value": "8px"
+        },
+        "05": {
+          "$type": "dimension",
+          "$value": "16px"
+        }
+      }
+    }
+  },
+  "Semantic tokens": {
+    "Light Mode": {
+      "tooltip": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{Semantic tokens.Light Mode.radius.01}"
+        },
+        "padding-y": {
+          "$type": "dimension",
+          "$value": "{Semantic tokens.Light Mode.spacing.03}"
+        },
+        "padding-x": {
+          "$type": "dimension",
+          "$value": "{Semantic tokens.Light Mode.spacing.03}"
+        },
+        "text": {
+          "$type": "color",
+          "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+        },
+        "background": {
+          "$type": "color",
+          "$value": "{Semantic tokens.Light Mode.colors.gray.gray-900}"
+        }
+      },
+      "formgroup": {
+        "sizing": {
+          "spacing-x": {
+            "$type": "dimension",
+            "$value": "{Semantic tokens.Light Mode.spacing.05}"
+          },
+          "spacing-y": {
+            "$type": "dimension",
+            "$value": "{Semantic tokens.Light Mode.spacing.00}"
+          }
+        }
+      },
+      "inputs": {
+        "sizing": {
+          "lg": {
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.radius.01}"
+            },
+            "inner-spacing": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.03}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.04}"
+            },
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.03}"
+            }
+          },
+          "sm": {
+            "inner-spacing": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.03}"
+            },
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.02}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.02}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.radius.01}"
+            }
+          },
+          "md": {
+            "inner-spacing": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.03}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.radius.01}"
+            },
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.03}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.03}"
+            }
+          }
+        },
+        "border": {
+          "focus": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.focus-ring}"
+          },
+          "success": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.success.border}"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.error.border}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-800}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-600}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-500}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.borders}"
+          }
+        },
+        "feedback": {
+          "success": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.success.border}"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.error.border}"
+          }
+        },
+        "text": {
+          "focus": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-500}"
+          }
+        },
+        "background": {
+          "focus": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          },
+          "success": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          }
+        }
+      },
+      "buttons": {
+        "theme": {
+          "danger": {
+            "text": {
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-500}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+              }
+            },
+            "border": {
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.red.red-600}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.red.red-600}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.red.red-900}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.red.red-800}"
+              }
+            },
+            "background": {
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.red.red-800}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.red.red-600}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.red.red-600}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.red.red-900}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              }
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Light Mode.colors.gray.gray-800}"
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Light Mode.colors.brand.secondary}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Light Mode.colors.gray.gray-1000}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Light Mode.colors.gray.gray-800}"
+            }
+          },
+          "success": {
+            "text": {
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-500}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+              }
+            },
+            "border": {
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.green.green-600}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.green.green-900}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.green.green-800}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.green.green-600}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              }
+            },
+            "background": {
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.green.green-600}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.green.green-900}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.green.green-600}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.green.green-800}"
+              }
+            }
+          },
+          "neutral": {
+            "text": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-500}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              }
+            },
+            "border": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.transparent}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-200}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-100}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.transparent}"
+              }
+            },
+            "background": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.transparent}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-200}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-100}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.transparent}"
+              }
+            }
+          },
+          "secondary": {
+            "text": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-500}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              }
+            },
+            "border": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.focus-ring}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+              }
+            },
+            "background": {
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.transparent}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-200}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-100}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.transparent}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              }
+            }
+          },
+          "primary": {
+            "border": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-900}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-1000}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-900}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.brand.primary}"
+              }
+            },
+            "text": {
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.buttons.theme.primary.text.default}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-500}"
+              }
+            },
+            "background": {
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-900}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.brand.primary}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-900}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Light Mode.colors.blue.blue-1000}"
+              }
+            }
+          }
+        },
+        "sizing": {
+          "md": {
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.06}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.03}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.radius.03}"
+            },
+            "padding-icon-only": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.00}"
+            }
+          },
+          "lg": {
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.08}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.04}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.radius.03}"
+            },
+            "padding-icon-only": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.00}"
+            }
+          },
+          "sm": {
+            "padding-icon-only": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.00}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.02}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.radius.03}"
+            },
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Light Mode.spacing.05}"
+            }
+          }
+        }
+      },
+      "colors": {
+        "borders": {
+          "$type": "color",
+          "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+        },
+        "focus-ring": {
+          "$type": "color",
+          "$value": "{Semantic tokens.Light Mode.colors.blue.blue-400}"
+        },
+        "error": {
+          "background": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.red.red-100}"
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.red.red-600}"
+          }
+        },
+        "warning": {
+          "border": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.yellow.yellow-700}"
+          },
+          "background": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.yellow.yellow-100}"
+          }
+        },
+        "success": {
+          "backround": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.green.green-100}"
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.green.green-600}"
+          }
+        },
+        "surface": {
+          "quinary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-400}"
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-100}"
+          },
+          "quadrary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-300}"
+          },
+          "tertiary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-200}"
+          },
+          "primary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          }
+        },
+        "brand": {
+          "tertiary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.neutral.white}"
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-1000}"
+          },
+          "primary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+          }
+        },
+        "text": {
+          "secondary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-700}"
+          },
+          "tertiary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-500}"
+          },
+          "primary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.gray.gray-1000}"
+          }
+        },
+        "info": {
+          "border": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.blue.blue-600}"
+          },
+          "backround": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Light Mode.colors.blue.blue-200}"
+          }
+        }
+      }
+    },
+    "Dark Mode": {
+      "tooltip": {
+        "border-radius": {
+          "$type": "dimension",
+          "$value": "{Semantic tokens.Dark Mode.radius.01}"
+        },
+        "padding-y": {
+          "$type": "dimension",
+          "$value": "{Semantic tokens.Dark Mode.spacing.03}"
+        },
+        "padding-x": {
+          "$type": "dimension",
+          "$value": "{Semantic tokens.Dark Mode.spacing.03}"
+        },
+        "text": {
+          "$type": "color",
+          "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+        },
+        "background": {
+          "$type": "color",
+          "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-900}"
+        }
+      },
+      "formgroup": {
+        "sizing": {
+          "spacing-x": {
+            "$type": "dimension",
+            "$value": "{Semantic tokens.Dark Mode.spacing.05}"
+          },
+          "spacing-y": {
+            "$type": "dimension",
+            "$value": "{Semantic tokens.Dark Mode.spacing.00}"
+          }
+        }
+      },
+      "inputs": {
+        "sizing": {
+          "lg": {
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.radius.01}"
+            },
+            "inner-spacing": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.03}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.04}"
+            },
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.08}"
+            }
+          },
+          "sm": {
+            "inner-spacing": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.03}"
+            },
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.05}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.02}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.radius.01}"
+            }
+          },
+          "md": {
+            "inner-spacing": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.03}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.radius.01}"
+            },
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.03}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.03}"
+            }
+          }
+        },
+        "border": {
+          "focus": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.focus-ring}"
+          },
+          "success": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.success.border}"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.error.border}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-600}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.borders}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.borders}"
+          }
+        },
+        "feedback": {
+          "success": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.success.border}"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.error.border}"
+          }
+        },
+        "text": {
+          "focus": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.buttons.theme.primary.text.default}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.buttons.theme.primary.text.default}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-600}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.buttons.theme.primary.text.default}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-500}"
+          }
+        },
+        "background": {
+          "focus": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+          },
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+          },
+          "success": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+          },
+          "error": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+          }
+        }
+      },
+      "buttons": {
+        "theme": {
+          "danger": {
+            "text": {
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-500}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              }
+            },
+            "border": {
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.red.red-600}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.red.red-600}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.red.red-900}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.red.red-800}"
+              }
+            },
+            "background": {
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.red.red-800}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.red.red-600}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.red.red-600}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.red.red-900}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+              }
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+            },
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Dark Mode.colors.brand.secondary}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-1000}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+            }
+          },
+          "success": {
+            "text": {
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-500}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              }
+            },
+            "border": {
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.green.green-600}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.green.green-900}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.green.green-800}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.green.green-600}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+              }
+            },
+            "background": {
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.green.green-600}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.green.green-900}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.green.green-600}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.green.green-800}"
+              }
+            }
+          },
+          "neutral": {
+            "text": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-500}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-100}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-100}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-100}"
+              }
+            },
+            "border": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-500}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-700}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-700}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+              }
+            },
+            "background": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-700}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-700}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+              }
+            }
+          },
+          "secondary": {
+            "text": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-500}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-100}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-100}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-100}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-100}"
+              }
+            },
+            "border": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-500}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.borders}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-400}"
+              }
+            },
+            "background": {
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-700}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-700}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+              }
+            }
+          },
+          "primary": {
+            "border": {
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-200}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-100}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-200}"
+              }
+            },
+            "text": {
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.buttons.theme.primary.text.default}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.buttons.theme.primary.text.default}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-600}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.buttons.theme.primary.text.default}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-500}"
+              }
+            },
+            "background": {
+              "focus": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-200}"
+              },
+              "default": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-200}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+              }
+            }
+          }
+        },
+        "sizing": {
+          "md": {
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.06}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.03}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.radius.03}"
+            },
+            "padding-icon-only": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.00}"
+            }
+          },
+          "lg": {
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.08}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.04}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.radius.03}"
+            },
+            "padding-icon-only": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.00}"
+            }
+          },
+          "sm": {
+            "padding-icon-only": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.00}"
+            },
+            "padding-y": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.02}"
+            },
+            "corner-radius": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.radius.03}"
+            },
+            "padding-x": {
+              "$type": "dimension",
+              "$value": "{Semantic tokens.Dark Mode.spacing.05}"
+            }
+          }
+        }
+      },
+      "colors": {
+        "borders": {
+          "$type": "color",
+          "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+        },
+        "focus-ring": {
+          "$type": "color",
+          "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-400}"
+        },
+        "error": {
+          "background": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.red.red-100}"
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.red.red-600}"
+          }
+        },
+        "warning": {
+          "border": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.yellow.yellow-700}"
+          },
+          "background": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.yellow.yellow-100}"
+          }
+        },
+        "success": {
+          "backround": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.green.green-100}"
+          },
+          "border": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.green.green-600}"
+          }
+        },
+        "surface": {
+          "quinary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-600}"
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-900}"
+          },
+          "quadrary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-700}"
+          },
+          "tertiary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-800}"
+          },
+          "primary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-1000}"
+          }
+        },
+        "brand": {
+          "tertiary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.neutral.white}"
+          },
+          "secondary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-1000}"
+          },
+          "primary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-600}"
+          }
+        },
+        "text": {
+          "secondary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-200}"
+          },
+          "tertiary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-300}"
+          },
+          "primary": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.gray.gray-100}"
+          }
+        },
+        "info": {
+          "border": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-600}"
+          },
+          "backround": {
+            "$type": "color",
+            "$value": "{Semantic tokens.Dark Mode.colors.blue.blue-200}"
+          }
+        }
+      }
+    }
+  },
+  "Typography": {
+    "Headings": {
+      "Large": {
+        "H1": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.75rem",
+            "font-weight": 300,
+            "text-decoration": "none",
+            "line-height": "114%"
+          }
+        },
+        "H2": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.5625rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "128%"
+          }
+        },
+        "H3": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.375rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "145%"
+          }
+        },
+        "H4": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.25rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "120%"
+          }
+        },
+        "H5": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.125rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "133%"
+          }
+        },
+        "H6": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1rem",
+            "font-weight": 700,
+            "text-decoration": "none",
+            "line-height": "150%"
+          }
+        },
+        "Display": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "2rem",
+            "font-weight": 300,
+            "text-decoration": "none",
+            "line-height": "125%"
+          }
+        }
+      },
+      "Small": {
+        "H1": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.6875rem",
+            "font-weight": 300,
+            "text-decoration": "none",
+            "line-height": "118%"
+          }
+        },
+        "H2": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.5rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "133%"
+          }
+        },
+        "H3": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.375rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "145%"
+          }
+        },
+        "H4": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.1875rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "126%"
+          }
+        },
+        "H5": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.0625rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "141%"
+          }
+        },
+        "H6": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1rem",
+            "font-weight": 400,
+            "text-decoration": "none",
+            "line-height": "150%"
+          }
+        },
+        "Display": {
+          "$type": "typography",
+          "$value": {
+            "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+            "font-size": "1.875rem",
+            "font-weight": 300,
+            "text-decoration": "none",
+            "line-height": "133%"
+          }
+        }
+      }
+    },
+    "Body": {
+      "Regular": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "1rem",
+          "font-weight": 400,
+          "text-decoration": "none",
+          "line-height": "150%"
+        }
+      },
+      "Small": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.875rem",
+          "font-weight": 400,
+          "text-decoration": "none",
+          "line-height": "171%"
+        }
+      },
+      "Regular Bold": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "1rem",
+          "font-weight": 700,
+          "text-decoration": "none",
+          "line-height": "150%"
+        }
+      },
+      "Small Bold": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.875rem",
+          "font-weight": 700,
+          "text-decoration": "none",
+          "line-height": "171%"
+        }
+      },
+      "Extra Small": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.75rem",
+          "font-weight": 400,
+          "text-decoration": "none",
+          "line-height": "133%"
+        }
+      }
+    },
+    "Subtitles": {
+      "Regular": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "1rem",
+          "font-weight": 700,
+          "text-decoration": "none",
+          "line-height": "150%"
+        }
+      },
+      "Small": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.875rem",
+          "font-weight": 400,
+          "text-decoration": "none",
+          "line-height": "171%"
+        }
+      }
+    },
+    "Links": {
+      "Regular": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "1rem",
+          "font-weight": 400,
+          "text-decoration": "underline",
+          "line-height": "150%"
+        }
+      },
+      "Small": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.875rem",
+          "font-weight": 400,
+          "text-decoration": "underline",
+          "line-height": "171%"
+        }
+      },
+      "Extra Small": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.75rem",
+          "font-weight": 400,
+          "text-decoration": "underline",
+          "line-height": "133%"
+        }
+      }
+    },
+    "Navigation": {
+      "Drawer Label Mobile": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.75rem",
+          "font-weight": 400,
+          "text-decoration": "none",
+          "line-height": "160%"
+        }
+      },
+      "Main menu item": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "1.125rem",
+          "font-weight": 400,
+          "text-decoration": "none",
+          "line-height": "133%"
+        }
+      }
+    },
+    "Buttons": {
+      "Small": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.875rem",
+          "font-weight": 700,
+          "text-decoration": "none",
+          "line-height": "171%"
+        }
+      },
+      "Medium": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "1rem",
+          "font-weight": 700,
+          "text-decoration": "none",
+          "line-height": "150%"
+        }
+      },
+      "Large": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "1rem",
+          "font-weight": 700,
+          "text-decoration": "none",
+          "line-height": "150%"
+        }
+      }
+    },
+    "Input": {
+      "Helper text": {
+        "$type": "typography",
+        "$value": {
+          "font-family": "Roboto, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "font-size": "0.875rem",
+          "font-weight": 400,
+          "text-decoration": "none",
+          "line-height": "142%"
+        }
+      }
+    }
+  }
+}

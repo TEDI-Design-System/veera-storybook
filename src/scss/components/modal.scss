@@ -1,0 +1,60 @@
+@use "../constants";
+@use "../mixins/text-styles";
+@use "../mixins/focus";
+
+$prefix: constants.$veera-prefix;
+
+@mixin base-sizing {
+  max-width: 500px;
+}
+
+.#{$prefix}-modal {
+  $self: &;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--#{$prefix}-modals-sizing-inner-spacing);
+  padding: var(--#{$prefix}-modals-sizing-padding-y) var(--#{$prefix}-modals-sizing-padding-x);
+  border: 1px solid var(--#{$prefix}-modals-border-default);
+  background: var(--#{$prefix}-modals-background-default);
+  color: var(--#{$prefix}-modals-text-default);
+  border-radius: var(--#{$prefix}-modals-sizing-corner-radius);
+  max-height: 80dvh;
+  width: 100%;
+  &__title {
+    @include text-styles.headings-large-h4;
+    margin: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-start;
+
+    .v-close-button {
+      margin-left: auto;
+    }
+  }
+
+  &__body {
+    overflow: auto;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--#{$prefix}-spacing-05);
+  }
+
+  &--sm {
+    max-width: 300px;
+  }
+  &--md {
+    @include base-sizing;
+  }
+  &--lg {
+    max-width: 800px;
+  }
+  &--fluid {
+    width: 90%;
+  }
+}

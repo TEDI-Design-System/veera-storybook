@@ -1,0 +1,66 @@
+/* stylelint-disable custom-property-pattern */
+@use '../constants' as constants;
+@use '../scss-utils/helper-functions' as helpers;
+
+$class-properties: (
+  'm': 'margin',
+  'my': (
+    'margin-top',
+    'margin-bottom',
+  ),
+  'mx': (
+    'margin-left',
+    'margin-right',
+  ),
+  'ml': 'margin-left',
+  'mr': 'margin-right',
+  'mt': 'margin-top',
+  'mb': 'margin-bottom',
+  'p': 'padding',
+  'py': (
+    'padding-top',
+    'padding-bottom',
+  ),
+  'px': (
+    'padding-left',
+    'padding-right',
+  ),
+  'pl': 'padding-left',
+  'pr': 'padding-right',
+  'pt': 'padding-top',
+  'pb': 'padding-bottom',
+  'gap': 'gap',
+  'row-gap': 'row-gap',
+  'column-gap': 'column-gap',
+);
+$margin-classes: 'm', 'my', 'mx', 'ml', 'mr', 'mt', 'mb';
+
+@mixin get-auto-margins($class-prefix, $properties) {
+  @if index($margin-classes, $class-prefix) {
+    .#{constants.$veera-prefix}-#{$class-prefix}-auto {
+      @if type-of($properties) == 'list' {
+        @each $property in $properties {
+          #{$property}: auto;
+        }
+      } @else {
+        #{$properties}: auto;
+      }
+    }
+  }
+}
+
+@each $class-prefix, $properties in $class-properties {
+  @for $spacing from 0 through constants.$max-spacing {
+    .#{constants.$veera-prefix}-#{$class-prefix}-#{$spacing} {
+      @if type-of($properties) == 'list' {
+        @each $property in $properties {
+          #{$property}: var(--#{constants.$veera-prefix}-spacing-#{helpers.pad-number($spacing)});
+        }
+      } @else {
+        #{$properties}: var(--#{constants.$veera-prefix}-spacing-#{helpers.pad-number($spacing)});
+      }
+    }
+  }
+
+  @include get-auto-margins($class-prefix, $properties);
+}

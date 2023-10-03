@@ -1,0 +1,106 @@
+@use '../constants';
+@use '../mixins/text-styles';
+@use '../mixins/borders';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-phone-input {
+  $self: &;
+
+  @include text-styles.body-medium;
+
+  --#{$prefix}-dropdown-menu-max-width: 304px;
+
+  position: relative;
+  display: flex;
+  background: var(--#{$prefix}-inputs-background-default);
+
+  &__country-select {
+    font: inherit;
+    outline: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--#{$prefix}-inputs-border-default);
+    background-color: transparent;
+
+    &:focus {
+      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
+    }
+  }
+
+  &__input {
+    font: inherit;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--#{$prefix}-inputs-border-default);
+    margin-left: -1px;
+    color: var(--#{$prefix}-inputs-text-active);
+
+    &::placeholder {
+      color: var(--#{$prefix}-inputs-text-default);
+    }
+
+    &:focus {
+      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
+    }
+  }
+
+  &--sm {
+    #{ $self }__input,
+    #{ $self }__country-select {
+      padding: var(--#{$prefix}-inputs-sizing-sm-padding-y)
+        var(--#{$prefix}-inputs-sizing-sm-padding-x);
+    }
+
+    #{ $self }__input {
+      @include borders.set-border-right-radius(var(--#{$prefix}-inputs-sizing-sm-corner-radius));
+    }
+
+    #{ $self }__country-select {
+      @include borders.set-border-left-radius(var(--#{$prefix}-inputs-sizing-sm-corner-radius));
+
+      gap: var(--#{$prefix}-inputs-sizing-sm-inner-spacing);
+    }
+  }
+
+  &--md {
+    border-radius: var(--#{$prefix}-inputs-sizing-sm-corner-radius);
+
+    #{ $self }__input,
+    #{ $self }__country-select {
+      padding: var(--#{$prefix}-inputs-sizing-md-padding-y)
+        var(--#{$prefix}-inputs-sizing-md-padding-x);
+    }
+
+    #{ $self }__input {
+      @include borders.set-border-right-radius(var(--#{$prefix}-inputs-sizing-md-corner-radius));
+    }
+
+    #{ $self }__country-select {
+      @include borders.set-border-left-radius(var(--#{$prefix}-inputs-sizing-md-corner-radius));
+
+      gap: var(--#{$prefix}-inputs-sizing-md-inner-spacing);
+    }
+  }
+
+  &--lg {
+    border-radius: var(--#{$prefix}-inputs-sizing-sm-corner-radius);
+
+    #{ $self }__input,
+    #{ $self }__country-select {
+      padding: var(--#{$prefix}-inputs-sizing-lg-padding-y)
+        var(--#{$prefix}-inputs-sizing-lg-padding-x);
+    }
+
+    #{ $self }__input {
+      @include borders.set-border-right-radius(var(--#{$prefix}-inputs-sizing-lg-corner-radius));
+    }
+
+    #{ $self }__country-select {
+      @include borders.set-border-left-radius(var(--#{$prefix}-inputs-sizing-lg-corner-radius));
+
+      gap: var(--#{$prefix}-inputs-sizing-lg-inner-spacing);
+    }
+  }
+}
