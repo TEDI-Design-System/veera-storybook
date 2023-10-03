@@ -5,15 +5,13 @@
   gap: 24px;
 }
 
-.card {
-  border-radius: 8px;
-  padding: 24px 32px;
-  box-shadow: var(--v-box-shadow-elevation-4px);
+.v-card {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
 
   h2 {
     margin: 0;
+    color: var(--v-colors-text-primary);
   }
 }
