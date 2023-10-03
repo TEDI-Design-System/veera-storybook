@@ -3,24 +3,32 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin checkbox-icon($mask) {
+  &::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    mask-image: $mask;
+    -webkit-mask-image: $mask;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--#{$prefix}-checkboxes-radios-text-icon);
+  }
+}
+
 @mixin checkmark {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.32923 13.2293L3.85423 9.75426L2.6709 10.9293L7.32923 15.5876L17.3292 5.5876L16.1542 4.4126L7.32923 13.2293Z" fill="white"/></svg>');
-  position: absolute;
-  height: 20px;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include checkbox-icon(
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.32923 13.2293L3.85423 9.75426L2.6709 10.9293L7.32923 15.5876L17.3292 5.5876L16.1542 4.4126L7.32923 13.2293Z" fill="black"/></svg>')
+  );
 }
 
 @mixin minus {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15.8337 10.8332H4.16699V9.1665H15.8337V10.8332Z" fill="white"/></svg>');
-  position: absolute;
-  height: 20px;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include checkbox-icon(
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M15.8337 10.8332H4.16699V9.1665H15.8337V10.8332Z" fill="white"/></svg>')
+  );
 }
 
 @mixin input-styles {
@@ -30,7 +38,7 @@ $prefix: constants.$veera-prefix;
   position: relative;
   width: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-medium);
   height: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-medium);
-  border-radius: 2px;
+  border-radius: var(--#{$prefix}-checkboxes-radios-sizing-corner-raidus);
   border: 1px solid var(--#{$prefix}-checkboxes-radios-border-default);
   background: var(--#{$prefix}-checkboxes-radios-background-default);
 
@@ -49,8 +57,10 @@ $prefix: constants.$veera-prefix;
     border-color: var(--#{$prefix}-checkboxes-radios-border-selected);
     background: var(--#{$prefix}-checkboxes-radios-background-selected);
 
-    &::after {
-      @include checkmark;
+    @include checkmark;
+
+    &:disabled {
+      background: var(--#{$prefix}-checkboxes-radios-border-disabled);
     }
   }
 
@@ -58,18 +68,14 @@ $prefix: constants.$veera-prefix;
     border-color: var(--#{$prefix}-checkboxes-radios-border-indetermined);
     background: var(--#{$prefix}-checkboxes-radios-background-indetermined);
 
-    &::after {
-      @include minus;
-    }
+    @include minus;
   }
 
   &:active {
     border-color: var(--#{$prefix}-checkboxes-radios-border-active);
     background: var(--#{$prefix}-checkboxes-radios-background-active);
 
-    &::after {
-      @include checkmark;
-    }
+    @include checkmark;
   }
 
   &:disabled {

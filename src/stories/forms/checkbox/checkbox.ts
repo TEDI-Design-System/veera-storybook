@@ -4,15 +4,29 @@ export interface CheckboxProps {
   disabled?: boolean;
   indeterminate?: boolean;
   size?: 'sm' | 'md' | 'lg';
+  checked?: boolean;
 }
 
-export const createCheckbox = ({ disabled, indeterminate, size = 'md' }: CheckboxProps) => {
+export const createCheckbox = ({
+  disabled,
+  indeterminate,
+  size = 'md',
+  checked = false,
+}: CheckboxProps) => {
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
   checkbox.disabled = !!disabled;
+  checkbox.checked = checked;
   checkbox.className = `v-checkbox v-checkbox--${size}`;
   checkbox.setAttribute('aria-label', 'standalone checkbox');
   checkbox.indeterminate = !!indeterminate;
+
+  return checkbox;
+};
+
+export const createStandaloneCheckboxStory = (props: CheckboxProps) => {
+  const checkbox = createCheckbox(props);
+  checkbox.setAttribute('aria-label', 'standalone checkbox');
 
   return checkbox;
 };
