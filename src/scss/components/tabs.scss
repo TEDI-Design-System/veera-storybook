@@ -11,7 +11,7 @@ $prefix: constants.$veera-prefix;
     display: flex;
     overflow-x: hidden;
     overflow-y: visible;
-    padding: 3px; // To prevent overflow cutting off tabs focus ring TODO: needs improvement
+    padding: 3px;
     margin: -3px;
   }
 
@@ -24,8 +24,8 @@ $prefix: constants.$veera-prefix;
     position: relative;
     border: 1px solid var(--#{$prefix}-tabs-border-default);
     outline: none;
-    padding: var(--#{$prefix}-tabs-sizing-padding-top) var(--#{$prefix}-tabs-sizing-padding-x)
-      var(--#{$prefix}-tabs-sizing-padding-bottom) var(--#{$prefix}-tabs-sizing-padding-x);
+    padding: var(--#{$prefix}-tabs-sizing-padding-y) var(--#{$prefix}-tabs-sizing-padding-x)
+      var(--#{$prefix}-tabs-sizing-padding-y-bottom) var(--#{$prefix}-tabs-sizing-padding-x);
     justify-content: center;
     align-items: center;
     gap: var(--#{$prefix}-tabs-sizing-inner-spacing);
@@ -87,9 +87,9 @@ $prefix: constants.$veera-prefix;
   }
 
   &__content {
-    padding: var(--#{$prefix}-spacing-05); // TODO: change when semantic variables in figma
+    padding: var(--#{$prefix}-tabs-content-padding-y) var(--#{$prefix}-tabs-content-padding-x);
     border-radius: var(--#{$prefix}-radius-01);
-    border: 1px solid var(--#{$prefix}-tabs-border-active);
+    border: 1px solid var(--#{$prefix}-tabs-border-selected);
     background: var(--#{$prefix}-tabs-content-background);
   }
 
