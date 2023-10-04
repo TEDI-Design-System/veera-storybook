@@ -52,16 +52,6 @@ $prefix: constants.$veera-prefix;
     @include toggle-knob;
   }
 
-  &:disabled {
-    pointer-events: none;
-    background: var(--#{$prefix}-toggle-track-off-state-background-disabled);
-    border-color: var(--#{$prefix}-toggle-track-off-state-border-disabled);
-
-    &::before {
-      background: var(--#{$prefix}-toggle-thumb-off-state-background-disabled);
-    }
-  }
-
   &:focus {
     box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
     background: var(--#{$prefix}-toggle-track-off-state-background-focus);
@@ -90,6 +80,16 @@ $prefix: constants.$veera-prefix;
     }
   }
 
+  &:disabled {
+    pointer-events: none;
+    background: var(--#{$prefix}-toggle-track-off-state-background-disabled);
+    border-color: var(--#{$prefix}-toggle-track-off-state-border-disabled);
+
+    &::before {
+      background: var(--#{$prefix}-toggle-thumb-off-state-background-disabled);
+    }
+  }
+
   &:checked {
     background: var(--#{$prefix}-toggle-track-on-state-background-default);
     border-color: var(--#{$prefix}-toggle-track-on-state-border-default);
@@ -97,16 +97,6 @@ $prefix: constants.$veera-prefix;
     &::before {
       transform: translateX(get-thumb-track-length('medium'));
       background: var(--#{$prefix}-toggle-thumb-on-state-background-default);
-    }
-
-    &:disabled {
-      pointer-events: none;
-      background: var(--#{$prefix}-toggle-track-on-state-background-disabled);
-      border-color: var(--#{$prefix}-toggle-track-on-state-border-disabled);
-
-      &::before {
-        background: var(--#{$prefix}-toggle-thumb-on-state-background-disabled);
-      }
     }
 
     &:focus {
@@ -133,6 +123,16 @@ $prefix: constants.$veera-prefix;
 
       &::before {
         background: var(--#{$prefix}-toggle-thumb-on-state-background-active);
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+      background: var(--#{$prefix}-toggle-track-on-state-background-disabled);
+      border-color: var(--#{$prefix}-toggle-track-on-state-border-disabled);
+
+      &::before {
+        background: var(--#{$prefix}-toggle-thumb-on-state-background-disabled);
       }
     }
   }
@@ -261,12 +261,6 @@ $prefix: constants.$veera-prefix;
       }
     }
 
-    &:checked {
-      & + label {
-        color: var(--#{$prefix}-toggle-text-checked);
-      }
-    }
-
     &:active {
       & + label {
         color: var(--#{$prefix}-toggle-text-active);
@@ -281,6 +275,7 @@ $prefix: constants.$veera-prefix;
 
     &:disabled {
       & + label {
+        pointer-events: none;
         color: var(--#{$prefix}-toggle-text-disabled);
       }
     }

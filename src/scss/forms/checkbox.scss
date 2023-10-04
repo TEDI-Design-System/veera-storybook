@@ -144,6 +144,7 @@ $prefix: constants.$veera-prefix;
 
     &:disabled {
       & + label {
+        pointer-events: none;
         color: var(--#{$prefix}-checkboxes-radios-text-disabled);
       }
     }
