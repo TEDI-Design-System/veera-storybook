@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/html';
 import '../dist/css/veera-variables.css';
 import '../dist/css/veera-variables-dark.css';
+import '@scss/reboot.scss'
 import { addons } from '@storybook/addons';
 import { GLOBALS_UPDATED } from '@storybook/core-events';
 
