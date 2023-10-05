@@ -43,9 +43,9 @@ export const createButton = ({
   return btn;
 };
 
-export const createCloseButton = (label?: string) => {
+export const createCloseButton = (label?: string, small?: boolean) => {
   const close = document.createElement('button');
-  close.className = 'v-close-button';
+  close.className = clsx('v-close-button', { 'v-close-button--sm': small });
   close.setAttribute('aria-label', label || 'Sulge Aken');
   return close;
 };
