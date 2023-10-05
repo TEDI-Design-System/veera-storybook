@@ -49,6 +49,7 @@ export const createDatepicker = ({ position }: DatepickerStoryProps) => {
     size: 'md',
     rightIcon: 'calendar_month',
     placeholder: 'pp.kk.aaaa',
+    isIconButton: true,
   });
   input.style.width = '256px';
   datepicker.appendChild(input);

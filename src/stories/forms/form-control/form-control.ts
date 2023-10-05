@@ -1,4 +1,5 @@
 import '@scss/forms/forms.scss';
+import '@scss/components/button.scss';
 import clsx from 'clsx';
 
 export interface FormControlStoryProps {
@@ -81,12 +82,20 @@ export const createSelectControlStory = (props: SelectControlStoryProps) => {
 export interface IconInputProps extends FormControlStoryProps {
   leftIcon?: string;
   rightIcon?: string;
+  isIconButton?: boolean;
 }
 
-export const createIconInput = ({ size, leftIcon, rightIcon, ...inputProps }: IconInputProps) => {
+export const createIconInput = ({
+  size,
+  leftIcon,
+  rightIcon,
+  isIconButton,
+  ...inputProps
+}: IconInputProps) => {
   const createIcon = (iconName: string, position: 'left' | 'right') => {
-    const icon = document.createElement('span');
-    icon.className = `material-icons v-form-control-icon v-form-control-icon--${position}`;
+    const icon = document.createElement(isIconButton ? 'button' : 'span');
+    const iconClass = isIconButton ? 'v-form-control-icon-btn' : 'v-form-control-icon';
+    icon.className = `material-icons ${iconClass} ${iconClass}--${position}`;
     icon.innerText = iconName;
     return icon;
   };

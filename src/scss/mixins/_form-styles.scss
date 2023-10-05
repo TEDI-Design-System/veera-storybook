@@ -27,7 +27,8 @@ $prefix: constants.$veera-prefix;
     border-radius: var(--#{$prefix}-inputs-sizing-#{$size}-corner-radius);
   }
 
-  .#{$prefix}-form-control-icon {
+  .#{$prefix}-form-control-icon,
+  .#{$prefix}-form-control-icon-btn {
     &--left {
       left: var(--#{$prefix}-inputs-sizing-#{$size}-padding-x);
     }

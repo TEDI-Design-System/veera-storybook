@@ -1,5 +1,4 @@
 import '@scss/forms/forms.scss';
-import clsx from 'clsx';
 import { createIconInput } from '../form-control/form-control';
 import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 
@@ -16,6 +15,7 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
     size: 'md',
     rightIcon: 'calendar_month',
     placeholder: 'hh:mm',
+    isIconButton: true,
   });
   iconInput.style.width = '125px';
 
