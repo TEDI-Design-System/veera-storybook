@@ -5,25 +5,23 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin base-size-styles($self) {
+  @include button-styles.medium;
+
+  &#{ $self }--icon-only {
+    @include button-styles.medium-icon-only;
+  }
+
+  &:not(#{ $self }--icon-only) {
+    @include text-styles.body-medium-bold;
+  }
+}
+
 .#{$prefix}-button {
   $self: &;
 
-  @include button-styles.medium($self);
-
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-width: 2px;
-  border-style: solid;
-  cursor: pointer;
-  flex-shrink: 0;
-
-  &:disabled {
-    pointer-events: none;
-  }
-
-  @include focus.focus-ring;
+  @include button-styles.base;
+  @include base-size-styles($self);
 
   // VARIANTS
   &--primary {
@@ -48,15 +46,31 @@ $prefix: constants.$veera-prefix;
 
   // SIZING
   &--sm {
-    @include button-styles.small($self);
+    @include button-styles.small;
+
+    &#{ $self }--icon-only {
+      @include button-styles.small-icon-only;
+    }
+
+    &:not(#{ $self }--icon-only) {
+      @include text-styles.body-small-bold;
+    }
   }
 
   &--md {
-    @include button-styles.medium($self);
+    @include base-size-styles($self);
   }
 
   &--lg {
-    @include button-styles.large($self);
+    @include button-styles.large;
+
+    &#{ $self }--icon-only {
+      @include button-styles.large-icon-only;
+    }
+
+    &:not(#{ $self }--icon-only) {
+      @include text-styles.body-large-bold;
+    }
   }
 
   &--floating {

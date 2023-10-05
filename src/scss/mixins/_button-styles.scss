@@ -1,12 +1,37 @@
 @use '../constants';
 @use './text-styles';
+@use './focus';
 
 $prefix: constants.$veera-prefix;
+
+@mixin base {
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  @include focus.focus-ring;
+}
 
 @mixin variant-colors($variant) {
   background: var(--#{$prefix}-buttons-theme-#{$variant}-background-default);
   border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-default);
   color: var(--#{$prefix}-buttons-theme-#{$variant}-text-default);
+
+  &:focus {
+    background: var(--#{$prefix}-buttons-theme-#{$variant}-background-focus);
+    border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-focus);
+    color: var(--#{$prefix}-buttons-theme-#{$variant}-text-focus);
+  }
 
   &:hover {
     background: var(--#{$prefix}-buttons-theme-#{$variant}-background-hover);
@@ -18,12 +43,6 @@ $prefix: constants.$veera-prefix;
     background: var(--#{$prefix}-buttons-theme-#{$variant}-background-active);
     border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-active);
     color: var(--#{$prefix}-buttons-theme-#{$variant}-text-active);
-  }
-
-  &:focus {
-    background: var(--#{$prefix}-buttons-theme-#{$variant}-background-focus);
-    border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-focus);
-    color: var(--#{$prefix}-buttons-theme-#{$variant}-text-focus);
   }
 
   &:disabled {
@@ -53,38 +72,38 @@ $prefix: constants.$veera-prefix;
   @include variant-colors('danger');
 }
 
-@mixin size-props($self, $size) {
+@mixin icon-only-size-props($size) {
+  height: var(--#{$prefix}-buttons-sizing-#{$size}-icon-button-width-height);
+  width: var(--#{$prefix}-buttons-sizing-#{$size}-icon-button-width-height);
+  padding: var(--#{$prefix}-buttons-sizing-#{$size}-padding-icon-only);
+}
+
+@mixin small-icon-only {
+  @include icon-only-size-props('sm');
+}
+
+@mixin medium-icon-only {
+  @include icon-only-size-props('md');
+}
+
+@mixin large-icon-only {
+  @include icon-only-size-props('lg');
+}
+
+@mixin size-props($size) {
   padding: var(--#{$prefix}-buttons-sizing-#{$size}-padding-y)
     var(--#{$prefix}-buttons-sizing-#{$size}-padding-x);
   border-radius: var(--#{$prefix}-buttons-sizing-#{$size}-corner-radius);
-
-  &#{ $self }--icon-only {
-    height: var(--#{$prefix}-buttons-sizing-#{$size}-icon-button-width-height);
-    width: var(--#{$prefix}-buttons-sizing-#{$size}-icon-button-width-height);
-    padding: var(--#{$prefix}-buttons-sizing-#{$size}-padding-icon-only);
-  }
 }
 
-@mixin small($self) {
-  @include size-props($self, 'sm');
-
-  &:not(#{ $self }--icon-only) {
-    @include text-styles.body-small-bold;
-  }
+@mixin small {
+  @include size-props('sm');
 }
 
-@mixin medium($self) {
-  @include size-props($self, 'md');
-
-  &:not(#{ $self }--icon-only) {
-    @include text-styles.body-medium-bold;
-  }
+@mixin medium {
+  @include size-props('md');
 }
 
-@mixin large($self) {
-  @include size-props($self, 'lg');
-
-  &:not(#{ $self }--icon-only) {
-    @include text-styles.body-large-bold;
-  }
+@mixin large {
+  @include size-props('lg');
 }
