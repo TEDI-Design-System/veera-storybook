@@ -3,10 +3,14 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin variant-colors($variant) {
+  background: var(--#{$prefix}-alerts-background-#{$variant});
+  border-color: var(--#{$prefix}-alerts-border-#{$variant});
+  color: var(--#{$prefix}-alerts-text-#{$variant});
+}
+
 @mixin base-colors {
-  background: var(--#{$prefix}-alerts-background-info);
-  border-color: var(--#{$prefix}-alerts-border-info);
-  color: var(--#{$prefix}-alerts-text-info);
+  @include variant-colors('info');
 }
 
 .#{$prefix}-alert {
@@ -49,20 +53,14 @@ $prefix: constants.$veera-prefix;
   }
 
   &--success {
-    background: var(--#{$prefix}-alerts-background-success);
-    border-color: var(--#{$prefix}-alerts-border-success);
-    color: var(--#{$prefix}-alerts-text-success);
+    @include variant-colors('success');
   }
 
   &--warning {
-    background: var(--#{$prefix}-alerts-background-warning);
-    border-color: var(--#{$prefix}-alerts-border-warning);
-    color: var(--#{$prefix}-alerts-text-warning);
+    @include variant-colors('warning');
   }
 
   &--error {
-    background: var(--#{$prefix}-alerts-background-error);
-    border-color: var(--#{$prefix}-alerts-border-error);
-    color: var(--#{$prefix}-alerts-text-error);
+    @include variant-colors('error');
   }
 }
