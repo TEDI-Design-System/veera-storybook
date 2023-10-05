@@ -1,61 +1,37 @@
 @use '../constants';
 @use '../mixins/text-styles';
+@use '../mixins/borders';
 
 $prefix: constants.$veera-prefix;
 
 .#{$prefix}-timepicker {
   position: relative;
 
-  &__panel {
-    box-sizing: border-box;
-    position: absolute;
-    top: 100%;
-    border-radius: var(--#{$prefix}-dropdown-menu-menu-corner-radius);
-    border: 1px solid var(--#{$prefix}-dropdown-menu-menu-border);
-    background: var(--#{$prefix}-time-picker-widget-options-list-border);
-    box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
-    overflow: hidden;
-    height: 252px;
-    width: 171px;
+  .#{$prefix}-dropdown {
+    --#{$prefix}-dropdown-menu-max-width: 176px;
+    --#{$prefix}-dropdown-menu-max-height: 252px;
+
+    display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr;
     column-gap: 1px;
-
-    &--top {
-      bottom: 100%;
-      top: unset;
-    }
+    background: var(--#{$prefix}-dropdown-menu-menu-border);
   }
 
-  &__panel-header {
-    @include text-styles.body-extra-small;
-
-    color: var(--#{$prefix}-colors-text-secondary);
-    background: var(--#{$prefix}-colors-gray-gray-100);
-    padding: 8px;
-  }
-
-  &__panel-options {
+  &__options-row {
     overflow: auto;
-    display: flex;
-    flex-direction: column;
-  }
 
-  &__option {
-    @include text-styles.body-medium;
-
-    cursor: pointer;
-    border: none;
-    background: var(--#{$prefix}-colors-neutral-white);
-    text-align: left;
-    padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-top)
-      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x)
-      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-bottom)
-      var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x);
+    &:not(:first-child) {
+      .#{$prefix}-dropdown__option {
+        @include borders.set-border-left-radius(0);
+      }
+    }
 
     &:not(:last-child) {
-      border-bottom: 1px solid var(--#{$prefix}-dropdown-menu-menuitem-border);
+      .#{$prefix}-dropdown__option {
+        @include borders.set-border-right-radius(0);
+      }
     }
   }
 

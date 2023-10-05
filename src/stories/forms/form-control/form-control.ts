@@ -6,6 +6,7 @@ export interface FormControlStoryProps {
   disabled?: boolean;
   placeholder?: string;
   status?: 'success' | 'error';
+  value?: string;
 }
 
 export const createInputControl = ({
@@ -68,8 +69,12 @@ export const createSelectControl = ({
     select.appendChild(option);
   }
 
-  select.setAttribute('aria-label', 'valikukasti näide');
+  return select;
+};
 
+export const createSelectControlStory = (props: SelectControlStoryProps) => {
+  const select = createSelectControl(props);
+  select.setAttribute('aria-label', 'valikukasti näide');
   return select;
 };
 

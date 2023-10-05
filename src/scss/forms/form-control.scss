@@ -25,7 +25,7 @@ $prefix: constants.$veera-prefix;
   &--focus {
     border-color: var(--#{$prefix}-inputs-border-focus);
     background: var(--#{$prefix}-inputs-background-focus);
-    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring);
+    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
   }
 
   &:hover {

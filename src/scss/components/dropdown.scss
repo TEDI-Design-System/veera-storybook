@@ -1,18 +1,23 @@
 @use '../constants';
 @use '../mixins/text-styles';
 @use '../mixins/borders';
+@use '../mixins/focus';
 
 $prefix: constants.$veera-prefix;
 
 .#{$prefix}-dropdown {
+  $self: &;
+
   position: absolute;
   top: calc(100% + 4px);
   left: 0;
   right: 0;
+  overflow: auto;
   max-width: var(--#{$prefix}-dropdown-menu-max-width);
+  max-height: var(--#{$prefix}-dropdown-menu-max-height);
   border-radius: var(--#{$prefix}-dropdown-menu-menu-corner-radius);
   border: 1px solid var(--#{$prefix}-dropdown-menu-menu-border);
-  background: var(--#{$prefix}-time-picker-widget-options-list-border);
+  background: var(--#{$prefix}-dropdown-menu-menu-background);
   box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
 
   &--top {
@@ -20,7 +25,6 @@ $prefix: constants.$veera-prefix;
     top: unset;
   }
 
-  // TODO: update when correct vars are added to Figma;
   &__option {
     @include text-styles.body-medium;
 
@@ -31,55 +35,59 @@ $prefix: constants.$veera-prefix;
     outline: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-inner-spacing);
     width: 100%;
-    background: var(--#{$prefix}-colors-neutral-white);
+    background: var(--#{$prefix}-dropdown-menu-menuitem-default);
+    color: var(--#{$prefix}-colors-text-primary);
     padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-top)
       var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x)
       var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-bottom)
       var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x);
 
-    &:nth-child(1 of #{ $option }) {
+    &:first-child {
       @include borders.set-border-top-radius(var(--#{$prefix}-dropdown-menu-menu-corner-radius));
     }
 
-    &:nth-last-child(1 of #{ $option }) {
+    &:last-child {
       @include borders.set-border-bottom-radius(var(--#{$prefix}-dropdown-menu-menu-corner-radius));
     }
 
     &:not(:last-child) {
-      border-bottom: 1px solid var(--#{$prefix}-dropdown-menu-menuitem-border);
+      border-bottom: 1px solid var(--#{$prefix}-dropdown-menu-menu-border);
     }
 
-    &--multiselect {
-      padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-top)
-        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x)
-        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-bottom)
-        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x);
-    }
+    @include focus.focus-ring-inset;
 
     &:focus {
-      color: var(--#{$prefix}-checkboxes-radios-text-default);
-      background: var(--#{$prefix}-colors-neutral-white);
-      box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
-      position: relative;
-      z-index: 1;
+      background: var(--#{$prefix}-dropdown-menu-menuitem-focus);
     }
 
     &:hover {
-      color: var(--#{$prefix}-checkboxes-radios-text-default);
-      background: var(--#{$prefix}-colors-surface-secondary);
+      background: var(--#{$prefix}-dropdown-menu-menuitem-hover);
+    }
+
+    &:active {
+      background: var(--#{$prefix}-dropdown-menu-menuitem-active);
     }
 
     &--selected {
-      color: var(--#{$prefix}-checkboxes-radios-text-default);
-      background: var(--#{$prefix}-colors-blue-blue-100);
+      background: var(--#{$prefix}-dropdown-menu-menuitem-selected);
     }
 
     &:disabled {
       pointer-events: none;
-      color: var(--#{$prefix}-checkboxes-radios-text-disabled);
-      background: var(--#{$prefix}-colors-surface-secondary);
+      color: var(--#{$prefix}-colors-disabled-text);
+      background: var(--#{$prefix}-dropdown-menu-menuitem-disabled);
+    }
+  }
+
+  &--multiselect {
+    #{$self}__option {
+      padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-top)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-bottom)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x);
+      gap: var(---#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-inner-spacing);
     }
   }
 }

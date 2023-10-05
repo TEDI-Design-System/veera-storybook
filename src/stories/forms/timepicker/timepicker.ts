@@ -1,6 +1,7 @@
 import '@scss/forms/forms.scss';
 import clsx from 'clsx';
 import { createIconInput } from '../form-control/form-control';
+import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 
 export interface TimepickerStoryProps {
   position: 'top' | 'bottom';
@@ -53,40 +54,23 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
 
   timepicker.appendChild(iconInput);
 
-  const panel = document.createElement('div');
-  panel.className = clsx('v-timepicker__panel', { 'v-timepicker__panel--top': position === 'top' });
+  const panel = createDropdown({ position });
   timepicker.appendChild(panel);
 
-  const hoursHeader = document.createElement('div');
-  hoursHeader.className = 'v-timepicker__panel-header';
-  hoursHeader.innerText = 'Tunnid';
-  panel.appendChild(hoursHeader);
-
-  const minutesHeader = document.createElement('div');
-  minutesHeader.className = 'v-timepicker__panel-header';
-  minutesHeader.innerText = 'Minutid';
-  panel.appendChild(minutesHeader);
-
   const hourOptions = document.createElement('div');
-  hourOptions.className = 'v-timepicker__panel-options';
+  hourOptions.className = 'v-timepicker__options-row';
   panel.appendChild(hourOptions);
 
   for (let hour = 0; hour < 24; hour++) {
-    const hourOption = document.createElement('button');
-    hourOption.className = 'v-timepicker__option';
-    hourOption.innerText = `${hour}`.padStart(2, '0');
-    hourOptions.appendChild(hourOption);
+    hourOptions.appendChild(createDropdownOption({ label: `${hour}`.padStart(2, '0') }));
   }
 
   const minuteOptions = document.createElement('div');
-  minuteOptions.className = 'v-timepicker__panel-options';
+  minuteOptions.className = 'v-timepicker__options-row';
   panel.appendChild(minuteOptions);
 
   for (let minute = 0; minute < 60; minute++) {
-    const minuteOption = document.createElement('button');
-    minuteOption.className = 'v-timepicker__option';
-    minuteOption.innerText = `${minute}`.padStart(2, '0');
-    minuteOptions.appendChild(minuteOption);
+    minuteOptions.appendChild(createDropdownOption({ label: `${minute}`.padStart(2, '0') }));
   }
 
   return timepicker;

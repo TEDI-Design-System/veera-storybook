@@ -5,6 +5,8 @@ $prefix: constants.$veera-prefix;
 
 .#{$prefix}-file-upload {
   &__drop-area {
+    $drop-area: &;
+
     @include text-styles.body-medium;
 
     outline: none;
@@ -44,6 +46,10 @@ $prefix: constants.$veera-prefix;
       background: var(--#{$prefix}-file-input-background-disabled);
       border-color: var(--#{$prefix}-file-input-border-disabled);
       color: var(--#{$prefix}-file-input-text-disabled);
+
+      #{ $drop-area }__attach-icon {
+        color: var(--#{$prefix}-file-input-text-disabled);
+      }
     }
 
     &--drag-over {

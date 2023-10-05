@@ -4,7 +4,7 @@ import {
   IconInputProps,
   createIconInput,
   createInputControl,
-  createSelectControl,
+  createSelectControlStory,
   createTextAreaControl,
 } from './form-control';
 
@@ -42,7 +42,7 @@ export const TextArea: Story = {
 };
 
 export const Select: Story = {
-  render: createSelectControl,
+  render: createSelectControlStory,
 };
 
 export const IconInput: StoryObj<IconInputProps> = {
