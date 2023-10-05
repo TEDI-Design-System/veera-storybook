@@ -1,6 +1,7 @@
 import '@scss/forms/forms.scss';
 import '@scss/typography.scss';
 import './radio.stories.scss';
+import '@scss/components/card.scss';
 
 export interface RadioProps {
   size?: 'sm' | 'md' | 'lg';
@@ -23,15 +24,15 @@ export const createRadios = ({ items, size = 'md' }: RadioProps) => {
 export const createRadiosWithoutLabels = () => {
   return `
   <div class="container">
-    <div class="card">
+    <div class="v-card">
       <h2 id="card-1-title">Kaart 1</h2>
       <input type="radio" value="card-1" class="v-radio" name="card-radio" aria-labelledby="card-1-title"/>
     </div>
-    <div class="card">
+    <div class="v-card">
       <h2 id="card-2-title">Kaart 2</h2>
       <input type="radio" value="card-2" class="v-radio" name="card-radio" aria-labelledby="card-2-title"/>
     </div>
-    <div class="card">
+    <div class="v-card">
       <h2 id="card-3-title">Kaart 3</h2>
       <input type="radio" value="card-3" class="v-radio" name="card-radio" aria-labelledby="card-3-title"/>
     </div>
