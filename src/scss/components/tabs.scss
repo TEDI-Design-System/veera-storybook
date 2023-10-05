@@ -5,6 +5,12 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin state-colors($state) {
+  background: var(--#{$prefix}-tabs-background-#{$state});
+  color: var(--#{$prefix}-tabs-text-#{$state});
+  border-color: var(--#{$prefix}-tabs-border-#{$state});
+}
+
 .#{$prefix}-tabs {
   &__tab-list {
     position: relative;
@@ -36,28 +42,22 @@ $prefix: constants.$veera-prefix;
     @include focus.focus-ring;
 
     &:focus {
+      @include state-colors('focus');
+
       z-index: 1;
-      background: var(--#{$prefix}-tabs-background-focus);
-      color: var(--#{$prefix}-tabs-text-focus);
-      border-color: var(--#{$prefix}-tabs-border-focus);
     }
 
     &:hover {
-      background: var(--#{$prefix}-tabs-background-hover);
-      color: var(--#{$prefix}-tabs-text-hover);
-      border-color: var(--#{$prefix}-tabs-border-hover);
+      @include state-colors('hover');
     }
 
     &:active {
-      background: var(--#{$prefix}-tabs-background-active);
-      color: var(--#{$prefix}-tabs-text-active);
-      border-color: var(--#{$prefix}-tabs-border-active);
+      @include state-colors('active');
     }
 
     &--selected {
-      background: var(--#{$prefix}-tabs-background-selected);
-      color: var(--#{$prefix}-tabs-text-selected);
-      border-color: var(--#{$prefix}-tabs-border-selected);
+      @include state-colors('selected');
+
       font-weight: 700;
       border-bottom: none;
 
@@ -79,10 +79,9 @@ $prefix: constants.$veera-prefix;
     }
 
     &:disabled {
+      @include state-colors('disabled');
+
       pointer-events: none;
-      background: var(--#{$prefix}-tabs-background-disabled);
-      color: var(--#{$prefix}-tabs-text-disabled);
-      border-color: var(--#{$prefix}-tabs-border-disabled);
     }
   }
 
