@@ -1,0 +1,90 @@
+@use '../constants';
+@use './text-styles';
+
+$prefix: constants.$veera-prefix;
+
+@mixin variant-colors($variant) {
+  background: var(--#{$prefix}-buttons-theme-#{$variant}-background-default);
+  border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-default);
+  color: var(--#{$prefix}-buttons-theme-#{$variant}-text-default);
+
+  &:hover {
+    background: var(--#{$prefix}-buttons-theme-#{$variant}-background-hover);
+    border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-hover);
+    color: var(--#{$prefix}-buttons-theme-#{$variant}-text-hover);
+  }
+
+  &:active {
+    background: var(--#{$prefix}-buttons-theme-#{$variant}-background-active);
+    border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-active);
+    color: var(--#{$prefix}-buttons-theme-#{$variant}-text-active);
+  }
+
+  &:focus {
+    background: var(--#{$prefix}-buttons-theme-#{$variant}-background-focus);
+    border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-focus);
+    color: var(--#{$prefix}-buttons-theme-#{$variant}-text-focus);
+  }
+
+  &:disabled {
+    background: var(--#{$prefix}-buttons-theme-#{$variant}-background-disabled);
+    border-color: var(--#{$prefix}-buttons-theme-#{$variant}-border-disabled);
+    color: var(--#{$prefix}-buttons-theme-#{$variant}-text-disabled);
+  }
+}
+
+@mixin primary {
+  @include variant-colors('primary');
+}
+
+@mixin secondary {
+  @include variant-colors('secondary');
+}
+
+@mixin neutral {
+  @include variant-colors('neutral');
+}
+
+@mixin success {
+  @include variant-colors('success');
+}
+
+@mixin danger {
+  @include variant-colors('danger');
+}
+
+@mixin size-props($self, $size) {
+  padding: var(--#{$prefix}-buttons-sizing-#{$size}-padding-y)
+    var(--#{$prefix}-buttons-sizing-#{$size}-padding-x);
+  border-radius: var(--#{$prefix}-buttons-sizing-#{$size}-corner-radius);
+
+  &#{ $self }--icon-only {
+    height: var(--#{$prefix}-buttons-sizing-#{$size}-icon-button-width-height);
+    width: var(--#{$prefix}-buttons-sizing-#{$size}-icon-button-width-height);
+    padding: var(--#{$prefix}-buttons-sizing-#{$size}-padding-icon-only);
+  }
+}
+
+@mixin small($self) {
+  @include size-props($self, 'sm');
+
+  &:not(#{ $self }--icon-only) {
+    @include text-styles.body-small-bold;
+  }
+}
+
+@mixin medium($self) {
+  @include size-props($self, 'md');
+
+  &:not(#{ $self }--icon-only) {
+    @include text-styles.body-medium-bold;
+  }
+}
+
+@mixin large($self) {
+  @include size-props($self, 'lg');
+
+  &:not(#{ $self }--icon-only) {
+    @include text-styles.body-large-bold;
+  }
+}
