@@ -1,6 +1,6 @@
-@use "../constants";
-@use "../mixins/text-styles";
-@use "../mixins/focus";
+@use '../constants';
+@use '../mixins/text-styles';
+@use '../mixins/focus';
 
 $prefix: constants.$veera-prefix;
 
@@ -21,8 +21,10 @@ $prefix: constants.$veera-prefix;
   border-radius: var(--#{$prefix}-modals-sizing-corner-radius);
   max-height: 80dvh;
   width: 100%;
+
   &__title {
     @include text-styles.headings-large-h4;
+
     margin: 0;
   }
 
@@ -48,12 +50,15 @@ $prefix: constants.$veera-prefix;
   &--sm {
     max-width: 300px;
   }
+
   &--md {
     @include base-sizing;
   }
+
   &--lg {
     max-width: 800px;
   }
+
   &--fluid {
     width: 90%;
   }
