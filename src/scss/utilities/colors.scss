@@ -488,10 +488,18 @@
   color: var(--v-colors-alpha-alpha-10);
 }
 
-.v-bg-alpha-overlay {
-  background: var(--v-colors-alpha-overlay);
+.v-bg-overlay-light {
+  background: var(--v-colors-alpha-overlay-light);
 }
 
-.v-color-alpha-overlay {
-  color: var(--v-colors-alpha-overlay);
+.v-color-overlay-light {
+  color: var(--v-colors-alpha-overlay-light);
+}
+
+.v-bg-overlay-dark {
+  background: var(--v-colors-alpha-overlay-dark);
+}
+
+.v-color-overlay-dark {
+  color: var(--v-colors-alpha-overlay-dark);
 }
