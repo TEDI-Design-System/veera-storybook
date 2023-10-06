@@ -5,6 +5,11 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin state-colors($state) {
+  background: var(--#{$prefix}-dropdown-menu-menuitem-#{$state});
+  color: var(--#{$prefix}-dropdown-menu-menuitem-text-#{$state});
+}
+
 .#{$prefix}-dropdown {
   $self: &;
 
@@ -27,6 +32,7 @@ $prefix: constants.$veera-prefix;
 
   &__option {
     @include text-styles.body-medium;
+    @include state-colors('default');
 
     $option: &;
 
@@ -37,8 +43,6 @@ $prefix: constants.$veera-prefix;
     align-items: center;
     gap: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-inner-spacing);
     width: 100%;
-    background: var(--#{$prefix}-dropdown-menu-menuitem-default);
-    color: var(--#{$prefix}-colors-text-primary);
     padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-top)
       var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x)
       var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-bottom)
@@ -59,25 +63,25 @@ $prefix: constants.$veera-prefix;
     @include focus.focus-ring-inset;
 
     &:focus {
-      background: var(--#{$prefix}-dropdown-menu-menuitem-focus);
+      @include state-colors('focus');
     }
 
     &:hover {
-      background: var(--#{$prefix}-dropdown-menu-menuitem-hover);
+      @include state-colors('hover');
     }
 
     &:active {
-      background: var(--#{$prefix}-dropdown-menu-menuitem-active);
+      @include state-colors('active');
     }
 
     &--selected {
-      background: var(--#{$prefix}-dropdown-menu-menuitem-selected);
+      @include state-colors('selected');
     }
 
     &:disabled {
+      @include state-colors('disabled');
+
       pointer-events: none;
-      color: var(--#{$prefix}-colors-disabled-text);
-      background: var(--#{$prefix}-dropdown-menu-menuitem-disabled);
     }
   }
 
