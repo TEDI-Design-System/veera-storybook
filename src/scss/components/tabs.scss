@@ -13,7 +13,6 @@ $prefix: constants.$veera-prefix;
 
 .#{$prefix}-tabs {
   &__tab-list {
-    position: relative;
     display: flex;
     overflow-x: hidden;
     overflow-y: visible;

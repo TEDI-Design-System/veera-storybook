@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import '@scss/components/stepper.scss';
+import { createHorizontalScrollButtons } from '../../utils';
 
 export interface StepperStepProps {
   number: number;
@@ -46,8 +47,12 @@ export interface StepperStoryProps {
 export const createStepper = ({ activeStep = 0 }: StepperStoryProps) => {
   let activeStepNr = activeStep;
 
+  const scrollButtonsContainer = document.createElement('div');
+  scrollButtonsContainer.style.position = 'relative';
+
   const stepper = document.createElement('div');
   stepper.className = 'v-stepper';
+  scrollButtonsContainer.appendChild(stepper);
 
   const onSelect = (stepNr: number) => {
     activeStepNr = stepNr;
@@ -69,5 +74,13 @@ export const createStepper = ({ activeStep = 0 }: StepperStoryProps) => {
 
   renderSteps();
 
-  return stepper;
+  setTimeout(() => {
+    createHorizontalScrollButtons({ scrollableEl: stepper, container: scrollButtonsContainer });
+  }, 100);
+
+  window.onresize = () => {
+    createHorizontalScrollButtons({ scrollableEl: stepper, container: scrollButtonsContainer });
+  };
+
+  return scrollButtonsContainer;
 };
