@@ -48,6 +48,17 @@ $prefix: constants.$veera-prefix;
     }
   }
 
+  &--lg {
+    #{ $self }__header {
+      padding: var(--#{$prefix}-accordion-sizing-padding-y-large)
+        var(--#{$prefix}-accordion-sizing-padding-x);
+    }
+
+    #{ $self }__title {
+      @include text-styles.headings-large-h4;
+    }
+  }
+
   &__header {
     @include focus.focus-ring;
 
