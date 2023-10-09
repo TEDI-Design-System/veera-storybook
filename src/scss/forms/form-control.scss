@@ -13,13 +13,13 @@ $prefix: constants.$veera-prefix;
   display: block;
   width: 100%;
   outline: none;
-  color: var(--#{$prefix}-inputs-text-active);
+  color: var(--#{$prefix}-inputs-text-filled);
   border: 1px solid var(--#{$prefix}-inputs-border-default);
   background: var(--#{$prefix}-inputs-background-default);
 
   &::placeholder,
   &__placeholder {
-    color: var(--#{$prefix}-inputs-text-default);
+    color: var(--#{$prefix}-inputs-text-placeholder);
   }
 
   &:focus,
