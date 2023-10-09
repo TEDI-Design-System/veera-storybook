@@ -117,10 +117,6 @@
     --v-inputs-border-active: var(--v-colors-blue-blue-300);
     --v-inputs-border-focus: var(--v-colors-neutral-neutral-600);
     --v-inputs-border-disabled: var(--v-colors-neutral-neutral-700);
-    --v-inputs-text-default: var(--v-colors-text-tertiary);
-    --v-inputs-text-hover: var(--v-colors-text-tertiary);
-    --v-inputs-text-active: var(--v-colors-text-tertiary);
-    --v-inputs-text-focus: var(--v-colors-text-tertiary);
     --v-inputs-text-disabled: var(--v-colors-neutral-neutral-700);
     --v-inputs-sizing-sm-padding-x: var(--v-spacing-for-1px-border-02);
     --v-inputs-sizing-sm-padding-y: var(--v-spacing-for-1px-border-02);
@@ -553,8 +549,6 @@
     --v-lists-sizing-icon: var(--v-spacing-05);
     --v-tooltip-max-width: var(--v-spacing-13);
     --v-lists-text-icon: var(--v-colors-blue-blue-300);
-    --v-inputs-text-error: var(--v-colors-text-tertiary);
-    --v-inputs-text-success: var(--v-colors-text-tertiary);
     --v-dropdown-menu-menuitem-default: var(--v-colors-neutral-neutral-1000);
     --v-dropdown-menu-menuitem-hover: var(--v-colors-blue-blue-800);
     --v-dropdown-menu-menuitem-focus: var(--v-colors-neutral-neutral-1000);
@@ -688,6 +682,12 @@
     --v-dropdown-menu-menuitem-text-focus: var(--v-colors-text-primary);
     --v-dropdown-menu-menuitem-text-selected: var(--v-colors-text-primary);
     --v-dropdown-menu-menuitem-text-active: var(--v-colors-text-primary);
+    --v-links-sizing-inner-spacing: var(--v-spacing-02);
+    --v-inputs-text-placeholder: var(--v-colors-text-tertiary);
+    --v-inputs-text-filled: var(--v-colors-text-primary);
+    --v-accordion-content-background: var(--v-colors-neutral-neutral-1000);
+    --v-accordion-content-padding-x: var(--v-spacing-05);
+    --v-accordion-content-padding-y: var(--v-spacing-05);
     --v-box-shadow-elevation-2px: 0px 1px 5px 0px #454854;
     --v-box-shadow-elevation-4px: 0px 4px 10px 0px #454854;
     --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8;
@@ -810,10 +810,6 @@
   --v-inputs-border-active: var(--v-colors-blue-blue-300);
   --v-inputs-border-focus: var(--v-colors-neutral-neutral-600);
   --v-inputs-border-disabled: var(--v-colors-neutral-neutral-700);
-  --v-inputs-text-default: var(--v-colors-text-tertiary);
-  --v-inputs-text-hover: var(--v-colors-text-tertiary);
-  --v-inputs-text-active: var(--v-colors-text-tertiary);
-  --v-inputs-text-focus: var(--v-colors-text-tertiary);
   --v-inputs-text-disabled: var(--v-colors-neutral-neutral-700);
   --v-inputs-sizing-sm-padding-x: var(--v-spacing-for-1px-border-02);
   --v-inputs-sizing-sm-padding-y: var(--v-spacing-for-1px-border-02);
@@ -1242,8 +1238,6 @@
   --v-lists-sizing-icon: var(--v-spacing-05);
   --v-tooltip-max-width: var(--v-spacing-13);
   --v-lists-text-icon: var(--v-colors-blue-blue-300);
-  --v-inputs-text-error: var(--v-colors-text-tertiary);
-  --v-inputs-text-success: var(--v-colors-text-tertiary);
   --v-dropdown-menu-menuitem-default: var(--v-colors-neutral-neutral-1000);
   --v-dropdown-menu-menuitem-hover: var(--v-colors-blue-blue-800);
   --v-dropdown-menu-menuitem-focus: var(--v-colors-neutral-neutral-1000);
@@ -1369,6 +1363,12 @@
   --v-dropdown-menu-menuitem-text-focus: var(--v-colors-text-primary);
   --v-dropdown-menu-menuitem-text-selected: var(--v-colors-text-primary);
   --v-dropdown-menu-menuitem-text-active: var(--v-colors-text-primary);
+  --v-links-sizing-inner-spacing: var(--v-spacing-02);
+  --v-inputs-text-placeholder: var(--v-colors-text-tertiary);
+  --v-inputs-text-filled: var(--v-colors-text-primary);
+  --v-accordion-content-background: var(--v-colors-neutral-neutral-1000);
+  --v-accordion-content-padding-x: var(--v-spacing-05);
+  --v-accordion-content-padding-y: var(--v-spacing-05);
   --v-box-shadow-elevation-2px: 0px 1px 5px 0px #454854;
   --v-box-shadow-elevation-4px: 0px 4px 10px 0px #454854;
   --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8;

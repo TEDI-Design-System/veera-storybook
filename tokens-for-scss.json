@@ -1990,54 +1990,6 @@
     },
     {
       "alias": true,
-      "value": "colors-text-tertiary",
-      "darkMode": {
-        "value": "colors-text-tertiary",
-        "alias": true
-      },
-      "group": "inputs/text",
-      "collection": "semantic-tokens",
-      "name": "inputs-text-default",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-text-tertiary",
-      "darkMode": {
-        "value": "colors-text-tertiary",
-        "alias": true
-      },
-      "group": "inputs/text",
-      "collection": "semantic-tokens",
-      "name": "inputs-text-hover",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-text-tertiary",
-      "darkMode": {
-        "value": "colors-text-tertiary",
-        "alias": true
-      },
-      "group": "inputs/text",
-      "collection": "semantic-tokens",
-      "name": "inputs-text-active",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-text-tertiary",
-      "darkMode": {
-        "value": "colors-text-tertiary",
-        "alias": true
-      },
-      "group": "inputs/text",
-      "collection": "semantic-tokens",
-      "name": "inputs-text-focus",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
       "value": "colors-neutral-neutral-400",
       "darkMode": {
         "value": "colors-neutral-neutral-700",
@@ -7414,30 +7366,6 @@
     },
     {
       "alias": true,
-      "value": "colors-text-tertiary",
-      "darkMode": {
-        "value": "colors-text-tertiary",
-        "alias": true
-      },
-      "group": "inputs/text",
-      "collection": "semantic-tokens",
-      "name": "inputs-text-error",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
-      "value": "colors-text-tertiary",
-      "darkMode": {
-        "value": "colors-text-tertiary",
-        "alias": true
-      },
-      "group": "inputs/text",
-      "collection": "semantic-tokens",
-      "name": "inputs-text-success",
-      "type": "COLOR"
-    },
-    {
-      "alias": true,
       "value": "colors-neutral-neutral-100",
       "darkMode": {
         "value": "colors-neutral-neutral-1000",
@@ -8911,6 +8839,78 @@
       "collection": "semantic-tokens",
       "name": "dropdown-menu-menuitem-text-active",
       "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-02",
+      "darkMode": {
+        "value": "spacing-02",
+        "alias": true
+      },
+      "group": "links/sizing",
+      "collection": "semantic-tokens",
+      "name": "links-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-tertiary",
+      "darkMode": {
+        "value": "colors-text-tertiary",
+        "alias": true
+      },
+      "group": "inputs/text",
+      "collection": "semantic-tokens",
+      "name": "inputs-text-placeholder",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-text-primary",
+      "darkMode": {
+        "value": "colors-text-primary",
+        "alias": true
+      },
+      "group": "inputs/text",
+      "collection": "semantic-tokens",
+      "name": "inputs-text-filled",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-1000",
+        "alias": true
+      },
+      "group": "accordion/content",
+      "collection": "semantic-tokens",
+      "name": "accordion-content-background",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "accordion/content",
+      "collection": "semantic-tokens",
+      "name": "accordion-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "accordion/content",
+      "collection": "semantic-tokens",
+      "name": "accordion-content-padding-y",
+      "type": "FLOAT"
     }
   ],
   "typography": [
