@@ -10,11 +10,11 @@
   --#{constants.$veera-prefix}-container-px: 8px;
 
   @include media.breakpoint-up('md') {
-    --#{constants.$veera-prefix}-container-g: 24px;
     --#{constants.$veera-prefix}-container-px: 24px;
   }
 
   @include media.breakpoint-up('lg') {
+    --#{constants.$veera-prefix}-container-g: 24px;
     --#{constants.$veera-prefix}-container-px: 32px;
   }
 
