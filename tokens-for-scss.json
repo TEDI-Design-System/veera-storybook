@@ -3998,9 +3998,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-1px-border-05",
+      "value": "spacing-05",
       "darkMode": {
-        "value": "spacing-for-1px-border-05",
+        "value": "spacing-05",
         "alias": true
       },
       "group": "table cells/header/sizing",
@@ -4010,14 +4010,14 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-1px-border-04",
+      "value": "spacing-04",
       "darkMode": {
-        "value": "spacing-for-1px-border-04",
+        "value": "spacing-04",
         "alias": true
       },
       "group": "table cells/header/sizing",
       "collection": "semantic-tokens",
-      "name": "table-cells-header-sizing-padding-y",
+      "name": "table-cells-header-sizing-padding-y-top",
       "type": "FLOAT"
     },
     {
@@ -4070,9 +4070,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-1px-border-05",
+      "value": "spacing-05",
       "darkMode": {
-        "value": "spacing-for-1px-border-05",
+        "value": "spacing-05",
         "alias": true
       },
       "group": "table cells/data cell/sizing",
@@ -4082,14 +4082,14 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-1px-border-04",
+      "value": "spacing-04",
       "darkMode": {
-        "value": "spacing-for-1px-border-04",
+        "value": "spacing-04",
         "alias": true
       },
       "group": "table cells/data cell/sizing",
       "collection": "semantic-tokens",
-      "name": "table-cells-data-cell-sizing-padding-y",
+      "name": "table-cells-data-cell-sizing-padding-y-top",
       "type": "FLOAT"
     },
     {
@@ -8998,9 +8998,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-1px-border-05",
+      "value": "spacing-05",
       "darkMode": {
-        "value": "spacing-for-1px-border-05",
+        "value": "spacing-05",
         "alias": true
       },
       "group": "mobile table cells/header/sizing",
@@ -9010,14 +9010,14 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-1px-border-04",
+      "value": "spacing-04",
       "darkMode": {
-        "value": "spacing-for-1px-border-04",
+        "value": "spacing-04",
         "alias": true
       },
       "group": "mobile table cells/header/sizing",
       "collection": "semantic-tokens",
-      "name": "mobile-table-cells-header-sizing-padding-y",
+      "name": "mobile-table-cells-header-sizing-padding-y-top",
       "type": "FLOAT"
     },
     {
@@ -9106,9 +9106,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-1px-border-05",
+      "value": "spacing-05",
       "darkMode": {
-        "value": "spacing-for-1px-border-05",
+        "value": "spacing-05",
         "alias": true
       },
       "group": "mobile table cells/data cell/sizing",
@@ -9118,14 +9118,14 @@
     },
     {
       "alias": true,
-      "value": "spacing-for-1px-border-04",
+      "value": "spacing-04",
       "darkMode": {
-        "value": "spacing-for-1px-border-04",
+        "value": "spacing-04",
         "alias": true
       },
       "group": "mobile table cells/data cell/sizing",
       "collection": "semantic-tokens",
-      "name": "mobile-table-cells-data-cell-sizing-padding-y",
+      "name": "mobile-table-cells-data-cell-sizing-padding-y-top",
       "type": "FLOAT"
     },
     {
@@ -9222,6 +9222,102 @@
       "group": "table cells/data cell/sizing",
       "collection": "semantic-tokens",
       "name": "table-cells-data-cell-sizing-padding-indent-lvl3",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "table cells/data cell/sizing",
+      "collection": "semantic-tokens",
+      "name": "table-cells-data-cell-sizing-inner-padding",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-03",
+      "darkMode": {
+        "value": "spacing-03",
+        "alias": true
+      },
+      "group": "table cells/header/sizing",
+      "collection": "semantic-tokens",
+      "name": "table-cells-header-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "mobile table cells/header/sizing",
+      "collection": "semantic-tokens",
+      "name": "mobile-table-cells-header-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-04",
+      "darkMode": {
+        "value": "spacing-for-1px-border-04",
+        "alias": true
+      },
+      "group": "table cells/header/sizing",
+      "collection": "semantic-tokens",
+      "name": "table-cells-header-sizing-padding-y-bottom",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-04",
+      "darkMode": {
+        "value": "spacing-for-1px-border-04",
+        "alias": true
+      },
+      "group": "table cells/data cell/sizing",
+      "collection": "semantic-tokens",
+      "name": "table-cells-data-cell-sizing-padding-y-bottom",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-04",
+      "darkMode": {
+        "value": "spacing-for-1px-border-04",
+        "alias": true
+      },
+      "group": "mobile table cells/data cell/sizing",
+      "collection": "semantic-tokens",
+      "name": "mobile-table-cells-data-cell-sizing-padding-y-bottom",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-05",
+      "darkMode": {
+        "value": "spacing-05",
+        "alias": true
+      },
+      "group": "mobile table cells/data cell/sizing",
+      "collection": "semantic-tokens",
+      "name": "mobile-table-cells-data-cell-sizing-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-for-1px-border-04",
+      "darkMode": {
+        "value": "spacing-for-1px-border-04",
+        "alias": true
+      },
+      "group": "mobile table cells/header/sizing",
+      "collection": "semantic-tokens",
+      "name": "mobile-table-cells-header-sizing-padding-y-bottom",
       "type": "FLOAT"
     }
   ],
