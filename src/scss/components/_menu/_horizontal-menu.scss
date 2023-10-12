@@ -59,26 +59,19 @@ $prefix: constants.$veera-prefix;
 
   &__panel {
     position: absolute;
-    top: 100%;
     box-sizing: border-box;
+    top: 100%;
+    left: 0;
     width: 100%;
-    max-width: 1000px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 40px;
-    display: flex;
-    gap: 24px;
+    padding: var(--#{$prefix}-navigation-horizontal-horizontal-sub-menu-sizing-padding-y-panel)
+      var(--#{$prefix}-navigation-horizontal-horizontal-sub-menu-sizing-padding-x-panel);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    gap: var(--#{$prefix}-navigation-horizontal-horizontal-sub-menu-sizing-inner-spacing-panel);
     background: var(--#{$prefix}-navigation-horizontal-horizontal-sub-menu-background-panel-level2);
   }
 
-  &__submenu-column {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
   &__submenu-block {
-    max-width: 212px;
     display: flex;
     flex-direction: column;
 
