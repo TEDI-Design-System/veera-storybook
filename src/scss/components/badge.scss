@@ -13,6 +13,7 @@ $prefix: constants.$veera-prefix;
   @include text-styles.body-small;
 
   display: inline-flex;
+  align-items: center;
   border: 2px solid var(--#{$prefix}-badges-border-neutral);
   border-radius: var(--#{$prefix}-badges-sizing-corner-radius);
   padding: var(--#{$prefix}-badges-sizing-padding-y) var(--#{$prefix}-badges-sizing-padding-x);
@@ -24,9 +25,9 @@ $prefix: constants.$veera-prefix;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
-    flex-grow: 0;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
     flex-shrink: 0;
   }
 

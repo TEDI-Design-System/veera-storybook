@@ -18,7 +18,9 @@ const createBadgeIcon = (variant: BadgeVariant) => {
     error: 'close',
     neutral: 'label',
   };
-  return createIcon({ name: iconName[variant], outlined: true });
+  const icon = createIcon({ name: iconName[variant], outlined: true });
+  icon.classList.add('v-badge__icon');
+  return icon;
 };
 
 export const createBadge = ({ variant = 'info', hasIcon = true }: BadgeStoryProps) => {
@@ -27,11 +29,7 @@ export const createBadge = ({ variant = 'info', hasIcon = true }: BadgeStoryProp
   const text = document.createElement('span');
   text.innerHTML = variant.charAt(0).toUpperCase() + variant.slice(1);
   if (hasIcon) {
-    const icon = document.createElement('div');
-    icon.className = 'v-badge__icon';
-    icon.setAttribute('aria-hidden', 'true');
-    icon.appendChild(createBadgeIcon(variant));
-    badge.appendChild(icon);
+    badge.appendChild(createBadgeIcon(variant));
   }
   badge.appendChild(text);
 
