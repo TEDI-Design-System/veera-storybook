@@ -13,6 +13,13 @@ const meta = {
       },
     },
   },
+  argTypes: {
+    size: {
+      control: { type: 'select' },
+      options: ['sm', 'md', 'lg', 'fluid'],
+      defaultValue: 'md',
+    },
+  },
 } satisfies Meta<ModalStoryProps>;
 
 export default meta;
@@ -24,5 +31,11 @@ export const Modal: StoryObj<ModalStoryProps> = {
       options: ['sm', 'md', 'lg', 'fluid'],
       defaultValue: 'md',
     },
+  },
+};
+
+export const Scrollable: StoryObj<ModalStoryProps> = {
+  args: {
+    scrollable: true,
   },
 };
