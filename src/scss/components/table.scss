@@ -40,7 +40,9 @@ $prefix: constants.$veera-prefix;
   th {
     background: var(--#{$prefix}-table-cells-header-background-default);
     color: var(--#{$prefix}-table-cells-header-text-default);
-    padding: var(--#{$prefix}-table-cells-header-sizing-padding-y)
+    padding: var(--#{$prefix}-table-cells-header-sizing-padding-y-top)
+      var(--#{$prefix}-table-cells-header-sizing-padding-x)
+      var(--#{$prefix}-table-cells-header-sizing-padding-y-bottom)
       var(--#{$prefix}-table-cells-header-sizing-padding-x);
 
     &.active {
@@ -53,7 +55,9 @@ $prefix: constants.$veera-prefix;
     border-bottom: 1px solid var(--#{$prefix}-table-cells-data-cell-border-default);
     background: var(--#{$prefix}-table-cells-data-cell-background-default);
     color: var(--#{$prefix}-table-cells-data-cell-text-default);
-    padding: var(--#{$prefix}-table-cells-data-cell-sizing-padding-y)
+    padding: var(--#{$prefix}-table-cells-data-cell-sizing-padding-y-top)
+      var(--#{$prefix}-table-cells-data-cell-sizing-padding-x)
+      var(--#{$prefix}-table-cells-data-cell-sizing-padding-y-bottom)
       var(--#{$prefix}-table-cells-data-cell-sizing-padding-x);
   }
 
