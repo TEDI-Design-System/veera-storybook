@@ -54,10 +54,14 @@ $margin-classes: 'm', 'my', 'mx', 'ml', 'mr', 'mt', 'mb';
     .#{constants.$veera-prefix}-#{$class-prefix}-#{$spacing} {
       @if type-of($properties) == 'list' {
         @each $property in $properties {
-          #{$property}: var(--#{constants.$veera-prefix}-spacing-#{helpers.pad-number($spacing)});
+          #{$property}: var(
+            --#{constants.$veera-prefix}-spacing-baseline-#{helpers.pad-number($spacing)}
+          );
         }
       } @else {
-        #{$properties}: var(--#{constants.$veera-prefix}-spacing-#{helpers.pad-number($spacing)});
+        #{$properties}: var(
+          --#{constants.$veera-prefix}-spacing-baseline-#{helpers.pad-number($spacing)}
+        );
       }
     }
   }

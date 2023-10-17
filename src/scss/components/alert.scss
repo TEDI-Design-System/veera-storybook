@@ -34,7 +34,7 @@ $prefix: constants.$veera-prefix;
   &__header {
     display: flex;
     align-items: flex-start;
-    gap: var(--#{$prefix}-spacing-03);
+    gap: var(--#{$prefix}-spacing-baseline-03);
     padding-right: 24px;
   }
 
