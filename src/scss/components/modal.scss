@@ -43,7 +43,7 @@ $prefix: constants.$veera-prefix;
   &__footer {
     display: flex;
     justify-content: flex-end;
-    gap: var(--#{$prefix}-spacing-05);
+    gap: var(--#{$prefix}-spacing-baseline-05);
   }
 
   &--sm {
