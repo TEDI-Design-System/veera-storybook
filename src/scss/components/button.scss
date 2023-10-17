@@ -8,6 +8,10 @@ $prefix: constants.$veera-prefix;
 @mixin base-size-styles($self) {
   @include button-styles.medium;
 
+  &#{ $self }--neutral {
+    @include button-styles.medium-neutral;
+  }
+
   &#{ $self }--icon-only {
     @include button-styles.medium-icon-only;
   }
@@ -48,6 +52,10 @@ $prefix: constants.$veera-prefix;
   &--sm {
     @include button-styles.small;
 
+    &#{ $self }--neutral {
+      @include button-styles.small-neutral;
+    }
+
     &#{ $self }--icon-only {
       @include button-styles.small-icon-only;
     }
@@ -63,6 +71,10 @@ $prefix: constants.$veera-prefix;
 
   &--lg {
     @include button-styles.large;
+
+    &#{ $self }--neutral {
+      @include button-styles.large-neutral;
+    }
 
     &#{ $self }--icon-only {
       @include button-styles.large-icon-only;

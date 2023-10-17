@@ -107,3 +107,21 @@ $prefix: constants.$veera-prefix;
 @mixin large {
   @include size-props('lg');
 }
+
+@mixin neutral-size-props($size) {
+  padding: var(--#{$prefix}-buttons-sizing-#{$size}-neutral-button-padding-y)
+    var(--#{$prefix}-buttons-sizing-#{$size}-neutral-button-padding-x);
+  border-radius: var(--#{$prefix}-buttons-sizing-#{$size}-neutral-button-corner-radius);
+}
+
+@mixin small-neutral {
+  @include neutral-size-props('sm');
+}
+
+@mixin medium-neutral {
+  @include neutral-size-props('md');
+}
+
+@mixin large-neutral {
+  @include neutral-size-props('lg');
+}
