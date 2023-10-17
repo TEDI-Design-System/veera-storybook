@@ -14,6 +14,7 @@ $prefix: constants.$veera-prefix;
 
   @include base-sizing;
 
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--#{$prefix}-modals-sizing-inner-spacing);
@@ -32,10 +33,6 @@ $prefix: constants.$veera-prefix;
   &__header {
     display: flex;
     align-items: flex-start;
-
-    .v-close-button {
-      margin-left: auto;
-    }
   }
 
   &__body {}
@@ -70,5 +67,11 @@ $prefix: constants.$veera-prefix;
     #{ $self }__body {
       overflow: auto;
     }
+  }
+
+  .#{$prefix}-close-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
   }
 }
