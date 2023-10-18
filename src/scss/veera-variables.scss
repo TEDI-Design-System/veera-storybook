@@ -680,10 +680,10 @@
   --v-navigation-horizontal-background-focus: var(--v-colors-blue-blue-600);
   --v-navigation-horizontal-background-bar: var(--v-colors-blue-blue-600);
   --v-progress-bar-range-label-text: var(--v-colors-text-tertiary);
-  --v-progress-bar-passive-track-background-default: var(--v-colors-neutral-neutral-200);
+  --v-progress-bar-passive-track-background: var(--v-colors-neutral-neutral-200);
   --v-progress-bar-sizing-corner-radius: var(--v-radius-01);
   --v-progress-bar-sizing-group-inner-spacing: var(--v-spacing-baseline-04);
-  --v-progress-bar-active-track-background-default: var(--v-colors-blue-blue-600);
+  --v-progress-bar-active-track-default: var(--v-colors-blue-blue-600);
   --v-navigation-vertical-background-level-1-open-menu-background: var(--v-colors-surface-primary);
   --v-colors-link-hover: var(--v-colors-blue-blue-700);
   --v-colors-link-active: var(--v-colors-blue-blue-800);
@@ -721,14 +721,14 @@
   --v-navigation-horizontal-horizontal-sub-menu-border-focus: var(--v-colors-alpha-alpha-100);
   --v-radius-02: 8px;
   --v-navigation-vertical-background-level-1-bar: var(--v-colors-blue-blue-600);
-  --v-header-sizing-padding-x-top-bar: var(--v-spacing-baseline-07);
-  --v-header-sizing-padding-y-top-bar: var(--v-spacing-baseline-00);
-  --v-header-sizing-corner-radius: var(--v-radius-00);
+  --v-header-sizing-tablet-and-desktop-padding-x-top-bar: var(--v-spacing-baseline-07);
+  --v-header-sizing-tablet-and-desktop-padding-y-top-bar: var(--v-spacing-baseline-00);
+  --v-header-sizing-tablet-and-desktop-corner-radius: var(--v-radius-00);
   --v-header-background-background: var(--v-colors-neutral-neutral-100);
   --v-header-border-border: var(--v-colors-neutral-neutral-300);
   --v-header-text-text: var(--v-colors-text-primary);
-  --v-header-sizing-padding-x: var(--v-spacing-baseline-07);
-  --v-header-sizing-padding-y: var(--v-spacing-baseline-06);
+  --v-header-sizing-tablet-and-desktop-padding-x: var(--v-spacing-baseline-07);
+  --v-header-sizing-tablet-and-desktop-padding-y: var(--v-spacing-baseline-06);
   --v-header-sizing-mobile-padding-x-top-bar: var(--v-spacing-baseline-06);
   --v-header-sizing-mobile-padding-x: var(--v-spacing-baseline-06);
   --v-header-sizing-mobile-padding-y-top-bar: var(--v-spacing-baseline-00);
@@ -836,7 +836,7 @@
   --v-buttons-sizing-lg-neutral-button-corner-radius: var(--v-radius-01);
   --v-buttons-sizing-md-neutral-button-corner-radius: var(--v-radius-01);
   --v-buttons-sizing-sm-neutral-button-corner-radius: var(--v-radius-01);
-  --v-buttons-sizing-sm-inner-spacing: var(--v-spacing-baseline-00);
+  --v-buttons-sizing-sm-inner-spacing: var(--v-spacing-baseline-02);
   --v-buttons-sizing-md-inner-spacing: var(--v-spacing-baseline-03);
   --v-buttons-sizing-lg-inner-spacing: var(--v-spacing-baseline-03);
   --v-spacing-baseline-01: 1px;
@@ -856,8 +856,12 @@
   --v-paging-sizing-small-padding-bottom: var(--v-spacing-baseline-04);
   --v-mobile-table-cells-data-cell-sizing-padding-indent-lvl2: var(--v-spacing-baseline-07);
   --v-content-max-width: 1416px;
+  --v-popover-sizing-width: 312px;
+  --v-progress-bar-passive-track-border: var(--v-colors-neutral-neutral-500);
   --v-box-shadow-elevation-2px: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   --v-box-shadow-elevation-4px: 0px 4px 10px 0px rgba(0, 0, 0, 0.14);
   --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #337bb5;
   --v-box-shadow-focus-ring-inset: 0px 0px 0px 2px #337bb5 inset, 0px 0px 0px 4px #ffffff inset;
+  --v-box-shadow-sticky-right: 4px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  --v-box-shadow-sticky-left: -4px 0px 4px 0px rgba(0, 0, 0, 0.1);
 }

@@ -7719,9 +7719,9 @@
         "value": "colors-neutral-neutral-900",
         "alias": true
       },
-      "group": "progress bar/passive track background",
+      "group": "progress bar/passive track",
       "collection": "semantic-tokens",
-      "name": "progress-bar-passive-track-background-default",
+      "name": "progress-bar-passive-track-background",
       "type": "COLOR"
     },
     {
@@ -7755,9 +7755,9 @@
         "value": "colors-blue-blue-400",
         "alias": true
       },
-      "group": "progress bar/active track background",
+      "group": "progress bar/active track",
       "collection": "semantic-tokens",
-      "name": "progress-bar-active-track-background-default",
+      "name": "progress-bar-active-track-default",
       "type": "COLOR"
     },
     {
@@ -8135,9 +8135,9 @@
         "value": "spacing-baseline-07",
         "alias": true
       },
-      "group": "header/sizing",
+      "group": "header/sizing/tablet and desktop",
       "collection": "semantic-tokens",
-      "name": "header-sizing-padding-x-top-bar",
+      "name": "header-sizing-tablet-and-desktop-padding-x-top-bar",
       "type": "FLOAT"
     },
     {
@@ -8147,9 +8147,9 @@
         "value": "spacing-baseline-00",
         "alias": true
       },
-      "group": "header/sizing",
+      "group": "header/sizing/tablet and desktop",
       "collection": "semantic-tokens",
-      "name": "header-sizing-padding-y-top-bar",
+      "name": "header-sizing-tablet-and-desktop-padding-y-top-bar",
       "type": "FLOAT"
     },
     {
@@ -8159,9 +8159,9 @@
         "value": "radius-00",
         "alias": true
       },
-      "group": "header/sizing",
+      "group": "header/sizing/tablet and desktop",
       "collection": "semantic-tokens",
-      "name": "header-sizing-corner-radius",
+      "name": "header-sizing-tablet-and-desktop-corner-radius",
       "type": "FLOAT"
     },
     {
@@ -8207,9 +8207,9 @@
         "value": "spacing-baseline-07",
         "alias": true
       },
-      "group": "header/sizing",
+      "group": "header/sizing/tablet and desktop",
       "collection": "semantic-tokens",
-      "name": "header-sizing-padding-x",
+      "name": "header-sizing-tablet-and-desktop-padding-x",
       "type": "FLOAT"
     },
     {
@@ -8219,9 +8219,9 @@
         "value": "spacing-baseline-06",
         "alias": true
       },
-      "group": "header/sizing",
+      "group": "header/sizing/tablet and desktop",
       "collection": "semantic-tokens",
-      "name": "header-sizing-padding-y",
+      "name": "header-sizing-tablet-and-desktop-padding-y",
       "type": "FLOAT"
     },
     {
@@ -8231,7 +8231,7 @@
         "value": "spacing-baseline-06",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-padding-x-top-bar",
       "type": "FLOAT"
@@ -8243,7 +8243,7 @@
         "value": "spacing-baseline-06",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-padding-x",
       "type": "FLOAT"
@@ -8255,7 +8255,7 @@
         "value": "spacing-baseline-00",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-padding-y-top-bar",
       "type": "FLOAT"
@@ -8267,7 +8267,7 @@
         "value": "spacing-baseline-04",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-padding-y",
       "type": "FLOAT"
@@ -8279,7 +8279,7 @@
         "value": "radius-00",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-corner-radius",
       "type": "FLOAT"
@@ -8291,7 +8291,7 @@
         "value": "spacing-baseline-00",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-inner-spacing-top-bar",
       "type": "FLOAT"
@@ -8303,7 +8303,7 @@
         "value": "spacing-baseline-06",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-padding-x-search",
       "type": "FLOAT"
@@ -8315,7 +8315,7 @@
         "value": "spacing-baseline-06",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-padding-y-search",
       "type": "FLOAT"
@@ -8327,7 +8327,7 @@
         "value": "spacing-baseline-06",
         "alias": true
       },
-      "group": "header/sizing mobile",
+      "group": "header/sizing/mobile",
       "collection": "semantic-tokens",
       "name": "header-sizing-mobile-inner-spacing-search",
       "type": "FLOAT"
@@ -9430,7 +9430,7 @@
     },
     {
       "alias": true,
-      "value": "spacing-baseline-00",
+      "value": "spacing-baseline-02",
       "darkMode": {
         "value": "spacing-baseline-00",
         "alias": true
@@ -9635,6 +9635,30 @@
       "collection": "semantic-tokens",
       "name": "content-max-width",
       "type": "FLOAT"
+    },
+    {
+      "alias": false,
+      "value": "312px",
+      "darkMode": {
+        "value": "312px",
+        "alias": false
+      },
+      "group": "popover/sizing",
+      "collection": "semantic-tokens",
+      "name": "popover-sizing-width",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-500",
+      "darkMode": {
+        "value": "colors-neutral-neutral-600",
+        "alias": true
+      },
+      "group": "progress bar/passive track",
+      "collection": "semantic-tokens",
+      "name": "progress-bar-passive-track-border",
+      "type": "COLOR"
     }
   ],
   "typography": [
@@ -9692,7 +9716,7 @@
       "font-size": "2.25rem",
       "font-weight": 300,
       "text-decoration": "none",
-      "line-height": "125%"
+      "line-height": "133%"
     },
     {
       "name": "headings-small-h1",
@@ -9748,7 +9772,7 @@
       "font-size": "1.875rem",
       "font-weight": 300,
       "text-decoration": "none",
-      "line-height": "133%"
+      "line-height": "132%"
     },
     {
       "name": "links-medium",
@@ -9863,6 +9887,22 @@
     {
       "name": "focus-ring-inset-dark-mode",
       "value": "0px 0px 0px 2px #131317 inset, 0px 0px 0px 4px #669cc8 inset"
+    },
+    {
+      "name": "sticky-right",
+      "value": "4px 0px 4px 0px rgba(0, 0, 0, 0.1000)"
+    },
+    {
+      "name": "sticky-right-dark-mode",
+      "value": "4px 0px 4px 0px rgba(255, 255, 255, 0.1000)"
+    },
+    {
+      "name": "sticky-left",
+      "value": "-4px 0px 4px 0px rgba(0, 0, 0, 0.1000)"
+    },
+    {
+      "name": "sticky-left-dark-mode",
+      "value": "-4px 0px 4px 0px rgba(255, 255, 255, 0.1000)"
     }
   ]
 }
