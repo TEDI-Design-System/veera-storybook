@@ -21,8 +21,9 @@ $prefix: constants.$veera-prefix;
   outline: none;
   margin: 0;
   position: relative;
-  width: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-medium);
-  height: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-medium);
+  width: var(--#{$prefix}-checkboxes-radios-sizing-medium-input-width-height);
+  height: var(--#{$prefix}-checkboxes-radios-sizing-medium-input-width-height);
+  margin-top: var(--#{$prefix}-checkboxes-radios-sizing-medium-input-container-padding-top);
   border-radius: 50%;
   border: 1px solid var(--#{$prefix}-checkboxes-radios-border-default);
   background: var(--#{$prefix}-checkboxes-radios-background-default);
@@ -60,8 +61,9 @@ $prefix: constants.$veera-prefix;
 }
 
 @mixin small-input-overrides {
-  width: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-small);
-  height: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-small);
+  width: var(--#{$prefix}-checkboxes-radios-sizing-small-input-width-height);
+  height: var(--#{$prefix}-checkboxes-radios-sizing-small-input-width-height);
+  margin-top: var(--#{$prefix}-checkboxes-radios-sizing-small-input-container-padding-top);
 
   &:is(:checked, :active)::after {
     transform: translate(-50%, -50%) scale(0.6);
@@ -69,8 +71,9 @@ $prefix: constants.$veera-prefix;
 }
 
 @mixin large-input-overrides {
-  width: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-large);
-  height: var(--#{$prefix}-checkboxes-radios-sizing-input-width-height-large);
+  width: var(--#{$prefix}-checkboxes-radios-sizing-large-input-width-height);
+  height: var(--#{$prefix}-checkboxes-radios-sizing-large-input-width-height);
+  margin-top: var(--#{$prefix}-checkboxes-radios-sizing-large-input-container-padding-top);
 
   &:is(:checked, :active)::after {
     transform: translate(-50%, -50%) scale(1.4);
@@ -79,7 +82,7 @@ $prefix: constants.$veera-prefix;
 
 :not(input[type='radio']).#{$prefix}-radio {
   display: inline-flex;
-  align-items: center;
+  align-items: start;
   gap: var(--#{$prefix}-checkboxes-radios-sizing-inner-spacing);
 
   input {
@@ -147,11 +150,17 @@ $prefix: constants.$veera-prefix;
 input[type='radio'].#{$prefix}-radio {
   @include input-styles;
 
+  margin-top: 0;
+
   &--sm {
     @include small-input-overrides;
+
+    margin-top: 0;
   }
 
   &--lg {
     @include large-input-overrides;
+
+    margin-top: 0;
   }
 }
