@@ -6,7 +6,7 @@ import { addons } from '@storybook/addons';
 import { GLOBALS_UPDATED } from '@storybook/core-events';
 
 const LIGHT_BG = '#FFF';
-const DARK_BG = '#202128';
+const DARK_BG = '#131317';
 
 const preview: Preview = {
   parameters: {
