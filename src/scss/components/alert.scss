@@ -46,6 +46,10 @@ $prefix: constants.$veera-prefix;
 
   &__body {
     @include text-styles.body-small;
+
+    a {
+      color: inherit;
+    }
   }
 
   &--info {
