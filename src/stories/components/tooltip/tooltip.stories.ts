@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/html';
-import { TooltipStoryProps, createSimpleTooltip, createTooltip } from './tooltip';
+import { TooltipStoryProps, createSimpleTooltip, createTooltipStory } from './tooltip';
 
 const meta = {
   title: 'components/tooltip',
   tags: ['autodocs'],
-  render: createTooltip,
+  render: createTooltipStory,
 } satisfies Meta<TooltipStoryProps>;
 
 export default meta;

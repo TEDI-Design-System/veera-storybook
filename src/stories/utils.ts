@@ -1,5 +1,6 @@
 import { createButton } from './components/button/button';
 import logo from './assets/logo.svg';
+import { createPopper } from '@popperjs/core';
 
 export type NumericRange<
   START extends number,
@@ -101,4 +102,63 @@ export const createLogo = () => {
   img.src = logo;
   img.alt = 'logo';
   return img;
+};
+
+export const createTooltip = ({
+  triggerElement,
+  text,
+  placement,
+}: {
+  triggerElement: HTMLElement;
+  text: string;
+  placement?: 'top' | 'bottom' | 'left' | 'right';
+}) => {
+  const tooltip = document.createElement('div');
+  tooltip.className = 'v-tooltip';
+  tooltip.innerText = text;
+
+  const popperInstance = createPopper(triggerElement, tooltip, {
+    placement,
+    modifiers: [
+      {
+        name: 'offset',
+        options: {
+          offset: [0, 4],
+        },
+      },
+    ],
+  });
+
+  function show() {
+    tooltip.classList.add('v-tooltip--visible');
+
+    popperInstance.setOptions((options) => ({
+      ...options,
+      modifiers: [...(options.modifiers ?? []), { name: 'eventListeners', enabled: true }],
+    }));
+
+    popperInstance.update();
+  }
+
+  function hide() {
+    tooltip.classList.remove('v-tooltip--visible');
+
+    popperInstance.setOptions((options) => ({
+      ...options,
+      modifiers: [...(options.modifiers ?? []), { name: 'eventListeners', enabled: false }],
+    }));
+  }
+
+  const showEvents = ['mouseenter', 'focus'];
+  const hideEvents = ['mouseleave', 'blur'];
+
+  showEvents.forEach((event) => {
+    triggerElement.addEventListener(event, show);
+  });
+
+  hideEvents.forEach((event) => {
+    triggerElement.addEventListener(event, hide);
+  });
+
+  return tooltip;
 };
