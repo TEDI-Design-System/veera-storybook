@@ -21,7 +21,7 @@ export const createProgress = ({ value = 30, small }: ProgressStoryProps) => {
   endLabel.className = 'v-progress__end-label';
 
   const wrapper = document.createElement('div');
-  wrapper.className = 'v-flex v-gap-3 v-align-items-center';
+  wrapper.className = 'v-flex v-gap-4 v-align-items-center';
   wrapper.appendChild(progress);
   wrapper.appendChild(endLabel);
 
