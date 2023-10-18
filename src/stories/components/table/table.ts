@@ -4,7 +4,6 @@ import { bodyCells, head, nestedHead } from './table.data';
 
 export interface TableStoryProps {
   bordered: boolean;
-  outlined: boolean;
   interactive: boolean;
   fixed: boolean;
   sticky: boolean;
@@ -44,7 +43,7 @@ const createTableHead = ({
           th.classList.add('v-table-cell--sticky', 'v-table-cell--right-shadow');
           th.style.left = '0';
         }
-        if (i === 4) {
+        if (i === (nested ? 4 : 5)) {
           th.classList.add('v-table-cell--sticky', 'v-table-cell--left-shadow');
           th.style.right = '0';
         }
@@ -104,7 +103,6 @@ const createTableBody = ({ interactive, sticky }: { interactive: boolean; sticky
 
 export const createTable = ({
   bordered,
-  outlined,
   interactive,
   fixed,
   sticky,
@@ -113,7 +111,6 @@ export const createTable = ({
   const table = document.createElement('table');
   table.className = clsx('v-table', {
     'v-table--bordered': bordered,
-    'v-table--outlined': outlined,
     'v-table--fixed': fixed,
   });
   table.appendChild(createTableHead({ sticky, nestedHead }));
@@ -125,9 +122,13 @@ export const createTable = ({
 export const createScrollableTable = (props: TableStoryProps) => {
   const table = createTable(props);
 
+  const tableWrapper = document.createElement('div');
+  tableWrapper.className = 'v-table-wrapper';
+
   const tableScroll = document.createElement('div');
   tableScroll.className = 'v-table-scroll';
   tableScroll.appendChild(table);
+  tableWrapper.appendChild(tableScroll);
 
-  return tableScroll;
+  return tableWrapper;
 };

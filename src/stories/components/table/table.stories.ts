@@ -11,8 +11,6 @@ export default meta;
 
 export const Table: StoryObj<TableStoryProps> = {
   args: {
-    bordered: false,
-    outlined: false,
     interactive: false,
     fixed: false,
     nestedHead: false,

@@ -105,11 +105,6 @@ $prefix: constants.$veera-prefix;
     }
   }
 
-  &--outlined {
-    border-radius: 4px;
-    outline: 1px solid var(--#{$prefix}-colors-borders);
-  }
-
   &-cell {
     &--sticky {
       position: sticky;
@@ -117,11 +112,11 @@ $prefix: constants.$veera-prefix;
     }
 
     &--left-shadow {
-      box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: var(--#{$prefix}-box-shadow-sticky-left);
     }
 
     &--right-shadow {
-      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: var(--#{$prefix}-box-shadow-sticky-right);
     }
   }
 
@@ -153,6 +148,19 @@ $prefix: constants.$veera-prefix;
   &-scroll {
     overflow-x: auto;
     border-radius: 4px;
-    border: 1px solid var(--#{$prefix}-table-cells-header-border-border);
+  }
+
+  &-wrapper {
+    position: relative;
+
+    &::after {
+      pointer-events: none;
+      content: '';
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      border-radius: 4px;
+      border: 1px solid var(--#{$prefix}-table-cells-header-border-border);
+    }
   }
 }
