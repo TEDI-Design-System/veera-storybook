@@ -10,9 +10,13 @@ export interface ModalStoryProps {
   scrollable?: boolean;
 }
 
+const titleElementId = 'modal-title';
+
 const createModalContainer = ({ size, scrollable }: ModalStoryProps) => {
   const container = document.createElement('div');
   container.className = clsx('v-modal', `v-modal--${size}`, { 'v-modal--scrollable': scrollable });
+  container.role = 'alertdialog';
+  container.setAttribute('aria-labelledby', titleElementId);
   return container;
 };
 
@@ -20,7 +24,7 @@ const createModalHeader = () => {
   const header = document.createElement('div');
   header.className = 'v-modal__header';
   header.appendChild(createTitle());
-  header.appendChild(createCloseButton());
+  header.appendChild(createCloseButton('Sulge modaalaken'));
   return header;
 };
 
@@ -45,6 +49,7 @@ const createTitle = () => {
   const title = document.createElement('h4');
   title.className = 'v-modal__title';
   title.textContent = 'Modal title';
+  title.id = titleElementId;
   return title;
 };
 
