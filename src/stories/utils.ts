@@ -117,6 +117,7 @@ export const createTooltip = ({
   const tooltip = document.createElement('div');
   tooltip.className = 'v-tooltip';
   tooltip.innerText = text;
+  tooltip.role = 'tooltip';
 
   const popperInstance = createPopper(triggerElement, tooltip, {
     placement,
