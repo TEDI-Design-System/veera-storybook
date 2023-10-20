@@ -12,6 +12,7 @@ export interface ButtonProps {
   floating?: boolean;
   leftIcon?: string;
   rightIcon?: string;
+  fullWidth?: boolean;
 }
 export const createButton = ({
   label,
@@ -22,6 +23,7 @@ export const createButton = ({
   floating,
   leftIcon,
   rightIcon,
+  fullWidth,
 }: ButtonProps) => {
   const btn = document.createElement('button');
   btn.type = 'button';
@@ -36,6 +38,7 @@ export const createButton = ({
   btn.className = clsx('v-button', `v-button--${variant}`, `v-button--${size}`, {
     'v-button--icon-only': iconOnly,
     'v-button--floating': floating,
+    'v-button--full-width': fullWidth,
     'material-icons': iconOnly,
   });
   btn.disabled = !!disabled;

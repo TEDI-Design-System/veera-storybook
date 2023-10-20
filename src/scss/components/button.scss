@@ -88,6 +88,10 @@ $prefix: constants.$veera-prefix;
   &--floating {
     box-shadow: var(--#{$prefix}-box-shadow-elevation-4px);
   }
+
+  &--full-width {
+    width: 100%;
+  }
 }
 
 @mixin x-icon {

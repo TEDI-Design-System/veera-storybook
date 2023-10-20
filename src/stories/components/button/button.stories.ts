@@ -69,3 +69,11 @@ export const IconOnly: Story = {
     label: 'forest',
   },
 };
+
+export const FullWidth: Story = {
+  args: {
+    variant: 'primary',
+    label: 'Full width',
+    fullWidth: true,
+  },
+};
