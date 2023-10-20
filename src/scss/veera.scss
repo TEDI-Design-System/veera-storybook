@@ -7,6 +7,9 @@
 @use './utilities/grid.scss';
 @use './utilities/colors.scss';
 
+// TYPOGRAPHY
+@use './typography.scss';
+
 // COMPONENTS
 @use './components/button.scss';
 @use './components/tag.scss';
