@@ -480,10 +480,42 @@
   color: var(--v-colors-neutral-neutral-100);
 }
 
-.v-bg-alpha-10 {
-  background: var(--v-colors-alpha-alpha-10);
+.v-bg-alpha-100 {
+  background: var(--v-colors-alpha-alpha-100);
 }
 
-.v-color-alpha-10 {
-  color: var(--v-colors-alpha-alpha-10);
+.v-color-alpha-100 {
+  color: var(--v-colors-alpha-alpha-100);
+}
+
+.v-bg-alpha-500 {
+  background: var(--v-colors-alpha-alpha-500);
+}
+
+.v-color-alpha-500 {
+  color: var(--v-colors-alpha-alpha-500);
+}
+
+.v-bg-aplha-800 {
+  background: var(--v-colors-alpha-aplha-800);
+}
+
+.v-color-aplha-800 {
+  color: var(--v-colors-alpha-aplha-800);
+}
+
+.v-bg-surface-primary {
+  background: var(--v-colors-surface-primary);
+}
+
+.v-bg-surface-secondary {
+  background: var(--v-colors-surface-secondary);
+}
+
+.v-bg-surface-tertiary {
+  background: var(--v-colors-surface-tertiary);
+}
+
+.v-bg-surface-overlay {
+  background: var(--v-colors-surface-overlay);
 }

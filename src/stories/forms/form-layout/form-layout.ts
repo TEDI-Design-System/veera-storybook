@@ -21,16 +21,20 @@ export const createFormRow = ({ inputId, label, input, helperText, required }: F
 
   const createHelperText = (text: string) => {
     const helperTextEl = document.createElement('span');
+    helperTextEl.id = Math.random().toString();
+    input.setAttribute('aria-describedby', helperTextEl.id);
     helperTextEl.className = 'v-form-feedback';
     helperTextEl.innerText = text;
     return helperTextEl;
   };
 
-  const forRowLabel = document.createElement('label');
-  forRowLabel.className = clsx('v-form-row-label', { 'v-form-row-label--required': !!required });
-  forRowLabel.setAttribute('for', inputId);
-  forRowLabel.innerText = label;
-  formRow.appendChild(forRowLabel);
+  const formRowLabel = document.createElement('label');
+  formRowLabel.className = clsx('v-form-row-label', { 'v-form-row-label--required': !!required });
+  const labelEl = document.createElement('label');
+  labelEl.setAttribute('for', inputId);
+  labelEl.innerText = label;
+  formRowLabel.appendChild(labelEl);
+  formRow.appendChild(formRowLabel);
 
   const formRowInput = document.createElement('div');
   formRowInput.className = 'v-form-row-input';
@@ -66,6 +70,7 @@ export const createFormLayout = ({ direction, width, labelWidth, gap }: FormLayo
 
   const textInput = createInputControl({ size: 'md', placeholder: 'Placeholder' });
   textInput.id = 'text-input';
+  textInput.required = true;
   const textInputRow = createFormRow({
     label: 'Text input',
     inputId: textInput.id,
@@ -78,7 +83,7 @@ export const createFormLayout = ({ direction, width, labelWidth, gap }: FormLayo
   const selectInput = createSelectControl({ size: 'md', placeholder: 'Placeholder' });
   selectInput.id = 'select-input';
   const selectInputRow = createFormRow({
-    label: 'Select input',
+    label: 'Native select input',
     inputId: selectInput.id,
     input: selectInput,
   });

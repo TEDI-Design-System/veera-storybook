@@ -1,9 +1,10 @@
 import '@scss/components/accordion.scss';
 import clsx from 'clsx';
-import { createContentFill } from '../../utils';
+import { createContentFill, createIcon } from '../../utils';
 
 export interface AccordionStoryProps {
   disabled?: boolean;
+  size: 'sm' | 'lg';
 }
 
 const createAccordionHeader = () => {
@@ -17,9 +18,8 @@ const createAccordionHeader = () => {
   accordionTitle.innerText = 'Accordion title';
   accordionHeader.appendChild(accordionTitle);
 
-  const expandIcon = document.createElement('span');
-  expandIcon.className = 'material-icons v-accordion__expand-icon';
-  expandIcon.innerText = 'expand_more';
+  const expandIcon = createIcon({ name: 'expand_more' });
+  expandIcon.classList.add('v-accordion__expand-icon');
   accordionHeader.appendChild(expandIcon);
 
   return accordionHeader;
@@ -39,11 +39,13 @@ const createAccordionContent = () => {
   return accordionCollapse;
 };
 
-export const createAccordion = ({ disabled }: AccordionStoryProps) => {
+export const createAccordion = ({ disabled, size = 'sm' }: AccordionStoryProps) => {
   let expanded = false;
 
   const accordion = document.createElement('div');
-  accordion.className = clsx('v-accordion', { 'v-accordion--disabled': disabled });
+  accordion.className = clsx('v-accordion', `v-accordion--${size}`, {
+    'v-accordion--disabled': disabled,
+  });
 
   const accordionHeader = createAccordionHeader();
   accordionHeader.disabled = !!disabled;

@@ -5,16 +5,19 @@
 @use 'sass:map';
 
 .#{constants.$veera-prefix}-container {
-  --#{constants.$veera-prefix}-container-mw: 1414px;
+  --#{constants.$veera-prefix}-container-mw: var(
+    --#{constants.$veera-prefix}-content-max-width,
+    1416px
+  );
   --#{constants.$veera-prefix}-container-g: 16px;
   --#{constants.$veera-prefix}-container-px: 8px;
 
   @include media.breakpoint-up('md') {
-    --#{constants.$veera-prefix}-container-g: 24px;
     --#{constants.$veera-prefix}-container-px: 24px;
   }
 
   @include media.breakpoint-up('lg') {
+    --#{constants.$veera-prefix}-container-g: 24px;
     --#{constants.$veera-prefix}-container-px: 32px;
   }
 

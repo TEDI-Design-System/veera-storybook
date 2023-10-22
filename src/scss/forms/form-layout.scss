@@ -9,12 +9,13 @@ $prefix: constants.$veera-prefix;
   align-items: start;
   .#{$prefix}-form-row-label {
     width: auto;
+    text-align: left;
   }
 }
 
 .#{$prefix}-form-group {
   --#{$prefix}-form-width: 877px;
-  --#{$prefix}-form-gap: var(--#{$prefix}-spacing-06, 24px);
+  --#{$prefix}-form-gap: var(--#{$prefix}-spacing-baseline-06, 24px);
   --#{$prefix}-form-label-width: 362px;
 
   display: flex;
@@ -48,16 +49,9 @@ $prefix: constants.$veera-prefix;
   flex-shrink: 0;
   width: var(--#{$prefix}-form-row-label-width);
 
-  &--required {
-    position: relative;
-    padding-right: 10px;
-
-    &::after {
-      content: '*';
-      position: absolute;
-      right: 0;
-      color: var(--#{$prefix}-colors-error-border);
-    }
+  &--required::after {
+    content: '*';
+    color: var(--#{$prefix}-inputs-feedback-error);
   }
 }
 

@@ -1,5 +1,6 @@
 import '@scss/forms/forms.scss';
 import clsx from 'clsx';
+import { createIcon } from '../../utils';
 
 const createAttachment = (file: UploadFile, onRemove: (id: string) => void) => {
   const attachment = document.createElement('div');
@@ -15,15 +16,15 @@ const createAttachment = (file: UploadFile, onRemove: (id: string) => void) => {
   attachment.appendChild(attachmentName);
 
   if (error) {
-    const errorIcon = document.createElement('span');
-    errorIcon.className = 'material-icons-outlined v-file-upload__attachment__error-icon';
-    errorIcon.innerText = 'error_outline';
+    const errorIcon = createIcon({ name: 'error_outline', outlined: true });
+    errorIcon.classList.add('v-file-upload__attachment__error-icon');
     attachment.appendChild(errorIcon);
   }
 
   const removeBtn = document.createElement('button');
   removeBtn.className = 'material-icons v-file-upload__attachment__remove-btn';
   removeBtn.innerText = 'close';
+  removeBtn.setAttribute('aria-label', `Kustuta fail ${attachmentName}`);
   removeBtn.onclick = () => onRemove(file.id);
   attachment.appendChild(removeBtn);
 
@@ -52,7 +53,7 @@ export const createFileUpload = ({ label, disabled, error, id }: FileUploadStory
   dropArea.className = clsx('v-file-upload__drop-area', {
     'v-file-upload__drop-area--error': error,
   });
-  dropArea.innerHTML = `<span class="material-icons v-file-upload__drop-area__attach-icon">attach_file</span>${label}`;
+  dropArea.innerHTML = `<span class="material-icons v-file-upload__drop-area__attach-icon" aria-hidden="true">attach_file</span>${label}`;
   dropArea.disabled = !!disabled;
   if (id) {
     dropArea.id = id;

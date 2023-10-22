@@ -3,13 +3,18 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin variant-colors($variant) {
+  background: var(--#{$prefix}-alerts-background-#{$variant});
+  border-color: var(--#{$prefix}-alerts-border-#{$variant});
+  color: var(--#{$prefix}-alerts-text-#{$variant});
+}
+
 @mixin base-colors {
-  background: var(--#{$prefix}-alerts-background-info);
-  border-color: var(--#{$prefix}-alerts-border-info);
-  color: var(--#{$prefix}-alerts-text-info);
+  @include variant-colors('info');
 }
 
 .#{$prefix}-alert {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--#{$prefix}-alerts-sizing-inner-spacing);
@@ -20,14 +25,17 @@ $prefix: constants.$veera-prefix;
 
   @include base-colors;
 
+  .#{$prefix}-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   &__header {
     display: flex;
     align-items: flex-start;
-    gap: var(--#{$prefix}-spacing-03);
-
-    .#{$prefix}-close-button {
-      margin-left: auto;
-    }
+    gap: var(--#{$prefix}-spacing-baseline-03);
+    padding-right: 24px;
   }
 
   &__title {
@@ -38,6 +46,10 @@ $prefix: constants.$veera-prefix;
 
   &__body {
     @include text-styles.body-small;
+
+    a {
+      color: inherit;
+    }
   }
 
   &--info {
@@ -45,20 +57,14 @@ $prefix: constants.$veera-prefix;
   }
 
   &--success {
-    background: var(--#{$prefix}-alerts-background-success);
-    border-color: var(--#{$prefix}-alerts-border-success);
-    color: var(--#{$prefix}-alerts-text-success);
+    @include variant-colors('success');
   }
 
   &--warning {
-    background: var(--#{$prefix}-alerts-background-warning);
-    border-color: var(--#{$prefix}-alerts-border-warning);
-    color: var(--#{$prefix}-alerts-text-warning);
+    @include variant-colors('warning');
   }
 
   &--error {
-    background: var(--#{$prefix}-alerts-background-error);
-    border-color: var(--#{$prefix}-alerts-border-error);
-    color: var(--#{$prefix}-alerts-text-error);
+    @include variant-colors('error');
   }
 }

@@ -7,9 +7,8 @@ $prefix: constants.$veera-prefix;
 .#{$prefix}-stepper {
   $stepper: &;
 
-  position: relative;
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
 
   &__step {
     @include text-styles.body-medium;
@@ -29,11 +28,11 @@ $prefix: constants.$veera-prefix;
     border: none;
     white-space: nowrap;
 
-    &:nth-child(1 of #{ $step }) {
+    &:first-child {
       @include borders.set-border-left-radius(4px);
     }
 
-    &:nth-last-child(1 of #{ $step }) {
+    &:last-child {
       @include borders.set-border-right-radius(4px);
     }
 
@@ -44,9 +43,8 @@ $prefix: constants.$veera-prefix;
       border-right: 0.1px solid var(--#{$prefix}-stepper-background-active); // fixes the gap between arrow on some browser zooms
 
       @include borders.set-border-right-radius(1px);
-      @include borders.set-border-left-radius(4px);
 
-      &:not(:nth-last-child(1 of #{ $step }))::after {
+      &:not(:last-child)::after {
         content: '';
         position: absolute;
         z-index: 1;

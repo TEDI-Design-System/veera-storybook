@@ -5,13 +5,18 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin state-colors($state) {
+  background: var(--#{$prefix}-tabs-background-#{$state});
+  color: var(--#{$prefix}-tabs-text-#{$state});
+  border-color: var(--#{$prefix}-tabs-border-#{$state});
+}
+
 .#{$prefix}-tabs {
   &__tab-list {
-    position: relative;
     display: flex;
     overflow-x: hidden;
     overflow-y: visible;
-    padding: 3px; // To prevent overflow cutting off tabs focus ring TODO: needs improvement
+    padding: 3px;
     margin: -3px;
   }
 
@@ -24,8 +29,8 @@ $prefix: constants.$veera-prefix;
     position: relative;
     border: 1px solid var(--#{$prefix}-tabs-border-default);
     outline: none;
-    padding: var(--#{$prefix}-tabs-sizing-padding-top) var(--#{$prefix}-tabs-sizing-padding-x)
-      var(--#{$prefix}-tabs-sizing-padding-bottom) var(--#{$prefix}-tabs-sizing-padding-x);
+    padding: var(--#{$prefix}-tabs-sizing-padding-y) var(--#{$prefix}-tabs-sizing-padding-x)
+      var(--#{$prefix}-tabs-sizing-padding-y-bottom) var(--#{$prefix}-tabs-sizing-padding-x);
     justify-content: center;
     align-items: center;
     gap: var(--#{$prefix}-tabs-sizing-inner-spacing);
@@ -36,28 +41,22 @@ $prefix: constants.$veera-prefix;
     @include focus.focus-ring;
 
     &:focus {
+      @include state-colors('focus');
+
       z-index: 1;
-      background: var(--#{$prefix}-tabs-background-focus);
-      color: var(--#{$prefix}-tabs-text-focus);
-      border-color: var(--#{$prefix}-tabs-border-focus);
     }
 
     &:hover {
-      background: var(--#{$prefix}-tabs-background-hover);
-      color: var(--#{$prefix}-tabs-text-hover);
-      border-color: var(--#{$prefix}-tabs-border-hover);
+      @include state-colors('hover');
     }
 
     &:active {
-      background: var(--#{$prefix}-tabs-background-active);
-      color: var(--#{$prefix}-tabs-text-active);
-      border-color: var(--#{$prefix}-tabs-border-active);
+      @include state-colors('active');
     }
 
     &--selected {
-      background: var(--#{$prefix}-tabs-background-selected);
-      color: var(--#{$prefix}-tabs-text-selected);
-      border-color: var(--#{$prefix}-tabs-border-selected);
+      @include state-colors('selected');
+
       font-weight: 700;
       border-bottom: none;
 
@@ -79,17 +78,16 @@ $prefix: constants.$veera-prefix;
     }
 
     &:disabled {
+      @include state-colors('disabled');
+
       pointer-events: none;
-      background: var(--#{$prefix}-tabs-background-disabled);
-      color: var(--#{$prefix}-tabs-text-disabled);
-      border-color: var(--#{$prefix}-tabs-border-disabled);
     }
   }
 
   &__content {
-    padding: var(--#{$prefix}-spacing-05); // TODO: change when semantic variables in figma
+    padding: var(--#{$prefix}-tabs-content-padding-y) var(--#{$prefix}-tabs-content-padding-x);
     border-radius: var(--#{$prefix}-radius-01);
-    border: 1px solid var(--#{$prefix}-tabs-border-active);
+    border: 1px solid var(--#{$prefix}-tabs-border-selected);
     background: var(--#{$prefix}-tabs-content-background);
   }
 

@@ -1,60 +1,78 @@
-@use "../constants";
-@use "../mixins/text-styles";
-@use "../mixins/focus";
+@use '../constants';
+@use '../mixins/text-styles';
+@use '../mixins/focus';
 
 $prefix: constants.$veera-prefix;
 
 @mixin base-sizing {
-  max-width: 500px;
+  max-width: 552px;
+  padding: var(--#{$prefix}-modals-sizing-padding-medium);
 }
 
 .#{$prefix}-modal {
   $self: &;
 
+  @include base-sizing;
+
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--#{$prefix}-modals-sizing-inner-spacing);
-  padding: var(--#{$prefix}-modals-sizing-padding-y) var(--#{$prefix}-modals-sizing-padding-x);
   border: 1px solid var(--#{$prefix}-modals-border-default);
   background: var(--#{$prefix}-modals-background-default);
   color: var(--#{$prefix}-modals-text-default);
   border-radius: var(--#{$prefix}-modals-sizing-corner-radius);
-  max-height: 80dvh;
   width: 100%;
+  box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
+
   &__title {
     @include text-styles.headings-large-h4;
+
     margin: 0;
   }
 
   &__header {
     display: flex;
     align-items: flex-start;
-
-    .v-close-button {
-      margin-left: auto;
-    }
   }
 
-  &__body {
-    overflow: auto;
-  }
+  &__body {}
 
   &__footer {
     display: flex;
     justify-content: flex-end;
-    gap: var(--#{$prefix}-spacing-05);
+    gap: var(--#{$prefix}-spacing-baseline-05);
   }
 
   &--sm {
-    max-width: 300px;
+    max-width: 312px;
+    padding: var(--#{$prefix}-modals-sizing-padding-small);
   }
+
   &--md {
     @include base-sizing;
   }
+
   &--lg {
-    max-width: 800px;
+    max-width: 840px;
+    padding: var(--#{$prefix}-modals-sizing-padding-large);
   }
+
   &--fluid {
-    width: 90%;
+    max-width: 90%;
+  }
+
+  &--scrollable {
+    max-height: 80dvh;
+
+    #{ $self }__body {
+      overflow: auto;
+    }
+  }
+
+  .#{$prefix}-close-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
   }
 }

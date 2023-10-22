@@ -8,14 +8,14 @@
   &.#{constants.$veera-prefix}-g#{$breakpoint-prefix}-#{$spacing},
   &.#{constants.$veera-prefix}-gx#{$breakpoint-prefix}-#{$spacing} {
     --#{constants.$veera-prefix}-gx: var(
-      --#{constants.$veera-prefix}-spacing-#{helpers.pad-number($spacing)}
+      --#{constants.$veera-prefix}-spacing-baseline-#{helpers.pad-number($spacing)}
     );
   }
 
   &.#{constants.$veera-prefix}-g#{$breakpoint-prefix}-#{$spacing},
   &.#{constants.$veera-prefix}-gy#{$breakpoint-prefix}-#{$spacing} {
     --#{constants.$veera-prefix}-gy: var(
-      --#{constants.$veera-prefix}-spacing-#{helpers.pad-number($spacing)}
+      --#{constants.$veera-prefix}-spacing-baseline-#{helpers.pad-number($spacing)}
     );
   }
 }

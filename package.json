@@ -1,7 +1,7 @@
 {
   "name": "e-service-design-system",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,9 +10,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "generate-scss": "node --experimental-json-modules scripts/generateScssFiles.js && npx prettier src/scss/*.scss --write",
-    "build-scss": "npm run generate-scss && npm run build"
+    "build-scss": "npm run generate-scss && npm run build",
+    "release": "node scripts/release.js"
   },
   "devDependencies": {
+    "@popperjs/core": "^2.11.8",
     "@storybook/addon-a11y": "^7.2.2",
     "@storybook/addon-essentials": "^7.4.1",
     "@storybook/addon-interactions": "^7.2.2",
@@ -40,5 +42,12 @@
     "stylelint-selector-bem-pattern": "^3.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://koodivaramu.eesti.ee/veebiraamistik/e-service-design-system.git"
+  },
+  "files": [
+    "/dist/*/**"
+  ]
 }

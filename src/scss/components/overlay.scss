@@ -6,7 +6,12 @@ $prefix: constants.$veera-prefix;
   inset: 0;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  &--modal {
+    overflow: auto;
+
+    .#{$prefix}-modal {
+      margin: 40px auto;
+    }
+  }
 }
