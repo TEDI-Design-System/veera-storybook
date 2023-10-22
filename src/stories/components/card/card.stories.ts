@@ -25,5 +25,6 @@ export const Card: Story = {
   args: {
     variant: 'primary',
     size: 'md',
+    flat: false,
   },
 };

@@ -38,4 +38,8 @@ $prefix: constants.$veera-prefix;
     padding: var(--#{$prefix}-cards-sizing-padding-large);
     border-radius: var(--#{$prefix}-cards-sizing-radius-large);
   }
+
+  &--flat {
+    box-shadow: none;
+  }
 }
