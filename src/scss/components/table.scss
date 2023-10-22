@@ -147,7 +147,8 @@ $prefix: constants.$veera-prefix;
 
   &-scroll {
     overflow-x: auto;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
 
   &-wrapper {
