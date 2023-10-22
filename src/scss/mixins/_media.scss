@@ -15,6 +15,12 @@
 }
 
 @mixin tablet-and-up {
+  @include breakpoint-up('lg') {
+    @content;
+  }
+}
+
+@mixin mobile-and-up {
   @include breakpoint-up('md') {
     @content;
   }

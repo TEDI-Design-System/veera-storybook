@@ -6,6 +6,7 @@
 $prefix: constants.$veera-prefix;
 
 .#{$prefix}-footer {
+  grid-area: footer;
   display: grid;
   grid-template-areas:
     'content'

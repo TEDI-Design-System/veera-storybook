@@ -67,11 +67,18 @@ const createMainRow = () => {
   return mainRow;
 };
 
+export const createHorizontalSeparator = () => {
+  const separator = document.createElement('div');
+  separator.className = 'v-header__hr';
+  return separator;
+};
+
 export const createHeader = () => {
   const header = document.createElement('header');
   header.className = 'v-header';
 
   header.appendChild(createTopBar());
+  header.appendChild(createHorizontalSeparator());
   header.appendChild(createMainRow());
 
   return header;

@@ -31,6 +31,7 @@ $prefix: constants.$veera-prefix;
 .#{$prefix}-side-menu {
   $self: &;
 
+  grid-area: menu;
   width: 100%;
   background: var(--#{$prefix}-navigation-vertical-background-level-1-bar);
 
