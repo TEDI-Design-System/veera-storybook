@@ -9,6 +9,10 @@ $prefix: constants.$veera-prefix;
   background: var(--#{$prefix}-navigation-vertical-background-level-#{$level}-#{$state});
   color: var(--#{$prefix}-navigation-vertical-text-#{$state});
   border-color: var(--#{$prefix}-navigation-vertical-border-level-#{$level}-#{$state});
+
+  &:visited {
+    color: var(--#{$prefix}-navigation-vertical-text-#{$state});
+  }
 }
 
 @mixin item-colors($level) {
@@ -54,8 +58,8 @@ $prefix: constants.$veera-prefix;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     height: var(--#{$prefix}-navigation-vertical-sizing-mobile-height);
-    padding: var(--#{$prefix}-navigation-vertical-sizing-mobile-padding-y-level-1)
-      var(--#{$prefix}-navigation-vertical-sizing-mobile-padding-x-level-1);
+    padding: var(--#{$prefix}-navigation-vertical-sizing-mobile-padding-y)
+      var(--#{$prefix}-navigation-vertical-sizing-mobile-padding-x);
 
     @include item-colors('1');
     @include focus.focus-ring-inset;

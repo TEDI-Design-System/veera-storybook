@@ -11,6 +11,7 @@ $prefix: constants.$veera-prefix;
   grid-template-areas:
     'content'
     'socials';
+  background: var(--#{$prefix}-footer-colors-background);
 
   &__socials {
     grid-area: socials;
