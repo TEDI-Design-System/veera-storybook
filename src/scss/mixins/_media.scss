@@ -14,6 +14,18 @@
   }
 }
 
+@mixin breakpoint-down($bp) {
+  $max: map.get(breakpoints.$breakpoints, $bp);
+
+  @if not helpers.is-zero($max) {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
 @mixin tablet-and-up {
   @include breakpoint-up('lg') {
     @content;
