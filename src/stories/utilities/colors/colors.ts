@@ -32,7 +32,9 @@ export const createBackgroundExamples = () => {
 
 export const createTextColorExamples = () => {
   const textColorTokens = colorTokens.filter(
-    (t) => t.collection === 'primitive-tokens' && !t.name.includes('alpha-100'),
+    (t) =>
+      (t.collection === 'primitive-tokens' || t.group === 'colors/text') &&
+      !t.name.includes('alpha-100'),
   );
   const textColorClasses = textColorTokens.map(
     (t) => `v-color-${t.name.split('-').slice(-2).join('-')}`,
