@@ -131,4 +131,10 @@ a,
   &.#{$prefix}-link--xs {
     @include text-styles.links-extra-small;
   }
+
+  .material-icons,
+  .material-icons-outlined {
+    font-size: inherit;
+    text-decoration: none;
+  }
 }
