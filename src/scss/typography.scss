@@ -132,8 +132,7 @@ a,
     @include text-styles.links-extra-small;
   }
 
-  .material-icons,
-  .material-icons-outlined {
+  .#{$prefix}-link-icon {
     font-size: inherit;
     text-decoration: none;
   }
