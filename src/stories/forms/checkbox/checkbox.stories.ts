@@ -2,8 +2,8 @@ import type { Meta, StoryObj } from '@storybook/html';
 import {
   CheckboxProps,
   CheckboxWithLabelProps,
-  createCheckbox,
   createCheckboxWithLabel,
+  createStandaloneCheckboxStory,
 } from './checkbox';
 
 const meta = {
@@ -31,16 +31,25 @@ export const WithLabel: StoryObj<CheckboxWithLabelProps> = {
 };
 
 export const Standalone: StoryObj<CheckboxProps> = {
-  render: createCheckbox,
+  render: createStandaloneCheckboxStory,
   args: {
     disabled: false,
   },
 };
 
 export const Indeterminate: StoryObj<CheckboxProps> = {
-  render: createCheckbox,
+  render: createStandaloneCheckboxStory,
   args: {
     disabled: false,
     indeterminate: true,
+  },
+};
+
+export const CheckedDisabled: StoryObj<CheckboxWithLabelProps> = {
+  render: createCheckboxWithLabel,
+  args: {
+    disabled: true,
+    checked: true,
+    label: 'Checked and disabled',
   },
 };

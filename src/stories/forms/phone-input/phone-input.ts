@@ -1,6 +1,9 @@
 import { FormControlStoryProps } from '../form-control/form-control';
 import '@scss/forms/forms.scss';
+import '@scss/components/icon.scss';
 import { EstonianFlag, countryOptions } from './countries';
+import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
+import { createIcon } from '../../utils';
 
 export interface PhoneInputStoryProps extends FormControlStoryProps {}
 
@@ -12,15 +15,13 @@ export const createPhoneInput = ({
   phoneInput.className = `v-phone-input v-phone-input--${size}`;
 
   const trigger = document.createElement('button');
-  trigger.className = 'v-phone-input__country-select';
+  trigger.className = 'v-form-control v-phone-input__country-select';
   trigger.setAttribute('aria-haspopup', 'listbox');
   trigger.setAttribute('aria-expanded', 'true');
   trigger.innerHTML = EstonianFlag;
   const dialCode = document.createTextNode('+372');
   trigger.appendChild(dialCode);
-  const icon = document.createElement('span');
-  icon.className = 'material-icons';
-  icon.innerText = 'arrow_drop_down';
+  const icon = createIcon({ name: 'arrow_drop_up' });
   icon.style.color = 'var(--v-inputs-icon-fill)';
   trigger.appendChild(icon);
   phoneInput.appendChild(trigger);
@@ -28,22 +29,20 @@ export const createPhoneInput = ({
   const input = document.createElement('input');
   input.type = 'text';
   input.placeholder = placeholder;
-  input.className = 'v-phone-input__input';
+  input.className = 'v-phone-input__input v-form-control';
   input.inputMode = 'tel';
   input.setAttribute('aria-label', 'telefoni number');
   phoneInput.appendChild(input);
 
-  const dropdown = document.createElement('div');
-  dropdown.setAttribute('aria-label', 'suunakood');
-  dropdown.role = 'listbox';
-  dropdown.className = 'v-dropdown';
+  const dropdown = createDropdown();
   for (const opt of countryOptions) {
-    const option = document.createElement('button');
-    option.role = 'option';
-    option.className = 'v-dropdown__option';
-    option.innerHTML = opt.flag;
-    const text = document.createTextNode(`${opt.name} (${opt.dial_code})`);
-    option.appendChild(text);
+    const template = document.createElement('template');
+    template.innerHTML = opt.flag;
+    template.content.appendChild(document.createTextNode(`${opt.name} (${opt.dial_code})`));
+    const option = createDropdownOption({
+      label: template.content,
+      selected: opt.dial_code === '+372',
+    });
     dropdown.appendChild(option);
   }
   phoneInput.appendChild(dropdown);

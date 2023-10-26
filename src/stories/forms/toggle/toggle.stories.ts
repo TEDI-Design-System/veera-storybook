@@ -1,5 +1,10 @@
 import type { StoryObj } from '@storybook/html';
-import { ToggleProps, ToggleWithLabelProps, createToggle, createToggleWithLabel } from './toggle';
+import {
+  ToggleProps,
+  ToggleWithLabelProps,
+  createStandaloneToggleStory,
+  createToggleWithLabel,
+} from './toggle';
 
 const meta = {
   title: 'forms/toggle',
@@ -17,12 +22,12 @@ const meta = {
 export default meta;
 
 export const Default: StoryObj<ToggleProps> = {
-  render: createToggle,
+  render: createStandaloneToggleStory,
   args: {},
 };
 
 export const WithCheck: StoryObj<ToggleProps> = {
-  render: createToggle,
+  render: createStandaloneToggleStory,
   args: {
     hasIcon: true,
   },
@@ -32,6 +37,15 @@ export const WithLabel: StoryObj<ToggleWithLabelProps> = {
   render: createToggleWithLabel,
   args: {
     hasIcon: true,
+    label: 'Toggle',
+  },
+};
+
+export const CheckedDisabled: StoryObj<ToggleWithLabelProps> = {
+  render: createToggleWithLabel,
+  args: {
+    checked: true,
+    disabled: true,
     label: 'Toggle',
   },
 };

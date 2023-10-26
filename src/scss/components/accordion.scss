@@ -35,7 +35,7 @@ $prefix: constants.$veera-prefix;
     }
 
     #{ $self }__header {
-      color: var(--#{$prefix}-accordion-text-active);
+      color: var(--#{$prefix}-accordion-text-selected);
     }
   }
 
@@ -45,6 +45,17 @@ $prefix: constants.$veera-prefix;
 
     #{ $self }__header {
       color: var(--#{$prefix}-accordion-text-disabled);
+    }
+  }
+
+  &--lg {
+    #{ $self }__header {
+      padding: var(--#{$prefix}-accordion-sizing-padding-y-large)
+        var(--#{$prefix}-accordion-sizing-padding-x);
+    }
+
+    #{ $self }__title {
+      @include text-styles.headings-large-h4;
     }
   }
 
@@ -65,6 +76,12 @@ $prefix: constants.$veera-prefix;
       var(--#{$prefix}-accordion-sizing-padding-x);
     border-radius: var(--#{$prefix}-accordion-sizing-corner-radius);
     color: var(--#{$prefix}-accordion-text-default);
+
+    &:focus {
+      color: var(--#{$prefix}-accordion-text-focus);
+
+      @include create-header-background(var(--#{$prefix}-accordion-background-focus));
+    }
 
     &:hover {
       color: var(--#{$prefix}-accordion-text-hover);
@@ -95,8 +112,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &__content {
-    padding: var(--#{$prefix}-accordion-sizing-padding-y)
-      var(--#{$prefix}-accordion-sizing-padding-x);
-    margin-top: var(--#{$prefix}-accordion-sizing-inner-spacing);
+    padding: var(--#{$prefix}-accordion-content-padding-y)
+      var(--#{$prefix}-accordion-content-padding-x);
   }
 }

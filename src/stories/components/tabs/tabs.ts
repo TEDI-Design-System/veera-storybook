@@ -35,6 +35,10 @@ export const createTabs = () => {
   const tabs = document.createElement('div');
   tabs.className = 'v-tabs';
 
+  const scrollButtonsContainer = document.createElement('div');
+  scrollButtonsContainer.style.position = 'relative';
+  tabs.appendChild(scrollButtonsContainer);
+
   const tabsList = document.createElement('div');
   tabsList.className = 'v-tabs__tab-list';
   tabsList.role = 'tablist';
@@ -60,7 +64,7 @@ export const createTabs = () => {
 
   renderTabs();
 
-  tabs.appendChild(tabsList);
+  scrollButtonsContainer.appendChild(tabsList);
 
   const tabContent = document.createElement('div');
   tabContent.className = 'v-tabs__content';
@@ -73,8 +77,12 @@ export const createTabs = () => {
   tabs.appendChild(tabContent);
 
   setTimeout(() => {
-    createHorizontalScrollButtons(tabsList);
+    createHorizontalScrollButtons({ scrollableEl: tabsList, container: scrollButtonsContainer });
   }, 100);
+
+  window.onresize = () => {
+    createHorizontalScrollButtons({ scrollableEl: tabsList, container: scrollButtonsContainer });
+  };
 
   return tabs;
 };

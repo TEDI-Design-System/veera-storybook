@@ -12,6 +12,10 @@ const meta = {
     },
     hasIcon: { type: 'boolean' },
   },
+  args: {
+    closable: true,
+    headerless: false,
+  },
 } satisfies Meta<AlertStoryProps>;
 
 export default meta;

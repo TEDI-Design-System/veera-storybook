@@ -10,6 +10,8 @@ type AlertVariant = 'info' | 'success' | 'warning' | 'error';
 export interface AlertStoryProps {
   variant: AlertVariant;
   hasIcon?: boolean;
+  closable?: boolean;
+  headerless?: boolean;
 }
 
 const createTitle = () => {
@@ -36,7 +38,6 @@ const createAlertHeader = (variant: AlertVariant, hasIcon?: boolean) => {
   }
   header.className = 'v-alert__header';
   header.appendChild(createTitle());
-  header.appendChild(createCloseButton('Sulge teade'));
   return header;
 };
 
@@ -48,10 +49,20 @@ const createAlertBody = () => {
   return body;
 };
 
-export const createAlert = ({ variant = 'info', hasIcon }: AlertStoryProps) => {
+export const createAlert = ({
+  variant = 'info',
+  hasIcon,
+  closable,
+  headerless,
+}: AlertStoryProps) => {
   const alert = document.createElement('div');
   alert.className = clsx('v-alert', `v-alert--${variant}`);
-  alert.appendChild(createAlertHeader(variant, hasIcon));
+  if (closable) {
+    alert.appendChild(createCloseButton('Sulge teade'));
+  }
+  if (!headerless) {
+    alert.appendChild(createAlertHeader(variant, hasIcon));
+  }
   alert.appendChild(createAlertBody());
 
   return alert;

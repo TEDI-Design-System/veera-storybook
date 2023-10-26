@@ -9,6 +9,8 @@ h1,
 .#{$prefix}-text-h1 {
   @include text-styles.headings-small-h1;
 
+  margin: 0;
+
   @include media.tablet-and-up {
     @include text-styles.headings-large-h1;
   }
@@ -17,6 +19,8 @@ h1,
 h2,
 .#{$prefix}-text-h2 {
   @include text-styles.headings-small-h2;
+
+  margin: 0;
 
   @include media.tablet-and-up {
     @include text-styles.headings-large-h2;
@@ -27,6 +31,8 @@ h3,
 .#{$prefix}-text-h3 {
   @include text-styles.headings-small-h3;
 
+  margin: 0;
+
   @include media.tablet-and-up {
     @include text-styles.headings-large-h3;
   }
@@ -35,6 +41,8 @@ h3,
 h4,
 .#{$prefix}-text-h4 {
   @include text-styles.headings-small-h4;
+
+  margin: 0;
 
   @include media.tablet-and-up {
     @include text-styles.headings-large-h4;
@@ -45,6 +53,8 @@ h5,
 .#{$prefix}-text-h5 {
   @include text-styles.headings-small-h5;
 
+  margin: 0;
+
   @include media.tablet-and-up {
     @include text-styles.headings-large-h5;
   }
@@ -54,12 +64,13 @@ h6,
 .#{$prefix}-text-h6 {
   @include text-styles.headings-small-h6;
 
+  margin: 0;
+
   @include media.tablet-and-up {
     @include text-styles.headings-large-h6;
   }
 }
 
-h6,
 .#{$prefix}-text-display {
   @include text-styles.headings-small-display;
 
@@ -71,6 +82,8 @@ h6,
 p,
 .#{$prefix}-text-body {
   @include text-styles.body-medium;
+
+  margin: 0;
 }
 
 .#{$prefix}-text-body-bold {
@@ -94,6 +107,7 @@ a,
   @include text-styles.links-medium;
   @include focus.focus-ring;
 
+  outline: none;
   font-size: inherit;
   color: var(--#{$prefix}-colors-link-default);
 

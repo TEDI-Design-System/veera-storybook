@@ -4,6 +4,7 @@ import { createContentFill, createIcon } from '../../utils';
 
 export interface AccordionStoryProps {
   disabled?: boolean;
+  size: 'sm' | 'lg';
 }
 
 const createAccordionHeader = () => {
@@ -38,11 +39,13 @@ const createAccordionContent = () => {
   return accordionCollapse;
 };
 
-export const createAccordion = ({ disabled }: AccordionStoryProps) => {
+export const createAccordion = ({ disabled, size = 'sm' }: AccordionStoryProps) => {
   let expanded = false;
 
   const accordion = document.createElement('div');
-  accordion.className = clsx('v-accordion', { 'v-accordion--disabled': disabled });
+  accordion.className = clsx('v-accordion', `v-accordion--${size}`, {
+    'v-accordion--disabled': disabled,
+  });
 
   const accordionHeader = createAccordionHeader();
   accordionHeader.disabled = !!disabled;

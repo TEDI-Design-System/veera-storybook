@@ -19,7 +19,7 @@ const generateDarkModeVariables = () => {
     .map((v) => ({ name: v.name, ...v.darkMode }));
   const boxShadows = tokensJson.boxShadows
     .filter((s) => !!s.name.includes('dark-mode'))
-    .map((s) => ({ name: s.name.replace('-dark-mode', ''), ...s }));
+    .map((s) => ({ ...s, name: s.name.replace('-dark-mode', '') }));
   const scss = `${autoGenWarning}@media (prefers-color-scheme: dark) {
     :root {
       ${variables.map(getVarRow).join('\n')}
@@ -35,7 +35,7 @@ const generateDarkModeVariables = () => {
 
 const generateVariables = () => {
   const variables = tokensJson.variables;
-  const boxShadows = tokensJson.boxShadows;
+  const boxShadows = tokensJson.boxShadows.filter((s) => !s.name.includes('dark-mode'));
   const scss = `${autoGenWarning}:root, :root[data-${prefix}-color-scheme="light"] {
   ${variables.map(getVarRow).join('\n')}
   ${boxShadows.map(getBoxShadowRow).join('\n')}

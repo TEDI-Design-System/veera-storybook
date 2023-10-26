@@ -75,9 +75,17 @@ const populateMenu = ({
 
 export const createSideNavigation = () => {
   const sidemenu = document.createElement('div');
-  sidemenu.className = 'v-side-menu';
+  sidemenu.className = 'v-side-menu v-side-menu--visible';
+
+  const overlay = document.createElement('div');
+  overlay.className = 'v-overlay';
+  sidemenu.appendChild(overlay);
+
+  const content = document.createElement('div');
+  content.className = 'v-side-menu__content';
+  sidemenu.appendChild(content);
   const nav = document.createElement('nav');
-  sidemenu.appendChild(nav);
+  content.appendChild(nav);
   const itemsList = document.createElement('ul');
   nav.appendChild(itemsList);
 

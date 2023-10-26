@@ -1,12 +1,34 @@
 @use '../constants';
 @use '../mixins/text-styles';
 @use '../mixins/borders';
+@use '../mixins/focus';
 
 $prefix: constants.$veera-prefix;
+
+@mixin sizing-properties($size, $self) {
+  #{ $self }__input,
+  #{ $self }__country-select {
+    padding: var(--#{$prefix}-inputs-sizing-#{$size}-padding-y)
+      var(--#{$prefix}-inputs-sizing-#{$size}-padding-x);
+  }
+
+  #{ $self }__input {
+    @include borders.set-border-right-radius(
+      var(--#{$prefix}-inputs-sizing-#{$size}-corner-radius)
+    );
+  }
+
+  #{ $self }__country-select {
+    @include borders.set-border-left-radius(var(--#{$prefix}-inputs-sizing-#{$size}-corner-radius));
+
+    gap: var(--#{$prefix}-inputs-sizing-#{$size}-inner-spacing);
+  }
+}
 
 .#{$prefix}-phone-input {
   $self: &;
 
+  @include sizing-properties('md', $self);
   @include text-styles.body-medium;
 
   --#{$prefix}-dropdown-menu-max-width: 304px;
@@ -16,91 +38,28 @@ $prefix: constants.$veera-prefix;
   background: var(--#{$prefix}-inputs-background-default);
 
   &__country-select {
-    font: inherit;
-    outline: none;
     display: flex;
     align-items: center;
-    border: 1px solid var(--#{$prefix}-inputs-border-default);
-    background-color: transparent;
+    width: auto;
 
     &:focus {
-      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
+      z-index: 1;
     }
   }
 
   &__input {
-    font: inherit;
-    outline: none;
-    width: 100%;
-    background: transparent;
-    border: 1px solid var(--#{$prefix}-inputs-border-default);
     margin-left: -1px;
-    color: var(--#{$prefix}-inputs-text-active);
-
-    &::placeholder {
-      color: var(--#{$prefix}-inputs-text-default);
-    }
-
-    &:focus {
-      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
-    }
   }
 
   &--sm {
-    #{ $self }__input,
-    #{ $self }__country-select {
-      padding: var(--#{$prefix}-inputs-sizing-sm-padding-y)
-        var(--#{$prefix}-inputs-sizing-sm-padding-x);
-    }
-
-    #{ $self }__input {
-      @include borders.set-border-right-radius(var(--#{$prefix}-inputs-sizing-sm-corner-radius));
-    }
-
-    #{ $self }__country-select {
-      @include borders.set-border-left-radius(var(--#{$prefix}-inputs-sizing-sm-corner-radius));
-
-      gap: var(--#{$prefix}-inputs-sizing-sm-inner-spacing);
-    }
+    @include sizing-properties('sm', $self);
   }
 
   &--md {
-    border-radius: var(--#{$prefix}-inputs-sizing-sm-corner-radius);
-
-    #{ $self }__input,
-    #{ $self }__country-select {
-      padding: var(--#{$prefix}-inputs-sizing-md-padding-y)
-        var(--#{$prefix}-inputs-sizing-md-padding-x);
-    }
-
-    #{ $self }__input {
-      @include borders.set-border-right-radius(var(--#{$prefix}-inputs-sizing-md-corner-radius));
-    }
-
-    #{ $self }__country-select {
-      @include borders.set-border-left-radius(var(--#{$prefix}-inputs-sizing-md-corner-radius));
-
-      gap: var(--#{$prefix}-inputs-sizing-md-inner-spacing);
-    }
+    @include sizing-properties('md', $self);
   }
 
   &--lg {
-    border-radius: var(--#{$prefix}-inputs-sizing-sm-corner-radius);
-
-    #{ $self }__input,
-    #{ $self }__country-select {
-      padding: var(--#{$prefix}-inputs-sizing-lg-padding-y)
-        var(--#{$prefix}-inputs-sizing-lg-padding-x);
-    }
-
-    #{ $self }__input {
-      @include borders.set-border-right-radius(var(--#{$prefix}-inputs-sizing-lg-corner-radius));
-    }
-
-    #{ $self }__country-select {
-      @include borders.set-border-left-radius(var(--#{$prefix}-inputs-sizing-lg-corner-radius));
-
-      gap: var(--#{$prefix}-inputs-sizing-lg-inner-spacing);
-    }
+    @include sizing-properties('lg', $self);
   }
 }

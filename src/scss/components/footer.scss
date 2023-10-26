@@ -6,10 +6,12 @@
 $prefix: constants.$veera-prefix;
 
 .#{$prefix}-footer {
+  grid-area: footer;
   display: grid;
   grid-template-areas:
     'content'
     'socials';
+  background: var(--#{$prefix}-footer-colors-background);
 
   &__socials {
     grid-area: socials;

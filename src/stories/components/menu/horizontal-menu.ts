@@ -38,17 +38,6 @@ const createSubMenuItemBlock = (item: SubmenuItem) => {
   return block;
 };
 
-const createSubmenuColumn = (items: SubmenuItem[]) => {
-  const submenuColumn = document.createElement('div');
-  submenuColumn.className = 'v-horizontal-menu__submenu-column';
-
-  for (const item of items) {
-    submenuColumn.appendChild(createSubMenuItemBlock(item));
-  }
-
-  return submenuColumn;
-};
-
 const createMenuPanel = (openedItem: HorizontalMenuItem) => {
   const oldPanel = document.getElementById('menu-panel');
   oldPanel?.remove();
@@ -57,12 +46,8 @@ const createMenuPanel = (openedItem: HorizontalMenuItem) => {
   panel.className = 'v-horizontal-menu__panel';
   panel.id = 'menu-panel';
 
-  const subMenuItemGroups = openedItem.children
-    .map((_, index, arr) => (index % 2 === 0 ? arr.slice(index, index + 2) : null))
-    .filter((item) => item);
-
-  for (const group of subMenuItemGroups) {
-    panel.appendChild(createSubmenuColumn(group!));
+  for (const item of openedItem.children) {
+    panel.appendChild(createSubMenuItemBlock(item));
   }
 
   document.getElementById('horizontal-menu')?.appendChild(panel);

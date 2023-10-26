@@ -8,7 +8,7 @@ import '@scss/typography.scss';
 import './cookie-popup.scss';
 import { createButton } from '../button/button';
 import { createCheckboxWithLabel } from '../../forms/checkbox/checkbox';
-import { createIcon } from '../../utils';
+import { createIcon, createTooltip } from '../../utils';
 
 const consentOptions = ['Vajalikud küpsised', 'Analüütilised küpsised', 'Sihtturunduse küpsised'];
 
@@ -35,7 +35,7 @@ const createPopupFooter = () => {
   actions.className = 'v-flex v-gap-5 v-flex-wrap v-flex-row-reverse v-justify-content-end';
   const collapseTrigger = createButton({
     label: 'Valin küpsised',
-    variant: 'secondary',
+    variant: 'neutral',
     rightIcon: 'expand_more',
   });
   collapseTrigger.classList.add('v-mr-auto');
@@ -74,7 +74,7 @@ const createConsentOptionsCollapse = () => {
   collapseContent.className = 'v-collapse__content v-flex v-flex-column v-gap-5';
   collapse.appendChild(collapseContent);
   const optionsContainer = document.createElement('div');
-  optionsContainer.className = 'v-flex v-flex-column v-pl-5 v-gap-3 v-mt-3';
+  optionsContainer.className = 'v-flex v-flex-column v-pl-5 v-gap-4 v-mt-4';
   for (const opt of consentOptions) {
     optionsContainer.appendChild(createConsentOptionCheckbox(opt));
   }
@@ -87,11 +87,17 @@ const createConsentOptionsCollapse = () => {
 
 const createConsentOptionCheckbox = (label: string) => {
   const container = document.createElement('div');
-  container.className = 'v-flex v-gap-2';
+  container.className = 'v-flex v-gap-3';
   container.appendChild(createCheckboxWithLabel({ label, size: 'sm' }));
   const infoIcon = createIcon({ name: 'info', outlined: true });
   infoIcon.classList.add('v-color-blue-600');
   container.appendChild(infoIcon);
+  const tooltip = createTooltip({
+    triggerElement: infoIcon,
+    placement: 'right',
+    text: 'Selgitus küpsiste kohta',
+  });
+  container.appendChild(tooltip);
   return container;
 };
 

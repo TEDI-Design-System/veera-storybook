@@ -1,11 +1,12 @@
 import type { Preview } from '@storybook/html';
-import '../dist/css/veera-variables.css';
-import '../dist/css/veera-variables-dark.css';
+import '@scss/veera-variables.scss';
+import '@scss/veera-variables-dark.scss';
+import '@scss/reboot.scss'
 import { addons } from '@storybook/addons';
 import { GLOBALS_UPDATED } from '@storybook/core-events';
 
 const LIGHT_BG = '#FFF';
-const DARK_BG = '#202128';
+const DARK_BG = '#131317';
 
 const preview: Preview = {
   parameters: {

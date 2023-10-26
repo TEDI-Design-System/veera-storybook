@@ -5,14 +5,22 @@ export interface ToggleProps {
   disabled?: boolean;
   hasIcon?: boolean;
   size?: 'sm' | 'md' | 'lg';
+  checked?: boolean;
 }
-export const createToggle = ({ disabled, hasIcon, size = 'md' }: ToggleProps) => {
+export const createToggle = ({ disabled, hasIcon, size = 'md', checked = false }: ToggleProps) => {
   const toggle = document.createElement('input');
+  toggle.checked = checked;
   toggle.type = 'checkbox';
   toggle.disabled = !!disabled;
   toggle.className = clsx('v-toggle', `v-toggle--${size}`, { 'v-toggle--check-icon': hasIcon });
-  toggle.setAttribute('aria-label', 'standalone toggle');
+  toggle.role = 'switch';
 
+  return toggle;
+};
+
+export const createStandaloneToggleStory = (props: ToggleProps) => {
+  const toggle = createToggle(props);
+  toggle.setAttribute('aria-label', 'standalone toggle');
   return toggle;
 };
 
