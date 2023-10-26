@@ -4,7 +4,9 @@ import '@scss/forms/forms.scss';
 import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 import { createIcon } from '../../utils';
 
-export interface SelectStoryProps extends FormControlStoryProps {}
+export interface SelectStoryProps extends FormControlStoryProps {
+  options?: string[];
+}
 
 const createCreateSelectTriggerText = ({
   value,
@@ -12,6 +14,7 @@ const createCreateSelectTriggerText = ({
 }: {
   value?: string;
   placeholder: string;
+  options?: { text: string; value: string }[];
 }) => {
   const text = document.createElement('span');
   text.innerText = value ? value : placeholder;
@@ -19,7 +22,13 @@ const createCreateSelectTriggerText = ({
   return text;
 };
 
-export const createSelect = ({ size, status, placeholder = 'Select', value }: SelectStoryProps) => {
+export const createSelect = ({
+  size,
+  status,
+  placeholder = 'Select',
+  value,
+  options,
+}: SelectStoryProps) => {
   let expanded = false;
 
   const select = document.createElement('div');
@@ -40,12 +49,12 @@ export const createSelect = ({ size, status, placeholder = 'Select', value }: Se
 
   select.appendChild(trigger);
 
-  const options = ['Option 1', 'Option 2', 'Option 3'];
+  const optionList = options ?? ['Option 1', 'Option 2', 'Option 3'];
   const dropdown = createDropdown();
   dropdown.id = Math.random().toString();
   trigger.setAttribute('aria-controls', dropdown.id);
   dropdown.hidden = !expanded;
-  options.forEach((option, index) => {
+  optionList.forEach((option, index) => {
     dropdown.appendChild(createDropdownOption({ label: option, selected: index === 1 }));
   });
   select.appendChild(dropdown);

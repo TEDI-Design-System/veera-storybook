@@ -1,6 +1,7 @@
 import '@scss/components/table.scss';
 import clsx from 'clsx';
 import { bodyCells, head, nestedHead } from './table.data';
+import { createPagination } from '../pagination/pagination';
 
 export interface TableStoryProps {
   bordered: boolean;
@@ -129,6 +130,7 @@ export const createScrollableTable = (props: TableStoryProps) => {
   tableScroll.className = 'v-table-scroll';
   tableScroll.appendChild(table);
   tableWrapper.appendChild(tableScroll);
+  tableWrapper.appendChild(createPagination());
 
   return tableWrapper;
 };

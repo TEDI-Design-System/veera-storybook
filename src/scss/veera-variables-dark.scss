@@ -494,8 +494,8 @@
     --v-navigation-vertical-background-level-1-active: var(--v-colors-neutral-neutral-800);
     --v-navigation-vertical-background-level-1-focus: var(--v-colors-neutral-neutral-1000);
     --v-navigation-vertical-border-level-1-default: var(--v-colors-neutral-neutral-900);
-    --v-navigation-vertical-border-level-1-hover: var(--v-colors-neutral-neutral-900);
-    --v-navigation-vertical-border-level-1-active: var(--v-colors-neutral-neutral-800);
+    --v-navigation-vertical-border-level-1-hover: var(--v-colors-neutral-neutral-800);
+    --v-navigation-vertical-border-level-1-active: var(--v-colors-neutral-neutral-700);
     --v-navigation-vertical-border-level-1-focus: var(--v-colors-neutral-neutral-1000);
     --v-navigation-vertical-text-default: var(--v-colors-neutral-neutral-100);
     --v-navigation-vertical-text-hover: var(--v-colors-neutral-neutral-100);
@@ -515,11 +515,11 @@
     --v-navigation-vertical-background-level-3-hover: var(--v-colors-neutral-neutral-700);
     --v-navigation-vertical-background-level-3-active: var(--v-colors-neutral-neutral-600);
     --v-navigation-vertical-background-level-3-focus: var(--v-colors-neutral-neutral-800);
-    --v-navigation-vertical-border-level-2-default: var(--v-colors-neutral-neutral-900);
+    --v-navigation-vertical-border-level-2-default: var(--v-colors-neutral-neutral-800);
     --v-navigation-vertical-border-level-2-hover: var(--v-colors-neutral-neutral-800);
     --v-navigation-vertical-border-level-2-active: var(--v-colors-neutral-neutral-700);
     --v-navigation-vertical-border-level-2-focus: var(--v-colors-neutral-neutral-900);
-    --v-navigation-vertical-border-level-3-default: var(--v-colors-neutral-neutral-800);
+    --v-navigation-vertical-border-level-3-default: var(--v-colors-neutral-neutral-700);
     --v-navigation-vertical-border-level-3-hover: var(--v-colors-neutral-neutral-700);
     --v-navigation-vertical-border-level-3-active: var(--v-colors-neutral-neutral-600);
     --v-navigation-vertical-border-level-3-focus: var(--v-colors-neutral-neutral-800);
@@ -534,7 +534,7 @@
     --v-navigation-vertical-sizing-mobile-padding-y: var(--v-spacing-baseline-04);
     --v-navigation-vertical-sizing-mobile-inner-spacing: var(--v-spacing-baseline-06);
     --v-navigation-vertical-sizing-mobile-corner-radius: var(--v-radius-00);
-    --v-navigation-vertical-sizing-mobile-width: 384px;
+    --v-navigation-vertical-sizing-mobile-width: var(--v-containers-02);
     --v-navigation-vertical-sizing-mobile-height: 56px;
     --v-navigation-vertical-sizing-mobile-padding-x-left-level-3: 72px;
     --v-navigation-vertical-sizing-mobile-padding-x-right-level-3: var(--v-spacing-baseline-07);
@@ -547,7 +547,7 @@
     --v-lists-sizing-inner-spacing-default: var(--v-spacing-baseline-04);
     --v-lists-text-text: var(--v-colors-text-primary);
     --v-lists-sizing-icon: var(--v-spacing-baseline-06);
-    --v-tooltip-max-width: var(--v-spacing-baseline-14);
+    --v-tooltip-max-width: var(--v-containers-01);
     --v-lists-text-icon: var(--v-colors-blue-blue-300);
     --v-dropdown-menu-menuitem-default: var(--v-colors-neutral-neutral-1000);
     --v-dropdown-menu-menuitem-hover: var(--v-colors-blue-blue-800);
@@ -699,7 +699,7 @@
       --v-spacing-baseline-09
     );
     --v-navigation-horizontal-horizontal-sub-menu-sizing-inner-spacing-panel: var(
-      --v-spacing-baseline-09
+      --v-spacing-baseline-08
     );
     --v-mobile-table-cells-data-cell-border-default: var(--v-colors-neutral-neutral-700);
     --v-mobile-table-cells-data-cell-border-first-child: var(--v-colors-neutral-neutral-700);
@@ -752,13 +752,17 @@
     --v-paging-sizing-small-padding-top: var(--v-spacing-for-1px-border-04);
     --v-paging-sizing-small-padding-bottom: var(--v-spacing-baseline-04);
     --v-mobile-table-cells-data-cell-sizing-padding-indent-lvl2: var(--v-spacing-baseline-07);
-    --v-content-max-width: 1416px;
-    --v-popover-sizing-width: 312px;
+    --v-content-max-width: var(--v-containers-05);
+    --v-popover-sizing-width: var(--v-containers-02);
     --v-slider-track-border-default: var(--v-colors-neutral-neutral-600);
     --v-progress-bar-track-border-border: var(--v-colors-neutral-neutral-600);
     --v-form-sizing-lg-inner-spacing: var(--v-spacing-baseline-07);
     --v-form-sizing-sm-inner-spacing: var(--v-spacing-baseline-06);
     --v-form-sizing-md-inner-spacing: var(--v-spacing-baseline-07);
+    --v-modals-width-small: var(--v-containers-02);
+    --v-modals-width-medium: var(--v-containers-03);
+    --v-modals-width-large: var(--v-containers-04);
+    --v-navigation-vertical-sizing-mobile-container-max-width: var(--v-containers-02);
     --v-box-shadow-elevation-2px: 0px 1px 5px 0px #454854;
     --v-box-shadow-elevation-4px: 0px 4px 10px 0px #454854;
     --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8;
@@ -1256,8 +1260,8 @@
   --v-navigation-vertical-background-level-1-active: var(--v-colors-neutral-neutral-800);
   --v-navigation-vertical-background-level-1-focus: var(--v-colors-neutral-neutral-1000);
   --v-navigation-vertical-border-level-1-default: var(--v-colors-neutral-neutral-900);
-  --v-navigation-vertical-border-level-1-hover: var(--v-colors-neutral-neutral-900);
-  --v-navigation-vertical-border-level-1-active: var(--v-colors-neutral-neutral-800);
+  --v-navigation-vertical-border-level-1-hover: var(--v-colors-neutral-neutral-800);
+  --v-navigation-vertical-border-level-1-active: var(--v-colors-neutral-neutral-700);
   --v-navigation-vertical-border-level-1-focus: var(--v-colors-neutral-neutral-1000);
   --v-navigation-vertical-text-default: var(--v-colors-neutral-neutral-100);
   --v-navigation-vertical-text-hover: var(--v-colors-neutral-neutral-100);
@@ -1277,11 +1281,11 @@
   --v-navigation-vertical-background-level-3-hover: var(--v-colors-neutral-neutral-700);
   --v-navigation-vertical-background-level-3-active: var(--v-colors-neutral-neutral-600);
   --v-navigation-vertical-background-level-3-focus: var(--v-colors-neutral-neutral-800);
-  --v-navigation-vertical-border-level-2-default: var(--v-colors-neutral-neutral-900);
+  --v-navigation-vertical-border-level-2-default: var(--v-colors-neutral-neutral-800);
   --v-navigation-vertical-border-level-2-hover: var(--v-colors-neutral-neutral-800);
   --v-navigation-vertical-border-level-2-active: var(--v-colors-neutral-neutral-700);
   --v-navigation-vertical-border-level-2-focus: var(--v-colors-neutral-neutral-900);
-  --v-navigation-vertical-border-level-3-default: var(--v-colors-neutral-neutral-800);
+  --v-navigation-vertical-border-level-3-default: var(--v-colors-neutral-neutral-700);
   --v-navigation-vertical-border-level-3-hover: var(--v-colors-neutral-neutral-700);
   --v-navigation-vertical-border-level-3-active: var(--v-colors-neutral-neutral-600);
   --v-navigation-vertical-border-level-3-focus: var(--v-colors-neutral-neutral-800);
@@ -1296,7 +1300,7 @@
   --v-navigation-vertical-sizing-mobile-padding-y: var(--v-spacing-baseline-04);
   --v-navigation-vertical-sizing-mobile-inner-spacing: var(--v-spacing-baseline-06);
   --v-navigation-vertical-sizing-mobile-corner-radius: var(--v-radius-00);
-  --v-navigation-vertical-sizing-mobile-width: 384px;
+  --v-navigation-vertical-sizing-mobile-width: var(--v-containers-02);
   --v-navigation-vertical-sizing-mobile-height: 56px;
   --v-navigation-vertical-sizing-mobile-padding-x-left-level-3: 72px;
   --v-navigation-vertical-sizing-mobile-padding-x-right-level-3: var(--v-spacing-baseline-07);
@@ -1309,7 +1313,7 @@
   --v-lists-sizing-inner-spacing-default: var(--v-spacing-baseline-04);
   --v-lists-text-text: var(--v-colors-text-primary);
   --v-lists-sizing-icon: var(--v-spacing-baseline-06);
-  --v-tooltip-max-width: var(--v-spacing-baseline-14);
+  --v-tooltip-max-width: var(--v-containers-01);
   --v-lists-text-icon: var(--v-colors-blue-blue-300);
   --v-dropdown-menu-menuitem-default: var(--v-colors-neutral-neutral-1000);
   --v-dropdown-menu-menuitem-hover: var(--v-colors-blue-blue-800);
@@ -1451,7 +1455,7 @@
     --v-spacing-baseline-09
   );
   --v-navigation-horizontal-horizontal-sub-menu-sizing-inner-spacing-panel: var(
-    --v-spacing-baseline-09
+    --v-spacing-baseline-08
   );
   --v-mobile-table-cells-data-cell-border-default: var(--v-colors-neutral-neutral-700);
   --v-mobile-table-cells-data-cell-border-first-child: var(--v-colors-neutral-neutral-700);
@@ -1504,13 +1508,17 @@
   --v-paging-sizing-small-padding-top: var(--v-spacing-for-1px-border-04);
   --v-paging-sizing-small-padding-bottom: var(--v-spacing-baseline-04);
   --v-mobile-table-cells-data-cell-sizing-padding-indent-lvl2: var(--v-spacing-baseline-07);
-  --v-content-max-width: 1416px;
-  --v-popover-sizing-width: 312px;
+  --v-content-max-width: var(--v-containers-05);
+  --v-popover-sizing-width: var(--v-containers-02);
   --v-slider-track-border-default: var(--v-colors-neutral-neutral-600);
   --v-progress-bar-track-border-border: var(--v-colors-neutral-neutral-600);
   --v-form-sizing-lg-inner-spacing: var(--v-spacing-baseline-07);
   --v-form-sizing-sm-inner-spacing: var(--v-spacing-baseline-06);
   --v-form-sizing-md-inner-spacing: var(--v-spacing-baseline-07);
+  --v-modals-width-small: var(--v-containers-02);
+  --v-modals-width-medium: var(--v-containers-03);
+  --v-modals-width-large: var(--v-containers-04);
+  --v-navigation-vertical-sizing-mobile-container-max-width: var(--v-containers-02);
   --v-box-shadow-elevation-2px: 0px 1px 5px 0px #454854;
   --v-box-shadow-elevation-4px: 0px 4px 10px 0px #454854;
   --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8;

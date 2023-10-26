@@ -47,6 +47,7 @@ $prefix: constants.$veera-prefix;
   border-radius: var(--#{$prefix}-toggle-sizing-corner-radius);
   background: var(--#{$prefix}-toggle-track-off-state-background-default);
   border: 2px solid var(--#{$prefix}-toggle-track-off-state-border-default);
+  flex-shrink: 0;
 
   &::before {
     @include toggle-knob;
