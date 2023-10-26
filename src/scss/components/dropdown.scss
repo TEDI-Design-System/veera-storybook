@@ -13,6 +13,7 @@ $prefix: constants.$veera-prefix;
 .#{$prefix}-dropdown {
   $self: &;
 
+  z-index: 10;
   position: absolute;
   top: calc(100% + 4px);
   left: 0;
