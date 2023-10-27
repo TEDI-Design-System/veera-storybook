@@ -771,7 +771,7 @@
     --v-box-shadow-sticky-left: -4px 0px 4px 0px rgba(255, 255, 255, 0.1);
   }
 }
-[data-v-color-scheme='dark'] {
+[data-v-color-scheme='dark'][data-v-color-scheme='dark'] {
   --v-colors-brand-primary: var(--v-colors-blue-blue-600);
   --v-colors-text-primary: var(--v-colors-neutral-neutral-100);
   --v-colors-borders: var(--v-colors-neutral-neutral-700);
