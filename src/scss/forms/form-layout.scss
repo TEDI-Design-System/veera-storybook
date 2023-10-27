@@ -14,14 +14,14 @@ $prefix: constants.$veera-prefix;
 }
 
 .#{$prefix}-form-group {
-  --#{$prefix}-form-width: 100%;
+  --#{$prefix}-form-group-width: 100%;
   --#{$prefix}-form-y-gap: var(--#{$prefix}-form-sizing-md-inner-spacing);
   --#{$prefix}-form-label-width: 300px;
   --#{$prefix}-form-x-gap: 16px;
 
   display: flex;
   flex-direction: column;
-  max-width: var(--#{$prefix}-form-width);
+  max-width: var(--#{$prefix}-form-group-width);
   gap: var(--#{$prefix}-form-y-gap);
 
   &--sm {
