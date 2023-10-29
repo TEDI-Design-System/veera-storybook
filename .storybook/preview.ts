@@ -1,15 +1,19 @@
-import type { Preview } from '@storybook/html';
-import '@scss/veera-variables.scss';
+import '@scss/reboot.scss';
 import '@scss/veera-variables-dark.scss';
-import '@scss/reboot.scss'
+import '@scss/veera-variables.scss';
 import { addons } from '@storybook/addons';
 import { GLOBALS_UPDATED } from '@storybook/core-events';
+import type { Preview } from '@storybook/html';
+import pretty from 'pretty';
 
 const LIGHT_BG = '#FFF';
 const DARK_BG = '#131317';
 
 const preview: Preview = {
   parameters: {
+    docs: {
+      transformSource: (input) => pretty(input),
+    },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {

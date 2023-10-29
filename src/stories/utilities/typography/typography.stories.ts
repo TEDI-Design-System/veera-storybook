@@ -24,7 +24,7 @@ export const Playground: StoryObj<TextProps> = {
   argTypes: {
     variant: {
       control: { type: 'select' },
-      options: TEXT_VARIANTS,
+      options: TEXT_VARIANTS.map((variant) => variant[0]),
     },
   },
   args: {
