@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npx sass ./src/scss:./dist/css",
+    "build": "tsc && vite build --base=./ && npx sass ./src/scss:./dist/css",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -51,6 +51,7 @@
   "files": [
     "/dist/*/**"
   ],
+  "main": "./dist/veera.umd.cjs",
   "dependencies": {
     "pretty": "^2.0.0"
   }
