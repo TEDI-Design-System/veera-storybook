@@ -82,4 +82,5 @@ $prefix: constants.$veera-prefix;
   align-items: center;
   color: var(--#{$prefix}-colors-text-tertiary);
   border: 1px solid var(--#{$prefix}-inputs-border-default);
+  background: var(--#{$prefix}-inputs-background-default);
 }
