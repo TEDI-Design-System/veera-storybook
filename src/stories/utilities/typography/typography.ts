@@ -41,12 +41,3 @@ export const createTextCollection = () => {
     ).join('')}
   </div>`;
 };
-
-export const createLink = ({ size }: { size: 'xs' | 'sm' | 'md' }) => {
-  const link = document.createElement('a');
-  link.className = `v-link--${size}`;
-  link.innerHTML = 'Regular';
-  link.href = '#';
-
-  return link;
-};
