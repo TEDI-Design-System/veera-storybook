@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npx sass ./src/scss:./dist/css",
+    "build": "tsc && vite build --base=./ && npx sass ./src/scss:./dist/css",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -23,6 +23,7 @@
     "@storybook/html": "^7.2.2",
     "@storybook/html-vite": "^7.2.2",
     "@storybook/testing-library": "^0.2.0",
+    "@types/pretty": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
     "clsx": "^1.2.1",
@@ -49,5 +50,9 @@
   },
   "files": [
     "/dist/*/**"
-  ]
+  ],
+  "main": "./dist/veera.umd.cjs",
+  "dependencies": {
+    "pretty": "^2.0.0"
+  }
 }

@@ -9,6 +9,10 @@ const meta = {
       control: { type: 'select' },
       options: ['horizontal', 'vertical'],
     },
+    size: {
+      control: { type: 'select' },
+      options: ['sm', 'md', 'lg'],
+    },
   },
 } satisfies Meta<FormLayoutStoryProps>;
 
@@ -19,17 +23,13 @@ type Story = StoryObj<FormLayoutStoryProps>;
 export const Horizontal: Story = {
   args: {
     direction: 'horizontal',
-    width: 877,
-    labelWidth: 362,
-    gap: 24,
+    size: 'md',
   },
 };
 
 export const Vertical: Story = {
   args: {
     direction: 'vertical',
-    width: 877,
-    labelWidth: 362,
-    gap: 24,
+    size: 'md',
   },
 };

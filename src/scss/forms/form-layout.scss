@@ -14,14 +14,23 @@ $prefix: constants.$veera-prefix;
 }
 
 .#{$prefix}-form-group {
-  --#{$prefix}-form-width: 877px;
-  --#{$prefix}-form-gap: var(--#{$prefix}-spacing-baseline-06, 24px);
-  --#{$prefix}-form-label-width: 362px;
+  --#{$prefix}-form-group-width: 100%;
+  --#{$prefix}-form-y-gap: var(--#{$prefix}-form-sizing-md-inner-spacing);
+  --#{$prefix}-form-label-width: 300px;
+  --#{$prefix}-form-x-gap: 16px;
 
   display: flex;
   flex-direction: column;
-  max-width: var(--#{$prefix}-form-width);
-  gap: var(--#{$prefix}-form-gap);
+  max-width: var(--#{$prefix}-form-group-width);
+  gap: var(--#{$prefix}-form-y-gap);
+
+  &--sm {
+    --#{$prefix}-form-y-gap: var(--#{$prefix}-form-sizing-sm-inner-spacing);
+  }
+
+  &--lg {
+    --#{$prefix}-form-y-gap: var(--#{$prefix}-form-sizing-lg-inner-spacing);
+  }
 
   &--vertical {
     .#{$prefix}-form-row {
@@ -31,10 +40,11 @@ $prefix: constants.$veera-prefix;
 }
 
 .#{$prefix}-form-row {
-  --#{$prefix}-form-row-label-width: var(--#{$prefix}-form-label-width, 362px);
+  --#{$prefix}-form-row-label-width: var(--#{$prefix}-form-label-width);
+  --#{$prefix}-form-row-gap: var(--#{$prefix}-form-x-gap);
 
   display: flex;
-  gap: 16px;
+  gap: var(--#{$prefix}-form-row-gap, 16px);
 
   &--vertical {
     @include vertical-row;
@@ -47,7 +57,7 @@ $prefix: constants.$veera-prefix;
   box-sizing: border-box;
   text-align: right;
   flex-shrink: 0;
-  width: var(--#{$prefix}-form-row-label-width);
+  width: var(--#{$prefix}-form-row-label-width, 300px);
 
   &--required::after {
     content: '*';
@@ -59,6 +69,10 @@ $prefix: constants.$veera-prefix;
   flex-grow: 1;
   width: 100%;
   max-width: var(--#{$prefix}-form-row-input-width, 100%);
+
+  &--readonly {
+    @include text-styles.body-medium-bold;
+  }
 }
 
 .#{$prefix}-selection-controls-group {

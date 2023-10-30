@@ -131,4 +131,9 @@ a,
   &.#{$prefix}-link--xs {
     @include text-styles.links-extra-small;
   }
+
+  .#{$prefix}-link-icon {
+    font-size: inherit;
+    text-decoration: none;
+  }
 }

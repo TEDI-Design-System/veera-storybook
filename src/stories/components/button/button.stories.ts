@@ -16,7 +16,7 @@ const meta = {
     },
     size: {
       control: { type: 'select' },
-      options: ['sm', 'md', 'lg'],
+      options: ['sm', 'md', 'lg', 'full-width'],
     },
     disabled: { type: 'boolean' },
   },

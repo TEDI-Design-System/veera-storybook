@@ -13,9 +13,17 @@ interface FormRowProps {
   input: HTMLElement;
   helperText?: string;
   required?: boolean;
+  readonly?: boolean;
 }
 
-export const createFormRow = ({ inputId, label, input, helperText, required }: FormRowProps) => {
+export const createFormRow = ({
+  inputId,
+  label,
+  input,
+  helperText,
+  required,
+  readonly,
+}: FormRowProps) => {
   const formRow = document.createElement('div');
   formRow.className = 'v-form-row';
 
@@ -30,14 +38,12 @@ export const createFormRow = ({ inputId, label, input, helperText, required }: F
 
   const formRowLabel = document.createElement('label');
   formRowLabel.className = clsx('v-form-row-label', { 'v-form-row-label--required': !!required });
-  const labelEl = document.createElement('label');
-  labelEl.setAttribute('for', inputId);
-  labelEl.innerText = label;
-  formRowLabel.appendChild(labelEl);
+  formRowLabel.setAttribute('for', inputId);
+  formRowLabel.innerText = label;
   formRow.appendChild(formRowLabel);
 
   const formRowInput = document.createElement('div');
-  formRowInput.className = 'v-form-row-input';
+  formRowInput.className = clsx('v-form-row-input', { 'v-form-row-input--readonly': readonly });
   formRowInput.appendChild(input);
   if (helperText) {
     formRowInput.appendChild(createHelperText(helperText));
@@ -47,58 +53,79 @@ export const createFormRow = ({ inputId, label, input, helperText, required }: F
   return formRow;
 };
 
-export interface FormLayoutStoryProps {
-  direction: 'horizontal' | 'vertical';
-  width: number;
-  labelWidth: number;
-  gap: number;
-}
-
-export const createFormLayout = ({ direction, width, labelWidth, gap }: FormLayoutStoryProps) => {
-  const formGroup = document.createElement('div');
-  formGroup.className = clsx('v-form-group', {
-    'v-form-group--vertical': direction === 'vertical',
-  });
-  formGroup.style.setProperty('--v-form-width', `${width}px`);
-  formGroup.style.setProperty('--v-form-label-width', `${labelWidth}px`);
-  formGroup.style.setProperty('--v-form-gap', `${gap}px`);
-
+const createTextAreaRow = () => {
   const textArea = createTextAreaControl({ size: 'md', placeholder: 'Textarea' });
   textArea.id = 'text-area';
-  const textAreaRow = createFormRow({ label: 'Text area', inputId: textArea.id, input: textArea });
-  formGroup.appendChild(textAreaRow);
+  return createFormRow({ label: 'Text area', inputId: textArea.id, input: textArea });
+};
 
+const createTextInputRow = () => {
   const textInput = createInputControl({ size: 'md', placeholder: 'Placeholder' });
   textInput.id = 'text-input';
   textInput.required = true;
-  const textInputRow = createFormRow({
+  return createFormRow({
     label: 'Text input',
     inputId: textInput.id,
     input: textInput,
     helperText: 'Helper text',
     required: true,
   });
-  formGroup.appendChild(textInputRow);
+};
 
+const createSelectInputRow = () => {
   const selectInput = createSelectControl({ size: 'md', placeholder: 'Placeholder' });
   selectInput.id = 'select-input';
-  const selectInputRow = createFormRow({
+  return createFormRow({
     label: 'Native select input',
     inputId: selectInput.id,
     input: selectInput,
   });
-  formGroup.appendChild(selectInputRow);
+};
 
+const createFileUploadRow = () => {
   const fileUpload = createFileUpload({
     label: 'Lohistage failid siia või valige kettalt',
     id: 'file-upload-id',
   });
-  const fileUploadRow = createFormRow({
+  return createFormRow({
     label: 'File upload',
     inputId: 'file-upload-id',
     input: fileUpload,
   });
-  formGroup.appendChild(fileUploadRow);
+};
+
+const createReadOnlyRow = () => {
+  const readonlyValue = document.createElement('span');
+  readonlyValue.innerText = 'Read only value';
+  readonlyValue.id = 'read-only-value';
+  return createFormRow({
+    label: 'Ainult loetava väärtuse näide',
+    inputId: readonlyValue.id,
+    input: readonlyValue,
+    readonly: true,
+  });
+};
+
+export interface FormLayoutStoryProps {
+  direction: 'horizontal' | 'vertical';
+  size: 'sm' | 'md' | 'lg';
+}
+
+export const createFormLayout = ({ direction, size = 'md' }: FormLayoutStoryProps) => {
+  const formGroup = document.createElement('div');
+  formGroup.className = clsx('v-form-group', `v-form-group--${size}`, {
+    'v-form-group--vertical': direction === 'vertical',
+  });
+
+  formGroup.appendChild(createTextAreaRow());
+
+  formGroup.appendChild(createTextInputRow());
+
+  formGroup.appendChild(createSelectInputRow());
+
+  formGroup.appendChild(createFileUploadRow());
+
+  formGroup.appendChild(createReadOnlyRow());
 
   return formGroup;
 };
