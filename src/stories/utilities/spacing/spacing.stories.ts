@@ -46,12 +46,12 @@ export const Grid: StoryObj<GridSpacingProps> = {
       control: { type: 'select' },
       options: ['gap', 'row-gap', 'column-gap'],
     },
-    spacing: {
+    gap: {
       control: { type: 'number', min: 0, max: 14 },
     },
   },
   args: {
     type: 'gap',
-    spacing: 0,
+    gap: 0,
   },
 };
