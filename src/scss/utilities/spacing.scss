@@ -1,6 +1,8 @@
 /* stylelint-disable custom-property-pattern */
-@use '../constants' as constants;
+@use '../constants';
 @use '../scss-utils/helper-functions' as helpers;
+@use '../breakpoints';
+@use '../mixins/media';
 
 $class-properties: (
   'm': 'margin',
@@ -35,9 +37,9 @@ $class-properties: (
 );
 $margin-classes: 'm', 'my', 'mx', 'ml', 'mr', 'mt', 'mb';
 
-@mixin get-auto-margins($class-prefix, $properties) {
+@mixin get-auto-margin-classes($class-prefix, $properties, $bp-infix) {
   @if index($margin-classes, $class-prefix) {
-    .#{constants.$veera-prefix}-#{$class-prefix}-auto {
+    .#{constants.$veera-prefix}-#{$class-prefix}#{$bp-infix}-auto {
       @if type-of($properties) == 'list' {
         @each $property in $properties {
           #{$property}: auto;
@@ -49,9 +51,9 @@ $margin-classes: 'm', 'my', 'mx', 'ml', 'mr', 'mt', 'mb';
   }
 }
 
-@each $class-prefix, $properties in $class-properties {
+@mixin get-spacing-classes($class-prefix, $properties, $bp-infix) {
   @for $spacing from 0 through constants.$max-spacing {
-    .#{constants.$veera-prefix}-#{$class-prefix}-#{$spacing} {
+    .#{constants.$veera-prefix}-#{$class-prefix}#{$bp-infix}-#{$spacing} {
       @if type-of($properties) == 'list' {
         @each $property in $properties {
           #{$property}: var(
@@ -65,6 +67,15 @@ $margin-classes: 'm', 'my', 'mx', 'ml', 'mr', 'mt', 'mb';
       }
     }
   }
+}
 
-  @include get-auto-margins($class-prefix, $properties);
+@each $breakpoint-key, $breakpoint-val in breakpoints.$breakpoints {
+  $bp-infix: if(helpers.is-zero($breakpoint-val), '', '-#{$breakpoint-key}');
+
+  @each $class-prefix, $properties in $class-properties {
+    @include media.breakpoint-up($breakpoint-key) {
+      @include get-spacing-classes($class-prefix, $properties, $bp-infix);
+      @include get-auto-margin-classes($class-prefix, $properties, $bp-infix);
+    }
+  }
 }
