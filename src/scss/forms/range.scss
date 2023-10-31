@@ -17,7 +17,7 @@ $prefix: constants.$veera-prefix;
   background: linear-gradient(
     to right,
     #{$bg} var(--v-range-progress, 0%),
-    var(--#{$prefix}-slider-passive-track-background-default) var(--v-range-progress, 0%)
+    var(--#{$prefix}-slider-track-passive-background-default) var(--v-range-progress, 0%)
   );
 }
 
@@ -27,8 +27,9 @@ input[type='range'].#{$prefix}-range {
   width: 100%;
   border-radius: var(--#{$prefix}-slider-sizing-corner-radius);
   height: 8px;
+  border: 1px solid var(--#{$prefix}-slider-track-border-default);
 
-  @include get-progress-bg(var(--#{$prefix}-slider-active-track-background-default));
+  @include get-progress-bg(var(--#{$prefix}-slider-track-active-background-default));
 
   &::-webkit-slider-thumb {
     @include thumb-styles;
@@ -51,7 +52,7 @@ input[type='range'].#{$prefix}-range {
       background: var(--#{$prefix}-slider-thumb-background-focus);
     }
 
-    @include get-progress-bg(var(--#{$prefix}-slider-active-track-background-focus));
+    @include get-progress-bg(var(--#{$prefix}-slider-track-active-background-focus));
   }
 
   &:hover {
@@ -65,7 +66,7 @@ input[type='range'].#{$prefix}-range {
       background: var(--#{$prefix}-slider-thumb-background-hover);
     }
 
-    @include get-progress-bg(var(--#{$prefix}-slider-active-track-background-hover));
+    @include get-progress-bg(var(--#{$prefix}-slider-track-active-background-hover));
   }
 
   &:active {
@@ -79,7 +80,7 @@ input[type='range'].#{$prefix}-range {
       background: var(--#{$prefix}-slider-thumb-background-active);
     }
 
-    @include get-progress-bg(var(--#{$prefix}-slider-active-track-background-active));
+    @include get-progress-bg(var(--#{$prefix}-slider-track-active-background-active));
   }
 
   &:disabled {
@@ -95,6 +96,6 @@ input[type='range'].#{$prefix}-range {
       background: var(--#{$prefix}-slider-thumb-background-disabled);
     }
 
-    @include get-progress-bg(var(--#{$prefix}-slider-active-track-background-disabled));
+    @include get-progress-bg(var(--#{$prefix}-slider-track-active-background-disabled));
   }
 }

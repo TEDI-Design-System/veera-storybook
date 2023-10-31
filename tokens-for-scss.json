@@ -8642,18 +8642,6 @@
     },
     {
       "alias": true,
-      "value": "spacing-baseline-08",
-      "darkMode": {
-        "value": "spacing-baseline-08",
-        "alias": true
-      },
-      "group": "cards/sizing",
-      "collection": "semantic-tokens",
-      "name": "cards-sizing-padding-large",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
       "value": "radius-02",
       "darkMode": {
         "value": "radius-02",
@@ -8662,18 +8650,6 @@
       "group": "cards/sizing",
       "collection": "semantic-tokens",
       "name": "cards-sizing-radius-medium",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "radius-03",
-      "darkMode": {
-        "value": "radius-03",
-        "alias": true
-      },
-      "group": "cards/sizing",
-      "collection": "semantic-tokens",
-      "name": "cards-sizing-radius-large",
       "type": "FLOAT"
     },
     {
