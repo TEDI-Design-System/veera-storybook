@@ -21,9 +21,9 @@ const createTitle = () => {
 const createAlertIcon = (variant: AlertVariant) => {
   const iconName: Record<AlertVariant, string> = {
     info: 'info',
-    success: 'check_circle_outline',
+    success: 'check',
     warning: 'warning_amber',
-    error: 'error_outline',
+    error: 'report',
   };
   return createIcon({ name: iconName[variant], outlined: true });
 };
