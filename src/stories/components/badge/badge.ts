@@ -13,7 +13,7 @@ const createBadgeIcon = (variant: BadgeVariant) => {
     info: 'flag',
     success: 'check',
     warning: 'warning_amber',
-    error: 'close',
+    error: 'report',
     neutral: 'label',
   };
   const icon = createIcon({ name: iconName[variant], outlined: true });
