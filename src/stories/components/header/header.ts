@@ -53,7 +53,7 @@ const createTopBar = () => {
 
 const createSmallScreenActions = (container: HTMLElement) => {
   for (const action of smallScreenActions) {
-    const button = document.createElement('a');
+    const button = document.createElement('button');
     button.className = `v-header__button v-hide-${action.bp}-up`;
     button.appendChild(createIcon({ name: action.icon, outlined: true }));
     button.appendChild(document.createTextNode(action.label));
