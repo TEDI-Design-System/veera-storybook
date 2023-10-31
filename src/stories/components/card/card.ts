@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { createContentFill } from '../../utils';
 
 export interface CardProps {
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'md';
   variant?: 'primary' | 'secondary' | 'tertiary';
   flat?: boolean;
 }
