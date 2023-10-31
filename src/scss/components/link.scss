@@ -34,7 +34,7 @@ a,
     @include text-styles.links-extra-small;
   }
 
-  &--with-icon {
+  &.#{$prefix}-link--with-icon {
     display: inline-flex;
     align-items: center;
     gap: var(--#{$prefix}-links-sizing-inner-spacing);
