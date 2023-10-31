@@ -67,6 +67,7 @@ $prefix: constants.$veera-prefix;
   &__item {
     @include text-styles.body-small;
 
+    width: 100%;
     cursor: pointer;
     border: none;
     outline: none;

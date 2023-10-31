@@ -1,9 +1,9 @@
+// REBOOT
+@use './reboot.scss';
+
 // VARIABLES
 @use './veera-variables.scss';
 @use './veera-variables-dark.scss';
-
-// UTILITIES
-@use './utilities/utilities.scss';
 
 // TYPOGRAPHY
 @use './typography.scss';
@@ -14,8 +14,8 @@
 // FORMS
 @use './forms/forms.scss';
 
-// REBOOT
-@use './reboot.scss';
+// UTILITIES
+@use './utilities/utilities.scss';
 
 // LAYOUT
 @use './layout.scss';
