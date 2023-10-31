@@ -1,8 +1,18 @@
 @use '../constants';
 @use '../mixins/text-styles';
 @use '../mixins/borders';
+@use '../mixins/focus';
 
 $prefix: constants.$veera-prefix;
+
+@mixin completed-step-colors($stepper, $state) {
+  color: var(--#{$prefix}-stepper-text-completed-#{$state});
+  background: var(--#{$prefix}-stepper-background-completed-#{$state});
+
+  #{ $stepper }__step-number {
+    background: var(--#{$prefix}-stepper-background-number-completed-#{$state});
+  }
+}
 
 .#{$prefix}-stepper {
   $stepper: &;
@@ -10,13 +20,13 @@ $prefix: constants.$veera-prefix;
   display: flex;
   overflow-x: hidden;
 
-  &__step {
+  #{&}__step {
     @include text-styles.body-medium;
 
-    $step: &;
     $arrow-height: calc((2 * var(--#{$prefix}-stepper-sizing-padding-y) + 24px) / 2);
     $arrow-width: calc($arrow-height * 0.8);
 
+    outline: none;
     cursor: pointer;
     position: relative;
     display: flex;
@@ -59,7 +69,7 @@ $prefix: constants.$veera-prefix;
         border-left-color: var(--#{$prefix}-stepper-background-active);
       }
 
-      & + #{ $step } {
+      & + .#{$prefix}-stepper__step {
         padding-left: calc(var(--#{$prefix}-stepper-sizing-padding-x) + $arrow-width);
       }
 
@@ -70,12 +80,26 @@ $prefix: constants.$veera-prefix;
     }
 
     &--completed {
+      @include focus.focus-ring-inset;
+
       color: var(--#{$prefix}-stepper-text-completed);
       background: var(--#{$prefix}-stepper-background-completed);
 
       #{ $stepper }__step-number {
         background: var(--#{$prefix}-stepper-background-number-completed);
         color: var(--#{$prefix}-stepper-text-number-completed);
+      }
+
+      &:focus {
+        @include completed-step-colors($stepper, 'focus');
+      }
+
+      &:hover {
+        @include completed-step-colors($stepper, 'hover');
+      }
+
+      &:active {
+        @include completed-step-colors($stepper, 'active');
       }
     }
   }

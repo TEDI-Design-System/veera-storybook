@@ -1,5 +1,6 @@
 import clsx from 'clsx';
-import { createHorizontalScrollButtons } from '../../utils';
+import { createContentFill, createHorizontalScrollButtons } from '../../utils';
+import { createButton } from '../button/button';
 
 export interface StepperStepProps {
   number: number;
@@ -16,7 +17,8 @@ export const createStepperStep = ({
   name = 'Step',
   onSelect,
 }: StepperStepProps) => {
-  const step = document.createElement('button');
+  const step = document.createElement('a');
+  step.href = '#';
   step.className = clsx('v-stepper__step', {
     'v-stepper__step--active': active,
     'v-stepper__step--completed': completed,
@@ -29,6 +31,17 @@ export const createStepperStep = ({
 
   const stepName = document.createTextNode(name);
   step.appendChild(stepName);
+
+  if (!completed) {
+    step.tabIndex = -1;
+    step.style.pointerEvents = 'none';
+
+    if (active) {
+      step.setAttribute('aria-current', 'step');
+    } else {
+      step.setAttribute('aria-disabled', 'true');
+    }
+  }
 
   if (onSelect) {
     step.onclick = () => {
@@ -46,12 +59,16 @@ export interface StepperStoryProps {
 export const createStepper = ({ activeStep = 0 }: StepperStoryProps) => {
   let activeStepNr = activeStep;
 
+  const container = document.createElement('div');
+  container.className = 'v-flex v-flex-column v-gap-6';
+
   const scrollButtonsContainer = document.createElement('div');
   scrollButtonsContainer.style.position = 'relative';
 
-  const stepper = document.createElement('div');
+  const stepper = document.createElement('nav');
   stepper.className = 'v-stepper';
   scrollButtonsContainer.appendChild(stepper);
+  container.appendChild(scrollButtonsContainer);
 
   const onSelect = (stepNr: number) => {
     activeStepNr = stepNr;
@@ -81,5 +98,28 @@ export const createStepper = ({ activeStep = 0 }: StepperStoryProps) => {
     createHorizontalScrollButtons({ scrollableEl: stepper, container: scrollButtonsContainer });
   };
 
-  return scrollButtonsContainer;
+  container.appendChild(createContentFill());
+
+  const buttonsContainer = document.createElement('div');
+  buttonsContainer.className = 'v-flex v-justify-content-between v-gap-6';
+
+  const prevButton = createButton({ label: 'Tagasi', leftIcon: 'arrow_back', variant: 'neutral' });
+  prevButton.onclick = () => {
+    if (activeStepNr > 0) {
+      onSelect(activeStepNr - 1);
+    }
+  };
+  buttonsContainer.appendChild(prevButton);
+
+  const nextButton = createButton({ label: 'Edasi' });
+  nextButton.onclick = () => {
+    if (activeStepNr < 10) {
+      onSelect(activeStepNr + 1);
+    }
+  };
+  buttonsContainer.appendChild(nextButton);
+
+  container.appendChild(buttonsContainer);
+
+  return container;
 };
