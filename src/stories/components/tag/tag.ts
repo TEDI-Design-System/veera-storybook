@@ -1,4 +1,3 @@
-import '@scss/components/tag.scss';
 import { createCloseButton } from '../button/button';
 
 export interface TagProps {

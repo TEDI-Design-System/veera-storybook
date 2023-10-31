@@ -1,5 +1,3 @@
-import '@scss/components/badge.scss';
-import '@scss/typography.scss';
 import clsx from 'clsx';
 import { createIcon } from '../../utils';
 

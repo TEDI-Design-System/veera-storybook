@@ -1,5 +1,3 @@
-import '@scss/forms/forms.scss';
-
 export interface RangeProps {
   min?: number;
   max?: number;

@@ -1,4 +1,3 @@
-import '@scss/components/table.scss';
 import clsx from 'clsx';
 import { bodyCells, head, nestedHead } from './table.data';
 import { createPagination } from '../pagination/pagination';

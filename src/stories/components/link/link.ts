@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { createIcon } from '../../utils';
-import '@scss/components/link.scss';
 
 export interface LinkStoryProps {
   size: 'xs' | 'sm' | 'md';

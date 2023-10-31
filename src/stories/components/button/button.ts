@@ -1,4 +1,3 @@
-import '@scss/components/button.scss';
 import { clsx } from 'clsx';
 import { createIcon } from '../../utils';
 

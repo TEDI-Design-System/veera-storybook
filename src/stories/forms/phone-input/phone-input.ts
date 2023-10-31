@@ -1,6 +1,4 @@
 import { FormControlStoryProps } from '../form-control/form-control';
-import '@scss/forms/forms.scss';
-import '@scss/components/icon.scss';
 import { EstonianFlag, countryOptions } from './countries';
 import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 import { createIcon } from '../../utils';

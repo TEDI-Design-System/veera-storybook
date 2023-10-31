@@ -1,6 +1,3 @@
-import '@scss/components/header.scss';
-import '@scss/forms/forms.scss';
-import '@scss/utilities/utilities.scss';
 import clsx from 'clsx';
 import { createIcon, createLink, createLogo } from '../../utils';
 import { createToggleWithLabel } from '../../forms/toggle/toggle';

@@ -1,5 +1,3 @@
-import '@scss/utilities/utilities.scss';
-
 const focusRings = ['focus-ring-outset', 'focus-ring-inset'];
 
 const createExampleBox = (focusRing: string) => {

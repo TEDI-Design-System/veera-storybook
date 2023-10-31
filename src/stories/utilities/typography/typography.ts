@@ -1,4 +1,3 @@
-import '@scss/typography.scss';
 import './typography.stories.scss';
 
 export const TEXT_VARIANTS = [

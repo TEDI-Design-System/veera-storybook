@@ -1,6 +1,3 @@
-import '@scss/components/pagination.scss';
-import '@scss/utilities/utilities.scss';
-import '@scss/typography.scss';
 import { createSelect } from '../../forms/select/select';
 import { createButton } from '../button/button';
 import clsx from 'clsx';

@@ -1,6 +1,3 @@
-import '@scss/components/button.scss';
-import '@scss/components/alert.scss';
-import '@scss/typography.scss';
 import clsx from 'clsx';
 import { createCloseButton } from '../button/button';
 import { createIcon } from '../../utils';

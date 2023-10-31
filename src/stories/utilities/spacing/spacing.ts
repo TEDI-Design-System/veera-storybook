@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import './spacing.stories.scss';
-import '@scss/utilities/spacing.scss';
 
 export interface SpacingProps {
   type: 'margin' | 'padding';

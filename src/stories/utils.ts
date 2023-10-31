@@ -1,8 +1,6 @@
 import { createButton } from './components/button/button';
 import logo from './assets/logo.svg';
 import { createPopper } from '@popperjs/core';
-import '@scss/components/tooltip.scss';
-import '@scss/components/link.scss';
 
 export type NumericRange<
   START extends number,

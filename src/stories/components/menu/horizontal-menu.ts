@@ -1,5 +1,3 @@
-import '@scss/components/menu.scss';
-import '@scss/components/icon.scss';
 import { horizontalMenuItems } from './menu-items';
 import { createIcon } from '../../utils';
 

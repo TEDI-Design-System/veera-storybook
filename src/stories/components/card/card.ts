@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { createContentFill } from '../../utils';
-import '@scss/components/card.scss';
 
 export interface CardProps {
   size?: 'sm' | 'md' | 'lg';

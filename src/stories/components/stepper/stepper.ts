@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import '@scss/components/stepper.scss';
 import { createHorizontalScrollButtons } from '../../utils';
 
 export interface StepperStepProps {
