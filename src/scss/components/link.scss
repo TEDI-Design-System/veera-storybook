@@ -12,9 +12,6 @@ a,
   outline: none;
   font-size: inherit;
   color: var(--#{$prefix}-colors-link-default);
-  display: inline-flex;
-  align-items: center;
-  gap: var(--#{$prefix}-links-sizing-inner-spacing);
 
   &:hover {
     color: var(--#{$prefix}-colors-link-hover);
@@ -37,8 +34,16 @@ a,
     @include text-styles.links-extra-small;
   }
 
-  .#{$prefix}-link-icon {
-    font-size: inherit;
-    overflow: hidden;
+  &--with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--#{$prefix}-links-sizing-inner-spacing);
+
+    .material-icons,
+    .material-icons-outlined,
+    .#{$prefix}-link-icon {
+      font-size: inherit;
+      overflow: hidden;
+    }
   }
 }

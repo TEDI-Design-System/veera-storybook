@@ -9,14 +9,12 @@ export interface LinkStoryProps {
 export const createLink = ({ size, hasIcon }: LinkStoryProps) => {
   const link = document.createElement('a');
 
-  link.className = clsx('v-link', { [`v-link--${size}`]: size });
+  link.className = clsx('v-link', { [`v-link--${size}`]: size, 'v-link--with-icon': hasIcon });
   link.innerText = 'Link';
   link.href = '#';
 
   if (hasIcon) {
-    const icon = createIcon({ name: 'open_in_new' });
-    icon.classList.add('v-link-icon');
-    link.appendChild(icon);
+    link.appendChild(createIcon({ name: 'open_in_new' }));
   }
 
   return link;
