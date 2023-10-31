@@ -2,6 +2,7 @@ import { createButton } from './components/button/button';
 import logo from './assets/logo.svg';
 import { createPopper } from '@popperjs/core';
 import '@scss/components/tooltip.scss';
+import '@scss/components/link.scss';
 
 export type NumericRange<
   START extends number,
@@ -91,8 +92,11 @@ export const createIcon = ({ name, outlined }: { name: string; outlined?: boolea
   return icon;
 };
 
-export const createLink = (text: string) => {
+export const createLink = (text: string, size?: 'xs' | 'sm' | 'md') => {
   const link = document.createElement('a');
+  if (size) {
+    link.className = `v-link--${size}`;
+  }
   link.href = '#';
   link.innerText = text;
   return link;
@@ -101,7 +105,7 @@ export const createLink = (text: string) => {
 export const createLogo = () => {
   const img = document.createElement('img');
   img.src = logo;
-  img.alt = 'logo';
+  img.alt = 'süsteemi logo';
   return img;
 };
 

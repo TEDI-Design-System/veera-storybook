@@ -5,6 +5,12 @@
 
 $prefix: constants.$veera-prefix;
 
+@mixin button-colors($state) {
+  border: 2px solid var(--#{$prefix}-navigation-mobile-header-buttons-border-#{$state});
+  background: var(--#{$prefix}-navigation-mobile-header-buttons-background-#{$state});
+  color: var(--#{$prefix}-navigation-mobile-header-buttons-text-#{$state});
+}
+
 .#{$prefix}-header {
   $self: &;
 
@@ -13,16 +19,14 @@ $prefix: constants.$veera-prefix;
   box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
 
   &__row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     padding: var(--#{$prefix}-header-sizing-mobile-padding-y)
       var(--#{$prefix}-header-sizing-mobile-padding-x);
-    & > #{ $self }__column {
+
+    & > #{ $self }__grid-column {
       width: 100%;
     }
 
-    @include media.tablet-and-up {
+    @include media.desktop-and-up {
       padding: var(--#{$prefix}-header-sizing-tablet-and-desktop-padding-y)
         var(--#{$prefix}-header-sizing-tablet-and-desktop-padding-x);
     }
@@ -31,37 +35,39 @@ $prefix: constants.$veera-prefix;
       padding-top: 0;
       padding-bottom: 0;
     }
+
+    &--with-grid {
+      display: flex;
+      align-items: center;
+
+      @include media.desktop-and-up {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'start center end';
+      }
+    }
   }
 
-  &__column {
+  &__grid-column {
     display: flex;
 
     &--start {
+      grid-area: start;
+      margin-right: auto;
       justify-content: flex-start;
     }
 
     &--center {
+      grid-area: center;
+      margin-left: auto;
+      margin-right: auto;
       justify-content: center;
     }
 
     &--end {
+      grid-area: end;
+      margin-left: auto;
       justify-content: flex-end;
-    }
-  }
-
-  &__block {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    border-left: 1px solid var(--#{$prefix}-header-border-border);
-
-    &:first-child {
-      padding-left: 0;
-      border: none;
-    }
-
-    &:last-child {
-      padding-right: 0;
     }
   }
 
@@ -84,5 +90,42 @@ $prefix: constants.$veera-prefix;
 
   &__vr {
     border-left: 1px solid var(--#{$prefix}-header-border-border);
+  }
+
+  &__button {
+    @include text-styles.body-extra-small;
+    @include button-colors('default');
+    @include focus.focus-ring;
+
+    outline: none;
+    display: inline-flex;
+    height: var(--#{$prefix}-navigation-vertical-sizing-mobile-icon-only-width-height);
+    padding: var(--#{$prefix}-navigation-vertical-sizing-mobile-icon-only-padding);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 0;
+    text-decoration: none;
+
+    &:focus {
+      @include button-colors('focus');
+    }
+
+    &:hover {
+      @include button-colors('hover');
+    }
+
+    &:active {
+      @include button-colors('active');
+    }
+
+    &:disabled {
+      @include button-colors('disabled');
+    }
+
+    &--selected {
+      @include button-colors('selected');
+    }
   }
 }

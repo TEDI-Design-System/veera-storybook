@@ -12,7 +12,7 @@ $prefix: constants.$veera-prefix;
     'footer';
   min-height: 100dvh;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     grid-template-columns: auto 1fr;
     grid-template-areas:
       'header header'

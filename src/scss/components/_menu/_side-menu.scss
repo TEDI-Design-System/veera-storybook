@@ -123,7 +123,7 @@ $prefix: constants.$veera-prefix;
     }
   }
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     display: block;
     position: static;
     width: var(--#{$prefix}-navigation-vertical-sizing-desktop-width);

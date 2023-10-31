@@ -11,7 +11,7 @@ h1,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h1;
   }
 }
@@ -22,7 +22,7 @@ h2,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h2;
   }
 }
@@ -33,7 +33,7 @@ h3,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h3;
   }
 }
@@ -44,7 +44,7 @@ h4,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h4;
   }
 }
@@ -55,7 +55,7 @@ h5,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h5;
   }
 }
@@ -66,7 +66,7 @@ h6,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h6;
   }
 }
@@ -74,7 +74,7 @@ h6,
 .#{$prefix}-text-display {
   @include text-styles.headings-small-display;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-display;
   }
 }
