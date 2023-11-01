@@ -1,6 +1,3 @@
-import '@scss/components/button.scss';
-import '@scss/components/alert.scss';
-import '@scss/typography.scss';
 import clsx from 'clsx';
 import { createCloseButton } from '../button/button';
 import { createIcon } from '../../utils';
@@ -24,9 +21,9 @@ const createTitle = () => {
 const createAlertIcon = (variant: AlertVariant) => {
   const iconName: Record<AlertVariant, string> = {
     info: 'info',
-    success: 'check_circle_outline',
+    success: 'check',
     warning: 'warning_amber',
-    error: 'error_outline',
+    error: 'report',
   };
   return createIcon({ name: iconName[variant], outlined: true });
 };

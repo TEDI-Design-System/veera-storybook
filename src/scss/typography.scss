@@ -11,7 +11,7 @@ h1,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h1;
   }
 }
@@ -22,7 +22,7 @@ h2,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h2;
   }
 }
@@ -33,7 +33,7 @@ h3,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h3;
   }
 }
@@ -44,7 +44,7 @@ h4,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h4;
   }
 }
@@ -55,7 +55,7 @@ h5,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h5;
   }
 }
@@ -66,7 +66,7 @@ h6,
 
   margin: 0;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-h6;
   }
 }
@@ -74,7 +74,7 @@ h6,
 .#{$prefix}-text-display {
   @include text-styles.headings-small-display;
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     @include text-styles.headings-large-display;
   }
 }
@@ -100,40 +100,4 @@ p,
 
 .#{$prefix}-text-body-xs {
   @include text-styles.body-extra-small;
-}
-
-a,
-.#{$prefix}-link {
-  @include text-styles.links-medium;
-  @include focus.focus-ring;
-
-  outline: none;
-  font-size: inherit;
-  color: var(--#{$prefix}-colors-link-default);
-
-  &:hover {
-    color: var(--#{$prefix}-colors-link-hover);
-  }
-
-  &:active,
-  &:visited {
-    color: var(--#{$prefix}-colors-link-active);
-  }
-
-  &.#{$prefix}-link--md {
-    @include text-styles.links-medium;
-  }
-
-  &.#{$prefix}-link--sm {
-    @include text-styles.links-small;
-  }
-
-  &.#{$prefix}-link--xs {
-    @include text-styles.links-extra-small;
-  }
-
-  .#{$prefix}-link-icon {
-    font-size: inherit;
-    text-decoration: none;
-  }
 }

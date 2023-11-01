@@ -1,5 +1,3 @@
-import '@scss/components/badge.scss';
-import '@scss/typography.scss';
 import clsx from 'clsx';
 import { createIcon } from '../../utils';
 
@@ -15,7 +13,7 @@ const createBadgeIcon = (variant: BadgeVariant) => {
     info: 'flag',
     success: 'check',
     warning: 'warning_amber',
-    error: 'close',
+    error: 'report',
     neutral: 'label',
   };
   const icon = createIcon({ name: iconName[variant], outlined: true });

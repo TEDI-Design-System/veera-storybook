@@ -1,5 +1,3 @@
-import '@scss/utilities/utilities.scss';
-
 const borders = ['border', 'border-top', 'border-bottom', 'border-left', 'border-right'];
 
 const createExampleBox = (border: string) => {

@@ -1,4 +1,3 @@
-import '@scss/typography.scss';
 import './typography.stories.scss';
 
 export const TEXT_VARIANTS = [
@@ -23,11 +22,11 @@ export interface TextProps {
   variant: (typeof TEXT_VARIANTS)[number][0];
 }
 export const createText = ({ variant = 'h1' }: TextProps) => {
-  const [cl, element] = TEXT_VARIANTS.find((el) => el[0] === variant) || [];
+  const [cl, element] = TEXT_VARIANTS.find((el) => el[0] === variant)!;
 
-  return `<${element} class="v-text-${String(
+  return `<${element.split(',')[0]} class="v-text-${String(
     cl,
-  )}">The quick brown fox jumps over the lazy dog</${element}>`;
+  )}">The quick brown fox jumps over the lazy dog</${element.split(',')[0]}>`;
 };
 
 export const createTextCollection = () => {
@@ -40,13 +39,4 @@ export const createTextCollection = () => {
         }</td><td>${cl[0] === cl[1] ? '&#x2705;' : '&#x274C;'}</td></tr>`,
     ).join('')}
   </div>`;
-};
-
-export const createLink = ({ size }: { size: 'xs' | 'sm' | 'md' }) => {
-  const link = document.createElement('a');
-  link.className = `v-link--${size}`;
-  link.innerHTML = 'Regular';
-  link.href = '#';
-
-  return link;
 };

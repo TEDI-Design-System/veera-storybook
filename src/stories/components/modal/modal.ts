@@ -1,6 +1,3 @@
-import '@scss/components/button.scss';
-import '@scss/components/modal.scss';
-import '@scss/components/overlay.scss';
 import clsx from 'clsx';
 import { createButton, createCloseButton } from '../button/button';
 import { createContentFill } from '../../utils';

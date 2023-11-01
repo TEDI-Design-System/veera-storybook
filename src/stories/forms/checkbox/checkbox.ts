@@ -1,5 +1,3 @@
-import '@scss/forms/forms.scss';
-
 export interface CheckboxProps {
   disabled?: boolean;
   indeterminate?: boolean;

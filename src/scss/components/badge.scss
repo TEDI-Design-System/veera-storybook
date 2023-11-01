@@ -20,6 +20,7 @@ $prefix: constants.$veera-prefix;
   color: var(--#{$prefix}-badges-text-neutral);
   background-color: var(--#{$prefix}-badges-background-neutral);
   gap: var(--#{$prefix}-badges-sizing-inner-spacing);
+  white-space: nowrap;
 
   &__icon {
     display: flex;

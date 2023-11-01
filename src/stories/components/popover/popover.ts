@@ -1,6 +1,5 @@
 import { createPopper } from '@popperjs/core';
 import { createButton, createCloseButton } from '../button/button';
-import '@scss/components/popover.scss';
 import './popover.stories.scss';
 import { createContentFill } from '../../utils';
 

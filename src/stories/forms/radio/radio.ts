@@ -1,7 +1,4 @@
-import '@scss/forms/forms.scss';
-import '@scss/typography.scss';
 import './radio.stories.scss';
-import '@scss/components/card.scss';
 
 export interface RadioProps {
   size?: 'sm' | 'md' | 'lg';

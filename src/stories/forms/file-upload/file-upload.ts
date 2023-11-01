@@ -1,4 +1,3 @@
-import '@scss/forms/forms.scss';
 import clsx from 'clsx';
 import { createIcon } from '../../utils';
 

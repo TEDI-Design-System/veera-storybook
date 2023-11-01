@@ -1,4 +1,3 @@
-import '@scss/components/list.scss';
 import clsx from 'clsx';
 import { definitionData, orderedListItems, unorderedListItems } from './list.data';
 

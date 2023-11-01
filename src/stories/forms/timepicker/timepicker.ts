@@ -1,4 +1,3 @@
-import '@scss/forms/forms.scss';
 import { createIconInput } from '../form-control/form-control';
 import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 
