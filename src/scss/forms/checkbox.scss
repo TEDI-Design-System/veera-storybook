@@ -42,6 +42,7 @@ $prefix: constants.$veera-prefix;
   border-radius: var(--#{$prefix}-checkboxes-radios-sizing-corner-raidus);
   border: 1px solid var(--#{$prefix}-checkboxes-radios-border-default);
   background: var(--#{$prefix}-checkboxes-radios-background-default);
+  flex-shrink: 0;
 
   &:focus {
     box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);

@@ -1,6 +1,7 @@
 @use '../constants';
 @use '../mixins/text-styles';
 @use '../mixins/borders';
+@use '../mixins/focus';
 
 $prefix: constants.$veera-prefix;
 
@@ -54,5 +55,9 @@ $prefix: constants.$veera-prefix;
     display: flex;
     align-items: center;
     gap: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-inner-spacing);
+  }
+
+  .#{$prefix}-form-control:focus-within {
+    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
   }
 }

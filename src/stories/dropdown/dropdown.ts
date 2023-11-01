@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { createCheckbox } from '../forms/checkbox/checkbox';
+import { createCheckboxWithLabel } from '../forms/checkbox/checkbox';
 import { createIcon } from '../utils';
 
 interface DropdownProps {
@@ -23,25 +23,26 @@ interface DropdownOptionsProps {
 }
 
 export const createDropdownOption = ({ label, selected, multiselect }: DropdownOptionsProps) => {
-  const option = document.createElement('button');
+  const option = document.createElement(multiselect ? 'div' : 'button');
   option.role = 'option';
-  option.className = clsx('v-dropdown__option', { 'v-dropdown__option--selected': selected });
+  option.className = clsx('v-dropdown__option', {
+    'v-dropdown__option--selected': selected && !multiselect,
+  });
   option.setAttribute('aria-selected', (!!selected).toString());
 
   if (multiselect) {
-    option.appendChild(createCheckbox({ checked: selected }));
-  }
-
-  if (typeof label === 'string') {
-    option.appendChild(document.createTextNode(label));
+    option.appendChild(createCheckboxWithLabel({ checked: selected, label: label as string }));
   } else {
-    option.appendChild(label);
-  }
-
-  if (!multiselect && selected) {
-    const checkIcon = createIcon({ name: 'check' });
-    checkIcon.classList.add('v-ml-auto');
-    option.appendChild(checkIcon);
+    if (typeof label === 'string') {
+      option.appendChild(document.createTextNode(label));
+    } else {
+      option.appendChild(label);
+    }
+    if (selected) {
+      const checkIcon = createIcon({ name: 'check' });
+      checkIcon.classList.add('v-ml-auto');
+      option.appendChild(checkIcon);
+    }
   }
 
   return option;

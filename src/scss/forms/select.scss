@@ -5,19 +5,46 @@ $prefix: constants.$veera-prefix;
 .#{$prefix}-select {
   position: relative;
 
-  &__trigger {
-    position: relative;
-    display: flex;
-  }
-
-  &__trigger-text {
+  &__text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  &__trigger-icon {
+  &__icon {
+    color: var(--#{$prefix}-colors-text-tertiary);
     margin-left: auto;
+    transition: transform 0.3s;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--#{$prefix}-inputs-sizing-md-inner-spacing);
+  }
+
+  .#{$prefix}-form-control {
+    display: flex;
+    align-items: start;
+
+    &--disabled,
+    &:disabled {
+      .#{$prefix}-select__icon {
+        color: var(--#{$prefix}-inputs-icon-disabled);
+      }
+    }
+
+    &--sm {
+      .#{$prefix}-select__tags {
+        gap: var(--#{$prefix}-inputs-sizing-sm-inner-spacing);
+      }
+    }
+
+    &--lg {
+      .#{$prefix}-select__tags {
+        gap: var(--#{$prefix}-inputs-sizing-lg-inner-spacing);
+      }
+    }
   }
 
   .#{$prefix}-dropdown__option {
@@ -27,12 +54,23 @@ $prefix: constants.$veera-prefix;
   }
 
   &--multiselect {
-    .#{$prefix}-dropdown__option__option {
+    .#{$prefix}-dropdown__option {
       padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-top)
         var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x)
         var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-bottom)
         var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x);
-      gap: var(---#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-inner-spacing);
+      gap: var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-inner-spacing);
+    }
+
+    .#{$prefix}-checkbox,
+    .#{$prefix}-checkbox label {
+      width: 100%;
+    }
+  }
+
+  &--expanded {
+    .#{$prefix}-select__icon {
+      transform: rotateX(180deg);
     }
   }
 }

@@ -1,8 +1,15 @@
 import type { StoryObj } from '@storybook/html';
-import { SelectStoryProps, createSelect } from './select';
+import { SelectStoryProps, createMultiselect, createSelect } from './select';
 const meta = {
   title: 'forms/select',
   tags: ['autodocs'],
+  argTypes: {
+    size: { control: { type: 'select' }, options: ['sm', 'md', 'lg'] },
+  },
+  args: {
+    size: 'sm',
+    disabled: false,
+  },
 };
 
 export default meta;
@@ -11,10 +18,8 @@ type Story = StoryObj<SelectStoryProps>;
 
 export const Default: Story = {
   render: createSelect,
-  argTypes: {
-    size: { control: { type: 'select' }, options: ['sm', 'md', 'lg'] },
-  },
-  args: {
-    size: 'sm',
-  },
+};
+
+export const Multiselect: Story = {
+  render: createMultiselect,
 };

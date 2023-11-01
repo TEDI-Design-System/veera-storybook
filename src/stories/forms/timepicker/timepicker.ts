@@ -24,19 +24,9 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
     inputWrapper.className = textInput.className;
     textInput.replaceWith(inputWrapper);
 
-    const onFocus = () => {
-      inputWrapper.classList.add('v-form-control--focus');
-    };
-
-    const onBlur = () => {
-      inputWrapper.classList.remove('v-form-control--focus');
-    };
-
     const hourInput = document.createElement('input');
     hourInput.className = 'v-timepicker__time-input';
     hourInput.placeholder = 'hh';
-    hourInput.onfocus = onFocus;
-    hourInput.onblur = onBlur;
     inputWrapper.appendChild(hourInput);
 
     const separatorSymbol = document.createElement('span');
@@ -46,8 +36,6 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
     const minuteInput = document.createElement('input');
     minuteInput.className = 'v-timepicker__time-input';
     minuteInput.placeholder = 'mm';
-    minuteInput.onfocus = onFocus;
-    minuteInput.onblur = onBlur;
     inputWrapper.appendChild(minuteInput);
   }
 

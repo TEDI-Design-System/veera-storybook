@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { FormControlStoryProps } from '../form-control/form-control';
 import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 import { createIcon } from '../../utils';
+import { createTag } from '../../components/tag/tag';
 
 export interface SelectStoryProps extends FormControlStoryProps {
   options?: string[];
@@ -17,7 +18,7 @@ const createCreateSelectTriggerText = ({
 }) => {
   const text = document.createElement('span');
   text.innerText = value ? value : placeholder;
-  text.className = clsx('v-select__trigger-text', { 'v-form-control__placeholder': !value });
+  text.className = clsx('v-select__text', { 'v-form-control__placeholder': !value });
   return text;
 };
 
@@ -27,6 +28,7 @@ export const createSelect = ({
   placeholder = 'Select',
   value,
   options,
+  disabled,
 }: SelectStoryProps) => {
   let expanded = false;
 
@@ -34,16 +36,17 @@ export const createSelect = ({
   select.className = 'v-select';
 
   const trigger = document.createElement('button');
-  trigger.className = clsx('v-form-control', 'v-select__trigger', `v-form-control--${size}`, {
+  trigger.className = clsx('v-form-control', `v-form-control--${size}`, {
     [`v-form-control--${status}`]: !!status,
   });
   trigger.ariaHasPopup = 'listbox';
   trigger.setAttribute('aria-expanded', expanded.toString());
+  trigger.disabled = !!disabled;
 
   trigger.appendChild(createCreateSelectTriggerText({ placeholder, value }));
 
   const triggerIcon = createIcon({ name: 'arrow_drop_down' });
-  triggerIcon.classList.add('v-select__trigger-icon');
+  triggerIcon.classList.add('v-select__icon');
   trigger.appendChild(triggerIcon);
 
   select.appendChild(trigger);
@@ -62,6 +65,82 @@ export const createSelect = ({
     expanded = !expanded;
     dropdown.hidden = !expanded;
     trigger.setAttribute('aria-expanded', expanded.toString());
+    if (expanded) {
+      select.classList.add('v-select--expanded');
+    } else {
+      select.classList.remove('v-select--expanded');
+    }
+  };
+
+  return select;
+};
+
+const multiSelecOptions = [
+  {
+    label:
+      'Esimene valik, mis on ühtlasi ka üsna pikk, et demonstreerida, kuidas kuvatakse mahukad väärtused',
+    selected: true,
+  },
+  { label: 'Teine valik', selected: true },
+  { label: 'Kolmas valik', selected: true },
+  { label: 'Neljas valik' },
+  { label: 'Viies valik' },
+];
+
+export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) => {
+  let expanded = false;
+
+  const select = document.createElement('div');
+  select.className = 'v-select v-select--multiselect';
+
+  const trigger = document.createElement('div');
+  trigger.tabIndex = 0;
+  trigger.className = clsx('v-form-control', `v-form-control--${size}`, {
+    [`v-form-control--${status}`]: status,
+    'v-form-control--disabled': disabled,
+  });
+  trigger.ariaHasPopup = 'listbox';
+  trigger.setAttribute('aria-expanded', expanded.toString());
+
+  const tagsContainer = document.createElement('div');
+  tagsContainer.className = 'v-select__tags';
+  multiSelecOptions
+    .filter((opt) => opt.selected)
+    .forEach((opt) => {
+      const tag = createTag({ text: opt.label, closable: true });
+      const closeBtn = tag.querySelector('button');
+      if (closeBtn) {
+        closeBtn.onclick = (e) => {
+          e.stopPropagation();
+        };
+      }
+      tagsContainer.appendChild(tag);
+    });
+  trigger.appendChild(tagsContainer);
+  const triggerIcon = createIcon({ name: 'arrow_drop_down' });
+  triggerIcon.classList.add('v-select__icon');
+  trigger.appendChild(triggerIcon);
+
+  select.appendChild(trigger);
+
+  const dropdown = createDropdown();
+  dropdown.id = Math.random().toString();
+  trigger.setAttribute('aria-controls', dropdown.id);
+  dropdown.hidden = !expanded;
+  multiSelecOptions.forEach(({ label, selected }) => {
+    dropdown.appendChild(createDropdownOption({ label, selected, multiselect: true }));
+  });
+  select.appendChild(dropdown);
+
+  trigger.onclick = () => {
+    expanded = !expanded;
+    dropdown.hidden = !expanded;
+    trigger.setAttribute('aria-expanded', expanded.toString());
+    if (expanded) {
+      select.classList.add('v-select--expanded');
+    } else {
+      select.classList.remove('v-select--expanded');
+    }
   };
 
   return select;
