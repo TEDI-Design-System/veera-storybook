@@ -40,9 +40,7 @@ $prefix: constants.$veera-prefix;
     cursor: pointer;
     border: none;
     outline: none;
-    display: flex;
-    align-items: center;
-    gap: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-inner-spacing);
+    text-align: left;
     width: 100%;
     padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-top)
       var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-padding-x)
@@ -83,16 +81,6 @@ $prefix: constants.$veera-prefix;
       @include state-colors('disabled');
 
       pointer-events: none;
-    }
-  }
-
-  &--multiselect {
-    #{$self}__option {
-      padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-top)
-        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x)
-        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-bottom)
-        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x);
-      gap: var(---#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-inner-spacing);
     }
   }
 }

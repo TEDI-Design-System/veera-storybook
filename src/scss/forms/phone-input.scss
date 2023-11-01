@@ -62,4 +62,10 @@ $prefix: constants.$veera-prefix;
   &--lg {
     @include sizing-properties('lg', $self);
   }
+
+  .#{$prefix}-dropdown__option {
+    display: flex;
+    align-items: center;
+    gap: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-inner-spacing);
+  }
 }

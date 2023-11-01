@@ -13,14 +13,20 @@ export const createInputControl = ({
   disabled,
   status,
   placeholder = '',
+  value,
 }: FormControlStoryProps) => {
   const input = document.createElement('input');
   input.type = 'text';
   input.placeholder = placeholder;
-  input.className = clsx('v-form-control', `v-form-control--${size}`, {
+  input.className = clsx('v-form-control', {
     [`v-form-control--${status}`]: !!status,
+    [`v-form-control--${size}`]: size,
   });
   input.disabled = !!disabled;
+
+  if (value) {
+    input.value = value;
+  }
 
   return input;
 };
@@ -30,6 +36,7 @@ export const createTextAreaControl = ({
   disabled,
   status,
   placeholder = '',
+  value,
 }: FormControlStoryProps) => {
   const textarea = document.createElement('textarea');
   textarea.placeholder = placeholder;
@@ -37,6 +44,10 @@ export const createTextAreaControl = ({
     [`v-form-control--${status}`]: !!status,
   });
   textarea.disabled = !!disabled;
+
+  if (value) {
+    textarea.value = value;
+  }
 
   return textarea;
 };
@@ -95,6 +106,7 @@ export const createIconInput = ({
     const iconClass = isIconButton ? 'v-form-control-icon-btn' : 'v-form-control-icon';
     icon.className = `material-icons ${iconClass} ${iconClass}--${position}`;
     icon.innerText = iconName;
+    icon.setAttribute('aria-hidden', 'true');
     return icon;
   };
 

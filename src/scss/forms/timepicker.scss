@@ -49,4 +49,10 @@ $prefix: constants.$veera-prefix;
       padding-left: 0;
     }
   }
+
+  .#{$prefix}-dropdown__option {
+    display: flex;
+    align-items: center;
+    gap: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-inner-spacing);
+  }
 }

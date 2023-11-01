@@ -4,7 +4,6 @@ import { createIcon } from '../utils';
 
 interface DropdownProps {
   position: 'top' | 'bottom';
-  multiselect?: boolean;
 }
 
 export const createDropdown = (props?: DropdownProps) => {
@@ -12,7 +11,6 @@ export const createDropdown = (props?: DropdownProps) => {
   dropdown.role = 'listbox';
   dropdown.className = clsx('v-dropdown', {
     [`v-dropdown--${props?.position}`]: !!props?.position,
-    'v-dropdown--multiselect': props?.multiselect,
   });
 
   return dropdown;

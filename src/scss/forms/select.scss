@@ -19,4 +19,20 @@ $prefix: constants.$veera-prefix;
   &__trigger-icon {
     margin-left: auto;
   }
+
+  .#{$prefix}-dropdown__option {
+    display: flex;
+    align-items: center;
+    gap: var(--#{$prefix}-dropdown-menu-menuitem-sizing-singleselect-inner-spacing);
+  }
+
+  &--multiselect {
+    .#{$prefix}-dropdown__option__option {
+      padding: var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-top)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-bottom)
+        var(--#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-padding-x);
+      gap: var(---#{$prefix}-dropdown-menu-menuitem-sizing-multiselect-inner-spacing);
+    }
+  }
 }
