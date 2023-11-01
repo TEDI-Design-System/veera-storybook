@@ -16,7 +16,7 @@ $prefix: constants.$veera-prefix;
     var(--#{$prefix}-paging-sizing-small-padding-bottom)
     var(--#{$prefix}-paging-sizing-small-padding-x);
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     flex-direction: row;
     justify-content: space-between;
   }

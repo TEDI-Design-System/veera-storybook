@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import './spacing.stories.scss';
-import '@scss/utilities/spacing.scss';
 
 export interface SpacingProps {
   type: 'margin' | 'padding';
@@ -54,12 +53,12 @@ export const createSpacingTemplate = ({ type, area, spacing }: SpacingProps) => 
 
 export interface GridSpacingProps {
   type: 'gap' | 'row-gap' | 'column-gap';
-  spacing: number;
+  gap: number;
 }
 
-export const createGridSpacingTemplate = ({ type, spacing }: GridSpacingProps) => {
+export const createGridSpacingTemplate = ({ type, gap }: GridSpacingProps) => {
   const template = `
-  <div class="${clsx('grid-container', `v-${type}-${spacing}`)}">
+  <div class="${clsx('grid-container', `v-${type}-${gap}`)}">
     <div></div>
     <div></div>
     <div></div>

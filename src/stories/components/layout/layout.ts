@@ -3,7 +3,6 @@ import { createFooter } from '../footer/footer';
 import { createHeader } from '../header/header';
 import { createHorizontalNavigation } from '../menu/horizontal-menu';
 import { createSideNavigation } from '../menu/side-menu';
-import '@scss/veera.scss';
 
 const createContent = () => {
   const container = document.createElement('main');

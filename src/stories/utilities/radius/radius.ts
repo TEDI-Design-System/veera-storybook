@@ -1,5 +1,3 @@
-import '@scss/utilities/utilities.scss';
-
 const areas = ['t', 'b', 'l', 'r', 'tl', 'tr', 'bl', 'br'];
 
 const createExampleBox = (radius: number, area?: string) => {

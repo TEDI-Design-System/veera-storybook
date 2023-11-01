@@ -1,6 +1,4 @@
-import '@scss/reboot.scss';
-import '@scss/veera-variables-dark.scss';
-import '@scss/veera-variables.scss';
+import '@scss/veera.scss';
 import { addons } from '@storybook/addons';
 import { GLOBALS_UPDATED } from '@storybook/core-events';
 import type { Preview } from '@storybook/html';

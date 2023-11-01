@@ -1,5 +1,3 @@
-import '@scss/utilities/utilities.scss';
-
 const classes = ['md-up', 'lg-up', 'md-down', 'lg-down'];
 
 const createExampleBox = (classSuffix: string) => {

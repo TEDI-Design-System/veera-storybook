@@ -1,5 +1,4 @@
 import { createButton } from '../button/button';
-import '@scss/components/tooltip.scss';
 import './tooltip.stories.scss';
 import { createLink, createTooltip } from '../../utils';
 

@@ -26,13 +26,13 @@
   }
 }
 
-@mixin tablet-and-up {
+@mixin desktop-and-up {
   @include breakpoint-up('lg') {
     @content;
   }
 }
 
-@mixin mobile-and-up {
+@mixin tablet-and-up {
   @include breakpoint-up('md') {
     @content;
   }

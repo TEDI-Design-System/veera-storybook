@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { FormControlStoryProps } from '../form-control/form-control';
-import '@scss/forms/forms.scss';
 import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 import { createIcon } from '../../utils';
 

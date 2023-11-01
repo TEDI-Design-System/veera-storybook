@@ -1,5 +1,3 @@
-import '@scss/utilities/utilities.scss';
-
 const shadows = ['elevation-2px', 'elevation-4px', 'sticky-right', 'sticky-left'];
 
 const createExampleBox = (shadow: string) => {

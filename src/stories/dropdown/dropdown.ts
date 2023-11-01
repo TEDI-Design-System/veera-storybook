@@ -1,5 +1,3 @@
-import '@scss/components/dropdown.scss';
-import '@scss/utilities/spacing.scss';
 import clsx from 'clsx';
 import { createCheckbox } from '../forms/checkbox/checkbox';
 import { createIcon } from '../utils';

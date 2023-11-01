@@ -1,4 +1,3 @@
-import '@scss/typography.scss';
 import './typography.stories.scss';
 
 export const TEXT_VARIANTS = [
@@ -40,13 +39,4 @@ export const createTextCollection = () => {
         }</td><td>${cl[0] === cl[1] ? '&#x2705;' : '&#x274C;'}</td></tr>`,
     ).join('')}
   </div>`;
-};
-
-export const createLink = ({ size }: { size: 'xs' | 'sm' | 'md' }) => {
-  const link = document.createElement('a');
-  link.className = `v-link--${size}`;
-  link.innerHTML = 'Regular';
-  link.href = '#';
-
-  return link;
 };

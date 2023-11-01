@@ -1,10 +1,3 @@
-import '@scss/components/button.scss';
-import '@scss/components/cookie-popup.scss';
-import '@scss/components/collapse.scss';
-import '@scss/utilities/flex.scss';
-import '@scss/utilities/spacing.scss';
-import '@scss/utilities/colors.scss';
-import '@scss/typography.scss';
 import './cookie-popup.scss';
 import { createButton } from '../button/button';
 import { createCheckboxWithLabel } from '../../forms/checkbox/checkbox';

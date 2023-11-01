@@ -2,7 +2,7 @@
 
 ## Importing tokens from Figma
 
-Currently only Pearu has the Figma token export plugin (will probably be added to Bitbucket in near future), so ping him if new variables are added to Figma. Exported design tokens are in [design-token.json](/design-tokens.json) and token for scss files generation are in [tokens-for-scss.json](/tokens-for-scss.json)
+[e-service-design-system-figma-export](https://koodivaramu.eesti.ee/veebiraamistik/e-service-design-system-figma-export) plugin can be used to export tokens from Figma. Exported design tokens are in [design-token.json](/design-tokens.json) and token for scss files generation are in [tokens-for-scss.json](/tokens-for-scss.json)
 
 ## Generating scss from tokens
 

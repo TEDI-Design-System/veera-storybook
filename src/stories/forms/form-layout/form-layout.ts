@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import '@scss/forms/forms.scss';
 import {
   createInputControl,
   createSelectControl,

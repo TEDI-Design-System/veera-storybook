@@ -1,4 +1,3 @@
-import '@scss/components/menu.scss';
 import { createIcon } from '../../utils';
 import clsx from 'clsx';
 import { sideNavItems } from './menu-items';

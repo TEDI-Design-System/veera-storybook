@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import '@scss/components/tabs.scss';
 import { createContentFill, createHorizontalScrollButtons } from '../../utils';
 
 export interface TabItemProps {

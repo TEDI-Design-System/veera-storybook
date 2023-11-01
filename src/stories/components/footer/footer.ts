@@ -1,5 +1,3 @@
-import '@scss/components/footer.scss';
-import '@scss/typography.scss';
 import { createIcon } from '../../utils';
 import EELogo from '../../assets/logo.svg';
 import SFLogo from './SFLogo.png';

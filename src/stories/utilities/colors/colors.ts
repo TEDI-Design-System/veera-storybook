@@ -1,5 +1,3 @@
-import '@scss/utilities/utilities.scss';
-import '@scss/typography.scss';
 import tokens from '../../../../tokens-for-scss.json';
 
 const colorTokens = tokens.variables.filter((t) => t.type === 'COLOR');

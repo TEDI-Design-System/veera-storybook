@@ -67,6 +67,7 @@ $prefix: constants.$veera-prefix;
   &__item {
     @include text-styles.body-small;
 
+    width: 100%;
     cursor: pointer;
     border: none;
     outline: none;
@@ -123,7 +124,7 @@ $prefix: constants.$veera-prefix;
     }
   }
 
-  @include media.tablet-and-up {
+  @include media.desktop-and-up {
     display: block;
     position: static;
     width: var(--#{$prefix}-navigation-vertical-sizing-desktop-width);

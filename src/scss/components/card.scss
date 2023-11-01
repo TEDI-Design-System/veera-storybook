@@ -34,11 +34,6 @@ $prefix: constants.$veera-prefix;
     @include base-sizing;
   }
 
-  &--lg {
-    padding: var(--#{$prefix}-cards-sizing-padding-large);
-    border-radius: var(--#{$prefix}-cards-sizing-radius-large);
-  }
-
   &--flat {
     box-shadow: none;
   }

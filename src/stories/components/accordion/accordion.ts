@@ -1,4 +1,3 @@
-import '@scss/components/accordion.scss';
 import clsx from 'clsx';
 import { createContentFill, createIcon } from '../../utils';
 

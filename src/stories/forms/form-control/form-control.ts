@@ -1,5 +1,3 @@
-import '@scss/forms/forms.scss';
-import '@scss/components/button.scss';
 import clsx from 'clsx';
 
 export interface FormControlStoryProps {

@@ -11,20 +11,20 @@ $prefix: constants.$veera-prefix;
   width: 100%;
   height: 8px;
   border-radius: var(--#{$prefix}-slider-sizing-corner-radius);
-  outline: 1px solid var(--#{$prefix}-progress-bar-passive-track-border);
+  outline: 1px solid var(--#{$prefix}-progress-bar-track-border-border);
 
   &::-webkit-progress-bar {
-    background: var(--#{$prefix}-progress-bar-passive-track-background);
+    background: var(--#{$prefix}-progress-bar-track-passive-background);
     border-radius: var(--#{$prefix}-slider-sizing-corner-radius);
   }
 
   &::-webkit-progress-value {
-    background: var(--#{$prefix}-progress-bar-active-track-default);
+    background: var(--#{$prefix}-progress-bar-track-active-background);
     border-radius: var(--#{$prefix}-slider-sizing-corner-radius);
   }
 
   &::-moz-progress-bar {
-    background: var(--#{$prefix}-progress-bar-active-track-default);
+    background: var(--#{$prefix}-progress-bar-track-active-background);
     border-radius: var(--#{$prefix}-slider-sizing-corner-radius);
   }
 
