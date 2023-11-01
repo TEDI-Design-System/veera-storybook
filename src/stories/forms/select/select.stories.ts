@@ -7,7 +7,7 @@ const meta = {
     size: { control: { type: 'select' }, options: ['sm', 'md', 'lg'] },
   },
   args: {
-    size: 'sm',
+    size: 'md',
     disabled: false,
   },
 };

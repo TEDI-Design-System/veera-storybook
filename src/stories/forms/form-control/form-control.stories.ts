@@ -41,7 +41,7 @@ export const TextArea: Story = {
   render: createTextAreaControl,
 };
 
-export const Select: Story = {
+export const NativeSelect: Story = {
   render: createSelectControlStory,
 };
 
