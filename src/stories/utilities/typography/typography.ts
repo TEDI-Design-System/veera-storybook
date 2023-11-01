@@ -23,11 +23,11 @@ export interface TextProps {
   variant: (typeof TEXT_VARIANTS)[number][0];
 }
 export const createText = ({ variant = 'h1' }: TextProps) => {
-  const [cl, element] = TEXT_VARIANTS.find((el) => el[0] === variant) || [];
+  const [cl, element] = TEXT_VARIANTS.find((el) => el[0] === variant)!;
 
-  return `<${element} class="v-text-${String(
+  return `<${element.split(',')[0]} class="v-text-${String(
     cl,
-  )}">The quick brown fox jumps over the lazy dog</${element}>`;
+  )}">The quick brown fox jumps over the lazy dog</${element.split(',')[0]}>`;
 };
 
 export const createTextCollection = () => {
