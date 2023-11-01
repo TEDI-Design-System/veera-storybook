@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 export interface CheckboxProps {
   disabled?: boolean;
   indeterminate?: boolean;
@@ -15,7 +17,7 @@ export const createCheckbox = ({
   checkbox.type = 'checkbox';
   checkbox.disabled = !!disabled;
   checkbox.checked = checked;
-  checkbox.className = `v-checkbox v-checkbox--${size}`;
+  checkbox.className = clsx('v-checkbox', { [`v-checkbox--${size}`]: size });
   checkbox.setAttribute('aria-label', 'standalone checkbox');
   checkbox.indeterminate = !!indeterminate;
 

@@ -5,14 +5,18 @@ import {
   createTextAreaControl,
 } from '../form-control/form-control';
 import { createFileUpload } from '../file-upload/file-upload';
+import { createInputGroup } from '../input-group/input-group';
+import { createCheckboxWithLabel } from '../checkbox/checkbox';
 
 interface FormRowProps {
-  inputId: string;
+  inputId?: string;
   label: string;
   input: HTMLElement;
   helperText?: string;
   required?: boolean;
   readonly?: boolean;
+  status?: 'error' | 'success';
+  isFieldset?: boolean;
 }
 
 export const createFormRow = ({
@@ -22,22 +26,26 @@ export const createFormRow = ({
   helperText,
   required,
   readonly,
+  status,
+  isFieldset,
 }: FormRowProps) => {
-  const formRow = document.createElement('div');
+  const formRow = document.createElement(isFieldset ? 'fieldset' : 'div');
   formRow.className = 'v-form-row';
 
-  const createHelperText = (text: string) => {
+  const createHelperText = (text: string, status?: 'error' | 'success') => {
     const helperTextEl = document.createElement('span');
     helperTextEl.id = Math.random().toString();
     input.setAttribute('aria-describedby', helperTextEl.id);
-    helperTextEl.className = 'v-form-feedback';
+    helperTextEl.className = clsx('v-form-feedback', { [`v-form-feedback--${status}`]: status });
     helperTextEl.innerText = text;
     return helperTextEl;
   };
 
-  const formRowLabel = document.createElement('label');
+  const formRowLabel = document.createElement(isFieldset ? 'legend' : 'label');
   formRowLabel.className = clsx('v-form-row-label', { 'v-form-row-label--required': !!required });
-  formRowLabel.setAttribute('for', inputId);
+  if (inputId) {
+    formRowLabel.setAttribute('for', inputId);
+  }
   formRowLabel.innerText = label;
   formRow.appendChild(formRowLabel);
 
@@ -45,7 +53,7 @@ export const createFormRow = ({
   formRowInput.className = clsx('v-form-row-input', { 'v-form-row-input--readonly': readonly });
   formRowInput.appendChild(input);
   if (helperText) {
-    formRowInput.appendChild(createHelperText(helperText));
+    formRowInput.appendChild(createHelperText(helperText, status));
   }
   formRow.appendChild(formRowInput);
 
@@ -63,11 +71,61 @@ const createTextInputRow = () => {
   textInput.id = 'text-input';
   textInput.required = true;
   return createFormRow({
-    label: 'Text input',
+    label: 'Tekstivälja näidis',
     inputId: textInput.id,
     input: textInput,
     helperText: 'Helper text',
     required: true,
+  });
+};
+
+const createErrorInputRow = () => {
+  const textInput = createInputControl({ size: 'md', placeholder: 'Placeholder', status: 'error' });
+  textInput.id = 'error-input';
+  return createFormRow({
+    label: 'Veaga väli',
+    inputId: textInput.id,
+    input: textInput,
+    helperText: 'Vigane sisend',
+    status: 'error',
+  });
+};
+
+const createSuccessInputRow = () => {
+  const textInput = createInputControl({
+    size: 'md',
+    placeholder: 'Placeholder',
+    status: 'success',
+  });
+  textInput.id = 'success-input';
+  return createFormRow({
+    label: 'Edukas väli',
+    inputId: textInput.id,
+    input: textInput,
+    helperText: 'Õige sisend',
+    status: 'success',
+  });
+};
+
+const createInputGroupRow = () => {
+  const inputGroup = createInputGroup({
+    size: 'md',
+    placeholder: 'Placeholder',
+    status: 'error',
+    startAddon: '%',
+    endAddon: '%',
+  });
+  const id = 'input-group';
+  const input = inputGroup.querySelector('input');
+  if (input) {
+    input.id = id;
+  }
+  return createFormRow({
+    label: 'Väljade grupi näide',
+    inputId: id,
+    input: inputGroup,
+    helperText: 'Vigane sisend',
+    status: 'error',
   });
 };
 
@@ -105,6 +163,20 @@ const createReadOnlyRow = () => {
   });
 };
 
+const createCheckboxRow = () => {
+  const checkboxesContainer = document.createElement('div');
+  checkboxesContainer.className = 'v-flex v-flex-column v-gap-6';
+  for (let i = 1; i < 6; i++) {
+    checkboxesContainer.appendChild(createCheckboxWithLabel({ label: `Valik ${i}` }));
+  }
+  return createFormRow({
+    label: 'Mitmikvalik märkmeruutudega',
+    input: checkboxesContainer,
+    helperText: 'Vali vähemalt üks',
+    isFieldset: true,
+  });
+};
+
 export interface FormLayoutStoryProps {
   direction: 'horizontal' | 'vertical';
   size: 'sm' | 'md' | 'lg';
@@ -120,11 +192,19 @@ export const createFormLayout = ({ direction, size = 'md' }: FormLayoutStoryProp
 
   formGroup.appendChild(createTextInputRow());
 
+  formGroup.appendChild(createErrorInputRow());
+
+  formGroup.appendChild(createSuccessInputRow());
+
+  formGroup.appendChild(createInputGroupRow());
+
   formGroup.appendChild(createSelectInputRow());
 
   formGroup.appendChild(createFileUploadRow());
 
   formGroup.appendChild(createReadOnlyRow());
+
+  formGroup.appendChild(createCheckboxRow());
 
   return formGroup;
 };

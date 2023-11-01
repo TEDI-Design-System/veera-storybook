@@ -6,7 +6,6 @@ $prefix: constants.$veera-prefix;
 @mixin vertical-row {
   gap: 0;
   flex-direction: column;
-  align-items: start;
   .#{$prefix}-form-row-label {
     width: auto;
     text-align: left;
@@ -44,6 +43,7 @@ $prefix: constants.$veera-prefix;
   --#{$prefix}-form-row-gap: var(--#{$prefix}-form-x-gap);
 
   display: flex;
+  align-items: start;
   gap: var(--#{$prefix}-form-row-gap, 16px);
 
   &--vertical {
