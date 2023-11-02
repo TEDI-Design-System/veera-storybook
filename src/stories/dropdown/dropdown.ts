@@ -20,9 +20,15 @@ interface DropdownOptionsProps {
   label: string | HTMLElement | DocumentFragment;
   selected?: boolean;
   multiselect?: boolean;
+  size?: 'sm' | 'md' | 'lg';
 }
 
-export const createDropdownOption = ({ label, selected, multiselect }: DropdownOptionsProps) => {
+export const createDropdownOption = ({
+  label,
+  selected,
+  multiselect,
+  size,
+}: DropdownOptionsProps) => {
   const option = document.createElement(multiselect ? 'div' : 'button');
   option.role = 'option';
   option.className = clsx('v-dropdown__option', {
@@ -31,7 +37,9 @@ export const createDropdownOption = ({ label, selected, multiselect }: DropdownO
   option.setAttribute('aria-selected', (!!selected).toString());
 
   if (multiselect) {
-    option.appendChild(createCheckboxWithLabel({ checked: selected, label: label as string }));
+    option.appendChild(
+      createCheckboxWithLabel({ checked: selected, label: label as string, size }),
+    );
   } else {
     if (typeof label === 'string') {
       option.appendChild(document.createTextNode(label));

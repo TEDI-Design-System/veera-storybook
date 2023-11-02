@@ -128,7 +128,7 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
   trigger.setAttribute('aria-controls', dropdown.id);
   dropdown.hidden = !expanded;
   multiSelecOptions.forEach(({ label, selected }) => {
-    dropdown.appendChild(createDropdownOption({ label, selected, multiselect: true }));
+    dropdown.appendChild(createDropdownOption({ label, selected, multiselect: true, size }));
   });
   select.appendChild(dropdown);
 
