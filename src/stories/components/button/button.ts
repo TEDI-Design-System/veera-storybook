@@ -12,6 +12,7 @@ export interface ButtonProps {
   leftIcon?: string;
   rightIcon?: string;
   fullWidth?: boolean;
+  outlinedIcon?: boolean;
 }
 export const createButton = ({
   label,
@@ -23,6 +24,7 @@ export const createButton = ({
   leftIcon,
   rightIcon,
   fullWidth,
+  outlinedIcon,
 }: ButtonProps) => {
   const btn = document.createElement('button');
   btn.type = 'button';
@@ -34,11 +36,12 @@ export const createButton = ({
   if (rightIcon) {
     btn.appendChild(createIcon({ name: rightIcon }));
   }
+  const iconClass = outlinedIcon ? 'material-icons-outlined' : 'material-icons';
   btn.className = clsx('v-button', `v-button--${variant}`, `v-button--${size}`, {
     'v-button--icon-only': iconOnly,
     'v-button--floating': floating,
     'v-button--full-width': fullWidth,
-    'material-icons': iconOnly,
+    [iconClass]: iconOnly,
   });
   btn.disabled = !!disabled;
 

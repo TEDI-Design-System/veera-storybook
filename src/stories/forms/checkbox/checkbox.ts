@@ -18,7 +18,6 @@ export const createCheckbox = ({
   checkbox.disabled = !!disabled;
   checkbox.checked = checked;
   checkbox.className = clsx('v-checkbox', { [`v-checkbox--${size}`]: size });
-  checkbox.setAttribute('aria-label', 'standalone checkbox');
   checkbox.indeterminate = !!indeterminate;
 
   return checkbox;

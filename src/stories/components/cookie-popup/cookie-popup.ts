@@ -1,12 +1,15 @@
 import './cookie-popup.scss';
 import { createButton } from '../button/button';
 import { createCheckboxWithLabel } from '../../forms/checkbox/checkbox';
-import { createIcon, createTooltip } from '../../utils';
+import { createTooltip } from '../../utils';
 
 const consentOptions = ['Vajalikud küpsised', 'Analüütilised küpsised', 'Sihtturunduse küpsised'];
 
+const titleId = 'cookie-popu-title';
+
 const createTitle = () => {
   const title = document.createElement('h4');
+  title.id = titleId;
   title.className = 'v-cookie-popup__title';
   title.textContent = 'Meie veebileht kasutab küpsiseid';
   return title;
@@ -16,7 +19,7 @@ const createPopupBody = () => {
   const body = document.createElement('div');
   body.className = 'v-cookie-popup__body';
   body.innerHTML =
-    'Meie veebisait kasutab küpsiseid. Valides "Nõustun", annate nõusoleku kõikide küpsiste kasutamiseks. <a class="v-link-sm">Lugege rohkem meie küpsiste kasutamise põhimõtetest</a>.';
+    'Meie veebisait kasutab küpsiseid. Valides "Nõustun", annate nõusoleku kõikide küpsiste kasutamiseks. <a class="v-link-sm" href="#">Lugege rohkem meie küpsiste kasutamise põhimõtetest</a>.';
   return body;
 };
 
@@ -65,6 +68,8 @@ const createConsentOptionsCollapse = () => {
   collapse.className = 'v-collapse';
   const collapseContent = document.createElement('div');
   collapseContent.className = 'v-collapse__content v-flex v-flex-column v-gap-5';
+  collapseContent.style.padding = '4px'; // workaround to prevent focus styles being cut off
+  collapseContent.style.margin = '-4px';
   collapse.appendChild(collapseContent);
   const optionsContainer = document.createElement('div');
   optionsContainer.className = 'v-flex v-flex-column v-pl-5 v-gap-4 v-mt-4';
@@ -79,11 +84,19 @@ const createConsentOptionsCollapse = () => {
 };
 
 const createConsentOptionCheckbox = (label: string) => {
+  const defaultOption = label === 'Vajalikud küpsised';
   const container = document.createElement('div');
-  container.className = 'v-flex v-gap-3';
-  container.appendChild(createCheckboxWithLabel({ label, size: 'sm' }));
-  const infoIcon = createIcon({ name: 'info', outlined: true });
-  infoIcon.classList.add('v-color-blue-600');
+  container.className = 'v-flex v-gap-3 v-align-items-center';
+  container.appendChild(
+    createCheckboxWithLabel({ label, size: 'sm', checked: defaultOption, disabled: defaultOption }),
+  );
+  const infoIcon = createButton({
+    label: 'info',
+    iconOnly: true,
+    outlinedIcon: true,
+    variant: 'neutral',
+    size: 'sm',
+  });
   container.appendChild(infoIcon);
   const tooltip = createTooltip({
     triggerElement: infoIcon,
@@ -95,9 +108,11 @@ const createConsentOptionCheckbox = (label: string) => {
 };
 
 const createPopupBase = () => {
-  const overlay = document.createElement('div');
-  overlay.className = 'v-cookie-popup';
-  return overlay;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'v-cookie-popup';
+  wrapper.role = 'region';
+  wrapper.setAttribute('aria-labelledy', titleId);
+  return wrapper;
 };
 
 export const createCookiePopup = () => {
