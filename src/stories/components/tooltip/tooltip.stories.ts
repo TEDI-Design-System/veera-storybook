@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/html';
-import { TooltipStoryProps, createSimpleTooltip, createTooltipStory } from './tooltip';
+import { TooltipStoryProps, createStaticTooltip, createTooltipStory } from './tooltip';
 
 const meta = {
   title: 'components/tooltip',
@@ -18,6 +18,6 @@ export const PopperTooltip: StoryObj<TooltipStoryProps> = {
   },
 };
 
-export const SimpleTooltip: StoryObj = {
-  render: createSimpleTooltip,
+export const Tooltip: StoryObj = {
+  render: createStaticTooltip,
 };

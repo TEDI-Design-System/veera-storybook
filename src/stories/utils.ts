@@ -120,6 +120,8 @@ export const createTooltip = ({
   tooltip.className = 'v-tooltip';
   tooltip.innerText = text;
   tooltip.role = 'tooltip';
+  tooltip.id = `tooltip-${Math.random()}`;
+  triggerElement.setAttribute('aria-describedby', tooltip.id);
 
   const popperInstance = createPopper(triggerElement, tooltip, {
     placement,

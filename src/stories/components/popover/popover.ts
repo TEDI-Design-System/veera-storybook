@@ -7,6 +7,8 @@ export interface PopoverStoryProps {
   placement: 'top' | 'bottom' | 'left' | 'right';
 }
 
+const titleId = 'popover-title';
+
 const createPopoverHeader = () => {
   const header = document.createElement('div');
   header.className = 'v-popover__header';
@@ -34,17 +36,26 @@ const createTitle = () => {
   const title = document.createElement('h4');
   title.className = 'v-popover__title';
   title.textContent = 'Modaalmulli pealkiri';
+  title.id = titleId;
   return title;
 };
 
 export const createPopover = ({ placement = 'top' }: PopoverStoryProps) => {
+  let opened = false;
+
   const trigger = createButton({ label: 'Popover' });
+  trigger.setAttribute('aria-expanded', 'false');
+
   const popover = document.createElement('div');
+  popover.id = 'popover-example';
+  popover.role = 'region';
+  popover.setAttribute('aria-labelledby', titleId);
   popover.className = 'v-popover';
+  trigger.setAttribute('aria-controls', popover.id);
 
   const popoverContent = document.createElement('div');
   popoverContent.className = 'v-popover__content';
-  popoverContent.appendChild(createCloseButton());
+  popoverContent.appendChild(createCloseButton('Sulge modaalmull'));
   popoverContent.appendChild(createPopoverHeader());
   popoverContent.appendChild(createPopoverBody());
   popoverContent.appendChild(createPopoverFooter());
@@ -72,7 +83,6 @@ export const createPopover = ({ placement = 'top' }: PopoverStoryProps) => {
 
     popperInstance.setOptions((options) => ({
       ...options,
-      modifiers: [...(options.modifiers ?? []), { name: 'eventListeners', enabled: true }],
     }));
 
     popperInstance.update();
@@ -80,23 +90,17 @@ export const createPopover = ({ placement = 'top' }: PopoverStoryProps) => {
 
   function hide() {
     popover.classList.remove('v-popover--visible');
-
-    popperInstance.setOptions((options) => ({
-      ...options,
-      modifiers: [...(options.modifiers ?? []), { name: 'eventListeners', enabled: false }],
-    }));
   }
 
-  const showEvents = ['mouseenter', 'focus'];
-  const hideEvents = ['mouseleave', 'blur'];
-
-  showEvents.forEach((event) => {
-    trigger.addEventListener(event, show);
-  });
-
-  hideEvents.forEach((event) => {
-    trigger.addEventListener(event, hide);
-  });
+  trigger.onclick = () => {
+    opened = !opened;
+    if (opened) {
+      show();
+    } else {
+      hide();
+    }
+    trigger.setAttribute('aria-expanded', opened.toString());
+  };
 
   return container;
 };

@@ -21,32 +21,6 @@ $prefix: constants.$veera-prefix;
   position: absolute;
 }
 
-[data-#{$prefix}-tooltip] {
-  position: relative;
-
-  &:hover,
-  &:focus {
-    &::after {
-      @include tooltip-body;
-
-      width: max-content;
-      content: attr(data-#{$prefix}-tooltip);
-      display: block;
-      bottom: calc(100% + 4px);
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &::before {
-      @include tooltip-arrow;
-
-      left: 50%;
-      bottom: 100%;
-      transform: translateX(-50%) rotate(45deg);
-    }
-  }
-}
-
 .#{$prefix}-tooltip {
   @include text-styles.body-small;
   @include tooltip-body;
