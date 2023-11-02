@@ -56,6 +56,7 @@ $prefix: constants.$veera-prefix;
   &__content {
     height: 100%;
     background: var(--#{$prefix}-navigation-vertical-background-level-1-bar);
+    overflow-y: auto;
   }
 
   ul {
