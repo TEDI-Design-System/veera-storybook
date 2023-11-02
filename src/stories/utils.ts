@@ -51,7 +51,9 @@ export const createHorizontalScrollButtons = ({
         label: 'chevron_left',
       });
       scrollLeftBtn.id = 'left-scroll-btn';
+      scrollLeftBtn.tabIndex = -1;
       scrollLeftBtn.style.position = 'absolute';
+      scrollLeftBtn.style.zIndex = '5';
       scrollLeftBtn.style.left = '0';
       scrollLeftBtn.style.top = '50%';
       scrollLeftBtn.style.transform = 'translateY(-50%)';
@@ -69,7 +71,9 @@ export const createHorizontalScrollButtons = ({
         label: 'chevron_right',
       });
       scrollRightBtn.id = 'right-scroll-btn';
+      scrollRightBtn.tabIndex = -1;
       scrollRightBtn.style.position = 'absolute';
+      scrollRightBtn.style.zIndex = '5';
       scrollRightBtn.style.right = '0';
       scrollRightBtn.style.top = '50%';
       scrollRightBtn.style.transform = 'translateY(-50%)';
