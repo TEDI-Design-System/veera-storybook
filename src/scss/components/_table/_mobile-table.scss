@@ -1,0 +1,51 @@
+@use '../../constants';
+@use '../../mixins/text-styles';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-mobile-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 100%;
+  border: 1px solid var(--#{$prefix}-colors-borders);
+
+  th,
+  td {
+    @include text-styles.body-medium;
+
+    text-align: left;
+
+    &.#{$prefix}-cell--center {
+      text-align: center;
+    }
+  }
+
+  th {
+    width: 50%;
+    background: var(--#{$prefix}-mobile-table-cells-header-background-default);
+    color: var(--#{$prefix}-mobile-table-cells-header-text-default);
+    padding: var(--#{$prefix}-mobile-table-cells-header-sizing-padding-y-top)
+      var(--#{$prefix}-mobile-table-cells-header-sizing-padding-x)
+      var(--#{$prefix}-mobile-table-cells-header-sizing-padding-y-bottom)
+      var(--#{$prefix}-mobile-table-cells-header-sizing-padding-x);
+  }
+
+  td {
+    background: var(--#{$prefix}-mobile-table-cells-data-cell-background-default);
+    color: var(--#{$prefix}-mobile-table-cells-data-cell-text-default);
+    padding: var(--#{$prefix}-table-cells-data-cell-sizing-padding-y-top)
+      var(--#{$prefix}-mobile-table-cells-data-cell-sizing-padding-x)
+      var(--#{$prefix}-mobile-table-cells-data-cell-sizing-padding-y-bottom)
+      var(--#{$prefix}-mobile-table-cells-data-cell-sizing-padding-x);
+  }
+
+  tr:not(:last-child) {
+    td,
+    th {
+      border-bottom: 1px solid var(--#{$prefix}-mobile-table-cells-data-cell-border-default);
+    }
+  }
+}

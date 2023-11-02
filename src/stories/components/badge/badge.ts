@@ -6,6 +6,7 @@ type BadgeVariant = 'info' | 'success' | 'warning' | 'error' | 'neutral';
 export interface BadgeStoryProps {
   variant: BadgeVariant;
   hasIcon?: boolean;
+  label?: string;
 }
 
 const createBadgeIcon = (variant: BadgeVariant) => {
@@ -21,11 +22,11 @@ const createBadgeIcon = (variant: BadgeVariant) => {
   return icon;
 };
 
-export const createBadge = ({ variant = 'info', hasIcon = true }: BadgeStoryProps) => {
+export const createBadge = ({ variant = 'info', hasIcon = true, label }: BadgeStoryProps) => {
   const badge = document.createElement('div');
   badge.className = clsx('v-badge', `v-badge--${variant}`);
   const text = document.createElement('span');
-  text.innerHTML = variant.charAt(0).toUpperCase() + variant.slice(1);
+  text.innerHTML = label ?? variant.charAt(0).toUpperCase() + variant.slice(1);
   if (hasIcon) {
     badge.appendChild(createBadgeIcon(variant));
   }

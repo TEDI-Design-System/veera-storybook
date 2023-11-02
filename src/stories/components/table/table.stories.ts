@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/html';
-import { TableStoryProps, createScrollableTable, createTable } from './table';
+import { TableStoryProps, createMobileTable, createScrollableTable, createTable } from './table';
 
 const meta = {
   title: 'components/table',
@@ -25,5 +25,12 @@ export const ScrollableTable: StoryObj<TableStoryProps> = {
     fixed: false,
     sticky: false,
     nestedHead: false,
+  },
+};
+
+export const MobileTable: StoryObj = {
+  render: createMobileTable,
+  args: {
+    editButton: false,
   },
 };

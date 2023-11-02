@@ -1,6 +1,7 @@
 import clsx from 'clsx';
-import { bodyCells, head, nestedHead } from './table.data';
+import { bodyCells, head, mobileTable, nestedHead } from './table.data';
 import { createPagination } from '../pagination/pagination';
+import { createButton } from '../button/button';
 
 export interface TableStoryProps {
   bordered: boolean;
@@ -132,4 +133,38 @@ export const createScrollableTable = (props: TableStoryProps) => {
   tableWrapper.appendChild(createPagination());
 
   return tableWrapper;
+};
+
+export const createMobileTable = ({ editButton }: { editButton?: boolean }) => {
+  const table = document.createElement('table');
+  table.className = 'v-mobile-table';
+
+  for (const [heading, value] of Object.entries(mobileTable)) {
+    const row = document.createElement('tr');
+    const th = document.createElement('th');
+    th.innerText = heading;
+    row.appendChild(th);
+    const td = document.createElement('td');
+    if (typeof value === 'string') {
+      td.innerText = value;
+    } else {
+      td.appendChild(value);
+    }
+    row.appendChild(td);
+    table.appendChild(row);
+  }
+
+  if (editButton) {
+    const editRow = document.createElement('tr');
+    const fullWidthCell = document.createElement('td');
+    fullWidthCell.className = 'v-cell--center';
+    fullWidthCell.colSpan = 2;
+    fullWidthCell.appendChild(
+      createButton({ label: 'Muuda', leftIcon: 'edit', variant: 'neutral' }),
+    );
+    editRow.appendChild(fullWidthCell);
+    table.appendChild(editRow);
+  }
+
+  return table;
 };

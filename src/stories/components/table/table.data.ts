@@ -1,3 +1,4 @@
+import { createBadge } from '../badge/badge';
 import { createButton } from '../button/button';
 
 interface Cell {
@@ -52,3 +53,12 @@ export const bodyCells: Cell[] = [
     content: createButton({ label: 'Muuda', leftIcon: 'edit', variant: 'neutral', size: 'sm' }),
   },
 ];
+
+export const mobileTable: Record<string, string | HTMLElement> = {
+  Kuupäev: '22.03.2029',
+  Kellaaeg: '13:11',
+  Kestus: '6 min',
+  Asukoht: 'Ida-Virumaa',
+  'Isiku ID tuvastamisviis': 'Pangalink',
+  Staatus: createBadge({ variant: 'success', label: 'Kehtiv' }),
+};
