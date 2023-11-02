@@ -22,9 +22,11 @@ export const createContentFill = () => {
 export const createHorizontalScrollButtons = ({
   scrollableEl,
   container,
+  buttonsOffset = '0',
 }: {
   scrollableEl: HTMLElement;
   container: HTMLElement;
+  buttonsOffset?: string;
 }) => {
   const leftBtnToRemove = container.querySelector('#left-scroll-btn');
   if (leftBtnToRemove) {
@@ -38,7 +40,7 @@ export const createHorizontalScrollButtons = ({
 
   const onScroll = () => {
     setTimeout(() => {
-      createHorizontalScrollButtons({ scrollableEl, container });
+      createHorizontalScrollButtons({ scrollableEl, container, buttonsOffset });
     }, 100);
   };
 
@@ -54,7 +56,7 @@ export const createHorizontalScrollButtons = ({
       scrollLeftBtn.tabIndex = -1;
       scrollLeftBtn.style.position = 'absolute';
       scrollLeftBtn.style.zIndex = '5';
-      scrollLeftBtn.style.left = '0';
+      scrollLeftBtn.style.left = buttonsOffset;
       scrollLeftBtn.style.top = '50%';
       scrollLeftBtn.style.transform = 'translateY(-50%)';
       scrollLeftBtn.onclick = () => {
@@ -74,7 +76,7 @@ export const createHorizontalScrollButtons = ({
       scrollRightBtn.tabIndex = -1;
       scrollRightBtn.style.position = 'absolute';
       scrollRightBtn.style.zIndex = '5';
-      scrollRightBtn.style.right = '0';
+      scrollRightBtn.style.right = buttonsOffset;
       scrollRightBtn.style.top = '50%';
       scrollRightBtn.style.transform = 'translateY(-50%)';
       scrollRightBtn.onclick = () => {

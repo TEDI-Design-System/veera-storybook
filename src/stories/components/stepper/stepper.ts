@@ -90,12 +90,20 @@ export const createStepper = ({ activeStep = 0 }: StepperStoryProps) => {
 
   renderSteps();
 
+  const createScrollBtns = () => {
+    createHorizontalScrollButtons({
+      scrollableEl: stepper,
+      container: scrollButtonsContainer,
+      buttonsOffset: '-8px',
+    });
+  };
+
   setTimeout(() => {
-    createHorizontalScrollButtons({ scrollableEl: stepper, container: scrollButtonsContainer });
+    createScrollBtns();
   }, 100);
 
   window.onresize = () => {
-    createHorizontalScrollButtons({ scrollableEl: stepper, container: scrollButtonsContainer });
+    createScrollBtns();
   };
 
   container.appendChild(createContentFill());

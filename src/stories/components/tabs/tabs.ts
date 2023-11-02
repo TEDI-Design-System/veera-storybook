@@ -75,12 +75,20 @@ export const createTabs = () => {
 
   tabs.appendChild(tabContent);
 
+  const createScrollBtns = () => {
+    createHorizontalScrollButtons({
+      scrollableEl: tabsList,
+      container: scrollButtonsContainer,
+      buttonsOffset: '8px',
+    });
+  };
+
   setTimeout(() => {
-    createHorizontalScrollButtons({ scrollableEl: tabsList, container: scrollButtonsContainer });
+    createScrollBtns();
   }, 100);
 
   window.onresize = () => {
-    createHorizontalScrollButtons({ scrollableEl: tabsList, container: scrollButtonsContainer });
+    createScrollBtns();
   };
 
   return tabs;
