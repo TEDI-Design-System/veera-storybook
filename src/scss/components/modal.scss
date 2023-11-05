@@ -23,7 +23,7 @@ $prefix: constants.$veera-prefix;
   color: var(--#{$prefix}-modals-text-default);
   border-radius: var(--#{$prefix}-modals-sizing-corner-radius);
   width: 100%;
-  box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
+  box-shadow: var(--#{$prefix}-box-shadow-elevation-01);
 
   &__title {
     @include text-styles.headings-large-h4;

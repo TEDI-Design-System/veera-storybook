@@ -1,7 +1,7 @@
 @use '../constants';
 
 $prefix: constants.$veera-prefix;
-$shadows: 'elevation-2px', 'elevation-4px', 'sticky-right', 'sticky-left';
+$shadows: 'elevation-01', 'elevation-02', 'sidecast-right', 'sidecast-left';
 
 @each $shadow in $shadows {
   $shadow-name: #{$prefix}-box-shadow-#{$shadow};

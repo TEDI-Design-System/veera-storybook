@@ -11,7 +11,7 @@ $prefix: constants.$veera-prefix;
   @include base-sizing;
 
   background: var(--#{$prefix}-cards-background-primary);
-  box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
+  box-shadow: var(--#{$prefix}-box-shadow-elevation-01);
 
   &--primary {
     background: var(--#{$prefix}-cards-background-primary);

@@ -6,7 +6,7 @@ export interface LinkStoryProps {
   hasIcon?: boolean;
 }
 
-export const createLink = ({ size, hasIcon }: LinkStoryProps) => {
+export const createLinkStory = ({ size, hasIcon }: LinkStoryProps) => {
   const link = document.createElement('a');
 
   link.className = clsx('v-link', { [`v-link--${size}`]: size, 'v-link--with-icon': hasIcon });

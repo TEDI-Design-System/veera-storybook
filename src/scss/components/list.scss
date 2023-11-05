@@ -30,11 +30,12 @@ ul.#{$prefix}-list {
     li::before {
       content: '';
       position: relative;
-      top: 2px;
+      bottom: 2px;
       background-image: var(--_primary-icon);
+      background-size: contain;
       display: inline-block;
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
       margin-right: var(--#{$prefix}-lists-sizing-inner-spacing-default);
     }
 

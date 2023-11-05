@@ -112,11 +112,11 @@ $prefix: constants.$veera-prefix;
     }
 
     &--left-shadow {
-      box-shadow: var(--#{$prefix}-box-shadow-sticky-left);
+      box-shadow: var(--#{$prefix}-box-shadow-sidecast-left);
     }
 
     &--right-shadow {
-      box-shadow: var(--#{$prefix}-box-shadow-sticky-right);
+      box-shadow: var(--#{$prefix}-box-shadow-sidecast-right);
     }
   }
 

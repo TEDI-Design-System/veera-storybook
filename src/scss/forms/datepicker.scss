@@ -14,7 +14,7 @@ $prefix: constants.$veera-prefix;
     border-radius: var(--#{$prefix}-dropdown-menu-menu-corner-radius);
     border: 1px solid var(--#{$prefix}-dropdown-menu-menu-border);
     background: var(--#{$prefix}-dropdown-menu-menu-background);
-    box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
+    box-shadow: var(--#{$prefix}-box-shadow-elevation-01);
 
     &--top {
       bottom: 100%;

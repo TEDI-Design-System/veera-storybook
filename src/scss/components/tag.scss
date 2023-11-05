@@ -13,5 +13,5 @@ $prefix: constants.$veera-prefix;
   padding: var(--#{$prefix}-tags-sizing-padding-y) var(--#{$prefix}-tags-sizing-padding-x);
   border-radius: var(--#{$prefix}-tags-sizing-corner-radius);
   background: var(--#{$prefix}-tags-colors-background);
-  box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
+  box-shadow: var(--#{$prefix}-box-shadow-elevation-01);
 }

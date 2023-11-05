@@ -30,14 +30,14 @@ const createTopBar = () => {
 
   const leftColumn = document.createElement('div');
   leftColumn.className = 'v-header__grid-column v-hide-md-down v-gap-6';
-  leftColumn.appendChild(createLink('In English', 'sm'));
-  leftColumn.appendChild(createLink('На русском', 'sm'));
+  leftColumn.appendChild(createLink({ text: 'In English', size: 'sm' }));
+  leftColumn.appendChild(createLink({ text: 'На русском', size: 'sm' }));
   topBar.appendChild(leftColumn);
 
   const centerColumn = document.createElement('nav');
   centerColumn.className = 'v-header__grid-column v-header__grid-column--center';
   links.forEach((linkText, index) => {
-    const link = createLink(linkText);
+    const link = createLink({ text: linkText });
     link.className = clsx('v-header__menu-item', { 'v-header__menu-item--selected': index === 0 });
     centerColumn.appendChild(link);
   });

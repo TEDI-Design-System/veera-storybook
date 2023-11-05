@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/html';
-import { LinkStoryProps, createLink } from './link';
+import { LinkStoryProps, createLinkStory } from './link';
 const meta = {
   title: 'components/link',
   tags: ['autodocs'],
-  render: createLink,
+  render: createLinkStory,
   argTypes: {
     size: {
       control: { type: 'select' },

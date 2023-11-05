@@ -86,7 +86,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &--floating {
-    box-shadow: var(--#{$prefix}-box-shadow-elevation-4px);
+    box-shadow: var(--#{$prefix}-box-shadow-elevation-02);
   }
 
   &--full-width {

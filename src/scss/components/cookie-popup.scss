@@ -11,7 +11,7 @@ $prefix: constants.$veera-prefix;
   border-radius: var(--#{$prefix}-cookies-sizing-corner-radius);
   border: 1px solid var(--#{$prefix}-cookies-border-border);
   background: var(--#{$prefix}-cookies-background-background);
-  box-shadow: var(--#{$prefix}-box-shadow-elevation-2px);
+  box-shadow: var(--#{$prefix}-box-shadow-elevation-01);
 
   &__title {
     @include text-styles.headings-large-h4;

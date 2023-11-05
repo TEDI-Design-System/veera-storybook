@@ -1,4 +1,4 @@
-const shadows = ['elevation-2px', 'elevation-4px', 'sticky-right', 'sticky-left'];
+const shadows = ['elevation-01', 'elevation-02', 'sidecast-right', 'sidecast-left'];
 
 const createExampleBox = (shadow: string) => {
   const className = `v-box-shadow-${shadow}`;

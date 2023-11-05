@@ -1,6 +1,6 @@
-import { createIcon } from '../../utils';
+import { createIcon, createLink } from '../../utils';
 import EELogo from '../../assets/logo.svg';
-import SFLogo from './SFLogo.png';
+import clsx from 'clsx';
 
 interface Block {
   name: string;
@@ -31,7 +31,12 @@ const createSocials = () => {
 
   for (let i = 0; i < 3; i++) {
     const socialLink = document.createElement('a');
-    socialLink.className = 'v-footer__social-link';
+    socialLink.className = clsx('v-footer__social-link', {
+      'v-footer__social-link--disabled': i === 2,
+    });
+    if (i !== 2) {
+      socialLink.href = '#';
+    }
     socialLink.appendChild(createIcon({ name: 'public' }));
     socials.appendChild(socialLink);
   }
@@ -41,7 +46,7 @@ const createSocials = () => {
 
 const createLogoBlock = (logo: string) => {
   const block = document.createElement('div');
-  block.className = 'v-footer__content-block';
+  block.className = 'v-footer__logo-block';
 
   const img = document.createElement('img');
   img.src = logo;
@@ -54,20 +59,13 @@ const createBlock = (blockContent: Block) => {
   const block = document.createElement('div');
   block.className = 'v-footer__content-block';
 
-  const header = document.createElement('div');
-  header.className = 'v-footer__content-block-header';
+  const header = document.createElement('p');
   header.innerText = blockContent.name;
   block.appendChild(header);
 
   for (const blockLink of blockContent.links) {
-    const topic = document.createElement('div');
-    topic.className = 'v-footer__topic';
-    topic.appendChild(createIcon({ name: 'chevron_right' }));
-    const link = document.createElement('a');
-    link.href = '#';
-    link.innerText = blockLink;
-    topic.appendChild(link);
-    block.appendChild(topic);
+    const link = createLink({ text: blockLink, icon: 'chevron_right' });
+    block.appendChild(link);
   }
 
   return block;
@@ -81,7 +79,6 @@ const createContent = () => {
   for (const block of blocks) {
     content.appendChild(createBlock(block));
   }
-  content.appendChild(createLogoBlock(SFLogo));
 
   return content;
 };
