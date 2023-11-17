@@ -48,6 +48,8 @@ $prefix: constants.$veera-prefix;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    height: var(--#{$prefix}-paging-button-sizing-min-width-height);
+    min-width: var(--#{$prefix}-paging-button-sizing-min-width-height);
     padding: var(--#{$prefix}-paging-button-sizing-padding-y)
       var(--#{$prefix}-paging-button-sizing-padding-x);
     border-radius: var(--#{$prefix}-paging-button-sizing-radius);

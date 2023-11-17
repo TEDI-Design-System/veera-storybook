@@ -13,6 +13,7 @@ export interface ButtonProps {
   rightIcon?: string;
   fullWidth?: boolean;
   outlinedIcon?: boolean;
+  ariaLabel?: string;
 }
 export const createButton = ({
   label,
@@ -25,6 +26,7 @@ export const createButton = ({
   rightIcon,
   fullWidth,
   outlinedIcon,
+  ariaLabel,
 }: ButtonProps) => {
   const btn = document.createElement('button');
   btn.type = 'button';
@@ -44,6 +46,9 @@ export const createButton = ({
     [iconClass]: iconOnly,
   });
   btn.disabled = !!disabled;
+  if (ariaLabel) {
+    btn.setAttribute('aria-label', ariaLabel);
+  }
 
   return btn;
 };

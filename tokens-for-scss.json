@@ -1426,9 +1426,9 @@
     },
     {
       "alias": true,
-      "value": "colors-neutral-neutral-100",
+      "value": "colors-alpha-alpha-100",
       "darkMode": {
-        "value": "colors-neutral-neutral-1000",
+        "value": "colors-alpha-alpha-100",
         "alias": true
       },
       "group": "buttons/theme/neutral/background",
@@ -7273,14 +7273,6 @@
       "type": "FLOAT"
     },
     {
-      "alias": false,
-      "value": "240px",
-      "group": "spacing/baseline",
-      "collection": "primitive-tokens",
-      "name": "spacing-baseline-14",
-      "type": "FLOAT"
-    },
-    {
       "alias": true,
       "value": "spacing-baseline-00",
       "darkMode": {
@@ -7330,9 +7322,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-baseline-06",
+      "value": "spacing-baseline-04",
       "darkMode": {
-        "value": "spacing-baseline-06",
+        "value": "spacing-baseline-04",
         "alias": true
       },
       "group": "lists/sizing",
@@ -9450,26 +9442,10 @@
     },
     {
       "alias": false,
-      "value": "239px",
-      "group": "spacing/for-1px-border",
-      "collection": "primitive-tokens",
-      "name": "spacing-for-1px-border-14",
-      "type": "FLOAT"
-    },
-    {
-      "alias": false,
       "value": "0px",
       "group": "spacing/for-2px-border",
       "collection": "primitive-tokens",
       "name": "spacing-for-2px-border-01",
-      "type": "FLOAT"
-    },
-    {
-      "alias": false,
-      "value": "238px",
-      "group": "spacing/for-2px-border",
-      "collection": "primitive-tokens",
-      "name": "spacing-for-2px-border-14",
       "type": "FLOAT"
     },
     {
@@ -10482,66 +10458,6 @@
     },
     {
       "alias": true,
-      "value": "spacing-baseline-07",
-      "darkMode": {
-        "value": "spacing-baseline-07",
-        "alias": true
-      },
-      "group": "footer/content block",
-      "collection": "semantic-tokens",
-      "name": "footer-content-block-padding-x",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "spacing-baseline-04",
-      "darkMode": {
-        "value": "spacing-baseline-04",
-        "alias": true
-      },
-      "group": "footer/content block",
-      "collection": "semantic-tokens",
-      "name": "footer-content-block-inner-spacing",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "spacing-baseline-06",
-      "darkMode": {
-        "value": "spacing-baseline-06",
-        "alias": true
-      },
-      "group": "footer/content block",
-      "collection": "semantic-tokens",
-      "name": "footer-content-block-padding-y",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "spacing-baseline-00",
-      "darkMode": {
-        "value": "spacing-baseline-00",
-        "alias": true
-      },
-      "group": "footer/spacing",
-      "collection": "semantic-tokens",
-      "name": "footer-spacing-padding-x",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
-      "value": "spacing-baseline-06",
-      "darkMode": {
-        "value": "spacing-baseline-06",
-        "alias": true
-      },
-      "group": "footer/spacing",
-      "collection": "semantic-tokens",
-      "name": "footer-spacing-padding-y",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
       "value": "spacing-baseline-11",
       "darkMode": {
         "value": "spacing-baseline-11",
@@ -10554,18 +10470,6 @@
     },
     {
       "alias": true,
-      "value": "spacing-baseline-07",
-      "darkMode": {
-        "value": "spacing-baseline-07",
-        "alias": true
-      },
-      "group": "footer/spacing",
-      "collection": "semantic-tokens",
-      "name": "footer-spacing-inner-spacing",
-      "type": "FLOAT"
-    },
-    {
-      "alias": true,
       "value": "buttons-sizing-lg-corner-radius",
       "darkMode": {
         "value": "buttons-sizing-lg-corner-radius",
@@ -10574,6 +10478,594 @@
       "group": "paging/button/sizing",
       "collection": "semantic-tokens",
       "name": "paging-button-sizing-radius",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-08",
+      "darkMode": {
+        "value": "spacing-baseline-08",
+        "alias": true
+      },
+      "group": "paging/button/sizing",
+      "collection": "semantic-tokens",
+      "name": "paging-button-sizing-min-width-height",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "containers-02",
+      "darkMode": {
+        "value": "containers-02",
+        "alias": true
+      },
+      "group": "alerts/sizing",
+      "collection": "semantic-tokens",
+      "name": "alerts-sizing-toast-alert-width",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-red-red-700",
+      "darkMode": {
+        "value": "colors-red-red-400",
+        "alias": true
+      },
+      "group": "checkboxes radios/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-border-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-green-green-700",
+      "darkMode": {
+        "value": "colors-green-green-400",
+        "alias": true
+      },
+      "group": "checkboxes radios/border",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-border-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-1000",
+        "alias": true
+      },
+      "group": "checkboxes radios/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-background-error",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "colors-neutral-neutral-100",
+      "darkMode": {
+        "value": "colors-neutral-neutral-1000",
+        "alias": true
+      },
+      "group": "checkboxes radios/background",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-background-success",
+      "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-03",
+      "darkMode": {
+        "value": "spacing-baseline-03",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/small/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-small-group-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-03",
+      "darkMode": {
+        "value": "spacing-baseline-03",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/small/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-small-group-inner-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/medium/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-medium-group-inner-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/large/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-large-group-inner-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-03",
+      "darkMode": {
+        "value": "spacing-baseline-03",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/small",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-small-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-04",
+      "darkMode": {
+        "value": "spacing-baseline-04",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/medium",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-medium-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-04",
+      "darkMode": {
+        "value": "spacing-baseline-04",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/large",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-large-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/medium/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-medium-group-inner-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/large/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-large-group-inner-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-05",
+      "darkMode": {
+        "value": "spacing-baseline-05",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/small/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-small-group-inner-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-03",
+      "darkMode": {
+        "value": "spacing-baseline-03",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/medium/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-medium-group-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-03",
+      "darkMode": {
+        "value": "spacing-baseline-03",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/large/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-large-group-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-08",
+      "darkMode": {
+        "value": "spacing-baseline-08",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/medium/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-medium-group-sub-group-inset",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-08",
+      "darkMode": {
+        "value": "spacing-baseline-08",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/large/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-large-group-sub-group-inset",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-08",
+      "darkMode": {
+        "value": "spacing-baseline-08",
+        "alias": true
+      },
+      "group": "checkboxes radios/sizing/small/group",
+      "collection": "semantic-tokens",
+      "name": "checkboxes-radios-sizing-small-group-sub-group-inset",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/main-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-main-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/md/main-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-main-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/main-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-main-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/xl/main-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-xl-main-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/xl/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-xl-footer-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "footer/spacing/xl/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-xl-footer-content-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/xl/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-xl-footer-content-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/xl/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-xl-footer-content-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/xl/content-area",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-xl-content-area-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/xl/content-area",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-xl-content-area-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-footer-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-footer-content-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-footer-content-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-footer-content-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/content-area",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-content-area-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/content-area",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-content-area-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/md/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-footer-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "footer/spacing/md/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-footer-content-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/md/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-footer-content-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/md/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-footer-content-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/md/content-area",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-content-area-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/md/content-area",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-content-area-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-footer-content-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-footer-content-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-footer-content-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-06",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/footer-content",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-footer-content-spacing-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/content-area",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-content-area-spacing-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/content-area",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-content-area-spacing-y",
       "type": "FLOAT"
     }
   ],

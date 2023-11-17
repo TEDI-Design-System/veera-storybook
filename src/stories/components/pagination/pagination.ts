@@ -16,6 +16,10 @@ const createPageButton = (nr: number) => {
     'v-pagination__page--selected': nr === 1,
   });
   button.innerText = `${nr}`;
+  button.setAttribute('aria-label', `Lehekülg ${nr}`);
+  if (nr === 1) {
+    button.setAttribute('aria-current', 'page');
+  }
   return button;
 };
 
@@ -24,10 +28,17 @@ const createPages = () => {
   pager.className = 'v-pagination__pager';
 
   pager.appendChild(
-    createButton({ label: 'west', iconOnly: true, variant: 'neutral', disabled: true }),
+    createButton({
+      label: 'west',
+      iconOnly: true,
+      variant: 'neutral',
+      disabled: true,
+      ariaLabel: 'Eelmine lehekülg',
+    }),
   );
 
-  const pages = document.createElement('div');
+  const pages = document.createElement('nav');
+  pages.setAttribute('aria-label', 'Tabeli leheküljed');
   pages.className = 'v-pagination__pages';
   pager.appendChild(pages);
   for (let nr = 1; nr < 6; nr++) {
@@ -40,7 +51,14 @@ const createPages = () => {
 
   pages.append(createPageButton(10));
 
-  pager.appendChild(createButton({ label: 'east', iconOnly: true, variant: 'neutral' }));
+  pager.appendChild(
+    createButton({
+      label: 'east',
+      iconOnly: true,
+      variant: 'neutral',
+      ariaLabel: 'Järgmine lehekülg',
+    }),
+  );
   return pager;
 };
 
