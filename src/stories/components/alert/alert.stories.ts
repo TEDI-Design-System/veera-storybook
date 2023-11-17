@@ -51,3 +51,15 @@ export const WithIcon: Story = {
     hasIcon: true,
   },
 };
+
+export const Global: Story = {
+  args: {
+    global: true,
+  },
+};
+
+export const Floating: Story = {
+  args: {
+    floating: true,
+  },
+};

@@ -67,4 +67,15 @@ $prefix: constants.$veera-prefix;
   &--error {
     @include variant-colors('error');
   }
+
+  &--global {
+    border-radius: 0;
+    border-width: 0;
+    border-bottom-width: 1px;
+  }
+
+  &--floating {
+    box-shadow: var(--#{$prefix}-box-shadow-elevation-02);
+    max-width: var(--#{$prefix}-containers-02);
+  }
 }

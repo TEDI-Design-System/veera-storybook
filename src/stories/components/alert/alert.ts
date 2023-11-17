@@ -9,6 +9,8 @@ export interface AlertStoryProps {
   hasIcon?: boolean;
   closable?: boolean;
   headerless?: boolean;
+  floating?: boolean;
+  global?: boolean;
 }
 
 const createTitle = () => {
@@ -51,9 +53,14 @@ export const createAlert = ({
   hasIcon,
   closable,
   headerless,
+  floating,
+  global,
 }: AlertStoryProps) => {
   const alert = document.createElement('div');
-  alert.className = clsx('v-alert', `v-alert--${variant}`);
+  alert.className = clsx('v-alert', `v-alert--${variant}`, {
+    'v-alert--floating': floating,
+    'v-alert--global': global,
+  });
   if (closable) {
     alert.appendChild(createCloseButton('Sulge teade'));
   }
