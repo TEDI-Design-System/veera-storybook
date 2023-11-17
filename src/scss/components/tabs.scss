@@ -86,7 +86,7 @@ $prefix: constants.$veera-prefix;
 
   &__content {
     padding: var(--#{$prefix}-tabs-content-padding-y) var(--#{$prefix}-tabs-content-padding-x);
-    border-radius: var(--#{$prefix}-radius-01);
+    border-radius: var(--#{$prefix}-tabs-content-corner-radius);
     border: 1px solid var(--#{$prefix}-tabs-border-selected);
     background: var(--#{$prefix}-tabs-content-background);
   }
