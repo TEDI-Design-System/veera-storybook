@@ -40,4 +40,51 @@
     font-weight: 700;
     font-style: italic;
   }
+
+  @font-face {
+    font-family: 'Material Icons';
+    src: url('/fonts/MaterialIcons-Regular.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Material Icons Outlined';
+    src: url('/fonts/MaterialIconsOutlined-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .material-icons,
+  .material-icons-outlined {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+  }
+
+  .material-icons-outlined {
+    font-family: 'Material Icons Outlined';
+  }
 </style>
