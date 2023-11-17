@@ -24,10 +24,15 @@ export const createAutocomplete = ({ size, withButton }: AutocompleteStoryProps)
     inputField.setAttribute('aria-expanded', 'true');
     inputField.role = 'searchbox';
   }
-  input.querySelector('button')?.setAttribute('aria-label', 'Otsi');
+  const searchBtn = input.querySelector('button');
+  if (searchBtn) {
+    searchBtn.setAttribute('aria-label', 'Otsi');
+    searchBtn.removeAttribute('aria-hidden');
+  }
   autocomplete.appendChild(input);
 
   const suggestions = createDropdown();
+  suggestions.setAttribute('aria-label', 'Soovitused');
 
   for (let index = 1; index < 6; index++) {
     const template = document.createElement('template');

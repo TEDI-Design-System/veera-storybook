@@ -135,13 +135,14 @@ export const createScrollableTable = (props: TableStoryProps) => {
   return tableWrapper;
 };
 
-export const createMobileTable = ({ editButton }: { editButton?: boolean }) => {
+export const createMobileSubTable = ({ editButton }: { editButton?: boolean }) => {
   const table = document.createElement('table');
   table.className = 'v-mobile-table';
 
   for (const [heading, value] of Object.entries(mobileTable)) {
     const row = document.createElement('tr');
     const th = document.createElement('th');
+    th.scope = 'row';
     th.innerText = heading;
     row.appendChild(th);
     const td = document.createElement('td');
@@ -167,4 +168,15 @@ export const createMobileTable = ({ editButton }: { editButton?: boolean }) => {
   }
 
   return table;
+};
+
+export const createMobileTable = (props: { editButton?: boolean }) => {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'v-flex v-flex-column v-gap-6';
+
+  for (let i = 0; i < 3; i++) {
+    wrapper.appendChild(createMobileSubTable(props));
+  }
+
+  return wrapper;
 };

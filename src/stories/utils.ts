@@ -53,6 +53,7 @@ export const createHorizontalScrollButtons = ({
         floating: true,
         label: 'chevron_left',
       });
+      scrollLeftBtn.setAttribute('aria-hidden', 'true');
       scrollLeftBtn.id = 'left-scroll-btn';
       scrollLeftBtn.tabIndex = -1;
       scrollLeftBtn.style.position = 'absolute';
@@ -73,6 +74,7 @@ export const createHorizontalScrollButtons = ({
         floating: true,
         label: 'chevron_right',
       });
+      scrollRightBtn.setAttribute('aria-hidden', 'true');
       scrollRightBtn.id = 'right-scroll-btn';
       scrollRightBtn.tabIndex = -1;
       scrollRightBtn.style.position = 'absolute';
@@ -81,7 +83,7 @@ export const createHorizontalScrollButtons = ({
       scrollRightBtn.style.top = '50%';
       scrollRightBtn.style.transform = 'translateY(-50%)';
       scrollRightBtn.onclick = () => {
-        scrollableEl.scrollLeft = scrollableEl.scrollWidth - scrollableEl.clientWidth;
+        scrollableEl.scrollLeft = scrollableEl.scrollWidth - scrollableEl.clientWidth + 10;
         onScroll();
       };
       container.appendChild(scrollRightBtn);
