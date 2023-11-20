@@ -14,7 +14,6 @@ $prefix: constants.$veera-prefix;
   }
 
   &__content {
-    width: 100%;
     width: var(--#{$prefix}-popover-sizing-width);
     display: flex;
     flex-direction: column;

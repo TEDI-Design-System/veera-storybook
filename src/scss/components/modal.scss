@@ -5,7 +5,7 @@
 $prefix: constants.$veera-prefix;
 
 @mixin base-sizing {
-  max-width: 552px;
+  max-width: var(--#{$prefix}-modals-width-medium);
   padding: var(--#{$prefix}-modals-sizing-padding-medium);
 }
 
@@ -45,7 +45,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &--sm {
-    max-width: 312px;
+    max-width: var(--#{$prefix}-modals-width-small);
     padding: var(--#{$prefix}-modals-sizing-padding-small);
   }
 
@@ -54,7 +54,7 @@ $prefix: constants.$veera-prefix;
   }
 
   &--lg {
-    max-width: 840px;
+    max-width: var(--#{$prefix}-modals-width-large);
     padding: var(--#{$prefix}-modals-sizing-padding-large);
   }
 
