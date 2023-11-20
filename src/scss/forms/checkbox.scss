@@ -178,6 +178,20 @@ $prefix: constants.$veera-prefix;
       }
     }
   }
+
+  &--error {
+    input {
+      border-color: var(--#{$prefix}-checkboxes-radios-border-error);
+      background: var(--#{$prefix}-checkboxes-radios-background-error);
+    }
+  }
+
+  &--success {
+    input {
+      border-color: var(--#{$prefix}-checkboxes-radios-border-success);
+      background: var(--#{$prefix}-checkboxes-radios-background-success);
+    }
+  }
 }
 
 // Standalone checbox
@@ -196,5 +210,15 @@ input[type='checkbox'].#{$prefix}-checkbox {
     @include large-input-overrides;
 
     margin-top: 0;
+  }
+
+  &--error {
+    border-color: var(--#{$prefix}-checkboxes-radios-border-error);
+    background: var(--#{$prefix}-checkboxes-radios-background-error);
+  }
+
+  &--success {
+    border-color: var(--#{$prefix}-checkboxes-radios-border-success);
+    background: var(--#{$prefix}-checkboxes-radios-background-success);
   }
 }

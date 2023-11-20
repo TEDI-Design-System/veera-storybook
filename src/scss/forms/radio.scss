@@ -145,6 +145,20 @@ $prefix: constants.$veera-prefix;
       }
     }
   }
+
+  &--error {
+    input {
+      border-color: var(--#{$prefix}-checkboxes-radios-border-error);
+      background: var(--#{$prefix}-checkboxes-radios-background-error);
+    }
+  }
+
+  &--success {
+    input {
+      border-color: var(--#{$prefix}-checkboxes-radios-border-success);
+      background: var(--#{$prefix}-checkboxes-radios-background-success);
+    }
+  }
 }
 
 input[type='radio'].#{$prefix}-radio {
@@ -162,5 +176,15 @@ input[type='radio'].#{$prefix}-radio {
     @include large-input-overrides;
 
     margin-top: 0;
+  }
+
+  &--error {
+    border-color: var(--#{$prefix}-checkboxes-radios-border-error);
+    background: var(--#{$prefix}-checkboxes-radios-background-error);
+  }
+
+  &--success {
+    border-color: var(--#{$prefix}-checkboxes-radios-border-success);
+    background: var(--#{$prefix}-checkboxes-radios-background-success);
   }
 }

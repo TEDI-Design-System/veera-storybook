@@ -1,14 +1,25 @@
+import clsx from 'clsx';
 import './radio.stories.scss';
 
 export interface RadioProps {
   size?: 'sm' | 'md' | 'lg';
-  items: { value: string; label?: string; disabled?: boolean }[];
+  items: {
+    value: string;
+    label?: string;
+    disabled?: boolean;
+    success?: boolean;
+    error?: boolean;
+  }[];
 }
 export const createRadios = ({ items, size = 'md' }: RadioProps) => {
   return `<div style="display: flex; flex-direction: column; gap: 8px;">${items
     .map(
       (item) =>
-        `<div class="v-radio v-radio--${size}">
+        `<div class="${clsx('v-radio', {
+          [`v-radio--${size}`]: size,
+          'v-radio--error': item.error,
+          'v-radio--success': item.success,
+        })}">
         <input type="radio" name="v-radio-demo" ${item.disabled ? 'disabled' : ''} id="${
           item.value
         }"/>

@@ -5,6 +5,8 @@ export interface CheckboxProps {
   indeterminate?: boolean;
   size?: 'sm' | 'md' | 'lg';
   checked?: boolean;
+  error?: boolean;
+  success?: boolean;
 }
 
 export const createCheckbox = ({
@@ -12,12 +14,18 @@ export const createCheckbox = ({
   indeterminate,
   size = 'md',
   checked = false,
+  error,
+  success,
 }: CheckboxProps) => {
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
   checkbox.disabled = !!disabled;
   checkbox.checked = checked;
-  checkbox.className = clsx('v-checkbox', { [`v-checkbox--${size}`]: size });
+  checkbox.className = clsx('v-checkbox', {
+    [`v-checkbox--${size}`]: size,
+    'v-checkbox--error': error,
+    'v-checkbox--success': success,
+  });
   checkbox.indeterminate = !!indeterminate;
 
   return checkbox;

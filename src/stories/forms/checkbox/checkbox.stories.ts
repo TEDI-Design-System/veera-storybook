@@ -12,6 +12,8 @@ const meta = {
   argTypes: {
     label: { control: 'text' },
     disabled: { type: 'boolean' },
+    error: { type: 'boolean' },
+    success: { type: 'boolean' },
     size: {
       control: { type: 'select' },
       options: ['sm', 'md', 'lg'],
@@ -42,6 +44,20 @@ export const Indeterminate: StoryObj<CheckboxProps> = {
   args: {
     disabled: false,
     indeterminate: true,
+  },
+};
+
+export const Error: StoryObj<CheckboxProps> = {
+  render: createStandaloneCheckboxStory,
+  args: {
+    error: true,
+  },
+};
+
+export const Success: StoryObj<CheckboxProps> = {
+  render: createStandaloneCheckboxStory,
+  args: {
+    success: true,
   },
 };
 
