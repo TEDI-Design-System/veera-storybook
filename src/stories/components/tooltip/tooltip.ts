@@ -11,7 +11,7 @@ export const createTooltipStory = ({ placement = 'top' }: TooltipStoryProps) => 
   const tooltip = createTooltip({
     triggerElement: trigger,
     placement,
-    text: 'Tooltip content very long text, pikem kui 240px :-)',
+    text: 'Vihjemullis olev tekst võib minna mitmele reale',
   });
 
   const container = document.createElement('div');
