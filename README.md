@@ -21,3 +21,7 @@ When developing new components, add components styles to new folder in [scss/com
 ## Running storybook
 
 `npm run storybook`
+
+## Storybook dark mode preview 
+
+Dark mode can be triggered from Storybooks toolbar, by setting the background of the preview to dark. This also adds color scheme data attrbute to previews root element which selects the dark mode variable values. 
