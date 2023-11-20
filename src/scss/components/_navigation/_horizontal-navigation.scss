@@ -16,7 +16,7 @@ $prefix: constants.$veera-prefix;
   color: var(--#{$prefix}-navigation-horizontal-horizontal-sub-menu-text-#{$state});
 }
 
-.#{$prefix}-horizontal-menu {
+.#{$prefix}-horizontal-navigation {
   $self: &;
 
   grid-area: menu;

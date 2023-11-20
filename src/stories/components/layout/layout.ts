@@ -1,8 +1,8 @@
 import { createContentFill } from '../../utils';
 import { createFooter } from '../footer/footer';
 import { createHeader } from '../header/header';
-import { createHorizontalNavigation } from '../menu/horizontal-menu';
-import { createSideNavigation } from '../menu/side-menu';
+import { createHorizontalNavigation } from '../menu/horizontal-navigation';
+import { createSideNavigation } from '../menu/side-navigation';
 
 const createContent = () => {
   const container = document.createElement('main');

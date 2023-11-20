@@ -502,7 +502,7 @@
     --v-navigation-vertical-text-active: var(--v-colors-neutral-neutral-100);
     --v-navigation-vertical-text-focus: var(--v-colors-neutral-neutral-100);
     --v-checkboxes-radios-sizing-small-input-width-height: var(--v-spacing-baseline-06);
-    --v-navigation-vertical-sizing-desktop-width: var(--v-spacing-baseline-14);
+    --v-navigation-vertical-sizing-desktop-width: var(--v-containers-01);
     --v-navigation-vertical-sizing-desktop-height: var(--v-spacing-baseline-12);
     --v-toggle-sizing-toggle-medium: var(--v-spacing-baseline-06);
     --v-toggle-sizing-width-medium: var(--v-spacing-baseline-09);
@@ -873,6 +873,7 @@
     --v-footer-spacing-sm-footer-content-spacing-y: var(--v-spacing-baseline-06);
     --v-footer-spacing-sm-content-area-spacing-x: var(--v-spacing-baseline-07);
     --v-footer-spacing-sm-content-area-spacing-y: var(--v-spacing-baseline-07);
+    --v-navigation-horizontal-border-default: var(--v-colors-neutral-neutral-900);
     --v-box-shadow-elevation-01: 0px 1px 5px 0px #454854;
     --v-box-shadow-elevation-02: 0px 4px 10px 0px #454854;
     --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8;
@@ -1378,7 +1379,7 @@
   --v-navigation-vertical-text-active: var(--v-colors-neutral-neutral-100);
   --v-navigation-vertical-text-focus: var(--v-colors-neutral-neutral-100);
   --v-checkboxes-radios-sizing-small-input-width-height: var(--v-spacing-baseline-06);
-  --v-navigation-vertical-sizing-desktop-width: var(--v-spacing-baseline-14);
+  --v-navigation-vertical-sizing-desktop-width: var(--v-containers-01);
   --v-navigation-vertical-sizing-desktop-height: var(--v-spacing-baseline-12);
   --v-toggle-sizing-toggle-medium: var(--v-spacing-baseline-06);
   --v-toggle-sizing-width-medium: var(--v-spacing-baseline-09);
@@ -1739,6 +1740,7 @@
   --v-footer-spacing-sm-footer-content-spacing-y: var(--v-spacing-baseline-06);
   --v-footer-spacing-sm-content-area-spacing-x: var(--v-spacing-baseline-07);
   --v-footer-spacing-sm-content-area-spacing-y: var(--v-spacing-baseline-07);
+  --v-navigation-horizontal-border-default: var(--v-colors-neutral-neutral-900);
   --v-box-shadow-elevation-01: 0px 1px 5px 0px #454854;
   --v-box-shadow-elevation-02: 0px 4px 10px 0px #454854;
   --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #131317, 0px 0px 0px 3px #669cc8;

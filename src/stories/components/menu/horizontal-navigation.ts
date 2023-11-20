@@ -1,7 +1,7 @@
-import { horizontalMenuItems } from './menu-items';
+import { horizontalNavItems } from './menu-items';
 import { createIcon } from '../../utils';
 
-export interface HorizontalMenuItem {
+export interface HorizontalNavItem {
   label: string;
   icon?: string;
   children: SubmenuItem[];
@@ -14,10 +14,10 @@ interface SubmenuItem {
 
 const createSubMenuItemBlock = (item: SubmenuItem) => {
   const block = document.createElement('div');
-  block.className = 'v-horizontal-menu__submenu-block';
+  block.className = 'v-horizontal-navigation__submenu-block';
 
   const blockHeader = document.createElement('div');
-  blockHeader.className = 'v-horizontal-menu__submenu-block-header';
+  blockHeader.className = 'v-horizontal-navigation__submenu-block-header';
   const icon = createIcon({ name: 'dashboard', outlined: true });
   icon.classList.add('v-icon--sm');
   blockHeader.appendChild(icon);
@@ -26,7 +26,7 @@ const createSubMenuItemBlock = (item: SubmenuItem) => {
 
   for (const link of item.children) {
     const itemLink = document.createElement('a');
-    itemLink.className = 'v-horizontal-menu__submenu-item';
+    itemLink.className = 'v-horizontal-navigation__submenu-item';
     itemLink.href = '#';
     itemLink.innerText = link;
 
@@ -36,12 +36,12 @@ const createSubMenuItemBlock = (item: SubmenuItem) => {
   return block;
 };
 
-const createMenuPanel = (openedItem: HorizontalMenuItem) => {
+const createMenuPanel = (openedItem: HorizontalNavItem) => {
   const oldPanel = document.getElementById('menu-panel');
   oldPanel?.remove();
 
   const panel = document.createElement('div');
-  panel.className = 'v-horizontal-menu__panel';
+  panel.className = 'v-horizontal-navigation__panel';
   panel.id = 'menu-panel';
 
   for (const item of openedItem.children) {
@@ -51,9 +51,9 @@ const createMenuPanel = (openedItem: HorizontalMenuItem) => {
   document.getElementById('horizontal-menu')?.appendChild(panel);
 };
 
-const createMenuItem = (item: HorizontalMenuItem) => {
+const createMenuItem = (item: HorizontalNavItem) => {
   const menuItem = document.createElement('button');
-  menuItem.className = 'v-horizontal-menu__item';
+  menuItem.className = 'v-horizontal-navigation__item';
   if (item.icon) {
     const icon = createIcon({ name: item.icon });
     icon.classList.add('v-icon--sm');
@@ -69,8 +69,8 @@ const createMenuItem = (item: HorizontalMenuItem) => {
 
 const createMenuBar = () => {
   const menuBar = document.createElement('div');
-  menuBar.className = 'v-horizontal-menu__menu-bar';
-  for (const item of horizontalMenuItems) {
+  menuBar.className = 'v-horizontal-navigation__menu-bar';
+  for (const item of horizontalNavItems) {
     menuBar.appendChild(createMenuItem(item));
   }
   return menuBar;
@@ -78,7 +78,7 @@ const createMenuBar = () => {
 
 export const createHorizontalNavigation = () => {
   const horizontalMenu = document.createElement('div');
-  horizontalMenu.className = 'v-horizontal-menu';
+  horizontalMenu.className = 'v-horizontal-navigation';
   horizontalMenu.id = 'horizontal-menu';
   horizontalMenu.appendChild(createMenuBar());
 

@@ -6794,9 +6794,9 @@
     },
     {
       "alias": true,
-      "value": "spacing-baseline-14",
+      "value": "containers-01",
       "darkMode": {
-        "value": "spacing-baseline-14",
+        "value": "containers-01",
         "alias": true
       },
       "group": "navigation/vertical/sizing/desktop",
@@ -11067,6 +11067,18 @@
       "collection": "semantic-tokens",
       "name": "footer-spacing-sm-content-area-spacing-y",
       "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "colors-blue-blue-700",
+      "darkMode": {
+        "value": "colors-neutral-neutral-900",
+        "alias": true
+      },
+      "group": "navigation/horizontal/border",
+      "collection": "semantic-tokens",
+      "name": "navigation-horizontal-border-default",
+      "type": "COLOR"
     }
   ],
   "typography": [

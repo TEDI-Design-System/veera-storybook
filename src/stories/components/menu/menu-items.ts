@@ -1,7 +1,7 @@
-import { HorizontalMenuItem } from './horizontal-menu';
-import { SideMenuItem } from './side-menu';
+import { HorizontalNavItem } from './horizontal-navigation';
+import { SideNavItem } from './side-navigation';
 
-export const sideNavItems: SideMenuItem[] = [
+export const sideNavItems: SideNavItem[] = [
   {
     label: 'Avaleht',
     icon: 'dashboard',
@@ -53,7 +53,7 @@ export const sideNavItems: SideMenuItem[] = [
   },
 ];
 
-export const horizontalMenuItems: HorizontalMenuItem[] = [
+export const horizontalNavItems: HorizontalNavItem[] = [
   {
     label: 'Avaleht',
     icon: 'apartment',
