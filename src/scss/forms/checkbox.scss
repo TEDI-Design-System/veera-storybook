@@ -111,7 +111,7 @@ $prefix: constants.$veera-prefix;
 :not(input[type='checkbox']).#{$prefix}-checkbox {
   display: inline-flex;
   align-items: start;
-  gap: var(--#{$prefix}-checkboxes-radios-sizing-inner-spacing);
+  gap: var(--#{$prefix}-checkboxes-radios-sizing-medium-inner-spacing);
 
   input {
     @include input-styles;
@@ -156,6 +156,8 @@ $prefix: constants.$veera-prefix;
   }
 
   &--sm {
+    gap: var(--#{$prefix}-checkboxes-radios-sizing-small-inner-spacing);
+
     input {
       @include small-input-overrides;
 
@@ -168,6 +170,8 @@ $prefix: constants.$veera-prefix;
   }
 
   &--lg {
+    gap: var(--#{$prefix}-checkboxes-radios-sizing-large-inner-spacing);
+
     input {
       @include large-input-overrides;
 

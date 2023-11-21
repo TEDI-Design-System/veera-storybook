@@ -3,6 +3,7 @@ import './radio.stories.scss';
 
 export interface RadioProps {
   size?: 'sm' | 'md' | 'lg';
+  horizontal?: boolean;
   items: {
     value: string;
     label?: string;
@@ -11,8 +12,10 @@ export interface RadioProps {
     error?: boolean;
   }[];
 }
-export const createRadios = ({ items, size = 'md' }: RadioProps) => {
-  return `<div style="display: flex; flex-direction: column; gap: 8px;">${items
+export const createRadios = ({ items, size = 'md', horizontal }: RadioProps) => {
+  return `<div class="${clsx('v-radio-group', `v-radio-group--${size}`, {
+    'v-radio-group--horizontal': horizontal,
+  })}">${items
     .map(
       (item) =>
         `<div class="${clsx('v-radio', {

@@ -75,14 +75,45 @@ $prefix: constants.$veera-prefix;
   }
 }
 
-.#{$prefix}-selection-controls-group {
+@mixin selection-group-styles {
+  $self: &;
+
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  gap: var(--#{$prefix}-checkboxes-radios-sizing-medium-group-inner-spacing-y)
+    var(--#{$prefix}-checkboxes-radios-sizing-medium-group-inner-spacing-x);
 
-  &--vertical {
-    flex-direction: column;
-    gap: 0;
+  &--sm {
+    gap: var(--#{$prefix}-checkboxes-radios-sizing-small-group-inner-spacing-y)
+      var(--#{$prefix}-checkboxes-radios-sizing-small-group-inner-spacing-x);
+
+    #{ $self }--sub-group {
+      padding-left: var(--#{$prefix}-checkboxes-radios-sizing-small-group-sub-group-inset);
+    }
   }
+
+  &--lg {
+    gap: var(--#{$prefix}-checkboxes-radios-sizing-large-group-inner-spacing-y)
+      var(--#{$prefix}-checkboxes-radios-sizing-large-group-inner-spacing-x);
+
+    #{ $self }--sub-group {
+      padding-left: var(--#{$prefix}-checkboxes-radios-sizing-large-group-sub-group-inset);
+    }
+  }
+
+  &--horizontal {
+    flex-flow: row wrap;
+  }
+
+  &--sub-group {
+    padding-left: var(--#{$prefix}-checkboxes-radios-sizing-medium-group-sub-group-inset);
+  }
+}
+
+.#{$prefix}-checkbox-group {
+  @include selection-group-styles;
+}
+.#{$prefix}-radio-group {
+  @include selection-group-styles;
 }

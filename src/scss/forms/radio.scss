@@ -17,6 +17,7 @@ $prefix: constants.$veera-prefix;
 }
 
 @mixin input-styles {
+  flex-shrink: 0;
   appearance: none;
   outline: none;
   margin: 0;
@@ -83,7 +84,7 @@ $prefix: constants.$veera-prefix;
 :not(input[type='radio']).#{$prefix}-radio {
   display: inline-flex;
   align-items: start;
-  gap: var(--#{$prefix}-checkboxes-radios-sizing-inner-spacing);
+  gap: var(--#{$prefix}-checkboxes-radios-sizing-medium-inner-spacing);
 
   input {
     @include input-styles;
@@ -92,6 +93,7 @@ $prefix: constants.$veera-prefix;
       @include text-styles.body-medium;
 
       color: var(--#{$prefix}-checkboxes-radios-text-default);
+      margin-top: var(--#{$prefix}-checkboxes-radios-sizing-medium-label-container-padding-top);
     }
 
     &:hover {
@@ -127,21 +129,29 @@ $prefix: constants.$veera-prefix;
   }
 
   &--sm {
+    gap: var(--#{$prefix}-checkboxes-radios-sizing-small-inner-spacing);
+
     input {
       @include small-input-overrides;
 
       & + label {
         @include text-styles.body-small;
+
+        margin-top: var(--#{$prefix}-checkboxes-radios-sizing-small-label-container-padding-top);
       }
     }
   }
 
   &--lg {
+    gap: var(--#{$prefix}-checkboxes-radios-sizing-large-inner-spacing);
+
     input {
       @include large-input-overrides;
 
       & + label {
         @include text-styles.body-large;
+
+        margin-top: var(--#{$prefix}-checkboxes-radios-sizing-large-label-container-padding-top);
       }
     }
   }
