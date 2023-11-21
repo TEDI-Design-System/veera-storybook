@@ -91,11 +91,23 @@ export const createHorizontalScrollButtons = ({
   }
 };
 
-export const createIcon = ({ name, outlined }: { name: string; outlined?: boolean }) => {
+export const createIcon = ({
+  name,
+  outlined,
+  label,
+}: {
+  name: string;
+  outlined?: boolean;
+  label?: string;
+}) => {
   const icon = document.createElement('span');
   icon.className = outlined ? 'material-icons-outlined' : 'material-icons';
   icon.innerText = name;
-  icon.setAttribute('aria-hidden', 'true');
+  if (label) {
+    icon.setAttribute('aria-label', label);
+  } else {
+    icon.setAttribute('aria-hidden', 'true');
+  }
   return icon;
 };
 

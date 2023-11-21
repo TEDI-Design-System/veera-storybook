@@ -14,7 +14,7 @@ export const createLinkStory = ({ size, hasIcon }: LinkStoryProps) => {
   link.href = '#';
 
   if (hasIcon) {
-    link.appendChild(createIcon({ name: 'open_in_new' }));
+    link.appendChild(createIcon({ name: 'open_in_new', label: 'Avaneb uuel vahelehel' }));
   }
 
   return link;
