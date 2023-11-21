@@ -151,6 +151,7 @@ export const createTooltip = ({
   tooltip.innerText = text;
   tooltip.role = 'tooltip';
   tooltip.id = `tooltip-${Math.random()}`;
+  tooltip.setAttribute('aria-hidden', 'true');
   triggerElement.setAttribute('aria-describedby', tooltip.id);
 
   const popperInstance = createPopper(triggerElement, tooltip, {

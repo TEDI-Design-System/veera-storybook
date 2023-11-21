@@ -35,19 +35,17 @@ const createPopupFooter = () => {
     rightIcon: 'expand_more',
   });
   collapseTrigger.classList.add('v-mr-auto');
+  collapseTrigger.setAttribute('aria-expaned', expaned.toString());
   collapseTrigger.onclick = () => {
     expaned = !expaned;
     if (expaned) {
-      collapse.classList.add('v-collapse--expanded');
-      collapse.hidden = false;
+      collapse.style.display = 'flex';
       collapseTrigger.classList.add('expanded');
     } else {
-      collapse.classList.remove('v-collapse--expanded');
-      setTimeout(() => {
-        collapse.hidden = true;
-      }, 300);
+      collapse.style.display = 'none';
       collapseTrigger.classList.remove('expanded');
     }
+    collapseTrigger.setAttribute('aria-expaned', expaned.toString());
   };
   const acceptOptions = document.createElement('div');
   acceptOptions.className = 'v-flex v-gap-5';
@@ -58,19 +56,15 @@ const createPopupFooter = () => {
   footer.appendChild(actions);
 
   const collapse = createConsentOptionsCollapse();
+  collapse.style.display = 'none';
   footer.appendChild(collapse);
 
   return footer;
 };
 
 const createConsentOptionsCollapse = () => {
-  const collapse = document.createElement('div');
-  collapse.className = 'v-collapse';
   const collapseContent = document.createElement('div');
-  collapseContent.className = 'v-collapse__content v-flex v-flex-column v-gap-5';
-  collapseContent.style.padding = '4px'; // workaround to prevent focus styles being cut off
-  collapseContent.style.margin = '-4px';
-  collapse.appendChild(collapseContent);
+  collapseContent.className = 'v-flex v-flex-column v-gap-5';
   const optionsContainer = document.createElement('div');
   optionsContainer.className = 'v-flex v-flex-column v-pl-5 v-gap-4 v-mt-4';
   for (const opt of consentOptions) {
@@ -80,7 +74,7 @@ const createConsentOptionsCollapse = () => {
   const saveBtn = createButton({ label: 'Salvestan' });
   saveBtn.classList.add('v-mr-auto');
   collapseContent.appendChild(saveBtn);
-  return collapse;
+  return collapseContent;
 };
 
 const createConsentOptionCheckbox = (label: string) => {
