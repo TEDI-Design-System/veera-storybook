@@ -2845,15 +2845,15 @@
       "type": "FLOAT"
     },
     {
-      "alias": false,
-      "value": "10px",
+      "alias": true,
+      "value": "spacing-for-2px-border-05",
       "darkMode": {
-        "value": "10px",
-        "alias": false
+        "value": "spacing-for-2px-border-05",
+        "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/sm",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-toggle-small",
+      "name": "toggle-sizing-sm-thumb-width-height",
       "type": "FLOAT"
     },
     {
@@ -3435,9 +3435,9 @@
         "value": "spacing-baseline-07",
         "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/sm/switch",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-width-small",
+      "name": "toggle-sizing-sm-switch-width",
       "type": "FLOAT"
     },
     {
@@ -6343,9 +6343,9 @@
         "value": "spacing-baseline-06",
         "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/sm/switch",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-height-small",
+      "name": "toggle-sizing-sm-switch-height",
       "type": "FLOAT"
     },
     {
@@ -6355,9 +6355,9 @@
         "value": "spacing-baseline-07",
         "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/lg",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-switch-large",
+      "name": "toggle-sizing-lg-thumb-width-height",
       "type": "FLOAT"
     },
     {
@@ -6367,9 +6367,9 @@
         "value": "56px",
         "alias": false
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/lg/switch",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-width-large",
+      "name": "toggle-sizing-lg-switch-width",
       "type": "FLOAT"
     },
     {
@@ -6379,9 +6379,9 @@
         "value": "spacing-baseline-08",
         "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/lg/switch",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-height-large",
+      "name": "toggle-sizing-lg-switch-height",
       "type": "FLOAT"
     },
     {
@@ -6823,9 +6823,9 @@
         "value": "spacing-baseline-06",
         "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/md",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-toggle-medium",
+      "name": "toggle-sizing-md-thumb-width-height",
       "type": "FLOAT"
     },
     {
@@ -6835,9 +6835,9 @@
         "value": "spacing-baseline-09",
         "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/md/switch",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-width-medium",
+      "name": "toggle-sizing-md-switch-width",
       "type": "FLOAT"
     },
     {
@@ -6847,9 +6847,9 @@
         "value": "spacing-baseline-07",
         "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/md/switch",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-height-medium",
+      "name": "toggle-sizing-md-switch-height",
       "type": "FLOAT"
     },
     {
@@ -7069,15 +7069,15 @@
       "type": "FLOAT"
     },
     {
-      "alias": false,
-      "value": "1px",
+      "alias": true,
+      "value": "spacing-baseline-01",
       "darkMode": {
-        "value": "1px",
-        "alias": false
+        "value": "spacing-baseline-01",
+        "alias": true
       },
-      "group": "toggle/sizing",
+      "group": "toggle/sizing/sm/switch",
       "collection": "semantic-tokens",
-      "name": "toggle-sizing-toggle-padding-small",
+      "name": "toggle-sizing-sm-switch-padding-x",
       "type": "FLOAT"
     },
     {
@@ -11186,6 +11186,66 @@
       "group": "footer/spacing/sm/content-block",
       "collection": "semantic-tokens",
       "name": "footer-spacing-sm-content-block-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-02",
+      "darkMode": {
+        "value": "spacing-baseline-02",
+        "alias": true
+      },
+      "group": "toggle/sizing/md/switch",
+      "collection": "semantic-tokens",
+      "name": "toggle-sizing-md-switch-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-02",
+      "darkMode": {
+        "value": "spacing-baseline-02",
+        "alias": true
+      },
+      "group": "toggle/sizing/md/switch",
+      "collection": "semantic-tokens",
+      "name": "toggle-sizing-md-switch-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-02",
+      "darkMode": {
+        "value": "spacing-baseline-02",
+        "alias": true
+      },
+      "group": "toggle/sizing/lg/switch",
+      "collection": "semantic-tokens",
+      "name": "toggle-sizing-lg-switch-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-02",
+      "darkMode": {
+        "value": "spacing-baseline-02",
+        "alias": true
+      },
+      "group": "toggle/sizing/lg/switch",
+      "collection": "semantic-tokens",
+      "name": "toggle-sizing-lg-switch-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-01",
+      "darkMode": {
+        "value": "spacing-baseline-01",
+        "alias": true
+      },
+      "group": "toggle/sizing/sm/switch",
+      "collection": "semantic-tokens",
+      "name": "toggle-sizing-sm-switch-padding-y",
       "type": "FLOAT"
     }
   ],

@@ -265,7 +265,7 @@
   --v-checkboxes-radios-sizing-inner-spacing: var(--v-spacing-baseline-04);
   --v-checkboxes-radios-sizing-padding-x: var(--v-spacing-baseline-00);
   --v-toggle-sizing-corner-radius: var(--v-radius-03);
-  --v-toggle-sizing-toggle-small: 10px;
+  --v-toggle-sizing-sm-thumb-width-height: var(--v-spacing-for-2px-border-05);
   --v-toggle-track-off-state-border-default: var(--v-colors-neutral-neutral-500);
   --v-toggle-track-off-state-border-hover: var(--v-colors-blue-blue-500);
   --v-toggle-track-off-state-border-active: var(--v-colors-blue-blue-600);
@@ -314,7 +314,7 @@
   --v-datepicker-widget-days-text-active: var(--v-colors-text-primary);
   --v-datepicker-widget-days-text-focus: var(--v-colors-text-primary);
   --v-datepicker-widget-days-text-disabled: var(--v-colors-neutral-neutral-400);
-  --v-toggle-sizing-width-small: var(--v-spacing-baseline-07);
+  --v-toggle-sizing-sm-switch-width: var(--v-spacing-baseline-07);
   --v-toggle-icon-off-state-fill-default: var(--v-colors-neutral-neutral-100);
   --v-toggle-icon-off-state-fill-hover: var(--v-colors-neutral-neutral-100);
   --v-toggle-icon-off-state-fill-active: var(--v-colors-neutral-neutral-100);
@@ -565,10 +565,10 @@
   --v-tabs-sizing-padding-y-bottom: var(--v-spacing-for-1px-border-03);
   --v-accordion-sizing-padding-y-large: var(--v-spacing-for-1px-border-05);
   --v-checkboxes-radios-sizing-large-input-width-height: var(--v-spacing-baseline-08);
-  --v-toggle-sizing-height-small: var(--v-spacing-baseline-06);
-  --v-toggle-sizing-switch-large: var(--v-spacing-baseline-07);
-  --v-toggle-sizing-width-large: 56px;
-  --v-toggle-sizing-height-large: var(--v-spacing-baseline-08);
+  --v-toggle-sizing-sm-switch-height: var(--v-spacing-baseline-06);
+  --v-toggle-sizing-lg-thumb-width-height: var(--v-spacing-baseline-07);
+  --v-toggle-sizing-lg-switch-width: 56px;
+  --v-toggle-sizing-lg-switch-height: var(--v-spacing-baseline-08);
   --v-cards-sizing-padding-small: var(--v-spacing-baseline-06);
   --v-cards-sizing-padding-medium: var(--v-spacing-baseline-07);
   --v-cards-sizing-inner-spacing: var(--v-spacing-baseline-06);
@@ -605,9 +605,9 @@
   --v-checkboxes-radios-sizing-small-input-width-height: var(--v-spacing-baseline-06);
   --v-navigation-vertical-sizing-desktop-width: var(--v-containers-01);
   --v-navigation-vertical-sizing-desktop-height: var(--v-spacing-baseline-12);
-  --v-toggle-sizing-toggle-medium: var(--v-spacing-baseline-06);
-  --v-toggle-sizing-width-medium: var(--v-spacing-baseline-09);
-  --v-toggle-sizing-height-medium: var(--v-spacing-baseline-07);
+  --v-toggle-sizing-md-thumb-width-height: var(--v-spacing-baseline-06);
+  --v-toggle-sizing-md-switch-width: var(--v-spacing-baseline-09);
+  --v-toggle-sizing-md-switch-height: var(--v-spacing-baseline-07);
   --v-navigation-vertical-background-level-2-default: var(--v-colors-blue-blue-700);
   --v-navigation-vertical-background-level-2-hover: var(--v-colors-blue-blue-800);
   --v-navigation-vertical-background-level-2-active: var(--v-colors-blue-blue-900);
@@ -626,7 +626,7 @@
   --v-navigation-vertical-border-level-3-focus: var(--v-colors-blue-blue-800);
   --v-toggle-sizing-inner-spacing: var(--v-spacing-baseline-04);
   --v-toggle-sizing-toggle-padding: var(--v-spacing-baseline-02);
-  --v-toggle-sizing-toggle-padding-small: 1px;
+  --v-toggle-sizing-sm-switch-padding-x: var(--v-spacing-baseline-01);
   --v-navigation-vertical-sizing-desktop-padding-x-left-level-2: var(--v-spacing-baseline-10);
   --v-navigation-vertical-sizing-desktop-padding-x-right-level-2: var(--v-spacing-baseline-06);
   --v-navigation-vertical-sizing-desktop-padding-x-left-level-3: var(--v-spacing-baseline-11);
@@ -985,6 +985,11 @@
   --v-footer-spacing-sm-content-block-inner-spacing: var(--v-spacing-baseline-04);
   --v-footer-spacing-sm-content-block-padding-x: var(--v-spacing-baseline-00);
   --v-footer-spacing-sm-content-block-padding-y: var(--v-spacing-baseline-06);
+  --v-toggle-sizing-md-switch-padding-x: var(--v-spacing-baseline-02);
+  --v-toggle-sizing-md-switch-padding-y: var(--v-spacing-baseline-02);
+  --v-toggle-sizing-lg-switch-padding-x: var(--v-spacing-baseline-02);
+  --v-toggle-sizing-lg-switch-padding-y: var(--v-spacing-baseline-02);
+  --v-toggle-sizing-sm-switch-padding-y: var(--v-spacing-baseline-01);
   --v-box-shadow-elevation-01: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   --v-box-shadow-elevation-02: 0px 4px 10px 0px rgba(0, 0, 0, 0.14);
   --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #337bb5;

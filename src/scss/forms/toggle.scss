@@ -4,17 +4,11 @@
 $prefix: constants.$veera-prefix;
 
 @function get-thumb-track-length($size) {
-  $padding: if(
-    $size == 'small',
-    var(--#{$prefix}-toggle-sizing-toggle-padding-small),
-    var(--#{$prefix}-toggle-sizing-toggle-padding)
-  );
+  $padding: var(--#{$prefix}-toggle-sizing-#{$size}-switch-padding-x);
+  $width: var(--#{$prefix}-toggle-sizing-#{$size}-switch-width);
+  $knob-width: var(--#{$prefix}-toggle-sizing-#{$size}-thumb-width-height);
 
-  @return calc(
-    var(--#{$prefix}-toggle-sizing-width-#{$size}) - 2 * $padding - var(
-        --#{$prefix}-toggle-sizing-toggle-#{$size}
-      ) - 4px
-  );
+  @return calc($width - 2 * $padding - $knob-width - 4px);
 }
 
 @function get-checkmark() {
@@ -27,11 +21,11 @@ $prefix: constants.$veera-prefix;
   display: flex;
   justify-content: center;
   align-items: center;
-  left: var(--#{$prefix}-toggle-sizing-toggle-padding);
-  top: var(--#{$prefix}-toggle-sizing-toggle-padding);
+  left: var(--#{$prefix}-toggle-sizing-md-switch-padding-x);
+  top: var(--#{$prefix}-toggle-sizing-md-switch-padding-y);
   background: var(--#{$prefix}-toggle-thumb-off-state-background-default);
-  height: var(--#{$prefix}-toggle-sizing-toggle-medium);
-  width: var(--#{$prefix}-toggle-sizing-toggle-medium);
+  height: var(--#{$prefix}-toggle-sizing-md-thumb-width-height);
+  width: var(--#{$prefix}-toggle-sizing-md-thumb-width-height);
   border-radius: 50%;
   transition: transform 0.3s;
 }
@@ -42,8 +36,8 @@ $prefix: constants.$veera-prefix;
   cursor: pointer;
   appearance: none;
   position: relative;
-  height: var(--#{$prefix}-toggle-sizing-height-medium);
-  width: var(--#{$prefix}-toggle-sizing-width-medium);
+  height: var(--#{$prefix}-toggle-sizing-md-switch-height);
+  width: var(--#{$prefix}-toggle-sizing-md-switch-width);
   border-radius: var(--#{$prefix}-toggle-sizing-corner-radius);
   background: var(--#{$prefix}-toggle-track-off-state-background-default);
   border: 2px solid var(--#{$prefix}-toggle-track-off-state-border-default);
@@ -96,7 +90,7 @@ $prefix: constants.$veera-prefix;
     border-color: var(--#{$prefix}-toggle-track-on-state-border-default);
 
     &::before {
-      transform: translateX(get-thumb-track-length('medium'));
+      transform: translateX(get-thumb-track-length('md'));
       background: var(--#{$prefix}-toggle-thumb-on-state-background-default);
     }
 
@@ -139,57 +133,47 @@ $prefix: constants.$veera-prefix;
   }
 }
 
-@mixin small-input-overrides {
-  @include icon-position('small');
+@mixin input-size-overrides($size) {
+  @include icon-position($size);
 
-  height: var(--#{$prefix}-toggle-sizing-height-small);
-  width: var(--#{$prefix}-toggle-sizing-width-small);
+  height: var(--#{$prefix}-toggle-sizing-#{$size}-switch-height);
+  width: var(--#{$prefix}-toggle-sizing-#{$size}-switch-width);
 
   &::before {
-    height: var(--#{$prefix}-toggle-sizing-toggle-small);
-    width: var(--#{$prefix}-toggle-sizing-toggle-small);
-    left: var(--#{$prefix}-toggle-sizing-toggle-padding-small);
-    top: var(--#{$prefix}-toggle-sizing-toggle-padding-small);
+    height: var(--#{$prefix}-toggle-sizing-#{$size}-thumb-width-height);
+    width: var(--#{$prefix}-toggle-sizing-#{$size}-thumb-width-height);
+    left: var(--#{$prefix}-toggle-sizing-#{$size}-switch-padding-x);
+    top: var(--#{$prefix}-toggle-sizing-#{$size}-switch-padding-y);
   }
 
   &:checked::before {
-    transform: translateX(get-thumb-track-length('small'));
+    transform: translateX(get-thumb-track-length($size));
   }
+}
+
+@mixin small-input-overrides {
+  @include input-size-overrides('sm');
 }
 
 @mixin large-input-overrides {
-  @include icon-position('large');
-
-  height: var(--#{$prefix}-toggle-sizing-height-large);
-  width: var(--#{$prefix}-toggle-sizing-width-large);
-
-  &::before {
-    height: var(--#{$prefix}-toggle-sizing-toggle-large);
-    width: var(--#{$prefix}-toggle-sizing-toggle-large);
-  }
-
-  &:checked::before {
-    transform: translateX(get-thumb-track-length('large'));
-  }
+  @include input-size-overrides('lg');
 }
 
 @mixin icon-position($size) {
-  $padding: if(
-    $size == 'small',
-    var(--#{$prefix}-toggle-sizing-toggle-padding-small),
-    var(--#{$prefix}-toggle-sizing-toggle-padding)
+  $padding: var(--#{$prefix}-toggle-sizing-#{$size}-switch-padding-x);
+  $initial-left-pos: calc(
+    $padding + var(--#{$prefix}-toggle-sizing-#{$size}-thumb-width-height) / 2
   );
-  $initial-left-pos: calc($padding + var(--#{$prefix}-toggle-sizing-toggle-#{$size}) / 2);
 
   &::after {
     left: $initial-left-pos;
     transform: translate(-50%, -50%);
 
-    @if $size == 'small' {
+    @if $size == 'sm' {
       transform: translate(-50%, -50%) scale(0.6);
     }
 
-    @if $size == 'large' {
+    @if $size == 'lg' {
       transform: translate(-50%, -50%) scale(1.4);
     }
   }
@@ -202,7 +186,7 @@ $prefix: constants.$veera-prefix;
 }
 
 @mixin with-check-input-styles {
-  @include icon-position('medium');
+  @include icon-position('md');
 
   &::after {
     position: absolute;

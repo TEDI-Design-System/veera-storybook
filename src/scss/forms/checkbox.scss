@@ -71,6 +71,10 @@ $prefix: constants.$veera-prefix;
     background: var(--#{$prefix}-checkboxes-radios-background-indetermined);
 
     @include minus;
+
+    &:disabled {
+      background: var(--#{$prefix}-checkboxes-radios-border-disabled);
+    }
   }
 
   &:active {
