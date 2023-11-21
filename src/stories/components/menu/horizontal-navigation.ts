@@ -24,22 +24,28 @@ const createSubMenuItemBlock = (item: SubmenuItem) => {
   blockHeader.appendChild(document.createTextNode(item.name));
   block.appendChild(blockHeader);
 
+  const list = document.createElement('ul');
   for (const link of item.children) {
+    const item = document.createElement('li');
     const itemLink = document.createElement('a');
     itemLink.className = 'v-horizontal-navigation__submenu-item';
     itemLink.href = '#';
     itemLink.innerText = link;
+    item.appendChild(itemLink);
 
-    block.appendChild(itemLink);
+    list.appendChild(item);
   }
+  block.appendChild(list);
 
   return block;
 };
 
-const createMenuPanel = (openedItem: HorizontalNavItem) => {
-  const oldPanel = document.getElementById('menu-panel');
-  oldPanel?.remove();
+const removeMenu = () => {
+  const panel = document.getElementById('menu-panel');
+  panel?.remove();
+};
 
+const createMenuPanel = (openedItem: HorizontalNavItem) => {
   const panel = document.createElement('div');
   panel.className = 'v-horizontal-navigation__panel';
   panel.id = 'menu-panel';
@@ -52,6 +58,7 @@ const createMenuPanel = (openedItem: HorizontalNavItem) => {
 };
 
 const createMenuItem = (item: HorizontalNavItem) => {
+  let selected = false;
   const menuItem = document.createElement('button');
   menuItem.className = 'v-horizontal-navigation__item';
   if (item.icon) {
@@ -60,19 +67,33 @@ const createMenuItem = (item: HorizontalNavItem) => {
     menuItem.appendChild(icon);
   }
   menuItem.appendChild(document.createTextNode(item.label));
-  menuItem.appendChild(createIcon({ name: 'expand_more' }));
+  const expandIcon = createIcon({ name: 'expand_more' });
+  expandIcon.classList.add('v-horizontal-navigation__expand-icon');
+  menuItem.appendChild(expandIcon);
   menuItem.onclick = () => {
-    createMenuPanel(item);
+    selected = !selected;
+    if (selected) {
+      createMenuPanel(item);
+      menuItem.classList.add('v-horizontal-navigation__item--selected');
+    } else {
+      removeMenu();
+      menuItem.classList.remove('v-horizontal-navigation__item--selected');
+    }
+    menuItem.setAttribute('aria-expanded', selected.toString());
   };
   return menuItem;
 };
 
 const createMenuBar = () => {
-  const menuBar = document.createElement('div');
+  const menuBar = document.createElement('nav');
   menuBar.className = 'v-horizontal-navigation__menu-bar';
+  const list = document.createElement('ul');
   for (const item of horizontalNavItems) {
-    menuBar.appendChild(createMenuItem(item));
+    const listItem = document.createElement('li');
+    listItem.appendChild(createMenuItem(item));
+    list.appendChild(listItem);
   }
+  menuBar.appendChild(list);
   return menuBar;
 };
 
