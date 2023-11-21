@@ -16,7 +16,8 @@ export const createAutocomplete = ({ size, withButton, value, opened }: Autocomp
 
   const input = createIconInput({
     size: size,
-    rightIcon: 'search',
+    rightIcon: withButton ? 'search' : undefined,
+    leftIcon: !withButton ? 'search' : undefined,
     placeholder: 'Otsing...',
     value,
     isIconButton: withButton,
