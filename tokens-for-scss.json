@@ -11079,6 +11079,114 @@
       "collection": "semantic-tokens",
       "name": "navigation-horizontal-border-default",
       "type": "COLOR"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-04",
+      "darkMode": {
+        "value": "spacing-baseline-04",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-content-block-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-content-block-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/lg/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-lg-content-block-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-04",
+      "darkMode": {
+        "value": "spacing-baseline-04",
+        "alias": true
+      },
+      "group": "footer/spacing/md/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-content-block-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-07",
+      "darkMode": {
+        "value": "spacing-baseline-07",
+        "alias": true
+      },
+      "group": "footer/spacing/md/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-content-block-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/md/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-md-content-block-padding-y",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-04",
+      "darkMode": {
+        "value": "spacing-baseline-04",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-content-block-inner-spacing",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-00",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-content-block-padding-x",
+      "type": "FLOAT"
+    },
+    {
+      "alias": true,
+      "value": "spacing-baseline-06",
+      "darkMode": {
+        "value": "spacing-baseline-00",
+        "alias": true
+      },
+      "group": "footer/spacing/sm/content-block",
+      "collection": "semantic-tokens",
+      "name": "footer-spacing-sm-content-block-padding-y",
+      "type": "FLOAT"
     }
   ],
   "typography": [

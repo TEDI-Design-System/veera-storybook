@@ -9,12 +9,12 @@ type MediaProps<T> = {
 };
 
 interface IColProps extends MediaProps<{ size?: NumericRange<0, 12> }> {
-  content?: string;
+  content?: HTMLElement;
   hasBorder?: boolean;
   size?: NumericRange<0, 12>;
 }
 
-const createCol = ({ content, hasBorder, ...sizes }: IColProps) => {
+export const createCol = ({ content, hasBorder, ...sizes }: IColProps) => {
   const col = document.createElement('div');
   const classes =
     Object.entries(sizes)
@@ -27,7 +27,11 @@ const createCol = ({ content, hasBorder, ...sizes }: IColProps) => {
       })
       .join(' ') || 'v-col';
   col.className = classes;
-  col.innerHTML = content ?? classes;
+  if (content) {
+    col.appendChild(content);
+  } else {
+    col.innerText = classes;
+  }
   if (hasBorder) {
     col.style.border = '1px solid black';
   }

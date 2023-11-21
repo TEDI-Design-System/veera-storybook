@@ -1,5 +1,5 @@
 import { createButton } from './components/button/button';
-import logo from './assets/logo.svg';
+import { logoString } from './components/logo/logo';
 import { createPopper } from '@popperjs/core';
 import clsx from 'clsx';
 
@@ -119,10 +119,10 @@ export const createLink = ({
 };
 
 export const createLogo = () => {
-  const img = document.createElement('img');
-  img.src = logo;
-  img.alt = 'süsteemi logo';
-  return img;
+  const logoWrapper = document.createElement('div');
+  logoWrapper.className = 'v-logo';
+  logoWrapper.innerHTML = logoString;
+  return logoWrapper;
 };
 
 export const createTooltip = ({

@@ -976,6 +976,15 @@
   --v-footer-spacing-sm-content-area-spacing-x: var(--v-spacing-baseline-07);
   --v-footer-spacing-sm-content-area-spacing-y: var(--v-spacing-baseline-07);
   --v-navigation-horizontal-border-default: var(--v-colors-blue-blue-700);
+  --v-footer-spacing-lg-content-block-inner-spacing: var(--v-spacing-baseline-04);
+  --v-footer-spacing-lg-content-block-padding-x: var(--v-spacing-baseline-07);
+  --v-footer-spacing-lg-content-block-padding-y: var(--v-spacing-baseline-00);
+  --v-footer-spacing-md-content-block-inner-spacing: var(--v-spacing-baseline-04);
+  --v-footer-spacing-md-content-block-padding-x: var(--v-spacing-baseline-07);
+  --v-footer-spacing-md-content-block-padding-y: var(--v-spacing-baseline-00);
+  --v-footer-spacing-sm-content-block-inner-spacing: var(--v-spacing-baseline-04);
+  --v-footer-spacing-sm-content-block-padding-x: var(--v-spacing-baseline-00);
+  --v-footer-spacing-sm-content-block-padding-y: var(--v-spacing-baseline-06);
   --v-box-shadow-elevation-01: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   --v-box-shadow-elevation-02: 0px 4px 10px 0px rgba(0, 0, 0, 0.14);
   --v-box-shadow-focus-ring-outset: 0px 0px 0px 1px #ffffff, 0px 0px 0px 3px #337bb5;

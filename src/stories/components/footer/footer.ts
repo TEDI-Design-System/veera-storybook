@@ -1,29 +1,8 @@
-import { createIcon, createLink } from '../../utils';
-import EELogo from '../../assets/logo.svg';
+import { createIcon, createLink, createLogo } from '../../utils';
 import clsx from 'clsx';
+import { createCol } from '../../utilities/grid/grid';
 
-interface Block {
-  name: string;
-  links: string[];
-}
-
-const blocks: Block[] = [
-  {
-    name: 'Kiirelt kätte',
-    links: [
-      'Kasutajakonto ja pääsuõigused',
-      'Info mitteresidendile',
-      'E-teenuste kasutamise juhendid',
-      'Turvalisus e-teenuste keskkonnas',
-      'Maksukalender',
-      'Rekvisiidid maksude tasumiseks',
-    ],
-  },
-  {
-    name: 'Vajate abi',
-    links: ['Kirjutage meile help@ria.ee', 'Asrutuse kontaktid'],
-  },
-];
+const links = ['Placeholder link', 'Placeholder link', 'Placeholder link', 'Placeholder link'];
 
 const createSocials = () => {
   const socials = document.createElement('div');
@@ -44,41 +23,44 @@ const createSocials = () => {
   return socials;
 };
 
-const createLogoBlock = (logo: string) => {
+const createLogoBlock = () => {
   const block = document.createElement('div');
-  block.className = 'v-footer__logo-block';
-
-  const img = document.createElement('img');
-  img.src = logo;
-  block.appendChild(img);
+  block.className = 'v-col-12 v-col-lg-2';
+  block.appendChild(createLogo());
 
   return block;
 };
 
-const createBlock = (blockContent: Block) => {
+const createBlock = () => {
   const block = document.createElement('div');
   block.className = 'v-footer__content-block';
 
   const header = document.createElement('p');
-  header.innerText = blockContent.name;
+  header.innerText = 'Block header';
   block.appendChild(header);
 
-  for (const blockLink of blockContent.links) {
+  for (const blockLink of links) {
     const link = createLink({ text: blockLink, icon: 'chevron_right' });
     block.appendChild(link);
   }
+  const blockColumn = createCol({ content: block, size: 12, md: { size: 6 }, lg: { size: 3 } });
 
-  return block;
+  return blockColumn;
 };
 
 const createContent = () => {
   const content = document.createElement('div');
-  content.className = 'v-footer__content';
+  content.className = 'v-footer__content v-row';
 
-  content.appendChild(createLogoBlock(EELogo));
-  for (const block of blocks) {
-    content.appendChild(createBlock(block));
+  content.appendChild(createLogoBlock());
+
+  const blocks = document.createElement('div');
+  blocks.className = 'v-footer__blocks v-row';
+  for (let i = 0; i < 4; i++) {
+    blocks.appendChild(createBlock());
   }
+  const blocksColumn = createCol({ content: blocks, size: 12, lg: { size: 10 } });
+  content.appendChild(blocksColumn);
 
   return content;
 };

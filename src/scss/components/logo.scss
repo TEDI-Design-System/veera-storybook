@@ -1,0 +1,13 @@
+@use '../constants';
+
+$prefix: constants.$veera-prefix;
+
+.#{$prefix}-logo {
+  color: var(--#{$prefix}-colors-brand-logo);
+
+  svg {
+    height: 100%;
+    width: 100%;
+    max-width: 146px;
+  }
+}
