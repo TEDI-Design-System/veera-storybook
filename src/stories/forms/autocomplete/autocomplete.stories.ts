@@ -9,6 +9,8 @@ const meta = {
   },
   args: {
     size: 'md',
+    value: 'Vää',
+    opened: true,
   },
 } satisfies Meta<AutocompleteStoryProps>;
 

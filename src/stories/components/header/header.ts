@@ -1,8 +1,9 @@
 import clsx from 'clsx';
 import { createIcon, createLink, createLogo } from '../../utils';
 import { createToggleWithLabel } from '../../forms/toggle/toggle';
-import { createInputControl } from '../../forms/form-control/form-control';
 import { createButton } from '../button/button';
+import { createAutocomplete } from '../../forms/autocomplete/autocomplete';
+import './header.stories.scss';
 
 const links = ['Eraisik', 'Ettevõtja', 'Ametnik', 'Äriklient'];
 
@@ -72,11 +73,11 @@ const createMainRow = () => {
 
   const centerColumn = document.createElement('nav');
   centerColumn.className = 'v-header__grid-column v-header__grid-column--center v-hide-md-down';
-  centerColumn.appendChild(createInputControl({ size: 'md', placeholder: 'Otsing...' }));
+  centerColumn.appendChild(createAutocomplete({ size: 'md', withButton: true }));
   mainRow.appendChild(centerColumn);
 
   const endColumn = document.createElement('div');
-  endColumn.className = 'v-header__grid-column v-header__grid-column--end';
+  endColumn.className = 'v-header__grid-column v-header__grid-column--end v-flex-shrink-0';
   const desktopLogIn = createButton({ label: 'Login sisse', variant: 'primary' });
   desktopLogIn.classList.add('v-hide-lg-down');
   endColumn.appendChild(desktopLogIn);

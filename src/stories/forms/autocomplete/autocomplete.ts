@@ -5,9 +5,11 @@ import { createIconInput } from '../form-control/form-control';
 export interface AutocompleteStoryProps {
   size: 'sm' | 'md' | 'lg';
   withButton?: boolean;
+  value?: string;
+  opened?: boolean;
 }
 
-export const createAutocomplete = ({ size, withButton }: AutocompleteStoryProps) => {
+export const createAutocomplete = ({ size, withButton, value, opened }: AutocompleteStoryProps) => {
   const autocomplete = document.createElement('div');
   autocomplete.className = 'v-autocomplete';
   autocomplete.role = 'search';
@@ -16,7 +18,7 @@ export const createAutocomplete = ({ size, withButton }: AutocompleteStoryProps)
     size: size,
     rightIcon: 'search',
     placeholder: 'Otsing...',
-    value: 'Vää',
+    value,
     isIconButton: withButton,
   });
   const inputField = input.querySelector('input');
@@ -31,20 +33,22 @@ export const createAutocomplete = ({ size, withButton }: AutocompleteStoryProps)
   }
   autocomplete.appendChild(input);
 
-  const suggestions = createDropdown();
-  suggestions.setAttribute('aria-label', 'Soovitused');
+  if (opened) {
+    const suggestions = createDropdown();
+    suggestions.setAttribute('aria-label', 'Soovitused');
 
-  for (let index = 1; index < 6; index++) {
-    const template = document.createElement('template');
-    template.innerHTML = `Vää<b>rtus ${index}</b>`;
-    const option = createDropdownOption({
-      label: template.content,
-    });
-    suggestions.appendChild(option);
+    for (let index = 1; index < 6; index++) {
+      const template = document.createElement('template');
+      template.innerHTML = `Vää<b>rtus ${index}</b>`;
+      const option = createDropdownOption({
+        label: template.content,
+      });
+      suggestions.appendChild(option);
+    }
+
+    autocomplete.appendChild(suggestions);
+    autocomplete.appendChild(createCloseButton('Tühjenda otsingukast', true));
   }
-
-  autocomplete.appendChild(suggestions);
-  autocomplete.appendChild(createCloseButton('Tühjenda otsingukast', true));
 
   return autocomplete;
 };

@@ -22,10 +22,6 @@ $prefix: constants.$veera-prefix;
     padding: var(--#{$prefix}-header-sizing-mobile-padding-y)
       var(--#{$prefix}-header-sizing-mobile-padding-x);
 
-    & > #{ $self }__grid-column {
-      width: 100%;
-    }
-
     @include media.desktop-and-up {
       padding: var(--#{$prefix}-header-sizing-tablet-and-desktop-padding-y)
         var(--#{$prefix}-header-sizing-tablet-and-desktop-padding-x);
