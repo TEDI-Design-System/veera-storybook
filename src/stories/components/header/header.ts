@@ -71,7 +71,7 @@ const createMainRow = () => {
   startColumn.appendChild(createLogo(true));
   mainRow.appendChild(startColumn);
 
-  const centerColumn = document.createElement('nav');
+  const centerColumn = document.createElement('div');
   centerColumn.className = 'v-header__grid-column v-header__grid-column--center v-hide-md-down';
   centerColumn.appendChild(createAutocomplete({ size: 'md', withButton: true }));
   mainRow.appendChild(centerColumn);
