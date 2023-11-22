@@ -45,7 +45,7 @@ const createPopupFooter = () => {
       collapse.style.display = 'none';
       collapseTrigger.classList.remove('expanded');
     }
-    collapseTrigger.setAttribute('aria-expaned', expaned.toString());
+    collapseTrigger.setAttribute('aria-expanded', expaned.toString());
   };
   const acceptOptions = document.createElement('div');
   acceptOptions.className = 'v-flex v-gap-5';
