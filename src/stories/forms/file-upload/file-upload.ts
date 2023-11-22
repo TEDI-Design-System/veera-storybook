@@ -23,7 +23,7 @@ const createAttachment = (file: UploadFile, onRemove: (id: string) => void) => {
   const removeBtn = document.createElement('button');
   removeBtn.className = 'material-icons v-file-upload__attachment__remove-btn';
   removeBtn.innerText = 'close';
-  removeBtn.setAttribute('aria-label', `Kustuta fail ${attachmentName}`);
+  removeBtn.setAttribute('aria-label', `Kustuta fail ${file.name}`);
   removeBtn.onclick = () => onRemove(file.id);
   attachment.appendChild(removeBtn);
 
