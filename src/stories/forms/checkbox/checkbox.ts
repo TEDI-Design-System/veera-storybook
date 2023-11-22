@@ -41,11 +41,21 @@ export const createStandaloneCheckboxStory = (props: CheckboxProps) => {
 export interface CheckboxWithLabelProps extends CheckboxProps {
   label: string;
 }
-export const createCheckboxWithLabel = ({ label, size, ...inputProps }: CheckboxWithLabelProps) => {
+export const createCheckboxWithLabel = ({
+  label,
+  size,
+  error,
+  success,
+  ...inputProps
+}: CheckboxWithLabelProps) => {
   const container = document.createElement('div');
   const id = `v-checkbox-label-${Math.random()}`;
 
-  container.className = `v-checkbox v-checkbox--${size}`;
+  container.className = clsx('v-checkbox', {
+    [`v-checkbox--${size}`]: size,
+    'v-checkbox--error': error,
+    'v-checkbox--success': success,
+  });
   const checkbox = createCheckbox({ ...inputProps });
   checkbox.id = id;
   container.appendChild(checkbox);
