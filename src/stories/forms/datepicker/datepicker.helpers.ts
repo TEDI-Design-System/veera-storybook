@@ -5,6 +5,7 @@ import { createDatepickerDay } from './datepicker';
 export const createDaysList = () => {
   const daysList = document.createElement('div');
   daysList.className = 'v-datepicker__days-list';
+  daysList.setAttribute('aria-hidden', 'true');
   ['E', 'T', 'K', 'N', 'R', 'L', 'P'].forEach((name) => {
     const dayName = document.createElement('span');
     dayName.innerText = name;
@@ -16,21 +17,40 @@ export const createDaysList = () => {
   return daysList;
 };
 
+const getWeekday = (nr: number) => {
+  const weekdays: Record<number, string> = {
+    0: 'Esmaspäev',
+    1: 'Teisipäev',
+    2: 'Kolmapäev',
+    3: 'Neljapäev',
+    4: 'Reede',
+    5: 'Laupäev',
+    6: 'Pühapäev',
+  };
+  return weekdays[nr];
+};
+
 export const createDaysGrid = () => {
   const daysGrid = document.createElement('div');
   daysGrid.className = 'v-datepicker__days-grid';
 
-  daysGrid.appendChild(createDatepickerDay({ day: 31, muted: true }));
+  daysGrid.appendChild(
+    createDatepickerDay({ day: 31, muted: true, label: 'Pühapäev 31. detsember 1959' }),
+  );
   const days = Array.from({ length: 31 }, (_, i) => i + 1);
   for (const day of days) {
     const weekend = [5, 6].includes(day % 7);
     const selected = day === 24;
     const today = day === 24;
-    daysGrid.appendChild(createDatepickerDay({ day, weekend, today, selected }));
+    const label = `${getWeekday(day % 7)} ${day}. jaanuar 1960`;
+    daysGrid.appendChild(createDatepickerDay({ day, weekend, today, selected, label }));
   }
   const nextMonthDays = Array.from({ length: 3 }, (_, i) => i + 1);
   for (const day of nextMonthDays) {
-    daysGrid.appendChild(createDatepickerDay({ day, muted: true, weekend: [2, 3].includes(day) }));
+    const label = `${getWeekday(day % 7)} ${day}. veebruar 1960`;
+    daysGrid.appendChild(
+      createDatepickerDay({ day, muted: true, weekend: [2, 3].includes(day), label }),
+    );
   }
   return daysGrid;
 };
@@ -43,6 +63,7 @@ export const createPanelHeader = () => {
     iconOnly: true,
     size: 'sm',
     variant: 'neutral',
+    ariaLabel: 'Eelmine kuu',
   });
   panelHeader.appendChild(prevButton);
 
@@ -61,7 +82,7 @@ export const createPanelHeader = () => {
     'detsember',
   ].map((month) => ({ text: month, value: month }));
   const monthSelect = createSelectControl({ size: 'sm', options: monthOptions });
-  monthSelect.setAttribute('aria-label', 'kuu');
+  monthSelect.setAttribute('aria-label', 'Kuu valik');
   panelHeader.appendChild(monthSelect);
 
   const yearOptions = Array.from({ length: 64 }, (_, i) => `${i + 1960}`).map((year) => ({
@@ -69,7 +90,7 @@ export const createPanelHeader = () => {
     value: year,
   }));
   const yearSelect = createSelectControl({ size: 'sm', options: yearOptions });
-  yearSelect.setAttribute('aria-label', 'aasta');
+  yearSelect.setAttribute('aria-label', 'Aasta valik');
   panelHeader.appendChild(yearSelect);
 
   const nextButton = createButton({
@@ -77,6 +98,7 @@ export const createPanelHeader = () => {
     iconOnly: true,
     size: 'sm',
     variant: 'neutral',
+    ariaLabel: 'Järgmine kuu',
   });
   panelHeader.appendChild(nextButton);
 

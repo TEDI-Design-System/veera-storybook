@@ -9,6 +9,7 @@ export interface DatepickerDayStoryProps {
   selected?: boolean;
   today?: boolean;
   weekend?: boolean;
+  label?: string;
 }
 
 export const createDatepickerDay = ({
@@ -18,6 +19,7 @@ export const createDatepickerDay = ({
   selected,
   today,
   weekend,
+  label,
 }: DatepickerDayStoryProps) => {
   const datepickerDay = document.createElement('button');
   datepickerDay.className = clsx('v-datepicker__day', {
@@ -31,6 +33,15 @@ export const createDatepickerDay = ({
 
   datepickerDay.style.height = '40px';
   datepickerDay.style.width = '40px';
+  datepickerDay.setAttribute('aria-selected', selected ? 'true' : 'false');
+
+  if (today) {
+    datepickerDay.setAttribute('aria-current', 'date');
+  }
+
+  if (label) {
+    datepickerDay.setAttribute('aria-label', label);
+  }
 
   return datepickerDay;
 };

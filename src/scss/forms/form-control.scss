@@ -15,7 +15,7 @@ $prefix: constants.$veera-prefix;
   outline: none;
   color: var(--#{$prefix}-inputs-text-filled);
   border: 1px solid var(--#{$prefix}-inputs-border-default);
-  background: var(--#{$prefix}-inputs-background-default);
+  background-color: var(--#{$prefix}-inputs-background-default);
 
   &::placeholder,
   &__placeholder {
@@ -25,19 +25,19 @@ $prefix: constants.$veera-prefix;
   &:focus,
   &--focus {
     border-color: var(--#{$prefix}-inputs-border-focus);
-    background: var(--#{$prefix}-inputs-background-focus);
+    background-color: var(--#{$prefix}-inputs-background-focus);
     box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
   }
 
   &:hover {
     border-color: var(--#{$prefix}-inputs-border-hover);
-    background: var(--#{$prefix}-inputs-background-hover);
+    background-color: var(--#{$prefix}-inputs-background-hover);
   }
 
   &:active,
   &--active {
     border-color: var(--#{$prefix}-inputs-border-active);
-    background: var(--#{$prefix}-inputs-background-active);
+    background-color: var(--#{$prefix}-inputs-background-active);
   }
 
   &:disabled,
@@ -49,12 +49,12 @@ $prefix: constants.$veera-prefix;
 
   &--error {
     border-color: var(--#{$prefix}-inputs-border-error);
-    background: var(--#{$prefix}-inputs-background-error);
+    background-color: var(--#{$prefix}-inputs-background-error);
   }
 
   &--success {
     border-color: var(--#{$prefix}-inputs-border-success);
-    background: var(--#{$prefix}-inputs-background-success);
+    background-color: var(--#{$prefix}-inputs-background-success);
   }
 
   &--sm {
@@ -67,6 +67,15 @@ $prefix: constants.$veera-prefix;
 
   &--lg {
     @include form-styles.form-input-large;
+  }
+
+  &:is(select) {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M7 9.5L12 14.5L17 9.5H7Z" fill="%23686B78"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: right center;
+    padding-right: 30px;
   }
 }
 

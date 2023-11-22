@@ -15,6 +15,7 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
     rightIcon: 'calendar_month',
     placeholder: 'hh:mm',
     isIconButton: true,
+    iconLabel: 'Ava kuupäeva valija',
   });
   iconInput.style.width = '125px';
 

@@ -92,6 +92,7 @@ export interface IconInputProps extends FormControlStoryProps {
   leftIcon?: string;
   rightIcon?: string;
   isIconButton?: boolean;
+  iconLabel?: string;
 }
 
 export const createIconInput = ({
@@ -99,6 +100,7 @@ export const createIconInput = ({
   leftIcon,
   rightIcon,
   isIconButton,
+  iconLabel,
   ...inputProps
 }: IconInputProps) => {
   const createIcon = (iconName: string, position: 'left' | 'right') => {
@@ -106,7 +108,11 @@ export const createIconInput = ({
     const iconClass = isIconButton ? 'v-form-control-icon-btn' : 'v-form-control-icon';
     icon.className = `material-icons ${iconClass} ${iconClass}--${position}`;
     icon.innerText = iconName;
-    icon.setAttribute('aria-hidden', 'true');
+    if (iconLabel) {
+      icon.setAttribute('aria-label', iconLabel);
+    } else {
+      icon.setAttribute('aria-hidden', 'true');
+    }
     return icon;
   };
 
