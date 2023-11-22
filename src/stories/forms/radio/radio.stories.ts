@@ -13,39 +13,40 @@ const meta = {
   title: 'forms/radio',
   tags: ['autodocs'],
   render: createRadios,
-  argTypes: {
-    size: {
-      control: { type: 'select' },
-      options: ['sm', 'md', 'lg'],
-    },
-  },
-  args: {
-    size: 'md',
-    items,
-  },
 } satisfies Meta<RadioProps>;
 
 export default meta;
 
 type Story = StoryObj<RadioProps>;
 
-export const Default: Story = {};
-
-export const Horizontal: Story = {
-  render: createRadios,
+export const Default: Story = {
+  args: {
+    size: 'md',
+    items,
+  },
   argTypes: {
     size: {
       control: { type: 'select' },
       options: ['sm', 'md', 'lg'],
     },
   },
+};
+
+export const Horizontal: Story = {
+  render: createRadios,
   args: {
+    size: 'md',
+    items,
     horizontal: true,
+  },
+  argTypes: {
+    size: {
+      control: { type: 'select' },
+      options: ['sm', 'md', 'lg'],
+    },
   },
 };
 
 export const WithoutLabel = {
   render: createRadiosWithoutLabels,
-  argTypes: {},
-  args: {},
 };
