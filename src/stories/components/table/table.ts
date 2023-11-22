@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { bodyCells, head, mobileTable, nestedHead } from './table.data';
 import { createPagination } from '../pagination/pagination';
 import { createButton } from '../button/button';
+import { createIcon } from '../../utils';
 
 export interface TableStoryProps {
   bordered: boolean;
@@ -79,6 +80,9 @@ const createTableBody = ({ interactive, sticky }: { interactive: boolean; sticky
     if (interactive) {
       row.setAttribute('tabindex', '0');
     }
+    if ([1, 2].includes(i)) {
+      row.setAttribute('aria-expanded', 'true');
+    }
     bodyCells.forEach(({ content }, index, arr) => {
       const td = row.insertCell();
 
@@ -93,8 +97,18 @@ const createTableBody = ({ interactive, sticky }: { interactive: boolean; sticky
         }
       }
 
-      if (content) {
-        td.appendChild(createCellContent(content));
+      if ([1, 2].includes(i) && index === 0) {
+        const tdContent = document.createElement('div');
+        tdContent.className = 'v-flex v-flex-align-center v-gap-4';
+        tdContent.appendChild(createIcon({ name: 'expand_less' }));
+        if (content) {
+          tdContent.appendChild(createCellContent(content));
+        }
+        td.appendChild(tdContent);
+      } else {
+        if (content) {
+          td.appendChild(createCellContent(content));
+        }
       }
     });
   }

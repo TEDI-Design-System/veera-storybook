@@ -11,20 +11,27 @@ $prefix: constants.$veera-prefix;
   color: var(--#{$prefix}-paging-button-text-#{$state});
 }
 
+@mixin container-padding($size) {
+  padding: var(--#{$prefix}-paging-sizing-#{$size}-padding-top)
+    var(--#{$prefix}-paging-sizing-#{$size}-padding-x)
+    var(--#{$prefix}-paging-sizing-#{$size}-padding-bottom)
+    var(--#{$prefix}-paging-sizing-#{$size}-padding-x);
+}
+
 .#{$prefix}-pagination {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--#{$prefix}-spacing-baseline-04);
   border-top: 1px solid var(--#{$prefix}-table-cells-header-border-border);
-  padding: var(--#{$prefix}-paging-sizing-small-padding-top)
-    var(--#{$prefix}-paging-sizing-small-padding-x)
-    var(--#{$prefix}-paging-sizing-small-padding-bottom)
-    var(--#{$prefix}-paging-sizing-small-padding-x);
+
+  @include container-padding('small');
 
   @include media.desktop-and-up {
     flex-direction: row;
     justify-content: space-between;
+
+    @include container-padding('large');
   }
 
   &__pager {
