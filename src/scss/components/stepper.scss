@@ -17,44 +17,54 @@ $prefix: constants.$veera-prefix;
 .#{$prefix}-stepper {
   $stepper: &;
 
-  display: flex;
   overflow-x: hidden;
 
-  #{&}__step {
-    @include text-styles.body-medium;
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
+  #{&}__step {
     $arrow-height: calc((2 * var(--#{$prefix}-stepper-sizing-padding-y) + 24px) / 2);
     $arrow-width: calc($arrow-height * 0.8);
 
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    padding: var(--#{$prefix}-stepper-sizing-padding-y) var(--#{$prefix}-stepper-sizing-padding-x);
-    align-items: center;
-    gap: var(--#{$prefix}-stepper-sizing-inner-spacing);
-    color: var(--#{$prefix}-stepper-text-default);
-    background: var(--#{$prefix}-stepper-background-default);
-    border: none;
-    white-space: nowrap;
+    #{$stepper}__step-link {
+      @include text-styles.body-medium;
 
-    &:first-child {
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      padding: var(--#{$prefix}-stepper-sizing-padding-y) var(--#{$prefix}-stepper-sizing-padding-x);
+      align-items: center;
+      gap: var(--#{$prefix}-stepper-sizing-inner-spacing);
+      color: var(--#{$prefix}-stepper-text-default);
+      background: var(--#{$prefix}-stepper-background-default);
+      border: none;
+      white-space: nowrap;
+    }
+
+    &:first-child #{$stepper}__step-link {
       @include borders.set-border-left-radius(4px);
     }
 
-    &:last-child {
+    &:last-child #{$stepper}__step-link {
       @include borders.set-border-right-radius(4px);
     }
 
     &--active {
-      color: var(--#{$prefix}-stepper-text-active);
-      background: var(--#{$prefix}-stepper-background-active);
-      font-weight: 700;
-      border-right: 0.1px solid var(--#{$prefix}-stepper-background-active); // fixes the gap between arrow on some browser zooms
+      #{$stepper}__step-link {
+        color: var(--#{$prefix}-stepper-text-active);
+        background: var(--#{$prefix}-stepper-background-active);
+        font-weight: 700;
+        border-right: 0.1px solid var(--#{$prefix}-stepper-background-active); // fixes the gap between arrow on some browser zooms
 
-      @include borders.set-border-right-radius(1px);
+        @include borders.set-border-right-radius(1px);
+      }
 
-      &:not(:last-child)::after {
+      &:not(:last-child) #{$stepper}__step-link::after {
         content: '';
         position: absolute;
         z-index: 1;
@@ -69,7 +79,7 @@ $prefix: constants.$veera-prefix;
         border-left-color: var(--#{$prefix}-stepper-background-active);
       }
 
-      & + .#{$prefix}-stepper__step {
+      & + .#{$prefix}-stepper__step #{$stepper}__step-link {
         padding-left: calc(var(--#{$prefix}-stepper-sizing-padding-x) + $arrow-width);
       }
 
@@ -80,26 +90,28 @@ $prefix: constants.$veera-prefix;
     }
 
     &--completed {
-      @include focus.focus-ring-inset;
+      #{$stepper}__step-link {
+        @include focus.focus-ring-inset;
 
-      color: var(--#{$prefix}-stepper-text-completed);
-      background: var(--#{$prefix}-stepper-background-completed);
+        color: var(--#{$prefix}-stepper-text-completed);
+        background: var(--#{$prefix}-stepper-background-completed);
 
-      #{ $stepper }__step-number {
+        &:focus {
+          @include completed-step-colors($stepper, 'focus');
+        }
+
+        &:hover {
+          @include completed-step-colors($stepper, 'hover');
+        }
+
+        &:active {
+          @include completed-step-colors($stepper, 'active');
+        }
+      }
+
+      #{$stepper}__step-number {
         background: var(--#{$prefix}-stepper-background-number-completed);
         color: var(--#{$prefix}-stepper-text-number-completed);
-      }
-
-      &:focus {
-        @include completed-step-colors($stepper, 'focus');
-      }
-
-      &:hover {
-        @include completed-step-colors($stepper, 'hover');
-      }
-
-      &:active {
-        @include completed-step-colors($stepper, 'active');
       }
     }
   }

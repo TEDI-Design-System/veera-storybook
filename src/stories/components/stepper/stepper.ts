@@ -17,34 +17,38 @@ export const createStepperStep = ({
   name = 'Step',
   onSelect,
 }: StepperStepProps) => {
-  const step = document.createElement('a');
-  step.href = '#';
+  const step = document.createElement('li');
   step.className = clsx('v-stepper__step', {
     'v-stepper__step--active': active,
     'v-stepper__step--completed': completed,
   });
 
+  const stepLink = document.createElement('a');
+  stepLink.className = 'v-stepper__step-link';
+  stepLink.href = '#';
+  step.appendChild(stepLink);
+
   const stepNumber = document.createElement('span');
   stepNumber.className = 'v-stepper__step-number';
   stepNumber.innerText = `${number}`;
-  step.appendChild(stepNumber);
+  stepLink.appendChild(stepNumber);
 
   const stepName = document.createTextNode(name);
-  step.appendChild(stepName);
+  stepLink.appendChild(stepName);
 
   if (!completed) {
-    step.tabIndex = -1;
-    step.style.pointerEvents = 'none';
+    stepLink.tabIndex = -1;
+    stepLink.style.pointerEvents = 'none';
 
     if (active) {
-      step.setAttribute('aria-current', 'step');
+      stepLink.setAttribute('aria-current', 'step');
     } else {
-      step.setAttribute('aria-disabled', 'true');
+      stepLink.setAttribute('aria-disabled', 'true');
     }
   }
 
   if (onSelect) {
-    step.onclick = () => {
+    stepLink.onclick = () => {
       onSelect(number);
     };
   }
@@ -67,8 +71,13 @@ export const createStepper = ({ activeStep = 0 }: StepperStoryProps) => {
 
   const stepper = document.createElement('nav');
   stepper.className = 'v-stepper';
+  stepper.setAttribute('aria-label', 'Sammud');
   scrollButtonsContainer.appendChild(stepper);
   container.appendChild(scrollButtonsContainer);
+
+  const stepList = document.createElement('ul');
+  stepList.className = 'v-stepper__list';
+  stepper.appendChild(stepList);
 
   const onSelect = (stepNr: number) => {
     activeStepNr = stepNr;
@@ -76,7 +85,7 @@ export const createStepper = ({ activeStep = 0 }: StepperStoryProps) => {
   };
 
   const renderSteps = () => {
-    stepper.innerHTML = '';
+    stepList.innerHTML = '';
     for (let stepNr = 0; stepNr <= 10; stepNr++) {
       const step = createStepperStep({
         number: stepNr,
@@ -84,7 +93,7 @@ export const createStepper = ({ activeStep = 0 }: StepperStoryProps) => {
         completed: stepNr < activeStepNr,
         onSelect,
       });
-      stepper.appendChild(step);
+      stepList.appendChild(step);
     }
   };
 
