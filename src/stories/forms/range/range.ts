@@ -1,9 +1,18 @@
+import { createInputGroup } from '../input-group/input-group';
+
 export interface RangeProps {
   min?: number;
   max?: number;
   disabled?: boolean;
 }
 export const createRangeSlider = ({ disabled, min = 0, max = 100 }: RangeProps) => {
+  const sliderGroup = document.createElement('div');
+  sliderGroup.className = 'v-range-group';
+
+  const sliderLabelGroup = document.createElement('div');
+  sliderLabelGroup.className = 'v-flex v-align-items-center v-gap-4 v-flex-grow-1';
+  sliderLabelGroup.appendChild(document.createTextNode('0%'));
+
   const rangeSlider = document.createElement('input');
   rangeSlider.type = 'range';
   rangeSlider.className = 'v-range';
@@ -25,6 +34,12 @@ export const createRangeSlider = ({ disabled, min = 0, max = 100 }: RangeProps) 
   });
 
   rangeSlider.setAttribute('aria-label', 'liugurväli näide');
+  sliderLabelGroup.appendChild(rangeSlider);
 
-  return rangeSlider;
+  sliderLabelGroup.appendChild(document.createTextNode('100%'));
+
+  sliderGroup.appendChild(sliderLabelGroup);
+  sliderGroup.appendChild(createInputGroup({ value: '50', endAddon: '%', size: 'md' }));
+
+  return sliderGroup;
 };

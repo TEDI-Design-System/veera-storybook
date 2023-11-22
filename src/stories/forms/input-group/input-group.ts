@@ -6,8 +6,8 @@ import {
 import clsx from 'clsx';
 
 export interface InputGroupProps extends FormControlStoryProps {
-  startAddon: string;
-  endAddon: string;
+  startAddon?: string;
+  endAddon?: string;
 }
 
 export const createInputGroup = ({

@@ -35,7 +35,7 @@ export const createFormRow = ({
   const createHelperText = (text: string, status?: 'error' | 'success') => {
     const helperTextEl = document.createElement('span');
     helperTextEl.id = Math.random().toString();
-    input.setAttribute('aria-describedby', helperTextEl.id);
+    input.setAttribute('aria-labelledby', helperTextEl.id);
     helperTextEl.className = clsx('v-form-feedback', { [`v-form-feedback--${status}`]: status });
     helperTextEl.innerText = text;
     return helperTextEl;
