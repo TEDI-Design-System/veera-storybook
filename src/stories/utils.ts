@@ -130,8 +130,11 @@ export const createLink = ({
   return link;
 };
 
-export const createLogo = () => {
-  const logoWrapper = document.createElement('div');
+export const createLogo = (isLink?: boolean) => {
+  const logoWrapper = document.createElement(isLink ? 'a' : 'div');
+  if (isLink) {
+    (logoWrapper as HTMLAnchorElement).href = '#';
+  }
   logoWrapper.className = 'v-logo';
   logoWrapper.innerHTML = logoString;
   return logoWrapper;

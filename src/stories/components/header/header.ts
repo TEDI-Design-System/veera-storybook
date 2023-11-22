@@ -68,7 +68,7 @@ const createMainRow = () => {
 
   const startColumn = document.createElement('div');
   startColumn.className = 'v-header__grid-column';
-  startColumn.appendChild(createLogo());
+  startColumn.appendChild(createLogo(true));
   mainRow.appendChild(startColumn);
 
   const centerColumn = document.createElement('nav');
