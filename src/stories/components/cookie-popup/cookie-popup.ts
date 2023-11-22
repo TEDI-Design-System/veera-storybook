@@ -24,7 +24,7 @@ const createPopupBody = () => {
 };
 
 const createPopupFooter = () => {
-  let expaned = false;
+  let expanded = false;
 
   const footer = document.createElement('div');
   const actions = document.createElement('div');
@@ -35,17 +35,17 @@ const createPopupFooter = () => {
     rightIcon: 'expand_more',
   });
   collapseTrigger.classList.add('v-mr-auto');
-  collapseTrigger.setAttribute('aria-expaned', expaned.toString());
+  collapseTrigger.setAttribute('aria-expanded', expanded.toString());
   collapseTrigger.onclick = () => {
-    expaned = !expaned;
-    if (expaned) {
+    expanded = !expanded;
+    if (expanded) {
       collapse.style.display = 'flex';
       collapseTrigger.classList.add('expanded');
     } else {
       collapse.style.display = 'none';
       collapseTrigger.classList.remove('expanded');
     }
-    collapseTrigger.setAttribute('aria-expanded', expaned.toString());
+    collapseTrigger.setAttribute('aria-expanded', expanded.toString());
   };
   const acceptOptions = document.createElement('div');
   acceptOptions.className = 'v-flex v-gap-5';
