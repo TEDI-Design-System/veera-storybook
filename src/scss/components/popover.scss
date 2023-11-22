@@ -22,6 +22,7 @@ $prefix: constants.$veera-prefix;
     border-radius: var(--#{$prefix}-popover-sizing-corner-radius);
     border: 1px solid var(--#{$prefix}-popover-border-default);
     background: var(--#{$prefix}-popover-background-default);
+    position: relative;
   }
 
   &--top,
