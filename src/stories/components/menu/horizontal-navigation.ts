@@ -16,7 +16,7 @@ const createSubMenuItemBlock = (item: SubmenuItem) => {
   const block = document.createElement('div');
   block.className = 'v-horizontal-navigation__submenu-block';
 
-  const blockHeader = document.createElement('div');
+  const blockHeader = document.createElement('h2');
   blockHeader.className = 'v-horizontal-navigation__submenu-block-header';
   const icon = createIcon({ name: 'dashboard', outlined: true });
   icon.classList.add('v-icon--sm');
@@ -81,6 +81,7 @@ const createMenuItem = (item: HorizontalNavItem) => {
     }
     menuItem.setAttribute('aria-expanded', selected.toString());
   };
+  menuItem.setAttribute('aria-expanded', selected.toString());
   return menuItem;
 };
 

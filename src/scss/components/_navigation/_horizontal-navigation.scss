@@ -32,13 +32,16 @@ $prefix: constants.$veera-prefix;
   }
 
   &__menu-bar {
-    display: flex;
     padding: 0 24px;
     width: 100%;
     max-width: var(--#{$prefix}-content-max-width);
 
     ul {
       display: flex;
+    }
+
+    li:not(:last-child) #{$self}__item {
+      border-right: 1px solid var(--#{$prefix}-navigation-horizontal-border-default);
     }
   }
 
