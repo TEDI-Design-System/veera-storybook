@@ -1,0 +1,11 @@
+.flag-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+
+  svg {
+    box-shadow: var(--v-box-shadow-elevation-01);
+  }
+}

@@ -14,9 +14,14 @@ export const createPhoneInput = ({
 
   const trigger = document.createElement('button');
   trigger.className = 'v-form-control v-phone-input__country-select';
+  trigger.setAttribute('role', 'combobox');
   trigger.setAttribute('aria-haspopup', 'listbox');
   trigger.setAttribute('aria-expanded', 'true');
-  trigger.innerHTML = EstonianFlag;
+  trigger.setAttribute('aria-label', 'Vali suunakood');
+  const flagContainer = document.createElement('div');
+  flagContainer.className = 'flag-container';
+  flagContainer.innerHTML = EstonianFlag;
+  trigger.appendChild(flagContainer);
   const dialCode = document.createTextNode('+372');
   trigger.appendChild(dialCode);
   const icon = createIcon({ name: 'arrow_drop_up' });
@@ -33,9 +38,14 @@ export const createPhoneInput = ({
   phoneInput.appendChild(input);
 
   const dropdown = createDropdown();
+  dropdown.id = Math.random().toString();
+  trigger.setAttribute('aria-controls', dropdown.id);
   for (const opt of countryOptions) {
     const template = document.createElement('template');
-    template.innerHTML = opt.flag;
+    const flagContainer = document.createElement('div');
+    flagContainer.className = 'flag-container';
+    flagContainer.innerHTML = opt.flag;
+    template.content.appendChild(flagContainer);
     template.content.appendChild(document.createTextNode(`${opt.name} (${opt.dial_code})`));
     const option = createDropdownOption({
       label: template.content,
