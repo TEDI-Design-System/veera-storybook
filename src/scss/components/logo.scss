@@ -2,7 +2,8 @@
 
 $prefix: constants.$veera-prefix;
 
-.#{$prefix}-logo {
+.#{$prefix}-logo,
+.#{$prefix}-logo:visited {
   color: var(--#{$prefix}-colors-brand-logo);
 
   svg {
