@@ -104,7 +104,7 @@ const createConsentOptionCheckbox = (label: string) => {
 const createPopupBase = () => {
   const wrapper = document.createElement('div');
   wrapper.className = 'v-cookie-popup';
-  wrapper.role = 'region';
+  wrapper.setAttribute('role', 'region');
   wrapper.setAttribute('aria-labelledy', titleId);
   return wrapper;
 };

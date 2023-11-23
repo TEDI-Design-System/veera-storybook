@@ -48,7 +48,7 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
 
   const hourOptions = document.createElement('div');
   hourOptions.className = 'v-timepicker__options-row';
-  hourOptions.role = 'listbox';
+  hourOptions.setAttribute('role', 'listbox');
   hourOptions.setAttribute('aria-label', 'Tunnid');
   panel.appendChild(hourOptions);
 
@@ -58,7 +58,7 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
 
   const minuteOptions = document.createElement('div');
   minuteOptions.className = 'v-timepicker__options-row';
-  minuteOptions.role = 'listbox';
+  minuteOptions.setAttribute('role', 'listbox');
   minuteOptions.setAttribute('aria-label', 'Minutid');
   panel.appendChild(minuteOptions);
 

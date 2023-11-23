@@ -26,7 +26,7 @@ export const createStaticTooltip = () => {
   const tooltip = document.createElement('div');
   tooltip.className = 'v-tooltip v-tooltip--visible v-tooltip--top';
   tooltip.innerText = 'Tooltip';
-  tooltip.role = 'tooltip';
+  tooltip.setAttribute('role', 'tooltip');
 
   return tooltip;
 };

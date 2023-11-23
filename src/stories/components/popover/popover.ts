@@ -48,7 +48,7 @@ export const createPopover = ({ placement = 'top' }: PopoverStoryProps) => {
 
   const popover = document.createElement('div');
   popover.id = 'popover-example';
-  popover.role = 'region';
+  popover.setAttribute('role', 'region');
   popover.setAttribute('aria-labelledby', titleId);
   popover.className = 'v-popover';
   trigger.setAttribute('aria-controls', popover.id);

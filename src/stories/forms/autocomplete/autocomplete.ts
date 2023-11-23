@@ -12,7 +12,7 @@ export interface AutocompleteStoryProps {
 export const createAutocomplete = ({ size, withButton, value, opened }: AutocompleteStoryProps) => {
   const autocomplete = document.createElement('div');
   autocomplete.className = 'v-autocomplete';
-  autocomplete.role = 'search';
+  autocomplete.setAttribute('role', 'search');
 
   const input = createIconInput({
     size: size,
@@ -25,7 +25,7 @@ export const createAutocomplete = ({ size, withButton, value, opened }: Autocomp
   const inputField = input.querySelector('input');
   if (inputField) {
     inputField.setAttribute('aria-expanded', 'true');
-    inputField.role = 'searchbox';
+    inputField.setAttribute('role', 'searchbox');
   }
   const searchBtn = input.querySelector('button');
   if (searchBtn) {

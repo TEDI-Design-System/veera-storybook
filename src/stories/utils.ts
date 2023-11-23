@@ -152,7 +152,7 @@ export const createTooltip = ({
   const tooltip = document.createElement('div');
   tooltip.className = 'v-tooltip';
   tooltip.innerText = text;
-  tooltip.role = 'tooltip';
+  tooltip.setAttribute('role', 'tooltip');
   tooltip.id = `tooltip-${Math.random()}`;
   tooltip.setAttribute('aria-hidden', 'true');
   triggerElement.setAttribute('aria-describedby', tooltip.id);

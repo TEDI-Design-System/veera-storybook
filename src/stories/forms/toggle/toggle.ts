@@ -12,7 +12,7 @@ export const createToggle = ({ disabled, hasIcon, size = 'md', checked = false }
   toggle.type = 'checkbox';
   toggle.disabled = !!disabled;
   toggle.className = clsx('v-toggle', `v-toggle--${size}`, { 'v-toggle--check-icon': hasIcon });
-  toggle.role = 'switch';
+  toggle.setAttribute('role', 'switch');
 
   return toggle;
 };

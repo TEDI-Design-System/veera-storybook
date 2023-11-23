@@ -14,7 +14,7 @@ export const createTabItem = ({ selected, disabled, number, onSelect }: TabItemP
   tabItem.id = `tab-${number}`;
   tabItem.disabled = !!disabled;
   tabItem.innerText = `Tab ${number}`;
-  tabItem.role = 'tab';
+  tabItem.setAttribute('role', 'tab');
   tabItem.setAttribute('aria-selected', (!!selected).toString());
 
   if (onSelect) {
@@ -40,7 +40,7 @@ export const createTabs = () => {
 
   const tabsList = document.createElement('div');
   tabsList.className = 'v-tabs__tab-list';
-  tabsList.role = 'tablist';
+  tabsList.setAttribute('role', 'tablist');
 
   const onSelect = (stepNr: number) => {
     activeTabNr = stepNr;
@@ -67,7 +67,7 @@ export const createTabs = () => {
 
   const tabContent = document.createElement('div');
   tabContent.className = 'v-tabs__content';
-  tabContent.role = 'tabpanel';
+  tabContent.setAttribute('role', 'tabpanel');
   tabContent.setAttribute('aria-labelledby', `tab-0`);
 
   const content = createContentFill();

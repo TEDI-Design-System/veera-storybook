@@ -8,7 +8,7 @@ interface DropdownProps {
 
 export const createDropdown = (props?: DropdownProps) => {
   const dropdown = document.createElement('div');
-  dropdown.role = 'listbox';
+  dropdown.setAttribute('role', 'listbox');
   dropdown.className = clsx('v-dropdown', {
     [`v-dropdown--${props?.position}`]: !!props?.position,
   });
@@ -30,7 +30,7 @@ export const createDropdownOption = ({
   size,
 }: DropdownOptionsProps) => {
   const option = document.createElement(multiselect ? 'div' : 'button');
-  option.role = 'option';
+  option.setAttribute('role', 'option');
   option.className = clsx('v-dropdown__option', {
     'v-dropdown__option--selected': selected && !multiselect,
   });

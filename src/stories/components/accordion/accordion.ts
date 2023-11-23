@@ -27,7 +27,7 @@ const createAccordionHeader = () => {
 const createAccordionContent = () => {
   const accordionCollapse = document.createElement('div');
   accordionCollapse.className = 'v-accordion__collapse';
-  accordionCollapse.role = 'region';
+  accordionCollapse.setAttribute('role', 'region');
   accordionCollapse.id = 'accordion-content';
 
   const accordionContentArea = document.createElement('div');

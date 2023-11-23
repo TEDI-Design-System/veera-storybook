@@ -12,7 +12,7 @@ const titleElementId = 'modal-title';
 const createModalContainer = ({ size, scrollable }: ModalStoryProps) => {
   const container = document.createElement('div');
   container.className = clsx('v-modal', `v-modal--${size}`, { 'v-modal--scrollable': scrollable });
-  container.role = 'alertdialog';
+  container.setAttribute('role', 'alertdialog');
   container.setAttribute('aria-labelledby', titleElementId);
   return container;
 };
