@@ -11,7 +11,7 @@ export const createTag = ({ text = 'Tag', closable }: TagProps) => {
   tag.appendChild(document.createTextNode(text));
 
   if (closable) {
-    tag.appendChild(createCloseButton('Eemalda silt', true));
+    tag.appendChild(createCloseButton(`Eemalda ${text}`, true));
   }
 
   return tag;

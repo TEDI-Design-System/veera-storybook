@@ -39,7 +39,8 @@ export const createSelect = ({
   trigger.className = clsx('v-form-control', `v-form-control--${size}`, {
     [`v-form-control--${status}`]: !!status,
   });
-  trigger.ariaHasPopup = 'listbox';
+  trigger.setAttribute('role', 'combobox');
+  trigger.setAttribute('aria-haspopup', 'listbox');
   trigger.setAttribute('aria-expanded', expanded.toString());
   trigger.disabled = !!disabled;
 
@@ -99,7 +100,8 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
     [`v-form-control--${status}`]: status,
     'v-form-control--disabled': disabled,
   });
-  trigger.ariaHasPopup = 'listbox';
+  trigger.setAttribute('role', 'combobox');
+  trigger.setAttribute('aria-haspopup', 'listbox');
   trigger.setAttribute('aria-expanded', expanded.toString());
 
   const tagsContainer = document.createElement('div');
@@ -125,6 +127,7 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
 
   const dropdown = createDropdown();
   dropdown.id = Math.random().toString();
+  trigger.setAttribute('aria-multiselectable', 'true');
   trigger.setAttribute('aria-controls', dropdown.id);
   dropdown.hidden = !expanded;
   multiSelecOptions.forEach(({ label, selected }) => {
