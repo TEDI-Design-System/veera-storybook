@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { createCloseButton } from '../../components/button/button';
 import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 import { createIconInput } from '../form-control/form-control';
@@ -11,7 +12,7 @@ export interface AutocompleteStoryProps {
 
 export const createAutocomplete = ({ size, withButton, value, opened }: AutocompleteStoryProps) => {
   const autocomplete = document.createElement('div');
-  autocomplete.className = 'v-autocomplete';
+  autocomplete.className = clsx('v-autocomplete', { 'v-autocomplete--with-button': withButton });
   autocomplete.setAttribute('role', 'search');
 
   const input = createIconInput({
