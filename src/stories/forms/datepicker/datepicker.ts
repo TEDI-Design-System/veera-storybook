@@ -59,6 +59,7 @@ export const createDatepicker = ({ position }: DatepickerStoryProps) => {
     rightIcon: 'calendar_month',
     placeholder: 'pp.kk.aaaa',
     isIconButton: true,
+    iconLabel: 'Ava kuupäeva valija',
   });
   input.style.width = '256px';
   datepicker.appendChild(input);

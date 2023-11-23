@@ -12,10 +12,10 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
 
   const iconInput = createIconInput({
     size: 'md',
-    rightIcon: 'calendar_month',
+    rightIcon: 'schedule',
     placeholder: 'hh:mm',
     isIconButton: true,
-    iconLabel: 'Ava kuupäeva valija',
+    iconLabel: 'Ava kellaja valija',
   });
   iconInput.style.width = '125px';
 
@@ -43,10 +43,13 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
   timepicker.appendChild(iconInput);
 
   const panel = createDropdown({ position });
+  panel.removeAttribute('role');
   timepicker.appendChild(panel);
 
   const hourOptions = document.createElement('div');
   hourOptions.className = 'v-timepicker__options-row';
+  hourOptions.role = 'listbox';
+  hourOptions.setAttribute('aria-label', 'Tunnid');
   panel.appendChild(hourOptions);
 
   for (let hour = 0; hour < 24; hour++) {
@@ -55,6 +58,8 @@ export const createTimepicker = ({ position, customInput }: TimepickerStoryProps
 
   const minuteOptions = document.createElement('div');
   minuteOptions.className = 'v-timepicker__options-row';
+  minuteOptions.role = 'listbox';
+  minuteOptions.setAttribute('aria-label', 'Minutid');
   panel.appendChild(minuteOptions);
 
   for (let minute = 0; minute < 60; minute++) {

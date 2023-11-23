@@ -45,6 +45,11 @@ $prefix: constants.$veera-prefix;
     text-align: center;
     padding-top: 0;
     padding-bottom: 0;
+    color: var(--#{$prefix}-inputs-text-filled);
+
+    &::placeholder {
+      color: var(--#{$prefix}-inputs-text-placeholder);
+    }
 
     &:first-of-type {
       padding-left: 0;
@@ -58,6 +63,6 @@ $prefix: constants.$veera-prefix;
   }
 
   .#{$prefix}-form-control:focus-within {
-    box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-outset);
+    box-shadow: var(--#{$prefix}-box-shadow-focus-ring-outset);
   }
 }
