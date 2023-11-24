@@ -3,6 +3,7 @@ import { bodyCells, head, mobileTable, nestedHead } from './table.data';
 import { createPagination } from '../pagination/pagination';
 import { createButton } from '../button/button';
 import { createIcon } from '../../utils';
+import './table.stories.scss';
 
 export interface TableStoryProps {
   bordered: boolean;
@@ -36,9 +37,7 @@ const createTableHead = ({
 
     row.cells.forEach(({ content, rowSpan, colSpan }, i) => {
       const th = document.createElement('th');
-      th.className = clsx({
-        active: i === 0,
-      });
+      th.scope = 'col';
 
       if (sticky && rowIndex === 0) {
         if (i === 0) {
@@ -56,6 +55,7 @@ const createTableHead = ({
       }
       if (rowSpan) {
         th.rowSpan = rowSpan;
+        th.classList.add('border-bottom-strong');
       }
       if (colSpan) {
         th.colSpan = colSpan;
@@ -77,12 +77,6 @@ const createTableBody = ({ interactive, sticky }: { interactive: boolean; sticky
       'v-table-row--secondary': i === 1,
       'v-table-row--tertiary': i === 2,
     });
-    if (interactive) {
-      row.setAttribute('tabindex', '0');
-    }
-    if ([1, 2].includes(i)) {
-      row.setAttribute('aria-expanded', 'true');
-    }
     bodyCells.forEach(({ content }, index, arr) => {
       const td = row.insertCell();
 
@@ -97,10 +91,15 @@ const createTableBody = ({ interactive, sticky }: { interactive: boolean; sticky
         }
       }
 
-      if ([1, 2].includes(i) && index === 0) {
+      if ([0, 1].includes(i) && index === 0) {
         const tdContent = document.createElement('div');
         tdContent.className = 'v-flex v-flex-align-center v-gap-4';
-        tdContent.appendChild(createIcon({ name: 'expand_less' }));
+        const expandButton = document.createElement('button');
+        expandButton.appendChild(createIcon({ name: 'expand_less' }));
+        expandButton.className = 'expand-button';
+        expandButton.setAttribute('aria-expanded', 'true');
+        expandButton.setAttribute('aria-label', 'Sulge alamread');
+        tdContent.appendChild(expandButton);
         if (content) {
           tdContent.appendChild(createCellContent(content));
         }
@@ -124,6 +123,9 @@ export const createTable = ({
   nestedHead,
 }: TableStoryProps) => {
   const table = document.createElement('table');
+  if (nestedHead) {
+    table.innerHTML = '<col><colgroup span="2"></colgroup><col><col><col>';
+  }
   table.className = clsx('v-table', {
     'v-table--bordered': bordered,
     'v-table--fixed': fixed,

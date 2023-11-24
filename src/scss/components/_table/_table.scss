@@ -5,19 +5,12 @@
 $prefix: constants.$veera-prefix;
 
 @mixin last-row-separator {
-  tr {
-    &:last-child {
-      position: relative;
+  tr:last-child {
+    position: relative;
 
-      &::after {
-        content: '';
-        z-index: 1;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid var(--#{$prefix}-table-cells-header-border-border);
-      }
+    th,
+    td {
+      border-bottom: 1px solid var(--#{$prefix}-table-cells-header-border-border);
     }
   }
 }
@@ -35,6 +28,10 @@ $prefix: constants.$veera-prefix;
     @include text-styles.body-medium;
 
     text-align: left;
+
+    &.border-bottom-strong {
+      border-bottom-color: var(--#{$prefix}-table-cells-header-border-border);
+    }
   }
 
   th {
@@ -121,17 +118,9 @@ $prefix: constants.$veera-prefix;
   }
 
   &-interactive {
-    @include focus.focus-ring;
-
-    outline: none;
     cursor: pointer;
 
     &:is(tr) {
-      &:focus {
-        position: relative;
-        z-index: 2;
-      }
-
       &:hover {
         th,
         td {
@@ -140,8 +129,19 @@ $prefix: constants.$veera-prefix;
       }
     }
 
-    &:is(th, td):hover {
-      background: var(--#{$prefix}-table-cells-data-cell-background-hover);
+    &:is(th, td) {
+      @include focus.focus-ring;
+
+      outline: none;
+
+      &:focus {
+        position: relative;
+        z-index: 2;
+      }
+
+      &:hover {
+        background: var(--#{$prefix}-table-cells-data-cell-background-hover);
+      }
     }
   }
 

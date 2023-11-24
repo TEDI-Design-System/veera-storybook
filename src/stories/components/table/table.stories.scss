@@ -1,0 +1,11 @@
+.expand-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+
+  &:focus {
+    box-shadow: var(--v-box-shadow-focus-ring-outset);
+  }
+}
