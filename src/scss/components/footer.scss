@@ -62,7 +62,7 @@ $prefix: constants.$veera-prefix;
 
     grid-area: content;
     padding: var(--#{$prefix}-footer-spacing-sm-footer-content-padding-y)
-      var(--#{$prefix}-footer-spacing-sm-main-content-padding-x);
+      var(--#{$prefix}-footer-spacing-sm-footer-content-padding-x);
   }
 
   &__blocks.#{$prefix}-row {
@@ -95,7 +95,7 @@ $prefix: constants.$veera-prefix;
 
     &__content {
       padding: var(--#{$prefix}-footer-spacing-md-footer-content-padding-y)
-        var(--#{$prefix}-footer-spacing-md-main-content-padding-x);
+        var(--#{$prefix}-footer-spacing-md-footer-content-padding-x);
       &.#{$prefix}-row {
         --#{$prefix}-gx: var(--#{$prefix}-footer-spacing-md-footer-content-spacing-x);
         --#{$prefix}-gy: var(--#{$prefix}-footer-spacing-md-footer-content-spacing-y);
@@ -119,7 +119,7 @@ $prefix: constants.$veera-prefix;
   @include media.desktop-and-up {
     &__content {
       padding: var(--#{$prefix}-footer-spacing-lg-footer-content-padding-y)
-        var(--#{$prefix}-footer-spacing-lg-main-content-padding-x);
+        var(--#{$prefix}-footer-spacing-lg-footer-content-padding-x);
       &.#{$prefix}-row {
         --#{$prefix}-gx: var(--#{$prefix}-footer-spacing-lg-footer-content-spacing-x);
         --#{$prefix}-gy: var(--#{$prefix}-footer-spacing-lg-footer-content-spacing-y);
