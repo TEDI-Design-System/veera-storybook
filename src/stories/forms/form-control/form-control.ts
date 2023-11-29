@@ -6,6 +6,7 @@ export interface FormControlStoryProps {
   placeholder?: string;
   status?: 'success' | 'error';
   value?: string;
+  ariaLabel?: string;
 }
 
 export const createInputControl = ({
@@ -14,6 +15,7 @@ export const createInputControl = ({
   status,
   placeholder = '',
   value,
+  ariaLabel,
 }: FormControlStoryProps) => {
   const input = document.createElement('input');
   input.type = 'text';
@@ -23,6 +25,10 @@ export const createInputControl = ({
     [`v-form-control--${size}`]: size,
   });
   input.disabled = !!disabled;
+
+  if (ariaLabel) {
+    input.setAttribute('aria-label', ariaLabel);
+  }
 
   if (value) {
     input.value = value;

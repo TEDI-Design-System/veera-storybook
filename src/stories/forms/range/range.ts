@@ -39,7 +39,17 @@ export const createRangeSlider = ({ disabled, min = 0, max = 100 }: RangeProps) 
   sliderLabelGroup.appendChild(document.createTextNode('100%'));
 
   sliderGroup.appendChild(sliderLabelGroup);
-  sliderGroup.appendChild(createInputGroup({ value: '50', endAddon: '%', size: 'md' }));
+  const inputGroup = createInputGroup({
+    value: '50',
+    endAddon: '%',
+    size: 'md',
+    ariaLabel: 'liugurvälja väärtus',
+  });
+  const valueInput = inputGroup.querySelector('input')!;
+  const inputAddon = inputGroup.querySelector('.v-input-addon')!;
+  inputAddon.id = `addon-${Math.random()}`;
+  valueInput.setAttribute('aria-describedby', inputAddon.id);
+  sliderGroup.appendChild(inputGroup);
 
   return sliderGroup;
 };
