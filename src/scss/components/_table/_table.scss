@@ -5,13 +5,8 @@
 $prefix: constants.$veera-prefix;
 
 @mixin last-row-separator {
-  tr:last-child {
-    position: relative;
-
-    th,
-    td {
-      border-bottom: 1px solid var(--#{$prefix}-table-cells-header-border-border);
-    }
+  tr:last-child :is(th, td) {
+    border-bottom: 1px solid var(--#{$prefix}-table-cells-header-border-border);
   }
 }
 
