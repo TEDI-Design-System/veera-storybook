@@ -30,7 +30,7 @@ $prefix: constants.$veera-prefix;
     text-align: left;
 
     &.border-bottom-strong {
-      border-bottom-color: var(--#{$prefix}-table-cells-header-border-border);
+      border-bottom: 1px solid var(--#{$prefix}-table-cells-header-border-border);
     }
   }
 
