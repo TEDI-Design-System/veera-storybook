@@ -115,16 +115,18 @@ export const createLink = ({
   text,
   size,
   icon,
+  iconLabel,
 }: {
   text: string;
   size?: 'xs' | 'sm' | 'md';
   icon?: string;
+  iconLabel?: string;
 }) => {
   const link = document.createElement('a');
   link.className = clsx({ [`v-link--${size}`]: size, 'v-link--with-icon': icon });
   link.href = '#';
   if (icon) {
-    link.appendChild(createIcon({ name: icon }));
+    link.appendChild(createIcon({ name: icon, label: iconLabel }));
   }
   link.appendChild(document.createTextNode(text));
   return link;

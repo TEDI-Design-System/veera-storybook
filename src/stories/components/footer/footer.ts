@@ -33,16 +33,21 @@ const createLogoBlock = () => {
 
 const createBlock = () => {
   const block = document.createElement('div');
-  block.className = 'v-footer__content-block';
+  block.className = 'v-footer__block';
 
-  const header = document.createElement('p');
+  const header = document.createElement('h3');
+  header.className = 'v-footer__block-header';
   header.innerText = 'Block header';
   block.appendChild(header);
 
+  const list = document.createElement('ul');
   for (const blockLink of links) {
-    const link = createLink({ text: blockLink, icon: 'chevron_right' });
-    block.appendChild(link);
+    const listItem = document.createElement('li');
+    const link = createLink({ text: blockLink, icon: 'chevron_right', iconLabel: 'Näidislink' });
+    listItem.appendChild(link);
+    list.appendChild(listItem);
   }
+  block.appendChild(list);
   const blockColumn = createCol({ content: block, size: 12, md: { size: 6 }, lg: { size: 3 } });
 
   return blockColumn;
