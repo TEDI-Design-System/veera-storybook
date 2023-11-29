@@ -44,6 +44,7 @@ export const createSpacingTemplate = ({ type, area, spacing }: SpacingProps) => 
     </div>
   </div>
   <div class="spacing-context-container">
+    <p>Class: <b>${className}</b></p>
     <div><div class="context-color c"></div> - content</div>
     <div><div class="context-color m"></div> - margin</div>
     <div><div class="context-color p"></div> - padding</div>
@@ -57,13 +58,15 @@ export interface GridSpacingProps {
 }
 
 export const createGridSpacingTemplate = ({ type, gap }: GridSpacingProps) => {
+  const className = `v-${type}-${gap}`;
   const template = `
-  <div class="${clsx('grid-container', `v-${type}-${gap}`)}">
+  <div class="${clsx('grid-container', className)}">
     <div></div>
     <div></div>
     <div></div>
     <div></div>
   </div>
+  <p>Class: <b>${className}</b></p>
   `;
   return template;
 };

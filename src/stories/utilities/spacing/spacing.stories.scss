@@ -23,7 +23,7 @@ div {
   }
 
   &.m {
-    background-color: lightpink;
+    background-color: lightcyan;
   }
 
   &.p {
@@ -32,8 +32,8 @@ div {
 }
 
 .spacing-container {
-  height: 500px;
-  background-color: lightpink;
+  height: 350px;
+  background-color: lightcyan;
   display: flex;
   flex-direction: column;
   border: 1px dashed black;

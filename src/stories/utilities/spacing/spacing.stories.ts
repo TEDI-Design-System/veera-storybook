@@ -27,7 +27,7 @@ export const Spacing: StoryObj<SpacingProps> = {
       options: ['top', 'left', 'right', 'bottom', 'x', 'y', 'all'],
     },
     spacing: {
-      control: { type: 'number', min: 0, max: 14 },
+      control: { type: 'number', min: 0, max: 13 },
     },
   },
   args: {
@@ -47,7 +47,7 @@ export const Grid: StoryObj<GridSpacingProps> = {
       options: ['gap', 'row-gap', 'column-gap'],
     },
     gap: {
-      control: { type: 'number', min: 0, max: 14 },
+      control: { type: 'number', min: 0, max: 13 },
     },
   },
   args: {
