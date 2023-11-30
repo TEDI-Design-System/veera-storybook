@@ -12,6 +12,7 @@ $prefix: constants.$veera-prefix;
     'content'
     'socials';
   background: var(--#{$prefix}-footer-colors-background);
+  overflow: hidden;
 
   &__socials {
     grid-area: socials;
