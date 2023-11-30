@@ -7,7 +7,7 @@ interface DropdownProps {
 }
 
 export const createDropdown = (props?: DropdownProps) => {
-  const dropdown = document.createElement('div');
+  const dropdown = document.createElement('ul');
   dropdown.setAttribute('role', 'listbox');
   dropdown.className = clsx('v-dropdown', {
     [`v-dropdown--${props?.position}`]: !!props?.position,
@@ -29,7 +29,8 @@ export const createDropdownOption = ({
   multiselect,
   size,
 }: DropdownOptionsProps) => {
-  const option = document.createElement(multiselect ? 'div' : 'button');
+  const option = document.createElement('li');
+  option.id = `option-${Math.random()}`;
   option.setAttribute('role', 'option');
   option.className = clsx('v-dropdown__option', {
     'v-dropdown__option--selected': selected && !multiselect,
@@ -38,7 +39,12 @@ export const createDropdownOption = ({
 
   if (multiselect) {
     option.appendChild(
-      createCheckboxWithLabel({ checked: selected, label: label as string, size }),
+      createCheckboxWithLabel({
+        checked: selected,
+        label: label as string,
+        size,
+        ariaHidden: true,
+      }),
     );
   } else {
     if (typeof label === 'string') {

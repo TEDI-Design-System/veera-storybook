@@ -2,6 +2,7 @@ import { FormControlStoryProps } from '../form-control/form-control';
 import { EstonianFlag, countryOptions } from './countries';
 import { createDropdown, createDropdownOption } from '../../dropdown/dropdown';
 import { createIcon } from '../../utils';
+import './phone-input.stories.scss';
 
 export interface PhoneInputStoryProps extends FormControlStoryProps {}
 

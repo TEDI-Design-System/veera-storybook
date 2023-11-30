@@ -25,6 +25,9 @@ $prefix: constants.$veera-prefix;
   border: 1px solid var(--#{$prefix}-dropdown-menu-menu-border);
   background: var(--#{$prefix}-dropdown-menu-menu-background);
   box-shadow: var(--#{$prefix}-box-shadow-elevation-01);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   &--top {
     bottom: 100%;
@@ -59,10 +62,11 @@ $prefix: constants.$veera-prefix;
       border-bottom: 1px solid var(--#{$prefix}-dropdown-menu-menu-border);
     }
 
-    @include focus.focus-ring-inset;
-
+    &--focused,
     &:focus {
       @include state-colors('focus');
+
+      box-shadow: var(--#{constants.$veera-prefix}-box-shadow-focus-ring-inset);
     }
 
     &:hover {

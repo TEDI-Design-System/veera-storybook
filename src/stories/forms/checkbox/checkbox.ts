@@ -7,6 +7,7 @@ export interface CheckboxProps {
   checked?: boolean;
   error?: boolean;
   success?: boolean;
+  ariaHidden?: boolean;
 }
 
 export const createCheckbox = ({
@@ -16,6 +17,7 @@ export const createCheckbox = ({
   checked = false,
   error,
   success,
+  ariaHidden,
 }: CheckboxProps) => {
   const checkbox = document.createElement('input');
   checkbox.type = 'checkbox';
@@ -27,6 +29,9 @@ export const createCheckbox = ({
     'v-checkbox--success': success,
   });
   checkbox.indeterminate = !!indeterminate;
+  if (ariaHidden) {
+    checkbox.setAttribute('aria-hidden', 'true');
+  }
 
   return checkbox;
 };

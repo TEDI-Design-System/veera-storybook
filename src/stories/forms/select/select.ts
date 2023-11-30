@@ -61,15 +61,30 @@ export const createSelect = ({
     dropdown.appendChild(createDropdownOption({ label: option, selected: index === 1 }));
   });
   select.appendChild(dropdown);
+  const firstOption = dropdown.querySelector('[role="option"]');
+  firstOption?.classList.add('v-dropdown__option--focused');
 
   trigger.onclick = () => {
     expanded = !expanded;
+    updateDropDown();
+  };
+
+  trigger.onblur = () => {
+    expanded = false;
+    updateDropDown();
+  };
+
+  const updateDropDown = () => {
     dropdown.hidden = !expanded;
     trigger.setAttribute('aria-expanded', expanded.toString());
     if (expanded) {
       select.classList.add('v-select--expanded');
+      if (firstOption) {
+        trigger.setAttribute('aria-activedescendant', firstOption.id);
+      }
     } else {
       select.classList.remove('v-select--expanded');
+      trigger.setAttribute('aria-activedescendant', '');
     }
   };
 
@@ -103,6 +118,7 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
   trigger.setAttribute('role', 'combobox');
   trigger.setAttribute('aria-haspopup', 'listbox');
   trigger.setAttribute('aria-expanded', expanded.toString());
+  trigger.setAttribute('aria-multiselectable', 'true');
 
   const tagsContainer = document.createElement('div');
   tagsContainer.className = 'v-select__tags';
@@ -127,22 +143,36 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
 
   const dropdown = createDropdown();
   dropdown.id = Math.random().toString();
-  trigger.setAttribute('aria-multiselectable', 'true');
   trigger.setAttribute('aria-controls', dropdown.id);
   dropdown.hidden = !expanded;
   multiSelecOptions.forEach(({ label, selected }) => {
     dropdown.appendChild(createDropdownOption({ label, selected, multiselect: true, size }));
   });
   select.appendChild(dropdown);
+  const firstOption = dropdown.querySelector('[role="option"]');
+  firstOption?.classList.add('v-dropdown__option--focused');
 
   trigger.onclick = () => {
     expanded = !expanded;
+    updateDropDown();
+  };
+
+  trigger.onblur = () => {
+    expanded = false;
+    updateDropDown();
+  };
+
+  const updateDropDown = () => {
     dropdown.hidden = !expanded;
     trigger.setAttribute('aria-expanded', expanded.toString());
     if (expanded) {
       select.classList.add('v-select--expanded');
+      if (firstOption) {
+        trigger.setAttribute('aria-activedescendant', firstOption.id);
+      }
     } else {
       select.classList.remove('v-select--expanded');
+      trigger.setAttribute('aria-activedescendant', '');
     }
   };
 
