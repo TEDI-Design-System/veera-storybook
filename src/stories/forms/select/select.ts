@@ -91,6 +91,14 @@ export const createSelect = ({
   return select;
 };
 
+export const createSelectStory = (props: SelectStoryProps) => {
+  const select = createSelect(props);
+  const combobox = select.querySelector('[role="combobox"]');
+  combobox?.setAttribute('aria-label', 'Valikukast');
+
+  return select;
+};
+
 const multiSelecOptions = [
   {
     label:
@@ -119,6 +127,7 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
   trigger.setAttribute('aria-haspopup', 'listbox');
   trigger.setAttribute('aria-expanded', expanded.toString());
   trigger.setAttribute('aria-multiselectable', 'true');
+  trigger.setAttribute('aria-label', 'Mitmikvalik');
 
   const tagsContainer = document.createElement('div');
   tagsContainer.className = 'v-select__tags';

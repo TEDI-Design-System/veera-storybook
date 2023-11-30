@@ -1,5 +1,5 @@
 import type { StoryObj } from '@storybook/html';
-import { SelectStoryProps, createMultiselect, createSelect } from './select';
+import { SelectStoryProps, createMultiselect, createSelectStory } from './select';
 const meta = {
   title: 'forms/select',
   tags: ['autodocs'],
@@ -17,7 +17,7 @@ export default meta;
 type Story = StoryObj<SelectStoryProps>;
 
 export const Default: Story = {
-  render: createSelect,
+  render: createSelectStory,
 };
 
 export const Multiselect: Story = {
