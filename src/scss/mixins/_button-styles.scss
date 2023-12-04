@@ -69,7 +69,7 @@ $prefix: constants.$veera-prefix;
 }
 
 @mixin danger {
-  @include variant-colors('danger');
+  @include variant-colors('warning');
 }
 
 @mixin icon-only-size-props($size) {
