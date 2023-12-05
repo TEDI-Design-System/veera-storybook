@@ -2,8 +2,6 @@ import clsx from 'clsx';
 import { bodyCells, head, mobileTable, nestedHead } from './table.data';
 import { createPagination } from '../pagination/pagination';
 import { createButton } from '../button/button';
-import { createIcon } from '../../utils';
-import './table.stories.scss';
 
 export interface TableStoryProps {
   bordered: boolean;
@@ -93,12 +91,15 @@ const createTableBody = ({ interactive, sticky }: { interactive: boolean; sticky
 
       if ([0, 1].includes(i) && index === 0) {
         const tdContent = document.createElement('div');
-        tdContent.className = 'v-flex v-flex-align-center v-gap-4';
-        const expandButton = document.createElement('button');
-        expandButton.appendChild(createIcon({ name: 'expand_less' }));
-        expandButton.className = 'expand-button';
+        tdContent.className = 'v-flex v-align-items-center v-gap-4';
+        const expandButton = createButton({
+          variant: 'neutral',
+          label: 'expand_less',
+          iconOnly: true,
+          size: 'sm',
+          ariaLabel: 'Sulge alamread',
+        });
         expandButton.setAttribute('aria-expanded', 'true');
-        expandButton.setAttribute('aria-label', 'Sulge alamread');
         tdContent.appendChild(expandButton);
         if (content) {
           tdContent.appendChild(createCellContent(content));

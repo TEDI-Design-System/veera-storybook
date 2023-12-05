@@ -104,7 +104,10 @@ $prefix: constants.$veera-prefix;
 
     &__social-link {
       border-right: none;
-      border-bottom: 1px solid var(--#{$prefix}-footer-social-media-links-border);
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--#{$prefix}-footer-social-media-links-border);
+      }
     }
 
     &__content {

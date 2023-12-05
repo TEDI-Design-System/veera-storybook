@@ -16,7 +16,7 @@ const createSocials = () => {
     if (i !== 2) {
       socialLink.href = '#';
     }
-    socialLink.appendChild(createIcon({ name: 'public' }));
+    socialLink.appendChild(createIcon({ name: 'public', label: 'Näidislink' }));
     socials.appendChild(socialLink);
   }
 
@@ -43,7 +43,7 @@ const createBlock = () => {
   const list = document.createElement('ul');
   for (const blockLink of links) {
     const listItem = document.createElement('li');
-    const link = createLink({ text: blockLink, icon: 'chevron_right', iconLabel: 'Näidislink' });
+    const link = createLink({ text: blockLink, icon: 'chevron_right' });
     listItem.appendChild(link);
     list.appendChild(listItem);
   }
