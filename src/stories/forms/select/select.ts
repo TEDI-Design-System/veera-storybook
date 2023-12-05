@@ -56,6 +56,7 @@ export const createSelect = ({
   const dropdown = createDropdown();
   dropdown.id = Math.random().toString();
   trigger.setAttribute('aria-controls', dropdown.id);
+  trigger.setAttribute('aria-owns', dropdown.id);
   dropdown.hidden = !expanded;
   optionList.forEach((option, index) => {
     dropdown.appendChild(createDropdownOption({ label: option, selected: index === 1 }));
