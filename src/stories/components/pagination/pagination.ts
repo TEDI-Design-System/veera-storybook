@@ -45,7 +45,7 @@ const createPages = () => {
     pages.append(createPageButton(nr));
   }
   const hiddenPages = document.createElement('div');
-  hiddenPages.className = 'v-pagination__page';
+  hiddenPages.className = 'v-pagination__page v-pagination__page--static';
   hiddenPages.innerText = '...';
   pages.appendChild(hiddenPages);
 
@@ -71,7 +71,7 @@ const createResultsCounter = () => {
 
 export const createPagination = () => {
   const pagination = document.createElement('div');
-  pagination.className = 'v-pagination ';
+  pagination.className = 'v-pagination';
 
   pagination.appendChild(createResultsCounter());
   pagination.appendChild(createPages());

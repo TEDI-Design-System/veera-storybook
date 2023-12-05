@@ -50,7 +50,6 @@ $prefix: constants.$veera-prefix;
 
     $page: &;
 
-    cursor: pointer;
     outline: none;
     display: inline-flex;
     justify-content: center;
@@ -65,24 +64,28 @@ $prefix: constants.$veera-prefix;
     border: 2px solid var(--#{$prefix}-paging-button-border-default);
     color: var(--#{$prefix}-paging-button-text-default);
 
-    &:focus {
-      @include button-colors('focus');
-    }
+    &:not(#{$page}--static) {
+      cursor: pointer;
 
-    &:hover {
-      @include button-colors('hover');
-    }
+      &:focus {
+        @include button-colors('focus');
+      }
 
-    &:active {
-      @include button-colors('active');
-    }
+      &:hover {
+        @include button-colors('hover');
+      }
 
-    &#{$page}--selected {
-      @include button-colors('selected');
-    }
+      &:active {
+        @include button-colors('active');
+      }
 
-    &:disabled {
-      @include button-colors('disabled');
+      &#{$page}--selected {
+        @include button-colors('selected');
+      }
+
+      &:disabled {
+        @include button-colors('disabled');
+      }
     }
   }
 
