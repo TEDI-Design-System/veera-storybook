@@ -127,11 +127,11 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
   trigger.setAttribute('role', 'combobox');
   trigger.setAttribute('aria-haspopup', 'listbox');
   trigger.setAttribute('aria-expanded', expanded.toString());
-  trigger.setAttribute('aria-multiselectable', 'true');
   trigger.setAttribute('aria-label', 'Mitmikvalik');
 
   const tagsContainer = document.createElement('div');
   tagsContainer.className = 'v-select__tags';
+  trigger.setAttribute('aria-label', 'Valitud väärtused');
   multiSelecOptions
     .filter((opt) => opt.selected)
     .forEach((opt) => {
@@ -153,6 +153,7 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
 
   const dropdown = createDropdown();
   dropdown.id = Math.random().toString();
+  dropdown.setAttribute('aria-multiselectable', 'true');
   trigger.setAttribute('aria-controls', dropdown.id);
   trigger.setAttribute('aria-owns', dropdown.id);
   dropdown.hidden = !expanded;
@@ -168,9 +169,11 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
     updateDropDown();
   };
 
-  trigger.onblur = () => {
-    expanded = false;
-    updateDropDown();
+  trigger.onkeydown = (e) => {
+    if (e.code === 'Space') {
+      expanded = !expanded;
+      updateDropDown();
+    }
   };
 
   const updateDropDown = () => {
