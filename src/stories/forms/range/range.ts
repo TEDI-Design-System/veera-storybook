@@ -1,3 +1,4 @@
+import { createFormRow } from '../form-layout/form-layout';
 import { createInputGroup } from '../input-group/input-group';
 
 export interface RangeProps {
@@ -46,10 +47,18 @@ export const createRangeSlider = ({ disabled, min = 0, max = 100 }: RangeProps) 
     ariaLabel: 'liugurvälja väärtus',
   });
   const valueInput = inputGroup.querySelector('input')!;
+  valueInput.id = `range-value-${Math.random()}`;
   const inputAddon = inputGroup.querySelector('.v-input-addon')!;
   inputAddon.id = `addon-${Math.random()}`;
   valueInput.setAttribute('aria-describedby', inputAddon.id);
   sliderGroup.appendChild(inputGroup);
 
-  return sliderGroup;
+  const row = createFormRow({ label: 'Liugur', input: sliderGroup, inputId: valueInput.id });
+  row.classList.add('v-form-row--vertical');
+  const label = row.querySelector('label')!;
+  label.id = `label-${Math.random()}`;
+
+  valueInput.setAttribute('aria-labelledby', `${label.id} ${inputAddon.id}`);
+
+  return row;
 };

@@ -82,6 +82,7 @@ const createMenuItem = (item: HorizontalNavItem) => {
     menuItem.setAttribute('aria-expanded', selected.toString());
   };
   menuItem.setAttribute('aria-expanded', selected.toString());
+  menuItem.setAttribute('aria-owns', 'menu-panel');
   return menuItem;
 };
 
