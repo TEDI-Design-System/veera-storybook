@@ -15,6 +15,8 @@ const createSocials = () => {
     });
     if (i !== 2) {
       socialLink.href = '#';
+    } else {
+      socialLink.setAttribute('aria-disabled', 'true');
     }
     socialLink.appendChild(createIcon({ name: 'public', label: 'Näidislink' }));
     socials.appendChild(socialLink);
