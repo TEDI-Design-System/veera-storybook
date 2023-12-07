@@ -131,7 +131,7 @@ export const createMultiselect = ({ size, status, disabled }: SelectStoryProps) 
 
   const tagsContainer = document.createElement('div');
   tagsContainer.className = 'v-select__tags';
-  trigger.setAttribute('aria-label', 'Valitud väärtused');
+  tagsContainer.setAttribute('aria-label', 'Valitud väärtused');
   multiSelecOptions
     .filter((opt) => opt.selected)
     .forEach((opt) => {
