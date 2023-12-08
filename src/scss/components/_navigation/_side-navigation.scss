@@ -130,6 +130,7 @@ $prefix: constants.$veera-prefix;
     position: static;
     width: var(--#{$prefix}-navigation-vertical-sizing-desktop-width);
     max-width: none;
+    z-index: unset;
 
     .#{$prefix}-overlay {
       display: none;
