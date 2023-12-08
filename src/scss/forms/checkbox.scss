@@ -33,6 +33,8 @@ $prefix: constants.$veera-prefix;
 
 @mixin input-styles {
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   outline: none;
   margin: 0;
   position: relative;
