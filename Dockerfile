@@ -1,4 +1,4 @@
-FROM node:20.1.0 as storybook
+FROM node:21.6.0 as storybook
 WORKDIR /usr/veera
 COPY ./package.json ./
 RUN npm i
