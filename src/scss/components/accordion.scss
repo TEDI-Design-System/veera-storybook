@@ -30,12 +30,17 @@ $prefix: constants.$veera-prefix;
     grid-template-rows: max-content 1fr;
     background: var(--#{$prefix}-accordion-background-selected);
 
-    #{ $self }__expand-icon {
-      transform: rotateX(180deg);
+    & > #{ $self }__collapse {
+      animation: overflow-transition ease-in-out 0.3s;
+      animation-fill-mode: forwards;
     }
 
-    #{ $self }__header {
+    & > #{ $self }__header {
       color: var(--#{$prefix}-accordion-text-selected);
+
+      #{ $self }__expand-icon {
+        transform: rotateX(180deg);
+      }
     }
   }
 
@@ -114,5 +119,11 @@ $prefix: constants.$veera-prefix;
   &__content {
     padding: var(--#{$prefix}-accordion-content-padding-y)
       var(--#{$prefix}-accordion-content-padding-x);
+  }
+
+  @keyframes overflow-transition {
+    100% {
+      overflow: visible;
+    }
   }
 }

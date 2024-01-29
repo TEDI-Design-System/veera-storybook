@@ -39,10 +39,16 @@ const createPopupFooter = () => {
   collapseTrigger.onclick = () => {
     expanded = !expanded;
     if (expanded) {
-      collapse.style.display = 'flex';
+      collapse.style.display = 'grid';
+      setTimeout(() => {
+        collapse.classList.add('v-collapse--expanded');
+      });
       collapseTrigger.classList.add('expanded');
     } else {
-      collapse.style.display = 'none';
+      setTimeout(() => {
+        collapse.style.display = 'none';
+      }, 300);
+      collapse.classList.remove('v-collapse--expanded');
       collapseTrigger.classList.remove('expanded');
     }
     collapseTrigger.setAttribute('aria-expanded', expanded.toString());
@@ -63,8 +69,10 @@ const createPopupFooter = () => {
 };
 
 const createConsentOptionsCollapse = () => {
+  const collapse = document.createElement('div');
+  collapse.className = 'v-collapse';
   const collapseContent = document.createElement('div');
-  collapseContent.className = 'v-flex v-flex-column v-gap-5';
+  collapseContent.className = 'v-collapse__content v-flex v-flex-column v-gap-5';
   const optionsContainer = document.createElement('div');
   optionsContainer.className = 'v-flex v-flex-column v-pl-5 v-gap-4 v-mt-4';
   for (const opt of consentOptions) {
@@ -74,7 +82,8 @@ const createConsentOptionsCollapse = () => {
   const saveBtn = createButton({ label: 'Salvestan' });
   saveBtn.classList.add('v-mr-auto');
   collapseContent.appendChild(saveBtn);
-  return collapseContent;
+  collapse.appendChild(collapseContent);
+  return collapse;
 };
 
 const createConsentOptionCheckbox = (label: string) => {

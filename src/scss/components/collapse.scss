@@ -10,9 +10,20 @@ $prefix: constants.$veera-prefix;
 
   &--expanded {
     grid-template-rows: 1fr;
+
+    > .#{$prefix}-collapse__content {
+      animation: overflow-transition ease-in-out 0.3s;
+      animation-fill-mode: forwards;
+    }
   }
 
   &__content {
     overflow: hidden;
+  }
+
+  @keyframes overflow-transition {
+    100% {
+      overflow: visible;
+    }
   }
 }
